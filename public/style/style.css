@@ -1,22 +1,30 @@
 @charset "UTF-8";
-html {
-  overflow-x: hidden; }
-
-body {
-  width: 100vw;
-  margin: 0; }
+#dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%; }
+  #dropdown ul {
+    margin: 10px 10% 0 0; }
+    #dropdown ul li span {
+      position: relative;
+      left: 20px; }
+    #dropdown ul li:hover {
+      color: yellow; }
 
 #header {
+  font-family: "Geom", serif !important;
   color: white;
   background: black;
   width: 100vw;
-  height: 140px; }
+  height: 150px; }
   #header #first {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 100%; }
     #header #first div {
+      margin: 0 4% 0 0;
       padding-top: 40px;
       width: 20%; }
       #header #first div div {
@@ -27,27 +35,54 @@ body {
       width: 40px;
       height: 40px; }
     #header #first bold {
-      font: 16px bold; }
+      font: 15pt bold; }
+    #header #first mini {
+      font-size: 10pt; }
   #header #second {
     display: table;
-    margin: 0 auto; }
+    width: 100%; }
     #header #second ul {
-      display: contents;
-      list-style: none; }
+      padding-left: 4px;
+      width: 100%;
+      display: inline-flex;
+      list-style: none;
+      text-transform: uppercase; }
       #header #second ul li {
-        margin: 0 10px 0 0;
-        display: inline; }
+        margin: 0 3% 0 0; }
+        #header #second ul li img {
+          margin-left: 10px;
+          background: white;
+          width: 20px;
+          height: 20px; }
+      #header #second ul li:hover {
+        color: yellow; }
 
 #logo-warp {
   padding-top: 10px !important;
-  left: 25px;
+  left: 15px;
   position: relative; }
 
 #logo {
-  background-image: url("/img/Лого 100px.png");
+  background-image: url("../img/Лого 100px.png");
   height: 100px !important;
   width: 100px !important;
-  border: none; }
+  border: none;
+  background-position: center; }
+
+#city bold {
+  text-shadow: 1px 1px 1px  white;
+  margin-left: 10px; }
+
+#city mini {
+  text-shadow: 1px 1px 1px  white;
+  margin-left: 10px; }
+
+#phone bold {
+  text-shadow: 1px 1px 1px  white; }
+
+#phone mini {
+  text-shadow: 1px 1px 1px  white;
+  margin-left: 10px; }
 
 #search {
   padding-top: 30px;
@@ -59,8 +94,10 @@ body {
     position: relative;
     display: flex; }
   #search img {
-    width: 20px !important;
-    height: 20px !important; }
+    padding-top: 1px;
+    padding-left: 3px;
+    width: 16px !important;
+    height: 16px !important; }
   #search input {
     outline: none;
     border: none;
@@ -68,9 +105,73 @@ body {
     height: 20px; }
 
 #footer {
+  color: white;
   background: black;
   width: 100vw;
-  height: 140px; }
+  height: 340px; }
+  #footer #ftr-frst {
+    position: relative;
+    left: 10px;
+    display: flex; }
+    #footer #ftr-frst div {
+      margin: 0 10% 0 0; }
+    #footer #ftr-frst #soc {
+      padding-top: 30px; }
+      #footer #ftr-frst #soc h1 {
+        margin: 0; }
+      #footer #ftr-frst #soc #soc-ico {
+        margin-top: 10px;
+        display: flex; }
+    #footer #ftr-frst #faq {
+      padding-top: 30px; }
+      #footer #ftr-frst #faq ul {
+        list-style: none; }
+        #footer #ftr-frst #faq ul h4 {
+          margin: 0;
+          width: 280px; }
+        #footer #ftr-frst #faq ul li {
+          text-decoration: underline orange; }
+    #footer #ftr-frst .phone {
+      padding-top: 30px;
+      margin: 13px 0 0 0; }
+      #footer #ftr-frst .phone phone {
+        display: inline;
+        color: orange;
+        font-size: 24px; }
+    #footer #ftr-frst #buttons {
+      padding-top: 30px; }
+      #footer #ftr-frst #buttons button {
+        border-width: 1px;
+        background: black;
+        color: orange;
+        border-color: orange;
+        width: 250px;
+        height: 50px;
+        font: 12px bold;
+        text-transform: uppercase; }
+  #footer #ftr-scnd {
+    position: relative;
+    left: 10px;
+    display: flex; }
+    #footer #ftr-scnd div {
+      margin: 14px 10% 0 0; }
+    #footer #ftr-scnd #map {
+      width: 100px;
+      height: 100px;
+      background-image: url("../img/map.png"); }
+    #footer #ftr-scnd #info {
+      width: 400px; }
+
+@font-face {
+  font-family: "Geom";
+  src: local("Geom"), url("../font/geom.otf") format("truetype"); }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  width: 100vw;
+  margin: 0; }
 
 #body {
   width: 100vw;
