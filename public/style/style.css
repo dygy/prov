@@ -349,14 +349,16 @@
       background-color: black; }
 
 #street {
+  color: white;
   background-color: black;
-  height: 140px; }
+  height: 300px; }
 
 #room {
+  color: white;
   margin-bottom: 40px;
   margin-top: 40px;
   background-color: black;
-  height: 140px; }
+  height: 300px; }
 
 @font-face {
   font-family: 'Open Sans';
