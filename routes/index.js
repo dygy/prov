@@ -6,6 +6,6 @@ router.get('/home', function(req, res, next) {
     res.render('home', { title: 'Auth' });
 });
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Chat'});
+    res.render('./pages/main', { title: 'Chat'});
 });
 module.exports = router;

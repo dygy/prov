@@ -7,17 +7,18 @@
   #dropdown ul {
     margin: 10px 10% 0 0; }
     #dropdown ul li span {
+      font: 18px bold;
       position: relative;
       left: 20px; }
     #dropdown ul li:hover {
-      color: yellow; }
+      color: #FDB13E; }
 
 #header {
   font-family: "Geom", serif !important;
   color: white;
   background: black;
-  width: 100vw;
-  height: 150px; }
+  width: 100%;
+  min-height: 150px; }
   #header #first {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +36,7 @@
       width: 40px;
       height: 40px; }
     #header #first bold {
-      font: 15pt bold; }
+      font: 15pt boldko; }
     #header #first mini {
       font-size: 10pt; }
   #header #second {
@@ -55,7 +56,7 @@
           width: 20px;
           height: 20px; }
       #header #second ul li:hover {
-        color: yellow; }
+        color: #FDB13E; }
 
 #logo-warp {
   padding-top: 10px !important;
@@ -68,21 +69,15 @@
   width: 100px !important;
   border: none;
   background-position: center; }
-
-#city bold {
-  text-shadow: 1px 1px 1px  white;
-  margin-left: 10px; }
-
-#city mini {
-  text-shadow: 1px 1px 1px  white;
-  margin-left: 10px; }
+  #logo bold {
+    text-shadow: 1px -2px 4px  white;
+    margin-left: 10px; }
+  #logo mini {
+    text-shadow: 0px -1px 2px  white;
+    margin-left: 10px; }
 
 #phone bold {
-  text-shadow: 1px 1px 1px  white; }
-
-#phone mini {
-  text-shadow: 1px 1px 1px  white;
-  margin-left: 10px; }
+  margin-left: 0; }
 
 #search {
   padding-top: 30px;
@@ -105,10 +100,12 @@
     height: 20px; }
 
 #footer {
+  position: relative;
+  bottom: 0;
   color: white;
   background: black;
   width: 100vw;
-  height: 340px; }
+  min-height: 340px; }
   #footer #ftr-frst {
     position: relative;
     left: 10px;
@@ -118,6 +115,7 @@
     #footer #ftr-frst #soc {
       padding-top: 30px; }
       #footer #ftr-frst #soc h1 {
+        text-shadow: white 0.5px -0.5px 0.5px;
         margin: 0; }
       #footer #ftr-frst #soc #soc-ico {
         margin-top: 10px;
@@ -127,24 +125,25 @@
       #footer #ftr-frst #faq ul {
         list-style: none; }
         #footer #ftr-frst #faq ul h4 {
+          text-shadow: white 0px -1px 1px;
           margin: 0;
           width: 280px; }
         #footer #ftr-frst #faq ul li {
-          text-decoration: underline orange; }
+          text-decoration: underline #FDB13E; }
     #footer #ftr-frst .phone {
       padding-top: 30px;
       margin: 13px 0 0 0; }
       #footer #ftr-frst .phone phone {
         display: inline;
-        color: orange;
+        color: #FDB13E;
         font-size: 24px; }
     #footer #ftr-frst #buttons {
       padding-top: 30px; }
       #footer #ftr-frst #buttons button {
         border-width: 1px;
         background: black;
-        color: orange;
-        border-color: orange;
+        color: #FDB13E;
+        border-color: #FDB13E;
         width: 250px;
         height: 50px;
         font: 12px bold;
@@ -156,18 +155,218 @@
     #footer #ftr-scnd div {
       margin: 14px 10% 0 0; }
     #footer #ftr-scnd #map {
-      width: 100px;
-      height: 100px;
+      max-width: 150px;
+      max-height: 300px;
       background-image: url("../img/map.png"); }
     #footer #ftr-scnd #info {
       width: 400px; }
 
+#form {
+  padding-bottom: 20px;
+  background-color: #FCB600;
+  width: 100vw;
+  min-height: 300px;
+  color: black;
+  font-weight: lighter; }
+  #form input::placeholder {
+    color: black;
+    font-size: 16px; }
+  #form textarea::placeholder {
+    color: black;
+    font-size: 16px; }
+  #form #form-one {
+    margin-bottom: 20px;
+    text-align: center; }
+    #form #form-one div {
+      font-family: Verdana,monospace;
+      font-size: 35px;
+      padding-bottom: 10px; }
+  #form #form-two {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; }
+    #form #form-two input {
+      padding-left: 10px;
+      width: 30%;
+      height: 20px;
+      border: none;
+      margin: 0 5% 0;
+      box-shadow: 1px 1px 1px black; }
+  #form #form-three {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; }
+    #form #form-three input {
+      padding-left: 10px;
+      width: 30%;
+      height: 20px;
+      border: none;
+      margin: 0 5% 0;
+      box-shadow: 1px 1px 1px black; }
+  #form #form-four {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; }
+    #form #form-four textarea {
+      padding-left: 10px;
+      width: 70%;
+      height: 150px;
+      border: none;
+      margin: 0 10px 0;
+      padding-bottom: 10px;
+      box-shadow: 2px 2px 3px black; }
+
+#serve #kach {
+  height: 200px;
+  display: flex;
+  background-color: black;
+  color: white;
+  text-align: center;
+  justify-content: center; }
+  #serve #kach div {
+    margin: 0 8% 0; }
+  #serve #kach p {
+    width: 100px;
+    padding-top: 120px; }
+
+#serve #usl {
+  display: flex;
+  justify-content: center; }
+  #serve #usl div {
+    margin: 0 5% 0; }
+
+#serve .serv-list {
+  margin: 0 -25px 40px !important;
+  display: flex; }
+  #serve .serv-list ul {
+    margin: -30px 0 0;
+    list-style: none; }
+  #serve .serv-list li {
+    width: 183px;
+    padding-right: 10px;
+    background-color: #e4e4e4;
+    margin-left: -1em;
+    border: 0.3px rgba(0, 0, 0, 0.25) solid; }
+  #serve .serv-list ul li::before {
+    content: "•";
+    color: #9c6a00;
+    /* Change the color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    padding-left: 4px; }
+
+#passport {
+  padding-bottom: 40px;
+  padding-top: 40px; }
+  #passport #pass-text {
+    font-size: 30px;
+    text-align: center; }
+  #passport #pass-flex {
+    padding-top: 40px;
+    display: flex; }
+    #passport #pass-flex #pass-logo {
+      margin-right: 40px;
+      margin-left: 40px;
+      background-color: black;
+      min-width: 300px;
+      height: 200px;
+      margin-bottom: 40px; }
+    #passport #pass-flex text {
+      margin-bottom: 40px;
+      max-width: 70%;
+      position: relative;
+      right: 0; }
+  #passport #circus {
+    display: flex; }
+    #passport #circus div {
+      margin: 0 2% 0; }
+      #passport #circus div div {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #FDB13E; }
+    #passport #circus play {
+      position: relative;
+      top: 60px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 0 15px 30px;
+      border-color: transparent transparent transparent #84898f; }
+    #passport #circus text {
+      position: relative;
+      left: -10px;
+      display: block;
+      justify-content: center;
+      text-align: center; }
+      #passport #circus text mini {
+        width: 50px;
+        text-align: center;
+        color: gray; }
+      #passport #circus text bold {
+        width: 70px;
+        font: 20px bold; }
+
+#but-take {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px; }
+  #but-take button {
+    width: 120px;
+    height: 25px;
+    background-color: #FCB600;
+    border: none;
+    box-shadow: 0px 0px 3px black; }
+
+#promise {
+  background-color: black;
+  color: cadetblue;
+  min-height: 250px; }
+  #promise #promise-text {
+    line-height: 70px;
+    padding-top: 20px;
+    width: 46%;
+    font-size: 40px; }
+
+.ads {
+  padding-bottom: 40px; }
+  .ads .title {
+    padding-top: 40px; }
+    .ads .title h1 {
+      width: 550px; }
+  .ads div {
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    .ads div div {
+      margin: 10px 3% 0;
+      width: 100px;
+      height: 150px;
+      background-color: black; }
+
+#street {
+  background-color: black;
+  height: 140px; }
+
+#room {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  background-color: black;
+  height: 140px; }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
+
 @font-face {
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
-
-html {
-  overflow-x: hidden; }
 
 body {
   width: 100vw;
@@ -176,5 +375,28 @@ body {
 #body {
   width: 100vw;
   height: 390px; }
+
+.polaroid {
+  position: relative;
+  width: 220px;
+  top: 10px; }
+
+.polaroid img {
+  width: 170px;
+  height: 200px;
+  border: 10px solid #000000;
+  border-bottom: 45px solid #000000;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px #777; }
+
+.polaroid p {
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  left: -6.5%;
+  bottom: 40px;
+  font: 400 12px/1 'Kaushan Script', cursive; }
 
 /*# sourceMappingURL=style.css.map */

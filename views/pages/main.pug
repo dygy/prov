@@ -1,0 +1,168 @@
+link(rel='stylesheet', href='/style/style.css')
+script(src='../js/index.js')
+
+include ../header
+include ../dropdown
+
+block street
+    div(id="street") тут будет улица и машина
+block ins-ads
+div(class="ads")
+    div(class="title")
+        h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ НАРУЖНОЙ РЕКЛАМЫ
+    div(id="ins-one")
+        div
+        div
+        div
+        div
+    div(id="ins-two")
+        div
+        div
+        div
+        div
+    div(id="ins-three")
+        div
+        div
+        div
+        div
+    div(id="ins-four")
+        div
+        div
+        div
+        div
+block room
+    div(id="room") тут будет стенд-комната
+block room-ads
+    div(class="ads")
+        div(class="title")
+            h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ ИНТЕРЬЕРНОЙ РЕКЛАМЫ
+        div(id="room-one")
+            div
+            div
+            div
+            div
+        div(id="room-two")
+            div
+            div
+            div
+            div
+block take
+    div(id="but-take")
+        button
+            strong Заказать
+            img
+    div(id="promise")
+        div(id="promise-text") ИЗГОТОВИМ ЛЮБУЮ ВЫВЕСКУ ПО ЗАКОНУ ЗА 15 ДНЕЙ СОГЛАСНО 902-ПП
+block serve
+    div(id="serve")
+        div(style="text-align:center")
+            h1 УСЛУГИ ПО ТЕМАМ
+        div(id="usl")
+            div(class="polaroid")
+                img
+                p ГОРОДСКАЯ РЕКЛАМА
+                div(class="serv-list")
+                    ul
+                        li ВЫВЕСКИ
+                        li БАННЕРЫ
+                        li СВЕТОВЫЕ ПАНЕЛИ
+                        li КРОНШТЕЙНЫ
+                        li ПИЛОНЫ
+            div(class="polaroid")
+                img
+                p ВХОДНЫЕ ГРУППЫ
+                div(class="serv-list")
+                    ul
+                        li ВЫВЕСКИ
+                        li КОЗЫРЬКИ
+                        li ШТЕНДЕРЫ
+                        li ШИРОКОФОРМАТ
+                        li ТАБЛИЧКИ
+
+            div(class="polaroid")
+                img
+                p ОФОРМЛЕНИЕ ИНТЕРЬЕРА
+                div(class="serv-list")
+                    ul
+                        li ВЫВЕСКИ И ЛОГО
+                        li НАВИГАЦИЯ
+                        li СВЕТОВЫЕ ПАНЕЛИ
+                        li ШИРОКОФОРМАТ
+                        li ИНФО СТЕНДЫ
+            div(class="polaroid")
+                img
+                p ВЫСТАВКИ ПРЕЗЕНТАЦИИ
+                div(class="serv-list")
+                    ul
+                        li ПРЕСС-ВОЛЛЫ
+                        li РОЛЛАПЫ
+                        li ШТЕНДЕРЫ
+                        li СТЕНДЫ
+        div(id="kach")
+            div
+                p СОБЛЮДЕНИЕ СРОКОВ
+            div
+                p КАЧЕСТВО И ГАРАНТИЯ
+            div
+                p КРЕАТИВНЫЕ ИДЕИ
+            div
+                p УСТАНОВКА ПО ЗАКОНУ
+block passport
+    div(id="passport")
+        div(id="pass-text") ПАСПОРТ ВЫВЕСКИ
+        div(id="pass-flex")
+            div(id="pass-logo")
+                img
+            text Вывеска — это технологическая конструкция, поэтому для нее всегда необходим Паспорт-спецификация — документ, в котором есть технические характеристики, а именно: способ крепления конструкции, способ подключения, электрическая мощность, используемые материалы, фотопривязка и дизайн-макет с подробными размерами. Мы даем этот документ к каждой Рекламной конструкции. Он Вам понадобиться для согласования в Торговом  центре, с Управляющей компанией, для предъявления в Префектуру района или Администрацию населенного пункта — если Вы находитесь в Московской области!
+        div(id="circus")
+            div
+                div
+                text
+                    bold звонок менеджеру/ заявка
+                    p
+                    mini свяжитесь с нами, чтобы сделать заказ
+            play
+            div
+                div
+                text
+                    bold консультация/ дизайн
+                    p
+                    mini определитесь с видом изделия, размером и стоимостью
+            play
+            div
+                div
+                text
+                    bold платеж/ заключение договора
+                    p
+                    mini Вы вносите платеж любым удобным вам способом
+            play
+            div
+                div
+                text
+                    bold изготовление
+                    p
+                    mini мы изготовим для Вас все в назначеный срок
+            play
+            div
+                div
+                text
+                    bold монтаж
+                    p
+                    mini мы согласуем вывеску по закону и установим ее
+
+
+block form
+    div(id="form")
+        div(id="form-one")
+            div СДЕЛАТЬ ЗАКАЗ
+        div(id="form-two")
+            input(placeholder="Ваше имя:")
+            input(placeholder="Компания:")
+        p
+        div(id="form-three")
+            input(placeholder="Телефон:")
+            input(placeholder="E-mail:")
+        p
+        div(id="form-four")
+            textarea(placeholder="Комментарии:")
+include ../footer

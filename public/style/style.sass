@@ -1,13 +1,21 @@
 @import "dropdown"
 @import "hdr"
 @import "footer"
+@import "form"
+@import "serve"
+@font-face
+  font-family: 'Open Sans'
+  font-style: normal
+  font-weight: 400
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff')
+
 @font-face
   font-family: "Geom"
   src: local('Geom'), url("../font/geom.otf") format("truetype")
 
 
 html
-  overflow-x: hidden
+//  overflow-x: hidden
 body
   width: 100vw
   margin: 0
@@ -16,4 +24,28 @@ body
 #body
   width: 100vw
   height: 390px
+
+.polaroid
+  position: relative
+  width: 220px
+  top: 10px
+
+.polaroid img
+  width: 170px
+  height: 200px
+  border: 10px solid #000000
+  border-bottom: 45px solid #000000
+  -webkit-box-shadow: 3px 3px 3px #777
+  -moz-box-shadow: 3px 3px 3px #777
+  box-shadow: 3px 3px 3px #777
+
+.polaroid p
+  color: white
+  position: relative
+  text-align: center
+  width: 100%
+  left: -6.5%
+  bottom: 40px
+  font: 400 12px/1 'Kaushan Script', cursive
+
 
