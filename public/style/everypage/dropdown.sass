@@ -7,8 +7,20 @@
     margin: 10px 10% 0 0
     li
       span
-        font: 18px bold
+        font: 18px bold !important
         position: relative
         left: 20px
     li:hover
       color: #FDB13E
+
+@media ( max-width : 1242px )
+  #dropdown
+    ul
+      margin: 10px 9% 0 0 !important
+@media ( max-width : 1065px )
+  #dropdown
+    ul
+      margin: 10px 3% 0 0 !important
+      li
+        span
+          font-size: 16px !important

@@ -1,7 +1,7 @@
 html
 //  overflow-x: hidden
 body
-  width: 100vw
+  width: 101vw
   margin: 0
 
 #header
@@ -34,7 +34,10 @@ body
   #second
     display: table
     width: 100%
+    max-width: 100%
     ul
+      text-align: center
+      max-width: 100%
       padding-left: 4px
       width: 100%
       display: inline-flex
@@ -93,3 +96,30 @@ body
     border: none
     background: none
     height: 20px
+
+@media ( max-width : 846px )
+  #first
+    #logo-warp
+      margin: 0 0 0 0 !important
+  #second
+    ul
+      li
+        font-size: 13px !important
+        margin: 0 10px 0 0  !important
+        width: 87px
+      #contact
+        margin: 0 0 0 0 !important
+      #burger-li
+        width: 30px !important
+      #large-word
+        width: 155px!important
+@media ( max-width : 616px )
+  #first
+    #logo-warp
+      margin-top: 10px !important
+      width: 95px !important
+      div
+        margin: 0 10px 0 !important
+        height: 65px !important
+        width: 65px !important
+        background-size: 65px 65px

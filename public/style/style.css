@@ -7,14 +7,24 @@
   #dropdown ul {
     margin: 10px 10% 0 0; }
     #dropdown ul li span {
-      font: 18px bold;
+      font: 18px bold !important;
       position: relative;
       left: 20px; }
     #dropdown ul li:hover {
       color: #FDB13E; }
 
+@media (max-width: 1242px) {
+  #dropdown ul {
+    margin: 10px 9% 0 0 !important; } }
+
+@media (max-width: 1065px) {
+  #dropdown ul {
+    margin: 10px 3% 0 0 !important; }
+    #dropdown ul li span {
+      font-size: 16px !important; } }
+
 body {
-  width: 100vw;
+  width: 101vw;
   margin: 0; }
 
 #header {
@@ -108,11 +118,10 @@ body {
   bottom: 0;
   color: white;
   background: black;
-  width: 100vw;
+  width: 101vw;
   min-height: 340px; }
   #footer #ftr-frst {
-    position: relative;
-    left: 10px;
+    padding-left: 10px;
     display: flex; }
     #footer #ftr-frst div {
       margin: 0 10% 0 0; }
@@ -135,6 +144,7 @@ body {
         #footer #ftr-frst #faq ul li {
           text-decoration: underline #FDB13E; }
     #footer #ftr-frst .phone {
+      white-space: nowrap;
       padding-top: 30px;
       margin: 13px 0 0 0; }
       #footer #ftr-frst .phone phone {
@@ -153,8 +163,7 @@ body {
         font: 12px bold;
         text-transform: uppercase; }
   #footer #ftr-scnd {
-    position: relative;
-    left: 10px;
+    padding-left: 10px;
     display: flex; }
     #footer #ftr-scnd div {
       margin: 14px 10% 0 0; }
@@ -164,10 +173,29 @@ body {
     #footer #ftr-scnd #info {
       width: 400px; }
 
+@media (max-width: 1325px) {
+  phone {
+    display: inline !important;
+    font-size: 22px !important; }
+  #ftr-frst div {
+    margin: 0 7% 0 0 !important; } }
+
+@media (max-width: 1152px) {
+  #ftr-frst div {
+    margin: 0 5% 0 0 !important; } }
+
+@media (max-width: 1069px) {
+  #ftr-frst div {
+    margin: 0 3% 0 0 !important; }
+  #ftr-frst h1 {
+    font-size: 25px; }
+  #ftr-frst button {
+    width: 220px !important; } }
+
 #form {
   padding-bottom: 20px;
   background-color: #FCB600;
-  width: 100vw;
+  width: 100%;
   min-height: 300px;
   color: black;
   font-weight: lighter; }
@@ -288,6 +316,8 @@ body {
     #passport #circus div {
       margin: 0 2% 0; }
       #passport #circus div div {
+        margin: 0 0 0 0;
+        margin-left: 10px !important;
         width: 150px;
         height: 150px;
         border-radius: 50%;
@@ -344,9 +374,9 @@ body {
   .ads div {
     text-align: center;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin: 10px 3% 0; }
     .ads div div {
-      margin: 10px 3% 0;
       width: 100px;
       height: 150px;
       background-color: black; }
@@ -362,6 +392,16 @@ body {
   margin-top: 40px;
   background-color: black;
   height: 300px; }
+
+@media (max-width: 1107px) {
+  #circus div div {
+    margin-left: 5px !important;
+    width: 100px !important;
+    height: 100px !important; }
+  #circus play {
+    margin-top: -20px; }
+  #usl div {
+    margin: 0 3% !important; } }
 
 @font-face {
   font-family: 'Open Sans';

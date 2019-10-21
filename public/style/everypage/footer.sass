@@ -3,11 +3,10 @@
   bottom: 0
   color: white
   background: black
-  width: 100vw
+  width: 101vw
   min-height: 340px
   #ftr-frst
-    position: relative
-    left: 10px
+    padding-left: 10px
     display: flex
     div
       margin: 0 10% 0 0
@@ -31,6 +30,7 @@
           text-decoration: underline #FDB13E
 
     .phone
+      white-space: nowrap
       padding-top: 30px
       margin: 13px 0 0 0
       phone
@@ -50,8 +50,7 @@
         text-transform: uppercase
 
   #ftr-scnd
-    position: relative
-    left: 10px
+    padding-left: 10px
     display: flex
     div
       margin: 14px 10% 0 0
@@ -60,3 +59,61 @@
       max-height: 300px
     #info
       width: 400px
+
+
+@media ( max-width : 1325px )
+  phone
+    display: inline !important
+    font-size: 22px!important
+  #ftr-frst
+      div
+        margin: 0 7% 0 0!important
+@media ( max-width : 1152px )
+  #ftr-frst
+    div
+      margin: 0 5% 0 0!important
+@media ( max-width : 1069px )
+  #ftr-frst
+    div
+      margin: 0 3% 0 0!important
+    h1
+      font-size: 25px
+    button
+      width: 220px!important
+@media ( max-width : 936px )
+  #ftr-frst
+    div
+      margin: 0 2% 0 0!important
+    h1
+      font-size: 25px
+    button
+      width: 220px!important
+    .phone
+      margin: 0 0 0 0
+@media ( max-width : 904px )
+  #ftr-frst
+   #buttons
+     display: none
+@media ( max-width : 778px )
+  #ftr-scnd
+    #map
+      img
+        width: 200px !important
+        height: 100px !important
+  #ftr-frst
+    #faq
+      ul
+        h4
+          width: 170px !important
+
+
+  ul
+    padding-left: 20px !important
+
+  phone
+    font-size: 17px !important
+  email
+    font-size: 14px !important
+  adr
+    font-size: 14px !important
+
