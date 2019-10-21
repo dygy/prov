@@ -1,0 +1,79 @@
+@import "everypage/dropdown"
+@import "everypage/hdr"
+@import "everypage/footer"
+@import "everypage/table"
+@import "everypage/button"
+
+.title
+  margin-top: 40px
+  display: flex
+  text-align: center
+  justify-content: center
+#flex-info
+  display: flex
+  div
+    margin-left: 10%
+  ul
+    list-style: none
+    margin-left: -30px
+  li
+    margin-top: 5px
+  li::before
+      margin-right: 30px
+      border-radius: 100%
+      counter-increment: section
+      content: ""
+      border: 2px solid #ffb800
+      padding: 2px
+      text-align: center
+      width: 10px
+      height: 10px
+      display: inline-flex
+  #info
+  #image
+
+    div
+      margin-top: 20px
+      display: flex
+      justify-content: center
+    img
+      width: 310px
+      height: 300px
+    button
+      margin: 0 15px 0 15px
+      width: 120px
+      height: 40px
+    .buy-tel
+      margin-top: 2px
+      height: 35px
+
+
+#flex-box
+  margin-left: 16%
+  margin-top: 40px
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  max-width: 100%
+  padding-bottom: 40px
+  .elem
+    padding: 10px
+    max-width: 200px
+    background: #EDEDED
+    margin: 20px
+    text-align: center
+    price
+      position: relative
+      right: 20px
+      font: bold 16px Serif
+    img
+      width: 200px
+      height: 120px
+      margin-bottom: 10px
+    button
+      position: relative
+      right: -24px
+      height: 30px
+      border: none
+      background-color: #ffb800
+    strong

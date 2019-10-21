@@ -1,58 +1,52 @@
-link(rel='stylesheet', href='/style/fonts.css')
+link(rel='stylesheet', href='/style/light.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
 include ../header
 include ../dropdown
-block fonts
+
+block flexbox
     div(class="title")
-        h1 ОБЪЕМНЫЕ СВЕТЯЩИЕСЯ БУКВЫ
+        h1 СВЕТОВЫЕ КОРОБА
     div(id="font-flex")
         div(class="elem")
             img
             br
-            strong АКРИЛ + МЕТАЛЛ
+            strong АКРИЛ + ПВХ
             div
                 button(class="more" onclick="moveTo('./font/akmet')") подробнее
                 button(class="buy" ) заказать
         div(class="elem")
             img
             br
-            strong АКРИЛ
+            strong ПОЛИКАРБОНАТ + ПВХ
             div
                 button(class="more") подробнее
                 button(class="buy") заказать
         div(class="elem")
             img
             br
-            strong АКРИЛ + ПВХ+ КОНТРАЖУР
+            strong МЕТАЛ. ПРОФИЛЬ + БАННЕР
             div
                 button(class="more") подробнее
                 button(class="buy") заказать
         div(class="elem")
             img
             br
-            strong МЕТАЛЛ + КОНТРАЖУР
+            strong МЕТАЛ. ПРОФИЛЬ + АКРИЛ
             div
                 button(class="more") подробнее
                 button(class="buy") заказать
         div(class="elem")
             img
             br
-            strong АКРИЛ + ПВХ
+            strong МЕТАЛ. ПРОФИЛЬ + ПВХ
             div
                 button(class="more") подробнее
                 button(class="buy") заказать
         div(class="elem")
             img
             br
-            strong ПВХ - КОНТРАЖУР
-            div
-                button(class="more") подробнее
-                button(class="buy") заказать
-        div(class="elem")
-            img
-            br
-            strong ОТКРЫТЫЙ НЕОН
+            strong МЕТАЛ. ПРОФИЛЬ + ПОЛИКАРБОНАТ
             div
                 button(class="more") подробнее
                 button(class="buy") заказать
@@ -63,17 +57,25 @@ block fonts
             div
                 button(class="more") подробнее
                 button(class="buy") заказать
+        div(class="elem")
+            img
+            br
+            strong КОМПОЗИТ + ПРОРЕЗКА
+            div
+                button(class="more") подробнее
+                button(class="buy") заказать
+        div(class="elem")
+            img
+            br
+            strong КОМПОЗИТ + ИНКРУСТАЦИЯ
+            div
+                button(class="more") подробнее
+                button(class="buy") заказать
 
-
-
-
-
-
-
+    div(class="title")
+        button(class="calc") калькулятор
 
 block tab
-    div(class="title")
-        button(class="calc") КАЛЬКУЛЯТОР
 
     table
         tr(class="main blue")
@@ -103,11 +105,12 @@ block tab
         tr(class="blue")
             td ОТКРЫТЫЕ СВЕТОДИОДЫ
             td от 15 000 руб/м2
+
 block info
     div(id="smth")
         img
         div
-            p Объемные буквы – это яркая и эффективная наружная реклама. На данный момент это самые востребованные конструкции. Они не только привлекают внимание потенциальных клиентов, но и  являются единственным разрешенным  видом наружной рекламы в столице в соответствии с постановлением правительства г. Москва № 902-ПП. В подавляющем большинстве на фасады зданий устанавливаются объемные символы и важно сделать так, чтобы именно ваша вывеска была самой запоминающейся и выделялась на фоне других конструкций.
+            p Световой короб или лайтбокс — объемная рекламная конструкция с внутренней подсветкой. Форма часто прямоугольная, но может быть и более сложной. Лицевая поверхность может светиться как вся полностью, так и выборочно (например, только буквы). Лайтбоксами называют и огромные конструкции на весь фасад здания, и ультратонкие панели в окнах витрин с возможность замены изображения. Преимущество - цена ниже, чем у световых букв, и зависит только от квадратуры короба. Недостатки — лайтбоксы на улице все чаще запрещает МосКомАрхитектура.
             div
                 button(class="buy-tel")
                     div
@@ -178,9 +181,6 @@ block info
             div
                 price ≈ 15.000 руб
                 button заказать
-
-
-
 
 
 include ../footer

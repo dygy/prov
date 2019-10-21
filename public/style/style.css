@@ -13,6 +13,10 @@
     #dropdown ul li:hover {
       color: #FDB13E; }
 
+body {
+  width: 100vw;
+  margin: 0; }
+
 #header {
   font-family: "Geom", serif !important;
   color: white;
@@ -64,7 +68,7 @@
   position: relative; }
 
 #logo {
-  background-image: url("../img/Лого 100px.png");
+  background-image: url("../../img/Лого 100px.png");
   height: 100px !important;
   width: 100px !important;
   border: none;
@@ -156,8 +160,7 @@
       margin: 14px 10% 0 0; }
     #footer #ftr-scnd #map {
       max-width: 150px;
-      max-height: 300px;
-      background-image: url("../img/map.png"); }
+      max-height: 300px; }
     #footer #ftr-scnd #info {
       width: 400px; }
 
@@ -370,11 +373,7 @@
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
 
-body {
-  width: 100vw;
-  margin: 0; }
-
-#body {
+s#body {
   width: 100vw;
   height: 390px; }
 
