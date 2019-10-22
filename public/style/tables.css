@@ -1,0 +1,21 @@
+@import url(kron.css);
+#font-flex {
+  flex-wrap: wrap; }
+  #font-flex .elem {
+    flex: 1 0 25%;
+    max-width: 300px !important; }
+    #font-flex .elem img {
+      margin-left: 40px;
+      margin-right: 10px; }
+    #font-flex .elem div strong {
+      font-size: 14px; }
+
+.calc {
+  background-color: white; }
+
+#flex-box .elem {
+  margin: 20px 20px 0 !important; }
+  #flex-box .elem img {
+    height: 200px !important; }
+
+/*# sourceMappingURL=tables.css.map */
