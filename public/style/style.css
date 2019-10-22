@@ -24,7 +24,7 @@
       font-size: 16px !important; } }
 
 body {
-  width: 101vw;
+  width: 100vw;
   margin: 0; }
 
 #header {
@@ -55,8 +55,11 @@ body {
       font-size: 10pt; }
   #header #second {
     display: table;
-    width: 100%; }
+    width: 100%;
+    max-width: 100%; }
     #header #second ul {
+      text-align: center;
+      max-width: 100%;
       padding-left: 4px;
       width: 100%;
       display: inline-flex;
@@ -112,6 +115,30 @@ body {
     border: none;
     background: none;
     height: 20px; }
+
+@media (max-width: 846px) {
+  #first #logo-warp {
+    margin: 0 0 0 0 !important; }
+  #second ul li {
+    font-size: 13px !important;
+    margin: 0 15px 0 0  !important;
+    width: 87px; }
+  #second ul #contact {
+    margin: 0 0 0 0 !important; }
+  #second ul #burger-li {
+    width: 30px !important; }
+  #second ul #large-word {
+    width: 155px !important; } }
+
+@media (max-width: 616px) {
+  #first #logo-warp {
+    margin-top: 10px !important;
+    width: 95px !important; }
+    #first #logo-warp div {
+      margin: 0 10px 0 !important;
+      height: 65px !important;
+      width: 65px !important;
+      background-size: 65px 65px; } }
 
 #footer {
   position: relative;
@@ -192,6 +219,35 @@ body {
   #ftr-frst button {
     width: 220px !important; } }
 
+@media (max-width: 936px) {
+  #ftr-frst div {
+    margin: 0 2% 0 0 !important; }
+  #ftr-frst h1 {
+    font-size: 25px; }
+  #ftr-frst button {
+    width: 220px !important; }
+  #ftr-frst .phone {
+    margin: 0 0 0 0; } }
+
+@media (max-width: 904px) {
+  #ftr-frst #buttons {
+    display: none; } }
+
+@media (max-width: 778px) {
+  #ftr-scnd #map img {
+    width: 200px !important;
+    height: 100px !important; }
+  #ftr-frst #faq ul h4 {
+    width: 170px !important; }
+  ul {
+    padding-left: 20px !important; }
+  phone {
+    font-size: 17px !important; }
+  email {
+    font-size: 14px !important; }
+  adr {
+    font-size: 14px !important; } }
+
 #form {
   padding-bottom: 20px;
   background-color: #FCB600;
@@ -250,6 +306,9 @@ body {
       padding-bottom: 10px;
       box-shadow: 2px 2px 3px black; }
 
+html {
+  overflow-x: hidden; }
+
 #serve #kach {
   height: 200px;
   display: flex;
@@ -300,13 +359,14 @@ body {
     padding-top: 40px;
     display: flex; }
     #passport #pass-flex #pass-logo {
-      margin-right: 40px;
+      margin-right: 20px;
       margin-left: 40px;
       background-color: black;
       min-width: 300px;
       height: 200px;
       margin-bottom: 40px; }
     #passport #pass-flex text {
+      margin-right: 32px;
       margin-bottom: 40px;
       max-width: 70%;
       position: relative;
@@ -394,6 +454,8 @@ body {
   height: 300px; }
 
 @media (max-width: 1107px) {
+  #serve #kach div {
+    margin: 0 5% 0; }
   #circus div div {
     margin-left: 5px !important;
     width: 100px !important;
@@ -402,6 +464,18 @@ body {
     margin-top: -20px; }
   #usl div {
     margin: 0 3% !important; } }
+
+@media (max-width: 819px) {
+  #circus div {
+    margin: 0 1% 0 !important; }
+    #circus div div {
+      margin-left: 1px !important;
+      width: 70px !important;
+      height: 70px !important; }
+  #circus play {
+    margin-top: -40px; }
+  #usl div {
+    margin: 0 3px !important; } }
 
 @font-face {
   font-family: 'Open Sans';

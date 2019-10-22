@@ -1,3 +1,5 @@
+html
+  overflow-x: hidden
 #serve
   #kach
     height: 200px
@@ -47,13 +49,14 @@
     padding-top: 40px
     display: flex
     #pass-logo
-      margin-right: 40px
+      margin-right: 20px
       margin-left: 40px
       background-color: black
       min-width: 300px
       height: 200px
       margin-bottom: 40px
     text
+      margin-right: 32px
       margin-bottom: 40px
       max-width: 70%
       position: relative
@@ -137,6 +140,10 @@
   height: 300px
 
 @media ( max-width : 1107px )
+  #serve
+    #kach
+      div
+        margin: 0 5% 0
   #circus
     div
       div
@@ -149,3 +156,17 @@
   #usl
     div
       margin: 0 3% !important
+@media ( max-width : 819px )
+  #circus
+    div
+      margin: 0 1% 0 !important
+      div
+        margin-left: 1px !important
+        width: 70px !important
+        height: 70px !important
+    play
+      margin-top: -40px
+
+  #usl
+    div
+      margin: 0 3px !important
