@@ -49,10 +49,10 @@ body {
         width: 100%; }
     #header #first img {
       float: left;
-      width: 40px;
-      height: 40px; }
+      width: 20px;
+      height: 20px; }
     #header #first bold {
-      font: 15pt boldko; }
+      font: 15pt bold; }
     #header #first mini {
       font-size: 10pt; }
   #header #second {
