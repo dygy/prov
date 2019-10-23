@@ -1,3 +1,7 @@
+.soc-ico
+  display: flex
+.lowscreen
+  display: none
 #footer
   position: relative
   bottom: 0
@@ -15,9 +19,6 @@
       h1
         text-shadow: white 0.5px -0.5px 0.5px
         margin: 0
-      #soc-ico
-        margin-top: 10px
-        display: flex
     #faq
       padding-top: 30px
       ul
@@ -81,6 +82,9 @@
     button
       width: 220px!important
 @media ( max-width : 936px )
+  #ftr-scnd
+  div
+    margin: 0 2% 0 0!important
   #ftr-frst
     div
       margin: 0 2% 0 0!important
@@ -91,6 +95,12 @@
     .phone
       margin: 0 0 0 0
 @media ( max-width : 904px )
+  #map
+    display: none
+  #soc
+    display: none
+  .lowscreen
+    display: block
   #ftr-frst
    #buttons
      display: none

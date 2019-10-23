@@ -42,7 +42,7 @@ block room-ads
             div
             div
         div(id="room-two")
-            div
+            div(onclick="moveTo('/infstands')")
             div
             div
             div
@@ -88,7 +88,7 @@ block serve
                         li НАВИГАЦИЯ
                         li СВЕТОВЫЕ ПАНЕЛИ
                         li ШИРОКОФОРМАТ
-                        li ИНФО СТЕНДЫ
+                        li(onclick="moveTo('/infostands')") ИНФО СТЕНДЫ
             div(class="polaroid")
                 img
                 p ВЫСТАВКИ ПРЕЗЕНТАЦИИ

@@ -4,6 +4,8 @@
   flex-wrap: wrap;
   flex-direction: row;
   max-width: 100%; }
+  #dropdown .disable {
+    color: darkkhaki; }
   #dropdown ul {
     margin: 10px 10% 0 0; }
     #dropdown ul li span {
@@ -25,10 +27,10 @@
 
 body {
   width: 100vw;
-  margin: 0; }
+  margin: 0;
+  font-family: "Geom", serif !important; }
 
 #header {
-  font-family: "Geom", serif !important;
   color: white;
   background: black;
   width: 100%;
@@ -140,6 +142,12 @@ body {
       width: 65px !important;
       background-size: 65px 65px; } }
 
+.soc-ico {
+  display: flex; }
+
+.lowscreen {
+  display: none; }
+
 #footer {
   position: relative;
   bottom: 0;
@@ -157,9 +165,6 @@ body {
       #footer #ftr-frst #soc h1 {
         text-shadow: white 0.5px -0.5px 0.5px;
         margin: 0; }
-      #footer #ftr-frst #soc #soc-ico {
-        margin-top: 10px;
-        display: flex; }
     #footer #ftr-frst #faq {
       padding-top: 30px; }
       #footer #ftr-frst #faq ul {
@@ -220,6 +225,8 @@ body {
     width: 220px !important; } }
 
 @media (max-width: 936px) {
+  div {
+    margin: 0 2% 0 0 !important; }
   #ftr-frst div {
     margin: 0 2% 0 0 !important; }
   #ftr-frst h1 {
@@ -230,6 +237,12 @@ body {
     margin: 0 0 0 0; } }
 
 @media (max-width: 904px) {
+  #map {
+    display: none; }
+  #soc {
+    display: none; }
+  .lowscreen {
+    display: block; }
   #ftr-frst #buttons {
     display: none; } }
 
@@ -249,6 +262,8 @@ body {
     font-size: 14px !important; } }
 
 table {
+  margin-top: 20px;
+  margin-bottom: 20px;
   min-width: 400px;
   min-height: 200px;
   display: flex;
@@ -286,7 +301,7 @@ table {
     margin-right: 10px; }
 
 #smth {
-  margin-left: 40px;
+  margin-left: 40px !important;
   margin-top: 30px;
   display: flex; }
   #smth img {
@@ -352,6 +367,7 @@ table {
       background-color: #FCB600; }
 
 #flex-box {
+  justify-content: center;
   margin-left: 16%;
   margin-top: 40px;
   display: flex;

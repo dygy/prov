@@ -4,21 +4,33 @@
   flex-wrap: wrap;
   flex-direction: row;
   max-width: 100%; }
+  #dropdown .disable {
+    color: darkkhaki; }
   #dropdown ul {
     margin: 10px 10% 0 0; }
     #dropdown ul li span {
-      font: 18px bold;
+      font: 18px bold !important;
       position: relative;
       left: 20px; }
     #dropdown ul li:hover {
       color: #FDB13E; }
 
+@media (max-width: 1242px) {
+  #dropdown ul {
+    margin: 10px 9% 0 0 !important; } }
+
+@media (max-width: 1065px) {
+  #dropdown ul {
+    margin: 10px 3% 0 0 !important; }
+    #dropdown ul li span {
+      font-size: 16px !important; } }
+
 body {
   width: 100vw;
-  margin: 0; }
+  margin: 0;
+  font-family: "Geom", serif !important; }
 
 #header {
-  font-family: "Geom", serif !important;
   color: white;
   background: black;
   width: 100%;
@@ -45,8 +57,11 @@ body {
       font-size: 10pt; }
   #header #second {
     display: table;
-    width: 100%; }
+    width: 100%;
+    max-width: 100%; }
     #header #second ul {
+      text-align: center;
+      max-width: 100%;
       padding-left: 4px;
       width: 100%;
       display: inline-flex;
@@ -103,16 +118,45 @@ body {
     background: none;
     height: 20px; }
 
+@media (max-width: 846px) {
+  #first #logo-warp {
+    margin: 0 0 0 0 !important; }
+  #second ul li {
+    font-size: 13px !important;
+    margin: 0 15px 0 0  !important;
+    width: 87px; }
+  #second ul #contact {
+    margin: 0 0 0 0 !important; }
+  #second ul #burger-li {
+    width: 30px !important; }
+  #second ul #large-word {
+    width: 155px !important; } }
+
+@media (max-width: 616px) {
+  #first #logo-warp {
+    margin-top: 10px !important;
+    width: 95px !important; }
+    #first #logo-warp div {
+      margin: 0 10px 0 !important;
+      height: 65px !important;
+      width: 65px !important;
+      background-size: 65px 65px; } }
+
+.soc-ico {
+  display: flex; }
+
+.lowscreen {
+  display: none; }
+
 #footer {
   position: relative;
   bottom: 0;
   color: white;
   background: black;
-  width: 100vw;
+  width: 101vw;
   min-height: 340px; }
   #footer #ftr-frst {
-    position: relative;
-    left: 10px;
+    padding-left: 10px;
     display: flex; }
     #footer #ftr-frst div {
       margin: 0 10% 0 0; }
@@ -121,9 +165,6 @@ body {
       #footer #ftr-frst #soc h1 {
         text-shadow: white 0.5px -0.5px 0.5px;
         margin: 0; }
-      #footer #ftr-frst #soc #soc-ico {
-        margin-top: 10px;
-        display: flex; }
     #footer #ftr-frst #faq {
       padding-top: 30px; }
       #footer #ftr-frst #faq ul {
@@ -135,6 +176,7 @@ body {
         #footer #ftr-frst #faq ul li {
           text-decoration: underline #FDB13E; }
     #footer #ftr-frst .phone {
+      white-space: nowrap;
       padding-top: 30px;
       margin: 13px 0 0 0; }
       #footer #ftr-frst .phone phone {
@@ -153,8 +195,7 @@ body {
         font: 12px bold;
         text-transform: uppercase; }
   #footer #ftr-scnd {
-    position: relative;
-    left: 10px;
+    padding-left: 10px;
     display: flex; }
     #footer #ftr-scnd div {
       margin: 14px 10% 0 0; }
@@ -163,6 +204,62 @@ body {
       max-height: 300px; }
     #footer #ftr-scnd #info {
       width: 400px; }
+
+@media (max-width: 1325px) {
+  phone {
+    display: inline !important;
+    font-size: 22px !important; }
+  #ftr-frst div {
+    margin: 0 7% 0 0 !important; } }
+
+@media (max-width: 1152px) {
+  #ftr-frst div {
+    margin: 0 5% 0 0 !important; } }
+
+@media (max-width: 1069px) {
+  #ftr-frst div {
+    margin: 0 3% 0 0 !important; }
+  #ftr-frst h1 {
+    font-size: 25px; }
+  #ftr-frst button {
+    width: 220px !important; } }
+
+@media (max-width: 936px) {
+  div {
+    margin: 0 2% 0 0 !important; }
+  #ftr-frst div {
+    margin: 0 2% 0 0 !important; }
+  #ftr-frst h1 {
+    font-size: 25px; }
+  #ftr-frst button {
+    width: 220px !important; }
+  #ftr-frst .phone {
+    margin: 0 0 0 0; } }
+
+@media (max-width: 904px) {
+  #map {
+    display: none; }
+  #soc {
+    display: none; }
+  .lowscreen {
+    display: block; }
+  #ftr-frst #buttons {
+    display: none; } }
+
+@media (max-width: 778px) {
+  #ftr-scnd #map img {
+    width: 200px !important;
+    height: 100px !important; }
+  #ftr-frst #faq ul h4 {
+    width: 170px !important; }
+  ul {
+    padding-left: 20px !important; }
+  phone {
+    font-size: 17px !important; }
+  email {
+    font-size: 14px !important; }
+  adr {
+    font-size: 14px !important; } }
 
 table {
   min-width: 400px;

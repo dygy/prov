@@ -2,6 +2,18 @@ const express = require('express');
 const router = express.Router();
 
 /* GET home page. */
+router.get('/contacts', function(req, res, next) {
+    res.render('./pages/contact', { title: 'Auth' });
+});
+
+router.get('/infstands', function(req, res, next) {
+    res.render('./pages/infstands', { title: 'Auth' });
+});
+
+router.get('/nolight', function(req, res, next) {
+    res.render('./pages/nolight', { title: 'Auth' });
+});
+
 router.get('/tables', function(req, res, next) {
     res.render('./pages/tables', { title: 'Auth' });
 });
