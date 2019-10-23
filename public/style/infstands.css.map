@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "infstands.css",
+	"sources": [
+		"infstands.sass"
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAP,eAAO;AACP,AACE,KADG,CACH,GAAG,CAAC;EACF,UAAU,EAAE,eAAe,GAAG"
+}
