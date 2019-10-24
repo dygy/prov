@@ -13,6 +13,9 @@
 .calc {
   background-color: white; }
 
+#flex-box p {
+  margin-top: 10px !important; }
+
 #flex-box .elem {
   margin: 20px 20px 0 !important; }
   #flex-box .elem img {

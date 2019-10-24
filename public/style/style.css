@@ -49,10 +49,10 @@ body {
         width: 100%; }
     #header #first img {
       float: left;
-      width: 40px;
-      height: 40px; }
+      width: 20px;
+      height: 20px; }
     #header #first bold {
-      font: 15pt boldko; }
+      font: 15pt bold; }
     #header #first mini {
       font-size: 10pt; }
   #header #second {
@@ -336,6 +336,9 @@ html {
     padding-top: 120px; }
 
 #serve #usl {
+  max-width: 100%;
+  flex-wrap: wrap;
+  flex-flow: row;
   display: flex;
   justify-content: center; }
   #serve #usl div {
@@ -500,14 +503,15 @@ html {
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
 
-s#body {
+#body {
   width: 100vw;
   height: 390px; }
 
 .polaroid {
   position: relative;
+  border-radius: 10px;
   width: 220px;
-  top: 10px; }
+  max-width: 220px; }
 
 .polaroid img {
   width: 170px;

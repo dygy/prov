@@ -49,10 +49,10 @@ body {
         width: 100%; }
     #header #first img {
       float: left;
-      width: 40px;
-      height: 40px; }
+      width: 20px;
+      height: 20px; }
     #header #first bold {
-      font: 15pt boldko; }
+      font: 15pt bold; }
     #header #first mini {
       font-size: 10pt; }
   #header #second {
@@ -262,6 +262,8 @@ body {
     font-size: 14px !important; } }
 
 table {
+  margin-top: 20px;
+  margin-bottom: 20px;
   min-width: 400px;
   min-height: 200px;
   display: flex;
@@ -299,10 +301,11 @@ table {
     margin-right: 10px; }
 
 #smth {
-  margin-left: 40px;
+  margin-left: 40px !important;
   margin-top: 30px;
   display: flex; }
   #smth img {
+    margin-left: 20px;
     min-width: 400px;
     height: 500px; }
   #smth div {
@@ -312,6 +315,25 @@ table {
       padding-right: 40px;
       font-size: 20px; }
     #smth div div {
+      display: flex;
+      justify-content: center; }
+
+.smth {
+  margin-bottom: 40px;
+  margin-left: 40px !important;
+  margin-top: 30px;
+  display: flex; }
+  .smth img {
+    margin-left: 20px;
+    min-width: 400px;
+    height: 400px; }
+  .smth div {
+    margin-left: 15px; }
+    .smth div p {
+      padding-left: 30px;
+      padding-right: 40px;
+      font-size: 20px; }
+    .smth div div {
       display: flex;
       justify-content: center; }
 
@@ -357,6 +379,7 @@ table {
       background-color: #FCB600; }
 
 #flex-box {
+  justify-content: center;
   margin-left: 16%;
   margin-top: 40px;
   display: flex;

@@ -45,7 +45,7 @@ block room-ads
             div(onclick="moveTo('/infstands')")
             div
             div
-            div
+            div(onclick="moveTo('/presswall')")
 block take
     div(id="but-take")
         button
@@ -88,13 +88,13 @@ block serve
                         li НАВИГАЦИЯ
                         li СВЕТОВЫЕ ПАНЕЛИ
                         li ШИРОКОФОРМАТ
-                        li(onclick="moveTo('/infostands')") ИНФО СТЕНДЫ
+                        li(onclick="moveTo('/infstands')") ИНФО СТЕНДЫ
             div(class="polaroid")
                 img
                 p ВЫСТАВКИ ПРЕЗЕНТАЦИИ
                 div(class="serv-list")
                     ul
-                        li ПРЕСС-ВОЛЛЫ
+                        li(onclick="moveTo('/presswall')") ПРЕСС-ВОЛЛЫ
                         li РОЛЛАПЫ
                         li ШТЕНДЕРЫ
                         li СТЕНДЫ

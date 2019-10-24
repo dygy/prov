@@ -2,6 +2,30 @@ const express = require('express');
 const router = express.Router();
 
 /* GET home page. */
+router.get('/placnposts', function(req, res, next) {
+    res.render('./pages/placnposts', { title: 'Auth' });
+});
+
+router.get('/setups', function(req, res, next) {
+    res.render('./pages/setups', { title: 'Auth' });
+});
+
+router.get('/banners', function(req, res, next) {
+    res.render('./pages/banners', { title: 'Auth' });
+});
+
+router.get('/presswall', function(req, res, next) {
+    res.render('./pages/presswall', { k: 'Auth' });
+});
+
+router.get('/navs', function(req, res, next) {
+    res.render('./pages/navs', { title: 'Auth' });
+});
+
+router.get('/serves', function(req, res, next) {
+    res.render('./pages/serves', { title: 'Auth' });
+});
+
 router.get('/contacts', function(req, res, next) {
     res.render('./pages/contact', { title: 'Auth' });
 });
