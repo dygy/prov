@@ -1,0 +1,97 @@
+link(rel='stylesheet', href='/style/input.css')
+script(src='../js/index.js')
+script(src='../js/Global.js')
+include ../header
+include ../dropdown
+
+block flexbox
+    div(class="title")
+        h1 ВХОДНЫЕ ГРУППЫ
+    div(id="font-flex")
+        div(class="elem")
+            div
+                strong НАБОР 1
+            br
+            img
+            p цена несветовой: от 20.000 руб
+            div
+                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="buy" ) заказать
+        div(class="elem")
+            div
+                strong НАБОР 2
+            br
+            img
+            p цена несветовой: от 20.000 руб
+            div
+                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="buy" ) заказать
+        div(class="elem")
+            div
+                strong НАБОР 3
+            br
+            img
+            p цена несветовой: от 20.000 руб
+            div
+                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="buy" ) заказать
+        div(class="elem")
+            div
+                strong НАБОР 4
+            br
+            img
+            p цена несветовой: от 20.000 руб
+            div
+                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="buy" ) заказать
+
+
+block info
+    div(id="smth")
+        img
+        div
+            p Входная группа – это комплекс архитектурных и технических элементов, устанавливаемых на входе в здание. В ее состав включаются не только входные двери, но и тамбур, элементы холла (включая пункт охраны), площадка перед входом, ступеньки с пандусом, навес, перила, колонны и различные декоративные архитектурные элементы.
+            div
+                button(class="buy-tel")
+                    div
+                        text заказать
+                        img
+    div(id="flex-box")
+        div(class="elem")
+            img
+            br
+            div
+                price ≈ 15.000 руб
+                button заказать
+        div(class="elem")
+            img
+            br
+            div
+                price ≈ 15.000 руб
+                button заказать
+        div(class="elem")
+            img
+            br
+            div
+                price ≈ 15.000 руб
+                button заказать
+        div(class="elem")
+            img
+            br
+            div
+                price ≈ 15.000 руб
+                button заказать
+        div(class="elem")
+            img
+            br
+            div
+                price ≈ 15.000 руб
+                button заказать
+        div(class="elem")
+            img
+            br
+            div
+                price ≈ 15.000 руб
+                button заказать
+
+include ../footer

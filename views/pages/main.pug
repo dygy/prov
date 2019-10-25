@@ -37,14 +37,14 @@ block room-ads
         div(class="title")
             h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ ИНТЕРЬЕРНОЙ РЕКЛАМЫ
         div(id="room-one")
+            div(onclick="moveTo('/navs')")
             div
-            div
-            div
-            div
-        div(id="room-two")
             div(onclick="moveTo('/infstands')")
+            div(onclick="moveTo('/stickers')")
+        div(id="room-two")
             div
-            div
+            div(onclick="moveTo('/signboards')")
+            div(onclick="moveTo('/placnposts')")
             div(onclick="moveTo('/presswall')")
 block take
     div(id="but-take")

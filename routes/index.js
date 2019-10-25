@@ -2,6 +2,25 @@ const express = require('express');
 const router = express.Router();
 
 /* GET home page. */
+router.get('/test', function(req, res, next) {
+    res.render('./index', { title: 'Auth' });
+});
+router.get('/inputgroup', function(req, res, next) {
+    res.render('./pages/inputgroup', { title: 'Auth' });
+});
+
+router.get('/stickers', function(req, res, next) {
+    res.render('./pages/stickers', { title: 'Auth' });
+});
+
+router.get('/signboards', function(req, res, next) {
+    res.render('./pages/signboards', { title: 'Auth' });
+});
+
+router.get('/autobrand', function(req, res, next) {
+    res.render('./pages/autobrand', { title: 'Auth' });
+});
+
 router.get('/placnposts', function(req, res, next) {
     res.render('./pages/placnposts', { title: 'Auth' });
 });
