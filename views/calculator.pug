@@ -1,0 +1,74 @@
+link(rel='stylesheet', href='/style/calc.css')
+script(src='../js/index.js')
+script(src='../js/Global.js')
+
+include header
+include dropdown
+block stand
+    div(class="center")
+        h1
+            text КАЛЬКУЛЯТОР
+            br
+            text СТЕНДЫ
+        p тип изделия:
+        div(class="slider selectable")
+            div(class="elem")
+            div(class="elem")
+            div(class="elem")
+            div(class="elem")
+            div(class="elem")
+            div(class="elem")
+        p размеры:
+        div
+            input
+        p изображение:
+        div(class="selector selectable")
+            div(class="elem") 360dpi
+            div(class="elem") 720dpi
+            div(class="elem") пленка
+        p пробковая панель (если есть):
+        div
+            input
+        p магнитная панель (если есть):
+        div
+            input
+        p количество карманов:
+        div(class="selector")
+            div(class="elem")
+                text А3
+            div(class="elem")
+                text А4
+            div(class="elem")
+                text А5
+            div(class="elem")
+                text перекидные
+            div(class="elem")
+                text другие
+        div(class="selector")
+             div(class="elem")
+                 text шт
+             div(class="elem")
+                 text шт
+             div(class="elem")
+                text шт
+             div(class="elem")
+                 text шт
+             div(class="elem")
+                 text шт
+        div(class="price-flex")
+            div
+                button требования к макетам
+            div
+                p ориентировочная цена:
+                div
+                    text с НДС
+                    text без НДС
+                div(class="orange")
+            div
+                button шаблон макета
+        div
+            button(class="buy-tel")
+                div
+                    text заказать
+                    img
+include footer

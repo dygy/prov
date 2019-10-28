@@ -5,13 +5,22 @@ include ../header
 include ../dropdown
 
 block street
-    div(id="street") тут будет улица и машина
+    div(id="street")
+        div(class="mark" id="one")
+        div(class="mark" id="two")
+        div(class="mark" id="three")
+        div(class="mark" id="four")
+        div(class="mark" id="five")
+        div(class="mark" id="six")
 block ins-ads
 div(class="ads")
     div(class="title")
         h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ НАРУЖНОЙ РЕКЛАМЫ
     div(id="ins-one")
-        div
+        div(onclick="moveTo('/light')")
+            include ../../public/img/1.svg
+            text световые
+            text короба
         div
         div
         div
@@ -31,7 +40,13 @@ div(class="ads")
         div
         div
 block room
-    div(id="room") тут будет стенд-комната
+    div(id="room")
+        div(class="mark" id="tone")
+        div(class="mark" id="ttwo")
+        div(class="mark" id="tthree")
+        div(class="mark" id="tfour")
+        div(class="mark" id="tfive")
+        div(class="mark" id="tsix")
 block room-ads
     div(class="ads")
         div(class="title")
@@ -59,7 +74,7 @@ block serve
             h1 УСЛУГИ ПО ТЕМАМ
         div(id="usl")
             div(class="polaroid")
-                img
+                img(src="/img/streetad.jpg")
                 p ГОРОДСКАЯ РЕКЛАМА
                 div(class="serv-list")
                     ul
@@ -69,7 +84,7 @@ block serve
                         li КРОНШТЕЙНЫ
                         li ПИЛОНЫ
             div(class="polaroid")
-                img
+                img(src="/img/enters.jpg")
                 p ВХОДНЫЕ ГРУППЫ
                 div(class="serv-list")
                     ul
@@ -80,7 +95,7 @@ block serve
                         li ТАБЛИЧКИ
 
             div(class="polaroid")
-                img
+                img(src="/img/interiors.jpg")
                 p ОФОРМЛЕНИЕ ИНТЕРЬЕРА
                 div(class="serv-list")
                     ul
@@ -90,7 +105,7 @@ block serve
                         li ШИРОКОФОРМАТ
                         li(onclick="moveTo('/infstands')") ИНФО СТЕНДЫ
             div(class="polaroid")
-                img
+                img(src="/img/exhibition.jpg")
                 p ВЫСТАВКИ ПРЕЗЕНТАЦИИ
                 div(class="serv-list")
                     ul

@@ -9,6 +9,7 @@ const http = require('http');
 const server = http.createServer(app);
 const indexRouter = require('./routes/index');
 const fontRouter = require('./routes/font');
+const calcRouter = require('./routes/calc');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -25,4 +26,5 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/font', fontRouter);
+app.use('/calc', calcRouter);
 server.listen(process.env.PORT || 3000,'0.0.0.0', () => console.log('Example app listening on port 3000!'));

@@ -1,0 +1,55 @@
+@import "everypage/hdr"
+@import "everypage/dropdown"
+@import "everypage/footer"
+@import "everypage/button"
+.selectable
+  .elem:active
+    border-color: #ffb800 !important
+
+.center
+  display: flex
+  flex-flow: column
+  justify-content: center
+  text-align: center
+  margin-top: 60px
+  margin-bottom: 100px
+  .selector
+    justify-content: center
+    display: flex
+    .elem
+      width: 70px
+      height: 23px
+      margin: 10px 3% 0
+  .slider
+    display: flex
+    justify-content: center
+    flex-flow: row
+    max-width: 100%
+    .elem
+      margin: 0px 2% 0
+      background-color: black
+      width: 70px
+      height: 70px
+      border-width: 2px !important
+  .price-flex
+    display: flex
+    flex-flow: row
+    justify-content: center
+    div
+      margin: 0 3% 0
+    button
+      margin-top: 10px
+      background-color: #abd4c7
+      color: white
+      text-shadow: black 1px 1px 1px
+      border-width: 0
+      width: 150px
+      height: 30px
+input, .elem
+  outline: none
+  border-radius: 20px
+  border: #abd4c7 1px solid
+input
+  text-align: center
+  height: 30px
+  width: 160px

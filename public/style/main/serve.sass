@@ -1,10 +1,52 @@
-html
-  overflow-x: hidden
+.mark
+  width: 30px
+  height: 30px
+  background-image: url("/img/place.png")
+  background-size: 100% 100%
+  position: relative
+#tone
+  left: 5%
+  top: 25%
+#ttwo
+  left: 23%
+  top: 1%
+#tthree
+  left: 36.5%
+  top: 11%
+#tfour
+  left: 37%
+  top: 30%
+#tfive
+  left: 88%
+  top: 4%
+#tsix
+  left: 60%
+  top: -10%
+
+#one
+ left: 8%
+ top: 54%
+#two
+  left: 19%
+  top: 33%
+#three
+  left: 52%
+  top: 34%
+#four
+  left: 36%
+  top: 35%
+#five
+  left: 96%
+  top: 20%
+#six
+  left: 73%
+  top: 8%
 #serve
   #kach
     height: 200px
     display: flex
-    background-color: black
+    background-image: url("/img/bar.jpg")
+    background-size: 100% 100%
     color: white
     text-align: center
     justify-content: center
@@ -107,7 +149,8 @@ html
     border: none
     box-shadow: 0px 0px 3px black
 #promise
-  background-color: black
+  background-image: url("/img/street.jpg")
+  background-size: 112% 100%
   color: cadetblue
   min-height: 250px
   #promise-text
@@ -127,20 +170,35 @@ html
      justify-content: center
      margin: 10px 3% 0 !important
      div
-       width: 100px
-       height: 150px
-       background-color: black
+       justify-content: center
+       display: flex
+       flex-flow: column
+       width: 200px
+       height: 200px
+       background-color: honeydew
+       svg
+         margin-left: 13%
+       text
+         position: relative
+         bottom: 34px
+     div:hover
+       text
+         color: #82d2d0
+         text-shadow: black 1px 1px 1px
 
 #street
+  background-image: url("/img/main.jpg")
+  background-size: 100% 100%
   color: white
-  background-color: black
-  height: 300px
+  height: 450px
 #room
   color: white
   margin-bottom: 40px
   margin-top: 40px
   background-color: black
-  height: 300px
+  height: 450px
+  background-image: url("/img/room.jpg")
+  background-size: 100% 100%
 
 @media ( max-width : 1107px )
   #serve
@@ -159,6 +217,10 @@ html
   #usl
     div
       margin: 0 3% !important
+@media ( max-width : 850px )
+  #usl
+    div
+      margin: 0 1% 0!important
 @media ( max-width : 819px )
   #circus
     div
@@ -170,6 +232,10 @@ html
     play
       margin-top: -40px
 
+@media ( max-width : 779px )
   #usl
-    div
-      margin: 0 3px !important
+   flex-flow: column !important
+   div
+     margin-left: 40%!important
+     ul
+       margin-left: 20px !important

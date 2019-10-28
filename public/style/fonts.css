@@ -26,6 +26,7 @@
       font-size: 16px !important; } }
 
 body {
+  max-width: 100vw;
   width: 100vw;
   margin: 0;
   font-family: "Geom", serif !important; }
@@ -75,7 +76,7 @@ body {
           width: 20px;
           height: 20px; }
       #header #second ul li:hover {
-        color: #FDB13E; }
+        text-shadow: 1px 0px 3px whitesmoke; }
 
 #logo-warp {
   padding-top: 10px !important;
@@ -159,7 +160,7 @@ body {
     padding-left: 10px;
     display: flex; }
     #footer #ftr-frst div {
-      margin: 0 10% 0 0; }
+      margin: 0 9% 0 0; }
     #footer #ftr-frst #soc {
       padding-top: 30px; }
       #footer #ftr-frst #soc h1 {
@@ -182,7 +183,7 @@ body {
       #footer #ftr-frst .phone phone {
         display: inline;
         color: #FDB13E;
-        font-size: 24px; }
+        font-size: 21px; }
     #footer #ftr-frst #buttons {
       padding-top: 30px; }
       #footer #ftr-frst #buttons button {
@@ -303,6 +304,7 @@ table {
 #smth {
   margin-left: 40px !important;
   margin-top: 30px;
+  margin-bottom: 30px !important;
   display: flex; }
   #smth img {
     margin-left: 20px;
@@ -383,7 +385,6 @@ table {
 
 #flex-box {
   justify-content: center;
-  margin-left: 16%;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
