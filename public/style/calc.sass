@@ -17,20 +17,37 @@
     justify-content: center
     display: flex
     .elem
+      display: table
+      flex-flow: column
+      text-align: center
+      align-content: center
+      align-items: center
+      justify-content: center
       min-width: 70px
-      height: 23px
+      min-height: 23px
       margin: 10px 1% 0
+      text
+        margin-left: 10px
+        margin-right: 10px
+
   .slider
     display: flex
     justify-content: center
     flex-flow: row
     max-width: 100%
     .elem
-      margin: 0px 2% 0
+      margin: 40px 2% 0
       background-color: black
       width: 70px
       height: 70px
       border-width: 2px !important
+      p
+        position: relative
+        top: 70px
+        left: -7px
+        font-size: 13px
+        margin-top: 0
+        width: 120%
   .price-flex
     display: flex
     flex-flow: row
@@ -71,3 +88,56 @@ input
   justify-content: center
   input
     margin: 0 1% 0
+.color
+  justify-content: center
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  margin-left: 15%
+  margin-right: 15%
+  padding-bottom: 40px
+  .elem
+    border: black 1px solid
+    border-radius: 10px
+    width: 30px
+    height: 30px
+    margin: 20px
+    text-align: center
+  .yellow
+    background-color: #fff101
+  .orange
+    background-color: #ffb800
+  .red
+    background-color: #fe0613
+  .pink
+    background-color: #ed028c
+  .purple
+    background-color: #5f2d91
+  .blue
+    background-color: #253f8e
+  .siz
+    background-color: #62b5fd
+  .green
+    background-color: #28da2f
+  .bolot
+    background-color: #28722f
+  .darkg
+    background-color: #000000
+  .brown
+    background-color: #3c001c
+  .ascalc
+    background-color: #81beaa
+  .darkgr
+    background-color: #3b3b3b
+  .gray
+    background-color: #474747
+  .lightgr
+    background-color: #757d7a
+  .gradient
+    background: rgb(131,58,180)
+    background: linear-gradient(90deg, rgb(255, 241, 1) 0% , rgb(254, 6, 19) 35% , rgb(95, 45, 145) 50% , #005cab 65% , rgb(98, 181, 253) 85%, rgb(40, 218, 47) 100%)
+  .smth1 , .smth2  , .smth3 , .smth4 ,   .smth5 , .smth6 ,   .smth7 , .smth8 , .smth9
+    background-color: black
+
+
+

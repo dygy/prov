@@ -48,7 +48,7 @@ router.get('/mobstands', function(req, res, next) {
     res.render('./calculator', { title: 'МОБИЛЬНЫЕ СТЕНДЫ',id:7});
 });
 router.get('/plac\'n\'posts', function(req, res, next) {
-    res.render('./calculator', { title: 'ПЛАКАТЫ И ПОСТЕРЫ',id:8});
+    res.render('./calculator', { title: 'ПЛАКАТЫ / ПОСТЕРЫ',id:8});
 });
 router.get('/autobrand', function(req, res, next) {
     res.render('./calculator', { title: 'АВТОБРЕНДИРОВАНИЕ',id:9});
