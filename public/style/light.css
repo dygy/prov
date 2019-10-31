@@ -164,7 +164,7 @@ body {
   bottom: 0;
   color: white;
   background: black;
-  width: 101vw;
+  width: 100vw;
   min-height: 340px; }
   #footer #ftr-frst {
     padding-left: 10px;
@@ -305,10 +305,17 @@ table {
   height: 40px;
   font-size: 25px; }
   .buy-tel img {
-    margin-left: 1px !important;
+    margin-right: 3px !important;
+    margin-left: 2px !important;
     margin-top: 2px;
     min-width: 30px !important;
     height: 30px !important; }
+  .buy-tel .div-tel {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap; }
 
 #smth {
   margin-left: 40px !important;
@@ -356,7 +363,7 @@ table {
   justify-content: center; }
 
 #font-flex {
-  margin-left: 10%;
+  justify-content: center;
   padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -391,7 +398,6 @@ table {
 
 #flex-box {
   justify-content: center;
-  margin-left: 16%;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;

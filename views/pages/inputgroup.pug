@@ -1,9 +1,9 @@
 link(rel='stylesheet', href='/style/input.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 include ../dropdown
-
 block flexbox
     div(class="title")
         h1 ВХОДНЫЕ ГРУППЫ
@@ -15,7 +15,7 @@ block flexbox
             img
             p цена несветовой: от 20.000 руб
             div
-                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -24,7 +24,7 @@ block flexbox
             img
             p цена несветовой: от 20.000 руб
             div
-                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -33,7 +33,7 @@ block flexbox
             img
             p цена несветовой: от 20.000 руб
             div
-                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -42,7 +42,7 @@ block flexbox
             img
             p цена несветовой: от 20.000 руб
             div
-                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
 
 

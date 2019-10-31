@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/tables.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 include ../dropdown
 
@@ -16,7 +17,7 @@ block flexbox
             p цена несветовой: от 15.000 руб
             p цена световой: от 20.000 руб
             div
-                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -26,7 +27,7 @@ block flexbox
             p цена несветовой: от 15.000 руб
             p цена световой: от 20.000 руб
             div
-                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -36,7 +37,7 @@ block flexbox
             p цена несветовой: от 15.000 руб
             p цена световой: от 20.000 руб
             div
-                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -46,7 +47,7 @@ block flexbox
             p цена несветовой: от 25.000 руб
             p цена световой: от 30.000 руб
             div
-                button(class="calc" onclick="moveTo('./font/akmet')") рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
 
 block info

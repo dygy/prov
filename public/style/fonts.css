@@ -164,7 +164,7 @@ body {
   bottom: 0;
   color: white;
   background: black;
-  width: 101vw;
+  width: 100vw;
   min-height: 340px; }
   #footer #ftr-frst {
     padding-left: 10px;
@@ -305,8 +305,8 @@ table {
   height: 40px;
   font-size: 25px; }
   .buy-tel img {
-    margin-right: 4px !important;
-    margin-left: 1px !important;
+    margin-right: 3px !important;
+    margin-left: 2px !important;
     margin-top: 2px;
     min-width: 30px !important;
     height: 30px !important; }

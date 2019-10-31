@@ -164,7 +164,7 @@ body {
   bottom: 0;
   color: white;
   background: black;
-  width: 101vw;
+  width: 100vw;
   min-height: 340px; }
   #footer #ftr-frst {
     padding-left: 10px;
@@ -416,6 +416,7 @@ body {
     list-style: none; }
   #serve .serv-list li {
     width: 183px;
+    height: 20px;
     padding-right: 10px;
     background-color: #e4e4e4;
     margin-left: -1em;

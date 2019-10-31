@@ -25,6 +25,16 @@
     #dropdown ul li span {
       font-size: 16px !important; } }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
+
+@font-face {
+  font-family: "Geom";
+  src: local("Geom"), url("../font/geom.otf") format("truetype"); }
+
 body {
   max-width: 100vw;
   width: 100vw;
@@ -154,7 +164,7 @@ body {
   bottom: 0;
   color: white;
   background: black;
-  width: 101vw;
+  width: 100vw;
   min-height: 340px; }
   #footer #ftr-frst {
     padding-left: 10px;
@@ -316,11 +326,17 @@ body {
   height: 40px;
   font-size: 25px; }
   .buy-tel img {
-    margin-left: 4px;
+    margin-right: 3px !important;
+    margin-left: 2px !important;
     margin-top: 2px;
     min-width: 30px !important;
-    height: 30px !important;
-    margin-right: 10px; }
+    height: 30px !important; }
+  .buy-tel .div-tel {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap; }
 
 .calc {
   background-color: #ffffff;
