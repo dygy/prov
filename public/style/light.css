@@ -236,8 +236,6 @@ body {
     width: 220px !important; } }
 
 @media (max-width: 936px) {
-  div {
-    margin: 0 2% 0 0 !important; }
   #ftr-frst div {
     margin: 0 2% 0 0 !important; }
   #ftr-frst h1 {
@@ -263,7 +261,7 @@ body {
     height: 100px !important; }
   #ftr-frst #faq ul h4 {
     width: 170px !important; }
-  ul {
+  #ftr-frst ul {
     padding-left: 20px !important; }
   phone {
     font-size: 17px !important; }

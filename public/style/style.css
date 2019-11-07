@@ -79,6 +79,10 @@ body {
       list-style: none;
       text-transform: uppercase; }
       #header #second ul li {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         margin: 0 3% 0 0; }
         #header #second ul li img {
           margin-left: 10px;
@@ -236,8 +240,6 @@ body {
     width: 220px !important; } }
 
 @media (max-width: 936px) {
-  div {
-    margin: 0 2% 0 0 !important; }
   #ftr-frst div {
     margin: 0 2% 0 0 !important; }
   #ftr-frst h1 {
@@ -263,7 +265,7 @@ body {
     height: 100px !important; }
   #ftr-frst #faq ul h4 {
     width: 170px !important; }
-  ul {
+  #ftr-frst ul {
     padding-left: 20px !important; }
   phone {
     font-size: 17px !important; }
