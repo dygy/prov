@@ -2,6 +2,7 @@
 #font-flex {
   flex-wrap: wrap; }
   #font-flex .elem {
+    margin: 10px 2%;
     flex: 1 0 25%;
     max-width: 300px !important; }
     #font-flex .elem img {

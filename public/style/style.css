@@ -26,12 +26,6 @@
       font-size: 16px !important; } }
 
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
-
-@font-face {
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
 
@@ -399,7 +393,8 @@ body {
     margin: 0 8% 0; }
   #serve #kach p {
     width: 100px;
-    padding-top: 120px; }
+    padding-top: 120px;
+    text-shadow: 1px 1px 1px black; }
 
 #serve #usl {
   max-width: 100%;
@@ -440,11 +435,13 @@ body {
     text-align: center; }
   #passport #pass-flex {
     padding-top: 40px;
-    display: flex; }
+    display: flex;
+    margin-bottom: 30px; }
     #passport #pass-flex #pass-logo {
+      background-image: url("../img/herbalife.jpg");
+      background-size: 100% 100%;
       margin-right: 20px;
       margin-left: 40px;
-      background-color: black;
       min-width: 300px;
       height: 200px;
       margin-bottom: 40px; }
@@ -459,8 +456,7 @@ body {
     #passport #circus div {
       margin: 0 2% 0; }
       #passport #circus div div {
-        margin: 0 0 0 0;
-        margin-left: 10px !important;
+        margin: 0 0 0 10px;
         width: 150px;
         height: 150px;
         border-radius: 50%;
@@ -480,11 +476,9 @@ body {
       justify-content: center;
       text-align: center; }
       #passport #circus text mini {
-        width: 50px;
         text-align: center;
         color: gray; }
       #passport #circus text bold {
-        width: 70px;
         font: 20px bold; }
 
 #but-take {
@@ -568,22 +562,35 @@ body {
     margin: 0 1% 0 !important; } }
 
 @media (max-width: 819px) {
-  #circus div {
-    margin: 0 1% 0 !important; }
-    #circus div div {
-      margin-left: 1px !important;
-      width: 70px !important;
-      height: 70px !important; }
-  #circus play {
-    margin-top: -40px; } }
+  #circus {
+    margin-left: 10px; }
+    #circus div {
+      margin: 1px 0.7% 0 !important; }
+      #circus div div {
+        margin-left: 0px !important;
+        width: 60px !important;
+        height: 60px !important; }
+    #circus play {
+      margin-top: -50px;
+      left: -14px; } }
+
+@media (max-width: 619px) {
+  #passport #circus div {
+    margin: 0 0.5% 0 !important; }
+    #passport #circus div div {
+      margin-left: 0.5px !important;
+      width: 50px !important;
+      height: 50px !important; }
+  #passport #circus play {
+    margin-top: -40px;
+    left: 30px; } }
 
 @media (max-width: 779px) {
   #usl {
     flex-flow: column !important; }
     #usl div {
-      margin-left: 40% !important; }
-      #usl div ul {
-        margin-left: 20px !important; } }
+      margin-left: 40% !important;
+      margin-right: 40% !important; } }
 
 #body {
   width: 100vw;
