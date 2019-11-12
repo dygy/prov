@@ -20,24 +20,103 @@ div(class="ads")
             include ../../public/img/1.svg
             text световые
             text короба
-        div
-        div
-        div
+        div(onclick="moveTo('/fonts')")
+            img(src="../img/naruzh/naruzh.png" height=100 width=100)
+            br
+            br
+            text светящиеся
+            text буквы
+        div(onclick="moveTo('/lightpan')")
+            img(src="../img/naruzh/naruzh1.png" height=100 width=120)
+            br
+            br
+            text световая
+            text панель
+
+        div(onclick="moveTo('/kron')")
+            img(src="../img/naruzh/naruzh2.png" height=100 width=120)
+            br
+            br
+            text панель
+            text кронштейн
+
     div(id="ins-two")
+        div(onclick="moveTo('/nolight')")
+            img(src="../img/naruzh/naruzh3.png" height=100 width=120)
+            br
+            br
+            text не световые
+            text вывески
         div
+            img(src="../img/naruzh/naruzh4.png" height=100 width=120)
+            br
+            br
+            text пилоны
         div
-        div
-        div
+            img(src="../img/naruzh/naruzh5.png" height=100 width=120)
+            br
+            br
+            text стенды
+
+        div(onclick="moveTo('/shtender')")
+            img(src="../img/naruzh/naruzh6.png" height=100 width=120)
+            br
+            br
+            text штендеры
+
     div(id="ins-three")
-        div
-        div
-        div
-        div
+        div(onclick="moveTo('/inputgroup')")
+            img(src="../img/naruzh/naruzh7.png" height=100 width=120)
+            br
+            br
+            text входные
+            text группы
+
+        div(onclick="moveTo('/tables')")
+            img(src="../img/naruzh/naruzh8.png" height=100 width=120)
+            br
+            br
+            text таблички
+
+        div(onclick="moveTo('/setups')")
+            img(src="../img/naruzh/naruzh9.png" height=100 width=120)
+            br
+            br
+            text крышные
+            text установки
+
+        div(onclick="moveTo('/autobrands')")
+            img(src="../img/naruzh/naruzh10.png" height=100 width=120)
+            br
+            br
+            text авто-
+            text брендирование
+
     div(id="ins-four")
         div
-        div
-        div
-        div
+            img(src="../img/naruzh/naruzh11.png" height=100 width=120)
+            br
+            br
+            text вывески
+
+        div(onclick="moveTo('/banners')")
+            img(src="../img/naruzh/naruzh12.png" height=100 width=120)
+            br
+            br
+            text баннеры
+
+        div(onclick="moveTo('/placnposts')")
+            img(src="../img/naruzh/naruzh13.png" height=100 width=120)
+            br
+            br
+            text плакаты
+
+        div(onclick="moveTo('/serves')")
+            img(src="../img/naruzh/naruzh14.png" height=100 width=120)
+            br
+            br
+            text услуги
+
 block room
     div(id="room")
         div(class="mark" id="tone")
@@ -52,19 +131,62 @@ block room-ads
             h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ ИНТЕРЬЕРНОЙ РЕКЛАМЫ
         div(id="room-one")
             div(onclick="moveTo('/navs')")
+                img(src="../img/inter/inter9.png" height=100 width=120)
+                br
+                br
+                text навигация
+
             div
+                img(src="../img/inter/Inter3.png" height=100 width=120)
+                br
+                br
+                text выставочные
+                text стенды
+
             div(onclick="moveTo('/infstands')")
+                img(src="../img/inter/Inter4.png" height=100 width=120)
+                br
+                br
+                text инфо
+                text стенды
+
             div(onclick="moveTo('/stickers')")
+                img(src="../img/inter/Inter5.png" height=100 width=120)
+                br
+                br
+                text наклейк
+
         div(id="room-two")
-            div
+            div(onclick="moveTo('/lightpan')")
+                img(src="../img/inter/Inter6.png" height=100 width=120)
+                br
+                br
+                text тонкие
+                text световые
+                text панели
             div(onclick="moveTo('/signboards')")
+                img(src="../img/inter/Inter7.png" height=100 width=120)
+                br
+                br
+                text интерьерные
+                text вывески
             div(onclick="moveTo('/placnposts')")
+                img(src="../img/inter/Inter8.png" height=100 width=120)
+                br
+                br
+                text плакаты
             div(onclick="moveTo('/presswall')")
+                img(src="../img/inter/Inter2.png" height=100 width=120)
+                br
+                br
+                text фотозоны
+                text пресс-воллы
+
 block take
     div(id="but-take")
         button
-            strong Заказать
-            img
+            strong(style="position:relative; top:-6px") Заказать
+            img(src="../img/buy.png" height=20 width=20 style="position:relative; top:-1px")
     div(id="promise")
         div(id="promise-text") ИЗГОТОВИМ ЛЮБУЮ ВЫВЕСКУ ПО ЗАКОНУ ЗА 15 ДНЕЙ СОГЛАСНО 902-ПП
 block serve
@@ -116,12 +238,16 @@ block serve
                         li СТЕНДЫ
         div(id="kach")
             div
+                img(src="/img/white/white1.png" height=80 width=80)
                 p СОБЛЮДЕНИЕ СРОКОВ
             div
+                img(src="/img/white/white2.png" height=80 width=80)
                 p КАЧЕСТВО И ГАРАНТИЯ
             div
+                img(src="/img/white/white3.png" height=80 width=80)
                 p КРЕАТИВНЫЕ ИДЕИ
             div
+                img(src="/img/white/white4.png" height=80 width=80)
                 p(style="color:black") УСТАНОВКА ПО ЗАКОНУ
 block passport
     div(id="passport")
@@ -132,40 +258,39 @@ block passport
             text Вывеска — это технологическая конструкция, поэтому для нее всегда необходим Паспорт-спецификация — документ, в котором есть технические характеристики, а именно: способ крепления конструкции, способ подключения, электрическая мощность, используемые материалы, фотопривязка и дизайн-макет с подробными размерами. Мы даем этот документ к каждой Рекламной конструкции. Он Вам понадобиться для согласования в Торговом  центре, с Управляющей компанией, для предъявления в Префектуру района или Администрацию населенного пункта — если Вы находитесь в Московской области!
         div(id="circus")
             div
-                div
+                div(style="background-image:url('../img/black/black1.png'); background-size: 100% 100%")
                 text
                     bold звонок менеджеру/ заявка
                     p
                     mini свяжитесь с нами, чтобы сделать заказ
             play
             div
-                div
+                div(style="background-image:url('../img/black/black2.png'); background-size: 100% 100%")
                 text
                     bold консультация/ дизайн
                     p
                     mini определитесь с видом изделия, размером и стоимостью
             play
             div
-                div
+                div(style="background-image:url('../img/black/black3.png'); background-size: 100% 100%")
                 text
                     bold платеж/ заключение договора
                     p
                     mini Вы вносите платеж любым удобным вам способом
             play
             div
-                div
+                div(style="background-image:url('../img/black/black4.png'); background-size: 100% 100%")
                 text
                     bold изготовление
                     p
                     mini мы изготовим для Вас все в назначеный срок
             play
             div
-                div
+                div(style="background-image:url('../img/black/black5.png'); background-size: 100% 100%")
                 text
                     bold монтаж
                     p
                     mini мы согласуем вывеску по закону и установим ее
-
 
 block form
     div(id="form")

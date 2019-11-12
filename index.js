@@ -1,3 +1,4 @@
+const sendEmail = require('./mail');
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -27,4 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/font', fontRouter);
 app.use('/calc', calcRouter);
+app.post('/order', function(req, res, next) {
+    sendEmail(req.body);
+    console.log(JSON.stringify(req.body));
+});
 server.listen(process.env.PORT || 3000,'0.0.0.0', () => console.log('Example app listening on port 3000!'));

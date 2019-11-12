@@ -1,29 +1,29 @@
 p тип:
 div(class="selector selectable")
-    div(class="elem") лайтбокс
-    div(class="elem") шашечки такси
-    div(class="elem") пленка
-    div(class="elem") пленка на окна
-    div(class="elem") наклейки
-    div(class="elem") кузов
+    div(class="elem" onclick="request.type='lightbox'" ) лайтбокс
+    div(class="elem" onclick="request.type='taxi'" ) шашечки такси
+    div(class="elem" onclick="request.type='plenka'" ) пленка
+    div(class="elem" onclick="request.type='plenkaWindow'" ) пленка на окна
+    div(class="elem" onclick="request.type='stickers'" ) наклейки
+    div(class="elem" onclick="request.type='kuzov'" ) кузов
 p область печати
 div(class="flex-input")
-    input
-    input
+    input(type="number" id="oblast1" oninput="setInput('oblast1')")
+    input(type="number" id="oblast2" oninput="setInput('oblast2')")
 p пленка:
 div(class="selector selectable")
-    div(class="elem") виниловая
-    div(class="elem") ORACAL
+    div(class="elem" onclick="request.plenka='vinilovaya'") виниловая
+    div(class="elem" onclick="request.plenka='ORACAL'") ORACAL
 p ламинация:
 div(class="selector selectable")
-    div(class="elem") нет
-    div(class="elem") есть
+    div(class="elem" onclick="request.lam='no'") нет
+    div(class="elem" onclick="request.lam='yes'") есть
 p плоттерная резка:
 div(class="selector selectable")
-    div(class="elem")
+    div(class="elem" onclick="request.plot='no'")
         text нет
-    div(class="elem")
+    div(class="elem" onclick="request.plot='yes'")
         text есть
 p тираж:
 div
-    input
+    input(type="number" id="tirazh" oninput="setInput('tirazh')")

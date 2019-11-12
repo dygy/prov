@@ -80,7 +80,6 @@ body {
         margin: 0 3% 0 0; }
         #header #second ul li img {
           margin-left: 10px;
-          background: white;
           width: 20px;
           height: 20px; }
       #header #second ul li:hover {
@@ -390,10 +389,10 @@ body {
   text-align: center;
   justify-content: center; }
   #serve #kach div {
-    margin: 0 8% 0; }
+    margin: 0 8% 0;
+    padding-top: 30px; }
   #serve #kach p {
     width: 100px;
-    padding-top: 120px;
     text-shadow: 1px 1px 1px black; }
 
 #serve #usl {
@@ -459,8 +458,7 @@ body {
         margin: 0 0 0 10px;
         width: 150px;
         height: 150px;
-        border-radius: 50%;
-        background-color: #FDB13E; }
+        border-radius: 50%; }
     #passport #circus play {
       position: relative;
       top: 60px;
@@ -519,13 +517,15 @@ body {
       display: flex;
       flex-flow: column;
       width: 200px;
-      height: 200px;
-      background-color: honeydew; }
+      height: 200px; }
+      .ads div div img {
+        margin-left: 13%; }
       .ads div div svg {
         margin-left: 13%; }
       .ads div div text {
         position: relative;
-        bottom: 34px; }
+        bottom: 34px;
+        margin-left: 2%; }
     .ads div div:hover text {
       color: #82d2d0;
       text-shadow: black 1px 1px 1px; }

@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/calc.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+script(src='../js/calc.js')
 
 include header
 include dropdown
@@ -43,8 +44,8 @@ block stand
             div
                 button шаблон макета
         div(style="margin-top:30px")
-            button(class="buy-tel")
+            button(class="buy-tel" onclick="sendRequest()")
                 div(class="div-tel")
                     text заказать
-                    img
+                    img(src="../img/buy.png" )
 include footer

@@ -1,22 +1,22 @@
 p тип изделия
     div(class="selector selectable")
-        div(class="elem") световой
-        div(class="elem") несветовой
+        div(class="elem" onclick="request.type='световой'") световой
+        div(class="elem" onclick="request.type='несветовой'") несветовой
     p форма панели:
     div(class="selector selectable")
-        div(class="elem") прямоугольная
-        div(class="elem") круглая
-        div(class="elem") сложная форма
-        div(class="elem") объемная
+        div(class="elem" onclick="request.form='прямоугольная'") прямоугольная
+        div(class="elem" onclick="request.form='круглая'") круглая
+        div(class="elem" onclick="request.form='сложная форма'") сложная форма
+        div(class="elem" onclick="request.form='объемная'") объемная
     p материал:
     div(class="selector selectable")
-        div(class="elem") светодиоды
-        div(class="elem") акрил
-        div(class="elem") поликарбонат
-        div(class="elem") инкрустация
-        div(class="elem") открытый неон
+        div(class="elem" onclick="request.material='светодиоды'") светодиоды
+        div(class="elem" onclick="request.material='акрил'") акрил
+        div(class="elem" onclick="request.material='поликарбонат'") поликарбонат
+        div(class="elem" onclick="request.material='инкрустация'") инкрустация
+        div(class="elem" onclick="request.material='neon'") открытый неон
     p размеры:
         div(class="selector selectable")
-            div(class="elem") 025 – 0.5м
-            div(class="elem") 0.5 – 1м
-            div(class="elem") 1 – 3м
+            div(class="elem" onclick="request.size='0.25 – 0.5м'") 0.25 – 0.5м
+            div(class="elem" onclick="request.size='0.5 – 1м'") 0.5 – 1м
+            div(class="elem" onclick="request.size='1 – 3м'") 1 – 3м

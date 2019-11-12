@@ -1,29 +1,29 @@
 p размер изделия (см):
 div(class="flex-input")
-    input
+    input(type="number" id="sizeX" oninput="setInput('sizeX')")
     div x
-    input
+    input(type="number" id="sizeY" oninput="setInput('sizeY')")
 p материал:
 div(class="selector selectable")
-    div(class="elem")
+    div(class="elem" onclick="request.type='banner tkan'" )
         text баннерная
         br
         text ткань 440гр
-    div(class="elem") сетка
-    div(class="elem")
+    div(class="elem" onclick="request.material='setka'" ) сетка
+    div(class="elem" onclick="request.material='trans tkan'" )
         text транслюцентная
         br
         text ткань
 p разрешение:
 div(class="selector selectable")
-    div(class="elem") 549dpi
-    div(class="elem") 720dpi
+    div(class="elem" onclick="request.resol='549dpi'" ) 549dpi
+    div(class="elem" onclick="request.resol='720dpi'" ) 720dpi
 p люверсы:
 div(class="selector selectable")
-    div(class="elem") нет
-    div(class="elem") золото
-    div(class="elem") серебро
-    div(class="elem") белые
+    div(class="elem" onclick="request.luversi='no'" ) нет
+    div(class="elem" onclick="request.luversi='gold'" ) золото
+    div(class="elem" onclick="request.luversi='silver'" ) серебро
+    div(class="elem" onclick="request.luversi='white'" ) белые
 p тираж:
 div
-    input
+    input(type="number" oninput="setInput('tirazh')")
