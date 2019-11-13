@@ -1,49 +1,49 @@
 p тип изделия:
     div(class="slider selectable")
-        div(class="elem")
-        div(class="elem")
-        div(class="elem")
-        div(class="elem")
+        div(class="elem" onclick="request.type='1'")
+        div(class="elem" onclick="request.type='2'")
+        div(class="elem" onclick="request.type='3'")
+        div(class="elem" onclick="request.type='4'")
     p материал:
     div(class="selector selectable")
-        div(class="elem") rainbow
-        div(class="elem") металл
-        div(class="elem") пластик
-        div(class="elem") орг. стекло
-        div(class="elem") дерево
-        div(class="elem") дибонд
+        div(class="elem" onclick="request.material=' rainbow'") rainbow
+        div(class="elem" onclick="request.material=' металл'") металл
+        div(class="elem" onclick="request.material=' пластик'") пластик
+        div(class="elem" onclick="request.material=' орг. стекло'") орг. стекло
+        div(class="elem" onclick="request.material=' дерево'") дерево
+        div(class="elem" onclick="request.material=' дибонд'") дибонд
     p изображение:
     div(class="selector selectable")
-        div(class="elem") печать
-        div(class="elem") пленка
-        div(class="elem") гравировка
+        div(class="elem" onclick="request.img='печать'") печать
+        div(class="elem" onclick="request.img='пленка'") пленка
+        div(class="elem" onclick="request.img='гравировка'") гравировка
     p крепление:
     div(class="selector selectable")
-        div(class="elem") самоклейка
-        div(class="elem") саморезы
-        div(class="elem") кронштейн
-        div(class="elem") дистанционно
-        div(class="elem") настольная
-        div(class="elem") ручная
-        div(class="elem") напольная
+        div(class="elem" onclick="request.krep='самоклейка'") самоклейка
+        div(class="elem" onclick="request.krep='саморезы'") саморезы
+        div(class="elem" onclick="request.krep=' кронштейн'") кронштейн
+        div(class="elem" onclick="request.krep='дистанционно'") дистанционно
+        div(class="elem" onclick="request.krep='настольная'") настольная
+        div(class="elem" onclick="request.krep='ручная'") ручная
+        div(class="elem" onclick="request.krep='напольная'") напольная
 
     p толщина:
     div(class="selector selectable")
-        div(class="elem")
+        div(class="elem" onclick="request.tirazh='2 мм'")
             text 2 мм
-        div(class="elem")
+        div(class="elem" onclick="request.tirazh='2 мм'")
             text 3 мм
-        div(class="elem")
+        div(class="elem" onclick="request.tirazh='2 мм'")
             text 4 мм
-        div(class="elem")
+        div(class="elem" onclick="request.tirazh='2 мм'")
             text 5 мм
-        div(class="elem")
+        div(class="elem" onclick="request.tirazh='2 мм'")
             text другое
     p размеры (мм):
         div(class="flex-input")
-            input(type="number")
+            input(type="number" id="sizeX" oninput="setInput('sizeX')")
             div x
-            input(type="number")
+            input(type="number" id="sizeY" oninput="setInput('sizeY')")
     p тираж:
         div
-            input(type="number")
+            input(type="number" id="tirazh" oninput="setInput('tirazh')")

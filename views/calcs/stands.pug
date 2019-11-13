@@ -1,45 +1,45 @@
 p тип изделия:
     div(class="slider selectable")
-        div(class="elem")
-        div(class="elem")
-        div(class="elem")
-        div(class="elem")
-        div(class="elem")
-        div(class="elem")
+        div(class="elem" onclick="request.type='1'")
+        div(class="elem" onclick="request.type='2'")
+        div(class="elem" onclick="request.type='3'")
+        div(class="elem" onclick="request.type='4'")
+        div(class="elem" onclick="request.type='5'")
+        div(class="elem" onclick="request.type='6'")
     p размеры:
     div
-        input(type="number")
+        input(type="number" id="size" oninput="setInput('size')")
     p изображение:
     div(class="selector selectable")
-        div(class="elem") 360dpi
-        div(class="elem") 720dpi
-        div(class="elem") пленка
+        div(class="elem" onclick="request.image='360dpi'") 360dpi
+        div(class="elem" onclick="request.image='720dpi'") 720dpi
+        div(class="elem" onclick="request.image='пленка'") пленка
     p пробковая панель (если есть):
     div
-        input
+        input( id="probk" oninput="setInput('probk')")
     p магнитная панель (если есть):
     div
-        input
+        input(id="magnit" oninput="setInput('magnit')")
     p количество карманов:
     div(class="selector")
-        div(class="elem")
+        div(class="elem" onclick="request.karm='А3'")
             text А3
-        div(class="elem")
+        div(class="elem" onclick="request.karm='А4'")
             text А4
-        div(class="elem")
+        div(class="elem" onclick="request.karm='А5'")
             text А5
-        div(class="elem")
+        div(class="elem" onclick="request.karm='перекидные'")
             text перекидные
-        div(class="elem")
+        div(class="elem" onclick="request.karm='другие'")
             text другие
     div(class="selector")
-        div(class="elem")
+        div(class="elem" onclick="request.tirazh='1'")
             text шт
-        div(class="elem")
+        div(class="elem" onclick="request.tirazh='2'")
             text шт
-        div(class="elem")
+        div(class="elem" onclick="request.tirazh='3'")
             text шт
-        div(class="elem")
+        div(class="elem" onclick="request.tirazh='4'")
             text шт
-        div(class="elem")
+        div(class="elem" onclick="request.tirazh='5'")
             text шт

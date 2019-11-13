@@ -1,26 +1,26 @@
-p размер изделия:
+p тип изделия:
 div(class="selector selectable")
-    div(class="elem") roll-up
-    div(class="elem") x-banner
-    div(class="elem") l-banner
+    div(class="elem" onclick="request.type='roll-up'") roll-up
+    div(class="elem" onclick="request.type='x-banner'") x-banner
+    div(class="elem" onclick="request.type='l-banner'") l-banner
 p размер изделия (см):
 div(class="flex-input")
-    input(type="number")
+    input(type="number" id="sizeX" oninput="setInput('sizeX')")
     div x
-    input(type="number")
+    input(type="number" id="sizeY" oninput="setInput('sizeY')")
 p материал:
 div(class="selector selectable")
-    div(class="elem")
+    div(class="elem" onclick="request.material='баннерная ткань")
         text баннерная
         br
         text ткань
-    div(class="elem")
+    div(class="elem" onclick="request.material='полипропилен'")
         text полипропилен
 p печать:
 div(class="selector selectable")
-    div(class="elem") без печати
-    div(class="elem") 549dpi
-    div(class="elem") 720dpi
+    div(class="elem" onclick="request.print='без печати'") без печати
+    div(class="elem" onclick="request.print='549dpi'") 549dpi
+    div(class="elem" onclick="request.print='720dpi'") 720dpi
 p тираж:
 div
-    input(type="number")
+    input(type="number" id="tirazh" oninput="setInput('tirazh')")
