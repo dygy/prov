@@ -1,0 +1,49 @@
+@import url(style.css);
+#smth {
+  margin-left: 40px !important;
+  margin-top: 30px;
+  margin-bottom: 30px !important;
+  display: flex; }
+  #smth img {
+    margin-left: 20px;
+    min-width: 400px;
+    height: 500px; }
+  #smth div {
+    margin-left: 15px; }
+    #smth div p {
+      padding-left: 30px;
+      padding-right: 40px;
+      font-size: 20px; }
+    #smth div div {
+      display: flex;
+      justify-content: center; }
+
+.smth {
+  margin-bottom: 40px;
+  margin-left: 40px !important;
+  margin-top: 30px;
+  display: flex; }
+  .smth img {
+    margin-left: 20px;
+    min-width: 400px;
+    height: 400px; }
+  .smth div {
+    margin-left: 15px; }
+    .smth div p {
+      padding-left: 30px;
+      padding-right: 40px;
+      font-size: 20px; }
+    .smth div div {
+      display: flex;
+      justify-content: center; }
+
+.title {
+  margin-top: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+
+.smth h3 {
+  margin-left: 30px; }
+
+/*# sourceMappingURL=serves.css.map */
