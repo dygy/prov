@@ -105,5 +105,6 @@ function parseJSON(content) {
     if (content.url){
         mail+= `С ссылки:${content.url} <br>`
     }
+
     return mail
 }
