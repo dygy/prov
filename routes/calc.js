@@ -24,7 +24,7 @@ const router = express.Router();
                 include ./calcs/autobrand
 */
 router.get('/stand', function(req, res, next) {
-    res.render('./calculator', { title: 'CТЕНДЫ',id:0});
+    res.render('./calculator', { title: 'ИНФО-CТЕНДЫ',id:0});
 });
 router.get('/tables', function(req, res, next) {
     res.render('./calculator', { title: 'ТАБЛИЧКИ',id:1});

@@ -16,16 +16,16 @@ div(class="selector selectable")
     div(class="elem" onclick="request.sides='2 стороны'") 2 стороны
 p плотность бумаги в граммах:
 div(class="selector selectable")
-    div(class="elem" onclick="request.plot='90'") 90
-    div(class="elem" onclick="request.plot='115'") 115
-    div(class="elem" onclick="request.plot='130'") 130
-    div(class="elem" onclick="request.plot='150'") 150
-    div(class="elem" onclick="request.plot='170'") 170
-    div(class="elem" onclick="request.plot='180'") 180
-    div(class="elem" onclick="request.plot='200'") 200
-    div(class="elem" onclick="request.plot='250'") 250
-    div(class="elem" onclick="request.plot='300'") 300
-    div(class="elem" onclick="request.plot='350'") 350
+    div(class="elem" onclick="request.plotB='90'") 90
+    div(class="elem" onclick="request.plotB='115'") 115
+    div(class="elem" onclick="request.plotB='130'") 130
+    div(class="elem" onclick="request.plotB='150'") 150
+    div(class="elem" onclick="request.plotB='170'") 170
+    div(class="elem" onclick="request.plotB='180'") 180
+    div(class="elem" onclick="request.plotB='200'") 200
+    div(class="elem" onclick="request.plotB='250'") 250
+    div(class="elem" onclick="request.plotB='300'") 300
+    div(class="elem" onclick="request.plotB='350'") 350
 p тип бумаги:
 div(class="selector selectable")
     div(class="elem" onclick="request.typeB='матовая'")
@@ -34,9 +34,9 @@ div(class="selector selectable")
         text глянцевая
 p ламинация:
 div(class="selector selectable")
-    div(class="elem"  onclick="request.lamin='матовая'") матовая
-    div(class="elem"  onclick="request.lamin='глянцевая'") глянцевая
-    div(class="elem"  onclick="request.lamin='нет'") нет
+    div(class="elem"  onclick="request.lam='матовая'") матовая
+    div(class="elem"  onclick="request.lam='глянцевая'") глянцевая
+    div(class="elem"  onclick="request.lam='нет'") нет
 p тираж:
 div
     input(type="number" id="tirazh" oninput="setInput('tirazh')")

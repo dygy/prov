@@ -27,12 +27,6 @@
       font-size: 16px !important; } }
 
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
-
-@font-face {
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
 
@@ -80,10 +74,13 @@ body {
       list-style: none;
       text-transform: uppercase; }
       #header #second ul li {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         margin: 0 3% 0 0; }
         #header #second ul li img {
           margin-left: 10px;
-          background: white;
           width: 20px;
           height: 20px; }
       #header #second ul li:hover {
@@ -237,8 +234,6 @@ body {
     width: 220px !important; } }
 
 @media (max-width: 936px) {
-  div {
-    margin: 0 2% 0 0 !important; }
   #ftr-frst div {
     margin: 0 2% 0 0 !important; }
   #ftr-frst h1 {
@@ -264,7 +259,7 @@ body {
     height: 100px !important; }
   #ftr-frst #faq ul h4 {
     width: 170px !important; }
-  ul {
+  #ftr-frst ul {
     padding-left: 20px !important; }
   phone {
     font-size: 17px !important; }
