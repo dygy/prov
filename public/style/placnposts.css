@@ -1,29 +1,69 @@
 @charset "UTF-8";
-#dropdown {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  max-width: 100%; }
-  #dropdown .disable {
-    color: darkkhaki; }
-  #dropdown ul {
-    margin: 10px 10% 0 0; }
-    #dropdown ul li span {
-      font: 18px bold !important;
-      position: relative;
-      left: 20px; }
-    #dropdown ul li:hover {
-      color: #FDB13E; }
+#smth {
+  margin-left: 40px !important;
+  margin-top: 30px;
+  margin-bottom: 30px !important;
+  display: flex; }
+  #smth img {
+    margin-left: 20px;
+    min-width: 400px;
+    height: 500px; }
+  #smth div {
+    margin-left: 15px; }
+    #smth div p {
+      padding-left: 30px;
+      padding-right: 40px;
+      font-size: 20px; }
+    #smth div div {
+      display: flex;
+      justify-content: center; }
 
-@media (max-width: 1242px) {
-  #dropdown ul {
-    margin: 10px 9% 0 0 !important; } }
+.smth {
+  margin-bottom: 40px;
+  margin-left: 40px !important;
+  margin-top: 30px;
+  display: flex; }
+  .smth img {
+    margin-left: 20px;
+    min-width: 400px;
+    height: 400px; }
+  .smth div {
+    margin-left: 15px; }
+    .smth div p {
+      padding-left: 30px;
+      padding-right: 40px;
+      font-size: 20px; }
+    .smth div div {
+      display: flex;
+      justify-content: center; }
 
-@media (max-width: 1065px) {
-  #dropdown ul {
-    margin: 10px 3% 0 0 !important; }
-    #dropdown ul li span {
-      font-size: 16px !important; } }
+.calc {
+  width: 150px;
+  height: 40px;
+  color: whitesmoke;
+  background-color: #82d2d0;
+  border: 0.5px rgba(0, 0, 255, 0.22) solid;
+  font-size: 21px; }
+
+.buy-tel {
+  border: none;
+  box-shadow: 2px 1px 8px black;
+  background-color: #FCB600;
+  width: 150px;
+  height: 40px;
+  font-size: 25px; }
+  .buy-tel img {
+    margin-right: 3px !important;
+    margin-left: 2px !important;
+    margin-top: 2px;
+    min-width: 30px !important;
+    height: 30px !important; }
+  .buy-tel .div-tel {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap; }
 
 @font-face {
   font-family: "Geom";
@@ -150,6 +190,32 @@ body {
       width: 65px !important;
       background-size: 65px 65px; } }
 
+#dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%; }
+  #dropdown .disable {
+    color: darkkhaki; }
+  #dropdown ul {
+    margin: 10px 10% 0 0; }
+    #dropdown ul li span {
+      font: 18px bold !important;
+      position: relative;
+      left: 20px; }
+    #dropdown ul li:hover {
+      color: #FDB13E; }
+
+@media (max-width: 1242px) {
+  #dropdown ul {
+    margin: 10px 9% 0 0 !important; } }
+
+@media (max-width: 1065px) {
+  #dropdown ul {
+    margin: 10px 3% 0 0 !important; }
+    #dropdown ul li span {
+      font-size: 16px !important; } }
+
 .soc-ico {
   display: flex; }
 
@@ -267,178 +333,19 @@ body {
   adr {
     font-size: 14px !important; } }
 
-#smth {
-  margin-left: 40px !important;
-  margin-top: 30px;
-  margin-bottom: 30px !important;
-  display: flex; }
-  #smth img {
-    margin-left: 20px;
-    min-width: 400px;
-    height: 500px; }
-  #smth div {
-    margin-left: 15px; }
-    #smth div p {
-      padding-left: 30px;
-      padding-right: 40px;
-      font-size: 20px; }
-    #smth div div {
-      display: flex;
-      justify-content: center; }
-
-.smth {
-  margin-bottom: 40px;
-  margin-left: 40px !important;
-  margin-top: 30px;
-  display: flex; }
-  .smth img {
-    margin-left: 20px;
-    min-width: 400px;
-    height: 400px; }
-  .smth div {
-    margin-left: 15px; }
-    .smth div p {
-      padding-left: 30px;
-      padding-right: 40px;
-      font-size: 20px; }
-    .smth div div {
-      display: flex;
-      justify-content: center; }
-
-.calc {
-  width: 150px;
-  height: 40px;
-  color: whitesmoke;
-  background-color: #82d2d0;
-  border: 0.5px rgba(0, 0, 255, 0.22) solid;
-  font-size: 21px; }
-
-.buy-tel {
-  border: none;
-  box-shadow: 2px 1px 8px black;
-  background-color: #FCB600;
-  width: 150px;
-  height: 40px;
-  font-size: 25px; }
-  .buy-tel img {
-    margin-right: 3px !important;
-    margin-left: 2px !important;
-    margin-top: 2px;
-    min-width: 30px !important;
-    height: 30px !important; }
-  .buy-tel .div-tel {
-    height: 100%;
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-
-.calc {
-  background-color: #ffffff;
-  height: 35px !important;
-  width: 100px !important; }
-
 .title {
-  margin-bottom: 40px;
   margin-top: 40px;
   display: flex;
   text-align: center;
   justify-content: center; }
 
-#font-flex {
-  justify-content: center;
-  padding-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  max-width: 100%; }
-  #font-flex .elem {
-    padding-bottom: 10px;
-    max-width: 700px;
-    padding-right: 30px;
-    border-radius: 10px;
-    background: #ededed;
-    margin: 5px;
-    display: flex;
-    flex-flow: row;
-    justify-content: center; }
-    #font-flex .elem table {
-      border-spacing: 7px;
-      margin-bottom: 20px; }
-    #font-flex .elem td {
-      height: 30px;
-      text-align: center;
-      justify-content: center;
-      width: 100px;
-      background-color: #82d2d0; }
-    #font-flex .elem .alsoflex {
-      display: flex;
-      flex-flow: column; }
-      #font-flex .elem .alsoflex p {
-        margin-top: 96px;
-        margin-left: 10px;
-        margin-right: 10px; }
-    #font-flex .elem img {
-      width: 200px;
-      height: 400px;
-      margin-bottom: 10px; }
-    #font-flex .elem strong {
-      padding-left: 10px;
-      font-size: 12px; }
-    #font-flex .elem div {
-      margin-left: 10px;
-      text-align: center;
-      margin-top: 3px; }
-    #font-flex .elem .imgflex {
-      display: flex;
-      flex-flow: column;
-      justify-content: center; }
-    #font-flex .elem button {
-      border: none;
-      height: 35px !important;
-      width: 100px; }
-    #font-flex .elem .calc {
-      width: auto;
-      font: 13.333px arial;
-      color: black;
-      position: relative;
-      left: -20px; }
-    #font-flex .elem .buy {
-      position: relative;
-      right: -20px;
-      background-color: #FCB600; }
+.smth button {
+  margin-top: 30px; }
 
-#flex-box {
-  justify-content: center;
-  margin-left: 3%;
-  margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  max-width: 100%;
-  padding-bottom: 40px; }
-  #flex-box .elem {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    max-width: 200px;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-    justify-content: center;
-    margin: 0px 4% 10px; }
-    #flex-box .elem div {
-      margin-top: 15px; }
-    #flex-box .elem price {
-      font: bold 16px Serif; }
-    #flex-box .elem img {
-      width: 170px;
-      height: 120px; }
-    #flex-box .elem button {
-      margin-top: 10px;
-      width: 100px;
-      border: none;
-      background-color: #ffb800; }
+.smth .calc {
+  margin-left: 20%; }
 
-/*# sourceMappingURL=lightpan.css.map */
+.smth .buy-tel {
+  margin-right: 20%; }
+
+/*# sourceMappingURL=placnposts.css.map */
