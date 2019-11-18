@@ -1,11 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
-
-@font-face {
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
 
@@ -60,7 +54,6 @@ body {
         margin: 0 3% 0 0; }
         #header #second ul li img {
           margin-left: 10px;
-          background: white;
           width: 20px;
           height: 20px; }
       #header #second ul li:hover {
@@ -335,10 +328,9 @@ body {
     max-width: 100%; }
     .center .slider .elem {
       margin: 40px 2% 0;
-      background-color: black;
       width: 70px;
       height: 70px;
-      border-width: 2px !important; }
+      border-width: 3px !important; }
       .center .slider .elem p {
         position: relative;
         top: 70px;
@@ -439,5 +431,74 @@ input {
     background: linear-gradient(90deg, #fff101 0%, #fe0613 35%, #5f2d91 50%, #005cab 65%, #62b5fd 85%, #28da2f 100%); }
   .color .smth1, .color .smth2, .color .smth3, .color .smth4, .color .smth5, .color .smth6, .color .smth7, .color .smth8, .color .smth9 {
     background-color: black; }
+
+#a1 {
+  background-image: url("../img/letters/S.jpg"); }
+
+#a2 {
+  background-image: url("../img/letters/C.jpg"); }
+
+#a3 {
+  background-image: url("../img/letters/X.jpg"); }
+
+#a4 {
+  background-image: url("../img/letters/B.jpg"); }
+
+#a5 {
+  background-image: url("../img/letters/w.jpg"); }
+
+#a6 {
+  background-image: url("../img/letters/A.jpg"); }
+
+#a7 {
+  background-image: url("../img/viv/viv3.png"); }
+
+#a8 {
+  background-image: url("../img/viv/viv1.png"); }
+
+#a9 {
+  background-image: url("../img/letters/y.jpg"); }
+
+#a10 {
+  background-image: url("../img/viv/viv9.png"); }
+
+#a11 {
+  background-image: url("../img/viv/viv5.png"); }
+
+#a12 {
+  background-image: url("../img/viv/viv2.png"); }
+
+#a13 {
+  background-image: url("../img/viv/viv4.png"); }
+
+#a14 {
+  background-image: url("../img/viv/viv3.png"); }
+
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14 {
+  background-size: 100% 100%; }
+
+#s1 {
+  background-image: url("../img/info/info03.png"); }
+
+#s2 {
+  background-image: url("../img/info/info02.png"); }
+
+#s3 {
+  background-image: url("../img/info/info04.png"); }
+
+#s4 {
+  background-image: url("../img/info/info12.png"); }
+
+#s5 {
+  background-image: url("../img/info/info05.png"); }
+
+#s6 {
+  background-image: url("../img/info/info11.png"); }
+
+#t1 {
+  background-image: url("../img/tables/ta.png"); }
+
+#s1, #s2, #s3, #s4, #s5, #s6, #t1, #t2, #t3, #t4 {
+  background-size: 100% 100%; }
 
 /*# sourceMappingURL=calc.css.map */

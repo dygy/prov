@@ -525,7 +525,7 @@ body {
       .ads div div text {
         position: relative;
         bottom: 34px;
-        margin-left: 2%; }
+        margin-left: -9%; }
     .ads div div:hover text {
       color: #82d2d0;
       text-shadow: black 1px 1px 1px; }
@@ -547,6 +547,7 @@ body {
 
 @media (max-width: 1107px) {
   #serve #kach div {
+    max-width: 10%;
     margin: 0 5% 0; }
   #circus div div {
     margin-left: 5px !important;
@@ -574,7 +575,17 @@ body {
       margin-top: -50px;
       left: -14px; } }
 
+@media (max-width: 779px) {
+  #usl {
+    flex-flow: column !important; }
+    #usl div {
+      margin-left: 40% !important;
+      margin-right: 40% !important; } }
+
 @media (max-width: 619px) {
+  #usl div {
+    margin-left: 25% !important;
+    margin-right: 25% !important; }
   #passport #circus div {
     margin: 0 0.5% 0 !important; }
     #passport #circus div div {
@@ -582,15 +593,20 @@ body {
       width: 50px !important;
       height: 50px !important; }
   #passport #circus play {
-    margin-top: -40px;
-    left: 30px; } }
-
-@media (max-width: 779px) {
-  #usl {
-    flex-flow: column !important; }
-    #usl div {
-      margin-left: 40% !important;
-      margin-right: 40% !important; } }
+    display: none; }
+  #kach {
+    justify-content: left !important; }
+    #kach div {
+      margin-left: 6% !important;
+      font-size: 11px; }
+  .ads div, .room div {
+    margin: 10px 3px 0 !important; }
+  .ads img, .room img {
+    height: 80px !important;
+    width: 90px !important; }
+  .ads svg, .room svg {
+    height: 120px !important;
+    width: 120px !important; } }
 
 #body {
   width: 100vw;

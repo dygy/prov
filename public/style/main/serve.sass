@@ -183,7 +183,7 @@
        text
          position: relative
          bottom: 34px
-         margin-left: 2%
+         margin-left: -9%
      div:hover
        text
          color: #82d2d0
@@ -207,6 +207,7 @@
   #serve
     #kach
       div
+        max-width: 10%
         margin: 0 5% 0
   #circus
     div
@@ -239,7 +240,20 @@
       margin-top: -50px
       left: -14px
 
+@media ( max-width : 779px )
+  #usl
+    flex-flow: column !important
+    div
+      margin-left: 40%!important
+      margin-right: 40%!important
+      ul
+
+
 @media ( max-width : 619px )
+  #usl
+    div
+      margin-left: 25%!important
+      margin-right: 25%!important
   #passport
     #circus
       div
@@ -249,13 +263,19 @@
           width: 50px !important
           height: 50px !important
       play
-        margin-top: -40px
-        left: 30px
+        display: none
+  #kach
+    justify-content: left!important
+    div
+      margin-left: 6%!important
+      font-size: 11px
+  .ads, .room
+    div
+      margin: 10px 3px 0 !important
+    img
+      height: 80px!important
+      width: 90px!important
+    svg
+      height: 120px!important
+      width: 120px!important
 
-@media ( max-width : 779px )
-  #usl
-   flex-flow: column !important
-   div
-     margin-left: 40%!important
-     margin-right: 40%!important
-     ul

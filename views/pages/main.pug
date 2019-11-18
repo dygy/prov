@@ -154,7 +154,7 @@ block room-ads
                 img(src="../img/inter/Inter5.png" height=100 width=120)
                 br
                 br
-                text наклейк
+                text наклейки
 
         div(id="room-two")
             div(onclick="moveTo('/lightpan')")
@@ -199,11 +199,11 @@ block serve
                 p ГОРОДСКАЯ РЕКЛАМА
                 div(class="serv-list")
                     ul
-                        li ВЫВЕСКИ
-                        li БАННЕРЫ
+                        li(onclick="moveTo('/signboard')") ВЫВЕСКИ
+                        li(onclick="moveTo('/banners')") БАННЕРЫ
                         li(style="font-size: 15px;width:182px;height:20px")
                             text СВЕТОВЫЕ ПАНЕЛИ
-                        li КРОНШТЕЙНЫ
+                        li(onclick="moveTo('/kron')") КРОНШТЕЙНЫ
                         li ПИЛОНЫ
             div(class="polaroid")
                 img(src="/img/enters.jpg")
@@ -212,9 +212,9 @@ block serve
                     ul
                         li ВЫВЕСКИ
                         li КОЗЫРЬКИ
-                        li ШТЕНДЕРЫ
+                        li(onclick="moveTo('/shtender')") ШТЕНДЕРЫ
                         li ШИРОКОФОРМАТ
-                        li ТАБЛИЧКИ
+                        li(onclick="moveTo('/table')") ТАБЛИЧКИ
 
             div(class="polaroid")
                 img(src="/img/interiors.jpg")
@@ -222,7 +222,7 @@ block serve
                 div(class="serv-list")
                     ul
                         li ВЫВЕСКИ И ЛОГО
-                        li НАВИГАЦИЯ
+                        li(onclick="moveTo('/navs')") НАВИГАЦИЯ
                         li(style="font-size: 15px;width:182px;height:20px")
                             text СВЕТОВЫЕ ПАНЕЛИ
                         li ШИРОКОФОРМАТ
