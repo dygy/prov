@@ -472,7 +472,7 @@ input {
   background-image: url("../img/viv/viv4.png"); }
 
 #a14 {
-  background-image: url("../img/viv/viv3.png"); }
+  background-image: url("../img/viv/viv20.png"); }
 
 #a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14 {
   background-size: 100% 100%; }
@@ -496,7 +496,19 @@ input {
   background-image: url("../img/info/info11.png"); }
 
 #t1 {
-  background-image: url("../img/tables/ta.png"); }
+  background-image: url("../img/tables/tab21.png"); }
+
+#t2 {
+  background-image: url("../img/tables/tab20.png"); }
+
+#t3 {
+  background-image: url("../img/tables/tab22.png"); }
+
+#t4 {
+  background-image: url("../img/tables/tab23.png"); }
+
+#t1, #t2, #t3, #t4 {
+  border-radius: 0; }
 
 #s1, #s2, #s3, #s4, #s5, #s6, #t1, #t2, #t3, #t4 {
   background-size: 100% 100%; }
