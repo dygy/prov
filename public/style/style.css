@@ -162,6 +162,14 @@ body {
   #second ul #uslugi {
     width: 56px !important; } }
 
+@media (max-width: 450px) {
+  #contact {
+    display: none; }
+  .soc-ico {
+    display: none; }
+  h1 {
+    font-size: 25px !important; } }
+
 .soc-ico {
   display: flex; }
 
