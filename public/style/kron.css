@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #dropdown {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   flex-direction: row;
   max-width: 100%; }
@@ -169,6 +169,11 @@ body {
     display: none; }
   h1 {
     font-size: 25px !important; } }
+
+@media (min-width: 1700px) {
+  #second ul li {
+    margin: 0 6% 0 0 !important;
+    font-size: 18px !important; } }
 
 .soc-ico {
   display: flex; }

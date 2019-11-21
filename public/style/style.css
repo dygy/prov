@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #dropdown {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   flex-direction: row;
   max-width: 100%; }
@@ -24,6 +24,14 @@
     margin: 10px 3% 0 0 !important; }
     #dropdown ul li span {
       font-size: 16px !important; } }
+
+@media (min-width: 1700px) {
+  #dropdown ul {
+    margin: 10px 13% 0 0 !important; }
+    #dropdown ul li span {
+      font-size: 22px !important; }
+  #dropdown #lastUL {
+    margin: 10px 4% 0 0 !important; } }
 
 @font-face {
   font-family: "Geom";
@@ -169,6 +177,11 @@ body {
     display: none; }
   h1 {
     font-size: 25px !important; } }
+
+@media (min-width: 1700px) {
+  #second ul li {
+    margin: 0 5% 0 0 !important;
+    font-size: 18px !important; } }
 
 .soc-ico {
   display: flex; }
@@ -354,7 +367,7 @@ body {
 
 #tone {
   left: 5%;
-  top: 25%; }
+  top: 22%; }
 
 #ttwo {
   left: 23%;
@@ -634,6 +647,73 @@ body {
     font-size: 30px; }
   #five {
     left: 93%; } }
+
+@media (min-width: 1500px) {
+  #street {
+    height: 600px; }
+    #street #one {
+      top: 58% !important; }
+    #street #two {
+      top: 36% !important; }
+    #street #three {
+      top: 40%; }
+    #street #four {
+      top: 42% !important; }
+    #street #five {
+      top: 30% !important; }
+    #street #six {
+      top: 22% !important; }
+  #room {
+    height: 600px; }
+    #room #tthree {
+      top: 16% !important; }
+    #room #tfour {
+      top: 38% !important; }
+    #room #tsix {
+      top: 1% !important; }
+    #room #tone {
+      top: 22% !important; }
+    #room #tfive {
+      top: 13% !important; } }
+
+@media (min-width: 1700px) {
+  #street {
+    height: 700px; }
+    #street #one {
+      top: 58% !important; }
+    #street #two {
+      top: 36% !important; }
+    #street #three {
+      top: 40%; }
+    #street #four {
+      top: 42% !important; }
+    #street #five {
+      top: 30% !important; }
+    #street #six {
+      top: 22% !important; }
+  #room {
+    height: 700px; }
+    #room #tthree {
+      top: 16% !important; }
+    #room #tfour {
+      top: 38% !important; }
+    #room #tsix {
+      top: 1% !important; }
+    #room #tone {
+      top: 22% !important; }
+    #room #tfive {
+      top: 13% !important; }
+  #pass-logo {
+    height: 350px !important;
+    width: 400px !important; }
+  #promise-text {
+    width: 26% !important; }
+  #passport #circus div div {
+    margin: 0 0 0 47px !important; }
+  #passport #circus div #designI {
+    margin: 0 0 0 76px !important; }
+  #passport #circus div #callI {
+    margin: 0 0 0 29px !important; } }
 
 #body {
   width: 100vw;

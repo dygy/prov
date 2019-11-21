@@ -126,7 +126,8 @@ body {
     #full-page .sell white, #full-page .sell text {
       margin-top: 15px; }
     #full-page .sell white {
-      color: white; }
+      color: white;
+      text-shadow: 1px 1px 1px black; }
       #full-page .sell white bold {
         font: 20px bold; }
 

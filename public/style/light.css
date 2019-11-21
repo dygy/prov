@@ -68,7 +68,7 @@ body {
       text-align: center;
       max-width: 100vw;
       padding-left: 4px;
-      width: 100vw;
+      width: 98vw;
       display: inline-flex;
       list-style: none;
       text-transform: uppercase; }
@@ -169,6 +169,11 @@ body {
     display: none; }
   h1 {
     font-size: 25px !important; } }
+
+@media (min-width: 1700px) {
+  #second ul li {
+    margin: 0 6% 0 0 !important;
+    font-size: 18px !important; } }
 
 .soc-ico {
   display: flex; }

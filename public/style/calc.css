@@ -4,7 +4,7 @@
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
 
 body {
-  max-width: 100vw;
+  max-width: 100%;
   width: 100vw;
   margin: 0;
   font-family: "Geom", serif !important; }
@@ -40,9 +40,9 @@ body {
     max-width: 100%; }
     #header #second ul {
       text-align: center;
-      max-width: 100%;
+      max-width: 100vw;
       padding-left: 4px;
-      width: 100%;
+      width: 98vw;
       display: inline-flex;
       list-style: none;
       text-transform: uppercase; }
@@ -82,9 +82,11 @@ body {
 
 #search {
   padding-top: 30px;
-  height: 40px; }
+  width: 26% !important;
+  height: 40px;
+  margin-right: 0 !important; }
   #search div {
-    width: 200px !important;
+    width: 100% !important;
     background: white;
     border-radius: 30px;
     position: relative;
@@ -95,6 +97,7 @@ body {
     width: 16px !important;
     height: 16px !important; }
   #search input {
+    width: 100%;
     outline: none;
     border: none;
     background: none;
@@ -124,8 +127,30 @@ body {
       width: 65px !important;
       background-size: 65px 65px; } }
 
+@media (max-width: 716px) {
+  #second ul li {
+    font-size: 11px !important;
+    margin: 0 -8px 0 0  !important; }
+  #second ul #large-word {
+    width: 164px !important; }
+  #second ul #uslugi {
+    width: 56px !important; } }
+
+@media (max-width: 450px) {
+  #contact {
+    display: none; }
+  .soc-ico {
+    display: none; }
+  h1 {
+    font-size: 25px !important; } }
+
+@media (min-width: 1700px) {
+  #second ul li {
+    margin: 0 6% 0 0 !important;
+    font-size: 18px !important; } }
+
 #dropdown {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   flex-direction: row;
   max-width: 100%; }
@@ -161,7 +186,7 @@ body {
   bottom: 0;
   color: white;
   background: black;
-  width: 100vw;
+  width: 100%;
   min-height: 340px; }
   #footer #ftr-frst {
     padding-left: 10px;
