@@ -108,9 +108,11 @@ body {
 
 #search {
   padding-top: 30px;
-  height: 40px; }
+  width: 26% !important;
+  height: 40px;
+  margin-right: 0 !important; }
   #search div {
-    width: 200px !important;
+    width: 100% !important;
     background: white;
     border-radius: 30px;
     position: relative;
@@ -121,6 +123,7 @@ body {
     width: 16px !important;
     height: 16px !important; }
   #search input {
+    width: 100%;
     outline: none;
     border: none;
     background: none;
@@ -589,19 +592,15 @@ body {
     flex-flow: column !important; }
     #usl div {
       margin-left: 40% !important;
-      margin-right: 40% !important; } }
+      margin-right: 40% !important; }
+  play {
+    display: none; } }
 
 @media (max-width: 619px) {
   #usl div {
     margin-left: 25% !important;
     margin-right: 25% !important; }
-  #passport #circus div {
-    margin: 0 0.5% 0 !important; }
-    #passport #circus div div {
-      margin-left: 0.5px !important;
-      width: 50px !important;
-      height: 50px !important; }
-  #passport #circus play {
+  #passport #circus {
     display: none; }
   #kach {
     justify-content: left !important; }
@@ -616,6 +615,17 @@ body {
   .ads svg, .room svg {
     height: 120px !important;
     width: 120px !important; } }
+
+@media (max-width: 500px) {
+  #pass-flex {
+    flex-flow: column; }
+    #pass-flex text {
+      margin-left: 15%;
+      margin-right: 15%; }
+  h1 {
+    font-size: 30px; }
+  #five {
+    left: 93%; } }
 
 #body {
   width: 100vw;
