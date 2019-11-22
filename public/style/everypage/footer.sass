@@ -1,5 +1,6 @@
 .soc-ico
   display: flex
+  margin: -20px -30px 0 0 !important
 .lowscreen
   display: none
 #footer
@@ -13,33 +14,34 @@
     padding-left: 10px
     display: flex
     div
-      margin: 0 9% 0 0
+      margin: 50px 9% 0 0
     #soc
-      padding-top: 30px
+      display: flex
+      flex-flow: column
+      margin-top: 30px
+      span
+        padding-top: 10px
+        padding-bottom: 20px
       h1
         text-shadow: white 0.5px -0.5px 0.5px
         margin: 0
     #faq
-      padding-top: 30px
+      h4
+        text-shadow: white 0px -1px 1px
+        margin-left: 2.3em
       ul
         list-style: none
-        h4
-          text-shadow: white 0px -1px 1px
-          margin: 0
-          width: 280px
         li
           text-decoration: underline #FDB13E
 
     .phone
       white-space: nowrap
-      padding-top: 30px
-      margin: 13px 0 0 0
       phone
         display: inline
         color: #FDB13E
         font-size: 21px
     #buttons
-      padding-top: 30px
+      // padding-top: 40px
       button
         border-width: 1px
         background: black
@@ -56,8 +58,9 @@
     div
       margin: 14px 10% 0 0
     #map
-      max-width: 150px
-      max-height: 300px
+      margin-top: -80px
+      width: 200px
+      height: 300px
     #info
       width: 400px
 
@@ -123,4 +126,34 @@
     font-size: 14px !important
   adr
     font-size: 14px !important
-
+@media ( min-width : 1500px )
+  #footer
+    #buttons
+      button
+        font-size: 22px!important
+        height: 70px!important
+        width: 320px!important
+    span, email,  adr, city, li
+      font-size: 19px
+    h4, phone
+      font-size: 23px!important
+    h4
+      width: 450px!important
+      margin-left: 1.2em!important
+    #faq
+      margin-right: 40px!important
+@media ( min-width : 1700px )
+  #footer
+    #buttons
+      button
+        font-size: 24px!important
+        height: 80px!important
+        width: 350px!important
+    span, email,  adr, city, li
+      font-size: 20px
+    h4, phone
+      font-size: 25px!important
+    h4
+      width: 450px!important
+    #faq
+      margin-right: 40px!important

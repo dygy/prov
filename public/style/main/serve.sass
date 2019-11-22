@@ -152,11 +152,13 @@
 #promise
   background-image: url("/img/street.jpg")
   background-size: 112% 100%
-  color: cadetblue
-  min-height: 250px
+  color: whitesmoke
+  min-height: 20vw
   #promise-text
+    padding-bottom: 3%
+    margin-left: 60px
     line-height: 70px
-    padding-top: 20px
+    padding-top: 3%
     width: 55%
     font-size: 30px
 .ads
@@ -184,10 +186,16 @@
          position: relative
          bottom: 34px
          margin-left: -9%
+       .hov
+        display: none
      div:hover
        text
          color: #82d2d0
          text-shadow: black 1px 1px 1px
+       .hov
+         display: block
+       .hovNo
+         display: none
 
 #street
   background-image: url("/img/main.jpg")
@@ -285,8 +293,11 @@
   #five
     left: 93%
 @media ( min-width : 1500px )
+  .ads
+    text
+      font-size: 20px!important
   #street
-    height: 600px
+    height: 750px
     #one
       top: 58%!important
     #two
@@ -313,20 +324,35 @@
       top: 13%!important
 
 @media ( min-width : 1700px )
+  #but-take
+    button
+      height: 50px!important
+      width: 200px!important
+      font-size: 23px
+      strong
+        top: -12px !important
+        right: 12px !important
+      img
+        top: 1px !important
+        height: 40px
+        width: 40px
+  .ads
+    text
+      font-size: 25px!important
   #street
-    height: 700px
+    height: 970px
     #one
-      top: 58%!important
+      top: 60%!important
     #two
-      top: 36%!important
+      top: 38%!important
     #three
-      top: 40%
+      top: 42%
     #four
-      top: 42% !important
+      top: 44% !important
     #five
-      top: 30%!important
+      top: 35%!important
     #six
-      top: 22%!important
+      top: 28%!important
   #room
     height: 700px
     #tthree
@@ -341,10 +367,23 @@
       top: 13%!important
   #pass-logo
     height: 350px!important
-    width: 400px!important
+    width: 480px!important
   #promise-text
     width: 26%!important
+  #kach
+    height: 300px !important
+    font-size: 20px
+    div
+      padding-top: 62px!important
+      text-align: center
+      p
+        width: auto!important
   #passport
+    #pass-flex
+      text
+        max-width: 60%!important
+        font-size: 20px
+        margin-right: 10%
     #circus
       div
         div
