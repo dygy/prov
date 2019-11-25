@@ -213,9 +213,7 @@ block room-ads
 
 block take
     div(id="but-take")
-        button
-            strong(style="position:relative; top:-6px") ЗАКАЗАТЬ
-            img(src="../img/buy.png" height=20 width=20 style="position:relative; top:-1px")
+        img(src="../img/button.png")
     div(id="promise")
         div(id="promise-text") ИЗГОТОВИМ ЛЮБУЮ ВЫВЕСКУ ПО ЗАКОНУ ЗА 15 ДНЕЙ СОГЛАСНО 902-ПП
 block serve
@@ -228,43 +226,60 @@ block serve
                 p ГОРОДСКАЯ РЕКЛАМА
                 div(class="serv-list")
                     ul
-                        li(onclick="moveTo('/signboard')") ВЫВЕСКИ
-                        li(onclick="moveTo('/banners')") БАННЕРЫ
+                        li(onclick="moveTo('/signboard')")
+                            text ВЫВЕСКИ
+                        li(onclick="moveTo('/banners')")
+                            text БАННЕРЫ
                         li(onclick="moveTo('/lightpan')")
                             text СВЕТОВЫЕ ПАНЕЛИ
-                        li(onclick="moveTo('/kron')") КРОНШТЕЙНЫ
-                        li ИНФО-ПИЛОНЫ
+                        li(onclick="moveTo('/kron')")
+                            text КРОНШТЕЙНЫ
+                        li
+                            text ИНФО-ПИЛОНЫ
             div(class="polaroid")
                 img(src="/img/enters.jpg")
                 p ВХОДНЫЕ ГРУППЫ
                 div(class="serv-list")
                     ul
-                        li(onclick="moveTo('/signboards')") ВЫВЕСКИ
-                        li КОЗЫРЬКИ
-                        li(onclick="moveTo('/shtender')") ШТЕНДЕРЫ
-                        li ШИРОКОФОРМАТ
-                        li(onclick="moveTo('/table')") ТАБЛИЧКИ
+                        li(onclick="moveTo('/signboards')")
+                            text ВЫВЕСКИ
+                        li
+                            text КОЗЫРЬКИ
+                        li(onclick="moveTo('/shtender')")
+                            text ШТЕНДЕРЫ
+                        li
+                            text ШИРОКОФОРМАТ
+                        li(onclick="moveTo('/table')")
+                            text ТАБЛИЧКИ
 
             div(class="polaroid")
                 img(src="/img/interiors.jpg")
                 p ОФОРМЛЕНИЕ ИНТЕРЬЕРА
                 div(class="serv-list")
                     ul
-                        li ВЫВЕСКИ И ЛОГО
-                        li(onclick="moveTo('/navs')") НАВИГАЦИЯ
+                        li
+                            text ВЫВЕСКИ И ЛОГО
+                        li(onclick="moveTo('/navs')")
+                            text НАВИГАЦИЯ
                         li(onclick="moveTo('/lightpan')")
                             text СВЕТОВЫЕ ПАНЕЛИ
-                        li ШИРОКОФОРМАТ
-                        li(onclick="moveTo('/infstands')") ИНФО СТЕНДЫ
+                        li
+                            text ШИРОКОФОРМАТ
+                        li(onclick="moveTo('/infstands')")
+                            text ИНФО СТЕНДЫ
             div(class="polaroid")
                 img(src="/img/exhibition.jpg")
                 p ВЫСТАВКИ ПРЕЗЕНТАЦИИ
                 div(class="serv-list")
                     ul
-                        li(onclick="moveTo('/presswall')") ПРЕСС-ВОЛЛЫ
-                        li РОЛЛАПЫ
-                        li ШТЕНДЕРЫ
-                        li СТЕНДЫ
+                        li(onclick="moveTo('/presswall')")
+                            text ПРЕСС-ВОЛЛЫ
+                        li
+                            text РОЛЛАПЫ
+                        li
+                            text ШТЕНДЕРЫ
+                        li
+                            text СТЕНДЫ
         div(id="kach")
             div
                 img(src="/img/white/white1.png" height=80 width=80)
