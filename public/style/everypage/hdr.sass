@@ -47,6 +47,7 @@ body
       list-style: none
       text-transform: uppercase
       li
+        font-weight: 500!important
         -webkit-user-select: none /* Safari */
         -moz-user-select: none /* Firefox */
         -ms-user-select: none /* IE10+/Edge */
@@ -55,8 +56,9 @@ body
         img
           margin-left: 80%
           width: 20px
-          height: 20px
+          height: 40px
       li:hover
+        font-weight: 900!important
         text-shadow: 1px 0px 3px whitesmoke
 #logo-warp
   margin-left: 3%!important
@@ -66,8 +68,8 @@ body
 
 #logo
   background-image: url("../../img/logo.png")
-  height: 100px !important
-  width: 100px !important
+  height: 200px !important
+  width: 200px !important
   background-size: 100% 100%
   border: none
   background-position: center
@@ -158,9 +160,10 @@ body
 @media ( min-width : 1300px )
   #logo
     background-size: 100% 100%
-    height: 110px!important
-    width: 110px!important
+    height: 120px!important
+    width: 100px!important
   #header
+    padding-top: 40px
     min-height: 220px
     mini
       font-size: 17px!important
@@ -173,16 +176,18 @@ body
         margin: 0 4% 0 0 !important
         font-size: 21px!important
         img
-          margin-top: 10px
-          height: 30px!important
+          margin-top: 2px
+          height: 50px!important
           width: 50px!important
       #contact
         margin-right: 20px!important
 @media ( min-width : 1700px )
   #logo
     background-size: 100% 100%
-    height: 130px!important
-    width: 130px!important
+    height: 220px!important
+    width: 200px!important
+  #city, #phone, #search
+    margin-top: 50px!important
   #header
     min-height: 250px
     mini

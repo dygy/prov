@@ -86,6 +86,7 @@ body {
       list-style: none;
       text-transform: uppercase; }
       #header #second ul li {
+        font-weight: 500 !important;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -94,8 +95,9 @@ body {
         #header #second ul li img {
           margin-left: 80%;
           width: 20px;
-          height: 20px; }
+          height: 40px; }
       #header #second ul li:hover {
+        font-weight: 900 !important;
         text-shadow: 1px 0px 3px whitesmoke; }
 
 #logo-warp {
@@ -106,8 +108,8 @@ body {
 
 #logo {
   background-image: url("../../img/logo.png");
-  height: 100px !important;
-  width: 100px !important;
+  height: 200px !important;
+  width: 200px !important;
   background-size: 100% 100%;
   border: none;
   background-position: center; }
@@ -188,9 +190,10 @@ body {
 @media (min-width: 1300px) {
   #logo {
     background-size: 100% 100%;
-    height: 110px !important;
-    width: 110px !important; }
+    height: 120px !important;
+    width: 100px !important; }
   #header {
+    padding-top: 40px;
     min-height: 220px; }
     #header mini {
       font-size: 17px !important; }
@@ -202,8 +205,8 @@ body {
       margin: 0 4% 0 0 !important;
       font-size: 21px !important; }
       #second ul li img {
-        margin-top: 10px;
-        height: 30px !important;
+        margin-top: 2px;
+        height: 50px !important;
         width: 50px !important; }
     #second ul #contact {
       margin-right: 20px !important; } }
@@ -211,8 +214,10 @@ body {
 @media (min-width: 1700px) {
   #logo {
     background-size: 100% 100%;
-    height: 130px !important;
-    width: 130px !important; }
+    height: 220px !important;
+    width: 200px !important; }
+  #city, #phone, #search {
+    margin-top: 50px !important; }
   #header {
     min-height: 250px; }
     #header mini {
@@ -669,14 +674,14 @@ body {
   background-image: url("/img/street.jpg");
   background-size: 112% 100%;
   color: whitesmoke;
-  min-height: 20vw; }
+  min-height: 25vw; }
   #promise #promise-text {
-    padding-bottom: 3%;
+    padding-bottom: 6%;
     margin-left: 60px;
-    line-height: 70px;
-    padding-top: 3%;
-    width: 55%;
-    font-size: 30px; }
+    line-height: 100px;
+    padding-top: 6%;
+    width: 45%;
+    font-size: 40px; }
 
 .ads {
   padding-bottom: 40px; }
@@ -707,7 +712,7 @@ body {
       .ads div div text {
         position: relative;
         bottom: 34px;
-        margin-left: -9%; }
+        margin-left: 9%; }
       .ads div div .hov {
         display: none; }
     .ads div div:hover text {
@@ -809,22 +814,22 @@ body {
 
 @media (min-width: 1500px) {
   .ads div div {
-    width: 400px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin-top: 50px !important; }
     .ads div div text {
       margin-left: 20% !important; }
     .ads div div img {
-      min-height: 170px !important;
-      min-width: 250px !important; }
+      min-height: 130px !important;
+      min-width: 150px !important; }
     .ads div div .B {
       margin-right: 10%;
       margin-left: 30%;
-      min-height: 170px !important;
-      min-width: 170px !important; }
+      min-height: 110px !important;
+      min-width: 110px !important; }
     .ads div div .Boxx {
-      height: 250px !important;
-      width: 200px !important; }
+      height: 200px !important;
+      width: 150px !important; }
     .ads div div svg {
       min-height: 250px !important;
       min-width: 250px !important; }
@@ -934,7 +939,7 @@ body {
     height: 450px !important;
     min-width: 600px !important; }
   #promise-text {
-    width: 26% !important; }
+    width: 46% !important; }
   #kach {
     height: 350px !important;
     font-size: 20px; }
