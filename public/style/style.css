@@ -64,8 +64,8 @@ body {
         width: 100%; }
     #header #first img {
       float: left;
-      width: 20px;
-      height: 20px; }
+      width: 50px;
+      height: 50px; }
     #header #first bold {
       font: 15pt bold; }
     #header #first mini {
@@ -102,9 +102,10 @@ body {
   position: relative; }
 
 #logo {
-  background-image: url("../../img/Лого 100px.png");
+  background-image: url("../../img/logo.png");
   height: 100px !important;
   width: 100px !important;
+  background-size: 100% 100%;
   border: none;
   background-position: center; }
   #logo bold {
@@ -162,7 +163,7 @@ body {
       margin: 0 10px 0 !important;
       height: 65px !important;
       width: 65px !important;
-      background-size: 65px 65px; } }
+      background-size: 100% 100% !important; } }
 
 @media (max-width: 716px) {
   #second ul li {
@@ -226,6 +227,12 @@ body {
         width: 50px !important; }
     #second ul #contact {
       margin-right: 20px !important; } }
+
+@media (min-width: 1900px) {
+  #header bold {
+    font-size: 27px !important; }
+  #header mini {
+    font-size: 23px !important; } }
 
 .soc-ico {
   display: flex;
@@ -493,6 +500,26 @@ body {
   left: 73%;
   top: 8%; }
 
+#seven {
+  left: 77%;
+  top: -15%; }
+
+#eight {
+  left: 79%;
+  top: -17%; }
+
+#nine {
+  left: 82%;
+  top: -31%; }
+
+#ten {
+  left: 37%;
+  top: -33%; }
+
+#el {
+  left: 30%;
+  top: -38%; }
+
 #serve #kach {
   height: 200px;
   display: flex;
@@ -597,11 +624,19 @@ body {
   justify-content: center;
   padding-bottom: 40px; }
   #but-take button {
-    width: 120px;
-    height: 25px;
+    width: 140px;
+    height: 30px;
+    font-size: 18px;
     background-color: #FCB600;
     border: none;
     box-shadow: 0px 0px 3px black; }
+    #but-take button strong {
+      top: -11px !important; }
+    #but-take button img {
+      height: 30px !important;
+      width: 30px !important;
+      top: -1px !important;
+      left: 6px; }
 
 #promise {
   background-image: url("/img/street.jpg");
@@ -697,6 +732,8 @@ body {
       left: -14px; } }
 
 @media (max-width: 779px) {
+  #street, #room {
+    display: none; }
   #usl {
     flex-flow: column !important; }
     #usl div {
@@ -750,9 +787,20 @@ body {
     #street #four {
       top: 42% !important; }
     #street #five {
+      left: 94% !important;
       top: 30% !important; }
     #street #six {
       top: 22% !important; }
+    #street #seven {
+      top: 6% !important; }
+    #street #eight {
+      top: 8% !important; }
+    #street #nine {
+      top: -4% !important; }
+    #street #ten {
+      top: -3% !important; }
+    #street #el {
+      top: -5% !important; }
   #room {
     height: 600px; }
     #room #tthree {
@@ -770,18 +818,19 @@ body {
   #but-take button {
     height: 50px !important;
     width: 200px !important;
-    font-size: 23px; }
+    font-size: 26px; }
     #but-take button strong {
       top: -12px !important;
       right: 12px !important; }
     #but-take button img {
+      left: 4px !important;
       top: 1px !important;
-      height: 40px;
-      width: 40px; }
+      height: 40px !important;
+      width: 40px !important; }
   .ads text {
     font-size: 25px !important; }
   #street {
-    height: 970px; }
+    height: 820px; }
     #street #one {
       top: 60% !important; }
     #street #two {

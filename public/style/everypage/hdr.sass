@@ -27,8 +27,8 @@ body
         width: 100%
     img
       float: left
-      width: 20px
-      height: 20px
+      width: 50px
+      height: 50px
     bold
       font: 15pt bold
     mini
@@ -64,9 +64,10 @@ body
   left: 15px
   position: relative
 #logo
-  background-image: url("../../img/Лого 100px.png")
+  background-image: url("../../img/logo.png")
   height: 100px !important
   width: 100px !important
+  background-size: 100% 100%
   border: none
   background-position: center
 
@@ -132,7 +133,7 @@ body
         margin: 0 10px 0 !important
         height: 65px !important
         width: 65px !important
-        background-size: 65px 65px
+        background-size: 100% 100%!important
 @media ( max-width : 716px )
   #second
     ul
@@ -199,3 +200,9 @@ body
           width: 50px!important
       #contact
         margin-right: 20px!important
+@media ( min-width : 1900px )
+        #header
+          bold
+            font-size: 27px!important
+          mini
+            font-size: 23px!important
