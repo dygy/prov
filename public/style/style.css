@@ -11,7 +11,9 @@
   #dropdown ul {
     margin: 10px 10% 0 0; }
     #dropdown ul li span {
-      font: 18px bold !important;
+      font: 18px !important;
+      font-weight: 900 !important;
+      font-family: Geom , serif !important;
       position: relative;
       left: 20px; }
     #dropdown ul li:hover {
@@ -43,7 +45,8 @@ body {
   max-width: 100%;
   width: 100vw;
   margin: 0;
-  font-family: "Geom", serif !important; }
+  font-family: "Geom", serif !important;
+  font-weight: 900; }
 
 #header {
   color: white;
@@ -56,7 +59,7 @@ body {
     flex-direction: row;
     max-width: 100%; }
     #header #first div {
-      margin: 0 4% 0 0;
+      margin: 0 3% 0 0;
       padding-top: 40px;
       width: 20%; }
       #header #first div div {
@@ -89,14 +92,14 @@ body {
         user-select: none;
         margin: 0 3% 0 0; }
         #header #second ul li img {
-          margin-top: 10px;
-          margin-left: 10px;
+          margin-left: 80%;
           width: 20px;
           height: 20px; }
       #header #second ul li:hover {
         text-shadow: 1px 0px 3px whitesmoke; }
 
 #logo-warp {
+  margin-left: 3% !important;
   padding-top: 10px !important;
   left: 15px;
   position: relative; }
@@ -135,7 +138,7 @@ body {
     width: 16px !important;
     height: 16px !important; }
   #search input {
-    width: 100%;
+    width: 80%;
     outline: none;
     border: none;
     background: none;
@@ -236,7 +239,7 @@ body {
 
 .soc-ico {
   display: flex;
-  margin: -20px -30px 0 0 !important; }
+  margin: -45px -30px 0 0 !important; }
 
 .lowscreen {
   display: none; }
@@ -249,24 +252,29 @@ body {
   width: 100%;
   min-height: 340px; }
   #footer #ftr-frst {
+    font-weight: 900;
     padding-left: 10px;
     display: flex; }
     #footer #ftr-frst div {
-      margin: 50px 9% 0 0; }
+      margin: 50px 7% 0 0; }
     #footer #ftr-frst #soc {
       display: flex;
       flex-flow: column;
-      margin-top: 30px; }
+      margin-top: 45px; }
       #footer #ftr-frst #soc span {
         padding-top: 10px;
-        padding-bottom: 20px; }
+        padding-bottom: 20px;
+        width: 294px; }
       #footer #ftr-frst #soc h1 {
         text-shadow: white 0.5px -0.5px 0.5px;
         margin: 0; }
     #footer #ftr-frst #faq h4 {
+      margin-top: 0;
       text-shadow: white 0px -1px 1px;
-      margin-left: 2.3em; }
+      margin-left: 2.3em;
+      width: 270px; }
     #footer #ftr-frst #faq ul {
+      margin-top: -15px;
       list-style: none; }
       #footer #ftr-frst #faq ul li {
         text-decoration: underline #FDB13E; }
@@ -286,6 +294,7 @@ body {
       font: 12px bold;
       text-transform: uppercase; }
   #footer #ftr-scnd {
+    font-weight: 900;
     padding-left: 10px;
     display: flex; }
     #footer #ftr-scnd div {
@@ -300,17 +309,21 @@ body {
 @media (max-width: 1325px) {
   phone {
     display: inline !important;
-    font-size: 22px !important; }
+    font-size: 20px !important; }
+  #footer {
+    font-weight: 700 !important; }
   #ftr-frst div {
-    margin: 0 7% 0 0 !important; } }
+    margin: 40px 5% 0 0 !important; }
+  #ftr-frst .phone {
+    margin-right: 0 !important; } }
 
 @media (max-width: 1152px) {
   #ftr-frst div {
-    margin: 0 5% 0 0 !important; } }
+    margin: 40px 3% 0 0 !important; } }
 
 @media (max-width: 1069px) {
   #ftr-frst div {
-    margin: 0 3% 0 0 !important; }
+    margin: 40px 2% 0 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -318,7 +331,7 @@ body {
 
 @media (max-width: 936px) {
   #ftr-frst div {
-    margin: 0 2% 0 0 !important; }
+    margin: 40px 1% 0 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -367,32 +380,34 @@ body {
     margin-right: 40px !important; } }
 
 @media (min-width: 1700px) {
+  #footer #info {
+    width: 600px !important; }
   #footer #buttons button {
+    margin-top: -10px;
     font-size: 24px !important;
     height: 80px !important;
     width: 350px !important; }
   #footer span, #footer email, #footer adr, #footer city, #footer li {
-    font-size: 20px; }
+    font-size: 25px; }
   #footer h4, #footer phone {
-    font-size: 25px !important; }
+    font-size: 30px !important; }
   #footer h4 {
-    width: 450px !important; }
+    width: 501px !important; }
   #footer #faq {
     margin-right: 40px !important; } }
 
 #form {
+  padding-top: 30px;
   padding-bottom: 20px;
   background-color: #FCB600;
   width: 100%;
   min-height: 300px;
   color: black;
   font-weight: lighter; }
-  #form input::placeholder {
-    color: black;
-    font-size: 16px; }
-  #form textarea::placeholder {
-    color: black;
-    font-size: 16px; }
+  #form ::placeholder {
+    font-weight: 900;
+    font-size: 16px;
+    color: black; }
   #form #form-one {
     margin-bottom: 20px;
     text-align: center; }
@@ -423,7 +438,8 @@ body {
       height: 20px;
       border: none;
       margin: 0 5% 0;
-      box-shadow: 1px 1px 1px black; }
+      box-shadow: 1px 1px 1px black;
+      font-weight: 900; }
   #form #form-four {
     display: flex;
     flex-wrap: wrap;
@@ -439,11 +455,14 @@ body {
       box-shadow: 2px 2px 3px black; }
 
 @media (min-width: 1700px) {
+  #form input {
+    height: 50px !important; }
+  #form textarea {
+    height: 300px !important; }
   #form input, #form textarea {
-    font: bold 20px sans-serif; }
-    #form input input::-webkit-input-placeholder, #form input textarea::-webkit-input-placeholder, #form textarea input::-webkit-input-placeholder, #form textarea textarea::-webkit-input-placeholder {
-      font-size: 20px;
-      line-height: 3; } }
+    font: bold 25px sans-serif; }
+  #form ::placeholder {
+    font-size: 25px !important; } }
 
 .mark {
   width: 30px;
@@ -521,6 +540,7 @@ body {
   top: -38%; }
 
 #serve #kach {
+  font-weight: 900;
   height: 200px;
   display: flex;
   background-image: url("/img/bar.jpg");
@@ -540,21 +560,23 @@ body {
   flex-wrap: wrap;
   flex-flow: row;
   display: flex;
-  justify-content: center; }
+  justify-content: left; }
   #serve #usl div {
-    margin: 0 5% 0; }
+    margin: 0 4% 0; }
+    #serve #usl div p {
+      font-weight: 900; }
 
 #serve .serv-list {
+  font-weight: 900;
   margin: 0 -25px 40px !important;
   display: flex; }
   #serve .serv-list ul {
     margin: -30px 0 0;
     list-style: none; }
   #serve .serv-list li {
-    width: 183px;
-    height: 20px;
+    width: 263px;
+    height: 30px;
     padding-right: 10px;
-    background-color: #e4e4e4;
     margin-left: -1em;
     border: 0.3px rgba(0, 0, 0, 0.25) solid; }
   #serve .serv-list ul li::before {
@@ -564,7 +586,8 @@ body {
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    padding-left: 4px; }
+    padding-left: 4px;
+    margin-top: 5px; }
 
 #passport {
   padding-bottom: 40px;
@@ -580,7 +603,7 @@ body {
       background-image: url("../img/herbalife.jpg");
       background-size: 100% 100%;
       margin-right: 20px;
-      margin-left: 40px;
+      margin-left: 10%;
       min-width: 300px;
       height: 200px;
       margin-bottom: 40px; }
@@ -622,21 +645,25 @@ body {
 #but-take {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  font-family: Geom !important;
+  font-weight: normal; }
   #but-take button {
-    width: 140px;
+    width: 150px;
     height: 30px;
     font-size: 18px;
     background-color: #FCB600;
     border: none;
     box-shadow: 0px 0px 3px black; }
     #but-take button strong {
-      top: -11px !important; }
+      top: -11px !important;
+      font-weight: 500; }
     #but-take button img {
       height: 30px !important;
       width: 30px !important;
       top: -1px !important;
-      left: 6px; }
+      left: 6px;
+      margin-right: 5px; }
 
 #promise {
   background-image: url("/img/street.jpg");
@@ -661,6 +688,8 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     margin: 10px 3% 0 !important; }
     .ads div div {
       justify-content: center;
@@ -669,9 +698,12 @@ body {
       width: 200px;
       height: 200px; }
       .ads div div img {
-        margin-left: 13%; }
+        margin-left: 15%; }
       .ads div div svg {
-        margin-left: 13%; }
+        margin-left: 15%; }
+      .ads div div .B {
+        margin-left: 15%;
+        width: 90px !important; }
       .ads div div text {
         position: relative;
         bottom: 34px;
@@ -679,8 +711,8 @@ body {
       .ads div div .hov {
         display: none; }
     .ads div div:hover text {
-      color: #82d2d0;
-      text-shadow: black 1px 1px 1px; }
+      color: #ffb800;
+      text-shadow: #fc9b00 1px 1px 1px; }
     .ads div div:hover .hov {
       display: block; }
     .ads div div:hover .hovNo {
@@ -758,6 +790,8 @@ body {
   .ads img, .room img {
     height: 80px !important;
     width: 90px !important; }
+  .ads .B, .room .B {
+    width: 70px !important; }
   .ads svg, .room svg {
     height: 120px !important;
     width: 120px !important; } }
@@ -774,6 +808,26 @@ body {
     left: 93%; } }
 
 @media (min-width: 1500px) {
+  .ads div div {
+    width: 400px;
+    height: 300px;
+    margin-top: 50px !important; }
+    .ads div div text {
+      margin-left: 20% !important; }
+    .ads div div img {
+      min-height: 170px !important;
+      min-width: 250px !important; }
+    .ads div div .B {
+      margin-right: 10%;
+      margin-left: 30%;
+      min-height: 170px !important;
+      min-width: 170px !important; }
+    .ads div div .Boxx {
+      height: 250px !important;
+      width: 200px !important; }
+    .ads div div svg {
+      min-height: 250px !important;
+      min-width: 250px !important; }
   .ads text {
     font-size: 20px !important; }
   #street {
@@ -815,13 +869,34 @@ body {
       top: 13% !important; } }
 
 @media (min-width: 1700px) {
+  .mark {
+    height: 40px;
+    width: 40px; }
+  #usl div {
+    margin: 0 5.5% 0 !important; }
+  #usl p {
+    font-size: 18px !important;
+    left: 45% !important;
+    bottom: 65px;
+    width: 155px; }
+  #usl img {
+    border-bottom: 60px black solid !important;
+    width: 350px !important;
+    height: 500px !important; }
+  .serv-list ul {
+    margin-top: -55px !important; }
+  .serv-list li {
+    margin-left: -17px !important;
+    width: 362px !important;
+    height: 30px !important;
+    font-size: 19px !important; }
   #but-take button {
     height: 50px !important;
     width: 200px !important;
     font-size: 26px; }
     #but-take button strong {
       top: -12px !important;
-      right: 12px !important; }
+      right: 0px !important; }
     #but-take button img {
       left: 4px !important;
       top: 1px !important;
@@ -856,22 +931,32 @@ body {
     #room #tfive {
       top: 13% !important; }
   #pass-logo {
-    height: 350px !important;
-    width: 480px !important; }
+    height: 450px !important;
+    min-width: 600px !important; }
   #promise-text {
     width: 26% !important; }
   #kach {
-    height: 300px !important;
+    height: 350px !important;
     font-size: 20px; }
     #kach div {
       padding-top: 62px !important;
       text-align: center; }
+      #kach div img {
+        width: 120px !important;
+        height: 120px !important; }
       #kach div p {
+        font-size: 25px !important;
         width: auto !important; }
   #passport #pass-flex text {
     max-width: 60% !important;
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 10%; }
+  #passport #circus bold {
+    font-size: 25px !important;
+    font-weight: 900 !important; }
+  #passport #circus mini {
+    font-size: 18px !important;
+    font-weight: 800 !important; }
   #passport #circus div div {
     margin: 0 0 0 47px !important; }
   #passport #circus div #designI {
@@ -890,8 +975,8 @@ body {
   max-width: 220px; }
 
 .polaroid img {
-  width: 170px;
-  height: 200px;
+  width: 250px;
+  height: 350px;
   border: 10px solid #000000;
   border-bottom: 45px solid #000000;
   -webkit-box-shadow: 3px 3px 3px #777;
@@ -903,8 +988,9 @@ body {
   position: relative;
   text-align: center;
   width: 100%;
-  left: -6.5%;
+  left: 10.5%;
   bottom: 40px;
-  font: 400 12px/1 'Kaushan Script', cursive; }
+  font: 400 15px/1 Geom , cursive;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

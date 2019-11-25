@@ -22,13 +22,13 @@ div(class="ads")
         h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ НАРУЖНОЙ РЕКЛАМЫ
     div(id="ins-one")
         div(onclick="moveTo('/light')")
-            include ../../public/img/1.svg
-            img(src="../img/hover/icon (10).png" height=150 width=140 class="hov")
+            img(src="../img/1.png" height=150 width=140 class="hovNo Boxx")
+            img(src="../img/hover/icon (10).png" height=150 width=140 class="hov Boxx")
             text световые
             text короба
         div(onclick="moveTo('/fonts')")
-            img(src="../img/naruzh/naruzh.png" height=100 width=100 class="hovNo")
-            img(src="../img/hover/icon (12).png" height=100 width=100 class="hov"  )
+            img(src="../img/naruzh/naruzh.png" height=100 width=100 class="hovNo B")
+            img(src="../img/hover/icon (12).png" height=100 width=100 class="hov B"  )
             br
             br
             text светящиеся
@@ -191,8 +191,8 @@ block room-ads
                 text световые
                 text панели
             div(onclick="moveTo('/signboards')")
-                img(src="../img/inter/Inter6.png" height=100 width=120 class="hovNo")
-                img(src="../img/hover/icon (12).png" height=100 width=120 class="hov"  )
+                img(src="../img/inter/Inter6.png" height=100 width=120 class="hovNo B")
+                img(src="../img/hover/icon (12).png" height=100 width=120 class="hov B"  )
                 br
                 br
                 text интерьерные
@@ -214,7 +214,7 @@ block room-ads
 block take
     div(id="but-take")
         button
-            strong(style="position:relative; top:-6px") Заказать
+            strong(style="position:relative; top:-6px") ЗАКАЗАТЬ
             img(src="../img/buy.png" height=20 width=20 style="position:relative; top:-1px")
     div(id="promise")
         div(id="promise-text") ИЗГОТОВИМ ЛЮБУЮ ВЫВЕСКУ ПО ЗАКОНУ ЗА 15 ДНЕЙ СОГЛАСНО 902-ПП
@@ -230,7 +230,7 @@ block serve
                     ul
                         li(onclick="moveTo('/signboard')") ВЫВЕСКИ
                         li(onclick="moveTo('/banners')") БАННЕРЫ
-                        li(style="font-size: 15px;width:182px;height:20px")
+                        li(onclick="moveTo('/lightpan')")
                             text СВЕТОВЫЕ ПАНЕЛИ
                         li(onclick="moveTo('/kron')") КРОНШТЕЙНЫ
                         li ПИЛОНЫ
@@ -239,7 +239,7 @@ block serve
                 p ВХОДНЫЕ ГРУППЫ
                 div(class="serv-list")
                     ul
-                        li ВЫВЕСКИ
+                        li(onclick="moveTo('/signboards')") ВЫВЕСКИ
                         li КОЗЫРЬКИ
                         li(onclick="moveTo('/shtender')") ШТЕНДЕРЫ
                         li ШИРОКОФОРМАТ
@@ -252,7 +252,7 @@ block serve
                     ul
                         li ВЫВЕСКИ И ЛОГО
                         li(onclick="moveTo('/navs')") НАВИГАЦИЯ
-                        li(style="font-size: 15px;width:182px;height:20px")
+                        li(onclick="moveTo('/lightpan')")
                             text СВЕТОВЫЕ ПАНЕЛИ
                         li ШИРОКОФОРМАТ
                         li(onclick="moveTo('/infstands')") ИНФО СТЕНДЫ

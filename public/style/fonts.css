@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #dropdown {
   display: none;
   position: absolute;
@@ -11,7 +10,9 @@
   #dropdown ul {
     margin: 10px 10% 0 0; }
     #dropdown ul li span {
-      font: 18px bold !important;
+      font: 18px !important;
+      font-weight: 900 !important;
+      font-family: Geom , serif !important;
       position: relative;
       left: 20px; }
     #dropdown ul li:hover {
@@ -56,7 +57,7 @@ body {
     flex-direction: row;
     max-width: 100%; }
     #header #first div {
-      margin: 0 4% 0 0;
+      margin: 0 3% 0 0;
       padding-top: 40px;
       width: 20%; }
       #header #first div div {
@@ -64,8 +65,8 @@ body {
         width: 100%; }
     #header #first img {
       float: left;
-      width: 20px;
-      height: 20px; }
+      width: 50px;
+      height: 50px; }
     #header #first bold {
       font: 15pt bold; }
     #header #first mini {
@@ -97,14 +98,16 @@ body {
         text-shadow: 1px 0px 3px whitesmoke; }
 
 #logo-warp {
+  margin-left: 3% !important;
   padding-top: 10px !important;
   left: 15px;
   position: relative; }
 
 #logo {
-  background-image: url("../../img/Лого 100px.png");
+  background-image: url("../../img/logo.png");
   height: 100px !important;
   width: 100px !important;
+  background-size: 100% 100%;
   border: none;
   background-position: center; }
   #logo bold {
@@ -134,7 +137,7 @@ body {
     width: 16px !important;
     height: 16px !important; }
   #search input {
-    width: 100%;
+    width: 80%;
     outline: none;
     border: none;
     background: none;
@@ -162,7 +165,7 @@ body {
       margin: 0 10px 0 !important;
       height: 65px !important;
       width: 65px !important;
-      background-size: 65px 65px; } }
+      background-size: 100% 100% !important; } }
 
 @media (max-width: 716px) {
   #second ul li {
@@ -227,9 +230,15 @@ body {
     #second ul #contact {
       margin-right: 20px !important; } }
 
+@media (min-width: 1900px) {
+  #header bold {
+    font-size: 27px !important; }
+  #header mini {
+    font-size: 23px !important; } }
+
 .soc-ico {
   display: flex;
-  margin: -20px -30px 0 0 !important; }
+  margin: -45px -30px 0 0 !important; }
 
 .lowscreen {
   display: none; }
@@ -242,6 +251,7 @@ body {
   width: 100%;
   min-height: 340px; }
   #footer #ftr-frst {
+    font-weight: 900;
     padding-left: 10px;
     display: flex; }
     #footer #ftr-frst div {
@@ -249,7 +259,7 @@ body {
     #footer #ftr-frst #soc {
       display: flex;
       flex-flow: column;
-      margin-top: 30px; }
+      margin-top: 45px; }
       #footer #ftr-frst #soc span {
         padding-top: 10px;
         padding-bottom: 20px; }
@@ -257,9 +267,11 @@ body {
         text-shadow: white 0.5px -0.5px 0.5px;
         margin: 0; }
     #footer #ftr-frst #faq h4 {
+      margin-top: 0;
       text-shadow: white 0px -1px 1px;
       margin-left: 2.3em; }
     #footer #ftr-frst #faq ul {
+      margin-top: -25px;
       list-style: none; }
       #footer #ftr-frst #faq ul li {
         text-decoration: underline #FDB13E; }
@@ -279,6 +291,7 @@ body {
       font: 12px bold;
       text-transform: uppercase; }
   #footer #ftr-scnd {
+    font-weight: 900;
     padding-left: 10px;
     display: flex; }
     #footer #ftr-scnd div {
@@ -360,16 +373,19 @@ body {
     margin-right: 40px !important; } }
 
 @media (min-width: 1700px) {
+  #footer #info {
+    width: 600px !important; }
   #footer #buttons button {
+    margin-top: -10px;
     font-size: 24px !important;
     height: 80px !important;
     width: 350px !important; }
   #footer span, #footer email, #footer adr, #footer city, #footer li {
-    font-size: 20px; }
+    font-size: 25px; }
   #footer h4, #footer phone {
-    font-size: 25px !important; }
+    font-size: 30px !important; }
   #footer h4 {
-    width: 450px !important; }
+    width: 501px !important; }
   #footer #faq {
     margin-right: 40px !important; } }
 
@@ -399,6 +415,7 @@ table {
   font-size: 21px; }
 
 .buy-tel {
+  font-family: Geom;
   border: none;
   box-shadow: 2px 1px 8px black;
   background-color: #FCB600;
