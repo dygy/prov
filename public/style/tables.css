@@ -21,4 +21,10 @@
   #flex-box .elem img {
     height: 200px !important; }
 
+@media (min-width: 1700px) {
+  #flex-box {
+    margin: 200px 13%; }
+  #font-flex {
+    margin: 500px 13% 500px; } }
+
 /*# sourceMappingURL=tables.css.map */

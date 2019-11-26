@@ -1,5 +1,6 @@
 #dropdown {
   display: none;
+  z-index: 4;
   position: absolute;
   background: rgba(255, 255, 255, 0.81);
   flex-wrap: wrap;
@@ -85,17 +86,18 @@ body {
       list-style: none;
       text-transform: uppercase; }
       #header #second ul li {
+        font-weight: 500 !important;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
         margin: 0 3% 0 0; }
         #header #second ul li img {
-          margin-top: 10px;
-          margin-left: 10px;
-          width: 20px;
-          height: 20px; }
+          margin-left: 80%;
+          width: 40px;
+          height: 40px; }
       #header #second ul li:hover {
+        font-weight: 900 !important;
         text-shadow: 1px 0px 3px whitesmoke; }
 
 #logo-warp {
@@ -117,6 +119,9 @@ body {
   #logo mini {
     text-shadow: 0px -1px 2px  white;
     margin-left: 10px; }
+
+#city, #phone {
+  text-shadow: -1px -2px 4px whitesmoke; }
 
 #phone bold {
   margin-left: 0; }
@@ -188,9 +193,10 @@ body {
 @media (min-width: 1300px) {
   #logo {
     background-size: 100% 100%;
-    height: 110px !important;
-    width: 110px !important; }
+    height: 120px !important;
+    width: 100px !important; }
   #header {
+    padding-top: 40px;
     min-height: 220px; }
     #header mini {
       font-size: 17px !important; }
@@ -202,8 +208,8 @@ body {
       margin: 0 4% 0 0 !important;
       font-size: 21px !important; }
       #second ul li img {
-        margin-top: 10px;
-        height: 30px !important;
+        margin-top: 2px;
+        height: 50px !important;
         width: 50px !important; }
     #second ul #contact {
       margin-right: 20px !important; } }
@@ -211,23 +217,30 @@ body {
 @media (min-width: 1700px) {
   #logo {
     background-size: 100% 100%;
-    height: 130px !important;
-    width: 130px !important; }
+    height: 220px !important;
+    width: 200px !important; }
+  #city, #phone, #search {
+    margin-top: 50px !important; }
   #header {
     min-height: 250px; }
     #header mini {
       font-size: 17px !important; }
     #header bold {
       font-size: 25px !important; }
+  #search input {
+    height: 30px; }
+  #search img {
+    height: 26px !important;
+    width: 26px !important; }
   #second {
     margin-top: 30px; }
     #second ul li {
       margin: 0 4% 0 0 !important;
       font-size: 23px !important; }
       #second ul li img {
-        margin-top: 4px;
-        height: 30px !important;
-        width: 50px !important; }
+        margin-top: -13px;
+        height: 60px !important;
+        width: 60px !important; }
     #second ul #contact {
       margin-right: 20px !important; } }
 
@@ -239,7 +252,7 @@ body {
 
 .soc-ico {
   display: flex;
-  margin: -45px -30px 0 0 !important; }
+  margin: -45px -30px 0 -7px !important; }
 
 .lowscreen {
   display: none; }
@@ -256,23 +269,25 @@ body {
     padding-left: 10px;
     display: flex; }
     #footer #ftr-frst div {
-      margin: 50px 9% 0 0; }
+      margin: 50px 7% 0 0; }
     #footer #ftr-frst #soc {
       display: flex;
       flex-flow: column;
       margin-top: 45px; }
       #footer #ftr-frst #soc span {
         padding-top: 10px;
-        padding-bottom: 20px; }
+        padding-bottom: 20px;
+        width: 294px; }
       #footer #ftr-frst #soc h1 {
         text-shadow: white 0.5px -0.5px 0.5px;
         margin: 0; }
     #footer #ftr-frst #faq h4 {
       margin-top: 0;
       text-shadow: white 0px -1px 1px;
-      margin-left: 2.3em; }
+      margin-left: 2.3em;
+      width: 270px; }
     #footer #ftr-frst #faq ul {
-      margin-top: -25px;
+      margin-top: -15px;
       list-style: none; }
       #footer #ftr-frst #faq ul li {
         text-decoration: underline #FDB13E; }
@@ -307,17 +322,21 @@ body {
 @media (max-width: 1325px) {
   phone {
     display: inline !important;
-    font-size: 22px !important; }
+    font-size: 20px !important; }
+  #footer {
+    font-weight: 700 !important; }
   #ftr-frst div {
-    margin: 0 7% 0 0 !important; } }
+    margin: 40px 5% 0 0 !important; }
+  #ftr-frst .phone {
+    margin-right: 0 !important; } }
 
 @media (max-width: 1152px) {
   #ftr-frst div {
-    margin: 0 5% 0 0 !important; } }
+    margin: 40px 3% 0 0 !important; } }
 
 @media (max-width: 1069px) {
   #ftr-frst div {
-    margin: 0 3% 0 0 !important; }
+    margin: 40px 2% 0 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -325,7 +344,7 @@ body {
 
 @media (max-width: 936px) {
   #ftr-frst div {
-    margin: 0 2% 0 0 !important; }
+    margin: 40px 1% 0 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -363,8 +382,10 @@ body {
     font-size: 22px !important;
     height: 70px !important;
     width: 320px !important; }
-  #footer span, #footer email, #footer adr, #footer city, #footer li {
+  #footer email, #footer adr, #footer city, #footer li {
     font-size: 19px; }
+  #footer span {
+    font-size: 17px !important; }
   #footer h4, #footer phone {
     font-size: 23px !important; }
   #footer h4 {
@@ -441,26 +462,32 @@ table {
   margin-top: 30px;
   margin-bottom: 30px !important;
   display: flex; }
-  #smth img {
+  #smth .smthImg {
     margin-left: 20px;
     min-width: 400px;
     height: 500px; }
   #smth div {
     margin-left: 15px; }
     #smth div p {
+      margin-top: 0;
       padding-left: 30px;
       padding-right: 40px;
       font-size: 20px; }
     #smth div div {
       display: flex;
       justify-content: center; }
+  #smth .buttonImg {
+    margin-top: 10%;
+    width: 25%;
+    height: 25%;
+    box-shadow: 2px 1px 8px black; }
 
 .smth {
   margin-bottom: 40px;
   margin-left: 40px !important;
   margin-top: 30px;
   display: flex; }
-  .smth img {
+  .smth .smthImg {
     margin-left: 20px;
     min-width: 400px;
     height: 400px; }
@@ -473,6 +500,10 @@ table {
     .smth div div {
       display: flex;
       justify-content: center; }
+
+@media (min-width: 1700px) {
+  #smth p, .smth p {
+    font-size: 27px !important; } }
 
 .title {
   margin-bottom: 40px;
@@ -543,7 +574,7 @@ table {
     max-width: 200px;
     border-radius: 10px;
     background: #EDEDED;
-    margin: 0px 35px 0; }
+    margin: 30px 35px 0; }
     #flex-box .elem bold {
       font-family: bold;
       font-size: 18px; }
@@ -568,5 +599,14 @@ table {
 #smth img {
   min-width: 300px;
   height: 300px; }
+
+@media (min-width: 1700px) {
+  #flex-box, #font-flex {
+    transform: scale(1.5);
+    margin: 300px 10%; }
+  #flex-box {
+    transform: scale(1.3);
+    margin-left: 12% !important;
+    margin-right: 12% !important; } }
 
 /*# sourceMappingURL=kron.css.map */

@@ -3,26 +3,32 @@
   margin-top: 30px;
   margin-bottom: 30px !important;
   display: flex; }
-  #smth img {
+  #smth .smthImg {
     margin-left: 20px;
     min-width: 400px;
     height: 500px; }
   #smth div {
     margin-left: 15px; }
     #smth div p {
+      margin-top: 0;
       padding-left: 30px;
       padding-right: 40px;
       font-size: 20px; }
     #smth div div {
       display: flex;
       justify-content: center; }
+  #smth .buttonImg {
+    margin-top: 10%;
+    width: 25%;
+    height: 25%;
+    box-shadow: 2px 1px 8px black; }
 
 .smth {
   margin-bottom: 40px;
   margin-left: 40px !important;
   margin-top: 30px;
   display: flex; }
-  .smth img {
+  .smth .smthImg {
     margin-left: 20px;
     min-width: 400px;
     height: 400px; }
@@ -35,6 +41,10 @@
     .smth div div {
       display: flex;
       justify-content: center; }
+
+@media (min-width: 1700px) {
+  #smth p, .smth p {
+    font-size: 27px !important; } }
 
 .title {
   margin-top: 40px;

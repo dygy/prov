@@ -238,8 +238,8 @@ body {
       margin: 0 4% 0 0 !important;
       font-size: 23px !important; }
       #second ul li img {
-        margin-top: -4px;
-        height: 40px !important;
+        margin-top: -13px;
+        height: 60px !important;
         width: 60px !important; }
     #second ul #contact {
       margin-right: 20px !important; } }
@@ -912,15 +912,25 @@ body {
     #street #one {
       top: 60% !important; }
     #street #two {
-      top: 38% !important; }
-    #street #three {
-      top: 42%; }
-    #street #four {
-      top: 44% !important; }
-    #street #five {
       top: 35% !important; }
+    #street #three {
+      top: 38% !important; }
+    #street #four {
+      top: 39% !important; }
+    #street #five {
+      top: 25% !important; }
     #street #six {
-      top: 28% !important; }
+      top: 19% !important; }
+    #street #seven {
+      top: -2% !important; }
+    #street #eight {
+      top: -2% !important; }
+    #street #nine {
+      top: -15% !important; }
+    #street #ten {
+      top: -14% !important; }
+    #street #el {
+      top: -18% !important; }
   #room {
     height: 700px; }
     #room #tthree {

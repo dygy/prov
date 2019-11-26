@@ -3,6 +3,11 @@
 @import "everypage/footer"
 @import "everypage/smth"
 @import "everypage/button"
+
+space
+  margin-left: 5px
+  margin-right: 5px
+
 .calc
   background-color: #ffffff
   height: 35px!important
@@ -15,11 +20,13 @@
   text-align: center
   justify-content: center
 #font-flex
+  align-content: center
+  align-items: center
   justify-content: center
   padding-bottom: 20px
   display: flex
   flex-wrap: wrap
-  flex-direction: row
+  flex-direction: column
   max-width: 100%
   .elem
     padding-bottom: 10px
@@ -27,9 +34,9 @@
     padding-right: 30px
     border-radius: 10px
     background: #ededed
-    margin: 5px
+    margin: 15px
     display: flex
-    flex-flow: row
+    flex-flow: row!important
     justify-content: center
     table
       border-spacing: 7px
@@ -44,12 +51,12 @@
       display: flex
       flex-flow: column
       p
-        margin-top: 96px
+        margin-top: 20px
         margin-left: 10px
         margin-right: 10px
     img
-      width: 200px
-      height: 400px
+      width: 300px
+      height: 300px
       margin-bottom: 10px
     strong
       padding-left: 10px
@@ -61,7 +68,9 @@
     .imgflex
       display: flex
       flex-flow: column
-      justify-content: center
+      justify-content: flex-start
+      strong
+        margin-top: 20px
 
     button
       border: none
@@ -111,3 +120,12 @@
       width: 100px
       border: none
       background-color: #ffb800
+
+@media ( min-width : 1700px )
+  #font-flex, #flex-box
+    transform: scale(1.4)
+    margin-top: 400px
+    margin-bottom: 400px
+  #flex-box
+    margin-left: 10%
+    margin-right: 10%
