@@ -41,6 +41,10 @@
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
 
+@font-face {
+  font-family: "GeomB";
+  src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
+
 body {
   max-width: 100%;
   width: 100vw;
@@ -421,8 +425,9 @@ table {
   table tr {
     background-color: whitesmoke; }
   table td {
+    padding-left: 3%;
     width: 200px;
-    height: 30px; }
+    height: 40px; }
   table .blue {
     background-color: #E0F3F3; }
   table .main {

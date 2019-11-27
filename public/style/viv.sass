@@ -1,0 +1,33 @@
+@import "everypage/dropdown"
+@import "everypage/hdr"
+@import "everypage/footer"
+@import "everypage/table"
+@import "everypage/title"
+.title
+  h1
+    font-weight: 900
+.photoflex
+  margin-top: 40px
+  margin-bottom: 40px
+  display: flex
+  justify-content: center
+  img
+    margin: 0 0.3% 0
+    height: 150px
+    width: 150px
+table
+  border-spacing: 10px
+  .price
+    width: 15vw!important
+  .name
+    width: 45vw!important
+
+@media ( min-width : 1700px )
+  tbody
+    font-size: 25px
+  .photoflex
+    margin-top: 100px
+    margin-bottom: 150px
+    img
+      transform: scale(1.5)
+      margin: 0 3% 0 !important

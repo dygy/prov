@@ -110,7 +110,7 @@ div(class="ads")
             text брендирование
 
     div(id="ins-four")
-        div
+        div(onclick="moveTo('/viv')")
             img(src="../img/naruzh/naruzh11.png" height=100 width=120 class="hovNo")
             img(src="../img/hover1/icon (20).jpg" height=100 width=120 class="hov"  )
             br
@@ -213,12 +213,12 @@ block room-ads
 
 block take
     div(id="but-take")
-        img(src="../img/button.png")
+        img( class="buttonImg" src="../img/button.png")
     div(id="promise")
         div(id="promise-text") ИЗГОТОВИМ ЛЮБУЮ ВЫВЕСКУ ПО ЗАКОНУ ЗА 15 ДНЕЙ СОГЛАСНО 902-ПП
 block serve
     div(id="serve")
-        div(style="text-align:center")
+        div( class="title")
             h1 УСЛУГИ ПО ТЕМАМ
         div(id="usl")
             div(class="polaroid")
@@ -226,7 +226,7 @@ block serve
                 p ГОРОДСКАЯ РЕКЛАМА
                 div(class="serv-list")
                     ul
-                        li(onclick="moveTo('/signboard')")
+                        li(onclick="moveTo('/viv')")
                             text ВЫВЕСКИ
                         li(onclick="moveTo('/banners')")
                             text БАННЕРЫ
@@ -241,7 +241,7 @@ block serve
                 p ВХОДНЫЕ ГРУППЫ
                 div(class="serv-list")
                     ul
-                        li(onclick="moveTo('/signboards')")
+                        li(onclick="moveTo('/viv')")
                             text ВЫВЕСКИ
                         li
                             text КОЗЫРЬКИ

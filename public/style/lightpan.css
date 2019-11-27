@@ -1,5 +1,6 @@
 #dropdown {
   display: none;
+  z-index: 4;
   position: absolute;
   background: rgba(255, 255, 255, 0.81);
   flex-wrap: wrap;
@@ -39,6 +40,10 @@
 @font-face {
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
+
+@font-face {
+  font-family: "GeomB";
+  src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
 
 body {
   max-width: 100%;

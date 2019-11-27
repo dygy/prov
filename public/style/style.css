@@ -1,6 +1,7 @@
 @charset "UTF-8";
 #dropdown {
   display: none;
+  z-index: 4;
   position: absolute;
   background: rgba(255, 255, 255, 0.81);
   flex-wrap: wrap;
@@ -40,6 +41,10 @@
 @font-face {
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
+
+@font-face {
+  font-family: "GeomB";
+  src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
 
 body {
   max-width: 100%;
@@ -682,6 +687,7 @@ body {
   color: whitesmoke;
   min-height: 25vw; }
   #promise #promise-text {
+    font-family: GeomB;
     padding-bottom: 6%;
     margin-left: 60px;
     line-height: 100px;
@@ -976,6 +982,13 @@ body {
     margin: 0 0 0 76px !important; }
   #passport #circus div #callI {
     margin: 0 0 0 29px !important; } }
+
+.title {
+  font-family: GeomB;
+  margin-top: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
 
 #body {
   width: 100vw;

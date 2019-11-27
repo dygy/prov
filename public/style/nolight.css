@@ -42,6 +42,10 @@
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
 
+@font-face {
+  font-family: "GeomB";
+  src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
+
 body {
   max-width: 100%;
   width: 100vw;
@@ -422,8 +426,9 @@ table {
   table tr {
     background-color: whitesmoke; }
   table td {
+    padding-left: 3%;
     width: 200px;
-    height: 30px; }
+    height: 40px; }
   table .blue {
     background-color: #E0F3F3; }
   table .main {
@@ -479,8 +484,8 @@ table {
       justify-content: center; }
   #smth .buttonImg {
     margin-top: 10%;
-    width: 25%;
-    height: 25%;
+    max-width: 25% !important;
+    max-height: 25% !important;
     box-shadow: 2px 1px 8px black; }
 
 .smth {
@@ -501,6 +506,15 @@ table {
     .smth div div {
       display: flex;
       justify-content: center; }
+  .smth .calc {
+    margin-top: 10%;
+    width: 25% !important;
+    height: 10vh !important; }
+  .smth .buttonImg {
+    margin-top: 10%;
+    max-width: 25% !important;
+    max-height: 25% !important;
+    box-shadow: 2px 1px 8px black; }
 
 @media (min-width: 1700px) {
   #smth p, .smth p {

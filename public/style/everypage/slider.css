@@ -19,8 +19,8 @@
       justify-content: center; }
   #smth .buttonImg {
     margin-top: 10%;
-    width: 25%;
-    height: 25%;
+    max-width: 25% !important;
+    max-height: 25% !important;
     box-shadow: 2px 1px 8px black; }
 
 .smth {
@@ -41,12 +41,22 @@
     .smth div div {
       display: flex;
       justify-content: center; }
+  .smth .calc {
+    margin-top: 10%;
+    width: 25% !important;
+    height: 10vh !important; }
+  .smth .buttonImg {
+    margin-top: 10%;
+    max-width: 25% !important;
+    max-height: 25% !important;
+    box-shadow: 2px 1px 8px black; }
 
 @media (min-width: 1700px) {
   #smth p, .smth p {
     font-size: 27px !important; } }
 
 .title {
+  font-family: GeomB;
   margin-top: 40px;
   display: flex;
   text-align: center;
