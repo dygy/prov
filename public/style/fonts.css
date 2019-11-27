@@ -482,7 +482,7 @@ table {
       display: flex;
       justify-content: center; }
   #smth .buttonImg {
-    margin-top: 10%;
+    margin-top: 7%;
     max-width: 25% !important;
     max-height: 25% !important;
     box-shadow: 2px 1px 8px black; }
@@ -506,11 +506,11 @@ table {
       display: flex;
       justify-content: center; }
   .smth .calc {
-    margin-top: 10%;
+    margin-top: 7%;
     width: 25% !important;
     height: 10vh !important; }
   .smth .buttonImg {
-    margin-top: 10%;
+    margin-top: 7%;
     max-width: 25% !important;
     max-height: 25% !important;
     box-shadow: 2px 1px 8px black; }

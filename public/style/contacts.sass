@@ -1,11 +1,12 @@
 @import "tables.css"
-.mrgn
-  margin-left: 10px!important
-div
+
+.mrgn, .uls
+  margin-left: 10%!important
+  margin-right: 10%!important
+table
   td
     width: 40%
 .uls
-  margin-left: 10px!important
   ul
     list-style: none
   li
@@ -21,3 +22,11 @@ div
     width: 10px
     height: 10px
     display: inline-flex
+
+@media ( min-width : 1700px )
+  .mrgn, .uls
+    font-size: 20px
+  tbody
+    transform: scale(1.5)
+    margin-top: 70px
+    margin-bottom: 150px

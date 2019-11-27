@@ -552,6 +552,9 @@ table td {
     max-width: 30px; }
 
 @media (min-width: 1700px) {
+  #font-flex, #flex-box {
+    margin-left: 15%;
+    margin-right: 15%; }
   td {
     font-size: 13px !important; } }
 

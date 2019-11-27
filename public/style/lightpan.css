@@ -435,9 +435,9 @@ body {
       display: flex;
       justify-content: center; }
   #smth .buttonImg {
-    margin-top: 10%;
-    width: 25%;
-    height: 25%;
+    margin-top: 7%;
+    max-width: 25% !important;
+    max-height: 25% !important;
     box-shadow: 2px 1px 8px black; }
 
 .smth {
@@ -458,6 +458,15 @@ body {
     .smth div div {
       display: flex;
       justify-content: center; }
+  .smth .calc {
+    margin-top: 7%;
+    width: 25% !important;
+    height: 10vh !important; }
+  .smth .buttonImg {
+    margin-top: 7%;
+    max-width: 25% !important;
+    max-height: 25% !important;
+    box-shadow: 2px 1px 8px black; }
 
 @media (min-width: 1700px) {
   #smth p, .smth p {
@@ -611,10 +620,9 @@ space {
 @media (min-width: 1700px) {
   #font-flex, #flex-box {
     transform: scale(1.4);
-    margin-top: 400px;
-    margin-bottom: 400px; }
+    margin: 400px 15%; }
   #flex-box {
-    margin-left: 10%;
-    margin-right: 10%; } }
+    margin-left: 15%;
+    margin-right: 15%; } }
 
 /*# sourceMappingURL=lightpan.css.map */
