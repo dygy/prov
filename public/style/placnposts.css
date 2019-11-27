@@ -18,7 +18,7 @@
       display: flex;
       justify-content: center; }
   #smth .buttonImg {
-    margin-top: 10%;
+    margin-top: 7%;
     max-width: 25% !important;
     max-height: 25% !important;
     box-shadow: 2px 1px 8px black; }
@@ -42,11 +42,11 @@
       display: flex;
       justify-content: center; }
   .smth .calc {
-    margin-top: 10%;
+    margin-top: 7%;
     width: 25% !important;
     height: 10vh !important; }
   .smth .buttonImg {
-    margin-top: 10%;
+    margin-top: 7%;
     max-width: 25% !important;
     max-height: 25% !important;
     box-shadow: 2px 1px 8px black; }
@@ -508,6 +508,9 @@ body {
   text-align: center;
   justify-content: center; }
 
+.smth h3 {
+  padding-left: 30px; }
+
 .smth button {
   margin-top: 30px; }
 
@@ -516,5 +519,9 @@ body {
 
 .smth .buy-tel {
   margin-right: 20%; }
+
+@media (min-width: 1500px) {
+  h3 {
+    font-size: 35px !important; } }
 
 /*# sourceMappingURL=placnposts.css.map */
