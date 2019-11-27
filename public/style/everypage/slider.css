@@ -151,4 +151,16 @@ body {
       #full-page .sell white bold {
         font: 20px bold; }
 
+@media (min-width: 1300px) {
+  .sell {
+    transform: scale(1.3); } }
+
+@media (min-width: 1500px) {
+  .sell {
+    transform: scale(1.6); } }
+
+@media (min-width: 1700px) {
+  .sell {
+    transform: scale(2); } }
+
 /*# sourceMappingURL=slider.css.map */
