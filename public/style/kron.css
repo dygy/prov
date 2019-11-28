@@ -517,7 +517,9 @@ table {
 
 @media (min-width: 1700px) {
   #smth p, .smth p {
-    font-size: 27px !important; } }
+    font-size: 27px !important; }
+  #smth h3, .smth h3 {
+    font-size: 35px !important; } }
 
 .title {
   margin-bottom: 40px;

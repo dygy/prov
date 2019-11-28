@@ -1,0 +1,29 @@
+@import url(viv.css);
+@import url(kron.css);
+#smth p {
+  margin-left: 30px; }
+
+#smth ul {
+  list-style: none;
+  margin-left: 30px; }
+
+#smth li {
+  margin-top: 5px; }
+
+#smth li::before {
+  margin-right: 10px;
+  border-radius: 100%;
+  counter-increment: section;
+  content: "";
+  border: 2px solid blueviolet;
+  padding: 2px;
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  display: inline-flex; }
+
+#smth .smthImg {
+  height: 350px !important;
+  width: 400px !important; }
+
+/*# sourceMappingURL=pilon.css.map */

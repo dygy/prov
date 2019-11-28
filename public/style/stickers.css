@@ -1,0 +1,15 @@
+@import url(tables.css);
+#font-flex .elem {
+  background-color: #ededed !important;
+  text-align: center; }
+  #font-flex .elem img {
+    margin-left: 0 !important; }
+  #font-flex .elem p {
+    font-weight: bold; }
+
+#smth .img {
+  margin-top: 30px;
+  height: 280px !important;
+  min-width: 370px !important; }
+
+/*# sourceMappingURL=stickers.css.map */
