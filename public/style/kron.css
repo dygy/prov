@@ -516,7 +516,11 @@ table {
     box-shadow: 2px 1px 8px black; }
 
 @media (min-width: 1700px) {
-  #smth p, .smth p {
+  #smth li::before, .smth li::before {
+    border: 4px blueviolet solid !important;
+    height: 15px !important;
+    width: 15px !important; }
+  #smth p, #smth li, #smth span, .smth p, .smth li, .smth span {
     font-size: 27px !important; }
   #smth h3, .smth h3 {
     font-size: 35px !important; } }
