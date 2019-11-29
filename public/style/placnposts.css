@@ -17,17 +17,41 @@
     #smth div div {
       display: flex;
       justify-content: center; }
-  #smth .buttonImg {
-    margin-top: 7%;
-    max-width: 25% !important;
-    max-height: 25% !important;
-    box-shadow: 2px 1px 8px black; }
+    #smth div .calc {
+      margin-top: 7% !important;
+      width: 25% !important;
+      height: 10vh !important; }
+    #smth div .buttonImg {
+      margin-top: 7%;
+      max-width: 25% !important;
+      max-height: 25% !important;
+      box-shadow: 2px 1px 8px black; }
+
+.ntSmth .calc {
+  margin-top: 7% !important;
+  width: 25% !important;
+  height: 10vh !important; }
+
+.ntSmth .buttonImg {
+  margin-top: 7%;
+  max-width: 25% !important;
+  max-height: 25% !important;
+  box-shadow: 2px 1px 8px black; }
 
 .smth {
   margin-bottom: 40px;
   margin-left: 40px !important;
   margin-top: 30px;
   display: flex; }
+  .smth .calc {
+    margin-top: 7% !important;
+    width: 25% !important;
+    height: 10vh !important; }
+  .smth .buttonImg {
+    margin-top: 7%;
+    max-width: 25% !important;
+    max-height: 25% !important;
+    box-shadow: 2px 1px 8px black; }
   .smth .smthImg {
     margin-left: 20px;
     min-width: 400px;
@@ -41,19 +65,16 @@
     .smth div div {
       display: flex;
       justify-content: center; }
-  .smth .calc {
-    margin-top: 7%;
-    width: 25% !important;
-    height: 10vh !important; }
-  .smth .buttonImg {
-    margin-top: 7%;
-    max-width: 25% !important;
-    max-height: 25% !important;
-    box-shadow: 2px 1px 8px black; }
 
 @media (min-width: 1700px) {
-  #smth p, .smth p {
-    font-size: 27px !important; } }
+  #smth li::before, .smth li::before {
+    border: 4px blueviolet solid !important;
+    height: 15px !important;
+    width: 15px !important; }
+  #smth p, #smth li, #smth span, .smth p, .smth li, .smth span {
+    font-size: 27px !important; }
+  #smth h3, .smth h3 {
+    font-size: 35px !important; } }
 
 .calc {
   width: 150px;
@@ -387,15 +408,17 @@ body {
         display: inline;
         color: #FDB13E;
         font-size: 21px; }
-    #footer #ftr-frst #buttons button {
-      border-width: 1px;
-      background: black;
-      color: #FDB13E;
-      border-color: #FDB13E;
-      width: 250px;
-      height: 50px;
-      font: 12px bold;
-      text-transform: uppercase; }
+    #footer #ftr-frst #buttons {
+      margin-top: 60px !important; }
+      #footer #ftr-frst #buttons button {
+        border-width: 1px;
+        background: black;
+        color: #FDB13E;
+        border-color: #FDB13E;
+        width: 250px;
+        height: 50px;
+        font: 12px bold;
+        text-transform: uppercase; }
   #footer #ftr-scnd {
     font-weight: 900;
     padding-left: 10px;
@@ -507,6 +530,9 @@ body {
   display: flex;
   text-align: center;
   justify-content: center; }
+
+.smth .smthImg {
+  height: 550px !important; }
 
 .smth h3 {
   padding-left: 30px; }

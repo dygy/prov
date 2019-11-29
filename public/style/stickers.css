@@ -1,11 +1,14 @@
 @import url(tables.css);
-#font-flex .elem {
-  background-color: #ededed !important;
-  text-align: center; }
-  #font-flex .elem img {
-    margin-left: 0 !important; }
-  #font-flex .elem p {
-    font-weight: bold; }
+#font-flex {
+  margin-top: 200px !important;
+  margin-bottom: 200px !important; }
+  #font-flex .elem {
+    background-color: #ededed !important;
+    text-align: center; }
+    #font-flex .elem img {
+      margin-left: 0 !important; }
+    #font-flex .elem p {
+      font-weight: bold; }
 
 #smth .img {
   margin-top: 30px;

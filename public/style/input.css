@@ -1,4 +1,8 @@
 @import url(tables.css);
+.smthImg {
+  min-width: 450px !important;
+  height: 380px !important; }
+
 #font-flex .elem {
   min-width: 400px !important;
   height: 400px !important;

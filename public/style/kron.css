@@ -301,15 +301,17 @@ body {
         display: inline;
         color: #FDB13E;
         font-size: 21px; }
-    #footer #ftr-frst #buttons button {
-      border-width: 1px;
-      background: black;
-      color: #FDB13E;
-      border-color: #FDB13E;
-      width: 250px;
-      height: 50px;
-      font: 12px bold;
-      text-transform: uppercase; }
+    #footer #ftr-frst #buttons {
+      margin-top: 60px !important; }
+      #footer #ftr-frst #buttons button {
+        border-width: 1px;
+        background: black;
+        color: #FDB13E;
+        border-color: #FDB13E;
+        width: 250px;
+        height: 50px;
+        font: 12px bold;
+        text-transform: uppercase; }
   #footer #ftr-scnd {
     font-weight: 900;
     padding-left: 10px;
@@ -481,17 +483,41 @@ table {
     #smth div div {
       display: flex;
       justify-content: center; }
-  #smth .buttonImg {
-    margin-top: 7%;
-    max-width: 25% !important;
-    max-height: 25% !important;
-    box-shadow: 2px 1px 8px black; }
+    #smth div .calc {
+      margin-top: 7% !important;
+      width: 25% !important;
+      height: 10vh !important; }
+    #smth div .buttonImg {
+      margin-top: 7%;
+      max-width: 25% !important;
+      max-height: 25% !important;
+      box-shadow: 2px 1px 8px black; }
+
+.ntSmth .calc {
+  margin-top: 7% !important;
+  width: 25% !important;
+  height: 10vh !important; }
+
+.ntSmth .buttonImg {
+  margin-top: 7%;
+  max-width: 25% !important;
+  max-height: 25% !important;
+  box-shadow: 2px 1px 8px black; }
 
 .smth {
   margin-bottom: 40px;
   margin-left: 40px !important;
   margin-top: 30px;
   display: flex; }
+  .smth .calc {
+    margin-top: 7% !important;
+    width: 25% !important;
+    height: 10vh !important; }
+  .smth .buttonImg {
+    margin-top: 7%;
+    max-width: 25% !important;
+    max-height: 25% !important;
+    box-shadow: 2px 1px 8px black; }
   .smth .smthImg {
     margin-left: 20px;
     min-width: 400px;
@@ -505,15 +531,6 @@ table {
     .smth div div {
       display: flex;
       justify-content: center; }
-  .smth .calc {
-    margin-top: 7%;
-    width: 25% !important;
-    height: 10vh !important; }
-  .smth .buttonImg {
-    margin-top: 7%;
-    max-width: 25% !important;
-    max-height: 25% !important;
-    box-shadow: 2px 1px 8px black; }
 
 @media (min-width: 1700px) {
   #smth li::before, .smth li::before {
@@ -556,6 +573,7 @@ table {
       height: 200px;
       margin-bottom: 0px; }
     #font-flex .elem strong {
+      font-family: GeomB !important;
       padding-left: 10px;
       font-size: 12px; }
     #font-flex .elem div {
@@ -587,6 +605,8 @@ table {
   flex-direction: row;
   max-width: 100%;
   padding-bottom: 40px; }
+  #flex-box strong {
+    font-family: GeomB; }
   #flex-box .elem {
     padding-left: 10px;
     padding-right: 10px;
@@ -596,13 +616,13 @@ table {
     background: #EDEDED;
     margin: 30px 35px 0; }
     #flex-box .elem bold {
-      font-family: bold;
+      font-family: GeomB;
       font-size: 18px; }
     #flex-box .elem div {
       margin-top: 15px; }
     #flex-box .elem price {
       position: relative;
-      font: bold 16px Serif; }
+      font: bold 16px GeomB; }
     #flex-box .elem p {
       margin: 0;
       color: #4c4c4c; }
@@ -624,8 +644,9 @@ table {
   #flex-box, #font-flex {
     max-width: 100vw;
     transform: scale(1.4);
-    margin: 300px; }
+    margin: 150px 15%; }
   #flex-box {
-    transform: scale(1.3); } }
+    transform: scale(1.3);
+    margin: 150px 15%; } }
 
 /*# sourceMappingURL=kron.css.map */

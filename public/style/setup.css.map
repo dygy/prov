@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "setup.css",
+	"sources": [
+		"setup.sass"
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAP,aAAO;AAEP,AAAA,QAAQ,CAAC;EACP,MAAM,EAAE,KAAK,CAAA,UAAU;EACvB,SAAS,EAAE,KAAK,CAAA,UAAU,GAAG"
+}
