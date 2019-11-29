@@ -15,7 +15,7 @@
     padding-left: 10px
     display: flex
     div
-      margin: 50px 7% 0 0
+      margin: 50px 6% 0 0
     #soc
       display: flex
       flex-flow: column
@@ -40,15 +40,18 @@
           text-decoration: underline #FDB13E
 
     .phone
+      margin-left: -3%!important
       white-space: nowrap
       phone
         display: inline
         color: #FDB13E
         font-size: 21px
     #buttons
+      z-index: 2
       margin-top: 60px!important
       // padding-top: 40px
       button
+        margin-top: -10px
         border-width: 1px
         background: black
         color: #FDB13E
@@ -70,9 +73,53 @@
       height: 300px
     #info
       width: 400px
+@media ( min-width : 1759px )
+  #footer
+    #info
+      width: 600px!important
+    #buttons
+      button
+        font-size: 24px!important
+        height: 80px!important
+        width: 350px!important
+    span, email,  adr, city, li
+      font-size: 25px
+    h4, phone
+      font-size: 30px!important
+    h4
+      width: 501px!important
+    #faq
+      margin-right: 40px!important
 
+@media ( min-width : 1500px )
+  #footer
+    #buttons
+      button
+        font-size: 22px!important
+        height: 70px!important
+        width: 320px!important
+    email,  adr, city, li
+      font-size: 19px
+    span
+      font-size: 17px!important
+    h4, phone
+      font-size: 23px!important
+    h4
+      width: 450px!important
+      margin-left: 1.2em!important
+    #faq
+      margin-right: 40px!important
 
+@media ( max-width : 1489px )
+  #footer
+    #ftr-frst
+      #buttons
+        margin-top: 58px!important
 @media ( max-width : 1325px )
+  #footer
+    #ftr-frst
+      #buttons
+        margin-top: 47px!important
   phone
     display: inline !important
     font-size: 20px!important
@@ -83,12 +130,20 @@
       margin: 40px 5% 0 0!important
     .phone
       margin-right: 0!important
-
+@media ( max-width : 1255px )
+  #footer
+    #ftr-frst
+      .phone
+        margin-left: -6%!important
 @media ( max-width : 1152px )
   #ftr-frst
     div
       margin: 40px 3% 0 0!important
 @media ( max-width : 1069px )
+  #footer
+    #ftr-frst
+      .phone
+        margin-left: -10vw!important
   #ftr-frst
     div
       margin: 40px 2% 0 0!important
@@ -96,10 +151,10 @@
       font-size: 25px
     button
       width: 220px!important
-@media ( max-width : 936px )
+@media ( max-width : 976px )
   #ftr-scnd
     div
-     // margin: 0 2% 0 0!important
+      margin: 0 0.7% 0 0!important
   #ftr-frst
     div
       margin: 40px 1% 0 0!important
@@ -109,16 +164,25 @@
       width: 220px!important
     .phone
       margin: 0 0 0 0
-@media ( max-width : 904px )
+@media ( max-width : 944px )
+  #footer
+    #ftr-frst
+      .phone
+        margin-left: 30%!important
+
   #map
     display: none
   #soc
-    display: none
+    display: none!important
   .lowscreen
     display: block
   #ftr-frst
    #buttons
      display: none
+  #footer
+    #ftr-scnd
+      .lowscreen
+        margin-left: 20%!important
 @media ( max-width : 778px )
   #ftr-scnd
     #map
@@ -138,39 +202,3 @@
     font-size: 14px !important
   adr
     font-size: 14px !important
-@media ( min-width : 1500px )
-  #footer
-    #buttons
-      button
-        font-size: 22px!important
-        height: 70px!important
-        width: 320px!important
-    email,  adr, city, li
-      font-size: 19px
-    span
-      font-size: 17px!important
-    h4, phone
-      font-size: 23px!important
-    h4
-      width: 450px!important
-      margin-left: 1.2em!important
-    #faq
-      margin-right: 40px!important
-@media ( min-width : 1700px )
-  #footer
-    #info
-      width: 600px!important
-    #buttons
-      button
-        margin-top: -10px
-        font-size: 24px!important
-        height: 80px!important
-        width: 350px!important
-    span, email,  adr, city, li
-      font-size: 25px
-    h4, phone
-      font-size: 30px!important
-    h4
-      width: 501px!important
-    #faq
-      margin-right: 40px!important

@@ -4,7 +4,8 @@
 @font-face
   font-family: "GeomB"
   src: local('Geom'), url("../font/geom bold.otf") format("truetype")
-
+html
+  overflow-x: hidden
 body
   max-width: 100%
   width: 100vw
@@ -89,6 +90,7 @@ body
   text-shadow: -1px -2px 4px whitesmoke
 
 #phone
+  min-width: 161px!important
   bold
     margin-left: 0
   mini
@@ -160,6 +162,21 @@ body
     display: none
   h1
     font-size: 25px !important
+@media ( max-width : 846px )
+  #header
+    #second
+      ul
+        li
+          img
+            margin-left: 10%!important
+@media ( max-width : 900px )
+  #header
+    bold
+      font-size: 16px!important
+    mini
+      font-size: 12px!important
+    li
+      font-size: 13px!important
 
 @media ( min-width : 1300px )
   #logo
