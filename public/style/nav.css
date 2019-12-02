@@ -1,6 +1,7 @@
 @import url(tables.css);
-.smthImg {
-  height: 450px !important;
-  width: 250px !important; }
+@media (min-width: 1700px) {
+  .smthImg {
+    height: 450px !important;
+    width: 250px !important; } }
 
 /*# sourceMappingURL=nav.css.map */
