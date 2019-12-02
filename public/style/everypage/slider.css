@@ -82,6 +82,15 @@
   display: flex;
   text-align: center;
   justify-content: center; }
+  .title .calc {
+    margin-top: 7% !important;
+    height: 10vh !important; }
+  .title .buttonImg {
+    margin-left: 7% !important;
+    margin-top: 7%;
+    max-width: 25% !important;
+    max-height: 25% !important;
+    box-shadow: 2px 1px 8px black; }
 
 html {
   min-height: 100%;

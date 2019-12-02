@@ -85,6 +85,19 @@
   justify-content: center; }
 
 .smth h3 {
+  font-size: 24px !important;
+  font-family: GeomB;
   margin-left: 30px; }
+
+@media (max-width: 750px) {
+  .smth {
+    margin-left: 15px !important; }
+    .smth img {
+      height: 200px !important;
+      min-width: 200px !important; }
+    .smth p {
+      font-size: 12px !important; }
+    .smth h3 {
+      font-size: 15px !important; } }
 
 /*# sourceMappingURL=serves.css.map */

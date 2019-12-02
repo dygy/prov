@@ -3,6 +3,8 @@
 @import "everypage/footer"
 @import "everypage/table"
 @import "everypage/title"
+@import "everypage/smth"
+@import "everypage/button"
 .title
   h1
     font-weight: 900
@@ -21,6 +23,17 @@ table
     width: 15vw!important
   .name
     width: 45vw!important
+@media ( max-width : 1000px )
+  .photoflex
+    img
+      height: 100px!important
+      width: 100px!important
+
+@media ( max-width : 640px )
+  .photoflex
+    img
+      height: 80px!important
+      width: 80px!important
 
 @media ( min-width : 1700px )
   tbody

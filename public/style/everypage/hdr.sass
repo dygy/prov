@@ -5,7 +5,7 @@
   font-family: "GeomB"
   src: local('Geom'), url("../font/geom bold.otf") format("truetype")
 html
-  overflow-x: hidden
+  //overflow-x: hidden
 body
   max-width: 100%
   width: 100vw
@@ -117,6 +117,15 @@ body
     background: none
     height: 20px
 
+@media ( max-width : 900px )
+  #header
+    bold
+      font-size: 16px!important
+    mini
+      font-size: 12px!important
+    li
+      font-size: 13px!important
+
 @media ( max-width : 846px )
   #first
     #logo-warp
@@ -127,14 +136,45 @@ body
         font-size: 13px !important
         margin: 0 15px 0 0  !important
         width: 87px
+        img
+          margin-left: 10%!important
       #contact
         margin: 0 0 0 0 !important
       #burger-li
         width: 30px !important
       #large-word
         width: 155px!important
+@media ( max-width : 716px )
+  #burger-li
+    img
+      margin-top: -5px!important
+  #second
+    ul
+
+      li
+        font-size: 11px !important
+        margin: 0 4px 0 1%  !important
+      #large-word
+        width: 164px !important
+      #uslugi
+        width: 56px!important
+
 @media ( max-width : 616px )
+  #burger-li
+    img
+      height: 30px!important
+      width: 30px!important
+      margin-top: -1px!important
   #first
+    #city, #phone
+      margin-right: 0px!important
+      bold
+        font-size: 14px!important
+      mini
+        font-size: 9px!important
+      img
+        height: 35px!important
+        width: 35px!important
     #logo-warp
       margin-top: 10px !important
       width: 95px !important
@@ -143,41 +183,16 @@ body
         height: 65px !important
         width: 65px !important
         background-size: 100% 100%!important
-@media ( max-width : 716px )
-  #second
-    ul
-      li
-        font-size: 11px !important
-        margin: 0 -8px 0 0  !important
-      #large-word
-        width: 164px !important
-      #uslugi
-        width: 56px!important
 
-
-@media ( max-width : 450px )
+@media ( max-width : 600px )
   #contact
     display: none
+
+@media ( max-width : 450px )
   .soc-ico
     display: none
   h1
     font-size: 25px !important
-@media ( max-width : 846px )
-  #header
-    #second
-      ul
-        li
-          img
-            margin-left: 10%!important
-@media ( max-width : 900px )
-  #header
-    bold
-      font-size: 16px!important
-    mini
-      font-size: 12px!important
-    li
-      font-size: 13px!important
-
 @media ( min-width : 1300px )
   #logo
     background-size: 100% 100%
