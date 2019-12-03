@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 /* GET home page. */
+router.get('/stands', function(req, res, next) {
+    res.render('./pages/stands', { title: 'Стенды' });
+});
+
 router.get('/pilon', function(req, res, next) {
     res.render('./pages/pilon', { title: 'Инфо-Пилоны' });
 });

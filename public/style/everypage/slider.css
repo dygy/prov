@@ -1,5 +1,6 @@
 #smth {
-  margin-left: 40px !important;
+  margin-right: 10% !important;
+  margin-left: 10% !important;
   margin-top: 30px;
   margin-bottom: 30px !important;
   display: flex; }
@@ -84,13 +85,13 @@
   justify-content: center; }
   .title .calc {
     margin-top: 7% !important;
-    min-width: 25% !important;
-    height: 6vw !important; }
+    min-width: 15% !important;
+    height: 4vw !important; }
   .title .buttonImg {
     margin-left: 7% !important;
     margin-top: 7%;
-    max-width: 25% !important;
-    max-height: 25% !important;
+    max-width: 15% !important;
+    max-height: 15% !important;
     box-shadow: 2px 1px 8px black; }
 
 html {

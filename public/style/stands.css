@@ -1,0 +1,26 @@
+@import url(viv.css);
+#smth a {
+  color: #fc9b00; }
+
+#smth li {
+  list-style-position: outside;
+  margin-left: 1em;
+  margin-top: 5px;
+  list-style-type: circle; }
+
+table {
+  margin-left: 10%;
+  margin-right: 10%; }
+  table td {
+    padding-left: 10px; }
+
+.main {
+  font-family: GeomB; }
+
+.price {
+  font-family: Geom; }
+
+.blue {
+  background-color: #ccd2d2 !important; }
+
+/*# sourceMappingURL=stands.css.map */

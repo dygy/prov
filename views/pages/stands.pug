@@ -1,0 +1,209 @@
+link(rel='stylesheet', href='/style/stands.css')
+script(src='../js/index.js')
+script(src='../js/Global.js')
+include ../header
+include ../dropdown
+
+block smth
+    div(class="title")
+        h1 СТЕНДЫ
+    div(id="smth")
+        img(src="../img/stands/stand.png" class="smthImg")
+        div
+            p Стенды – удобный формат рекламной продукции, который привлекает к себе внимание и широко используется в различных условиях. Использование стендов позволяет в удобной доходчивой форме и с минимальными тратами донести необходимую информацию до людей. Все виды рекламных стендов подразделяются на 3 основные категории:
+            ul
+                li Стационарные стенды – конструкции, застраиваемые на месте проведения выставки. (Press Wall)
+                li Мобильные стенды – может перевозиться с места на место и устанавливаться там, где необходимо в данный момент. (Roll-Up, X-banner, L-banner)
+                li
+                    a(href="./infstands") Информационные стенды
+                    text – необходимы компаниям, занимающимся продажей или оказанием услуг. В банках, клиниках, и пр. общественных местах встречаются подобные медианосители.
+block light
+    div(class="title")
+        h1 PRESS WALL
+    div(class="photoflex")
+        img(src="../img/stands/press1.png")
+        img(src="../img/stands/press2.png")
+        img(src="../img/stands/press3.png")
+        img(src="../img/stands/press4.png")
+        img(src="../img/stands/press5.png")
+        img(src="../img/stands/press6.png")
+    table
+        tr(class="blue main")
+            td(class="name") тип
+            td(class="price") цена
+        tr
+            td(class="name") №1
+            td(class="main price") от 3 290 руб
+        tr(class="blue")
+            td(class="name") №2
+            td(class="main price") от 2 990 руб
+        tr
+            td(class="name") №3
+            td(class="main price") от 2 820 руб
+        tr(class="blue")
+            td(class="name") №4
+            td(class="main price") от 2 820 руб
+        tr
+            td(class="name") ТЕЛЕСКОПИЧЕСКИЙ
+            td(class="main price") от 2 820 руб
+        tr(class="blue")
+            td(class="name") СТРОГАННЫЙ БРУС
+            td(class="main price") от 2 820 руб
+
+    div(class="title")
+        button(class="calc" ) рассчитать
+        img( class="buttonImg" src="../img/button.png")
+
+block symb
+    div(class="title")
+        h1 ROLL-UP
+    div(class="photoflex")
+        img(src="../img/stands/roll1.png")
+        img(src="../img/stands/roll2.png")
+        img(src="../img/stands/roll3.png")
+        img(src="../img/stands/roll4.png")
+        img(src="../img/stands/roll5.png")
+        img(src="../img/stands/roll6.png")
+    table
+        tr(class="blue main")
+            td(class="name") тип
+            td(class="") без печати
+            td(class="") баннерная ткань
+            td(class="") полипропилен
+        tr
+            td(class="name") ROLL-UP LIGHT
+            td(class="main price") от 1 690 руб
+            td(class="main price") от 2 770 руб
+            td(class="main price") от 3 290 руб
+        tr(class="blue")
+            td(class="name") ROLL-UP SMART
+            td(class="main price") от 2 490 руб
+            td(class="main price") от 2 790 руб
+            td(class="main price") от 2 990 руб
+        tr
+            td(class="name") ROLL-UP PREMIUM
+            td(class="main price") от 2 380 руб
+            td(class="main price") от 120 руб/cм
+            td(class="main price") от 120 руб/cм
+        tr(class="blue")
+            td(class="name") ROLL-UP LUXURY
+            td(class="main price") от 2 380 руб
+            td(class="main price") от 2 820 руб
+            td(class="main price") от 2 820 руб
+        tr
+            td(class="name") ROLL-UP LUXURY LIGHT
+            td(class="main price") от 2 380 руб
+            td(class="main price") от 2 820 руб
+            td(class="main price") от 2 820 руб
+        tr(class="blue")
+            td(class="name") ROLL-UP PROFI
+            td(class="main price") от 2 380 руб
+            td(class="main price") от 2 820 руб
+            td(class="main price") от 2 820 руб
+
+        tr
+            td(class="name") ROLL-UP DOUBLE STANDART
+            td(class="main price") от 2 380 руб
+            td(class="main price") от 2 820 руб
+            td(class="main price") от 2 820 руб
+        tr(class="blue")
+            td(class="name") ROLL-UP DOUBLE LUXURY
+            td(class="main price") от 2 380 руб
+            td(class="main price") от 2 820 руб
+            td(class="main price") от 2 820 руб
+        tr
+            td(class="name") ROLL-UP COLOUR
+            td(class="main price") от 2 380 руб
+            td(class="main price") от 2 820 руб
+            td(class="main price") от 2 820 руб
+        tr(class="blue")
+            td(class="name") ROLL-UP CASSETTE
+            td(class="main price") от 2 380 руб
+            td(class="main price") от 2 820 руб
+            td(class="main price") от 2 820 руб
+        tr
+            td(class="name") ROLL-UP MOVING
+            td(class="main price") от 2 380 руб
+            td(class="main price") от 2 820 руб
+            td(class="main price") от 2 820 руб
+        tr(class="blue")
+            td(class="name") ROLL-UP MULTIPLY
+            td(class="main price") от 2 380 руб
+            td(class="main price") от 2 820 руб
+            td(class="main price") от 2 820 руб
+
+    div(class="title")
+        button( class="calc" onclick="moveTo('./calc/symbs')") рассчитать
+        img( class="buttonImg" src="../img/button.png")
+
+block kron
+    div(class="title")
+        h1 МОБИЛЬНЫЕ БАННЕРЫ
+    div(class="photoflex")
+        img(src="../img/stands/banner1.png")
+        img(src="../img/stands/banner2.png")
+        img(src="../img/stands/banner3.png")
+        img(src="../img/stands/banner4.png")
+        img(src="../img/stands/banner5.png")
+        img(src="../img/stands/banner6.png")
+    table
+        tr(class="blue main")
+            td(class="name") тип
+            td(class="") без печати
+            td(class="") баннерная ткань
+            td(class="") полипропилен
+        tr
+            td(class="name") L– BANNER
+            td(class="main price") от 1 690 руб
+            td(class="main price") от 2 770 руб
+            td(class="main price") от 3 290 руб
+        tr(class="blue")
+            td(class="name") X – BANNER
+            td(class="main price") от 2 490 руб
+            td(class="main price") от 2 790 руб
+            td(class="main price") от 2 990 руб
+    div(class="title")
+        button( class="calc" onclick="moveTo('./calc/kron')") рассчитать
+        img( class="buttonImg" src="../img/button.png")
+
+div(class="title")
+    h1 ИНФОРМАЦИОННЫЕ СТЕНДЫ
+div(class="photoflex")
+    img(src="../img/stands/info1.png")
+    img(src="../img/stands/info2.png")
+    img(src="../img/stands/info3.png")
+    img(src="../img/stands/info4.png")
+    img(src="../img/stands/info5.png")
+    img(src="../img/stands/info6.png")
+table
+    tr(class="blue main")
+        td(class="name") тип
+        td(class="price") цена
+    tr
+        td(class="name") НАСТЕННЫЙ СТЕНД
+        td(class="main price") от 1 000 руб
+    tr(class="blue")
+        td(class="name") НАПОЛЬНЫЙ СТЕНД
+        td(class="main price") от 1 000 руб
+    tr
+        td(class="name") ПЕРЕКИДНОЙ СТЕНД
+        td(class="main price") от 1 000 руб
+    tr(class="blue")
+        td(class="name") УЛИЧНЫЙ СТЕНД
+        td(class="main price") от 1 000 руб
+    tr
+        td(class="name") ПРОБКОВЫЙ СТЕНД
+        td(class="main price") от 1 000 руб
+    tr(class="blue")
+        td(class="name") НАСТОЛЬНЫЙ СТЕНД
+        td(class="main price") от 1 000 руб
+div(class="title")
+    button(class="calc" ) рассчитать
+    img( class="buttonImg" src="../img/button.png")
+
+p
+    br
+    br
+    br
+
+include ../footer
