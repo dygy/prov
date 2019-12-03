@@ -509,7 +509,8 @@ table {
     box-shadow: 2px 1px 8px black; }
 
 #smth {
-  margin-left: 40px !important;
+  margin-right: 10% !important;
+  margin-left: 10% !important;
   margin-top: 30px;
   margin-bottom: 30px !important;
   display: flex; }
