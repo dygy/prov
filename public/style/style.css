@@ -808,165 +808,6 @@ body {
   background-image: url("/img/room.jpg");
   background-size: 100% 100%; }
 
-@media (min-width: 1700px) {
-  .mark {
-    height: 40px;
-    width: 40px; }
-  #usl div {
-    margin: 0 5.5% 0 !important; }
-  #usl p {
-    font-size: 18px !important;
-    left: 45% !important;
-    bottom: 65px;
-    width: 155px; }
-  #usl img {
-    border-bottom: 60px black solid !important;
-    width: 350px !important;
-    height: 500px !important; }
-  .serv-list ul {
-    margin-top: -55px !important; }
-  .serv-list li {
-    margin-left: -17px !important;
-    width: 362px !important;
-    height: 30px !important;
-    font-size: 19px !important; }
-  #but-take img {
-    height: 50px !important;
-    width: 200px !important;
-    font-size: 26px; }
-  .ads text {
-    font-size: 25px !important; }
-  #street {
-    height: 820px; }
-    #street #one {
-      top: 60% !important; }
-    #street #two {
-      top: 35% !important; }
-    #street #three {
-      top: 38% !important; }
-    #street #four {
-      top: 39% !important; }
-    #street #five {
-      top: 25% !important; }
-    #street #six {
-      top: 19% !important; }
-    #street #seven {
-      top: -2% !important; }
-    #street #eight {
-      top: -2% !important; }
-    #street #nine {
-      top: -15% !important; }
-    #street #ten {
-      top: -14% !important; }
-    #street #el {
-      top: -18% !important; }
-  #room {
-    height: 700px; }
-    #room #tthree {
-      top: 16% !important; }
-    #room #tfour {
-      top: 38% !important; }
-    #room #tsix {
-      top: 1% !important; }
-    #room #tone {
-      top: 22% !important; }
-    #room #tfive {
-      top: 13% !important; }
-  #pass-logo {
-    height: 450px !important;
-    min-width: 600px !important; }
-  #promise-text {
-    width: 46% !important; }
-  #kach {
-    height: 350px !important;
-    font-size: 20px; }
-    #kach div {
-      padding-top: 62px !important;
-      text-align: center; }
-      #kach div img {
-        width: 120px !important;
-        height: 120px !important; }
-      #kach div p {
-        font-size: 25px !important;
-        width: auto !important; }
-  #passport #pass-flex text {
-    max-width: 60% !important;
-    font-size: 25px;
-    margin-right: 10%; }
-  #passport #circus bold {
-    font-size: 25px !important;
-    font-weight: 900 !important; }
-  #passport #circus mini {
-    font-size: 18px !important;
-    font-weight: 800 !important; }
-  #passport #circus div div {
-    margin: 0 0 0 47px !important; }
-  #passport #circus div #designI {
-    margin: 0 0 0 76px !important; }
-  #passport #circus div #callI {
-    margin: 0 0 0 29px !important; } }
-
-@media (min-width: 1500px) {
-  .ads div div {
-    width: 250px;
-    height: 250px;
-    margin-top: 50px !important; }
-    .ads div div text {
-      margin-left: 20% !important; }
-    .ads div div img {
-      min-height: 130px !important;
-      min-width: 150px !important; }
-    .ads div div .B {
-      margin-right: 10%;
-      margin-left: 30%;
-      min-height: 110px !important;
-      min-width: 110px !important; }
-    .ads div div .Boxx {
-      height: 200px !important;
-      width: 150px !important; }
-    .ads div div svg {
-      min-height: 250px !important;
-      min-width: 250px !important; }
-  .ads text {
-    font-size: 20px !important; }
-  #street {
-    height: 750px; }
-    #street #one {
-      top: 58% !important; }
-    #street #two {
-      top: 36% !important; }
-    #street #three {
-      top: 40%; }
-    #street #four {
-      top: 42% !important; }
-    #street #five {
-      left: 94% !important;
-      top: 30% !important; }
-    #street #six {
-      top: 24% !important; }
-    #street #seven {
-      top: 4% !important; }
-    #street #eight {
-      top: 8% !important; }
-    #street #nine {
-      top: -6% !important; }
-    #street #ten {
-      top: -3% !important; }
-    #street #el {
-      top: -5% !important; }
-  #room {
-    height: 600px; }
-    #room #tthree {
-      top: 12% !important; }
-    #room #tfour {
-      top: 29% !important; }
-    #room #tsix {
-      top: -4% !important; }
-    #room #tone {
-      top: 19% !important; }
-    #room #tfive {
-      top: -2% !important; } }
-
 @media (max-width: 1300px) {
   #promise #promise-text {
     font-size: 25px !important; }
@@ -1075,6 +916,165 @@ body {
     font-size: 30px; }
   #five {
     left: 93%; } }
+
+@media (min-width: 1500px) {
+  .ads div div {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px !important; }
+    .ads div div text {
+      margin-left: 20% !important; }
+    .ads div div img {
+      min-height: 130px !important;
+      min-width: 150px !important; }
+    .ads div div .B {
+      margin-right: 10%;
+      margin-left: 30%;
+      min-height: 110px !important;
+      min-width: 110px !important; }
+    .ads div div .Boxx {
+      height: 200px !important;
+      width: 150px !important; }
+    .ads div div svg {
+      min-height: 250px !important;
+      min-width: 250px !important; }
+  .ads text {
+    font-size: 20px !important; }
+  #street {
+    height: 750px; }
+    #street #one {
+      top: 58% !important; }
+    #street #two {
+      top: 36% !important; }
+    #street #three {
+      top: 40%; }
+    #street #four {
+      top: 42% !important; }
+    #street #five {
+      left: 94% !important;
+      top: 30% !important; }
+    #street #six {
+      top: 24% !important; }
+    #street #seven {
+      top: 4% !important; }
+    #street #eight {
+      top: 8% !important; }
+    #street #nine {
+      top: -6% !important; }
+    #street #ten {
+      top: -3% !important; }
+    #street #el {
+      top: -5% !important; }
+  #room {
+    height: 600px; }
+    #room #tthree {
+      top: 12% !important; }
+    #room #tfour {
+      top: 29% !important; }
+    #room #tsix {
+      top: -4% !important; }
+    #room #tone {
+      top: 19% !important; }
+    #room #tfive {
+      top: -2% !important; } }
+
+@media (min-width: 1700px) {
+  .mark {
+    height: 40px;
+    width: 40px; }
+  #usl div {
+    margin: 0 5.5% 0 !important; }
+  #usl p {
+    font-size: 18px !important;
+    left: 45% !important;
+    bottom: 65px;
+    width: 155px; }
+  #usl img {
+    border-bottom: 60px black solid !important;
+    width: 350px !important;
+    height: 500px !important; }
+  .serv-list ul {
+    margin-top: -55px !important; }
+  .serv-list li {
+    margin-left: -17px !important;
+    width: 362px !important;
+    height: 30px !important;
+    font-size: 19px !important; }
+  #but-take img {
+    height: 50px !important;
+    width: 200px !important;
+    font-size: 26px; }
+  .ads text {
+    font-size: 25px !important; }
+  #street {
+    height: 820px; }
+    #street #one {
+      top: 60% !important; }
+    #street #two {
+      top: 35% !important; }
+    #street #three {
+      top: 38% !important; }
+    #street #four {
+      top: 39% !important; }
+    #street #five {
+      top: 25% !important; }
+    #street #six {
+      top: 19% !important; }
+    #street #seven {
+      top: -2% !important; }
+    #street #eight {
+      top: -2% !important; }
+    #street #nine {
+      top: -15% !important; }
+    #street #ten {
+      top: -14% !important; }
+    #street #el {
+      top: -18% !important; }
+  #room {
+    height: 700px; }
+    #room #tthree {
+      top: 16% !important; }
+    #room #tfour {
+      top: 38% !important; }
+    #room #tsix {
+      top: 1% !important; }
+    #room #tone {
+      top: 22% !important; }
+    #room #tfive {
+      top: 13% !important; }
+  #pass-logo {
+    height: 450px !important;
+    min-width: 600px !important; }
+  #promise-text {
+    width: 46% !important; }
+  #kach {
+    height: 350px !important;
+    font-size: 20px; }
+    #kach div {
+      padding-top: 62px !important;
+      text-align: center; }
+      #kach div img {
+        width: 120px !important;
+        height: 120px !important; }
+      #kach div p {
+        font-size: 25px !important;
+        width: auto !important; }
+  #passport #pass-flex text {
+    max-width: 60% !important;
+    font-size: 25px;
+    margin-right: 10%; }
+  #passport #circus bold {
+    font-size: 25px !important;
+    font-weight: 900 !important; }
+  #passport #circus mini {
+    font-size: 18px !important;
+    font-weight: 800 !important; }
+  #passport #circus div div {
+    margin: 0 0 0 47px !important; }
+  #passport #circus div #designI {
+    margin: 0 0 0 76px !important; }
+  #passport #circus div #callI {
+    margin: 0 0 0 29px !important; } }
 
 .title {
   font-family: GeomB;
