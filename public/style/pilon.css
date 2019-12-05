@@ -8,22 +8,18 @@
   margin-left: 30px; }
 
 #smth li {
-  margin-top: 5px; }
-
-#smth li::before {
-  margin-right: 10px;
-  border-radius: 100%;
-  counter-increment: section;
-  content: "";
-  border: 2px solid blueviolet;
-  padding: 2px;
-  text-align: center;
-  width: 10px;
-  height: 10px;
-  display: inline-flex; }
+  margin-top: 5px;
+  list-style-position: outside;
+  margin-left: 1em;
+  list-style-type: circle; }
 
 #smth .smthImg {
-  height: 350px !important;
-  width: 400px !important; }
+  height: 400px;
+  min-width: 330px; }
+
+@media (min-width: 1700px) {
+  .smthImg {
+    height: 600px !important;
+    min-width: 570px !important; } }
 
 /*# sourceMappingURL=pilon.css.map */

@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/stands.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 include ../dropdown
 
@@ -51,7 +52,7 @@ block light
             td(class="main price") от 2 820 руб
 
     div(class="title")
-        button(class="calc" ) рассчитать
+        button(class="calc" onclick="displaySell()") рассчитать
         img( class="buttonImg" src="../img/button.png")
 
 block symb
@@ -133,7 +134,7 @@ block symb
             td(class="main price") от 2 820 руб
 
     div(class="title")
-        button( class="calc" onclick="moveTo('./calc/symbs')") рассчитать
+        button( class="calc" onclick="displaySell()") рассчитать
         img( class="buttonImg" src="../img/button.png")
 
 block kron
@@ -163,7 +164,7 @@ block kron
             td(class="main price") от 2 790 руб
             td(class="main price") от 2 990 руб
     div(class="title")
-        button( class="calc" onclick="moveTo('./calc/kron')") рассчитать
+        button( class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
         img( class="buttonImg" src="../img/button.png")
 
 div(class="title")
@@ -198,9 +199,8 @@ table
         td(class="name") НАСТОЛЬНЫЙ СТЕНД
         td(class="main price") от 1 000 руб
 div(class="title")
-    button(class="calc" ) рассчитать
+    button(class="calc" onclick="moveTo('./calc/stand')") рассчитать
     img( class="buttonImg" src="../img/button.png")
-
 p
     br
     br

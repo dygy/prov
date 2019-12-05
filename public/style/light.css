@@ -45,6 +45,9 @@
   font-family: "GeomB";
   src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
 
+button {
+  font-family: GeomB; }
+
 body {
   max-width: 100%;
   width: 100vw;
@@ -518,9 +521,10 @@ table {
     flex-wrap: wrap; }
 
 #smth {
-  margin-left: 40px !important;
-  margin-top: 30px;
-  margin-bottom: 30px !important;
+  margin-right: 10% !important;
+  margin-left: 10% !important;
+  margin-top: 10%;
+  margin-bottom: 10% !important;
   display: flex; }
   #smth .smthImg {
     margin-left: 20px;
@@ -528,7 +532,11 @@ table {
     height: 500px; }
   #smth div {
     margin-left: 15px; }
+    #smth div ul {
+      margin-top: 0px !important; }
     #smth div p {
+      margin-bottom: 0px;
+      font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
       padding-right: 40px;
@@ -537,11 +545,11 @@ table {
       display: flex;
       justify-content: center; }
     #smth div .calc {
-      margin-top: 7% !important;
+      margin-top: 5% !important;
       width: 25% !important;
       height: 10vh !important; }
     #smth div .buttonImg {
-      margin-top: 7%;
+      margin-top: 5%;
       max-width: 25% !important;
       max-height: 25% !important;
       box-shadow: 2px 1px 8px black; }
@@ -558,16 +566,17 @@ table {
   box-shadow: 2px 1px 8px black; }
 
 .smth {
-  margin-bottom: 40px;
-  margin-left: 40px !important;
-  margin-top: 30px;
+  margin-bottom: 10%;
+  margin-right: 10% !important;
+  margin-left: 10% !important;
+  margin-top: 10%;
   display: flex; }
   .smth .calc {
-    margin-top: 7% !important;
+    margin-top: 5% !important;
     width: 25% !important;
     height: 10vh !important; }
   .smth .buttonImg {
-    margin-top: 7%;
+    margin-top: 5%;
     max-width: 25% !important;
     max-height: 25% !important;
     box-shadow: 2px 1px 8px black; }
@@ -577,7 +586,11 @@ table {
     height: 400px; }
   .smth div {
     margin-left: 15px; }
+    .smth div ul {
+      margin-top: 0px !important; }
     .smth div p {
+      margin-bottom: 0px;
+      font-weight: 300;
       padding-left: 30px;
       padding-right: 40px;
       font-size: 20px; }

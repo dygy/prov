@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/pilon.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 include ../dropdown
 
@@ -38,14 +39,13 @@ block light
             td(class="main price") от 15 000 руб/м2
 block smth
     div(id="smth")
-        img(src="../img/pilon/pilon1.png")
+        img(src="../img/pilon/pilon1.png" class="smthImg")
         div
             p Классическая конструкция пилона — это короб, собранный из металлического каркаса, листового огрстекла, и профиля. Плакаты с рекламной информацией монтируются внутри пилона и фиксируются специальными зажимами. В качестве внутренней подсветки используются люминесцентные лампы. Наличие подсветки повышает эффективность и действенность рекламы в тёмное время суток.
             ul
                 li Пилоны-указатели играют роль навигаторов
                 li На интерьерных, как правило, на них приводится схема размещения объектов на территории
                 li Пилоны уличные широко востребованы для организации рекламных компаний.
-
             div
                 img( class="buttonImg" src="../img/button.png")
 block flex-box
@@ -57,7 +57,7 @@ block flex-box
             img(src="../img/nav/Nav10.png")
             p односторонний: от 10.000 руб
             div
-                button(class="calc" ) рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -66,7 +66,7 @@ block flex-box
             img(src="../img/nav/Nav21.png")
             p односторонний: от 10.000 руб
             div
-                button(class="calc" ) рассчитать
+                button(class="calc" onclick="displaySell()" ) рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -75,7 +75,7 @@ block flex-box
             img(src="../img/pilon/pilon2.jpg")
             p односторонний: от 10.000 руб
             div
-                button(class="calc" ) рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -84,7 +84,7 @@ block flex-box
             img(src="../img/nav/Nav10.png")
             p односторонний: от 20.000 руб
             div
-                button(class="calc" ) рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -93,7 +93,7 @@ block flex-box
             img(src="../img/nav/Nav21.png")
             p односторонний: от 20.000 руб
             div
-                button(class="calc") рассчитать
+                button(class="calc" onclick="displaySell()") рассчитать
                 button(class="buy" ) заказать
         div(class="elem")
             div
@@ -102,6 +102,6 @@ block flex-box
             img(src="../img/pilon/pilon2.jpg")
             p односторонний: от 20.000 руб
             div
-                button(class="calc" ) рассчитать
+                button(class="calc" onclick="displaySell()" ) рассчитать
                 button(class="buy" ) заказать
 include ../footer
