@@ -299,7 +299,7 @@ body {
   color: white;
   background: black;
   width: 100%;
-  min-height: 340px; }
+  min-height: 470px; }
   #footer #ftr-frst {
     font-weight: 900;
     padding-left: 10px;
@@ -563,11 +563,18 @@ body {
       text-shadow: black 1px 1px 1px;
       border-width: 0;
       width: 150px;
-      height: 30px; }
+      height: 35px; }
     .center .price-flex .orange {
       background-color: #ffb800;
       width: 280px;
-      height: 20px; }
+      height: 20px;
+      font-size: 14px; }
+      .center .price-flex .orange #left {
+        padding-left: 16%;
+        float: left; }
+      .center .price-flex .orange #right {
+        padding-right: 27%;
+        float: right; }
     .center .price-flex .nds text {
       font-size: 13px;
       color: #82d2d0;
