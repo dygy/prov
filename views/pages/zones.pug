@@ -1,0 +1,90 @@
+link(rel='stylesheet', href='/style/zone.css')
+script(src='../js/index.js')
+script(src='../js/Global.js')
+include ../slider
+include ../header
+include ../dropdown
+
+
+block info
+    div(class="title")
+        h1 ФОТОЗОНА
+    div(id="smth")
+        img(src="../img/zones/zone5.png" class="smthImg")
+        div
+            p Фотозона — это задекорированное пространство на мероприятии, где каждый желающий сможет сделать красивые фотографии. Фотозона создает атмосферу праздника. Это способ развлечь гостей и оставить на память яркие воспоминания в виде фотографий. Преимущества фотозоны на мероприятии:
+            br
+            ul
+                li Пилоны-указатели играют роль навигаторов
+                li На интерьерных, как правило, на них приводится схема размещения объектов на территории
+                li Пилоны уличные широко востребованы для организации рекламных компаний.
+
+            div
+                img( class="buttonImg" src="../img/button.png")
+
+block flexbox
+
+div(id="font-flex")
+    div(class="elem")
+        div
+            br
+            strong ФОТОЗОНА НА СВАДЬБУ
+        br
+        img(src="../img/zones/zone2.jpg")
+        br
+        br
+        div(class="title")
+            strong 25.000 руб
+        br
+        div
+            button(class="calc" onclick="displaySell()") рассчитать
+            button(class="buy" ) заказать
+    div(class="elem")
+        div
+            br
+            strong ФОТОЗОНА НА НОВЫЙ ГОД
+        br
+        img(src="../img/zones/zone1.jpg")
+        br
+        br
+        div(class="title")
+            strong 25.000 руб
+        br
+        div
+            button(class="calc" onclick="displaySell()") рассчитать
+            button(class="buy" ) заказать
+    div(class="elem")
+        div
+            br
+            strong ФОТОЗОНА НА ДЕНЬ
+            br
+            strong РОЖДЕНИЯ И ЮБИЛЕИ
+        br
+        img(src="../img/zones/zone3.jpg")
+        br
+        br
+        div(class="title")
+            strong 25.000 руб
+        br
+        div
+            button(class="calc" onclick="displaySell()") рассчитать
+            button(class="buy" ) заказать
+    div(class="elem")
+        div
+            br
+            strong ФОТОЗОНА
+            br
+            strong НА КОРПОРАТИВ
+        br
+        img(src="../img/zones/zone4.jpg")
+        br
+        br
+        div(class="title")
+            strong 25.000 руб
+        br
+        div
+            button(class="calc" onclick="displaySell()") рассчитать
+            button(class="buy" ) заказать
+
+
+include ../footer

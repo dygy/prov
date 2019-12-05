@@ -532,7 +532,11 @@ table {
     height: 500px; }
   #smth div {
     margin-left: 15px; }
+    #smth div ul {
+      margin-top: 0px !important; }
     #smth div p {
+      margin-bottom: 0px;
+      font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
       padding-right: 40px;
@@ -581,7 +585,11 @@ table {
     height: 400px; }
   .smth div {
     margin-left: 15px; }
+    .smth div ul {
+      margin-top: 0px !important; }
     .smth div p {
+      margin-bottom: 0px;
+      font-weight: 300;
       padding-left: 30px;
       padding-right: 40px;
       font-size: 20px; }
@@ -600,11 +608,22 @@ table {
     font-size: 35px !important; } }
 
 .title {
-  margin-bottom: 40px;
   margin-top: 40px;
   display: flex;
   text-align: center;
   justify-content: center; }
+  .title h1 {
+    font-family: GeomB !important; }
+  .title .calc {
+    margin-top: 7% !important;
+    min-width: 15% !important;
+    height: 4vw !important; }
+  .title .buttonImg {
+    margin-left: 7% !important;
+    margin-top: 7%;
+    max-width: 15% !important;
+    max-height: 15% !important;
+    box-shadow: 2px 1px 8px black; }
 
 #font-flex {
   margin-right: 10%;

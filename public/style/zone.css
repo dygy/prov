@@ -1,0 +1,17 @@
+@import url(tables.css);
+@import url(stands.css);
+#font-flex .elem {
+  margin: 20px 5% !important; }
+
+.smth .smthImg, #smth .smthImg {
+  height: 380px !important;
+  min-width: 325px !important; }
+
+@media (min-width: 1700px) {
+  .smth .smthImg, #smth .smthImg {
+    height: 550px !important;
+    min-width: 450px !important; }
+  .elem {
+    max-width: 400px !important; } }
+
+/*# sourceMappingURL=zone.css.map */

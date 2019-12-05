@@ -492,11 +492,12 @@ table {
     text-align: center; }
 
 .title {
-  font-family: GeomB;
   margin-top: 40px;
   display: flex;
   text-align: center;
   justify-content: center; }
+  .title h1 {
+    font-family: GeomB !important; }
   .title .calc {
     margin-top: 7% !important;
     min-width: 15% !important;
@@ -520,7 +521,11 @@ table {
     height: 500px; }
   #smth div {
     margin-left: 15px; }
+    #smth div ul {
+      margin-top: 0px !important; }
     #smth div p {
+      margin-bottom: 0px;
+      font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
       padding-right: 40px;
@@ -569,7 +574,11 @@ table {
     height: 400px; }
   .smth div {
     margin-left: 15px; }
+    .smth div ul {
+      margin-top: 0px !important; }
     .smth div p {
+      margin-bottom: 0px;
+      font-weight: 300;
       padding-left: 30px;
       padding-right: 40px;
       font-size: 20px; }

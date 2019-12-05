@@ -1077,11 +1077,12 @@ body {
     margin: 0 0 0 29px !important; } }
 
 .title {
-  font-family: GeomB;
   margin-top: 40px;
   display: flex;
   text-align: center;
   justify-content: center; }
+  .title h1 {
+    font-family: GeomB !important; }
   .title .calc {
     margin-top: 7% !important;
     min-width: 15% !important;
