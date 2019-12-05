@@ -84,9 +84,9 @@
       margin-bottom: 40px; }
     #smth .buttonImg, .smth .buttonImg {
       min-height: 9vw !important;
-      width: 25vw !important; }
+      min-width: 25vw !important; }
     #smth .calc, .smth .calc {
-      width: 25vw !important;
+      min-width: 25vw !important;
       min-height: 4vw !important;
       font-size: 3vw !important; } }
 
