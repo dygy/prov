@@ -1,7 +1,18 @@
 @import url(tables.css);
 @import url(stands.css);
 #font-flex .elem {
-  margin: 20px 5% !important; }
+  max-width: 30vw !important;
+  height: 30vw;
+  min-width: 440px;
+  min-height: 470px;
+  margin: 30px 4% !important; }
+  #font-flex .elem img {
+    margin-left: 16%;
+    margin-right: 16%;
+    width: 20vw;
+    height: 20vw;
+    min-height: 300px;
+    min-width: 300px; }
 
 .smth .smthImg, #smth .smthImg {
   height: 380px !important;
@@ -10,8 +21,6 @@
 @media (min-width: 1700px) {
   .smth .smthImg, #smth .smthImg {
     height: 550px !important;
-    min-width: 450px !important; }
-  .elem {
-    max-width: 400px !important; } }
+    min-width: 450px !important; } }
 
 /*# sourceMappingURL=zone.css.map */

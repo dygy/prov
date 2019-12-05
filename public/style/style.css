@@ -300,7 +300,7 @@ body {
   color: white;
   background: black;
   width: 100%;
-  min-height: 340px; }
+  min-height: 470px; }
   #footer #ftr-frst {
     font-weight: 900;
     padding-left: 10px;
@@ -1089,9 +1089,9 @@ body {
     height: 4vw !important; }
   .title .buttonImg {
     margin-left: 7% !important;
-    margin-top: 7%;
+    margin-top: 7% !important;
     max-width: 15% !important;
-    max-height: 15% !important;
+    max-height: 4vw !important;
     box-shadow: 2px 1px 8px black; }
 
 #body {

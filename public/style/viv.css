@@ -299,7 +299,7 @@ body {
   color: white;
   background: black;
   width: 100%;
-  min-height: 340px; }
+  min-height: 470px; }
   #footer #ftr-frst {
     font-weight: 900;
     padding-left: 10px;
@@ -586,6 +586,12 @@ table {
     .smth div div {
       display: flex;
       justify-content: center; }
+
+@media (max-width: 700px) {
+  #smth, .smth {
+    flex-flow: column; }
+    #smth .smthImg, .smth .smthImg {
+      margin-bottom: 40px; } }
 
 @media (min-width: 1700px) {
   #smth li::before, .smth li::before {

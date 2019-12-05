@@ -76,6 +76,12 @@
       display: flex;
       justify-content: center; }
 
+@media (max-width: 700px) {
+  #smth, .smth {
+    flex-flow: column; }
+    #smth .smthImg, .smth .smthImg {
+      margin-bottom: 40px; } }
+
 @media (min-width: 1700px) {
   #smth li::before, .smth li::before {
     border: 4px blueviolet solid !important;
