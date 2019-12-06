@@ -17,12 +17,11 @@ body
 #header
   color: white
   background: black
-  width: 100%
-  min-height: 150px
+  width: 80%
   #first
     display: flex
-    flex-wrap: wrap
     flex-direction: row
+    margin-right: 0!important
     max-width: 100%
     div
       margin: 0 3% 0 0
@@ -32,6 +31,7 @@ body
         padding-top: 0
         width: 100%
     img
+      margin-left: 6px
       float: left
       width: 50px
       height: 50px
@@ -45,6 +45,8 @@ body
     width: 100%
     max-width: 100%
     ul
+      margin-top: 0px
+      margin-bottom: 0px
       text-align: center
       max-width: 100vw
       padding-left: 4px
@@ -202,9 +204,6 @@ body
     background-size: 100% 100%
     height: 120px!important
     width: 100px!important
-  #header
-    padding-top: 40px
-    min-height: 220px
     mini
       font-size: 17px!important
     bold
@@ -222,31 +221,41 @@ body
       #contact
         margin-right: 20px!important
 @media ( min-width : 1700px )
+  #header
+    padding-left: 20%
+    #first
+      max-width: 60%!important
+
+    #city, #phone
+      width: 265px!important
+    #logo-warp
+      width: 150px!important
+      margin-left: 0!important
   #logo
     background-size: 100% 100%
-    height: 220px!important
-    width: 200px!important
-  #city, #phone, #search
-    margin-top: 50px!important
-  #header
-    min-height: 250px
+    height: 120px!important
+    width: 110px!important
     mini
       font-size: 17px!important
     bold
       font-size: 25px!important
   #search
+    width: 16%!important
     input
       height: 30px
     img
       height: 26px !important
       width: 26px !important
   #second
+    width: 60%!important
     margin-top: 30px
     ul
+      width: auto!important
       li
-        margin: 0 4% 0 0 !important
-        font-size: 23px!important
+        margin: 0 1% 0 0 !important
+        font-size: 17px!important
         img
+          margin-left: 0!important
           margin-top: -13px
           height: 60px!important
           width: 60px!important
@@ -255,6 +264,6 @@ body
 @media ( min-width : 1900px )
         #header
           bold
-            font-size: 27px!important
-          mini
             font-size: 23px!important
+          mini
+            font-size: 19px!important

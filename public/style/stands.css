@@ -9,8 +9,12 @@
   list-style-type: circle; }
 
 table {
-  margin-left: 10%;
-  margin-right: 10%; }
+  margin-left: 8%;
+  margin-right: 8%; }
+  table .price {
+    width: 30vw !important; }
+  table .name {
+    width: 62vw !important; }
   table td {
     padding-left: 10px; }
 

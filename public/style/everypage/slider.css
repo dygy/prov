@@ -202,6 +202,10 @@ body {
     width: 300px;
     height: 150px;
     background-color: #ffb800; }
+    #full-page .sell img {
+      position: absolute;
+      width: 350px;
+      height: 350px; }
     #full-page .sell white, #full-page .sell text {
       margin-top: 15px; }
     #full-page .sell white {
