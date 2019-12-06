@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 /* GET home page. */
+router.get('/vist', function(req, res, next) {
+    res.render('./pages/vist', { title: 'Выставочные Стенды' });
+});
+
 router.get('/zones', function(req, res, next) {
     res.render('./pages/zones', { title: 'Фотозоны' });
 });

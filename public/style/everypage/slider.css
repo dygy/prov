@@ -79,7 +79,10 @@
 
 @media (max-width: 700px) {
   #smth, .smth {
-    flex-flow: column; }
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
     #smth .smthImg, .smth .smthImg {
       margin-bottom: 40px; }
     #smth .buttonImg, .smth .buttonImg {

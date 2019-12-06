@@ -1,0 +1,19 @@
+@import url(tables.css);
+#font-flex {
+  flex-wrap: wrap-reverse; }
+
+#smth p {
+  margin-bottom: 30px !important; }
+
+#smth .smthImg {
+  height: 32vw !important;
+  min-width: 25vw !important; }
+
+@media (max-width: 1405px) {
+  #smth .smthImg {
+    min-width: 350px !important;
+    min-height: 450px !important;
+    max-width: 350px !important;
+    max-height: 450px !important; } }
+
+/*# sourceMappingURL=vist.css.map */
