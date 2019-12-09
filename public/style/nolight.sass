@@ -4,25 +4,20 @@
 @import "everypage/table"
 @import "everypage/button"
 @import "everypage/smth"
-@import "tables.css"
-#smth
-  ul
-    list-style: none
-  li
-    margin-top: 5px
-  li::before
-    margin-right: 10px
-    border-radius: 100%
-    counter-increment: section
-    content: ""
-    border: 2px solid #8c438f
-    padding: 2px
-    text-align: center
-    width: 10px
-    height: 10px
-    display: inline-flex
-@media ( min-width : 1700px )
+@import "light.css"
+table
+  tr
+    width: 100%
   tbody
-    transform: scale(1.5)
-    margin-top: 200px
-    margin-bottom: 200px
+    margin-left: 10%
+    margin-right: 10%
+    width: 80%
+    td
+      width: 84%
+    .price
+      width: 13vw
+#smth
+  .smthImg
+    min-width: 500px!important
+    height: 550px!important
+

@@ -2,12 +2,6 @@
 #smth a {
   color: #fc9b00; }
 
-#smth li {
-  list-style-position: outside;
-  margin-left: 1em;
-  margin-top: 5px;
-  list-style-type: circle; }
-
 table {
   margin-left: 8%;
   margin-right: 8%; }

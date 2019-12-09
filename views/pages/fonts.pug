@@ -1,7 +1,6 @@
 link(rel='stylesheet', href='/style/fonts.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
-include ../slider
 include ../header
 include ../dropdown
 block fonts
@@ -13,7 +12,7 @@ block fonts
             br
             strong АКРИЛ + МЕТАЛЛ
             div
-                button(class="more" onclick="displayProd()") подробнее
+                button(class="more" onclick="moveTo('./font/akmet')") подробнее
                 button(class="buy" ) заказать
         div(class="elem")
             img(src="/img/letters/S.jpg")

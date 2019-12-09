@@ -4,6 +4,17 @@
 @import "everypage/table"
 @import "everypage/button"
 @import "everypage/smth"
+table
+  tr
+    width: 100%
+  tbody
+    margin-left: 10%
+    margin-right: 10%
+    width: 80%
+    td
+      width: 84%
+    .price
+      width: 13vw
 .title
   margin-bottom: 40px
   margin-top: 40px
@@ -22,12 +33,11 @@
   .elem
     padding-bottom: 10px
     max-width: 300px
-    border-radius: 10px
     background: #ededed
     margin: 5px
     img
       width: 300px
-      height: 250px
+      height: 320px
       margin-bottom: 15px
 
     strong
@@ -77,22 +87,25 @@
       height: 30px
       border: none
       background-color: #ffb800
-
+#smth
+  .smthImg
+    height: 300px
+    min-width: 250px
 @media ( min-width : 1700px )
   .calc
-    transform: scale(1.7)
-    margin: 40px
+    transform: scale(1.2)
+    margin: 0px
   table
-    tbody
-      transform: scale(2)
-    margin-top: 200px!important
-    margin-bottom: 250px!important
+    td
+      height: 60px!important
+      font-size: 22px!important
+    margin-bottom: 100px
   .smthImg
-    min-width: 600px!important
-    height: 800px!important
+    min-width: 350px!important
+    height: 450px!important
   #flex-box
-    margin: 350px 20%
+    margin: 200px 23%
     transform: scale(1.5)
   #font-flex
-    margin: 100px 15% 150px
+    margin: 100px 21% 150px
     transform: scale(1.2)

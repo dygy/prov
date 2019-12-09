@@ -1,15 +1,17 @@
 #dropdown {
+  padding-bottom: 20px;
+  padding-top: 20px;
   display: none;
   z-index: 4;
   position: absolute;
-  background: rgba(255, 255, 255, 0.81);
+  background: rgba(255, 255, 255, 0.9);
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%; }
   #dropdown .disable {
     color: darkkhaki; }
   #dropdown ul {
-    margin: 10px 10% 0 0; }
+    margin: 0 10% 0 0; }
     #dropdown ul li span {
       font: 18px !important;
       font-weight: 900 !important;
@@ -33,7 +35,7 @@
   #dropdown ul {
     margin: 10px 13% 0 0 !important; }
     #dropdown ul li span {
-      font-size: 22px !important; }
+      font-size: 24px !important; }
   #dropdown #lastUL {
     margin: 10px 4% 0 0 !important; } }
 
@@ -55,21 +57,21 @@ body {
 #header {
   color: white;
   background: black;
-  width: 100%;
-  min-height: 150px; }
+  width: 100%; }
   #header #first {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    margin-right: 0 !important;
     max-width: 100%; }
     #header #first div {
-      margin: 0 3% 0 0;
+      margin: 0 6% 0 0;
       padding-top: 40px;
       width: 20%; }
       #header #first div div {
         padding-top: 0;
         width: 100%; }
     #header #first img {
+      margin-left: 6px;
       float: left;
       width: 50px;
       height: 50px; }
@@ -82,6 +84,8 @@ body {
     width: 100%;
     max-width: 100%; }
     #header #second ul {
+      margin-top: 0px;
+      margin-bottom: 0px;
       text-align: center;
       max-width: 100vw;
       padding-left: 4px;
@@ -101,6 +105,7 @@ body {
           width: 40px;
           height: 40px; }
       #header #second ul li:hover {
+        font-family: GeomB !important;
         font-weight: 900 !important;
         text-shadow: 1px 0px 3px whitesmoke; }
 
@@ -118,14 +123,9 @@ body {
   border: none;
   background-position: center; }
   #logo bold {
-    text-shadow: 1px -2px 4px  white;
     margin-left: 10px; }
   #logo mini {
-    text-shadow: 0px -1px 2px  white;
     margin-left: 10px; }
-
-#city, #phone {
-  text-shadow: -1px -2px 4px whitesmoke; }
 
 #phone {
   min-width: 161px !important; }
@@ -215,7 +215,9 @@ body {
 
 @media (max-width: 600px) {
   #contact {
-    display: none; } }
+    display: none; }
+  #search {
+    width: 23% !important; } }
 
 @media (max-width: 450px) {
   .soc-ico {
@@ -223,23 +225,20 @@ body {
   h1 {
     font-size: 25px !important; } }
 
-@media (min-width: 1300px) {
+@media (min-width: 1249px) {
   #logo {
     background-size: 100% 100%;
     height: 120px !important;
     width: 100px !important; }
-  #header {
-    padding-top: 40px;
-    min-height: 220px; }
-    #header mini {
+    #logo mini {
       font-size: 17px !important; }
-    #header bold {
+    #logo bold {
       font-size: 25px !important; }
   #second {
     margin-top: 30px; }
     #second ul li {
       margin: 0 4% 0 0 !important;
-      font-size: 21px !important; }
+      font-size: 20px !important; }
       #second ul li img {
         margin-top: 2px;
         height: 50px !important;
@@ -248,29 +247,35 @@ body {
       margin-right: 20px !important; } }
 
 @media (min-width: 1700px) {
-  #logo {
-    background-size: 100% 100%;
-    height: 220px !important;
-    width: 200px !important; }
-  #city, #phone, #search {
-    margin-top: 50px !important; }
-  #header {
-    min-height: 250px; }
-    #header mini {
-      font-size: 17px !important; }
-    #header bold {
-      font-size: 25px !important; }
-  #search input {
-    height: 30px; }
-  #search img {
-    height: 26px !important;
-    width: 26px !important; }
+  #header #first div {
+    margin: 0px 7% 0 !important; }
+  #header #first #city, #header #first #phone {
+    width: 265px !important; }
+  #header #first #logo-warp {
+    width: 150px !important;
+    margin-left: 0 !important; }
+    #header #first #logo-warp #logo {
+      background-size: 100% 100%;
+      height: 120px !important;
+      width: 110px !important; }
+  #header #first mini {
+    font-size: 17px !important; }
+  #header #first bold {
+    font-size: 25px !important; }
+  #header #search {
+    width: 16% !important; }
+    #header #search input {
+      height: 30px; }
+    #header #search img {
+      height: 26px !important;
+      width: 26px !important; }
   #second {
     margin-top: 30px; }
     #second ul li {
-      margin: 0 4% 0 0 !important;
-      font-size: 23px !important; }
+      margin: 0 7% 0 0 !important;
+      font-size: 17px !important; }
       #second ul li img {
+        margin-left: 15px !important;
         margin-top: -13px;
         height: 60px !important;
         width: 60px !important; }
@@ -279,9 +284,9 @@ body {
 
 @media (min-width: 1900px) {
   #header bold {
-    font-size: 27px !important; }
+    font-size: 23px !important; }
   #header mini {
-    font-size: 23px !important; } }
+    font-size: 19px !important; } }
 
 .soc-ico {
   display: flex;
@@ -296,7 +301,7 @@ body {
   color: white;
   background: black;
   width: 100%;
-  min-height: 340px; }
+  min-height: 470px; }
   #footer #ftr-frst {
     font-weight: 900;
     padding-left: 10px;
@@ -349,9 +354,9 @@ body {
     padding-left: 10px;
     display: flex; }
     #footer #ftr-scnd div {
-      margin: 14px 10% 0 0; }
+      margin: 25px 18% 0 0; }
     #footer #ftr-scnd #map {
-      margin-top: -80px;
+      margin-top: -55px;
       width: 200px;
       height: 300px; }
     #footer #ftr-scnd #info {
@@ -395,6 +400,11 @@ body {
     margin-top: 58px !important; } }
 
 @media (max-width: 1325px) {
+  #footer .soc-ico {
+    margin-top: -30px !important; }
+    #footer .soc-ico img {
+      height: 60px !important;
+      width: 60px !important; }
   #footer #ftr-frst #buttons {
     margin-top: 47px !important; }
   phone {
@@ -439,7 +449,7 @@ body {
 
 @media (max-width: 944px) {
   #footer #ftr-frst .phone {
-    margin-left: 10vw !important; }
+    margin-left: 14vw !important; }
   #map {
     display: none; }
   #soc {
@@ -449,7 +459,7 @@ body {
   #ftr-frst #buttons {
     display: none; }
   #footer #ftr-scnd .lowscreen {
-    margin-left: 20% !important; } }
+    margin-left: 5% !important; } }
 
 @media (max-width: 778px) {
   #ftr-scnd #map img {
@@ -471,6 +481,7 @@ body {
     margin-left: 10px !important; } }
 
 table {
+  border-spacing: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
   min-width: 400px;
@@ -487,6 +498,8 @@ table {
     background-color: #E0F3F3; }
   table .main {
     text-align: center; }
+  table .price {
+    padding-left: 0 !important; }
 
 .calc {
   width: 150px;
@@ -518,9 +531,10 @@ table {
     flex-wrap: wrap; }
 
 #smth {
-  margin-left: 40px !important;
-  margin-top: 30px;
-  margin-bottom: 30px !important;
+  margin-right: 10% !important;
+  margin-left: 10% !important;
+  margin-top: 20px;
+  margin-bottom: 40px !important;
   display: flex; }
   #smth .smthImg {
     margin-left: 20px;
@@ -528,7 +542,11 @@ table {
     height: 500px; }
   #smth div {
     margin-left: 15px; }
+    #smth div ul {
+      margin-top: 0px !important; }
     #smth div p {
+      margin-bottom: 0px;
+      font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
       padding-right: 40px;
@@ -537,11 +555,11 @@ table {
       display: flex;
       justify-content: center; }
     #smth div .calc {
-      margin-top: 7% !important;
+      margin-top: 5% !important;
       width: 25% !important;
-      height: 10vh !important; }
+      height: 3vw !important; }
     #smth div .buttonImg {
-      margin-top: 7%;
+      margin-top: 5%;
       max-width: 25% !important;
       max-height: 25% !important;
       box-shadow: 2px 1px 8px black; }
@@ -549,7 +567,7 @@ table {
 .ntSmth .calc {
   margin-top: 7% !important;
   width: 25% !important;
-  height: 10vh !important; }
+  height: 3vw !important; }
 
 .ntSmth .buttonImg {
   margin-top: 7%;
@@ -559,17 +577,19 @@ table {
 
 .smth {
   margin-bottom: 40px;
-  margin-left: 40px !important;
-  margin-top: 30px;
+  margin-right: 10% !important;
+  margin-left: 10% !important;
+  margin-top: 20px;
   display: flex; }
   .smth .calc {
-    margin-top: 7% !important;
+    margin-top: 5% !important;
     width: 25% !important;
-    height: 10vh !important; }
+    height: 3vw !important; }
   .smth .buttonImg {
-    margin-top: 7%;
-    max-width: 25% !important;
-    max-height: 25% !important;
+    margin-top: 5%;
+    width: 25% !important;
+    height: 25% !important;
+    min-height: 50px !important;
     box-shadow: 2px 1px 8px black; }
   .smth .smthImg {
     margin-left: 20px;
@@ -577,13 +597,38 @@ table {
     height: 400px; }
   .smth div {
     margin-left: 15px; }
+    .smth div ul {
+      margin-top: 0px !important; }
     .smth div p {
+      margin-bottom: 0px;
+      font-weight: 300;
       padding-left: 30px;
       padding-right: 40px;
       font-size: 20px; }
     .smth div div {
       display: flex;
       justify-content: center; }
+
+@media (max-width: 700px) {
+  #smth, .smth {
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+    #smth .smthImg, .smth .smthImg {
+      margin-bottom: 40px; }
+    #smth div .buttonImg, .smth div .buttonImg {
+      min-height: 9vw !important;
+      min-width: 25vw !important; }
+    #smth .calc, .smth .calc {
+      min-width: 25vw !important;
+      min-height: 4vw !important;
+      font-size: 3vw !important; } }
+
+@media (min-width: 1400px) {
+  #smth div .buttonImg, .smth div .buttonImg {
+    max-width: 210px !important;
+    max-height: 50px !important; } }
 
 @media (min-width: 1700px) {
   #smth li::before, .smth li::before {
@@ -596,7 +641,6 @@ table {
     font-size: 35px !important; } }
 
 .title {
-  margin-top: 40px;
   display: flex;
   text-align: center;
   justify-content: center; }
@@ -634,6 +678,7 @@ table {
       border: none;
       height: 25px; }
     #font-flex .elem .more {
+      background-color: white;
       position: relative;
       left: -10px; }
     #font-flex .elem .buy {
@@ -672,17 +717,18 @@ table {
 
 @media (min-width: 1700px) {
   .calc {
-    transform: scale(1.7);
-    margin: 40px; }
+    transform: scale(1.2); }
   .smthImg {
-    min-width: 600px !important;
-    height: 850px !important; }
-  tbody {
-    transform: scale(2);
-    margin-bottom: 200px;
-    margin-top: 200px; }
+    min-width: 450px !important;
+    height: 600px !important; }
+  table {
+    height: 80px;
+    font-size: 22px;
+    margin-bottom: 350px; }
+    table tbody {
+      height: 100%; }
   #font-flex, #flex-box {
-    margin: 200px 15%;
+    margin: 150px 23%;
     transform: scale(1.4); } }
 
 /*# sourceMappingURL=fonts.css.map */

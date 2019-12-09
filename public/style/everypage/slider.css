@@ -1,9 +1,14 @@
 #smth {
   margin-right: 10% !important;
   margin-left: 10% !important;
-  margin-top: 2%;
-  margin-bottom: 10% !important;
+  margin-top: 20px;
+  margin-bottom: 40px;
   display: flex; }
+  #smth li {
+    list-style-position: outside;
+    margin-left: 1em;
+    margin-top: 5px;
+    list-style-type: circle; }
   #smth .smthImg {
     margin-left: 20px;
     min-width: 400px;
@@ -25,7 +30,7 @@
     #smth div .calc {
       margin-top: 5% !important;
       width: 25% !important;
-      height: 10vh !important; }
+      height: 3vw !important; }
     #smth div .buttonImg {
       margin-top: 5%;
       max-width: 25% !important;
@@ -35,7 +40,7 @@
 .ntSmth .calc {
   margin-top: 7% !important;
   width: 25% !important;
-  height: 10vh !important; }
+  height: 3vw !important; }
 
 .ntSmth .buttonImg {
   margin-top: 7%;
@@ -44,15 +49,20 @@
   box-shadow: 2px 1px 8px black; }
 
 .smth {
-  margin-bottom: 10%;
+  margin-bottom: 40px;
   margin-right: 10% !important;
   margin-left: 10% !important;
-  margin-top: 2%;
+  margin-top: 20px;
   display: flex; }
+  .smth li {
+    list-style-position: outside;
+    margin-left: 1em;
+    margin-top: 5px;
+    list-style-type: circle; }
   .smth .calc {
     margin-top: 5% !important;
     width: 25% !important;
-    height: 10vh !important; }
+    height: 3vw !important; }
   .smth .buttonImg {
     margin-top: 5%;
     width: 25% !important;
@@ -85,7 +95,7 @@
     align-items: center; }
     #smth .smthImg, .smth .smthImg {
       margin-bottom: 40px; }
-    #smth .buttonImg, .smth .buttonImg {
+    #smth div .buttonImg, .smth div .buttonImg {
       min-height: 9vw !important;
       min-width: 25vw !important; }
     #smth .calc, .smth .calc {
@@ -93,33 +103,36 @@
       min-height: 4vw !important;
       font-size: 3vw !important; } }
 
+@media (min-width: 1400px) {
+  #smth div .buttonImg, .smth div .buttonImg {
+    max-width: 210px !important;
+    max-height: 50px !important; } }
+
 @media (min-width: 1700px) {
-  #smth li::before, .smth li::before {
-    border: 4px blueviolet solid !important;
-    height: 15px !important;
-    width: 15px !important; }
   #smth p, #smth li, #smth span, .smth p, .smth li, .smth span {
     font-size: 27px !important; }
   #smth h3, .smth h3 {
     font-size: 35px !important; } }
 
 .title {
-  margin-top: 40px;
+  margin-top: 10px;
   display: flex;
   text-align: center;
   justify-content: center; }
   .title h1 {
     font-family: GeomB !important; }
   .title .calc {
-    margin-top: 7% !important;
-    min-width: 15% !important;
-    height: 4vw !important; }
+    width: 15% !important;
+    height: 4vw !important;
+    max-width: 200px;
+    max-height: 50px; }
   .title .buttonImg {
     margin-left: 7% !important;
-    margin-top: 7% !important;
-    max-width: 15% !important;
-    max-height: 4vw !important;
-    box-shadow: 2px 1px 8px black; }
+    width: 15% !important;
+    height: 4vw !important;
+    box-shadow: 2px 1px 8px black;
+    max-width: 200px;
+    max-height: 50px; }
 
 html {
   min-height: 100%;

@@ -1,17 +1,18 @@
 @charset "UTF-8";
 #dropdown {
+  padding-bottom: 20px;
+  padding-top: 20px;
   display: none;
   z-index: 4;
   position: absolute;
-  background: rgba(255, 255, 255, 0.81);
+  background: rgba(255, 255, 255, 0.9);
   flex-wrap: wrap;
   flex-direction: row;
-  width: 100%;
-  padding-bottom: 15px; }
+  width: 100%; }
   #dropdown .disable {
     color: darkkhaki; }
   #dropdown ul {
-    margin: 10px 10% 0 0; }
+    margin: 0 10% 0 0; }
     #dropdown ul li span {
       font: 18px !important;
       font-weight: 900 !important;
@@ -32,14 +33,12 @@
       font-size: 16px !important; } }
 
 @media (min-width: 1700px) {
-  #dropdown {
-    justify-content: center; }
-    #dropdown ul {
-      margin: 10px 3% 0 0 !important; }
-      #dropdown ul li span {
-        font-size: 22px !important; }
-    #dropdown #lastUL {
-      margin: 10px 4% 0 0 !important; } }
+  #dropdown ul {
+    margin: 10px 13% 0 0 !important; }
+    #dropdown ul li span {
+      font-size: 24px !important; }
+  #dropdown #lastUL {
+    margin: 10px 4% 0 0 !important; } }
 
 @font-face {
   font-family: "Geom";
@@ -48,9 +47,6 @@
 @font-face {
   font-family: "GeomB";
   src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
-
-button {
-  font-family: GeomB; }
 
 body {
   max-width: 100%;
@@ -62,14 +58,14 @@ body {
 #header {
   color: white;
   background: black;
-  width: 80%; }
+  width: 100%; }
   #header #first {
     display: flex;
     flex-direction: row;
     margin-right: 0 !important;
     max-width: 100%; }
     #header #first div {
-      margin: 0 3% 0 0;
+      margin: 0 6% 0 0;
       padding-top: 40px;
       width: 20%; }
       #header #first div div {
@@ -110,6 +106,7 @@ body {
           width: 40px;
           height: 40px; }
       #header #second ul li:hover {
+        font-family: GeomB !important;
         font-weight: 900 !important;
         text-shadow: 1px 0px 3px whitesmoke; }
 
@@ -127,14 +124,9 @@ body {
   border: none;
   background-position: center; }
   #logo bold {
-    text-shadow: 1px -2px 4px  white;
     margin-left: 10px; }
   #logo mini {
-    text-shadow: 0px -1px 2px  white;
     margin-left: 10px; }
-
-#city, #phone {
-  text-shadow: -1px -2px 4px whitesmoke; }
 
 #phone {
   min-width: 161px !important; }
@@ -256,45 +248,40 @@ body {
       margin-right: 20px !important; } }
 
 @media (min-width: 1700px) {
-  #header {
-    padding-left: 20%; }
-    #header #first {
-      max-width: 60% !important; }
-    #header #city, #header #phone {
-      width: 265px !important; }
-    #header #logo-warp {
-      width: 150px !important;
-      margin-left: 0 !important; }
-  #logo {
-    background-size: 100% 100%;
-    height: 120px !important;
-    width: 110px !important; }
-    #logo mini {
-      font-size: 17px !important; }
-    #logo bold {
-      font-size: 25px !important; }
-  #search {
+  #header #first div {
+    margin: 0px 7% 0 !important; }
+  #header #first #city, #header #first #phone {
+    width: 265px !important; }
+  #header #first #logo-warp {
+    width: 150px !important;
+    margin-left: 0 !important; }
+    #header #first #logo-warp #logo {
+      background-size: 100% 100%;
+      height: 120px !important;
+      width: 110px !important; }
+  #header #first mini {
+    font-size: 17px !important; }
+  #header #first bold {
+    font-size: 25px !important; }
+  #header #search {
     width: 16% !important; }
-    #search input {
+    #header #search input {
       height: 30px; }
-    #search img {
+    #header #search img {
       height: 26px !important;
       width: 26px !important; }
   #second {
-    width: 60% !important;
     margin-top: 30px; }
-    #second ul {
-      width: auto !important; }
-      #second ul li {
-        margin: 0 1% 0 0 !important;
-        font-size: 17px !important; }
-        #second ul li img {
-          margin-left: 0 !important;
-          margin-top: -13px;
-          height: 60px !important;
-          width: 60px !important; }
-      #second ul #contact {
-        margin-right: 20px !important; } }
+    #second ul li {
+      margin: 0 7% 0 0 !important;
+      font-size: 17px !important; }
+      #second ul li img {
+        margin-left: 15px !important;
+        margin-top: -13px;
+        height: 60px !important;
+        width: 60px !important; }
+    #second ul #contact {
+      margin-right: 20px !important; } }
 
 @media (min-width: 1900px) {
   #header bold {
@@ -368,9 +355,9 @@ body {
     padding-left: 10px;
     display: flex; }
     #footer #ftr-scnd div {
-      margin: 14px 10% 0 0; }
+      margin: 25px 18% 0 0; }
     #footer #ftr-scnd #map {
-      margin-top: -80px;
+      margin-top: -55px;
       width: 200px;
       height: 300px; }
     #footer #ftr-scnd #info {
@@ -414,6 +401,11 @@ body {
     margin-top: 58px !important; } }
 
 @media (max-width: 1325px) {
+  #footer .soc-ico {
+    margin-top: -30px !important; }
+    #footer .soc-ico img {
+      height: 60px !important;
+      width: 60px !important; }
   #footer #ftr-frst #buttons {
     margin-top: 47px !important; }
   phone {
@@ -490,24 +482,26 @@ body {
     margin-left: 10px !important; } }
 
 #form {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #FCB600;
   width: 100%;
-  min-height: 300px;
+  min-height: 200px;
   color: black;
   font-weight: lighter; }
   #form ::placeholder {
     font-weight: 600;
     font-size: 16px;
     color: black; }
+  #form p {
+    height: 9px;
+    margin: 0 0 0; }
   #form #form-one {
     margin-bottom: 20px;
     text-align: center; }
     #form #form-one div {
       font-family: Verdana,monospace;
-      font-size: 35px;
-      padding-bottom: 10px; }
+      font-size: 35px; }
   #form #form-two {
     display: flex;
     flex-wrap: wrap;
@@ -549,13 +543,13 @@ body {
 
 @media (min-width: 1700px) {
   #form input {
-    height: 50px !important; }
+    height: 30px !important; }
   #form textarea {
-    height: 300px !important; }
+    height: 150px !important; }
   #form input, #form textarea {
-    font: bold 25px sans-serif; }
+    font: bold 20px Geom; }
   #form ::placeholder {
-    font-size: 25px !important; } }
+    font-size: 20px !important; } }
 
 .mark {
   width: 30px;
@@ -667,6 +661,7 @@ body {
     margin: -30px 0 0;
     list-style: none; }
   #serve .serv-list li {
+    background-color: rgba(204, 210, 210, 0.51);
     width: 263px;
     height: 30px;
     padding-right: 10px;
@@ -743,7 +738,7 @@ body {
 #but-take {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   font-family: Geom !important;
   font-weight: normal; }
   #but-take img {
@@ -768,45 +763,39 @@ body {
     width: 45%;
     font-size: 40px; }
 
-.ads {
-  padding-bottom: 40px; }
-  .ads .title {
-    padding-top: 40px; }
-    .ads .title h1 {
-      width: 550px; }
-  .ads div {
-    text-align: center;
-    display: flex;
+.ads div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 10px 3% 0 !important; }
+  .ads div div {
     justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin: 10px 3% 0 !important; }
-    .ads div div {
-      justify-content: center;
-      display: flex;
-      flex-flow: column;
-      width: 200px;
-      height: 200px; }
-      .ads div div img {
-        margin-left: 15%; }
-      .ads div div svg {
-        margin-left: 15%; }
-      .ads div div .B {
-        margin-left: 15%;
-        width: 90px !important; }
-      .ads div div text {
-        position: relative;
-        bottom: 34px;
-        margin-left: 9%; }
-      .ads div div .hov {
-        display: none; }
-    .ads div div:hover text {
-      color: #ffb800;
-      text-shadow: #fc9b00 1px 1px 1px; }
-    .ads div div:hover .hov {
-      display: block; }
-    .ads div div:hover .hovNo {
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+    height: 200px; }
+    .ads div div img {
+      margin-left: 15%; }
+    .ads div div svg {
+      margin-left: 15%; }
+    .ads div div .B {
+      margin-left: 15%;
+      width: 90px !important; }
+    .ads div div text {
+      position: relative;
+      bottom: 34px;
+      margin-left: 9%; }
+    .ads div div .hov {
       display: none; }
+  .ads div div:hover text {
+    color: #ffb800;
+    text-shadow: #fc9b00 1px 1px 1px; }
+  .ads div div:hover .hov {
+    display: block; }
+  .ads div div:hover .hovNo {
+    display: none; }
 
 #street {
   background-image: url("/img/main.jpg");
@@ -816,8 +805,6 @@ body {
 
 #room {
   color: white;
-  margin-bottom: 40px;
-  margin-top: 40px;
   background-color: black;
   height: 450px;
   background-image: url("/img/room.jpg");
@@ -997,27 +984,29 @@ body {
   .mark {
     height: 40px;
     width: 40px; }
-  #usl div {
-    margin: 0 5.5% 0 !important; }
-  #usl p {
-    font-size: 18px !important;
-    left: 45% !important;
-    bottom: 65px;
-    width: 155px; }
-  #usl img {
-    border-bottom: 60px black solid !important;
-    width: 350px !important;
-    height: 500px !important; }
+  #usl {
+    justify-content: center !important; }
+    #usl div {
+      margin: 0 5.5% 0 !important; }
+    #usl p {
+      font-size: 18px !important;
+      left: 45% !important;
+      bottom: 65px;
+      width: 155px; }
+    #usl img {
+      border-bottom: 60px black solid !important;
+      width: 320px !important;
+      height: 400px !important; }
   .serv-list ul {
     margin-top: -55px !important; }
   .serv-list li {
-    margin-left: -17px !important;
-    width: 362px !important;
+    margin-left: -15px !important;
+    width: 331px !important;
     height: 30px !important;
     font-size: 19px !important; }
   #but-take img {
-    height: 80px !important;
-    width: 350px !important;
+    height: 50px !important;
+    width: 200px !important;
     font-size: 26px; }
   .ads text {
     font-size: 25px !important; }
@@ -1092,22 +1081,24 @@ body {
     margin: 0 0 0 29px !important; } }
 
 .title {
-  margin-top: 40px;
+  margin-top: 10px;
   display: flex;
   text-align: center;
   justify-content: center; }
   .title h1 {
     font-family: GeomB !important; }
   .title .calc {
-    margin-top: 7% !important;
-    min-width: 15% !important;
-    height: 4vw !important; }
+    width: 15% !important;
+    height: 4vw !important;
+    max-width: 200px;
+    max-height: 50px; }
   .title .buttonImg {
     margin-left: 7% !important;
-    margin-top: 7% !important;
-    max-width: 15% !important;
-    max-height: 4vw !important;
-    box-shadow: 2px 1px 8px black; }
+    width: 15% !important;
+    height: 4vw !important;
+    box-shadow: 2px 1px 8px black;
+    max-width: 200px;
+    max-height: 50px; }
 
 #body {
   width: 100vw;

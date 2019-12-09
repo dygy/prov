@@ -18,6 +18,8 @@
   min-width: 330px; }
 
 @media (min-width: 1700px) {
+  #smth {
+    margin-bottom: 150px !important; }
   .smthImg {
     height: 600px !important;
     min-width: 570px !important; } }

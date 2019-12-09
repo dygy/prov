@@ -4,7 +4,10 @@ script(src='../js/Global.js')
 include ../header
 include ../dropdown
 block street
-    div(id="street")
+div(class="title")
+    h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ НАРУЖНОЙ РЕКЛАМЫ
+
+div(id="street")
         div(class="mark" id="one")
         div(class="mark" id="two")
         div(class="mark" id="three")
@@ -18,8 +21,6 @@ block street
         div(class="mark" id="el")
 block ins-ads
 div(class="ads")
-    div(class="title")
-        h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ НАРУЖНОЙ РЕКЛАМЫ
     div(id="ins-one")
         div(onclick="moveTo('/light')")
             img(src="../img/1.png" height=150 width=140 class="hovNo Boxx")
@@ -31,6 +32,7 @@ div(class="ads")
             img(src="../img/hover1/icon (10).jpg" height=100 width=100 class="hov B"  )
             br
             br
+            text объемные
             text светящиеся
             text буквы
         div(onclick="moveTo('/lightpan')")
@@ -139,6 +141,9 @@ div(class="ads")
             text услуги
 
 block room
+    div(class="title")
+        h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ ИНТЕРЬЕРНОЙ РЕКЛАМЫ
+
     div(id="room")
         div(class="mark" id="tone")
         div(class="mark" id="ttwo")
@@ -148,8 +153,6 @@ block room
         div(class="mark" id="tsix")
 block room-ads
     div(class="ads")
-        div(class="title")
-            h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ ИНТЕРЬЕРНОЙ РЕКЛАМЫ
         div(id="room-one")
             div(onclick="moveTo('/navs')")
                 img(src="../img/inter/inter9.png" height=100 width=120  class="hovNo")

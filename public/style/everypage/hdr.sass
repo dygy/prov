@@ -6,8 +6,6 @@
   src: local('Geom'), url("../font/geom bold.otf") format("truetype")
 html
   //overflow-x: hidden
-button
-  font-family: GeomB
 body
   max-width: 100%
   width: 100vw
@@ -17,14 +15,14 @@ body
 #header
   color: white
   background: black
-  width: 80%
+  width: 100%
   #first
     display: flex
     flex-direction: row
     margin-right: 0!important
     max-width: 100%
     div
-      margin: 0 3% 0 0
+      margin: 0 6% 0 0
       padding-top: 40px
       width: 20%
       div
@@ -66,6 +64,7 @@ body
           width: 40px
           height: 40px
       li:hover
+        font-family: GeomB!important
         font-weight: 900!important
         text-shadow: 1px 0px 3px whitesmoke
 #logo-warp
@@ -83,15 +82,11 @@ body
   background-position: center
 
   bold
-    text-shadow: 1px -2px 4px  white
     margin-left: 10px
 
   mini
-    text-shadow: 0px -1px 2px  white
     margin-left: 10px
 
-#city, #phone
-  text-shadow: -1px -2px 4px whitesmoke
 
 #phone
   min-width: 161px!important
@@ -222,40 +217,37 @@ body
         margin-right: 20px!important
 @media ( min-width : 1700px )
   #header
-    padding-left: 20%
     #first
-      max-width: 60%!important
-
-    #city, #phone
-      width: 265px!important
-    #logo-warp
-      width: 150px!important
-      margin-left: 0!important
-  #logo
-    background-size: 100% 100%
-    height: 120px!important
-    width: 110px!important
-    mini
-      font-size: 17px!important
-    bold
-      font-size: 25px!important
-  #search
-    width: 16%!important
-    input
-      height: 30px
-    img
-      height: 26px !important
-      width: 26px !important
+      div
+        margin: 0px 7% 0 !important
+      #city, #phone
+        width: 265px!important
+      #logo-warp
+        width: 150px!important
+        margin-left: 0!important
+        #logo
+          background-size: 100% 100%
+          height: 120px!important
+          width: 110px!important
+      mini
+        font-size: 17px!important
+      bold
+        font-size: 25px!important
+    #search
+      width: 16%!important
+      input
+        height: 30px
+      img
+        height: 26px !important
+        width: 26px !important
   #second
-    width: 60%!important
     margin-top: 30px
     ul
-      width: auto!important
       li
-        margin: 0 1% 0 0 !important
+        margin: 0 7% 0 0 !important
         font-size: 17px!important
         img
-          margin-left: 0!important
+          margin-left: 15px!important
           margin-top: -13px
           height: 60px!important
           width: 60px!important

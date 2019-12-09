@@ -1,9 +1,14 @@
 #smth
   margin-right: 10% !important
   margin-left: 10% !important
-  margin-top: 2%
-  margin-bottom: 10%!important
+  margin-top: 20px
+  margin-bottom: 40px
   display: flex
+  li
+    list-style-position: outside
+    margin-left: 1em
+    margin-top: 5px
+    list-style-type: circle
   .smthImg
     margin-left: 20px
     min-width: 400px
@@ -25,7 +30,7 @@
     .calc
       margin-top: 5%!important
       width: 25%!important
-      height: 10vh!important
+      height: 3vw!important
     .buttonImg
       margin-top: 5%
       max-width: 25%!important
@@ -35,7 +40,7 @@
   .calc
     margin-top: 7%!important
     width: 25%!important
-    height: 10vh!important
+    height: 3vw!important
   .buttonImg
     margin-top: 7%
     max-width: 25%!important
@@ -43,15 +48,20 @@
     box-shadow: 2px 1px 8px black
 
 .smth
-  margin-bottom: 10%
+  margin-bottom: 40px
   margin-right: 10% !important
   margin-left: 10% !important
-  margin-top: 2%
+  margin-top: 20px
   display: flex
+  li
+    list-style-position: outside
+    margin-left: 1em
+    margin-top: 5px
+    list-style-type: circle
   .calc
     margin-top: 5%!important
     width: 25%!important
-    height: 10vh!important
+    height: 3vw!important
   .buttonImg
     margin-top: 5%
     width: 25%!important
@@ -83,19 +93,22 @@
     align-items: center
     .smthImg
       margin-bottom: 40px
-    .buttonImg
-      min-height: 9vw!important
-      min-width: 25vw!important
+    div
+      .buttonImg
+        min-height: 9vw!important
+        min-width: 25vw!important
     .calc
       min-width: 25vw!important
       min-height: 4vw!important
       font-size: 3vw!important
+@media ( min-width : 1400px )
+  #smth,.smth
+    div
+      .buttonImg
+        max-width: 210px!important
+        max-height: 50px!important
 @media ( min-width : 1700px )
   #smth,.smth
-    li::before
-      border: 4px blueviolet solid !important
-      height: 15px!important
-      width: 15px!important
     p, li, span
       font-size: 27px!important
     h3
