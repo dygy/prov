@@ -98,7 +98,17 @@ block tab
             td от 15 000 руб/м2
 block info
     div(id="smth")
-        img(src="/img/letters/letters.jpg" class="smthImg")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1")
+                img(src="../img/inactive.png" class="dot" id="dot2")
+                img(src="../img/inactive.png" class="dot" id="dot3")
+            img(src="/img/letters/letters.jpg" class="smthImg")
+            img(src="/img/letters/letters.jpg" class="smthImg" style="display: none")
+            img(src="/img/letters/letters.jpg" class="smthImg" style="display: none")
         div
             p Объемные буквы – это яркая и эффективная наружная реклама. На данный момент это самые востребованные конструкции. Они не только привлекают внимание потенциальных клиентов, но и  являются единственным разрешенным  видом наружной рекламы в столице в соответствии с постановлением правительства г. Москва № 902-ПП. В подавляющем большинстве на фасады зданий устанавливаются объемные символы и важно сделать так, чтобы именно ваша вывеска была самой запоминающейся и выделялась на фоне других конструкций.
             div

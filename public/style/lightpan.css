@@ -35,7 +35,7 @@
   #dropdown ul {
     margin: 10px 13% 0 0 !important; }
     #dropdown ul li span {
-      font-size: 24px !important; }
+      font-size: 1.1vw !important; }
   #dropdown #lastUL {
     margin: 10px 4% 0 0 !important; } }
 
@@ -484,8 +484,13 @@ body {
   margin-right: 10% !important;
   margin-left: 10% !important;
   margin-top: 20px;
-  margin-bottom: 40px !important;
+  margin-bottom: 40px;
   display: flex; }
+  #smth li {
+    list-style-position: outside;
+    margin-left: 1em;
+    margin-top: 5px;
+    list-style-type: circle; }
   #smth .smthImg {
     margin-left: 20px;
     min-width: 400px;
@@ -531,6 +536,11 @@ body {
   margin-left: 10% !important;
   margin-top: 20px;
   display: flex; }
+  .smth li {
+    list-style-position: outside;
+    margin-left: 1em;
+    margin-top: 5px;
+    list-style-type: circle; }
   .smth .calc {
     margin-top: 5% !important;
     width: 25% !important;
@@ -559,14 +569,62 @@ body {
       display: flex;
       justify-content: center; }
 
+.smth .smthImg, #smth .smthImg {
+  position: relative;
+  bottom: 50px; }
+
+.smth .imgSwitcher, #smth .imgSwitcher {
+  max-height: 285px; }
+
+.smth .down-layout, .smth .mid-layout, #smth .down-layout, #smth .mid-layout {
+  position: relative;
+  display: flex; }
+
+.smth .down-layout, #smth .down-layout {
+  justify-content: center;
+  bottom: -93%; }
+
+.smth .mid-layout, #smth .mid-layout {
+  bottom: -48%;
+  left: -45%; }
+
+.smth .dot, #smth .dot {
+  height: 15px;
+  width: 15px; }
+
+.smth .prev, .smth .next, #smth .prev, #smth .next {
+  z-index: 1;
+  height: 40px;
+  width: 20px;
+  position: relative; }
+
+.smth .prev, #smth .prev {
+  left: 3%;
+  top: 40%;
+  transform: rotate(180deg); }
+
+.smth .next, #smth .next {
+  left: 90%;
+  top: 40%; }
+
 @media (max-width: 700px) {
   #smth, .smth {
     flex-flow: column;
     justify-content: center;
     align-content: center;
     align-items: center; }
-    #smth .smthImg, .smth .smthImg {
-      margin-bottom: 40px; }
+    #smth .imgSwitcher, .smth .imgSwitcher {
+      margin-top: 60px !important;
+      height: auto;
+      width: auto;
+      margin-bottom: 50px; }
+      #smth .imgSwitcher .down-layout, .smth .imgSwitcher .down-layout {
+        position: relative !important;
+        bottom: -90% !important; }
+      #smth .imgSwitcher .next, #smth .imgSwitcher .prev, .smth .imgSwitcher .next, .smth .imgSwitcher .prev {
+        top: 150px !important; }
+      #smth .imgSwitcher .down-layout, .smth .imgSwitcher .down-layout {
+        top: 270px !important; }
     #smth div .buttonImg, .smth div .buttonImg {
       min-height: 9vw !important;
       min-width: 25vw !important; }
@@ -581,14 +639,15 @@ body {
     max-height: 50px !important; } }
 
 @media (min-width: 1700px) {
-  #smth li::before, .smth li::before {
-    border: 4px blueviolet solid !important;
-    height: 15px !important;
-    width: 15px !important; }
   #smth p, #smth li, #smth span, .smth p, .smth li, .smth span {
     font-size: 27px !important; }
   #smth h3, .smth h3 {
-    font-size: 35px !important; } }
+    font-size: 35px !important; }
+  .imgSwitcher {
+    max-height: 450px !important; }
+  .down-layout {
+    justify-content: center;
+    bottom: -93%; } }
 
 .calc {
   width: 150px;
