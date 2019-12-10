@@ -19,7 +19,6 @@ function displayImg(url) {
     elem("disImg").src = url;
 }
 function switchImg(isNext) {
-    console.log(elem("dot1").src)
     let imgs = document.getElementsByClassName("smthImg");
     if (elem("dot1").src.includes("/img/active.png")){
 
