@@ -1,4 +1,12 @@
-@import url(tables.css);
+@import url(kron.css);
+#smth p {
+  font-size: 16px !important; }
+
+.smthImg {
+  margin-top: 40px;
+  height: 300px !important;
+  width: 150px !important; }
+
 @media (min-width: 1700px) {
   .smthImg {
     height: 450px !important;

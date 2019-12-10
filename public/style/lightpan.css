@@ -582,7 +582,9 @@ body {
 
 .smth .down-layout, #smth .down-layout {
   justify-content: center;
-  bottom: -93%; }
+  bottom: -94%; }
+  .smth .down-layout img, #smth .down-layout img {
+    margin-left: 7px; }
 
 .smth .mid-layout, #smth .mid-layout {
   bottom: -48%;

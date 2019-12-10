@@ -14,14 +14,15 @@
   list-style-type: circle; }
 
 #smth .smthImg {
-  height: 400px;
-  min-width: 330px; }
+  margin-top: 40px;
+  height: 400px !important;
+  min-width: 330px !important; }
 
 @media (min-width: 1700px) {
   #smth {
     margin-bottom: 150px !important; }
-  .smthImg {
-    height: 600px !important;
-    min-width: 570px !important; } }
+    #smth .smthImg {
+      height: 600px !important;
+      min-width: 570px !important; } }
 
 /*# sourceMappingURL=pilon.css.map */
