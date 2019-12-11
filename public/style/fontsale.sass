@@ -4,7 +4,23 @@
 @import "everypage/table"
 @import "everypage/button"
 @import "everypage/smth"
-
+.imgSwitcher
+  margin-right: 0!important
+  width: 600px!important
+  max-height: 400px!important
+#image
+  bottom: 85px
+  left: 25px
+.mid-layout
+  bottom: -130px!important
+  left: 1%!important
+.down-layout
+  left: 8%!important
+  bottom: -325px!important
+.prev
+  left: 20%!important
+.next
+  left: 85%!important
 .title
   margin-top: 40px
   display: flex
@@ -34,28 +50,18 @@
   #info
   #image
     margin-left: 24%
-    width: 25VW
-    height: 25VW
+    width: 350px
+    height: 350px
 .flexbuts
   display: flex
   justify-content: center
+  .calc, .buttonImg
+    margin-top: 0!important
   button
     margin: 0 2% 0 0
-
   button
     width: 120px
     height: 40px
-  .buy-tel
-    margin-top: 2px
-    height: 35px
-    width: 150px
-    img
-      position: relative
-      bottom: -1px
-    text
-      position: relative
-      bottom: 8px
-
 
 
 
@@ -91,3 +97,16 @@
       border: none
       background-color: #ffb800
     strong
+@media (max-width: 1550px)
+  .imgSwitcher
+    margin-left: -1vw!important
+@media (max-width: 1450px)
+  .imgSwitcher
+    margin-left: -3vw!important
+@media (max-width: 1350px)
+  .imgSwitcher
+    margin-left: -5vw!important
+
+@media (min-width: 1700px)
+  .imgSwitcher
+    margin-left: 5vw

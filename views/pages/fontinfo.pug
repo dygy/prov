@@ -6,17 +6,17 @@ include ../dropdown
 
 block info
     div(class="title")
-        h1 ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА С МЕТАЛЛОМ
+        h1=title
     div(id="flex-info")
         div(id="info")
             ul
-                li Срок службы — до 5 лет
-                li Яркость — средняя
-                li Оптимальная высота буквы — до 100 см
-                li Максимальная высота буквы — 3м
-                li Минимальная высота — 5см
-                li Минимальная толщина ножки буквы — 15мм
-                li Глубина буквы — 50-150 мм
+                li=ul[0]
+                li=ul[1]
+                li=ul[2]
+                li=ul[3]
+                li=ul[4]
+                li=ul[5]
+                li=ul[6]
             table
                 tr(class="main blue")
                     td тип
@@ -34,11 +34,25 @@ block info
                     td
                     td
         div(class="ntSmth")
-            img(id="image" src="../img/3/content301.png")
+            div(class="imgSwitcher")
+                div(class="mid-layout")
+                    img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                    img(src="../img/next.png" class="next" onclick="switchImg(true)")
+                div(class="down-layout")
+                    img(src="../img/active.png" class="dot" id="dot1")
+                    img(src="../img/inactive.png" class="dot" id="dot2")
+                    img(src="../img/inactive.png" class="dot" id="dot3")
+                img(id="image" src=imgURL class="smthImg")
+                img(id="image" src=imgURL class="smthImg" style="display: none")
+                img(id="image" src=imgURL class="smthImg" style="display: none")
+
             div(class="flexbuts")
                 button(class="calc") рассчитать
                 img( class="buttonImg" src="../img/button.png")
 
+    div(style="margin-left:20%;margin-right:20%")
+        p=inside1
+        p=inside2
     div(id="flex-box")
         div(class="elem")
             img(src="../img/3/content302.png")
