@@ -11,6 +11,7 @@ const server = http.createServer(app);
 const indexRouter = require('./routes/index');
 const fontRouter = require('./routes/font');
 const calcRouter = require('./routes/calc');
+const lightRouter = require('./routes/light');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -28,6 +29,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/font', fontRouter);
 app.use('/calc', calcRouter);
+app.use('/lights', lightRouter);
+
 app.post('/order', function(req, res, next) {
     sendEmail(req.body);
     console.log(JSON.stringify(req.body));

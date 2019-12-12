@@ -27,9 +27,9 @@ block header
             ul
                 li(id="burger-li")
                     img(src="../img/menu.png" id="burger" onclick="hideDropDown()")
-                li наружная реклама
-                li интерьерная реклама
-                li(id="large-word") широкомофортная печать
+                li(onclick="hideDropDown()") наружная реклама
+                li(onclick="hideDropDown()") интерьерная реклама
+                li(id="large-word" onclick="hideDropDown()") широкомофортная печать
                 li(id="uslugi" onclick="moveTo('/serves')") услуги
                 li портфолио
                 li(id="contact" onclick="moveTo('/contacts')") контакты

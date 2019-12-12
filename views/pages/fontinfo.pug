@@ -16,7 +16,8 @@ block info
                 li=ul[3]
                 li=ul[4]
                 li=ul[5]
-                li=ul[6]
+                if typeof ul[5] === "string"
+                    li=ul[6]
             table
                 tr(class="main blue")
                     td тип
