@@ -1,6 +1,7 @@
 @import url(tables.css);
 .smthImg {
-  height: 350px !important; }
+  height: 450px !important;
+  min-width: 600px !important; }
 
 .mrgn, .uls {
   margin-left: 10% !important;
@@ -28,6 +29,8 @@ table td {
   display: inline-flex; }
 
 @media (min-width: 1700px) {
+  .smthImg {
+    height: 600px !important; }
   .mrgn, .uls {
     font-size: 20px; }
   tbody {
