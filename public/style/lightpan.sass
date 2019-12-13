@@ -4,7 +4,8 @@
 @import "everypage/smth"
 @import "everypage/button"
 .smthImg
-  min-width: 500px  !important
+  min-width: 300px!important
+  height: 300px!important
 space
   margin-left: 5px
   margin-right: 5px
@@ -33,7 +34,6 @@ space
     padding-bottom: 10px
     max-width: 700px
     padding-right: 30px
-    border-radius: 10px
     background: #ededed
     margin: 15px
     display: flex
@@ -109,7 +109,6 @@ space
     text-align: center
     justify-content: center
     margin: 0px 4% 10px
-
     div
       margin-top: 15px
     price
@@ -124,11 +123,11 @@ space
       background-color: #ffb800
 
 @media ( min-width : 1700px )
+  .smthImg
+    min-width: 450px!important
+    height: 450px!important
   #font-flex, #flex-box
     transform: scale(1.4)
     margin: 250px 15%
   #flex-box
-    margin-top: 100px
-    margin-left: 15%
-    margin-right: 15%
-    margin-bottom: 20px
+    margin: 100px 15% 20px

@@ -10,22 +10,23 @@
     #font-flex .elem div strong {
       font-size: 14px; }
 
+#flex-box .elem {
+  margin: 10px 4% 0 !important; }
+
 #flex-box p {
   margin-top: 10px !important; }
 
-#flex-box .elem {
-  margin: 20px 20px 0 !important; }
-  #flex-box .elem img {
-    height: 200px !important; }
+#flex-box img {
+  height: 200px !important; }
 
 @media (min-width: 1700px) {
   .smthImg {
     height: 800px !important;
     min-width: 800px !important; }
   #flex-box {
-    margin: 130px 14%; }
+    margin: 130px 12%; }
     #flex-box .elem {
-      margin: 20px 60px !important; }
+      margin: 20px 4% !important; }
   #font-flex {
     margin: 250px 18% 260px; } }
 

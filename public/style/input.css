@@ -6,8 +6,8 @@
 #font-flex .elem {
   min-width: 400px !important;
   height: 400px !important;
-  margin: 10px !important;
-  padding: 0 !important; }
+  padding: 0 !important;
+  margin: 40px 5% 0 0 !important; }
   #font-flex .elem p {
     margin-left: 60px; }
   #font-flex .elem img {

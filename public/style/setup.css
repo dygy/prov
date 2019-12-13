@@ -3,4 +3,9 @@
   height: 530px !important;
   min-width: 550px !important; }
 
+#flex-box .elem img {
+  margin-top: -35px !important;
+  margin-bottom: -35px !important;
+  height: 200px !important; }
+
 /*# sourceMappingURL=setup.css.map */
