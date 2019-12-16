@@ -7,13 +7,13 @@
   min-width: 400px !important;
   height: 400px !important;
   padding: 0 !important;
-  margin: 40px 5% 0 0 !important; }
-  #font-flex .elem p {
-    margin-left: 60px; }
+  margin: 40px 11% 0 0 !important; }
   #font-flex .elem img {
     width: 250px !important;
-    height: 250px !important;
-    margin-left: 80px !important; }
+    height: 250px !important; }
+
+#flex-box .elem {
+  margin: 10px 5% !important; }
 
 @media (min-width: 1700px) {
   #font-flex {

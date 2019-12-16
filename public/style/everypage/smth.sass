@@ -1,6 +1,6 @@
 #smth
-  margin-right: 10% !important
-  margin-left: 10% !important
+  margin-right: 14% !important
+  margin-left: 14% !important
   margin-top: 20px
   margin-bottom: 40px
   display: flex
@@ -10,7 +10,6 @@
     margin-top: 5px
     list-style-type: circle
   .smthImg
-    margin-left: 20px
     min-width: 400px
     height: 500px
   div
@@ -49,8 +48,8 @@
 
 .smth
   margin-bottom: 40px
-  margin-right: 10% !important
-  margin-left: 10% !important
+  margin-right: 14% !important
+  margin-left: 14% !important
   margin-top: 20px
   display: flex
   li
@@ -69,7 +68,6 @@
     min-height: 50px!important
     box-shadow: 2px 1px 8px black
   .smthImg
-    margin-left: 20px
     min-width: 400px
     height: 400px
   div
@@ -95,6 +93,7 @@
   .down-layout,.mid-layout
     position: relative
     display: flex
+    margin-left: 0
   .down-layout
     justify-content: center
     bottom: -94%
@@ -112,7 +111,6 @@
     width: 20px
     position: relative
   .prev
-    left: 3%
     top: 40%
     transform: rotate(180deg)
   .next
@@ -120,7 +118,27 @@
     top: 40%
 
 
-@media ( max-width : 700px )
+@media ( max-width : 1200px )
+  #flex-info
+    flex-flow: column-reverse
+    justify-content: center
+    align-content: center
+    align-items: center
+    #info
+      margin-top: 30px
+    .mid-layout
+      bottom: -13px!important
+    .buttonImg
+      min-height: auto!important
+      height: 4vw!important
+    .imgSwitcher
+      margin-top: 0!important
+      margin-bottom: 0!important
+    .down-layout
+      top: 321px!important
+    .calc ,.buttonImg
+      min-width: 14vw!important
+      font-size: 20px!important
   #smth, .smth, .ntSmth
     flex-flow: column
     justify-content: center
@@ -138,10 +156,9 @@
         top: 150px!important
       .down-layout
         top: 270px!important
-    div
       .buttonImg
-        min-height: 9vw!important
-        min-width: 25vw!important
+        min-height: 1vw!important
+        min-width: 2vw!important
     .calc
       min-width: 25vw!important
       min-height: 4vw!important

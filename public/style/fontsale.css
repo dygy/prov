@@ -660,7 +660,27 @@ table {
   left: 90%;
   top: 40%; }
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
+  #flex-info {
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+    #flex-info #info {
+      margin-top: 30px; }
+    #flex-info .mid-layout {
+      bottom: -13px !important; }
+    #flex-info .buttonImg {
+      min-height: auto !important;
+      height: 4vw !important; }
+    #flex-info .imgSwitcher {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important; }
+    #flex-info .down-layout {
+      top: 321px !important; }
+    #flex-info .calc, #flex-info .buttonImg {
+      min-width: 14vw !important;
+      font-size: 20px !important; }
   #smth, .smth, .ntSmth {
     flex-flow: column;
     justify-content: center;
@@ -678,9 +698,9 @@ table {
         top: 150px !important; }
       #smth .imgSwitcher .down-layout, .smth .imgSwitcher .down-layout, .ntSmth .imgSwitcher .down-layout {
         top: 270px !important; }
-    #smth div .buttonImg, .smth div .buttonImg, .ntSmth div .buttonImg {
-      min-height: 9vw !important;
-      min-width: 25vw !important; }
+      #smth .imgSwitcher .buttonImg, .smth .imgSwitcher .buttonImg, .ntSmth .imgSwitcher .buttonImg {
+        min-height: 1vw !important;
+        min-width: 2vw !important; }
     #smth .calc, .smth .calc, .ntSmth .calc {
       min-width: 25vw !important;
       min-height: 4vw !important;
