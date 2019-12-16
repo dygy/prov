@@ -1,6 +1,6 @@
 #smth {
-  margin-right: 14% !important;
-  margin-left: 14% !important;
+  margin-right: 14%;
+  margin-left: 14%;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex; }
@@ -49,8 +49,8 @@
 
 .smth {
   margin-bottom: 40px;
-  margin-right: 14% !important;
-  margin-left: 14% !important;
+  margin-right: 14%;
+  margin-left: 14%;
   margin-top: 20px;
   display: flex; }
   .smth li {
@@ -146,7 +146,7 @@
       top: 321px !important; }
     #flex-info .calc, #flex-info .buttonImg {
       min-width: 14vw !important;
-      font-size: 20px !important; }
+      font-size: 16px !important; }
   #smth, .smth, .ntSmth {
     flex-flow: column;
     justify-content: center;
@@ -179,9 +179,9 @@
 
 @media (min-width: 1700px) {
   #smth p, #smth li, #smth span, .smth p, .smth li, .smth span {
-    font-size: 27px !important; }
+    font-size: 20px !important; }
   #smth h3, .smth h3 {
-    font-size: 35px !important; }
+    font-size: 30px !important; }
   .imgSwitcher {
     max-height: 450px !important; }
   .down-layout {
@@ -196,16 +196,17 @@
   .title h1, .title h2 {
     font-family: GeomB !important; }
   .title .calc {
+    background: #39afe2;
     width: 15% !important;
     height: 4vw !important;
-    max-width: 200px;
+    max-width: 220px;
     max-height: 50px; }
   .title .buttonImg {
     margin-left: 7% !important;
     width: 15% !important;
     height: 4vw !important;
     box-shadow: 2px 1px 8px black;
-    max-width: 200px;
+    max-width: 220px;
     max-height: 50px; }
 
 html {

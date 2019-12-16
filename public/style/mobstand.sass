@@ -42,19 +42,19 @@ table
       text-align: center
       margin-top: 20px
     button
+      font-family: Geom
+      font-size: 17px
       border: none
-      height: 35px!important
-      width: 100px
+      height: 50px!important
+      width: 150px
     .calc
-      background-color: whitesmoke
-      width: auto
-      font: 13.333px arial
+      background-color: white
       color: black
       position: relative
-      left: -20px
+      left: -5px
     .buy
       position: relative
-      right: -20px
+      right: -5px
       background-color: #FCB600
 
 #flex-box
@@ -86,6 +86,7 @@ table
       width: 190px
       height: 200px
     button
+      font-family: Geom
       margin-top: 10px
       width: 100px
       border: none
@@ -100,13 +101,14 @@ table
   margin-bottom: 0
 .mob
   font-weight: 900
-  width: 600px
+  max-width: 600px
   min-height: 30px
   margin-top: 0
   margin-left: 10px
   margin-right: 10px
   tr
     td
+      box-shadow: 1px 1px 1px black
       padding-left: 3px
       padding-right: 3px
       font-size: 10px
@@ -116,8 +118,14 @@ table
       border-radius: 2px
     td.mini
       max-width: 4vw
+    td.empty
+      box-shadow: none
 
 @media ( min-width : 1700px )
+  #flex-box
+    transform: scale(1.5)
+    margin-top: 100px
+    margin-bottom: 60px
   #font-flex, #flex-box
     margin-left: 7%
     margin-right: 7%

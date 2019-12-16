@@ -1,4 +1,4 @@
-@import url(tables.css);
+@import url(infstands.css);
 #font-flex {
   margin-top: 200px !important;
   margin-bottom: 200px !important; }
@@ -9,6 +9,10 @@
       margin-left: 0 !important; }
     #font-flex .elem p {
       font-weight: bold; }
+
+#flex-box .elem {
+  padding-top: 10px;
+  margin: 15px 3% 0 !important; }
 
 #smth .img {
   margin-top: 30px;

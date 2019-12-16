@@ -491,8 +491,8 @@ body {
     margin-left: 10px !important; } }
 
 #smth {
-  margin-right: 10% !important;
-  margin-left: 10% !important;
+  margin-right: 14% !important;
+  margin-left: 14% !important;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex; }
@@ -502,7 +502,6 @@ body {
     margin-top: 5px;
     list-style-type: circle; }
   #smth .smthImg {
-    margin-left: 20px;
     min-width: 400px;
     height: 500px; }
   #smth div {
@@ -542,8 +541,8 @@ body {
 
 .smth {
   margin-bottom: 40px;
-  margin-right: 10% !important;
-  margin-left: 10% !important;
+  margin-right: 14% !important;
+  margin-left: 14% !important;
   margin-top: 20px;
   display: flex; }
   .smth li {
@@ -562,7 +561,6 @@ body {
     min-height: 50px !important;
     box-shadow: 2px 1px 8px black; }
   .smth .smthImg {
-    margin-left: 20px;
     min-width: 400px;
     height: 400px; }
   .smth div {
@@ -589,7 +587,8 @@ body {
 
 .smth .down-layout, .smth .mid-layout, #smth .down-layout, #smth .mid-layout, .ntSmth .down-layout, .ntSmth .mid-layout {
   position: relative;
-  display: flex; }
+  display: flex;
+  margin-left: 0; }
 
 .smth .down-layout, #smth .down-layout, .ntSmth .down-layout {
   justify-content: center;
@@ -612,7 +611,6 @@ body {
   position: relative; }
 
 .smth .prev, #smth .prev, .ntSmth .prev {
-  left: 3%;
   top: 40%;
   transform: rotate(180deg); }
 
@@ -640,7 +638,7 @@ body {
       top: 321px !important; }
     #flex-info .calc, #flex-info .buttonImg {
       min-width: 14vw !important;
-      font-size: 20px !important; }
+      font-size: 16px !important; }
   #smth, .smth, .ntSmth {
     flex-flow: column;
     justify-content: center;
@@ -673,9 +671,9 @@ body {
 
 @media (min-width: 1700px) {
   #smth p, #smth li, #smth span, .smth p, .smth li, .smth span {
-    font-size: 27px !important; }
+    font-size: 20px !important; }
   #smth h3, .smth h3 {
-    font-size: 35px !important; }
+    font-size: 30px !important; }
   .imgSwitcher {
     max-height: 450px !important; }
   .down-layout {
@@ -789,13 +787,13 @@ space {
       width: 100px; }
     #font-flex .elem .calc {
       width: auto;
-      font: 13.333px arial;
+      font: 13.333px Geom;
       color: black;
       position: relative;
-      left: -20px; }
+      left: -5px; }
     #font-flex .elem .buy {
       position: relative;
-      right: -20px;
+      right: -5px;
       background-color: #FCB600; }
 
 #flex-box {
@@ -821,10 +819,10 @@ space {
     #flex-box .elem div {
       margin-top: 15px; }
     #flex-box .elem price {
-      font: bold 16px Serif; }
+      font: 900 14px Geom; }
     #flex-box .elem img {
-      width: 170px;
-      height: 120px; }
+      width: 200px;
+      height: 200px; }
     #flex-box .elem button {
       margin-top: 10px;
       width: 100px;
