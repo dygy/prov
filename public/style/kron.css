@@ -739,16 +739,17 @@ button {
   .title h1, .title h2 {
     font-family: GeomB !important; }
   .title .calc {
+    background: #39afe2;
     width: 15% !important;
     height: 4vw !important;
-    max-width: 200px;
+    max-width: 220px;
     max-height: 50px; }
   .title .buttonImg {
     margin-left: 7% !important;
     width: 15% !important;
     height: 4vw !important;
     box-shadow: 2px 1px 8px black;
-    max-width: 200px;
+    max-width: 220px;
     max-height: 50px; }
 
 #font-flex {
@@ -814,9 +815,7 @@ button {
   #flex-box strong {
     font-family: GeomB; }
   #flex-box .elem {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     max-width: 250px;
     background: #EDEDED;
     margin: 30px 5% 0; }
@@ -833,7 +832,7 @@ button {
       color: #4c4c4c; }
     #flex-box .elem img {
       width: 250px;
-      height: 250px; }
+      height: 180px; }
     #flex-box .elem button {
       position: relative;
       right: -31%;

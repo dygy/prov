@@ -799,8 +799,7 @@ body {
     .ads div div .hov {
       display: none; }
   .ads div div:hover text {
-    color: #ffb800;
-    text-shadow: #fc9b00 1px 1px 1px; }
+    color: #b47c34; }
   .ads div div:hover .hov {
     display: block; }
   .ads div div:hover .hovNo {
@@ -1097,16 +1096,17 @@ body {
   .title h1, .title h2 {
     font-family: GeomB !important; }
   .title .calc {
+    background: #39afe2;
     width: 15% !important;
     height: 4vw !important;
-    max-width: 200px;
+    max-width: 220px;
     max-height: 50px; }
   .title .buttonImg {
     margin-left: 7% !important;
     width: 15% !important;
     height: 4vw !important;
     box-shadow: 2px 1px 8px black;
-    max-width: 200px;
+    max-width: 220px;
     max-height: 50px; }
 
 #body {

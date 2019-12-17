@@ -543,8 +543,8 @@ button {
     flex-wrap: wrap; }
 
 #smth {
-  margin-right: 14% !important;
-  margin-left: 14% !important;
+  margin-right: 14%;
+  margin-left: 14%;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex; }
@@ -593,8 +593,8 @@ button {
 
 .smth {
   margin-bottom: 40px;
-  margin-right: 14% !important;
-  margin-left: 14% !important;
+  margin-right: 14%;
+  margin-left: 14%;
   margin-top: 20px;
   display: flex; }
   .smth li {

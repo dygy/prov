@@ -27,7 +27,7 @@
 @media (min-width: 1700px) {
   .smthImg {
     height: 600px !important;
-    min-width: 600px !important; }
+    min-width: 500px !important; }
   #flex-box {
     max-width: 64% !important;
     margin: 130px 17%; }

@@ -4,6 +4,8 @@
   margin-right: 15% !important; }
   #font-flex .elem {
     margin: 15px 6% 0 0 !important; }
+    #font-flex .elem img {
+      width: 260px; }
 
 #flex-box img {
   height: 200px !important; }

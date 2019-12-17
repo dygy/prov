@@ -491,8 +491,8 @@ body {
     margin-left: 10px !important; } }
 
 #smth {
-  margin-right: 14% !important;
-  margin-left: 14% !important;
+  margin-right: 14%;
+  margin-left: 14%;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex; }
@@ -541,8 +541,8 @@ body {
 
 .smth {
   margin-bottom: 40px;
-  margin-right: 14% !important;
-  margin-left: 14% !important;
+  margin-right: 14%;
+  margin-left: 14%;
   margin-top: 20px;
   display: flex; }
   .smth li {
@@ -683,13 +683,14 @@ body {
 .calc {
   width: 150px;
   height: 40px;
-  color: whitesmoke;
-  background-color: #82d2d0;
+  background-color: white;
   border: 0.5px rgba(0, 0, 255, 0.22) solid;
   font-size: 21px; }
 
+button {
+  font-family: Geom; }
+
 .buy-tel {
-  font-family: Geom;
   border: none;
   box-shadow: 2px 1px 8px black;
   background-color: #FCB600;
