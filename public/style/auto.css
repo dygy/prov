@@ -1,7 +1,7 @@
 @import url(kron.css);
 #font-flex {
-  margin-left: 15% !important;
-  margin-right: 15% !important; }
+  margin-left: 10% !important;
+  margin-right: 10% !important; }
   #font-flex .elem {
     margin: 15px 6% 0 0 !important; }
     #font-flex .elem img {
@@ -12,6 +12,8 @@
 
 @media (min-width: 1700px) {
   #font-flex {
+    margin-left: 17% !important;
+    margin-right: 17% !important;
     margin-top: 200px !important;
     margin-bottom: 250px !important; } }
 
