@@ -731,6 +731,17 @@ button {
     justify-content: center;
     bottom: -93%; } }
 
+.lupa {
+  height: 15px;
+  width: 15px;
+  background-image: url("../img/lupa.png");
+  background-color: #c1c1c1;
+  background-size: 100% 100%;
+  position: relative;
+  top: -180px;
+  left: 10px;
+  margin-top: -25px !important; }
+
 table tr {
   width: 100%; }
 
@@ -830,6 +841,10 @@ table tbody {
     left: -6.3% !important; }
   .imgSwitcher .next {
     left: 97% !important; }
+
+@media (min-width: 1300px) {
+  #close {
+    left: 0% !important; } }
 
 @media (min-width: 1700px) {
   .calc {

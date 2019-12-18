@@ -731,9 +731,23 @@ button {
     justify-content: center;
     bottom: -93%; } }
 
+.lupa {
+  height: 15px;
+  width: 15px;
+  background-image: url("../img/lupa.png");
+  background-color: #c1c1c1;
+  background-size: 100% 100%;
+  position: relative;
+  top: -230px;
+  left: 10px;
+  margin-top: -25px !important; }
+
 #disImg {
   width: 430px !important;
   margin-left: -9%; }
+
+#close {
+  left: -107px; }
 
 table tr {
   width: 100%; }
@@ -833,7 +847,11 @@ table tbody {
     min-width: 250px;
     bottom: 97px !important; }
 
-@media (min-width: 1700px) {
+@media (min-width: 1300px) {
+  #close {
+    left: -27px !important; } }
+
+@media (min-width: 1840px) {
   .calc {
     transform: scale(1.2);
     margin: 0px; }
@@ -849,7 +867,7 @@ table tbody {
     min-width: 350px !important;
     height: 450px !important; }
   #flex-box {
-    margin: 220px 20%;
+    margin: 220px 18%;
     transform: scale(1.37); }
   #font-flex {
     margin: 100px 15% 150px;
