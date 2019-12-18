@@ -843,13 +843,17 @@ table tbody {
   margin-left: 10%;
   margin-right: 10%; }
   #smth .smthImg {
-    height: 300px;
-    min-width: 250px;
+    height: 300px !important;
+    min-width: 250px !important;
     bottom: 97px !important; }
 
 @media (min-width: 1300px) {
   #close {
     left: -27px !important; } }
+
+@media (min-width: 1700px) {
+  .down-layout {
+    bottom: -65% !important; } }
 
 @media (min-width: 1840px) {
   .calc {
@@ -863,9 +867,11 @@ table tbody {
     table td {
       height: 60px !important;
       font-size: 22px !important; }
-  .smthImg {
+  #smth .smthImg {
     min-width: 350px !important;
     height: 450px !important; }
+  .down-layout {
+    bottom: 91% !important; }
   #flex-box {
     margin: 220px 18%;
     transform: scale(1.37); }
