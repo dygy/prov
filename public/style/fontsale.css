@@ -828,7 +828,7 @@ ul {
     padding: 11px;
     max-width: 200px;
     background: #EDEDED;
-    margin: 20px 4.5%; }
+    margin: 20px 10px; }
     #flex-box .elem price {
       font: bold 16px Serif; }
     #flex-box .elem img {
@@ -851,17 +851,12 @@ ul {
       height: 37px !important;
       width: 140px !important; }
   .pars {
-    margin-right: 23%; }
-  #flex-box .elem {
-    margin: 20px 5.5%; } }
+    margin-right: 23%; } }
 
 @media (min-width: 1420px) {
   .pars, #flex-info {
     margin-left: 20%;
-    margin-right: 16%; }
-  #flex-box {
-    margin-left: 7%;
-    margin-right: 10%; } }
+    margin-right: 16%; } }
 
 @media (min-width: 1540px) {
   .pars {
@@ -870,11 +865,6 @@ ul {
 @media (min-width: 1660px) {
   #flex-info, .pars {
     margin-left: 25%;
-    margin-right: 25%; }
-  #flex-box {
-    margin-left: 20%;
-    margin-right: 25%; }
-    #flex-box .elem {
-      margin: 20px 5%; } }
+    margin-right: 25%; } }
 
 /*# sourceMappingURL=fontsale.css.map */
