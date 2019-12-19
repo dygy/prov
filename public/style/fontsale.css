@@ -491,7 +491,7 @@ body {
     margin-left: 10px !important; } }
 
 table {
-  border-spacing: 10px;
+  border-spacing: 10px 0;
   margin-top: 20px;
   margin-bottom: 20px;
   min-width: 400px;
@@ -499,14 +499,15 @@ table {
   display: flex;
   justify-content: center; }
   table tr {
-    background-color: whitesmoke; }
+    background-color: #E0F3F3; }
   table td {
     padding-left: 3%;
     width: 200px;
     height: 40px; }
   table .blue {
-    background-color: #E0F3F3; }
+    background-color: #c1d2d6; }
   table .main {
+    font-family: GeomB;
     text-align: center; }
   table .price {
     padding-left: 0 !important; }
@@ -734,8 +735,21 @@ button {
     justify-content: center;
     bottom: -93%; } }
 
+table {
+  width: 500px;
+  margin-bottom: 0;
+  margin-top: 25px; }
+  table tbody {
+    width: 100%; }
+  table td {
+    width: 400px; }
+  table .price {
+    width: 200px; }
+
 ul {
   padding-left: 7px; }
+  ul li {
+    margin-top: 10px !important; }
 
 .imgSwitcher {
   margin-right: 0 !important;
@@ -752,7 +766,7 @@ ul {
 
 .down-layout {
   left: 8% !important;
-  bottom: -325px !important; }
+  bottom: -334px !important; }
 
 .prev {
   left: 26% !important; }
@@ -776,6 +790,7 @@ ul {
     height: 350px; }
 
 .flexbuts {
+  margin-top: 5px;
   display: flex;
   justify-content: center; }
   .flexbuts .calc, .flexbuts .buttonImg {
@@ -810,14 +825,11 @@ ul {
   max-width: 100%;
   padding-bottom: 40px; }
   #flex-box .elem {
-    padding: 10px;
+    padding: 11px;
     max-width: 200px;
     background: #EDEDED;
-    margin: 20px 4.5%;
-    text-align: center; }
+    margin: 20px 4.5%; }
     #flex-box .elem price {
-      position: relative;
-      right: 20px;
       font: bold 16px Serif; }
     #flex-box .elem img {
       width: 200px;
@@ -832,7 +844,7 @@ ul {
 
 @media (min-width: 1260px) {
   .ntSmth {
-    margin-left: 0px; }
+    margin-left: -50px; }
     .ntSmth .buttonImg, .ntSmth .calc {
       max-width: none !important;
       max-height: none !important;
@@ -860,7 +872,9 @@ ul {
     margin-left: 25%;
     margin-right: 25%; }
   #flex-box {
-    margin-left: 17%;
-    margin-right: 17%; } }
+    margin-left: 20%;
+    margin-right: 25%; }
+    #flex-box .elem {
+      margin: 20px 5%; } }
 
 /*# sourceMappingURL=fontsale.css.map */

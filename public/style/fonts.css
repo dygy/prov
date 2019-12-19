@@ -491,7 +491,7 @@ body {
     margin-left: 10px !important; } }
 
 table {
-  border-spacing: 10px;
+  border-spacing: 10px 0;
   margin-top: 20px;
   margin-bottom: 20px;
   min-width: 400px;
@@ -499,14 +499,15 @@ table {
   display: flex;
   justify-content: center; }
   table tr {
-    background-color: whitesmoke; }
+    background-color: #E0F3F3; }
   table td {
     padding-left: 3%;
     width: 200px;
     height: 40px; }
   table .blue {
-    background-color: #E0F3F3; }
+    background-color: #c1d2d6; }
   table .main {
+    font-family: GeomB;
     text-align: center; }
   table .price {
     padding-left: 0 !important; }
@@ -590,11 +591,14 @@ button {
   max-height: 25% !important;
   box-shadow: 2px 1px 8px black; }
 
+#flex-info li {
+  list-style-position: outside;
+  margin-left: 1em;
+  margin-top: 5px;
+  list-style-type: circle; }
+
 .smth {
-  margin-bottom: 40px;
-  margin-right: 14%;
-  margin-left: 14%;
-  margin-top: 20px;
+  margin: 20px 14% 40px;
   display: flex; }
   .smth li {
     list-style-position: outside;

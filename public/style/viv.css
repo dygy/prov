@@ -519,8 +519,10 @@ table {
   .title h1, .title h2 {
     font-family: GeomB !important; }
   .title .calc {
-    background: #39afe2;
+    background: #72d7cf;
     width: 15% !important;
+    min-width: 150px;
+    min-height: 20px;
     height: 4vw !important;
     max-width: 220px;
     max-height: 50px; }
@@ -581,11 +583,14 @@ table {
   max-height: 25% !important;
   box-shadow: 2px 1px 8px black; }
 
+#flex-info li {
+  list-style-position: outside;
+  margin-left: 1em;
+  margin-top: 5px;
+  list-style-type: circle; }
+
 .smth {
-  margin-bottom: 40px;
-  margin-right: 14%;
-  margin-left: 14%;
-  margin-top: 20px;
+  margin: 20px 14% 40px;
   display: flex; }
   .smth li {
     list-style-position: outside;
