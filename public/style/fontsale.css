@@ -2,9 +2,12 @@
   padding-bottom: 20px;
   padding-top: 20px;
   display: none;
-  z-index: 4;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.9);
+  justify-content: center;
+  z-index: 6;
+  position: fixed;
+  left: 0px;
+  top: 160px;
+  background: rgba(255, 255, 255, 0.95);
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%; }
@@ -20,6 +23,14 @@
       left: 20px; }
     #dropdown ul li:hover {
       color: #FDB13E; }
+
+@media (min-width: 1249px) {
+  #dropdown {
+    top: 215px !important; } }
+
+@media (min-width: 1470px) {
+  #dropdown {
+    top: 210px !important; } }
 
 @media (max-width: 1470px) {
   #dropdown ul {
@@ -43,7 +54,7 @@
 
 @media (min-width: 1700px) {
   #dropdown ul {
-    margin: 10px 13% 0 0 !important; }
+    margin: 10px 10% 0 0 !important; }
     #dropdown ul li span {
       font-size: 1.1vw !important; }
   #dropdown #lastUL {
@@ -58,13 +69,18 @@
   src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
 
 body {
+  margin-left: -8px;
+  margin-top: 150px;
   max-width: 100%;
   width: 100vw;
-  margin: 0;
   font-family: "Geom", serif !important;
   font-weight: 900; }
 
 #header {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0px;
   color: white;
   background: black;
   width: 100%; }
@@ -236,6 +252,8 @@ body {
     font-size: 25px !important; } }
 
 @media (min-width: 1249px) {
+  body {
+    margin-top: 220px; }
   #logo {
     background-size: 100% 100%;
     height: 120px !important;
@@ -304,6 +322,10 @@ body {
 
 .lowscreen {
   display: none; }
+
+.brd {
+  margin: 0 0 10px 0 !important;
+  border: 2px solid  #FDB13E; }
 
 #footer {
   position: relative;
@@ -510,7 +532,8 @@ table {
     font-family: GeomB;
     text-align: center; }
   table .price {
-    padding-left: 0 !important; }
+    padding-left: 0 !important;
+    text-align: center; }
 
 .calc {
   width: 150px;
@@ -735,6 +758,15 @@ button {
     justify-content: center;
     bottom: -93%; } }
 
+html {
+  overflow-x: hidden; }
+
+#flex-cont {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center; }
+
 table {
   width: 500px;
   margin-bottom: 0;
@@ -746,9 +778,9 @@ table {
   table .price {
     width: 200px; }
 
-ul {
+#flex-info ul {
   padding-left: 7px; }
-  ul li {
+  #flex-info ul li {
     margin-top: 10px !important; }
 
 .imgSwitcher {
@@ -781,9 +813,9 @@ ul {
   justify-content: center; }
 
 #flex-info {
-  margin-left: 15%;
-  margin-right: 15%;
-  display: flex; }
+  width: 100vw;
+  display: flex;
+  justify-content: center; }
   #flex-info #image {
     margin-left: 27%;
     width: 300px;
@@ -794,31 +826,23 @@ ul {
   display: flex;
   justify-content: center; }
   .flexbuts .calc, .flexbuts .buttonImg {
-    margin-top: 0 !important; }
+    margin: 0 2% 0 0 !important;
+    width: 150px !important;
+    height: 40px !important; }
   .flexbuts .calc {
     background: #72d7cf; }
-  .flexbuts button {
-    margin: 0 2% 0 0; }
-  .flexbuts button {
-    width: 120px;
-    height: 40px; }
 
 .imgSwitcher {
   margin-left: -78px; }
 
 .pars {
-  hyphens: manual;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  margin-left: 16%;
-  margin-right: 18%; }
+  width: 900px;
+  margin-left: -110px; }
 
 #flex-box {
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 40px;
+  margin-left: -80px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -842,29 +866,43 @@ ul {
       border: none;
       background-color: #ffb800; }
 
-@media (min-width: 1260px) {
+.ntSmth {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .ntSmth .flexbuts {
+    min-width: 530px; }
+
+@media (max-width: 1260px) {
   .ntSmth {
     margin-left: -50px; }
     .ntSmth .buttonImg, .ntSmth .calc {
       max-width: none !important;
       max-height: none !important;
       height: 37px !important;
-      width: 140px !important; }
-  .pars {
-    margin-right: 23%; } }
+      width: 140px !important; } }
+
+@media (max-width: 1255px) {
+  #flex-info {
+    flex-direction: column-reverse;
+    align-items: center; } }
 
 @media (min-width: 1420px) {
-  .pars, #flex-info {
-    margin-left: 20%;
-    margin-right: 16%; } }
+  margin-top: 400px;
+  margin-bottom: 400px; }
 
-@media (min-width: 1540px) {
-  .pars {
-    margin-right: 25%; } }
+@media (min-width: 1580px) {
+  #flex-cont {
+    margin-top: 450px;
+    margin-bottom: 400px;
+    transform: scale(1.5); } }
 
-@media (min-width: 1660px) {
-  #flex-info, .pars {
-    margin-left: 25%;
-    margin-right: 25%; } }
+@media (min-width: 1700px) {
+  #flex-cont {
+    margin-top: 500px;
+    margin-bottom: -200px;
+    transform: scale(1.6); }
+  #footer {
+    margin-top: 520px; } }
 
 /*# sourceMappingURL=fontsale.css.map */

@@ -4,9 +4,12 @@
   padding-bottom: 20px
   padding-top: 20px
   display: none
-  z-index: 4
-  position: absolute
-  background: rgba(255, 255, 255, 0.90)
+  justify-content: center
+  z-index: 6
+  position: fixed
+  left: 0px
+  top: 160px
+  background: rgba(255, 255, 255, 0.95)
   flex-wrap: wrap
   flex-direction: row
   width: 100%
@@ -21,7 +24,12 @@
         left: 20px
     li:hover
       color: #FDB13E
-
+@media ( min-width : 1249px )
+  #dropdown
+    top: 215px!important
+@media ( min-width : 1470px )
+  #dropdown
+    top: 210px!important
 @media ( max-width : 1470px )
   #dropdown
     ul
@@ -47,7 +55,7 @@
 @media ( min-width : 1700px )
   #dropdown
     ul
-      margin: 10px 13% 0 0 !important
+      margin: 10px 10% 0 0 !important
       li
         span
           font-size: 1.1vw!important

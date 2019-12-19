@@ -4,6 +4,13 @@
 @import "everypage/table"
 @import "everypage/button"
 @import "everypage/smth"
+html
+  overflow-x: hidden
+#flex-cont
+  display: flex
+  flex-direction: column
+  align-content: center
+  align-items: center
 table
   width: 500px
   tbody
@@ -14,10 +21,11 @@ table
     width: 400px
   .price
     width: 200px
-ul
-  padding-left: 7px
-  li
-    margin-top: 10px!important
+#flex-info
+  ul
+    padding-left: 7px
+    li
+      margin-top: 10px!important
 .imgSwitcher
   margin-right: 0!important
   width: 600px!important
@@ -41,9 +49,11 @@ ul
   text-align: center
   justify-content: center
 #flex-info
-  margin-left: 15%
-  margin-right: 15%
+  //margin-left: 15%
+  //margin-right: 15%
+  width: 100vw
   display: flex
+  justify-content: center
   #image
     margin-left: 27%
     width: 300px
@@ -53,29 +63,24 @@ ul
   display: flex
   justify-content: center
   .calc, .buttonImg
-    margin-top: 0!important
+    margin: 0 2% 0 0!important
+    width: 150px!important
+    height: 40px!important
   .calc
     background: #72d7cf
-  button
-    margin: 0 2% 0 0
-  button
-    width: 120px
-    height: 40px
 .imgSwitcher
   margin-left: -78px
 .pars
-  hyphens: manual
-  -moz-hyphens: auto
-  -webkit-hyphens: auto
-  -ms-hyphens: auto
-  margin-left: 16%
-  margin-right: 18%
+  width: 900px
+  margin-left: -110px
+  //margin-left: 16%
+  //margin-right: 18%
 
 #flex-box
   justify-content: center
-  margin-left: 10%
-  margin-right: 10%
-  margin-top: 40px
+  margin-left: -80px
+  //margin-right: 10%
+  margin-top: 10px
   display: flex
   flex-wrap: wrap
   flex-direction: row
@@ -98,7 +103,15 @@ ul
       height: 30px
       border: none
       background-color: #ffb800
-@media (min-width: 1260px)
+
+.ntSmth
+  display: flex
+  flex-direction: column
+  align-items: center
+  .flexbuts
+    min-width: 530px
+
+@media (max-width: 1260px)
    .ntSmth
      margin-left: -50px
      .buttonImg, .calc
@@ -107,16 +120,24 @@ ul
        height: 37px!important
        width: 140px!important
    .pars
-     margin-right: 23%
-
+     //margin-right: 23%
+@media (max-width: 1255px)
+  #flex-info
+    flex-direction: column-reverse
+    align-items: center
 @media (min-width: 1420px)
-  .pars, #flex-info
-    margin-left: 20%
-    margin-right: 16%
-@media (min-width: 1540px)
-  .pars
-    margin-right: 25%
-@media (min-width: 1660px)
-  #flex-info , .pars
-    margin-left: 25%
-    margin-right: 25%
+  #flex-cont
+  margin-top: 400px
+  margin-bottom: 400px
+@media (min-width: 1580px)
+  #flex-cont
+    margin-top: 450px
+    margin-bottom: 400px
+    transform: scale(1.5)
+@media (min-width: 1700px)
+  #flex-cont
+    margin-top: 500px
+    margin-bottom: -200px
+    transform: scale(1.6)
+  #footer
+    margin-top: 520px
