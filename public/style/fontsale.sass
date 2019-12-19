@@ -4,6 +4,8 @@
 @import "everypage/table"
 @import "everypage/button"
 @import "everypage/smth"
+ul
+  padding-left: 7px
 .imgSwitcher
   margin-right: 0!important
   width: 600px!important
@@ -18,9 +20,9 @@
   left: 8%!important
   bottom: -325px!important
 .prev
-  left: 20%!important
+  left: 26%!important
 .next
-  left: 85%!important
+  left: 78%!important
 .title
   margin-top: 40px
   display: flex
@@ -30,27 +32,9 @@
   margin-left: 15%
   margin-right: 15%
   display: flex
-  div
-  ul
-    list-style: none
-    margin-left: -30px
-  li
-    margin-top: 5px
-  li::before
-      margin-right: 30px
-      border-radius: 100%
-      counter-increment: section
-      content: ""
-      border: 2px solid #ffb800
-      padding: 2px
-      text-align: center
-      width: 10px
-      height: 10px
-      display: inline-flex
-  #info
   #image
-    margin-left: 24%
-    width: 350px
+    margin-left: 27%
+    width: 300px
     height: 350px
 .flexbuts
   display: flex
@@ -64,9 +48,15 @@
   button
     width: 120px
     height: 40px
-
-
-
+.imgSwitcher
+  margin-left: -78px
+.pars
+  hyphens: manual
+  -moz-hyphens: auto
+  -webkit-hyphens: auto
+  -ms-hyphens: auto
+  margin-left: 16%
+  margin-right: 18%
 
 #flex-box
   justify-content: center
@@ -82,7 +72,7 @@
     padding: 10px
     max-width: 200px
     background: #EDEDED
-    margin: 20px
+    margin: 20px 4.5%
     text-align: center
     price
       position: relative
@@ -98,17 +88,34 @@
       height: 30px
       border: none
       background-color: #ffb800
-    strong
-@media (max-width: 1550px)
-  .imgSwitcher
-    margin-left: -1vw!important
-@media (max-width: 1450px)
-  .imgSwitcher
-    margin-left: -3vw!important
-@media (max-width: 1350px)
-  .imgSwitcher
-    margin-left: -5vw!important
+@media (min-width: 1260px)
+   .ntSmth
+     margin-left: 0px
+     .buttonImg, .calc
+       max-width: none !important
+       max-height: none !important
+       height: 37px!important
+       width: 140px!important
+   .pars
+     margin-right: 23%
+   #flex-box
+     .elem
+       margin: 20px 5.5%
 
-@media (min-width: 1700px)
-  .imgSwitcher
-    margin-left: 5vw
+@media (min-width: 1420px)
+  .pars, #flex-info
+    margin-left: 20%
+    margin-right: 16%
+  #flex-box
+    margin-left: 7%
+    margin-right: 10%
+@media (min-width: 1540px)
+  .pars
+    margin-right: 25%
+@media (min-width: 1660px)
+  #flex-info , .pars
+    margin-left: 25%
+    margin-right: 25%
+  #flex-box
+    margin-left: 17%
+    margin-right: 17%

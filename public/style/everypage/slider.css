@@ -47,11 +47,14 @@
   max-height: 25% !important;
   box-shadow: 2px 1px 8px black; }
 
+#flex-info li {
+  list-style-position: outside;
+  margin-left: 1em;
+  margin-top: 5px;
+  list-style-type: circle; }
+
 .smth {
-  margin-bottom: 40px;
-  margin-right: 14%;
-  margin-left: 14%;
-  margin-top: 20px;
+  margin: 20px 14% 40px;
   display: flex; }
   .smth li {
     list-style-position: outside;

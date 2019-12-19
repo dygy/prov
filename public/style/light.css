@@ -871,7 +871,7 @@ table tbody {
     min-width: 350px !important;
     height: 450px !important; }
   .down-layout {
-    bottom: 91% !important; }
+    bottom: -91% !important; }
   #flex-box {
     margin: 220px 18%;
     transform: scale(1.37); }

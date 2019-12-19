@@ -590,11 +590,14 @@ button {
   max-height: 25% !important;
   box-shadow: 2px 1px 8px black; }
 
+#flex-info li {
+  list-style-position: outside;
+  margin-left: 1em;
+  margin-top: 5px;
+  list-style-type: circle; }
+
 .smth {
-  margin-bottom: 40px;
-  margin-right: 14%;
-  margin-left: 14%;
-  margin-top: 20px;
+  margin: 20px 14% 40px;
   display: flex; }
   .smth li {
     list-style-position: outside;
@@ -731,6 +734,9 @@ button {
     justify-content: center;
     bottom: -93%; } }
 
+ul {
+  padding-left: 7px; }
+
 .imgSwitcher {
   margin-right: 0 !important;
   width: 600px !important;
@@ -749,10 +755,10 @@ button {
   bottom: -325px !important; }
 
 .prev {
-  left: 20% !important; }
+  left: 26% !important; }
 
 .next {
-  left: 85% !important; }
+  left: 78% !important; }
 
 .title {
   margin-top: 40px;
@@ -764,25 +770,9 @@ button {
   margin-left: 15%;
   margin-right: 15%;
   display: flex; }
-  #flex-info ul {
-    list-style: none;
-    margin-left: -30px; }
-  #flex-info li {
-    margin-top: 5px; }
-  #flex-info li::before {
-    margin-right: 30px;
-    border-radius: 100%;
-    counter-increment: section;
-    content: "";
-    border: 2px solid #ffb800;
-    padding: 2px;
-    text-align: center;
-    width: 10px;
-    height: 10px;
-    display: inline-flex; }
   #flex-info #image {
-    margin-left: 24%;
-    width: 350px;
+    margin-left: 27%;
+    width: 300px;
     height: 350px; }
 
 .flexbuts {
@@ -798,6 +788,17 @@ button {
     width: 120px;
     height: 40px; }
 
+.imgSwitcher {
+  margin-left: -78px; }
+
+.pars {
+  hyphens: manual;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  margin-left: 16%;
+  margin-right: 18%; }
+
 #flex-box {
   justify-content: center;
   margin-left: 10%;
@@ -812,7 +813,7 @@ button {
     padding: 10px;
     max-width: 200px;
     background: #EDEDED;
-    margin: 20px;
+    margin: 20px 4.5%;
     text-align: center; }
     #flex-box .elem price {
       position: relative;
@@ -829,20 +830,37 @@ button {
       border: none;
       background-color: #ffb800; }
 
-@media (max-width: 1550px) {
-  .imgSwitcher {
-    margin-left: -1vw !important; } }
+@media (min-width: 1260px) {
+  .ntSmth {
+    margin-left: 0px; }
+    .ntSmth .buttonImg, .ntSmth .calc {
+      max-width: none !important;
+      max-height: none !important;
+      height: 37px !important;
+      width: 140px !important; }
+  .pars {
+    margin-right: 23%; }
+  #flex-box .elem {
+    margin: 20px 5.5%; } }
 
-@media (max-width: 1450px) {
-  .imgSwitcher {
-    margin-left: -3vw !important; } }
+@media (min-width: 1420px) {
+  .pars, #flex-info {
+    margin-left: 20%;
+    margin-right: 16%; }
+  #flex-box {
+    margin-left: 7%;
+    margin-right: 10%; } }
 
-@media (max-width: 1350px) {
-  .imgSwitcher {
-    margin-left: -5vw !important; } }
+@media (min-width: 1540px) {
+  .pars {
+    margin-right: 25%; } }
 
-@media (min-width: 1700px) {
-  .imgSwitcher {
-    margin-left: 5vw; } }
+@media (min-width: 1660px) {
+  #flex-info, .pars {
+    margin-left: 25%;
+    margin-right: 25%; }
+  #flex-box {
+    margin-left: 17%;
+    margin-right: 17%; } }
 
 /*# sourceMappingURL=fontsale.css.map */
