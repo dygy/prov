@@ -510,7 +510,8 @@ table {
     font-family: GeomB;
     text-align: center; }
   table .price {
-    padding-left: 0 !important; }
+    padding-left: 0 !important;
+    text-align: center; }
 
 .calc {
   width: 150px;

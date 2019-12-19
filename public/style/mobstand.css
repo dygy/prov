@@ -491,7 +491,7 @@ body {
     margin-left: 10px !important; } }
 
 table {
-  border-spacing: 10px;
+  border-spacing: 10px 0;
   margin-top: 20px;
   margin-bottom: 20px;
   min-width: 400px;
@@ -499,17 +499,19 @@ table {
   display: flex;
   justify-content: center; }
   table tr {
-    background-color: whitesmoke; }
+    background-color: #E0F3F3; }
   table td {
     padding-left: 3%;
     width: 200px;
     height: 40px; }
   table .blue {
-    background-color: #E0F3F3; }
+    background-color: #c1d2d6; }
   table .main {
+    font-family: GeomB;
     text-align: center; }
   table .price {
-    padding-left: 0 !important; }
+    padding-left: 0 !important;
+    text-align: center; }
 
 .title {
   margin-bottom: 40px;
@@ -518,8 +520,10 @@ table {
   text-align: center;
   justify-content: center; }
 
-table td {
-  padding-left: 0% !important; }
+table {
+  border-spacing: 5px; }
+  table td {
+    padding-left: 0% !important; }
 
 #font-flex {
   justify-content: center;

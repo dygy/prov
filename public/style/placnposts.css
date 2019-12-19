@@ -1,6 +1,6 @@
 #smth {
-  margin-right: 10% !important;
-  margin-left: 10% !important;
+  margin-right: 14%;
+  margin-left: 14%;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex; }
@@ -10,7 +10,6 @@
     margin-top: 5px;
     list-style-type: circle; }
   #smth .smthImg {
-    margin-left: 20px;
     min-width: 400px;
     height: 500px; }
   #smth div {
@@ -48,11 +47,14 @@
   max-height: 25% !important;
   box-shadow: 2px 1px 8px black; }
 
+#flex-info li {
+  list-style-position: outside;
+  margin-left: 1em;
+  margin-top: 5px;
+  list-style-type: circle; }
+
 .smth {
-  margin-bottom: 40px;
-  margin-right: 10% !important;
-  margin-left: 10% !important;
-  margin-top: 20px;
+  margin: 20px 14% 40px;
   display: flex; }
   .smth li {
     list-style-position: outside;
@@ -70,7 +72,6 @@
     min-height: 50px !important;
     box-shadow: 2px 1px 8px black; }
   .smth .smthImg {
-    margin-left: 20px;
     min-width: 400px;
     height: 400px; }
   .smth div {
@@ -97,7 +98,8 @@
 
 .smth .down-layout, .smth .mid-layout, #smth .down-layout, #smth .mid-layout, .ntSmth .down-layout, .ntSmth .mid-layout {
   position: relative;
-  display: flex; }
+  display: flex;
+  margin-left: 0; }
 
 .smth .down-layout, #smth .down-layout, .ntSmth .down-layout {
   justify-content: center;
@@ -120,7 +122,6 @@
   position: relative; }
 
 .smth .prev, #smth .prev, .ntSmth .prev {
-  left: 3%;
   top: 40%;
   transform: rotate(180deg); }
 
@@ -148,7 +149,7 @@
       top: 321px !important; }
     #flex-info .calc, #flex-info .buttonImg {
       min-width: 14vw !important;
-      font-size: 20px !important; }
+      font-size: 16px !important; }
   #smth, .smth, .ntSmth {
     flex-flow: column;
     justify-content: center;
@@ -181,9 +182,9 @@
 
 @media (min-width: 1700px) {
   #smth p, #smth li, #smth span, .smth p, .smth li, .smth span {
-    font-size: 27px !important; }
+    font-size: 20px !important; }
   #smth h3, .smth h3 {
-    font-size: 35px !important; }
+    font-size: 30px !important; }
   .imgSwitcher {
     max-height: 450px !important; }
   .down-layout {
@@ -193,13 +194,14 @@
 .calc {
   width: 150px;
   height: 40px;
-  color: whitesmoke;
-  background-color: #82d2d0;
+  background-color: white;
   border: 0.5px rgba(0, 0, 255, 0.22) solid;
   font-size: 21px; }
 
+button {
+  font-family: Geom; }
+
 .buy-tel {
-  font-family: Geom;
   border: none;
   box-shadow: 2px 1px 8px black;
   background-color: #FCB600;
@@ -719,16 +721,19 @@ body {
   .title h1, .title h2 {
     font-family: GeomB !important; }
   .title .calc {
+    background: #72d7cf;
     width: 15% !important;
+    min-width: 150px;
+    min-height: 20px;
     height: 4vw !important;
-    max-width: 200px;
+    max-width: 220px;
     max-height: 50px; }
   .title .buttonImg {
     margin-left: 7% !important;
     width: 15% !important;
     height: 4vw !important;
     box-shadow: 2px 1px 8px black;
-    max-width: 200px;
+    max-width: 220px;
     max-height: 50px; }
 
 .smth .smthImg {
