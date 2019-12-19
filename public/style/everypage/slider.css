@@ -222,6 +222,7 @@ body {
   height: 100%; }
 
 #full-page {
+  top: 0;
   display: none;
   justify-content: center;
   align-items: center;
@@ -231,7 +232,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  z-index: 2;
+  z-index: 8;
   background-color: rgba(73, 73, 73, 0.51); }
   #full-page h3 {
     margin-top: 30px;
