@@ -47,7 +47,7 @@ body
     display: table
     width: 100%
     max-width: 100%
-    ul
+    .scul
       margin-top: 0px
       margin-bottom: 0px
       text-align: center
@@ -57,18 +57,18 @@ body
       display: inline-flex
       list-style: none
       text-transform: uppercase
-      li
+      .scli
         font-weight: 500!important
         -webkit-user-select: none /* Safari */
         -moz-user-select: none /* Firefox */
         -ms-user-select: none /* IE10+/Edge */
         user-select: none /* Standard */
         margin: 0 3% 0 0
-        img
-          margin-left: 80%
-          width: 40px
-          height: 40px
-      li:hover
+      img
+        margin-left: 80%
+        width: 40px
+        height: 40px
+      span:hover
         font-family: GeomB!important
         font-weight: 900!important
         text-shadow: 1px 0px 3px whitesmoke
@@ -127,7 +127,7 @@ body
       font-size: 16px!important
     mini
       font-size: 12px!important
-    li
+    .scli
       font-size: 13px!important
 
 @media ( max-width : 846px )
@@ -136,7 +136,7 @@ body
       margin: 0 0 0 0 !important
   #second
     ul
-      li
+      .scli
         font-size: 13px !important
         margin: 0 15px 0 0  !important
         width: 87px
@@ -154,8 +154,7 @@ body
       margin-top: -5px!important
   #second
     ul
-
-      li
+      .scli
         font-size: 11px !important
         margin: 0 4px 0 1%  !important
       #large-word
@@ -213,13 +212,13 @@ body
   #second
     margin-top: 30px
     ul
-      li
+      .scli
         margin: 0 4% 0 0 !important
         font-size: 20px!important
-        img
-          margin-top: 2px
-          height: 50px!important
-          width: 50px!important
+      img
+        margin-top: 2px
+        height: 50px!important
+        width: 50px!important
       #contact
         margin-right: 20px!important
 @media ( min-width : 1700px )
@@ -250,14 +249,14 @@ body
   #second
     margin-top: 30px
     ul
-      li
+      .scli
         margin: 0 7% 0 0 !important
         font-size: 17px!important
-        img
-          margin-left: 15px!important
-          margin-top: -13px
-          height: 60px!important
-          width: 60px!important
+      img
+       margin-left: 15px!important
+       margin-top: -13px
+       height: 60px!important
+       width: 60px!important
       #contact
         margin-right: 20px!important
 @media ( min-width : 1900px )

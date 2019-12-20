@@ -26,12 +26,21 @@ block header
                     img(src="/img/lupa.png")
                     input(type="text")
         div( id="second")
-            ul
-                li(id="burger-li")
-                    img(src="../img/menu.png" id="burger" onclick="hideDropDown()")
-                li(onclick="hideDropDown()") наружная реклама
-                li(onclick="hideDropDown()") интерьерная реклама
-                li(id="large-word" onclick="hideDropDown()") широкомофортная печать
-                li(id="uslugi" onclick="moveTo('/serves')") услуги
-                li портфолио
-                li(id="contact" onclick="moveTo('/contacts')") контакты
+            ul(class="scul")
+                li(id="burger-li" class="scli")
+                    img(src="../img/menu.png" id="burger" onclick="hideDropDown('dropdown')")
+                    include ./dropdown/1
+                li( id="narT" onclick="hideDropDown('dropdown2')" class="scli")
+                    span наружная реклама
+                    include ./dropdown/2
+                li(id="intT" onclick="hideDropDown('dropdown3')" class="scli")
+                    span интерьерная реклама
+                    include ./dropdown/3
+                li(id="large-word" onclick="hideDropDown('dropdown4')" class="scli")
+                    span широкомофортная печать
+                    include ./dropdown/4
+                li(id="uslugi" onclick="moveTo('./serves')" class="scli")
+                    span услуги
+                    include ./dropdown/5
+                li(class="scli") портфолио
+                li(id="contact" onclick="moveTo('/contacts')" class="scli") контакты

@@ -1,15 +1,55 @@
+#dropdown, #dropdown2, #dropdown3 , #dropdown4, #dropdown5
+  width: auto
+  padding-top: 20px
+  text-transform: none
+  text-align: left
+  color: black
+  background: rgba(255, 255, 255, 0.95)
+  display: none
+  justify-content: center
+  z-index: 6
+  top: 155px
+  position: fixed
+  li
+    list-style: disc !important
+    margin: auto!important
+    user-select: auto!important
+    padding-bottom: 20px
+
+#dropdown2, #dropdown3 , #dropdown4, #dropdown5
+  box-shadow: 1px 1px 5px black
+  padding-right: 20px
+#narT:hover
+  #dropdown2
+    display: flex!important
+#intT:hover
+  #dropdown3
+    display: flex!important
+
+#large-word:hover
+  #dropdown4
+    display: flex!important
+
+#uslugi:hover
+  #dropdown5
+    display: flex!important
+
+#dropdown2
+  //left: 6%
+#dropdown3
+  //left: 23%
+#dropdown4
+  //left: 39%
+#dropdown5
+  //left: 57%
+  margin-right: 30px
 #dropdown
   .disable
     color: darkkhaki
   padding-bottom: 20px
   padding-top: 20px
-  display: none
-  justify-content: center
-  z-index: 6
-  position: fixed
   left: 0px
   top: 160px
-  background: rgba(255, 255, 255, 0.95)
   flex-wrap: wrap
   flex-direction: row
   width: 100%
@@ -17,7 +57,7 @@
     margin: 0 10% 0 0
     li
       span
-        font-size: 18px !important
+        font-size: 19px !important
         font-weight: 900 !important
         font-family: Geom , serif !important
         position: relative
@@ -25,10 +65,10 @@
     li:hover
       color: #FDB13E
 @media ( min-width : 1249px )
-  #dropdown
+  #dropdown, #dropdown2, #dropdown3 , #dropdown4, #dropdown5
     top: 215px!important
 @media ( min-width : 1470px )
-  #dropdown
+  #dropdown, #dropdown2, #dropdown3 , #dropdown4, #dropdown5
     top: 210px!important
 @media ( max-width : 1470px )
   #dropdown
@@ -52,7 +92,27 @@
   #dropdown
     ul
       margin: 10px 1% 0 0 !important
+@media ( min-width : 1500px )
+  #dropdown, #dropdown2, #dropdown3 , #dropdown4, #dropdown5
+    top: 215px!important
+  #dropdown2
+    //left: 7%
+  #dropdown3
+    //left: 26%
+  #dropdown4
+    //left: 44%
+  #dropdown5
+    //left: 61%
+
 @media ( min-width : 1700px )
+  #dropdown2
+    //left: 10%
+  #dropdown3
+    //left: 29%
+  #dropdown4
+    //left: 46%
+  #dropdown5
+    //left: 63%
   #dropdown
     ul
       margin: 10px 10% 0 0 !important
