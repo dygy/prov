@@ -1,0 +1,142 @@
+link(rel='stylesheet', href='/style/viv.css')
+script(src='../js/index.js')
+script(src='../js/Global.js')
+script(src='../js/switcher.js')
+
+include ../slider
+include ../header
+include ../dropdown
+block port
+    div(class="title")
+        h1 ПОРТФОЛИО
+    div(class="title")
+        h1 СВЕТОВЫЕ КОРОБА
+    div(class="photoflex")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        img(class="lights" src="../img/vivs/sk6.jpg" onclick="displayImg('../img/vivs/sk6.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(class="title")
+        h1 ОБЪЕМНЫЕ БУКВЫ
+    div(class="photoflex")
+        div(class='left' onclick="newRow('symbs',false)")
+        img(class="symbs" src="../img/vivs/ob1.jpg" onclick="displayImg('../img/vivs/ob1.jpg')")
+        img(class="symbs" src="../img/vivs/ob2.jpg" onclick="displayImg('../img/vivs/ob2.jpg')")
+        img(class="symbs" src="../img/vivs/ob3.jpg" onclick="displayImg('../img/vivs/ob3.jpg')")
+        img(class="symbs" src="../img/vivs/ob4.jpg" onclick="displayImg('../img/vivs/ob4.jpg')")
+        img(class="symbs" src="../img/vivs/ob5.jpg" onclick="displayImg('../img/vivs/ob5.jpg')")
+        img(class="symbs" src="../img/vivs/ob6.jpg" onclick="displayImg('../img/vivs/ob6.jpg')")
+        div(class='right' onclick="newRow('symbs',true)")
+    div(class="title")
+        h1 ПАНЕЛЬ-КРОНШТЕЙН
+    div(class="photoflex")
+        div(class='left' onclick="newRow('krons',false)")
+        img(class="krons" src="../img/vivs/pk1.jpg" onclick="displayImg('../img/vivs/pk1.jpg')")
+        img(class="krons" src="../img/vivs/pk2.jpg" onclick="displayImg('../img/vivs/pk2.jpg')")
+        img(class="krons" src="../img/vivs/pk3.jpg" onclick="displayImg('../img/vivs/pk3.jpg')")
+        img(class="krons" src="../img/vivs/pk4.jpg" onclick="displayImg('../img/vivs/pk4.jpg')")
+        img(class="krons" src="../img/vivs/pk5.jpg" onclick="displayImg('../img/vivs/pk5.jpg')")
+        img(class="krons" src="../img/vivs/pk6.jpg" onclick="displayImg('../img/vivs/pk6.jpg')")
+        div(class='right' onclick="newRow('krons',true)")
+
+    div(class="title")
+        h1 НЕСВЕТОВЫЕ ВЫВЕСКИ
+    div(class="photoflex")
+        div(class='left' onclick="newRow('nolights',false)")
+        img(class="nolights" src="../img/vivs/nsw1.jpg" onclick="displayImg('../img/vivs/nsw1.jpg')")
+        img(class="nolights" src="../img/vivs/nsw2.jpg" onclick="displayImg('../img/vivs/nsw2.jpg')")
+        img(class="nolights" src="../img/vivs/nsw3.jpg" onclick="displayImg('../img/vivs/nsw3.jpg')")
+        img(class="nolights" src="../img/vivs/nsw4.jpg" onclick="displayImg('../img/vivs/nsw4.jpg')")
+        img(class="nolights" src="../img/vivs/nsw5.jpg" onclick="displayImg('../img/vivs/nsw5.jpg')")
+        img(class="nolights" src="../img/vivs/nsw6.jpg" onclick="displayImg('../img/vivs/nsw6.jpg')")
+        div(class='right' onclick="newRow('nolights',true)")
+
+    div(class="title")
+        h1 ДИЗАЙН БАННЕРОВ
+    div(class="photoflex")
+        div(class='left' onclick="newRow('bans',false)")
+        img(class="bans" src="../img/prod/banner/banner1.png" onclick="displayImg('../img/prod/banner/banner1.png')")
+        img(class="bans" src="../img/prod/banner/banner2.png" onclick="displayImg('../img/prod/banner/banner2.png')")
+        img(class="bans" src="../img/prod/banner/banner3.png" onclick="displayImg('../img/prod/banner/banner3.png')")
+        img(class="bans" src="../img/prod/banner/banner4.png" onclick="displayImg('../img/prod/banner/banner4.png')")
+        img(class="bans" src="../img/prod/banner/banner5.png" onclick="displayImg('../img/prod/banner/banner5.png')")
+        img(class="bans" src="../img/prod/banner/banner6.png" onclick="displayImg('../img/prod/banner/banner6.png')")
+        div(class='right' onclick="newRow('bans',true)")
+
+    div(class="title")
+        h1 ОФОРМЛЕНИЕ ФОТОЗОН
+    div(class="photoflex")
+        div(class='left' onclick="newRow('zones',false)")
+        img(class="zones" src="../img/prod/zone/zone1.png" onclick="displayImg('../img/prod/zone/zone1.png')")
+        img(class="zones" src="../img/prod/zone/zone2.png" onclick="displayImg('../img/prod/zone/zone2.png')")
+        img(class="zones" src="../img/prod/zone/zone3.png" onclick="displayImg('../img/prod/zone/zone3.png')")
+        img(class="zones" src="../img/prod/zone/zone4.png" onclick="displayImg('../img/prod/zone/zone4.png')")
+        img(class="zones" src="../img/prod/zone/zone5.png" onclick="displayImg('../img/prod/zone/zone5.png')")
+        img(class="zones" src="../img/prod/zone/zone6.png" onclick="displayImg('../img/prod/zone/zone6.png')")
+        div(class='right' onclick="newRow('zones',true)")
+
+    div(class="title")
+        h1 ОФОРМЛЕНИЕ СТЕНДОВ
+    div(class="photoflex")
+        div(class='left' onclick="newRow('stands',false)")
+        img(class="stands" src="../img/prod/stand/stand1.png" onclick="displayImg('../img/prod/stand/stand1.png')")
+        img(class="stands" src="../img/prod/stand/stand2.png" onclick="displayImg('../img/prod/stand/stand2.png')")
+        img(class="stands" src="../img/prod/stand/stand3.png" onclick="displayImg('../img/prod/stand/stand3.png')")
+        img(class="stands" src="../img/prod/stand/stand4.png" onclick="displayImg('../img/prod/stand/stand4.png')")
+        img(class="stands" src="../img/prod/stand/stand5.png" onclick="displayImg('../img/prod/stand/stand5.png')")
+        img(class="stands" src="../img/prod/stand/stand6.png" onclick="displayImg('../img/prod/stand/stand6.png')")
+        div(class='right' onclick="newRow('stands',true)")
+
+    div(class="title")
+        h1 ОФОРМЛЕНИЕ ВЫСТАВОЧНЫХ СТЕНДОВ
+    div(class="photoflex")
+        div(class='left' onclick="newRow('vists',false)")
+        img(class="vists" src="../img/prod/vist/vist1.png" onclick="displayImg('../img/prod/vist/vist1.png')")
+        img(class="vists" src="../img/prod/vist/vist2.png" onclick="displayImg('../img/prod/vist/vist2.png')")
+        img(class="vists" src="../img/prod/vist/vist3.png" onclick="displayImg('../img/prod/vist/vist3.png')")
+        img(class="vists" src="../img/prod/vist/vist4.png" onclick="displayImg('../img/prod/vist/vist4.png')")
+        img(class="vists" src="../img/prod/vist/vist5.png" onclick="displayImg('../img/prod/vist/vist5.png')")
+        img(class="vists" src="../img/prod/vist/vist6.png" onclick="displayImg('../img/prod/vist/vist6.png')")
+        div(class='right' onclick="newRow('vists',true)")
+
+    div(class="title")
+        h1 ОФОРМЛЕНИЕ ВХОДНОЙ ГРУППЫ
+    div(class="photoflex")
+        div(class='left' onclick="newRow('groups',false)")
+        img(class="groups" src="../img/prod/group/group1.png" onclick="displayImg('../img/prod/group/group1.png')")
+        img(class="groups" src="../img/prod/group/group2.png" onclick="displayImg('../img/prod/group/group2.png')")
+        img(class="groups" src="../img/prod/group/group3.png" onclick="displayImg('../img/prod/group/group3.png')")
+        img(class="groups" src="../img/prod/group/group4.png" onclick="displayImg('../img/prod/group/group4.png')")
+        img(class="groups" src="../img/prod/group/group5.png" onclick="displayImg('../img/prod/group/group5.png')")
+        img(class="groups" src="../img/prod/group/group6.png" onclick="displayImg('../img/prod/group/group6.png')")
+        div(class='right' onclick="newRow('groups',true)")
+
+    div(class="title")
+        h1 ДИЗАЙН ТАБЛИЧЕК
+    div(class="photoflex")
+        div(class='left' onclick="newRow('tables',false)")
+        img(class="tables" src="../img/prod/table/table1.png" onclick="displayImg('../img/prod/table/table1.png')")
+        img(class="tables" src="../img/prod/table/table2.png" onclick="displayImg('../img/prod/table/table2.png')")
+        img(class="tables" src="../img/prod/table/table3.png" onclick="displayImg('../img/prod/table/table3.png')")
+        img(class="tables" src="../img/prod/table/table4.png" onclick="displayImg('../img/prod/table/table4.png')")
+        img(class="tables" src="../img/prod/table/table5.png" onclick="displayImg('../img/prod/table/table5.png')")
+        img(class="tables" src="../img/prod/table/table6.png" onclick="displayImg('../img/prod/table/table6.png')")
+        div(class='right' onclick="newRow('tables',true)")
+
+    div(class="title")
+        h1 АВТОБРЕНДИРОВАНИЕ
+    div(class="photoflex")
+        div(class='left' onclick="newRow('autos',false)")
+        img(class="autos" src="../img/prod/auto/auto1.png" onclick="displayImg('../img/prod/auto/auto1.png')")
+        img(class="autos" src="../img/prod/auto/auto2.png" onclick="displayImg('../img/prod/auto/auto2.png')")
+        img(class="autos" src="../img/prod/auto/auto3.png" onclick="displayImg('../img/prod/auto/auto3.png')")
+        img(class="autos" src="../img/prod/auto/auto4.png" onclick="displayImg('../img/prod/auto/auto4.png')")
+        img(class="autos" src="../img/prod/auto/auto5.png" onclick="displayImg('../img/prod/auto/auto5.png')")
+        img(class="autos" src="../img/prod/auto/auto6.png" onclick="displayImg('../img/prod/auto/auto6.png')")
+        div(class='right' onclick="newRow('autos',true)")
+
+include ../footer

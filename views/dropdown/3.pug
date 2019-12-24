@@ -1,13 +1,17 @@
 block dropdown3
-    div(id="dropdown3")
+    div(id="dropdown3" onclick="event.stopPropagation()")
         ul
             li(onclick="moveTo('/pilon')")
-                span инфо-пилоны
+                text инфо-пилоны
             li(onclick="moveTo('/stands')")
-                span стенды
+                text стенды
             li(onclick="moveTo('/shtender')")
-                span штендеры
+                text штендеры
             li(onclick="moveTo('/inputgroup')")
-                span входные группы
+                text входные группы
             li(onclick="moveTo('/tables')")
-                span таблички
+                text таблички
+            li(onclick="moveTo('/mobstand')")
+                text мобильные стенды
+            li(onclick="moveTo('/zones')")
+                text фотозоны

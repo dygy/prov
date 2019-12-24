@@ -16,6 +16,8 @@
     margin: auto !important;
     user-select: auto !important;
     padding-bottom: 20px; }
+  #dropdown li:hover, #dropdown2 li:hover, #dropdown3 li:hover, #dropdown4 li:hover, #dropdown5 li:hover {
+    color: #FDB13E; }
 
 #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
   box-shadow: 1px 1px 5px black;
@@ -63,8 +65,6 @@
       font-family: Geom , serif !important;
       position: relative;
       left: 20px; }
-    #dropdown ul li:hover {
-      color: #FDB13E; }
 
 @media (min-width: 1249px) {
   #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {

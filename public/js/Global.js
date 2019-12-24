@@ -1,6 +1,10 @@
 function elem(id) {
     return document.getElementById(id)
 }
+function elems(classname) {
+    return document.getElementsByClassName(classname)
+}
+
 function moveTo(url) {
     location.href = url;
 }

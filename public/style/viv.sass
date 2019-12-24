@@ -17,7 +17,17 @@ tbody
   margin-top: 40px
   margin-bottom: 40px
   display: flex
+  align-items: center
   justify-content: center
+  .left,.right
+    height: 50px
+    width: 50px
+    background-size: 100% 100%
+  .left
+    transform: rotate(180deg)
+    background-image: url("../img/next.png")
+  .right
+    background-image: url("../img/next.png")
   img
     margin: 0 0.3% 0
     height: 150px

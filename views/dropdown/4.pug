@@ -1,13 +1,15 @@
 block dropdown4
-    div(id="dropdown4")
+    div(id="dropdown4" onclick="event.stopPropagation()")
         ul
             li(onclick="moveTo('/banners')")
-                span баннеры
+                text баннеры
             li(onclick="moveTo('/placnposts')")
-                span плакаты
+                text плакаты
             li(onclick="moveTo('/autobrand')")
-                span автобрендирование
+                text автобрендирование
             li(onclick="moveTo('/infstands')")
-                span информационные стенды
+                text информационные стенды
             li(onclick="moveTo('/setups')")
-                span крышные установки
+                text крышные установки
+            li(onclick="moveTo('/vist')")
+                text выстовочные стенды

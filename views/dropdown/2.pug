@@ -1,13 +1,17 @@
 block dropdown2
-    div(id="dropdown2")
+    div(id="dropdown2" onclick="event.stopPropagation()")
         ul
             li(onclick="moveTo('/viv')")
-                span вывески
+                text вывески
             li(onclick="moveTo('/light')")
-                span световые короба
+                text световые короба
             li(onclick="moveTo('/fonts')")
-                span объемные буквы
+                text объемные буквы
             li(onclick="moveTo('/lightpan')")
-                span световая панель
+                text световая панель
             li(onclick="moveTo('/kron')")
-                span панель-кронштейн
+                text панель-кронштейн
+            li(onclick="moveTo('/navs')")
+                text навигация
+            li(onclick="moveTo('/nolight')")
+                text несветовые вывески

@@ -2,6 +2,30 @@ const express = require('express');
 const router = express.Router();
 
 /* GET home page. */
+router.get('/portfolio', function(req, res, next) {
+    res.render('./pages/portfolio', { title: 'Портфолио' });
+});
+
+router.get('/dost', function(req, res, next) {
+    res.render('./serves/dost', { title: 'ДОСТАВКА' });
+});
+
+router.get('/sign', function(req, res, next) {
+    res.render('./serves/sign', { title: 'РЕГЕСТРАЦИЯ ВЫВЕСКИ' });
+});
+
+router.get('/mont', function(req, res, next) {
+    res.render('./serves/mont', { title: 'МОНТАЖ' });
+});
+
+router.get('/frez', function(req, res, next) {
+    res.render('./serves/frez', { title: 'ФРЕЗЕРНАЯ РЕЗКА' });
+});
+
+router.get('/design', function(req, res, next) {
+    res.render('./serves/design', { title: 'ДИЗАЙН' });
+});
+
 router.get('/vist', function(req, res, next) {
     res.render('./pages/vist', { title: 'Выставочные Стенды' });
 });

@@ -1,5 +1,5 @@
 block dropdown
-    div(id="dropdown")
+    div(id="dropdown" onclick="event.stopPropagation()")
         ul
             li(onclick="moveTo('/viv')")
                 text вывески
@@ -11,6 +11,10 @@ block dropdown
                 text световая панель
             li(onclick="moveTo('/kron')")
                 text панель-кронштейн
+            li(onclick="moveTo('/navs')")
+                text навигация
+            li(onclick="moveTo('/nolight')")
+                text несветовые вывески
         ul
             li(onclick="moveTo('/pilon')")
                 text инфо-пилоны
@@ -22,6 +26,11 @@ block dropdown
                 text входные группы
             li(onclick="moveTo('/tables')")
                 text таблички
+            li(onclick="moveTo('/mobstand')")
+                text мобильные стенды
+            li(onclick="moveTo('/zones')")
+                text фотозоны
+
         ul
             li(onclick="moveTo('/banners')")
                 text баннеры
@@ -33,14 +42,17 @@ block dropdown
                 text информационные стенды
             li(onclick="moveTo('/setups')")
                 text крышные установки
-        ul(id="lastUL")
-            li(onclick="moveTo('/mobstand')")
-                text мобильные стенды
-            li(onclick="moveTo('/zones')")
-                text фотозоны
-            li(onclick="moveTo('/navs')")
-                text навигация
             li(onclick="moveTo('/vist')")
                 text выстовочные стенды
-            li(onclick="moveTo('/nolight')")
-                text несветовые вывески
+
+        ul(id="lastUL")
+            li(onclick="moveTo('/frez')")
+                text фрезерная резка
+            li(onclick="moveTo('/design')")
+                text дизайн
+            li(onclick="moveTo('/sign')")
+                text регистрация
+            li(onclick="moveTo('/mont')")
+                text монтаж
+            li(onclick="moveTo('/dost')")
+                text доставка

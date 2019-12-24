@@ -1,13 +1,13 @@
 block dropdown5
-    div(id="dropdown5")
-        ul
-            li(onclick="moveTo('/mobstand')")
-                span мобильные стенды
-            li(onclick="moveTo('/zones')")
-                span фотозоны
-            li(onclick="moveTo('/navs')")
-                span навигация
-            li(onclick="moveTo('/vist')")
-                span выстовочные стенды
-            li(onclick="moveTo('/nolight')")
-                span несветовые вывески
+    div(id="dropdown5" onclick="event.stopPropagation()")
+        ul(onclick="")
+            li(onclick="moveTo('/frez')")
+                text фрезерная резка
+            li(onclick="moveTo('/design')")
+                text дизайн
+            li(onclick="moveTo('/sign')")
+                text регистрация
+            li(onclick="moveTo('/mont')")
+                text монтаж
+            li(onclick="moveTo('/dost')")
+                text доставка
