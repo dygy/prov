@@ -28,3 +28,13 @@ p форма изделия:
     p тираж:
         div
             input(type="number" id="tirazh" oninput="setInput('tirazh')")
+style(type='text/css').
+    @media (min-width: 1700px) {
+        .calc-flex {
+            margin-top: 500px;
+            margin-bottom: -200px;
+        }
+        #footer {
+            bottom: -500px;
+        }
+    }

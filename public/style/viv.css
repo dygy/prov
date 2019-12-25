@@ -379,7 +379,7 @@ body {
   bottom: 0;
   color: white;
   background: black;
-  width: 100%;
+  width: 100vw;
   min-height: 470px; }
   #footer #ftr-frst {
     font-weight: 900;

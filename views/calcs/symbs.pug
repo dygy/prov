@@ -135,6 +135,16 @@ p форма изделия:
     p дополнительные опции:
     div(class="selector selectable")
         div(class="elem" onclick="request.also='прямой'") прямой
-        div(class="elem" onclick="request.also='c засечками'") c засечками
+        div(class="elem" onclick="request.also='c засечками'" style="min-width:100px") c засечками
         div(class="elem" onclick="request.also='курсив'") курсив
     div(id="output")
+style(type='text/css').
+    @media (min-width: 1700px) {
+        .calc-flex {
+            margin-top: 750px;
+            margin-bottom: -600px;
+        }
+        #footer {
+            bottom: -1300px;
+        }
+    }

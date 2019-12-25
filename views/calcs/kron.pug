@@ -20,3 +20,13 @@ p тип изделия
             div(class="elem" onclick="request.size='0.25 – 0.5м'") 0.25 – 0.5м
             div(class="elem" onclick="request.size='0.5 – 1м'") 0.5 – 1м
             div(class="elem" onclick="request.size='1 – 3м'") 1 – 3м
+style(type='text/css').
+    @media (min-width: 1700px) {
+        .calc-flex {
+            margin-top: 400px;
+            margin-bottom: -200px;
+        }
+        #footer {
+            bottom: -400px;
+        }
+    }

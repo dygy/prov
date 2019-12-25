@@ -5,18 +5,25 @@
 .selectable
   .elem:active
     border-color: #ffb800 !important
-
+.calc-flex
+  display: flex
+  flex-flow: column
 .buttonImg
   height: 4vw!important
   width: 15vw!important
+  box-shadow: 3px 2px 3px black
 .center
   display: flex
   flex-flow: column
   justify-content: center
+  align-items: center
   text-align: center
   margin-top: 60px
   margin-bottom: 100px
   .selector
+    margin-left: 10%
+    margin-right: 10%
+    align-items: center
     justify-content: center
     display: flex
     .elem
@@ -26,9 +33,9 @@
       align-content: center
       align-items: center
       justify-content: center
-      min-width: 70px
+      min-width: 80px
       min-height: 23px
-      margin: 10px 1% 0
+      margin: 10px 10px 0
       text
         margin-left: 10px
         margin-right: 10px
@@ -39,10 +46,10 @@
     flex-flow: row
     max-width: 100%
     .elem
-      margin: 40px 2% 0
+      margin: 40px 15px 0
       width: 70px
       height: 70px
-      border-width: 3px !important
+      border-width: 4px !important
       p
         position: relative
         top: 70px
@@ -106,7 +113,7 @@ input
   margin-right: 15%
   padding-bottom: 40px
   .elem
-    border: black 1px solid
+    border: #abd4c7 3px solid
     border-radius: 10px
     width: 30px
     height: 30px
@@ -204,3 +211,15 @@ input
   border-radius: 0
 #s1 , #s2 ,#s3 ,#s4 , #s5 ,#s6 ,#t1, #t2,#t3, #t4
   background-size: 100% 100%
+
+@media (min-width: 1700px)
+  html
+    overflow-x: hidden
+  .selectable
+    margin-left: 35%
+    margin-right: 35%
+  .calc-flex
+    transform: scale(1.7)
+  .buttonImg
+    height: 2vw !important
+    width: 8vw !important

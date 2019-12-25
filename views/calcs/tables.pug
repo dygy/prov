@@ -9,7 +9,7 @@ p тип изделия:
         div(class="elem" onclick="request.material=' rainbow'") rainbow
         div(class="elem" onclick="request.material=' металл'") металл
         div(class="elem" onclick="request.material=' пластик'") пластик
-        div(class="elem" onclick="request.material=' орг. стекло'") орг. стекло
+        div(class="elem" onclick="request.material=' орг. стекло'" style="min-width: 90px") орг. стекло
         div(class="elem" onclick="request.material=' дерево'") дерево
         div(class="elem" onclick="request.material=' дибонд'") дибонд
     p изображение:
@@ -46,3 +46,13 @@ p тип изделия:
     p тираж:
         div
             input(type="number" id="tirazh" oninput="setInput('tirazh')")
+style(type='text/css').
+    @media (min-width: 1700px) {
+        .calc-flex {
+            margin-top: 500px;
+            margin-bottom: -300px;
+        }
+        #footer {
+            bottom: -700px;
+        }
+    }

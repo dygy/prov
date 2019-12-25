@@ -10,7 +10,7 @@ div(class="flex-input")
     input(type="number" id="sizeY" oninput="setInput('sizeY')")
 p материал:
 div(class="selector selectable")
-    div(class="elem" onclick="request.material='баннерная ткань")
+    div(class="elem" onclick="request.material='баннерная ткань" style="min-width:115px")
         text баннерная
         br
         text ткань
@@ -18,9 +18,19 @@ div(class="selector selectable")
         text полипропилен
 p печать:
 div(class="selector selectable")
-    div(class="elem" onclick="request.print='без печати'") без печати
+    div(class="elem" onclick="request.print='без печати'" style="min-width:100px") без печати
     div(class="elem" onclick="request.print='549dpi'") 549dpi
     div(class="elem" onclick="request.print='720dpi'") 720dpi
 p тираж:
 div
     input(type="number" id="tirazh" oninput="setInput('tirazh')")
+style(type='text/css').
+    @media (min-width: 1700px) {
+        .calc-flex {
+            margin-top: 400px;
+            margin-bottom: -150px;
+        }
+        #footer {
+            bottom: -400px;
+        }
+    }
