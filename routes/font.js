@@ -4,10 +4,10 @@ const router = express.Router();
 /* GET home page. */
 router.get('/akmet', function(req, res, next) {
     res.render('./pages/fontinfo', {
-        title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА И ПВХ' ,
-        calcURL:"../calc/symb",
-        imgURL:'../img/fonttitle/1.png' ,
-        ul:["Срок службы — до 5 лет",
+        title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА С МЕТАЛЛОМ' ,
+        calcURL:"../calc/symbs",
+        imgURL:['../img/fonttitle/akmet1.png','../img/fonttitle/akmet2.png','../img/fonttitle/akmet3.png' ],
+        ul:["Срок службы — до 10 лет",
             "Яркость — средняя",
             "Оптимальная высота буквы — до 100 см",
             "Максимальная высота буквы — 3м",
@@ -27,8 +27,8 @@ router.get('/akmet', function(req, res, next) {
 router.get('/ak', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА' ,
-        calcURL:"../calc/symb",
-        imgURL:'../img/fonttitle/2.png' ,
+        calcURL:"../calc/symbs",
+        imgURL:['../img/fonttitle/ak1.png','../img/fonttitle/ak2.png','../img/fonttitle/ak3.png' ],
         ul:["Срок службы — до 10 лет",
             "Яркость — высокая",
             "Оптимальная высота буквы — до 100 см",
@@ -47,8 +47,8 @@ router.get('/ak', function(req, res, next) {
 router.get('/akpvk', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА И ПВХ С КОНТРАЖУРОМ' ,
-        imgURL:'../img/fonttitle/3.png' ,
-        calcURL:"../calc/symb",
+        imgURL:['../img/fonttitle/akpvk1.png','../img/fonttitle/akpvk2.png','../img/fonttitle/akpvk3.png' ],
+        calcURL:"../calc/symbs",
         ul:["Срок службы — до 5 лет",
             "Яркость —  средняя",
             "Оптимальная высота буквы — до 100 см",
@@ -66,8 +66,8 @@ router.get('/akpvk', function(req, res, next) {
 router.get('/metk', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ МЕТАЛЛА С КОНТРАЖУРОМ' ,
-        calcURL:"../calc/symb",
-        imgURL:'../img/fonttitle/4.png' ,
+        calcURL:"../calc/symbs",
+        imgURL:['../img/fonttitle/metk1.png','../img/fonttitle/metk2.png','../img/fonttitle/metk3.png' ],
         ul:["Срок службы — до 10 лет",
             "Яркость —  средняя",
             "Оптимальная высота буквы — до 100 см",
@@ -76,7 +76,7 @@ router.get('/metk', function(req, res, next) {
             "Минимальная толщина ножки буквы — 15мм",
             "Глубина буквы — 50-150 мм"
         ],
-        inside1:`Более дпрезентабельный вид, чем буквы c корпусом из пластика. Лицевая часть не светится, но
+        inside1:`Более презентабельный вид, чем буквы c корпусом из пластика. Лицевая часть не светится, но
 свет изнутри буквы падает на подложку и подсвечивает букву сзади. Нержавеющая сталь может
 быть серебристой или золотистой, глянцевой как зеркало, матовой или шлифованной.`,
         inside2:`Нержавеющая сталь толщиной 0.3-2мм вырезается на лазере, после чего лицевая и боковая части
@@ -88,8 +88,8 @@ router.get('/metk', function(req, res, next) {
 router.get('/akpv', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА И ПВХ' ,
-        calcURL:"../calc/symb",
-        imgURL:'../img/fonttitle/5.png' ,
+        calcURL:"../calc/symbs",
+        imgURL:['../img/fonttitle/akpv1.png','../img/fonttitle/akpv2.png','../img/fonttitle/akpv3.png' ],
         ul:["Срок службы — до 5 лет",
             "Яркость —  средняя",
             "Оптимальная высота буквы — до 100 см",
@@ -108,9 +108,9 @@ router.get('/akpv', function(req, res, next) {
 });
 router.get('/pvk', function(req, res, next) {
     res.render('./pages/fontinfo', {
-        title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА И ПВХ' ,
-        calcURL:"../calc/symb",
-        imgURL:'../img/fonttitle/6.png' ,
+        title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ ПВХ С КОНТРАЖУРОМ' ,
+        calcURL:"../calc/symbs",
+        imgURL:['../img/fonttitle/pvk1.png','../img/fonttitle/pvk2.png','../img/fonttitle/pvk3.png' ],
         ul:["Срок службы — до 10 лет",
             "Яркость —  средняя",
             "Оптимальная высота буквы — до 100 см",
@@ -129,8 +129,8 @@ router.get('/pvk', function(req, res, next) {
 router.get('/neon', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ С ОТКРЫТЫМ НЕОНОМ' ,
-        calcURL:"../calc/symb",
-        imgURL:'../img/fonttitle/7.png' ,
+        calcURL:"../calc/symbs",
+        imgURL:['../img/fonttitle/neon1.png','../img/fonttitle/neon2.png','../img/fonttitle/neon3.png' ],
         ul:["Срок службы — до 10 лет",
             "Яркость —  высокая",
             "Оптимальная высота буквы — до 100 см",
@@ -150,8 +150,8 @@ router.get('/neon', function(req, res, next) {
 router.get('/svetod', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' ,
-        calcURL:"../calc/symb",
-        imgURL:'../img/fonttitle/8.png' ,
+        calcURL:"../calc/symbs",
+        imgURL:['../img/fonttitle/svet1.png','../img/fonttitle/svet2.png','../img/fonttitle/svet3.png' ],
         ul:["Срок службы — до 10 лет",
             "Яркость —  высокая",
             "Оптимальная высота буквы — до 100 см",
