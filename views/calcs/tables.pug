@@ -1,42 +1,42 @@
 p тип изделия:
     div(class="slider selectable")
-        div(class="elem" id="t1" onclick="request.type='круглый'")
-        div(class="elem" id="t2" onclick="request.type='квадратный'")
-        div(class="elem" id="t3" onclick="request.type='прямоугольный'")
-        div(class="elem" id="t4" onclick="request.type='облачком'")
+        div(class="elem" id="t1" onclick="request.type='круглый';addClass(this)")
+        div(class="elem" id="t2" onclick="request.type='квадратный';addClass(this)")
+        div(class="elem" id="t3" onclick="request.type='прямоугольный';addClass(this)")
+        div(class="elem" id="t4" onclick="request.type='облачком';addClass(this)")
     p материал:
     div(class="selector selectable")
-        div(class="elem" onclick="request.material=' rainbow'") rainbow
-        div(class="elem" onclick="request.material=' металл'") металл
-        div(class="elem" onclick="request.material=' пластик'") пластик
-        div(class="elem" onclick="request.material=' орг. стекло'" style="min-width: 90px") орг. стекло
-        div(class="elem" onclick="request.material=' дерево'") дерево
-        div(class="elem" onclick="request.material=' дибонд'") дибонд
+        div(class="elem" onclick="request.material=' rainbow';addClass(this)") rainbow
+        div(class="elem" onclick="request.material=' металл';addClass(this)") металл
+        div(class="elem" onclick="request.material=' пластик';addClass(this)") пластик
+        div(class="elem" onclick="request.material=' орг. стекло';addClass(this)" style="min-width: 90px") орг. стекло
+        div(class="elem" onclick="request.material=' дерево';addClass(this)") дерево
+        div(class="elem" onclick="request.material=' дибонд';addClass(this)") дибонд
     p изображение:
     div(class="selector selectable")
-        div(class="elem" onclick="request.img='печать'") печать
-        div(class="elem" onclick="request.img='пленка'") пленка
-        div(class="elem" onclick="request.img='гравировка'") гравировка
+        div(class="elem" onclick="request.img='печать';addClass(this)") печать
+        div(class="elem" onclick="request.img='пленка';addClass(this)") пленка
+        div(class="elem" onclick="request.img='гравировка';addClass(this)") гравировка
     p крепление:
     div(class="selector selectable")
-        div(class="elem" onclick="request.krep='самоклейка'") самоклейка
-        div(class="elem" onclick="request.krep='саморезы'") саморезы
-        div(class="elem" onclick="request.krep=' кронштейн'") кронштейн
-        div(class="elem" onclick="request.krep='дистанционно'") дистанционно
-        div(class="elem" onclick="request.krep='настольная'") настольная
-        div(class="elem" onclick="request.krep='ручная'") ручная
-        div(class="elem" onclick="request.krep='напольная'") напольная
+        div(class="elem" onclick="request.krep='самоклейка';addClass(this)") самоклейка
+        div(class="elem" onclick="request.krep='саморезы';addClass(this)") саморезы
+        div(class="elem" onclick="request.krep=' кронштейн';addClass(this)") кронштейн
+        div(class="elem" onclick="request.krep='дистанционно';addClass(this)") дистанционно
+        div(class="elem" onclick="request.krep='настольная';addClass(this)") настольная
+        div(class="elem" onclick="request.krep='ручная';addClass(this)") ручная
+        div(class="elem" onclick="request.krep='напольная';addClass(this)") напольная
     p толщина:
     div(class="selector selectable")
-        div(class="elem" onclick="request.tirazh='2 мм'")
+        div(class="elem" onclick="request.tirazh='2 мм';addClass(this)")
             text 2 мм
-        div(class="elem" onclick="request.tirazh='2 мм'")
+        div(class="elem" onclick="request.tirazh='2 мм';addClass(this)")
             text 3 мм
-        div(class="elem" onclick="request.tirazh='2 мм'")
+        div(class="elem" onclick="request.tirazh='2 мм';addClass(this)")
             text 4 мм
-        div(class="elem" onclick="request.tirazh='2 мм'")
+        div(class="elem" onclick="request.tirazh='2 мм';addClass(this)")
             text 5 мм
-        div(class="elem" onclick="request.tirazh='2 мм'")
+        div(class="elem" onclick="request.tirazh='2 мм';addClass(this)")
             text другое
     p размеры (мм):
         div(class="flex-input")

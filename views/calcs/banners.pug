@@ -5,25 +5,25 @@ div(class="flex-input")
     input(type="number" id="sizeY" oninput="setInput('sizeY')")
 p материал:
 div(class="selector selectable")
-    div(class="elem" onclick="request.type='banner tkan'" )
+    div(class="elem" onclick="request.type='banner tkan';addClass(this)" )
         text баннерная
         br
         text ткань 440гр
-    div(class="elem" onclick="request.material='setka'" ) сетка
-    div(class="elem" onclick="request.material='trans tkan'" )
+    div(class="elem" onclick="request.material='setka';addClass(this)" ) сетка
+    div(class="elem" onclick="request.material='trans tkan';addClass(this)" )
         text транслюцентная
         br
         text ткань
 p разрешение:
 div(class="selector selectable")
-    div(class="elem" onclick="request.resol='549dpi'" ) 549dpi
-    div(class="elem" onclick="request.resol='720dpi'" ) 720dpi
+    div(class="elem" onclick="request.resol='549dpi';addClass(this)" ) 549dpi
+    div(class="elem" onclick="request.resol='720dpi';addClass(this)" ) 720dpi
 p люверсы:
 div(class="selector selectable")
-    div(class="elem" onclick="request.luversi='no'" ) нет
-    div(class="elem" onclick="request.luversi='gold'" ) золото
-    div(class="elem" onclick="request.luversi='silver'" ) серебро
-    div(class="elem" onclick="request.luversi='white'" ) белые
+    div(class="elem" onclick="request.luversi='no';addClass(this)" ) нет
+    div(class="elem" onclick="request.luversi='gold';addClass(this)" ) золото
+    div(class="elem" onclick="request.luversi='silver';addClass(this)" ) серебро
+    div(class="elem" onclick="request.luversi='white';addClass(this)" ) белые
 p тираж:
 div
     input(type="number" id="tirazh" oninput="setInput('tirazh')")

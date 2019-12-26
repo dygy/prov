@@ -1,19 +1,19 @@
 p форма изделия:
     div(class="slider selectable")
-        div(class="elem" onclick="request.formI='1'")
-        div(class="elem" onclick="request.formI='2'")
-        div(class="elem" onclick="request.formI='3'")
-        div(class="elem" onclick="request.formI='4'")
+        div(class="elem" onclick="request.formI='1';addClass(this)")
+        div(class="elem" onclick="request.formI='2';addClass(this)")
+        div(class="elem" onclick="request.formI='3';addClass(this)")
+        div(class="elem" onclick="request.formI='4';addClass(this)")
     p материал:
     div(class="selector selectable")
-        div(class="elem" onclick="request.material='металл'") металл
-        div(class="elem" onclick="request.material='пластик'") пластик
-        div(class="elem" onclick="request.material='доска под мел'") доска под мел
-        div(class="elem" onclick="request.material='дерево'") дерево
+        div(class="elem" onclick="request.material='металл';addClass(this)") металл
+        div(class="elem" onclick="request.material='пластик';addClass(this)") пластик
+        div(class="elem" onclick="request.material='доска под мел';addClass(this)") доска под мел
+        div(class="elem" onclick="request.material='дерево';addClass(this)") дерево
     p печать:
     div(class="selector selectable")
-        div(class="elem" onclick="request.print='1 сторона'") 1 сторона
-        div(class="elem" onclick="request.print='2 стороны'") 2 стороны
+        div(class="elem" onclick="request.print='1 сторона';addClass(this)") 1 сторона
+        div(class="elem" onclick="request.print='2 стороны';addClass(this)") 2 стороны
     p размер изделия (см):
     div(class="flex-input")
        input(type="number" id="sizeX" oninput="setInput('sizeX')")
@@ -21,9 +21,9 @@ p форма изделия:
        input(type="number" id="sizeY" oninput="setInput('sizeY')")
     p цепочка:
     div(class="selector selectable")
-        div(class="elem" onclick="request.cell='no'")
+        div(class="elem" onclick="request.cell='no';addClass(this)")
             text нет
-        div(class="elem" onclick="request.cell='1м с замком'")
+        div(class="elem" onclick="request.cell='1м с замком';addClass(this)")
             text 1м с замком
     p тираж:
         div

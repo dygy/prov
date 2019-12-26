@@ -1,42 +1,42 @@
 p размер:
 div(class="selector selectable")
-    div(class="elem" onclick="request.size='А3'") А3
-    div(class="elem" onclick="request.size='А2'") А2
-    div(class="elem" onclick="request.size='А1'") А1
-    div(class="elem" onclick="request.size='А0'") А0
-    div(class="elem" onclick="request.size='B2'") B2
-    div(class="elem" onclick="request.size='B3'") B3
+    div(class="elem" onclick="request.size='А3';addClass(this)") А3
+    div(class="elem" onclick="request.size='А2';addClass(this)") А2
+    div(class="elem" onclick="request.size='А1';addClass(this)") А1
+    div(class="elem" onclick="request.size='А0';addClass(this)") А0
+    div(class="elem" onclick="request.size='B2';addClass(this)") B2
+    div(class="elem" onclick="request.size='B3';addClass(this)") B3
 p печать:
 div(class="selector selectable")
-    div(class="elem" onclick="request.print='одноцветная'") одноцветная
-    div(class="elem" onclick="request.print='полноцветная'") полноцветная
+    div(class="elem" onclick="request.print='одноцветная';addClass(this)") одноцветная
+    div(class="elem" onclick="request.print='полноцветная';addClass(this)") полноцветная
 p печать:
 div(class="selector selectable")
-    div(class="elem" onclick="request.sides='1 сторона'") 1 сторона
-    div(class="elem" onclick="request.sides='2 стороны'") 2 стороны
+    div(class="elem" onclick="request.sides='1 сторона';addClass(this)") 1 сторона
+    div(class="elem" onclick="request.sides='2 стороны';addClass(this)") 2 стороны
 p плотность бумаги в граммах:
 div(class="selector selectable")
-    div(class="elem" onclick="request.plotB='90'") 90
-    div(class="elem" onclick="request.plotB='115'") 115
-    div(class="elem" onclick="request.plotB='130'") 130
-    div(class="elem" onclick="request.plotB='150'") 150
-    div(class="elem" onclick="request.plotB='170'") 170
-    div(class="elem" onclick="request.plotB='180'") 180
-    div(class="elem" onclick="request.plotB='200'") 200
-    div(class="elem" onclick="request.plotB='250'") 250
-    div(class="elem" onclick="request.plotB='300'") 300
-    div(class="elem" onclick="request.plotB='350'") 350
+    div(class="elem" onclick="request.plotB='90';addClass(this)") 90
+    div(class="elem" onclick="request.plotB='115';addClass(this)") 115
+    div(class="elem" onclick="request.plotB='130';addClass(this)") 130
+    div(class="elem" onclick="request.plotB='150';addClass(this)") 150
+    div(class="elem" onclick="request.plotB='170';addClass(this)") 170
+    div(class="elem" onclick="request.plotB='180';addClass(this)") 180
+    div(class="elem" onclick="request.plotB='200';addClass(this)") 200
+    div(class="elem" onclick="request.plotB='250';addClass(this)") 250
+    div(class="elem" onclick="request.plotB='300';addClass(this)") 300
+    div(class="elem" onclick="request.plotB='350';addClass(this)") 350
 p тип бумаги:
 div(class="selector selectable")
-    div(class="elem" onclick="request.typeB='матовая'")
+    div(class="elem" onclick="request.typeB='матовая';addClass(this)")
         text матовая
-    div(class="elem" onclick="request.typeB='глянцевая'")
+    div(class="elem" onclick="request.typeB='глянцевая';addClass(this)")
         text глянцевая
 p ламинация:
 div(class="selector selectable")
-    div(class="elem"  onclick="request.lam='матовая'") матовая
-    div(class="elem"  onclick="request.lam='глянцевая'") глянцевая
-    div(class="elem"  onclick="request.lam='нет'") нет
+    div(class="elem"  onclick="request.lam='матовая';addClass(this)") матовая
+    div(class="elem"  onclick="request.lam='глянцевая';addClass(this)") глянцевая
+    div(class="elem"  onclick="request.lam='нет';addClass(this)") нет
 p тираж:
 div
     input(type="number" id="tirazh" oninput="setInput('tirazh')")

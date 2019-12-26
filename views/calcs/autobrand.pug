@@ -1,28 +1,28 @@
 p тип:
 div(class="selector selectable")
-    div(class="elem" onclick="request.type='lightbox'" ) лайтбокс
-    div(class="elem" onclick="request.type='taxi'" ) шашечки такси
-    div(class="elem" onclick="request.type='plenka'" ) пленка
-    div(class="elem" onclick="request.type='plenkaWindow'" ) пленка на окна
-    div(class="elem" onclick="request.type='stickers'" ) наклейки
-    div(class="elem" onclick="request.type='kuzov'" ) кузов
+    div(class="elem" onclick="request.type='lightbox';addClass(this)" ) лайтбокс
+    div(class="elem" onclick="request.type='taxi';addClass(this)" ) шашечки такси
+    div(class="elem" onclick="request.type='plenka';addClass(this)" ) пленка
+    div(class="elem" onclick="request.type='plenkaWindow';addClass(this)" ) пленка на окна
+    div(class="elem" onclick="request.type='stickers';addClass(this)" ) наклейки
+    div(class="elem" onclick="request.type='kuzov';addClass(this)" ) кузов
 p область печати
 div(class="flex-input")
     input(type="number" id="oblast1" oninput="setInput('oblast1')")
     input(type="number" id="oblast2" oninput="setInput('oblast2')")
 p пленка:
 div(class="selector selectable")
-    div(class="elem" onclick="request.plenka='vinilovaya'") виниловая
-    div(class="elem" onclick="request.plenka='ORACAL'") ORACAL
+    div(class="elem" onclick="request.plenka='vinilovaya';addClass(this)") виниловая
+    div(class="elem" onclick="request.plenka='ORACAL';addClass(this)") ORACAL
 p ламинация:
 div(class="selector selectable")
-    div(class="elem" onclick="request.lam='no'") нет
-    div(class="elem" onclick="request.lam='yes'") есть
+    div(class="elem" onclick="request.lam='no';addClass(this)") нет
+    div(class="elem" onclick="request.lam='yes';addClass(this)") есть
 p плоттерная резка:
 div(class="selector selectable")
-    div(class="elem" onclick="request.plot='no'")
+    div(class="elem" onclick="request.plot='no';addClass(this)")
         text нет
-    div(class="elem" onclick="request.plot='yes'")
+    div(class="elem" onclick="request.plot='yes';addClass(this)")
         text есть
 p тираж:
 div

@@ -1,3 +1,23 @@
+function addClass(elem) {
+    // get all 'a' elements
+    let a = getSelectable(elem);
+    console.log(a.node)
+    // loop through all 'a' elements
+    for (i = 0; i < a.length; i++) {
+        // Remove the class 'active' if it exists
+        a[i].classList.remove('active')
+    }
+    // add 'active' classs to the element that was clicked
+    elem.classList.add('active');
+}
+function getSelectable(elem) {
+    if (elem.parentElement.classList.contains("selectable")){
+        return elem.parentElement
+    }
+    else {
+        return getSelectable(elem.parentElement)
+    }
+}
 const request = {
 
 };

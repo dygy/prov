@@ -5,19 +5,19 @@ p тип изделия
         div(class="elem" onclick="request.type='магнетик'") магнетик
     p особенности:
     div(class="selector selectable")
-        div(class="elem" onclick="request.osob='подвесной'") подвесной
-        div(class="elem" onclick="request.osob='настенный'") настенный
-        div(class="elem" onclick="request.osob='двухсторонний'") двухсторонний
+        div(class="elem" onclick="request.osob='подвесной';addClass(this)") подвесной
+        div(class="elem" onclick="request.osob='настенный';addClass(this)") настенный
+        div(class="elem" onclick="request.osob='двухсторонний';addClass(this)") двухсторонний
     p размеры:
     div(class="selector selectable")
-        div(class="elem" onclick="request.size='А4+'") А4+
-        div(class="elem" onclick="request.size='А3+'") А3+
-        div(class="elem" onclick="request.size='А2+'") А2+
-        div(class="elem" onclick="request.size='А1+'") А1+
-        div(class="elem" onclick="request.size='А0+'") А0+
-        div(class="elem" onclick="request.size='АА'") АА
-        div(class="elem" onclick="request.size='2АА'") 2АА
-        div(class="elem" onclick="request.size='свой'") свой
+        div(class="elem" onclick="request.size='А4+';addClass(this)") А4+
+        div(class="elem" onclick="request.size='А3+';addClass(this)") А3+
+        div(class="elem" onclick="request.size='А2+';addClass(this)") А2+
+        div(class="elem" onclick="request.size='А1+';addClass(this)") А1+
+        div(class="elem" onclick="request.size='А0+';addClass(this)") А0+
+        div(class="elem" onclick="request.size='АА';addClass(this)") АА
+        div(class="elem" onclick="request.size='2АА';addClass(this)") 2АА
+        div(class="elem" onclick="request.size='свой';addClass(this)") свой
     p тираж:
         div
             input(type="number" id="tirazh" oninput="setInput('tirazh')")

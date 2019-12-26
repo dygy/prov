@@ -1,19 +1,19 @@
 p тип изделия:
     div(class="slider selectable")
-        div(class="elem" id="s1" onclick="request.type='1'")
-        div(class="elem" id="s2" onclick="request.type='2'")
-        div(class="elem" id="s3" onclick="request.type='3'")
-        div(class="elem" id="s4" onclick="request.type='4'")
-        div(class="elem" id="s5" onclick="request.type='5'")
-        div(class="elem" id="s6" onclick="request.type='6'")
+        div(class="elem" id="s1" onclick="request.type='1';addClass(this)")
+        div(class="elem" id="s2" onclick="request.type='2';addClass(this)")
+        div(class="elem" id="s3" onclick="request.type='3';addClass(this)")
+        div(class="elem" id="s4" onclick="request.type='4';addClass(this)")
+        div(class="elem" id="s5" onclick="request.type='5';addClass(this)")
+        div(class="elem" id="s6" onclick="request.type='6';addClass(this)")
     p размеры:
     div
         input(type="number" id="size" oninput="setInput('size')")
     p изображение:
     div(class="selector selectable")
-        div(class="elem" onclick="request.image='360dpi'") 360dpi
-        div(class="elem" onclick="request.image='720dpi'") 720dpi
-        div(class="elem" onclick="request.image='пленка'") пленка
+        div(class="elem" onclick="request.image='360dpi';addClass(this)") 360dpi
+        div(class="elem" onclick="request.image='720dpi';addClass(this)") 720dpi
+        div(class="elem" onclick="request.image='пленка';addClass(this)") пленка
     p пробковая панель (если есть):
     div
         input( id="probk" oninput="setInput('probk')")

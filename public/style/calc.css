@@ -599,8 +599,14 @@ button {
   margin-top: 20px;
   transform: rotate(2deg); }
 
+.selectable .elem:hover {
+  border-color: orange !important; }
+
 .selectable .elem:active {
-  border-color: #ffb800 !important; }
+  border-color: #ffb800  !important; }
+
+.selectable .active {
+  border-color: #ffb800  !important; }
 
 .calc-flex {
   display: flex;
