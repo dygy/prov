@@ -1,7 +1,26 @@
 const request = {
 
 };
+function setShadow(color) {
+    elem("output").style.textShadow="1px 1px 8px "+ color;
+}
+function setBorder(color) {
+    elem("output").style.webkitTextStrokeColor=color;
+}
+function setColor(color) {
+    elem("output").style.color=color;
+}
+function setOutput(family) {
+    if (family==="italic"){
+        elem("output").style.fontStyle=family
+        elem("output").style.fontFamily="Arial"
 
+    }
+    else {
+        elem("output").style.fontStyle="normal"
+        elem("output").style.fontFamily=family
+    }
+}
 function  setInput(id){
     request[id]=document.getElementById(id).value;
 }
