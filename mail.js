@@ -3,7 +3,7 @@ module.exports = (content)=> {
     sendmail({
         from: 'no-reply@provyveski.ru',
         to: 'YukimuraAllen@yandex.ru', // list of receivers
-        subject: 'Order №3 ',
+        subject: 'New Order',
         html: `<h1> Details </h1> <p>${parseJSON(content)}</p> `,
     }, function (err, reply) {
         console.log(err && err.stack);
@@ -12,6 +12,21 @@ module.exports = (content)=> {
 }
 function parseJSON(content) {
     let mail = '';
+    if (content.name){
+        mail+= `Имя:${content.name} <br>`
+    }
+    if (content.company){
+        mail+= `Компания:${content.company} <br>`
+    }
+    if (content.phone){
+        mail+= `Телефон:${content.phone} <br>`
+    }
+    if (content.email){
+        mail+= `Электронная почта:${content.email} <br>`
+    }
+    if (content.comment){
+        mail+= `Комментарий:${content.comment} <br>`
+    }
     if (content.height){
         mail+= `Высота:${content.height} <br>`
     }

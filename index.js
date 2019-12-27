@@ -31,6 +31,11 @@ app.use('/font', fontRouter);
 app.use('/calc', calcRouter);
 app.use('/lights', lightRouter);
 
+app.post('/feedback', function(req, res, next) {
+    sendEmail(req.body);
+    console.log(JSON.stringify(req.body));
+});
+
 app.post('/order', function(req, res, next) {
     sendEmail(req.body);
     console.log(JSON.stringify(req.body));

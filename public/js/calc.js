@@ -1,15 +1,28 @@
 function addClass(elem) {
     // get all 'a' elements
     let a = getSelectable(elem);
-    console.log(a.node)
-    // loop through all 'a' elements
-    for (i = 0; i < a.length; i++) {
-        // Remove the class 'active' if it exists
-        a[i].classList.remove('active')
-
+    if (a.classList.contains("slider")||a.classList.contains("selector")||a.classList.contains("color")){
+        removeKebab(a)
     }
-    // add 'active' classs to the element that was clicked
+    else {
+        getSlider(a)
+    }
     elem.classList.add('active');
+}
+function getSlider(elem) {
+    for (let x=0;x<elem.childNodes.length;x++){
+        if (elem.childNodes[x].classList.contains("slider")){
+            removeKebab(elem.childNodes[x])
+        }
+    }
+}
+function removeKebab(slider) {
+    for (let x=0;x<slider.childNodes.length;x++){
+        if (slider.childNodes[x].classList.contains("active")){
+            slider.childNodes[x].classList.remove("active")
+        }
+    }
+
 }
 function getSelectable(elem) {
     if (elem.parentElement.classList.contains("selectable")){

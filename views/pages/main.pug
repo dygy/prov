@@ -1,11 +1,11 @@
 link(rel='stylesheet', href='/style/style.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+script(src='../js/sendFeedback.js')
 include ../header
 block street
 div(class="title")
     h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ НАРУЖНОЙ РЕКЛАМЫ
-
 div(id="street")
         div(class="mark" id="one")
         div(class="mark" id="two")
@@ -342,15 +342,15 @@ block form
         div(id="form-one")
             div СДЕЛАТЬ ЗАКАЗ
         div(id="form-two")
-            input(placeholder="Ваше имя:")
-            input(placeholder="Компания:")
+            input(placeholder="Ваше имя:" id="name")
+            input(placeholder="Компания:" id="company")
         p
         div(id="form-three")
-            input(placeholder="Телефон:")
-            input(placeholder="E-mail:")
+            input(placeholder="Телефон:" id="phoneN" type="tel")
+            input(placeholder="E-mail:" id="email" type="email")
         p
         div(id="form-four")
-            textarea(placeholder="Комментарии:")
+            textarea(placeholder="Комментарии:" id="comment")
         div(id="form-five")
-            img(src="./img/send.png" class="sendF")
+            img(src="./img/send.png" class="sendF" onclick="sendFeedback()")
 include ../footer
