@@ -5,7 +5,7 @@ const router = express.Router();
 router.get('/polipv', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'СВЕТОВОЙ КОРОБ ИЗ ПОЛИКАРБОНАТА И ПВХ' ,
-        imgURL:'../img/lightTitle/1.png' ,
+        imgURL:['../img/lightTitle/polipv1.png' ,'../img/lightTitle/polipv2.png','../img/lightTitle/polipv3.png'],
         ul:["Срок службы — до 5 лет",
             "Яркость — низкая",
             "Глубина — 90мм, 130мм, 180мм",
@@ -23,7 +23,7 @@ router.get('/metkban', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' +
             'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' ,
-        imgURL:'../img/lightTitle/1.png' ,
+        imgURL:['../img/lightTitle/ban1.png' ,'../img/lightTitle/ban2.png','../img/lightTitle/ban3.png'],
         ul:["Срок службы — до 5 лет",
             "Яркость — средняя",
             "Оптимальная глубина — 150мм",
@@ -42,7 +42,7 @@ router.get('/metkban', function(req, res, next) {
 router.get('/akpvh', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'СВЕТОВОЙ КОРОБ ИЗ АКРИЛА И ПВХ' ,
-        imgURL:'../img/lightTitle/3.png' ,
+        imgURL:['../img/lightTitle/akpv1.png' ,'../img/lightTitle/akpv2.png','../img/lightTitle/akpv3.png'],
         ul:["Срок службы — до 10 лет",
             "Яркость —  высокая",
             "Оптимальная высота буквы — до 100 см",
@@ -61,7 +61,7 @@ router.get('/metkak', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' +
             'И АКРИЛОМ НА ЛИЦЕВОЙ ЧАСТИ' ,
-        imgURL:'../img/lightTitle/4.png' ,
+        imgURL:['../img/lightTitle/metak1.png' ,'../img/lightTitle/metak2.png','../img/lightTitle/metak3.png'],
         ul:["Срок службы — до 10 лет",
             "Яркость —  средняя",
             "Глубина — 90мм, 130мм, 180мм",
@@ -81,7 +81,7 @@ router.get('/metkpv', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' +
             'И ПВХ НА ЛИЦЕВОЙ ЧАСТИ' ,
-        imgURL:'../img/lightTitle/5.png' ,
+        imgURL:['../img/lightTitle/metpv1.png' ,'../img/lightTitle/metpv2.png','../img/lightTitle/metpv3.png'],
         ul:["Срок службы — до 2 лет",
             "Яркость —  средняя",
             "Глубина — 90мм, 130мм, 180мм",
@@ -99,7 +99,7 @@ router.get('/metsot', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' +
             'И СОТОВЫМ ПОЛИКАРБОНАТОМ НА ЛИЦЕВОЙ ЧАСТИ' ,
-        imgURL:'../img/lightTitle/6.png' ,
+        imgURL:['../img/lightTitle/metpol1.png' ,'../img/lightTitle/metpol2.png','../img/lightTitle/metpol3.png'],
         ul:["Срок службы — до 5 лет",
             "Яркость — низкая",
             "Глубина — 90мм, 130мм, 180мм",
@@ -120,7 +120,7 @@ router.get('/metsot', function(req, res, next) {
 router.get('/svetod', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'СВЕТОВОЙ КОРОБ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' ,
-        imgURL:'../img/lightTitle/7.png' ,
+        imgURL:['../img/lightTitle/svet1.png' ,'../img/lightTitle/svet2.png','../img/lightTitle/svet3.png'],
         ul:["Срок службы — до 10 лет",
             "Яркость —  высокая",
             "Оптимальная глубина — 70 мм",
@@ -138,7 +138,7 @@ router.get('/svetod', function(req, res, next) {
 router.get('/alum', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА С ПРОРЕЗКОЙ' ,
-        imgURL:'../img/lightTitle/8.png' ,
+        imgURL:['../img/lightTitle/komppr1.png' ,'../img/lightTitle/komppr2.png','../img/lightTitle/komppr3.png'],
         ul:["Срок службы — до 10 лет",
             "ЯЯркость — средняя",
             "Глубина — 50-100мм",
@@ -156,7 +156,7 @@ router.get('/alumprozak', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' +
             'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА' ,
-        imgURL:'../img/lightTitle/9.png' ,
+        imgURL:['../img/lightTitle/kompink1.png' ,'../img/lightTitle/kompink2.png','../img/lightTitle/kompink3.png'],
         ul:["Срок службы — до 10 лет",
             "Яркость —  высокая",
             "Глубина — 50-100мм",
