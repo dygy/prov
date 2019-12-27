@@ -30,16 +30,16 @@ block header
                 li(id="burger-li" class="scli")
                     img(src="../img/menu.png" id="burger" onclick="hideDropDown('dropdown')")
                     include ./dropdown/1
-                li( id="narT" onclick="hideDropDown('dropdown2')" class="scli")
+                li( id="narT" onmouseover="elem('dropdown').style.display='none'" onclick="hideDropDown('dropdown2')" class="scli")
                     span наружная реклама
                     include ./dropdown/2
-                li(id="intT" onclick="hideDropDown('dropdown3')" class="scli")
+                li(id="intT" onmouseover="elem('dropdown').style.display='none'" onclick="hideDropDown('dropdown3')" class="scli")
                     span интерьерная реклама
                     include ./dropdown/3
-                li(id="large-word" onclick="hideDropDown('dropdown4')" class="scli")
+                li(id="large-word" onmouseover="elem('dropdown').style.display='none'" onclick="hideDropDown('dropdown4')" class="scli")
                     span широкомофортная печать
                     include ./dropdown/4
-                li(id="uslugi" onclick="moveTo('/serves')" class="scli")
+                li(id="uslugi" onmouseover="elem('dropdown').style.display='none'"  onclick="moveTo('/serves')" class="scli")
                     span услуги
                     include ./dropdown/5
                 li(class="scli" onclick="moveTo('/portfolio')") портфолио
