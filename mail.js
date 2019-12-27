@@ -9,7 +9,7 @@ module.exports = (content)=> {
         console.log(err && err.stack);
         console.dir(reply);
     });
-}
+};
 function parseJSON(content) {
     let mail = '';
     if (content.name){
