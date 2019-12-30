@@ -27,6 +27,9 @@ body {
     flex-direction: row;
     margin-right: 0 !important;
     max-width: 100%; }
+    #header #first a {
+      color: white;
+      text-decoration: none; }
     #header #first div {
       margin: 0 6% 0 0;
       padding-top: 40px;
@@ -278,14 +281,26 @@ body {
   box-shadow: 1px 1px 5px black;
   padding-right: 20px; }
 
+#narT:hover #dropdown {
+  display: none !important; }
+
 #narT:hover #dropdown2 {
   display: flex !important; }
+
+#intT:hover #dropdown {
+  display: none !important; }
 
 #intT:hover #dropdown3 {
   display: flex !important; }
 
+#large-word:hover #dropdown {
+  display: none !important; }
+
 #large-word:hover #dropdown4 {
   display: flex !important; }
+
+#uslugi:hover #dropdown {
+  display: none !important; }
 
 #uslugi:hover #dropdown5 {
   display: flex !important; }
@@ -305,6 +320,7 @@ body {
 #dropdown {
   padding-bottom: 20px;
   padding-top: 20px;
+  box-shadow: 1px 1px 5px black;
   left: 0px;
   top: 160px;
   flex-wrap: wrap;
@@ -372,6 +388,7 @@ body {
 
 .brd {
   margin: 0 0 10px 0 !important;
+  padding: 5px;
   border: 2px solid  #FDB13E; }
 
 #footer {

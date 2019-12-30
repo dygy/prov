@@ -1,8 +1,8 @@
 p тип изделия
     div(class="selector selectable")
-        div(class="elem" onclick="request.type='фреймлайт'") фреймлайт
-        div(class="elem" onclick="request.type='кристаллайт'") кристаллайт
-        div(class="elem" onclick="request.type='магнетик'") магнетик
+        div(class="elem" onclick="request.type='фреймлайт';addClass(this)") фреймлайт
+        div(class="elem" onclick="request.type='кристаллайт';addClass(this)") кристаллайт
+        div(class="elem" onclick="request.type='магнетик';addClass(this)") магнетик
     p особенности:
     div(class="selector selectable")
         div(class="elem" onclick="request.osob='подвесной';addClass(this)") подвесной

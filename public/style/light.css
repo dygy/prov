@@ -22,14 +22,26 @@
   box-shadow: 1px 1px 5px black;
   padding-right: 20px; }
 
+#narT:hover #dropdown {
+  display: none !important; }
+
 #narT:hover #dropdown2 {
   display: flex !important; }
+
+#intT:hover #dropdown {
+  display: none !important; }
 
 #intT:hover #dropdown3 {
   display: flex !important; }
 
+#large-word:hover #dropdown {
+  display: none !important; }
+
 #large-word:hover #dropdown4 {
   display: flex !important; }
+
+#uslugi:hover #dropdown {
+  display: none !important; }
 
 #uslugi:hover #dropdown5 {
   display: flex !important; }
@@ -49,6 +61,7 @@
 #dropdown {
   padding-bottom: 20px;
   padding-top: 20px;
+  box-shadow: 1px 1px 5px black;
   left: 0px;
   top: 160px;
   flex-wrap: wrap;

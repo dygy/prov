@@ -16,10 +16,13 @@ block header
             div(id="phone")
                 img(src="/img/phone.png")
                 div
-                    mini 8 (495)
-                    bold 728-09-56
+                    mini
+                        a(href="tel:+74957280956") 8 (495)
+                    bold
+                        a(href="tel:+74957280956") 728-09-56
                     br
-                    mini info@provyvesky.ru
+                    mini
+                        a(href="mailto:info@provyvesky.ru") info@provyvesky.ru
 
             div(id="search")
                 div
@@ -42,5 +45,7 @@ block header
                 li(id="uslugi" onmouseover="elem('dropdown').style.display='none'"  onclick="moveTo('/serves')" class="scli")
                     span услуги
                     include ./dropdown/5
-                li(class="scli" onclick="moveTo('/portfolio')") портфолио
-                li(id="contact" onclick="moveTo('/contacts')" class="scli") контакты
+                li(class="scli" onclick="moveTo('/portfolio')")
+                    span портфолио
+                li(id="contact" onclick="moveTo('/contacts')" class="scli")
+                    span контакты
