@@ -326,7 +326,7 @@ body {
   padding-top: 30px;
   width: 26% !important;
   height: 40px;
-  margin-right: 0 !important; }
+  margin-right: 5px !important; }
   #search div {
     width: 100% !important;
     background: white;
@@ -590,7 +590,7 @@ body {
 
 @media (min-width: 1500px) {
   #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
-    top: 215px !important; } }
+    top: 212px !important; } }
 
 @media (min-width: 1700px) {
   #dropdown2, #dropdown3, #dropdown4 {
@@ -742,13 +742,17 @@ body {
 
 @media (max-width: 1152px) {
   #ftr-frst div {
-    margin: 40px 3% 0 0 !important; } }
+    margin: 40px 3% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; } }
 
 @media (max-width: 1069px) {
   #footer #ftr-frst .phone {
     margin-left: -10vw !important; }
   #ftr-frst div {
     margin: 40px 2% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -759,6 +763,8 @@ body {
     margin: 0 0.7% 0 0 !important; }
   #ftr-frst div {
     margin: 40px 1% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -799,14 +805,14 @@ body {
   #footer #ftr-frst .phone {
     margin-left: 10px !important; } }
 
-.title {
+.title, #title {
   margin-top: 10px;
   display: flex;
   text-align: center;
   justify-content: center; }
-  .title h1, .title h2 {
+  .title h1, .title h2, #title h1, #title h2 {
     font-family: GeomB !important; }
-  .title .calc {
+  .title .calc, #title .calc {
     background: #72d7cf;
     width: 15% !important;
     min-width: 170px;
@@ -814,7 +820,7 @@ body {
     height: 4vw !important;
     max-width: 220px;
     max-height: 50px; }
-  .title .buttonImg {
+  .title .buttonImg, #title .buttonImg {
     margin-left: 7% !important;
     width: 15% !important;
     height: 4vw !important;
@@ -826,12 +832,12 @@ body {
   height: 550px !important; }
 
 .smth h3 {
+  text-align: center;
   padding-left: 30px; }
 
-.smth button {
-  margin-top: 30px; }
-
 .smth .calc {
+  margin-top: 30px;
+  background: #72d7cf;
   margin-left: 20%; }
 
 .smth .buy-tel {

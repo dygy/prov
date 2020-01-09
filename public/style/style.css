@@ -109,7 +109,7 @@
 
 @media (min-width: 1500px) {
   #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
-    top: 215px !important; } }
+    top: 212px !important; } }
 
 @media (min-width: 1700px) {
   #dropdown2, #dropdown3, #dropdown4 {
@@ -520,13 +520,17 @@ body {
 
 @media (max-width: 1152px) {
   #ftr-frst div {
-    margin: 40px 3% 0 0 !important; } }
+    margin: 40px 3% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; } }
 
 @media (max-width: 1069px) {
   #footer #ftr-frst .phone {
     margin-left: -10vw !important; }
   #ftr-frst div {
     margin: 40px 2% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -537,6 +541,8 @@ body {
     margin: 0 0.7% 0 0 !important; }
   #ftr-frst div {
     margin: 40px 1% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -1184,14 +1190,14 @@ body {
   #passport #circus div #callI {
     margin: 0 0 0 29px !important; } }
 
-.title {
+.title, #title {
   margin-top: 10px;
   display: flex;
   text-align: center;
   justify-content: center; }
-  .title h1, .title h2 {
+  .title h1, .title h2, #title h1, #title h2 {
     font-family: GeomB !important; }
-  .title .calc {
+  .title .calc, #title .calc {
     background: #72d7cf;
     width: 15% !important;
     min-width: 170px;
@@ -1199,7 +1205,7 @@ body {
     height: 4vw !important;
     max-width: 220px;
     max-height: 50px; }
-  .title .buttonImg {
+  .title .buttonImg, #title .buttonImg {
     margin-left: 7% !important;
     width: 15% !important;
     height: 4vw !important;

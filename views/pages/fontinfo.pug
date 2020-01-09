@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/fontsale.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 
 div(id="flex-cont")
@@ -9,13 +10,19 @@ div(id="flex-cont")
     div(id="flex-info")
         div(id="info")
             ul
-                li=ul[0]
-                li=ul[1]
-                li=ul[2]
-                li=ul[3]
-                li=ul[4]
-                li=ul[5]
+                if typeof ul[0] === "string"
+                    li=ul[0]
+                if typeof ul[1] === "string"
+                    li=ul[1]
+                if typeof ul[2] === "string"
+                    li=ul[2]
+                if typeof ul[3] === "string"
+                    li=ul[3]
+                if typeof ul[4] === "string"
+                    li=ul[4]
                 if typeof ul[5] === "string"
+                    li=ul[5]
+                if typeof ul[6] === "string"
                     li=ul[6]
             table
                 tr(class="main blue")
@@ -78,8 +85,11 @@ div(id="flex-cont")
             strong Обьемные буквы
             p из орг. стекла с лицевой подсветко
             price ≈ 15.000 руб
-script.
-    elems("calc")[0].onclick= function (){moveTo('#{calcURL}')}
-
+if calcURL
+    script.
+        elems("calc")[0].onclick= function (){moveTo('#{calcURL}')}
+else
+    script.
+        elems("calc")[0].onclick= function (){displaySell()}
 
 include ../footer

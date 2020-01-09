@@ -367,7 +367,7 @@ body {
 
 @media (min-width: 1500px) {
   #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
-    top: 215px !important; } }
+    top: 212px !important; } }
 
 @media (min-width: 1700px) {
   #dropdown2, #dropdown3, #dropdown4 {
@@ -519,13 +519,17 @@ body {
 
 @media (max-width: 1152px) {
   #ftr-frst div {
-    margin: 40px 3% 0 0 !important; } }
+    margin: 40px 3% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; } }
 
 @media (max-width: 1069px) {
   #footer #ftr-frst .phone {
     margin-left: -10vw !important; }
   #ftr-frst div {
     margin: 40px 2% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -536,6 +540,8 @@ body {
     margin: 0 0.7% 0 0 !important; }
   #ftr-frst div {
     margin: 40px 1% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
