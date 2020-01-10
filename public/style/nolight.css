@@ -1,11 +1,71 @@
 @import url(kron.css);
+#dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  text-transform: none;
+  text-align: left;
+  color: black;
+  background: rgba(255, 255, 255, 0.95);
+  display: none;
+  z-index: 6;
+  top: 155px;
+  position: fixed; }
+  #dropdown li, #dropdown2 li, #dropdown3 li, #dropdown4 li, #dropdown5 li {
+    list-style: disc !important;
+    margin: auto !important;
+    user-select: auto !important;
+    padding-bottom: 20px; }
+  #dropdown li:hover, #dropdown2 li:hover, #dropdown3 li:hover, #dropdown4 li:hover, #dropdown5 li:hover {
+    color: #FDB13E; }
+
+#dropdown2, #dropdown3, #dropdown4, #dropdown5 {
+  box-shadow: 1px 1px 5px black;
+  padding-right: 20px; }
+
+#narT:hover #dropdown {
+  display: none !important; }
+
+#narT:hover #dropdown2 {
+  display: flex !important; }
+
+#intT:hover #dropdown {
+  display: none !important; }
+
+#intT:hover #dropdown3 {
+  display: flex !important; }
+
+#large-word:hover #dropdown {
+  display: none !important; }
+
+#large-word:hover #dropdown4 {
+  display: flex !important; }
+
+#uslugi:hover #dropdown {
+  display: none !important; }
+
+#uslugi:hover #dropdown5 {
+  display: flex !important; }
+
+#dropdown2 {
+  margin-left: -30px; }
+
+#dropdown3 {
+  margin-left: -10px; }
+
+#dropdown4 {
+  margin-left: -20px; }
+
+#dropdown5 {
+  margin-left: -70px; }
+
 #dropdown {
   padding-bottom: 20px;
   padding-top: 20px;
-  display: none;
-  z-index: 4;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 1px 5px black;
+  left: 0px;
+  top: 160px;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%; }
@@ -14,13 +74,19 @@
   #dropdown ul {
     margin: 0 10% 0 0; }
     #dropdown ul li span {
-      font-size: 18px !important;
+      font-size: 19px !important;
       font-weight: 900 !important;
       font-family: Geom , serif !important;
       position: relative;
       left: 20px; }
-    #dropdown ul li:hover {
-      color: #FDB13E; }
+
+@media (min-width: 1249px) {
+  #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
+    top: 215px !important; } }
+
+@media (min-width: 1470px) {
+  #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
+    top: 210px !important; } }
 
 @media (max-width: 1470px) {
   #dropdown ul {
@@ -42,9 +108,24 @@
   #dropdown ul {
     margin: 10px 1% 0 0 !important; } }
 
+@media (min-width: 1500px) {
+  #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
+    top: 212px !important; } }
+
+@media (max-width: 715px) {
+  #dropdown {
+    top: 150px; } }
+
+@media (max-width: 616px) {
+  #dropdown {
+    top: 118px;
+    font-size: 12px; } }
+
 @media (min-width: 1700px) {
+  #dropdown2, #dropdown3, #dropdown4 {
+    margin-left: 0 !important; }
   #dropdown ul {
-    margin: 10px 13% 0 0 !important; }
+    margin: 10px 10% 0 0 !important; }
     #dropdown ul li span {
       font-size: 1.1vw !important; }
   #dropdown #lastUL {
@@ -58,14 +139,22 @@
   font-family: "GeomB";
   src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
 
+html {
+  overflow-x: hidden; }
+
 body {
+  margin-left: -2px;
+  margin-top: 150px;
   max-width: 100%;
   width: 100vw;
-  margin: 0;
   font-family: "Geom", serif !important;
   font-weight: 900; }
 
 #header {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0px;
   color: white;
   background: black;
   width: 100%; }
@@ -74,6 +163,9 @@ body {
     flex-direction: row;
     margin-right: 0 !important;
     max-width: 100%; }
+    #header #first a {
+      color: white;
+      text-decoration: none; }
     #header #first div {
       margin: 0 6% 0 0;
       padding-top: 40px;
@@ -94,7 +186,7 @@ body {
     display: table;
     width: 100%;
     max-width: 100%; }
-    #header #second ul {
+    #header #second .scul {
       margin-top: 0px;
       margin-bottom: 0px;
       text-align: center;
@@ -104,18 +196,18 @@ body {
       display: inline-flex;
       list-style: none;
       text-transform: uppercase; }
-      #header #second ul li {
+      #header #second .scul .scli {
         font-weight: 500 !important;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
         margin: 0 3% 0 0; }
-        #header #second ul li img {
-          margin-left: 80%;
-          width: 40px;
-          height: 40px; }
-      #header #second ul li:hover {
+      #header #second .scul img {
+        margin-left: 80%;
+        width: 40px;
+        height: 40px; }
+      #header #second .scul span:hover {
         font-family: GeomB !important;
         font-weight: 900 !important;
         text-shadow: 1px 0px 3px whitesmoke; }
@@ -147,7 +239,7 @@ body {
   padding-top: 30px;
   width: 26% !important;
   height: 40px;
-  margin-right: 0 !important; }
+  margin-right: 5px !important; }
   #search div {
     width: 100% !important;
     background: white;
@@ -171,17 +263,17 @@ body {
     font-size: 16px !important; }
   #header mini {
     font-size: 12px !important; }
-  #header li {
+  #header .scli {
     font-size: 13px !important; } }
 
 @media (max-width: 846px) {
   #first #logo-warp {
     margin: 0 0 0 0 !important; }
-  #second ul li {
+  #second ul .scli {
     font-size: 13px !important;
     margin: 0 15px 0 0  !important;
     width: 87px; }
-    #second ul li img {
+    #second ul .scli img {
       margin-left: 10% !important; }
   #second ul #contact {
     margin: 0 0 0 0 !important; }
@@ -193,7 +285,7 @@ body {
 @media (max-width: 716px) {
   #burger-li img {
     margin-top: -5px !important; }
-  #second ul li {
+  #second ul .scli {
     font-size: 11px !important;
     margin: 0 4px 0 1%  !important; }
   #second ul #large-word {
@@ -237,6 +329,8 @@ body {
     font-size: 25px !important; } }
 
 @media (min-width: 1249px) {
+  body {
+    margin-top: 220px; }
   #logo {
     background-size: 100% 100%;
     height: 120px !important;
@@ -247,13 +341,13 @@ body {
       font-size: 25px !important; }
   #second {
     margin-top: 30px; }
-    #second ul li {
+    #second ul .scli {
       margin: 0 4% 0 0 !important;
       font-size: 20px !important; }
-      #second ul li img {
-        margin-top: 2px;
-        height: 50px !important;
-        width: 50px !important; }
+    #second ul img {
+      margin-top: 2px;
+      height: 50px !important;
+      width: 50px !important; }
     #second ul #contact {
       margin-right: 20px !important; } }
 
@@ -282,14 +376,14 @@ body {
       width: 26px !important; }
   #second {
     margin-top: 30px; }
-    #second ul li {
+    #second ul .scli {
       margin: 0 7% 0 0 !important;
       font-size: 17px !important; }
-      #second ul li img {
-        margin-left: 15px !important;
-        margin-top: -13px;
-        height: 60px !important;
-        width: 60px !important; }
+    #second ul img {
+      margin-left: 15px !important;
+      margin-top: -13px;
+      height: 60px !important;
+      width: 60px !important; }
     #second ul #contact {
       margin-right: 20px !important; } }
 
@@ -306,12 +400,17 @@ body {
 .lowscreen {
   display: none; }
 
+.brd {
+  margin: 0 0 10px 0 !important;
+  padding: 5px;
+  border: 2px solid  #FDB13E; }
+
 #footer {
   position: relative;
   bottom: 0;
   color: white;
   background: black;
-  width: 100%;
+  width: 100vw;
   min-height: 470px; }
   #footer #ftr-frst {
     font-weight: 900;
@@ -434,13 +533,17 @@ body {
 
 @media (max-width: 1152px) {
   #ftr-frst div {
-    margin: 40px 3% 0 0 !important; } }
+    margin: 40px 3% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; } }
 
 @media (max-width: 1069px) {
   #footer #ftr-frst .phone {
     margin-left: -10vw !important; }
   #ftr-frst div {
     margin: 40px 2% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -451,6 +554,8 @@ body {
     margin: 0 0.7% 0 0 !important; }
   #ftr-frst div {
     margin: 40px 1% 0 0 !important; }
+  #ftr-frst .brd {
+    margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
     font-size: 25px; }
   #ftr-frst button {
@@ -460,7 +565,7 @@ body {
 
 @media (max-width: 944px) {
   #footer #ftr-frst .phone {
-    margin-left: 14vw !important; }
+    margin-left: 19.5vw !important; }
   #map {
     display: none; }
   #soc {
@@ -473,11 +578,13 @@ body {
     margin-left: 5% !important; } }
 
 @media (max-width: 778px) {
+  #ftr-scnd #info ul {
+    padding-left: 20px !important; }
   #ftr-scnd #map img {
     width: 200px !important;
     height: 100px !important; }
-  #ftr-frst #faq ul h4 {
-    width: 170px !important; }
+  #ftr-frst #faq h4 {
+    margin-left: 1.2em !important; }
   #ftr-frst ul {
     padding-left: 20px !important; }
   phone {
@@ -487,9 +594,9 @@ body {
   adr {
     font-size: 14px !important; } }
 
-@media (max-width: 530px) {
-  #footer #ftr-frst .phone {
-    margin-left: 10px !important; } }
+@media (max-width: 600px) {
+  #footer {
+    display: none; } }
 
 table {
   border-spacing: 10px 0;
@@ -738,11 +845,12 @@ button {
     bottom: -93%; } }
 
 table {
+  margin-bottom: 50px;
   font-weight: 900; }
   table tr {
     width: 100%; }
   table tbody {
-    margin-left: 15%;
+    margin-left: 12.5%;
     margin-right: 15%;
     width: 80%; }
     table tbody td {

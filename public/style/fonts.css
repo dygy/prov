@@ -1,12 +1,13 @@
 #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
   width: auto;
+  justify-content: center;
+  align-items: center;
   padding-top: 20px;
   text-transform: none;
   text-align: left;
   color: black;
   background: rgba(255, 255, 255, 0.95);
   display: none;
-  justify-content: center;
   z-index: 6;
   top: 155px;
   position: fixed; }
@@ -110,6 +111,15 @@
   #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
     top: 212px !important; } }
 
+@media (max-width: 715px) {
+  #dropdown {
+    top: 150px; } }
+
+@media (max-width: 616px) {
+  #dropdown {
+    top: 118px;
+    font-size: 12px; } }
+
 @media (min-width: 1700px) {
   #dropdown2, #dropdown3, #dropdown4 {
     margin-left: 0 !important; }
@@ -127,6 +137,10 @@
 @font-face {
   font-family: "GeomB";
   src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
+
+html {
+  overflow-x: hidden;
+  text-align: justify; }
 
 body {
   margin-left: -2px;
@@ -396,7 +410,7 @@ body {
   bottom: 0;
   color: white;
   background: black;
-  width: 100%;
+  width: 100vw;
   min-height: 470px; }
   #footer #ftr-frst {
     font-weight: 900;
@@ -551,7 +565,7 @@ body {
 
 @media (max-width: 944px) {
   #footer #ftr-frst .phone {
-    margin-left: 14vw !important; }
+    margin-left: 19.5vw !important; }
   #map {
     display: none; }
   #soc {
@@ -564,11 +578,13 @@ body {
     margin-left: 5% !important; } }
 
 @media (max-width: 778px) {
+  #ftr-scnd #info ul {
+    padding-left: 20px !important; }
   #ftr-scnd #map img {
     width: 200px !important;
     height: 100px !important; }
-  #ftr-frst #faq ul h4 {
-    width: 170px !important; }
+  #ftr-frst #faq h4 {
+    margin-left: 1.2em !important; }
   #ftr-frst ul {
     padding-left: 20px !important; }
   phone {
@@ -578,9 +594,9 @@ body {
   adr {
     font-size: 14px !important; } }
 
-@media (max-width: 530px) {
-  #footer #ftr-frst .phone {
-    margin-left: 10px !important; } }
+@media (max-width: 600px) {
+  #footer {
+    display: none; } }
 
 table {
   border-spacing: 10px 0;
@@ -635,39 +651,38 @@ button {
     justify-content: center;
     flex-wrap: wrap; }
 
-#smth {
-  margin-right: 14%;
-  margin-left: 14%;
+#smth, .smth {
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex; }
-  #smth li {
+  #smth li, .smth li {
     list-style-position: outside;
     margin-left: 1em;
     margin-top: 5px;
     list-style-type: circle; }
-  #smth .smthImg {
+  #smth .smthImg, .smth .smthImg {
     min-width: 400px;
     height: 500px; }
-  #smth div {
+  #smth div, .smth div {
     margin-left: 15px; }
-    #smth div ul {
+    #smth div ul, .smth div ul {
       margin-top: 0px !important; }
-    #smth div p {
+    #smth div p, .smth div p {
       margin-bottom: 0px;
       font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
-      padding-right: 40px;
       font-size: 20px; }
-    #smth div div {
+    #smth div div, .smth div div {
       display: flex;
       justify-content: center; }
-    #smth div .calc {
+    #smth div .calc, .smth div .calc {
       margin-top: 5% !important;
       width: 25% !important;
       height: 3vw !important; }
-    #smth div .buttonImg {
+    #smth div .buttonImg, .smth div .buttonImg {
       margin-top: 5%;
       max-width: 25% !important;
       max-height: 25% !important;
@@ -899,6 +914,7 @@ table tbody {
 #flex-box {
   justify-content: center;
   margin-top: 40px;
+  margin-right: 6%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -924,6 +940,10 @@ table tbody {
       height: 30px;
       border: none;
       background-color: #ffb800; }
+
+#smth {
+  margin-left: 12%;
+  margin-right: 11%; }
 
 .smthImg {
   bottom: 90px !important;
@@ -958,7 +978,7 @@ table tbody {
     table tbody {
       height: 100%; }
   #font-flex, #flex-box {
-    margin: 150px 18%;
+    margin: 160px 18%;
     transform: scale(1.4); } }
 
 /*# sourceMappingURL=fonts.css.map */

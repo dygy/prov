@@ -192,14 +192,14 @@
     justify-content: center;
     bottom: -93%; } }
 
-.title {
+.title, #title {
   margin-top: 10px;
   display: flex;
   text-align: center;
   justify-content: center; }
-  .title h1, .title h2 {
+  .title h1, .title h2, #title h1, #title h2 {
     font-family: GeomB !important; }
-  .title .calc {
+  .title .calc, #title .calc {
     background: #72d7cf;
     width: 15% !important;
     min-width: 170px;
@@ -207,7 +207,7 @@
     height: 4vw !important;
     max-width: 220px;
     max-height: 50px; }
-  .title .buttonImg {
+  .title .buttonImg, #title .buttonImg {
     margin-left: 7% !important;
     width: 15% !important;
     height: 4vw !important;

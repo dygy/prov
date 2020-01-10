@@ -40,39 +40,38 @@ body {
   overflow: hidden;
   z-index: 8;
   background-color: rgba(73, 73, 73, 0.51); }
-  #full-page #smth {
-    margin-right: 14%;
-    margin-left: 14%;
+  #full-page #smth, #full-page .smth {
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 20px;
     margin-bottom: 40px;
     display: flex; }
-    #full-page #smth li {
+    #full-page #smth li, #full-page .smth li {
       list-style-position: outside;
       margin-left: 1em;
       margin-top: 5px;
       list-style-type: circle; }
-    #full-page #smth .smthImg {
+    #full-page #smth .smthImg, #full-page .smth .smthImg {
       min-width: 400px;
       height: 500px; }
-    #full-page #smth div {
+    #full-page #smth div, #full-page .smth div {
       margin-left: 15px; }
-      #full-page #smth div ul {
+      #full-page #smth div ul, #full-page .smth div ul {
         margin-top: 0px !important; }
-      #full-page #smth div p {
+      #full-page #smth div p, #full-page .smth div p {
         margin-bottom: 0px;
         font-weight: 300;
         margin-top: 0;
         padding-left: 30px;
-        padding-right: 40px;
         font-size: 20px; }
-      #full-page #smth div div {
+      #full-page #smth div div, #full-page .smth div div {
         display: flex;
         justify-content: center; }
-      #full-page #smth div .calc {
+      #full-page #smth div .calc, #full-page .smth div .calc {
         margin-top: 5% !important;
         width: 25% !important;
         height: 3vw !important; }
-      #full-page #smth div .buttonImg {
+      #full-page #smth div .buttonImg, #full-page .smth div .buttonImg {
         margin-top: 5%;
         max-width: 25% !important;
         max-height: 25% !important;

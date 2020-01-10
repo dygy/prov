@@ -1,12 +1,13 @@
 #dropdown, #dropdown2, #dropdown3 , #dropdown4, #dropdown5
   width: auto
+  justify-content: center
+  align-items: center
   padding-top: 20px
   text-transform: none
   text-align: left
   color: black
   background: rgba(255, 255, 255, 0.95)
   display: none
-  justify-content: center
   z-index: 6
   top: 155px
   position: fixed
@@ -115,7 +116,13 @@
     //left: 44%
   #dropdown5
     //left: 61%
-
+@media ( max-width : 715px )
+  #dropdown
+    top: 150px
+@media ( max-width : 616px )
+  #dropdown
+    top: 118px
+    font-size: 12px
 @media ( min-width : 1700px )
   #dropdown2,  #dropdown3,  #dropdown4
     margin-left: 0!important

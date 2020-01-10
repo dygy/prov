@@ -12,7 +12,7 @@
   bottom: 0
   color: white
   background: black
-  width: 100%
+  width: 100vw
   min-height: 470px
   #ftr-frst
     font-weight: 900
@@ -184,7 +184,7 @@
   #footer
     #ftr-frst
       .phone
-        margin-left: 14vw!important
+        margin-left: 19.5vw!important
 
   #map
     display: none
@@ -201,15 +201,17 @@
         margin-left: 5%!important
 @media ( max-width : 778px )
   #ftr-scnd
+    #info
+      ul
+        padding-left: 20px!important
     #map
       img
         width: 200px !important
         height: 100px !important
   #ftr-frst
     #faq
-      ul
-        h4
-          width: 170px !important
+      h4
+        margin-left: 1.2em!important
     ul
       padding-left: 20px !important
   phone
@@ -218,8 +220,6 @@
     font-size: 14px !important
   adr
     font-size: 14px !important
-@media ( max-width : 530px )
+@media ( max-width : 600px )
   #footer
-    #ftr-frst
-      .phone
-        margin-left: 10px!important
+    display: none
