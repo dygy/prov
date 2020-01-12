@@ -652,6 +652,8 @@ button {
     flex-wrap: wrap; }
 
 #smth, .smth {
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex; }

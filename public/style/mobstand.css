@@ -1,12 +1,13 @@
 #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
   width: auto;
+  justify-content: center;
+  align-items: center;
   padding-top: 20px;
   text-transform: none;
   text-align: left;
   color: black;
   background: rgba(255, 255, 255, 0.95);
   display: none;
-  justify-content: center;
   z-index: 6;
   top: 155px;
   position: fixed; }
@@ -110,6 +111,15 @@
   #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
     top: 212px !important; } }
 
+@media (max-width: 715px) {
+  #dropdown {
+    top: 150px; } }
+
+@media (max-width: 616px) {
+  #dropdown {
+    top: 118px;
+    font-size: 12px; } }
+
 @media (min-width: 1700px) {
   #dropdown2, #dropdown3, #dropdown4 {
     margin-left: 0 !important; }
@@ -127,6 +137,10 @@
 @font-face {
   font-family: "GeomB";
   src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
+
+html {
+  overflow-x: hidden;
+  text-align: justify; }
 
 body {
   margin-left: -2px;
@@ -396,7 +410,7 @@ body {
   bottom: 0;
   color: white;
   background: black;
-  width: 100%;
+  width: 100vw;
   min-height: 470px; }
   #footer #ftr-frst {
     font-weight: 900;
@@ -551,7 +565,7 @@ body {
 
 @media (max-width: 944px) {
   #footer #ftr-frst .phone {
-    margin-left: 14vw !important; }
+    margin-left: 19.5vw !important; }
   #map {
     display: none; }
   #soc {
@@ -564,11 +578,13 @@ body {
     margin-left: 5% !important; } }
 
 @media (max-width: 778px) {
+  #ftr-scnd #info ul {
+    padding-left: 20px !important; }
   #ftr-scnd #map img {
     width: 200px !important;
     height: 100px !important; }
-  #ftr-frst #faq ul h4 {
-    width: 170px !important; }
+  #ftr-frst #faq h4 {
+    margin-left: 1.2em !important; }
   #ftr-frst ul {
     padding-left: 20px !important; }
   phone {
@@ -578,9 +594,9 @@ body {
   adr {
     font-size: 14px !important; } }
 
-@media (max-width: 530px) {
-  #footer #ftr-frst .phone {
-    margin-left: 10px !important; } }
+@media (max-width: 600px) {
+  #footer {
+    display: none; } }
 
 table {
   border-spacing: 10px 0;

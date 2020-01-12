@@ -1,4 +1,19 @@
 @import "tables.css"
+.flex-page
+  display: flex
+  flex-flow: column
+  justify-content: center
+  margin-left: 15%
+  margin-right: 15%
+  #font-flex,#flex-box
+    margin-left: 0
+    margin-right: 0
+    justify-content: space-between
+    .elem
+      margin: 10px 0 0 0 !important
+  #smth
+    margin-left: 0
+    margin-right: 0
 
 .smthImg
   min-width: 450px!important
@@ -20,6 +35,8 @@
   .elem
     margin: 10px 5% !important
 @media (min-width: 1700px)
+  #flex-box
+    max-width: 100%!important
+    margin: 130px 10% !important
   #font-flex
-    margin-top: 150px!important
-    margin-bottom: 200px!important
+    margin: 150px 10% 200px !important

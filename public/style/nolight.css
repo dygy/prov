@@ -140,7 +140,8 @@
   src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
 
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  text-align: justify; }
 
 body {
   margin-left: -2px;
@@ -651,39 +652,38 @@ button {
     justify-content: center;
     flex-wrap: wrap; }
 
-#smth {
-  margin-right: 14%;
-  margin-left: 14%;
+#smth, .smth {
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex; }
-  #smth li {
+  #smth li, .smth li {
     list-style-position: outside;
     margin-left: 1em;
     margin-top: 5px;
     list-style-type: circle; }
-  #smth .smthImg {
+  #smth .smthImg, .smth .smthImg {
     min-width: 400px;
     height: 500px; }
-  #smth div {
+  #smth div, .smth div {
     margin-left: 15px; }
-    #smth div ul {
+    #smth div ul, .smth div ul {
       margin-top: 0px !important; }
-    #smth div p {
+    #smth div p, .smth div p {
       margin-bottom: 0px;
       font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
-      padding-right: 40px;
       font-size: 20px; }
-    #smth div div {
+    #smth div div, .smth div div {
       display: flex;
       justify-content: center; }
-    #smth div .calc {
+    #smth div .calc, .smth div .calc {
       margin-top: 5% !important;
       width: 25% !important;
       height: 3vw !important; }
-    #smth div .buttonImg {
+    #smth div .buttonImg, .smth div .buttonImg {
       margin-top: 5%;
       max-width: 25% !important;
       max-height: 25% !important;
@@ -844,15 +844,28 @@ button {
     justify-content: center;
     bottom: -93%; } }
 
+.flex-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%; }
+  .flex-page #smth {
+    margin-left: 0;
+    margin-right: 0; }
+  .flex-page #flex-box {
+    margin-left: 0;
+    margin-right: 0; }
+
 table {
+  margin-left: -1%;
+  margin-right: -1%;
   margin-bottom: 50px;
   font-weight: 900; }
   table tr {
     width: 100%; }
   table tbody {
-    margin-left: 12.5%;
-    margin-right: 15%;
-    width: 80%; }
+    width: 102%; }
     table tbody td {
       width: 84%; }
     table tbody .price {
@@ -861,5 +874,9 @@ table {
 #smth .smthImg {
   min-width: 500px !important;
   height: 550px !important; }
+
+@media (min-width: 1770px) {
+  #flex-box {
+    margin: 150px 12% 150px 9% !important; } }
 
 /*# sourceMappingURL=nolight.css.map */

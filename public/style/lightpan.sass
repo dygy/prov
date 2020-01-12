@@ -3,13 +3,21 @@
 @import "everypage/footer"
 @import "everypage/smth"
 @import "everypage/button"
+.flex-page
+  display: flex
+  flex-flow: column
+  justify-content: center
+  margin-left: 15%
+  margin-right: 15%
+  #smth
+    margin-left: 0
+    margin-right: 0
 .smthImg
   min-width: 300px!important
   height: 300px!important
 space
   margin-left: 5px
   margin-right: 5px
-
 .calc
   background-color: #ffffff
   height: 35px!important
@@ -32,10 +40,7 @@ space
   max-width: 100%
   .elem
     padding-bottom: 10px
-    max-width: 700px
-    padding-right: 30px
-    background: #ededed
-    margin: 15px
+    max-width: 700vw
     display: flex
     flex-flow: row!important
     justify-content: center
@@ -52,9 +57,9 @@ space
       display: flex
       flex-flow: column
       p
+        text-align: justify
         margin-top: 20px
         margin-left: 10px
-        margin-right: 10px
     img
       width: 300px
       height: 300px
@@ -63,10 +68,10 @@ space
       padding-left: 10px
       font-size: 12px
     div
-      margin-left: 10px
       text-align: center
       margin-top: 3px
     .imgflex
+      margin-left: -20px
       display: flex
       flex-flow: column
       justify-content: flex-start
@@ -81,6 +86,7 @@ space
     .calc
       width: auto
       font: 13.333px Geom
+      background: rgba(234,235,236,0.81)
       color: black
       position: relative
       left: -5px
@@ -90,11 +96,9 @@ space
       background-color: #FCB600
 
 #flex-box
-  justify-content: center
-  margin-left: 3%
+  justify-content: space-between
   margin-top: 40px
   display: flex
-  flex-wrap: wrap
   flex-direction: row
   max-width: 100%
   padding-bottom: 40px
@@ -108,7 +112,6 @@ space
     flex-flow: column
     text-align: center
     justify-content: center
-    margin: 0px 4% 10px
     div
       margin-top: 15px
     price
@@ -130,4 +133,4 @@ space
     transform: scale(1.4)
     margin: 300px 15%
   #flex-box
-    margin: 100px 15% 20px
+    margin: 100px 13% 20px 16%
