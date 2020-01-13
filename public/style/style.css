@@ -894,6 +894,7 @@ body {
   color: whitesmoke;
   min-height: 25vw; }
   #promise #promise-text {
+    text-align: left;
     font-family: GeomB;
     padding-bottom: 6%;
     margin-left: 10%;
