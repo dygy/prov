@@ -141,6 +141,8 @@
 html {
   overflow-x: hidden;
   text-align: justify; }
+  html li {
+    text-align: match-parent !important; }
 
 body {
   margin-left: -2px;

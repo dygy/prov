@@ -15,6 +15,7 @@
   #smth div, .smth div {
     margin-left: 15px; }
     #smth div ul, .smth div ul {
+      padding-left: 30px;
       margin-top: 0px !important; }
     #smth div p, .smth div p {
       margin-bottom: 0px;
@@ -231,6 +232,8 @@ button {
 html {
   overflow-x: hidden;
   text-align: justify; }
+  html li {
+    text-align: match-parent !important; }
 
 body {
   margin-left: -2px;

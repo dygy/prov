@@ -4,6 +4,23 @@
 @import "everypage/table"
 @import "everypage/button"
 @import "everypage/smth"
+
+.flex-page
+  display: flex
+  flex-flow: column
+  justify-content: center
+  margin-left: 15%
+  margin-right: 15%
+  #font-flex,#flex-box
+    margin-left: 0
+    margin-right: 0
+    justify-content: space-between
+    .elem
+      margin: 10px 0 0 0 !important
+  #smth
+    margin-left: 0
+    margin-right: 0
+
 .lupa
   height: 15px
   width: 15px
@@ -20,12 +37,12 @@
 #close
   left: -107px
 table
+  margin-left: -1%
+  margin-right: -1%
   tr
     width: 100%
   tbody
-    margin-left: 15%
-    margin-right: 15%
-    width: 80%
+    width: 100%
     td
       width: 84%
     .price
@@ -119,14 +136,11 @@ table
 @media ( min-width : 1700px )
     .down-layout
       bottom: -65%!important
-@media ( min-width : 1840px )
+@media ( min-width : 1800px )
   .calc
     transform: scale(1.2)
     margin: 0px
   table
-    tbody
-      margin-left: 15% !important
-      margin-right: 15%!important
     td
       height: 60px!important
       font-size: 22px!important
@@ -137,12 +151,10 @@ table
       height: 450px!important
   .down-layout
     bottom: -91%!important
-  #flex-box
-    margin: 220px 18%
-    transform: scale(1.37)
-
-  #font-flex
-    margin: 100px 15% 150px
-    transform: scale(1.2)
-    .elem
-      margin: 5px 5% !important
+  .flex-page
+    #flex-box
+      margin: 220px 15%
+      transform: scale(1.37)
+    #font-flex
+      margin: 100px 9% 150px
+      transform: scale(1.2)

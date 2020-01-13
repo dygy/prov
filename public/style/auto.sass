@@ -1,14 +1,28 @@
 @import "kron.css"
+.flex-page
+  display: flex
+  flex-flow: column
+  justify-content: center
+  margin-left: 15%
+  margin-right: 15%
+  #font-flex,#flex-box
+    margin-left: 0
+    margin-right: 0
+    justify-content: space-between
+    .elem
+      margin: 10px 0 0 0 !important
+  #smth
+    margin-left: 0
+    margin-right: 0
+
 #font-flex
-  margin-left: 10%!important
-  margin-right: 10%!important
-  .elem
-    margin: 15px 0 0 0 !important
     img
       width: 260px
 #flex-box
   img
     height: 200px!important
 @media (min-width: 1700px)
+  #flex-box
+    margin: 50px 10% 150px 10% !important
   #font-flex
-    margin: 200px 17% 250px 19% !important
+    margin: 100px 10% 100px 10% !important

@@ -57,6 +57,7 @@ body {
     #full-page #smth div, #full-page .smth div {
       margin-left: 15px; }
       #full-page #smth div ul, #full-page .smth div ul {
+        padding-left: 30px;
         margin-top: 0px !important; }
       #full-page #smth div p, #full-page .smth div p {
         margin-bottom: 0px;

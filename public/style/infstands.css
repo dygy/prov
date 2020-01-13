@@ -1,12 +1,17 @@
-@import url(tables.css);
+@import url(auto.css);
+.flex-page #font-flex .elem {
+  margin: 10px 3% 0 !important; }
+
+.elem {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .smthImg {
   min-width: 350px !important;
   height: 450px !important; }
 
 @media (min-width: 1700px) {
   #font-flex {
-    margin-top: 100px !important; }
-    #font-flex .elem {
-      margin: 15px 9% 0 0 !important; } }
+    margin-top: 100px !important; } }
 
 /*# sourceMappingURL=infstands.css.map */

@@ -1,6 +1,7 @@
-@import url(tables.css);
-#font-flex {
-  flex-wrap: wrap-reverse; }
+@import url(auto.css);
+.flex-page #font-flex .elem {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 #smth p {
   margin-bottom: 30px !important; }
@@ -8,6 +9,11 @@
 #smth .smthImg {
   height: 32vw !important;
   min-width: 25vw !important; }
+
+@media (min-width: 1700px) {
+  .flex-page {
+    margin-left: 19%;
+    margin-right: 19%; } }
 
 @media (max-width: 1405px) {
   #smth .smthImg {

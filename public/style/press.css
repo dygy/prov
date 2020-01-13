@@ -1,22 +1,7 @@
-@import url(kron.css);
-#font-flex .elem {
-  margin: 15px 9% 0 0 !important; }
-
-#flex-box {
-  width: 80%;
-  margin-right: 10%;
-  margin-left: 10%; }
-  #flex-box .elem {
-    margin: 15px 7% 0 0; }
-
-#smth p {
-  padding-right: 6vw !important; }
-
+@import url(vist.css);
 @media (min-width: 1700px) {
   .smthImg {
     height: 450px !important;
-    min-width: 450px !important; }
-  #flex-box .elem {
-    margin: 15px 5% 0 0; } }
+    min-width: 450px !important; } }
 
 /*# sourceMappingURL=press.css.map */

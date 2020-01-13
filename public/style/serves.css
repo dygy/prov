@@ -1,37 +1,37 @@
 @import url(style.css);
-#smth {
-  margin-right: 14%;
-  margin-left: 14%;
+#smth, .smth {
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex; }
-  #smth li {
+  #smth li, .smth li {
     list-style-position: outside;
     margin-left: 1em;
     margin-top: 5px;
     list-style-type: circle; }
-  #smth .smthImg {
+  #smth .smthImg, .smth .smthImg {
     min-width: 400px;
     height: 500px; }
-  #smth div {
+  #smth div, .smth div {
     margin-left: 15px; }
-    #smth div ul {
+    #smth div ul, .smth div ul {
+      padding-left: 30px;
       margin-top: 0px !important; }
-    #smth div p {
+    #smth div p, .smth div p {
       margin-bottom: 0px;
       font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
-      padding-right: 40px;
       font-size: 20px; }
-    #smth div div {
+    #smth div div, .smth div div {
       display: flex;
       justify-content: center; }
-    #smth div .calc {
+    #smth div .calc, .smth div .calc {
       margin-top: 5% !important;
       width: 25% !important;
       height: 3vw !important; }
-    #smth div .buttonImg {
+    #smth div .buttonImg, .smth div .buttonImg {
       margin-top: 5%;
       max-width: 25% !important;
       max-height: 25% !important;

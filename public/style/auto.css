@@ -1,17 +1,30 @@
 @import url(kron.css);
-#font-flex {
-  margin-left: 10% !important;
-  margin-right: 10% !important; }
-  #font-flex .elem {
-    margin: 15px 6% 0 0 !important; }
-    #font-flex .elem img {
-      width: 260px; }
+.flex-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%; }
+  .flex-page #font-flex, .flex-page #flex-box {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between; }
+    .flex-page #font-flex .elem, .flex-page #flex-box .elem {
+      margin: 10px 0 0 0 !important; }
+  .flex-page #smth {
+    margin-left: 0;
+    margin-right: 0; }
+
+#font-flex img {
+  width: 260px; }
 
 #flex-box img {
   height: 200px !important; }
 
 @media (min-width: 1700px) {
+  #flex-box {
+    margin: 50px 10% 150px 10% !important; }
   #font-flex {
-    margin: 200px 17% 250px 19% !important; } }
+    margin: 100px 10% 100px 10% !important; } }
 
 /*# sourceMappingURL=auto.css.map */

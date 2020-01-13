@@ -141,6 +141,8 @@
 html {
   overflow-x: hidden;
   text-align: justify; }
+  html li {
+    text-align: match-parent !important; }
 
 body {
   margin-left: -2px;
@@ -882,12 +884,12 @@ space {
         margin-top: 20px;
         margin-left: 10px; }
     #font-flex .elem img {
-      width: 300px;
+      width: 267px;
       height: 300px;
       margin-bottom: 10px; }
     #font-flex .elem strong {
       padding-left: 10px;
-      font-size: 12px; }
+      font-size: 16px; }
     #font-flex .elem div {
       text-align: center;
       margin-top: 3px; }
@@ -951,8 +953,8 @@ space {
     height: 450px !important; }
   #font-flex, #flex-box {
     transform: scale(1.4);
-    margin: 300px 15%; }
+    margin: 300px 13%; }
   #flex-box {
-    margin: 100px 13% 20px 16%; } }
+    margin: 100px 15% 20px 14%; } }
 
 /*# sourceMappingURL=lightpan.css.map */

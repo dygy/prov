@@ -4,7 +4,7 @@ script(src='../js/Global.js')
 include ../slider
 include ../header
 
-block flexbox
+div(class="flex-page")
     div(class="title")
         h1 СВЕТОВЫЕ КОРОБА
     div(id="font-flex")
@@ -83,7 +83,7 @@ block flexbox
 
     div(class="title")
         button(class="calc" ) калькулятор
-block tab
+
     table
         tr(class="main blue")
             td тип
@@ -113,16 +113,16 @@ block tab
             td ОТКРЫТЫЕ СВЕТОДИОДЫ
             td(class="price") от 15 000 руб/м2
 
-block info
+
     div(id="smth")
         div(class="imgSwitcher")
             div(class="mid-layout")
                 img(src="../img/next.png" class="prev" onclick="switchImg(false)")
                 img(src="../img/next.png" class="next" onclick="switchImg(true)")
             div(class="down-layout")
-                img(src="../img/active.png" class="dot" id="dot1")
-                img(src="../img/inactive.png" class="dot" id="dot2")
-                img(src="../img/inactive.png" class="dot" id="dot3")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
             img( src="../img/4/content410.png" class="smthImg")
             img(src="../img/4/content410.png"  class="smthImg" style="display:none")
             img(src="../img/4/content410.png"  class="smthImg" style="display:none")

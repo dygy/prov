@@ -22,10 +22,26 @@ function displayImg(url) {
     document.getElementsByClassName("sell")[1].style.display = "flex";
     elem("disImg").src = url;
 }
+function setImg(num) {
+    let imgs = document.getElementsByClassName("smthImg");
+    if (elem("dot1").src.includes("/img/active.png")) {
+        elem(`dot1`).src = "../img/inactive.png";
+        imgs[0].style.display="none";
+    }
+    else if (elem("dot2").src.includes("/img/active.png")) {
+        elem(`dot2`).src = "../img/inactive.png";
+        imgs[1].style.display="none";
+    }
+    else {
+        elem(`dot3`).src = "../img/inactive.png";
+        imgs[2].style.display="none";
+    }
+    elem(`dot${num}`).src = "../img/active.png";
+    imgs[num-1].style.display="block";
+}
 function switchImg(isNext) {
     let imgs = document.getElementsByClassName("smthImg");
     if (elem("dot1").src.includes("/img/active.png")){
-
         if (isNext){
             elem("dot2").src="../img/active.png";
             elem("dot1").src="../img/inactive.png";

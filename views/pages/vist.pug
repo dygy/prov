@@ -6,7 +6,7 @@ include ../header
 include ../dropdown
 
 
-block info
+div(class="flex-page")
     div(class="title")
         h1 ВЫСТАВОЧНЫЕ СТЕНДЫ
     div(id="smth")
@@ -18,56 +18,57 @@ block info
             div
                 img( class="buttonImg" src="../img/button.png")
 
-block flexbox
 
-div(id="font-flex")
-    div(class="elem")
-        div
-            strong ОСТРОВА
-        img(src="../img/vist/vist2.png")
-        div(class="title")
-            strong от 3.000 руб
-        div
-            button(class="calc" onclick="displaySell()") рассчитать
-            button(class="buy" ) заказать
-    div(class="elem")
-        div
-            strong ПОЛУОСТРОВА
-        img(src="../img/vist/vist3.png")
-        div(class="title")
-            strong от 10.000 руб за кв.м
-        div
-            button(class="calc" onclick="displaySell()") рассчитать
-            button(class="buy" ) заказать
-    div(class="elem")
-        div
-            strong ЛИНЕЙНЫЕ СТЕНДЫ
-            br
-            strong РОЖДЕНИЯ И ЮБИЛЕИ
-        img(src="../img/vist/vist4.png")
-        div(class="title")
-            strong от 10.000 руб за кв.м
-        div
-            button(class="calc" onclick="displaySell()") рассчитать
-            button(class="buy" ) заказать
-    div(class="elem")
-        div
-            strong СКВОЗНЫЕ СТЕНДЫ
-        img(src="../img/vist/vist5.png")
-        div(class="title")
-            strong от 3.000 руб
-        div
-            button(class="calc" onclick="displaySell()") рассчитать
-            button(class="buy" ) заказать
-    div(class="elem")
-        div
-            strong УГЛОВЫЕ СТЕНДЫ
-        img(src="../img/vist/vist6.png")
-        div(class="title")
-            strong от 10.000 руб за кв.м
-        div
-            button(class="calc" onclick="displaySell()") рассчитать
-            button(class="buy" ) заказать
+
+    div(id="font-flex")
+        div(class="elem")
+            div
+                strong ОСТРОВА
+            img(src="../img/vist/vist2.png")
+            div(class="title")
+                strong от 3.000 руб
+            div
+                button(class="calc" onclick="displaySell()") рассчитать
+                button(class="buy" ) заказать
+        div(class="elem")
+            div
+                strong ПОЛУОСТРОВА
+            img(src="../img/vist/vist3.png")
+            div(class="title")
+                strong от 10.000 руб за кв.м
+            div
+                button(class="calc" onclick="displaySell()") рассчитать
+                button(class="buy" ) заказать
+        div(class="elem")
+            div
+                strong ЛИНЕЙНЫЕ СТЕНДЫ
+                br
+                strong РОЖДЕНИЯ И ЮБИЛЕИ
+            img(src="../img/vist/vist4.png")
+            div(class="title")
+                strong от 10.000 руб за кв.м
+            div
+                button(class="calc" onclick="displaySell()") рассчитать
+                button(class="buy" ) заказать
+    div(id="font-flex" style="display:flex;justify-content:center; margin-top:3px!important")
+        div(class="elem")
+            div
+                strong СКВОЗНЫЕ СТЕНДЫ
+            img(src="../img/vist/vist5.png")
+            div(class="title")
+                strong от 3.000 руб
+            div
+                button(class="calc" onclick="displaySell()") рассчитать
+                button(class="buy" ) заказать
+        div(class="elem")
+            div
+                strong УГЛОВЫЕ СТЕНДЫ
+            img(src="../img/vist/vist6.png")
+            div(class="title")
+                strong от 10.000 руб за кв.м
+            div
+                button(class="calc" onclick="displaySell()") рассчитать
+                button(class="buy" ) заказать
 
 
 include ../footer

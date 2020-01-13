@@ -1,12 +1,13 @@
 #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
   width: auto;
+  justify-content: center;
+  align-items: center;
   padding-top: 20px;
   text-transform: none;
   text-align: left;
   color: black;
   background: rgba(255, 255, 255, 0.95);
   display: none;
-  justify-content: center;
   z-index: 6;
   top: 155px;
   position: fixed; }
@@ -110,6 +111,15 @@
   #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
     top: 212px !important; } }
 
+@media (max-width: 715px) {
+  #dropdown {
+    top: 150px; } }
+
+@media (max-width: 616px) {
+  #dropdown {
+    top: 118px;
+    font-size: 12px; } }
+
 @media (min-width: 1700px) {
   #dropdown2, #dropdown3, #dropdown4 {
     margin-left: 0 !important; }
@@ -127,6 +137,12 @@
 @font-face {
   font-family: "GeomB";
   src: local("Geom"), url("../font/geom bold.otf") format("truetype"); }
+
+html {
+  overflow-x: hidden;
+  text-align: justify; }
+  html li {
+    text-align: match-parent !important; }
 
 body {
   margin-left: -2px;
@@ -396,7 +412,7 @@ body {
   bottom: 0;
   color: white;
   background: black;
-  width: 100%;
+  width: 100vw;
   min-height: 470px; }
   #footer #ftr-frst {
     font-weight: 900;
@@ -551,7 +567,7 @@ body {
 
 @media (max-width: 944px) {
   #footer #ftr-frst .phone {
-    margin-left: 14vw !important; }
+    margin-left: 19.5vw !important; }
   #map {
     display: none; }
   #soc {
@@ -564,11 +580,13 @@ body {
     margin-left: 5% !important; } }
 
 @media (max-width: 778px) {
+  #ftr-scnd #info ul {
+    padding-left: 20px !important; }
   #ftr-scnd #map img {
     width: 200px !important;
     height: 100px !important; }
-  #ftr-frst #faq ul h4 {
-    width: 170px !important; }
+  #ftr-frst #faq h4 {
+    margin-left: 1.2em !important; }
   #ftr-frst ul {
     padding-left: 20px !important; }
   phone {
@@ -578,9 +596,9 @@ body {
   adr {
     font-size: 14px !important; } }
 
-@media (max-width: 530px) {
-  #footer #ftr-frst .phone {
-    margin-left: 10px !important; } }
+@media (max-width: 600px) {
+  #footer {
+    display: none; } }
 
 table {
   border-spacing: 10px 0;
@@ -635,39 +653,39 @@ button {
     justify-content: center;
     flex-wrap: wrap; }
 
-#smth {
-  margin-right: 14%;
-  margin-left: 14%;
+#smth, .smth {
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex; }
-  #smth li {
+  #smth li, .smth li {
     list-style-position: outside;
     margin-left: 1em;
     margin-top: 5px;
     list-style-type: circle; }
-  #smth .smthImg {
+  #smth .smthImg, .smth .smthImg {
     min-width: 400px;
     height: 500px; }
-  #smth div {
+  #smth div, .smth div {
     margin-left: 15px; }
-    #smth div ul {
+    #smth div ul, .smth div ul {
+      padding-left: 30px;
       margin-top: 0px !important; }
-    #smth div p {
+    #smth div p, .smth div p {
       margin-bottom: 0px;
       font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
-      padding-right: 40px;
       font-size: 20px; }
-    #smth div div {
+    #smth div div, .smth div div {
       display: flex;
       justify-content: center; }
-    #smth div .calc {
+    #smth div .calc, .smth div .calc {
       margin-top: 5% !important;
       width: 25% !important;
       height: 3vw !important; }
-    #smth div .buttonImg {
+    #smth div .buttonImg, .smth div .buttonImg {
       margin-top: 5%;
       max-width: 25% !important;
       max-height: 25% !important;
@@ -828,6 +846,22 @@ button {
     justify-content: center;
     bottom: -93%; } }
 
+.flex-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%; }
+  .flex-page #font-flex, .flex-page #flex-box {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between; }
+    .flex-page #font-flex .elem, .flex-page #flex-box .elem {
+      margin: 10px 0 0 0 !important; }
+  .flex-page #smth {
+    margin-left: 0;
+    margin-right: 0; }
+
 .lupa {
   height: 15px;
   width: 15px;
@@ -845,17 +879,17 @@ button {
 #close {
   left: -107px; }
 
-table tr {
-  width: 100%; }
-
-table tbody {
-  margin-left: 15%;
-  margin-right: 15%;
-  width: 80%; }
-  table tbody td {
-    width: 84%; }
-  table tbody .price {
-    width: 13vw; }
+table {
+  margin-left: -1%;
+  margin-right: -1%; }
+  table tr {
+    width: 100%; }
+  table tbody {
+    width: 100%; }
+    table tbody td {
+      width: 84%; }
+    table tbody .price {
+      width: 13vw; }
 
 .title {
   margin-bottom: 40px;
@@ -951,15 +985,12 @@ table tbody {
   .down-layout {
     bottom: -65% !important; } }
 
-@media (min-width: 1840px) {
+@media (min-width: 1800px) {
   .calc {
     transform: scale(1.2);
     margin: 0px; }
   table {
     margin-bottom: 100px; }
-    table tbody {
-      margin-left: 15% !important;
-      margin-right: 15% !important; }
     table td {
       height: 60px !important;
       font-size: 22px !important; }
@@ -968,13 +999,11 @@ table tbody {
     height: 450px !important; }
   .down-layout {
     bottom: -91% !important; }
-  #flex-box {
-    margin: 220px 18%;
+  .flex-page #flex-box {
+    margin: 220px 15%;
     transform: scale(1.37); }
-  #font-flex {
-    margin: 100px 15% 150px;
-    transform: scale(1.2); }
-    #font-flex .elem {
-      margin: 5px 5% !important; } }
+  .flex-page #font-flex {
+    margin: 100px 9% 150px;
+    transform: scale(1.2); } }
 
 /*# sourceMappingURL=light.css.map */
