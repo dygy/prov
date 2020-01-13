@@ -40,6 +40,10 @@ body {
   overflow: hidden;
   z-index: 8;
   background-color: rgba(73, 73, 73, 0.51); }
+
+@-moz-document url-prefix() {
+  #full-page #smth .flexbuts .buttonImg, #full-page .smth .flexbuts .buttonImg, #full-page .ntSmth .flexbuts .buttonImg {
+    max-height: 100% !important; } }
   #full-page #smth, #full-page .smth {
     margin-left: 15%;
     margin-right: 15%;
@@ -76,6 +80,8 @@ body {
         margin-top: 5%;
         max-width: 25% !important;
         max-height: 25% !important;
+        min-width: 120px;
+        min-height: 20px;
         box-shadow: 2px 1px 8px black; }
   #full-page .ntSmth .calc {
     margin-top: 7% !important;

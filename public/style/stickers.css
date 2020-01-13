@@ -1,21 +1,21 @@
 @import url(infstands.css);
-#font-flex {
+.flex-page #font-flex {
   margin-top: 200px !important;
   margin-bottom: 200px !important; }
-  #font-flex .elem {
+  .flex-page #font-flex .elem {
+    margin: 10px 2% 0 0 !important;
     background-color: #ededed !important;
     text-align: center; }
-    #font-flex .elem img {
+    .flex-page #font-flex .elem img {
       margin-left: 0 !important; }
-    #font-flex .elem p {
+    .flex-page #font-flex .elem p {
       font-weight: bold; }
 
-#flex-box .elem {
-  padding-top: 10px;
-  margin: 15px 3% 0 !important; }
+.flex-page #flex-box .elem {
+  padding-top: 10px; }
 
-#smth .img {
-  margin-top: 30px;
+.flex-page #smth .img {
+  margin-top: 54px;
   height: 370px !important;
   min-width: 300px !important; }
 

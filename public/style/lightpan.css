@@ -600,6 +600,10 @@ body {
   #footer {
     display: none; } }
 
+@-moz-document url-prefix() {
+  #smth .flexbuts .buttonImg, .smth .flexbuts .buttonImg, .ntSmth .flexbuts .buttonImg {
+    max-height: 100% !important; } }
+
 #smth, .smth {
   margin-left: 15%;
   margin-right: 15%;
@@ -617,6 +621,7 @@ body {
   #smth div, .smth div {
     margin-left: 15px; }
     #smth div ul, .smth div ul {
+      padding-left: 30px;
       margin-top: 0px !important; }
     #smth div p, .smth div p {
       margin-bottom: 0px;
@@ -635,6 +640,8 @@ body {
       margin-top: 5%;
       max-width: 25% !important;
       max-height: 25% !important;
+      min-width: 120px;
+      min-height: 20px;
       box-shadow: 2px 1px 8px black; }
 
 .ntSmth .calc {
@@ -874,7 +881,7 @@ space {
       height: 30px;
       text-align: center;
       justify-content: center;
-      width: 100px;
+      width: 12vw;
       background-color: #82d2d0; }
     #font-flex .elem .alsoflex {
       display: flex;
@@ -904,7 +911,7 @@ space {
     #font-flex .elem button {
       border: none;
       height: 35px !important;
-      width: 100px; }
+      widthwidth: 100px; }
     #font-flex .elem .calc {
       width: auto;
       font: 13.333px Geom;

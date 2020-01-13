@@ -646,6 +646,10 @@ table {
     max-width: 220px;
     max-height: 50px; }
 
+@-moz-document url-prefix() {
+  #smth .flexbuts .buttonImg, .smth .flexbuts .buttonImg, .ntSmth .flexbuts .buttonImg {
+    max-height: 100% !important; } }
+
 #smth, .smth {
   margin-left: 15%;
   margin-right: 15%;
@@ -682,6 +686,8 @@ table {
       margin-top: 5%;
       max-width: 25% !important;
       max-height: 25% !important;
+      min-width: 120px;
+      min-height: 20px;
       box-shadow: 2px 1px 8px black; }
 
 .ntSmth .calc {

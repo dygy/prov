@@ -653,6 +653,10 @@ button {
     justify-content: center;
     flex-wrap: wrap; }
 
+@-moz-document url-prefix() {
+  #smth .flexbuts .buttonImg, .smth .flexbuts .buttonImg, .ntSmth .flexbuts .buttonImg {
+    max-height: 100% !important; } }
+
 #smth, .smth {
   margin-left: 15%;
   margin-right: 15%;
@@ -689,6 +693,8 @@ button {
       margin-top: 5%;
       max-width: 25% !important;
       max-height: 25% !important;
+      min-width: 120px;
+      min-height: 20px;
       box-shadow: 2px 1px 8px black; }
 
 .ntSmth .calc {
