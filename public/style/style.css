@@ -679,6 +679,12 @@ body {
   #form ::placeholder {
     font-size: 20px !important; } }
 
+@-moz-document url-prefix() {
+  #ins-one .Boxx, #ins-two .Boxx, #ins-three .Boxx, #ins-four .Boxx, #room-one .Boxx, #room-two .Boxx {
+    margin-bottom: -47px; }
+  #ins-one text, #ins-two text, #ins-three text, #ins-four text, #room-one text, #room-two text {
+    bottom: 0px; } }
+
 .mark {
   width: 30px;
   height: 30px;
