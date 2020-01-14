@@ -164,6 +164,7 @@ body {
   background: black;
   width: 100%; }
   #header #first {
+    white-space: nowrap;
     display: flex;
     flex-direction: row;
     margin-right: 0 !important;
