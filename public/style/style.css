@@ -131,6 +131,9 @@
   #dropdown #lastUL {
     margin: 10px 4% 0 0 !important; } }
 
+img {
+  max-width: 100vw; }
+
 @font-face {
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
@@ -162,6 +165,7 @@ body {
   background: black;
   width: 100%; }
   #header #first {
+    white-space: nowrap;
     display: flex;
     flex-direction: row;
     margin-right: 0 !important;

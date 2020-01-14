@@ -130,6 +130,9 @@
   #dropdown #lastUL {
     margin: 10px 4% 0 0 !important; } }
 
+img {
+  max-width: 100vw; }
+
 @font-face {
   font-family: "Geom";
   src: local("Geom"), url("../font/geom.otf") format("truetype"); }
@@ -161,6 +164,7 @@ body {
   background: black;
   width: 100%; }
   #header #first {
+    white-space: nowrap;
     display: flex;
     flex-direction: row;
     margin-right: 0 !important;
@@ -433,7 +437,7 @@ body {
         margin: 0; }
     #footer #ftr-frst #faq h4 {
       margin-top: 0;
-      text-shadow: white 0px -1px 1px;
+      text-shadow: white 0 -1px 1px;
       margin-left: 2.3em;
       width: 270px; }
     #footer #ftr-frst #faq ul {
@@ -646,15 +650,16 @@ table {
     max-width: 220px;
     max-height: 50px; }
 
+#smth .buttonImg, .smth .buttonImg, .ntSmth .buttonImg {
+  min-width: 140px;
+  min-height: 35px; }
+
 @-moz-document url-prefix() {
   #smth .flexbuts .buttonImg, .smth .flexbuts .buttonImg, .ntSmth .flexbuts .buttonImg {
     max-height: 100% !important; } }
 
 #smth, .smth {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 20px 15% 40px;
   display: flex; }
   #smth li, .smth li {
     list-style-position: outside;
@@ -686,8 +691,6 @@ table {
       margin-top: 5%;
       max-width: 25% !important;
       max-height: 25% !important;
-      min-width: 120px;
-      min-height: 20px;
       box-shadow: 2px 1px 8px black; }
 
 .ntSmth .calc {
