@@ -1,9 +1,14 @@
 @import url(style.css);
+#smth .buttonImg, .smth .buttonImg, .ntSmth .buttonImg {
+  min-width: 140px;
+  min-height: 35px; }
+
+@-moz-document url-prefix() {
+  #smth .flexbuts .buttonImg, .smth .flexbuts .buttonImg, .ntSmth .flexbuts .buttonImg {
+    max-height: 100% !important; } }
+
 #smth, .smth {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 20px 15% 40px;
   display: flex; }
   #smth li, .smth li {
     list-style-position: outside;

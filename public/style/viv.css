@@ -437,7 +437,7 @@ body {
         margin: 0; }
     #footer #ftr-frst #faq h4 {
       margin-top: 0;
-      text-shadow: white 0 -1px 1px;
+      text-shadow: white 0px -1px 1px;
       margin-left: 2.3em;
       width: 270px; }
     #footer #ftr-frst #faq ul {
@@ -939,5 +939,9 @@ table {
     .photoflex img {
       transform: scale(1.5);
       margin: 0 3% 0 !important; } }
+
+@-moz-document url-prefix() {
+  table .name {
+    width: 56vw !important; } }
 
 /*# sourceMappingURL=viv.css.map */
