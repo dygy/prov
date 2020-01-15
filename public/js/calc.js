@@ -56,7 +56,12 @@ function setOutput(family) {
     }
 }
 function  setFile(id){
-    request["file"]=document.getElementById(id).files
+    request.fileName=document.getElementById(id).files.item(0).name
+    const reader = new FileReader()
+    reader.onloadend = function () {
+        request.file = reader.result.replace(/data:.*;base64\,/,"");
+    };
+    reader.readAsDataURL(document.getElementById(id).files.item(0))
 }
 
 function  setInput(id){
@@ -67,7 +72,7 @@ function checkOrder() {
     sendRequest();
 }
 function sendRequest() {
-    const reader = new FileReader()
+
     request.url = location.href;
     const xhr = new XMLHttpRequest();
     const url = "/order";

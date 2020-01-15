@@ -1,3 +1,48 @@
+#emailA
+  font-weight: 500
+#header2
+  span:hover
+    font-family: GeomB!important
+    font-weight: 900!important
+    text-shadow: 1px 0px 3px whitesmoke
+  bold
+    font: 15pt GeomB
+  mini
+    font-size: 10pt
+  padding-top: 25px
+  z-index: 5
+  top: 0
+  width: 100vw
+  height: 90px
+  position: fixed
+  display: none
+  background-color: black
+  color: white
+  div
+    display: flex
+    justify-content: center
+  a
+    margin: 0 10px
+    color: white
+    text-decoration: none
+  .scul
+    margin-top: 0px
+    margin-bottom: 0px
+    text-align: center
+    max-width: 100vw
+    padding-left: 4px
+    width: 98vw
+    display: inline-flex
+    list-style: none
+    text-transform: uppercase
+  #dropdown,#dropdown1,#dropdown2,#dropdown3,#dropdown4,#dropdown5
+    top: 134px!important
+  #first
+  #second
+    margin-top: 15px!important
+    ul
+      img
+        margin-top: -15px!important
 img
   max-width: 100vw
 @font-face
@@ -48,7 +93,7 @@ body
       width: 50px
       height: 50px
     bold
-      font: 15pt bold
+      font: 15pt GeomB
     mini
       font-size: 10pt
 
@@ -201,7 +246,17 @@ body
     display: none
   #search
     width: 23%!important
-
+@media ( max-width : 1240px )
+  #header2
+    #second
+      justify-content: space-around
+    .scul
+      margin-top: 20px
+      li
+        margin: 0 10px 0
+      img
+        height: 50px
+        width: 50px
 @media ( max-width : 450px )
   .soc-ico
     display: none

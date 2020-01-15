@@ -1,3 +1,16 @@
+window.onscroll = function(ev) {
+    if (((window.innerHeight + window.scrollY) >= 1000)) {
+        document.getElementById("header").style.display="none";
+        document.getElementById("header2").style.display="block";
+        hideDropDown("dropdown")
+        hideDropDown("dropdown")
+    }
+    else if (((window.innerHeight + window.scrollY) <= 1000)) {
+        document.getElementById("header").style.display="block"
+        document.getElementById("header2").style.display="none";
+
+    }
+ };
 function hideDropDown(id) {
     if (document.getElementById(id).style.display!=="flex") {
         document.getElementById("dropdown").style.display = "none";

@@ -131,6 +131,51 @@
   #dropdown #lastUL {
     margin: 10px 4% 0 0 !important; } }
 
+#emailA {
+  font-weight: 500; }
+
+#header2 {
+  padding-top: 25px;
+  z-index: 5;
+  top: 0;
+  width: 100vw;
+  height: 90px;
+  position: fixed;
+  display: none;
+  background-color: black;
+  color: white; }
+  #header2 span:hover {
+    font-family: GeomB !important;
+    font-weight: 900 !important;
+    text-shadow: 1px 0px 3px whitesmoke; }
+  #header2 bold {
+    font: 15pt GeomB; }
+  #header2 mini {
+    font-size: 10pt; }
+  #header2 div {
+    display: flex;
+    justify-content: center; }
+  #header2 a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none; }
+  #header2 .scul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    max-width: 100vw;
+    padding-left: 4px;
+    width: 98vw;
+    display: inline-flex;
+    list-style: none;
+    text-transform: uppercase; }
+  #header2 #dropdown, #header2 #dropdown1, #header2 #dropdown2, #header2 #dropdown3, #header2 #dropdown4, #header2 #dropdown5 {
+    top: 134px !important; }
+  #header2 #second {
+    margin-top: 15px !important; }
+    #header2 #second ul img {
+      margin-top: -15px !important; }
+
 img {
   max-width: 100vw; }
 
@@ -186,7 +231,7 @@ body {
       width: 50px;
       height: 50px; }
     #header #first bold {
-      font: 15pt bold; }
+      font: 15pt GeomB; }
     #header #first mini {
       font-size: 10pt; }
   #header #second {
@@ -328,6 +373,17 @@ body {
     display: none; }
   #search {
     width: 23% !important; } }
+
+@media (max-width: 1240px) {
+  #header2 #second {
+    justify-content: space-around; }
+  #header2 .scul {
+    margin-top: 20px; }
+    #header2 .scul li {
+      margin: 0 10px 0; }
+    #header2 .scul img {
+      height: 50px;
+      width: 50px; } }
 
 @media (max-width: 450px) {
   .soc-ico {
@@ -910,7 +966,7 @@ body {
     margin-left: 10%;
     line-height: 100px;
     padding-top: 6%;
-    width: 45%;
+    width: 55%;
     font-size: 40px; }
 
 .ads div {

@@ -1,5 +1,5 @@
 const sendmail = require('sendmail')();
-const FileReader = require('filereader')
+const FileReader = require('filereader');
 module.exports = (content)=> {
     sendmail({
         from: 'no-reply@provyveski.ru',
@@ -16,15 +16,12 @@ module.exports = (content)=> {
 function parseFiles(content) {
     const arr = []
     const reader = new FileReader()
-    console.log(content.file['0'])
     if(content.file) {
             arr.push({
-                filename: content.file['0'].name,
-                content: reader.readAsDataURL(content.file['0']),
-                contentType: 'text/plain'
+                filename: content.fileName,
+                content: content.file
             })
     }
-    console.log(arr);
     return arr;
 }
 function parseJSON(content) {
