@@ -170,7 +170,7 @@
     list-style: none;
     text-transform: uppercase; }
   #header2 #dropdown, #header2 #dropdown1, #header2 #dropdown2, #header2 #dropdown3, #header2 #dropdown4, #header2 #dropdown5 {
-    top: 134px !important; }
+    top: 114px !important; }
   #header2 #second {
     margin-top: 15px !important; }
     #header2 #second ul img {
@@ -465,7 +465,7 @@ body {
 
 .brd {
   margin: 0 0 10px 0 !important;
-  padding: 15px;
+  padding: 15px 25px;
   border: 2px solid  #FDB13E; }
 
 #footer {
@@ -952,7 +952,7 @@ body {
     font-size: 18px;
     background-color: #FCB600;
     border: none;
-    box-shadow: 1px 1px 8px black; }
+    box-shadow: 1px 1px 6px gray; }
 
 #promise {
   background-image: url("../img/street.jpg");
