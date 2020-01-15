@@ -123,6 +123,7 @@ body
     align-items: center
     display: flex
     flex-direction: column
+
   textarea
     padding-top: 10px
     font-size: 9px
@@ -131,17 +132,20 @@ body
     align-items: center
     align-content: center
     text-align: center
-    border-radius: 5px
-    border: 1px black solid
+    border-radius: 2px
+    border: 0.5px gray solid
   .input-file-trigger
     display: block
     padding: 7px
-    background: #82d2d0
+    background: whitesmoke
+    border: 0.5px gray solid
+    border-radius: 2px
     color: black
     font-size: 9px
     transition: all .4s
     cursor: pointer
   input::placeholder,textarea::placeholder
+    font-family: Geom
     font-size: 9px
   .input-file:hover + .input-file-trigger, .input-file:focus + .input-file-trigger, .input-file-trigger:hover, .input-file-trigger:focus
     background: whitesmoke
@@ -203,9 +207,9 @@ body
     input
       height: 25px
       text-align: center
-      width: 100px
-      border-radius: 5px
-      border: 1px black solid
+      width: 145px
+      border-radius: 2px
+      border: 0.5px gray solid
       font-size: 8px
 
 @media ( min-width : 1700px )
