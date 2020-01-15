@@ -2,10 +2,9 @@ link(rel='stylesheet', href='/style/style.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
 script(src='../js/sendFeedback.js')
+include ../slider
 include ../header
 block street
-div(class="title")
-    h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ НАРУЖНОЙ РЕКЛАМЫ
 div(id="street")
         div(class="mark" id="one")
         div(class="mark" id="two")
@@ -18,6 +17,9 @@ div(id="street")
         div(class="mark" id="nine")
         div(class="mark" id="ten")
         div(class="mark" id="el")
+div(class="title")
+    h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ НАРУЖНОЙ РЕКЛАМЫ
+
 block ins-ads
 div(class="ads")
     div(id="ins-one")
@@ -214,7 +216,7 @@ block room-ads
 
 block take
     div(id="but-take")
-        img( class="buttonImg" src="../img/button.png")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
     div(id="promise")
         div(id="promise-text") ИЗГОТОВИМ ЛЮБУЮ ВЫВЕСКУ ПО ЗАКОНУ ЗА 15 ДНЕЙ СОГЛАСНО 902-ПП
 block serve

@@ -307,6 +307,104 @@ body {
     top: -168px;
     left: -0%; } }
 
+#order {
+  width: 500px !important;
+  height: 270px !important;
+  display: flex !important;
+  flex-direction: column;
+  background-color: #fcfefe !important; }
+  #order #close {
+    height: 30px !important;
+    width: 30px !important;
+    left: 49.7%;
+    top: -268px !important; }
+  #order .jc {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+  #order textarea {
+    min-height: 66px;
+    margin: 0px 20px 5px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px black solid; }
+  #order .input-file-trigger {
+    display: block;
+    padding: 7px;
+    background: #82d2d0;
+    color: black;
+    font-size: 9px;
+    transition: all .4s;
+    cursor: pointer; }
+  #order input::placeholder, #order textarea::placeholder {
+    font-size: 9px; }
+  #order .input-file:hover + .input-file-trigger, #order .input-file:focus + .input-file-trigger, #order .input-file-trigger:hover, #order .input-file-trigger:focus {
+    background: whitesmoke;
+    color: #82d2d0; }
+  #order .input-file {
+    position: absolute;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer; }
+  #order .checkbox p {
+    font-size: 8px;
+    position: absolute;
+    left: 187px;
+    top: 165px; }
+  #order .checkbox label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 168px;
+    left: 153px;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(131, 131, 131, 0.4); }
+    #order .checkbox label:after {
+      content: '';
+      width: 17px;
+      height: 8px;
+      position: absolute;
+      top: 0px;
+      left: 4px;
+      border: 3px solid black;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg); }
+    #order .checkbox label:hover::after {
+      opacity: 0; }
+  #order .checkbox input[type=checkbox] {
+    visibility: hidden; }
+    #order .checkbox input[type=checkbox]:checked + label:after {
+      opacity: 1; }
+  #order .butImg {
+    height: 30px;
+    width: 125px; }
+  #order h4 {
+    font-family: GeomB;
+    text-align: initial;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px; }
+  #order .flexput {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    #order .flexput input {
+      height: 25px;
+      text-align: center;
+      width: 100px;
+      border-radius: 5px;
+      border: 1px black solid;
+      font-size: 8px; }
+
 @media (min-width: 1700px) {
   .sell {
     transform: scale(2); }

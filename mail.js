@@ -1,20 +1,50 @@
 const sendmail = require('sendmail')();
+const FileReader = require('filereader')
 module.exports = (content)=> {
     sendmail({
         from: 'no-reply@provyveski.ru',
         to: 'YukimuraAllen@yandex.ru', // list of receivers
         subject: 'New Order',
         html: `<h1> Details </h1> <p>${parseJSON(content)}</p> `,
+        attachments:parseFiles(content)
+
     }, function (err, reply) {
         console.log(err && err.stack);
         console.dir(reply);
     });
 };
+function parseFiles(content) {
+    const arr = []
+    const reader = new FileReader()
+    console.log(content.file['0'])
+    if(content.file) {
+            arr.push({
+                filename: content.file['0'].name,
+                content: reader.readAsDataURL(content.file['0']),
+                contentType: 'text/plain'
+            })
+    }
+    console.log(arr);
+    return arr;
+}
 function parseJSON(content) {
     let mail = '';
+    if (content.nameO){
+        mail+= `Имя:${content.nameO} <br>`
+    }
+    if (content.phoneO){
+        mail+= `Телефон:${content.phoneO} <br>`
+    }
+    if (content.emailO){
+        mail+= `Электронная почта:${content.email0} <br>`
+    }
     if (content.name){
         mail+= `Имя:${content.name} <br>`
     }
+    if (content.textO){
+        mail+= `Текст заказа:${content.textO} <br>`
+    }
+
     if (content.company){
         mail+= `Компания:${content.company} <br>`
     }
@@ -120,6 +150,5 @@ function parseJSON(content) {
     if (content.url){
         mail+= `С ссылки:${content.url} <br>`
     }
-
     return mail
 }

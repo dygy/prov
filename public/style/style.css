@@ -337,7 +337,7 @@ body {
 
 @media (min-width: 1249px) {
   body {
-    margin-top: 220px; }
+    margin-top: 212px; }
   #logo {
     background-size: 100% 100%;
     height: 120px !important;
@@ -409,7 +409,7 @@ body {
 
 .brd {
   margin: 0 0 10px 0 !important;
-  padding: 5px;
+  padding: 15px;
   border: 2px solid  #FDB13E; }
 
 #footer {
@@ -427,6 +427,9 @@ body {
       margin: 50px 6% 0 0; }
     #footer #ftr-frst #soc {
       display: flex;
+      align-items: center;
+      align-content: center;
+      text-align: center;
       flex-flow: column;
       margin-top: 45px; }
       #footer #ftr-frst #soc span {
@@ -436,6 +439,9 @@ body {
       #footer #ftr-frst #soc h1 {
         text-shadow: white 0.5px -0.5px 0.5px;
         margin: 0; }
+      #footer #ftr-frst #soc .soc-ico {
+        margin: -47px 0 !important;
+        height: 30px; }
     #footer #ftr-frst #faq h4 {
       margin-top: 0;
       text-shadow: white 0px -1px 1px;
@@ -669,7 +675,7 @@ body {
       width: 70%;
       height: 150px;
       border: none;
-      margin: 0 10px 0;
+      margin: 0px 10px 10px;
       padding-bottom: 10px;
       box-shadow: 2px 2px 3px black; }
 
@@ -1203,7 +1209,7 @@ body {
         height: 120px !important; }
       #kach div p {
         font-size: 25px !important;
-        width: auto !important; }
+        width: 182px !important; }
   #passport #pass-flex text {
     max-width: 60% !important;
     font-size: 25px;

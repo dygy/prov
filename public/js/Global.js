@@ -13,6 +13,11 @@ function displaySell() {
     document.getElementsByClassName("sell")[0].style.display = "flex";
 
 }
+function displayOrder() {
+    elem("full-page").style.display = "flex";
+    elem("order").style.display = "flex";
+}
+
 function displayProd() {
     elem("full-page").style.display = "flex";
     elem("window").style.display = "block";

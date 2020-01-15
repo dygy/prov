@@ -55,10 +55,19 @@ function setOutput(family) {
         elem("output").style.fontFamily=family
     }
 }
+function  setFile(id){
+    request["file"]=document.getElementById(id).files
+}
+
 function  setInput(id){
     request[id]=document.getElementById(id).value;
 }
+function checkOrder() {
+    console.log(request);
+    sendRequest();
+}
 function sendRequest() {
+    const reader = new FileReader()
     request.url = location.href;
     const xhr = new XMLHttpRequest();
     const url = "/order";

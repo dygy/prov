@@ -1,0 +1,19 @@
+div(id="order" class="sell" onclick="event.stopPropagation()" style="background:none; border: none")
+    h4 ОСТАВИТЬ ЗАЯВКУ
+    div(class="flexput")
+        input(placeholder="ВАШЕ ИМЯ" type="name" oninput="setInput('nameO')" id='nameO')
+        input(placeholder="ТЕЛЕФОН" oninput="setInput('phoneO')" id='phoneO')
+        input(placeholder="E-MAIL" oninput="setInput('emailO')" id='emailO')
+    textarea(placeholder="ИНФОРМАЦИЯ О ЗАКАЗЕ" oninput="setInput('textO')" id='textO')
+    div(class="jc")
+        div(style="margin-left:350px")
+            input(class="input-file" id="my-file" type="file" onchange="setFile('my-file')")
+            label(tabindex="0" for="my-file" class="input-file-trigger") ПРИКРЕПИТЬ ФАЙЛ
+        br
+        div(class="checkbox")
+            input(type="checkbox" value="None" id="squaredThree" name="check" checked)
+            label(for="squaredThree")
+            p СОГЛАСЕН НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ
+        br
+        img(class="butImg" src="./img/button.png" onclick="checkOrder()")
+        img(id="close" src="./img/close2.png" onclick="document.getElementById('full-page').style.display='none'; document.getElementsByClassName('sell')[0].style.display='none'; document.getElementsByClassName('sell')[1].style.display='none'  ")
