@@ -8,10 +8,42 @@
 
 .mark
   width: 30px
-  height: 30px
+  height: auto
   background-image: url("/img/place.png")
   background-size: 100% 100%
   position: relative
+  .appear
+    top: -29px
+    left: -83px
+    color: black
+    font-family: Geom
+    display: none
+    font-weight: lighter
+    position: relative
+    z-index: 2
+    width: auto
+    height: 30px
+    text
+      white-space: nowrap
+      z-index: 3
+      position: relative
+      background-color: white
+      padding: 5px 10px
+  .appear::before
+    z-index: 2
+    display: block
+    content: " "
+    position: relative
+    top: 30px
+    left: 95px
+    transform: rotate(138deg)
+    width: 8px
+    height: 19px
+    background-color: white
+
+.mark:hover
+  .appear
+    display: initial
 #tone
   left: 5%
   top: 22%
@@ -132,6 +164,7 @@
     padding-top: 40px
     display: flex
     margin-bottom: 30px
+    justify-content: space-around
     #pass-logo
       background-image: url("../img/herbalife.jpg")
       background-size: 100% 100%

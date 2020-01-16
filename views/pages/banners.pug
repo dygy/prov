@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/banners.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 
 block flexbox
@@ -15,7 +16,7 @@ block flexbox
             p цена световой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/banners')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong БАНННЕРНАЯ ТКАНЬ
@@ -24,7 +25,7 @@ block flexbox
             p цена световой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/banners')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ТРАНСЛЮЦЕНТНАЯ ТКАНЬ
@@ -33,7 +34,7 @@ block flexbox
             p цена световой: от 30.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/banners')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
 
 block info
     div(id="smth")
@@ -42,43 +43,43 @@ block info
             p Баннерная реклама — один из самых дешёвых способов привлечь внимание к компании и ее товарам либо услугам. Правильно подобранное изображение, четкая и грамотно изложенная информация на баннере вызывают у потенциального потребителя интерес и желание подробнее ознакомиться с предлагаемым
             p Баннер изготавливают при помощи широкоформатной печати. Основой баннера, как правило, являются армированная ПВХ ткань, сетка, флаговая ткань
             div
-                img( class="buttonImg" src="../img/button.png")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
     div(id="flex-box")
         div(class="elem")
             img(src="../img/banner/banner5.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/banner/banner6.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/banner/banner7.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/banner/banner3.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/banner/banner2.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/banner/banner4.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
 
 include ../footer

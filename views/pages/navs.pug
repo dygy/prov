@@ -16,7 +16,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ФЛАГОВЫЕ УКАЗАТЕЛИ
@@ -25,7 +25,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ПИЛОНЫ
@@ -34,7 +34,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong СТЕНДЫ СО СМЕННОЙ ИНФОРМАЦИЕЙ
@@ -43,7 +43,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()" ) рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong НАКЛЕЙКИ СТЕНЫ/ПОЛ
@@ -52,7 +52,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong СВЕТОВЫЕ КОРОБА
@@ -61,7 +61,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ЛОГОТИПЫ
@@ -70,7 +70,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong СВЕТОВЫЕ ПАНЕЛИ
@@ -79,7 +79,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ТАБЛИЧКИ
@@ -88,50 +88,50 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
 block info
     div(id="smth")
         img(src="../img/nav/Nav17.png" class="smthImg")
         div
             p Система навигации обязательна при внутреннем оформлении в торгово-деловых центрах, бизнес-центрах, гостиницах и офисах. Чтобы легко найти посетителю интересующую его товарную группу, попасть в нужный магазин или офис, даже на другой уровень, не обойтись без навигационных и информационных указателей. Это - информационные стенды различных размеров с информацией об этажах и навигацией по офисам, магазинам, торговым точкам, ресторанам и пр. Информационная система должна быть удобной и простой, и не вызывать раздражения, интуитивно понятной. В систему навигации также входят разнообразные таблички, указатели, навигационные панели, подвесные и напольные элементы, отображающие точное нахождение объектов, облегчая поиск необходимого места
             div
-                img( class="buttonImg" src="../img/button.png")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
     div(id="flex-box")
         div(class="elem")
             img(src="../img/nav/Nav18.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/nav/Nav19.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/nav/Nav06.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/nav/Nav07.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/nav/Nav08.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/nav/Nav09.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
 
 include ../footer

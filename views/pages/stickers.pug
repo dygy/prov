@@ -16,7 +16,7 @@ div(class="flex-page")
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()" ) заказать
         div(class="elem")
             div
                 strong КРУГЛЫЕ
@@ -25,7 +25,7 @@ div(class="flex-page")
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()" ) заказать
         div(class="elem")
             div
                 strong ФИГУРНЫЕ
@@ -34,7 +34,7 @@ div(class="flex-page")
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong НАБОРЫ
@@ -43,7 +43,7 @@ div(class="flex-page")
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong НА ВИНИЛОВОЙ ПЛЕНКЕ
@@ -52,7 +52,7 @@ div(class="flex-page")
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ОБЪЕМНЫЕ
@@ -61,7 +61,7 @@ div(class="flex-page")
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
 
 
     div(id="smth")
@@ -70,7 +70,7 @@ div(class="flex-page")
             p Предлагаем услуги по изготовлению табличек для офиса, дома или любого другого нужного для вас места. Наиболее популярный и самый дешевый вид табличек — пластиковые таблички из ПВХ с нанесением пленки (полноцветная печать или аппликация из пленки Oracal)
             p Изображение на табличке должно быть четким и хорошо читаемым. Поэтому для его нанесения используются следующие методы: лазерная гравировка и сублимационная печать. Оба метода просты, недороги и оперативны. Изготовление табличек, даже большой партией, занимает мало времени. Максимум через несколько дней у вас будут красивые и практичные таблички.
             div
-                img( class="buttonImg" src="../img/button.png")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
     div(class="title")
         h1 ПОПУЛЯРНЫЕ ЗАКАЗЫ
     div(id="flex-box")
@@ -79,36 +79,36 @@ div(class="flex-page")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/stickers/stickers8.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/stickers/stickers9.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/stickers/stickers10.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/stickers/stickers11.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/stickers/stickers12.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
 
 include ../footer

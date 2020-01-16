@@ -16,7 +16,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()" ) заказать
         div(class="elem")
             div
                 strong МЕТАЛЛИЧЕСКИЕ БУКВЫ
@@ -25,7 +25,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()" ) заказать
         div(class="elem")
             div
                 strong ДЕРЕВЯННЫЕ БУКВЫ
@@ -34,7 +34,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong БУКВЫ ИЗ ПЕНОПЛАСТА
@@ -43,7 +43,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ОТКРЫТЫЙ НЕОН
@@ -52,7 +52,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong МЕТАЛЛ + КОНТРАЖУР
@@ -61,7 +61,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ПВХ + КОНТРАЖУР
@@ -70,7 +70,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ОТКРЫТЫЕ СВЕТОДИОДЫ
@@ -79,7 +79,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong РЕТРО БУКВЫ
@@ -88,7 +88,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ВЫВЕСКА ПВХ
@@ -97,7 +97,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong АКРИЛАЙТ
@@ -106,7 +106,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ДЕРЕВО
@@ -115,7 +115,7 @@ block flexbox
             p от 1.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
 
 block info
     div(id="smth")
@@ -124,8 +124,7 @@ block info
             p Интерьерная реклама для ресепшн и офисов – вещь сложная и кропотливая. При выполнении таких заказов особое внимание уделяется нюансам обработки и сборки продукции. Ведь вывеска расположенная в непосредственной близости от окружающих должна выглядеть безупречно. Самый распространённый вид интерьерной рекламы для офисов – название компании (её логотип), выполненное в виде объёмных букв с подсветом или без него.
             p Наша компания специализируется на изготовлении интерьерной рекламы класса Business и Premium, и использует для этого абсолютно разные материалы, от простейших ПВХ и пеноплексов до очень жёстких стёкол и металлов. Важен не исходный материал, а уместность его применения, правильный выбор технологии обработки и конечный результат!
             div
-                img( class="buttonImg" src="../img/button.png")
-
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
     div(class="title")
         h1 ПОПУЛЯРНЫЕ ЗАКАЗЫ
     div(id="flex-box")
@@ -134,36 +133,36 @@ block info
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/viv/viv14.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/viv/viv15.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/viv/viv16.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/viv/viv17.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/viv/viv18.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
 
 include ../footer

@@ -15,7 +15,7 @@ div(class="flex-page")
             p цена несветовой: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong НАБОР 2
@@ -24,7 +24,7 @@ div(class="flex-page")
             p цена несветовой: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong НАБОР 3
@@ -33,7 +33,7 @@ div(class="flex-page")
             p цена несветовой: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong НАБОР 4
@@ -42,14 +42,14 @@ div(class="flex-page")
             p цена несветовой: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
 
     div(id="smth")
         img(src="../img/input/input3.png" class="smthImg")
         div
             p Входная группа – это комплекс архитектурных и технических элементов, устанавливаемых на входе в здание. В ее состав включаются не только входные двери, но и тамбур, элементы холла (включая пункт охраны), площадка перед входом, ступеньки с пандусом, навес, перила, колонны и различные декоративные архитектурные элементы.
             div
-                img( class="buttonImg" src="../img/button.png")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
     div(id="flex-box")
         div(class="elem")
@@ -57,36 +57,36 @@ div(class="flex-page")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/input/input1.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/input/input4.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/input/input5.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/input/input10.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/input/input11.png")
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
 
 include ../footer

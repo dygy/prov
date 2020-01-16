@@ -21,6 +21,41 @@ block smth
                 li
                     a(href="./infstands") Информационные стенды
                     text  – необходимы компаниям, занимающимся продажей или оказанием услуг. В банках, клиниках, и пр. общественных местах встречаются подобные медианосители.
+div(class="title")
+    h1 ИНФОРМАЦИОННЫЕ СТЕНДЫ
+div(class="photoflex")
+    img(src="../img/stands/info1.png" onclick="displayImg('../img/stands/info1.png')")
+    img(src="../img/stands/info2.png" onclick="displayImg('../img/stands/info2.png')")
+    img(src="../img/stands/info3.png" onclick="displayImg('../img/stands/info3.png')")
+    img(src="../img/stands/info4.png" onclick="displayImg('../img/stands/info4.png')")
+    img(src="../img/stands/info5.png" onclick="displayImg('../img/stands/info5.png')")
+    img(src="../img/stands/info6.png" onclick="displayImg('../img/stands/info6.png')")
+table
+    tr(class="blue main")
+        td(class="name") тип
+        td(class="price") цена
+    tr
+        td(class="name") НАСТЕННЫЙ СТЕНД
+        td(class=" price") от 1 000 руб
+    tr(class="blue")
+        td(class="name") НАПОЛЬНЫЙ СТЕНД
+        td(class=" price") от 1 000 руб
+    tr
+        td(class="name") ПЕРЕКИДНОЙ СТЕНД
+        td(class=" price") от 1 000 руб
+    tr(class="blue")
+        td(class="name") УЛИЧНЫЙ СТЕНД
+        td(class=" price") от 1 000 руб
+    tr
+        td(class="name") ПРОБКОВЫЙ СТЕНД
+        td(class=" price") от 1 000 руб
+    tr(class="blue")
+        td(class="name") НАСТОЛЬНЫЙ СТЕНД
+        td(class=" price") от 1 000 руб
+div(class="title")
+    button(class="calc" onclick="moveTo('./calc/stand')") рассчитать
+    img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+
 block light
     div(class="title")
         h1 PRESS WALL
@@ -56,7 +91,7 @@ block light
 
     div(class="title")
         button(class="calc" onclick="displaySell()") рассчитать
-        img( class="buttonImg" src="../img/button.png")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
 block symb
     div(class="title")
@@ -138,7 +173,7 @@ block symb
 
     div(class="title")
         button( class="calc" onclick="displaySell()") рассчитать
-        img( class="buttonImg" src="../img/button.png")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
 block kron
     div(class="title")
@@ -168,42 +203,8 @@ block kron
             td(class=" price") от 2 990 руб
     div(class="title")
         button( class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-        img( class="buttonImg" src="../img/button.png")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-div(class="title")
-    h1 ИНФОРМАЦИОННЫЕ СТЕНДЫ
-div(class="photoflex")
-    img(src="../img/stands/info1.png" onclick="displayImg('../img/stands/info1.png')")
-    img(src="../img/stands/info2.png" onclick="displayImg('../img/stands/info2.png')")
-    img(src="../img/stands/info3.png" onclick="displayImg('../img/stands/info3.png')")
-    img(src="../img/stands/info4.png" onclick="displayImg('../img/stands/info4.png')")
-    img(src="../img/stands/info5.png" onclick="displayImg('../img/stands/info5.png')")
-    img(src="../img/stands/info6.png" onclick="displayImg('../img/stands/info6.png')")
-table
-    tr(class="blue main")
-        td(class="name") тип
-        td(class="price") цена
-    tr
-        td(class="name") НАСТЕННЫЙ СТЕНД
-        td(class=" price") от 1 000 руб
-    tr(class="blue")
-        td(class="name") НАПОЛЬНЫЙ СТЕНД
-        td(class=" price") от 1 000 руб
-    tr
-        td(class="name") ПЕРЕКИДНОЙ СТЕНД
-        td(class=" price") от 1 000 руб
-    tr(class="blue")
-        td(class="name") УЛИЧНЫЙ СТЕНД
-        td(class=" price") от 1 000 руб
-    tr
-        td(class="name") ПРОБКОВЫЙ СТЕНД
-        td(class=" price") от 1 000 руб
-    tr(class="blue")
-        td(class="name") НАСТОЛЬНЫЙ СТЕНД
-        td(class=" price") от 1 000 руб
-div(class="title")
-    button(class="calc" onclick="moveTo('./calc/stand')") рассчитать
-    img( class="buttonImg" src="../img/button.png")
 p
     br
     br

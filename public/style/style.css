@@ -139,7 +139,7 @@
   z-index: 5;
   top: 0;
   width: 100vw;
-  height: 90px;
+  min-height: 90px;
   position: fixed;
   display: none;
   background-color: black;
@@ -451,15 +451,15 @@ body {
       margin-right: 20px !important; } }
 
 @media (min-width: 1900px) {
-  #header #first {
+  #header #first, #header2 #first {
     justify-content: space-between; }
-    #header #first bold {
+    #header #first bold, #header2 #first bold {
       font-size: 0.9vw !important; }
-    #header #first mini {
+    #header #first mini, #header2 #first mini {
       font-size: 0.7vw !important; }
-  #header #second .scul {
+  #header #second .scul, #header2 #second .scul {
     justify-content: space-around; }
-    #header #second .scul .scli {
+    #header #second .scul .scli, #header2 #second .scul .scli {
       font-size: 0.8vw !important; } }
 
 .soc-ico {
@@ -484,7 +484,8 @@ body {
   #footer #ftr-frst {
     font-weight: 900;
     padding-left: 10px;
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
     #footer #ftr-frst div {
       margin: 50px 6% 0 0; }
     #footer #ftr-frst #soc {
@@ -537,7 +538,8 @@ body {
   #footer #ftr-scnd {
     font-weight: 900;
     padding-left: 10px;
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
     #footer #ftr-scnd div {
       margin: 25px 18% 0 0; }
     #footer #ftr-scnd #map {
@@ -759,10 +761,41 @@ body {
 
 .mark {
   width: 30px;
-  height: 30px;
+  height: auto;
   background-image: url("/img/place.png");
   background-size: 100% 100%;
   position: relative; }
+  .mark .appear {
+    top: -29px;
+    left: -83px;
+    color: black;
+    font-family: Geom;
+    display: none;
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
+    width: auto;
+    height: 30px; }
+    .mark .appear text {
+      white-space: nowrap;
+      z-index: 3;
+      position: relative;
+      background-color: white;
+      padding: 5px 10px; }
+  .mark .appear::before {
+    z-index: 2;
+    display: block;
+    content: " ";
+    position: relative;
+    top: 30px;
+    left: 95px;
+    transform: rotate(138deg);
+    width: 8px;
+    height: 19px;
+    background-color: white; }
+
+.mark:hover .appear {
+  display: initial; }
 
 #tone {
   left: 5%;
@@ -898,7 +931,8 @@ body {
   #passport #pass-flex {
     padding-top: 40px;
     display: flex;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    justify-content: space-around; }
     #passport #pass-flex #pass-logo {
       background-image: url("../img/herbalife.jpg");
       background-size: 100% 100%;

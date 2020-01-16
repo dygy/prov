@@ -3,7 +3,6 @@ script(src='../js/index.js')
 script(src='../js/Global.js')
 include ../slider
 include ../header
-include ../dropdown
 
 
 div(class="flex-page")
@@ -16,9 +15,7 @@ div(class="flex-page")
             p С учетом Ваших пожеланий, фирменного стиля и выделенного бюджета мы создаем абсолютно уникальный 3D дизайн выставочного стенда, и после согласования приступаем к его созданию.
             p Нам не важно: площадь 10 кв.м. или же полноценная застройка выставки 5 000 кв.м., все будет исполнено качественно и в срок.
             div
-                img( class="buttonImg" src="../img/button.png")
-
-
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
     div(id="font-flex")
         div(class="elem")
@@ -29,7 +26,7 @@ div(class="flex-page")
                 strong от 3.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ПОЛУОСТРОВА
@@ -38,7 +35,7 @@ div(class="flex-page")
                 strong от 10.000 руб за кв.м
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ЛИНЕЙНЫЕ СТЕНДЫ
@@ -49,7 +46,7 @@ div(class="flex-page")
                 strong от 10.000 руб за кв.м
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
     div(id="font-flex" style="display:flex;justify-content:center; margin-top:3px!important")
         div(class="elem")
             div
@@ -59,7 +56,7 @@ div(class="flex-page")
                 strong от 3.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong УГЛОВЫЕ СТЕНДЫ
@@ -68,7 +65,7 @@ div(class="flex-page")
                 strong от 10.000 руб за кв.м
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
 
 
 include ../footer

@@ -6,7 +6,7 @@ module.exports = (content)=> {
         to: 'YukimuraAllen@yandex.ru', // list of receivers
         subject: 'New Order',
         html: `<h1> Details </h1> <p>${parseJSON(content)}</p> `,
-        attachments:parseFiles(content)
+        //attachments:parseFiles(content)
 
     }, function (err, reply) {
         console.log(err && err.stack);
@@ -33,7 +33,7 @@ function parseJSON(content) {
         mail+= `Телефон:${content.phoneO} <br>`
     }
     if (content.emailO){
-        mail+= `Электронная почта:${content.email0} <br>`
+        mail+= `Электронная почта: ${content.emailO} <br>`
     }
     if (content.name){
         mail+= `Имя:${content.name} <br>`
@@ -146,6 +146,9 @@ function parseJSON(content) {
     }
     if (content.url){
         mail+= `С ссылки:${content.url} <br>`
+    }
+    if (content.file){
+        mail+= `<br> <img style="max-width: 500px; max-height: 500px" src="${content.file}"> <br> `
     }
     return mail
 }

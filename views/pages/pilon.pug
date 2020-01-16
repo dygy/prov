@@ -7,7 +7,6 @@ include ../header
 block light
     div(class="title")
         h1 ИНФО-ПИЛОНЫ
-
     table
         tr(class="blue main")
             td(class="name") тип
@@ -46,7 +45,7 @@ block smth
                 li На интерьерных, как правило, на них приводится схема размещения объектов на территории
                 li Пилоны уличные широко востребованы для организации рекламных компаний.
             div
-                img( class="buttonImg" src="../img/button.png")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 block flex-box
     div(id="font-flex")
         div(class="elem")
@@ -57,7 +56,7 @@ block flex-box
             p односторонний: от 10.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КРУГЛАЯ ПАНЕЛЬ
@@ -66,7 +65,7 @@ block flex-box
             p односторонний: от 10.000 руб
             div
                 button(class="calc" onclick="displaySell()" ) рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КРУГЛАЯ ПАНЕЛЬ
@@ -75,7 +74,7 @@ block flex-box
             p односторонний: от 10.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КРУГЛАЯ ПАНЕЛЬ
@@ -84,7 +83,7 @@ block flex-box
             p односторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КРУГЛАЯ ПАНЕЛЬ
@@ -93,7 +92,7 @@ block flex-box
             p односторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КРУГЛАЯ ПАНЕЛЬ
@@ -102,5 +101,5 @@ block flex-box
             p односторонний: от 20.000 руб
             div
                 button(class="calc" onclick="displaySell()" ) рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
 include ../footer

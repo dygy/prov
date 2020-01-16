@@ -44,7 +44,7 @@ block light
             td(class=" price") от 15 000 руб/м2
     div(class="title")
         button(class="calc" ) рассчитать
-        img( class="buttonImg" src="../img/button.png")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
 block symb
     div(class="title")
@@ -104,7 +104,7 @@ block symb
             td(class=" price") от 15 000 руб/м2
     div(class="title")
         button( class="calc" onclick="moveTo('./calc/symbs')") рассчитать
-        img( class="buttonImg" src="../img/button.png")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
 block kron
     div(class="title")
@@ -140,7 +140,7 @@ block kron
             td(class=" price") от 30 000 руб
     div(class="title")
         button( class="calc" onclick="moveTo('./calc/kron')") рассчитать
-        img( class="buttonImg" src="../img/button.png")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
 block nolight
     div(class="title")
@@ -188,7 +188,7 @@ block nolight
             td(class="price") 280 руб / пог.м.
     div(class="title")
         button( class="calc" ) рассчитать
-        img( class="buttonImg" src="../img/button.png")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
 p
     br

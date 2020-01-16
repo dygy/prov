@@ -3,7 +3,6 @@ script(src='../js/index.js')
 script(src='../js/Global.js')
 include ../slider
 include ../header
-include ../dropdown
 
 
 block info
@@ -20,7 +19,7 @@ block info
                 li Пилоны уличные широко востребованы для организации рекламных компаний.
 
             div
-                img( class="buttonImg" src="../img/button.png")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
 block flexbox
 
@@ -33,7 +32,7 @@ div(id="font-flex")
             strong 25.000 руб
         div
             button(class="calc" onclick="displaySell()") рассчитать
-            button(class="buy" ) заказать
+            button(class="buy" onclick="displayOrder()" ) заказать
     div(class="elem")
         div
             strong ФОТОЗОНА НА НОВЫЙ ГОД
@@ -42,7 +41,7 @@ div(id="font-flex")
             strong 25.000 руб
         div
             button(class="calc" onclick="displaySell()") рассчитать
-            button(class="buy" ) заказать
+            button(class="buy"  onclick="displayOrder()") заказать
     div(class="elem")
         div
             strong ФОТОЗОНА НА ДЕНЬ
@@ -53,7 +52,7 @@ div(id="font-flex")
             strong 25.000 руб
         div
             button(class="calc" onclick="displaySell()") рассчитать
-            button(class="buy" ) заказать
+            button(class="buy"  onclick="displayOrder()") заказать
     div(class="elem")
         div
             strong ФОТОЗОНА
@@ -64,7 +63,7 @@ div(id="font-flex")
             strong 25.000 руб
         div
             button(class="calc" onclick="displaySell()") рассчитать
-            button(class="buy" ) заказать
+            button(class="buy"  onclick="displayOrder()") заказать
 
 
 include ../footer

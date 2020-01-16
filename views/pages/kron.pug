@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/kron.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 
 block flexbox
@@ -16,7 +17,7 @@ block flexbox
             p цена световой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/kron')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()" ) заказать
         div(class="elem")
             div
                 strong ПРЯМОУГОЛЬНАЯ ПАНЕЛЬ
@@ -26,7 +27,7 @@ block flexbox
             p цена световой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/kron')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ФИГУРНАЯ ПАНЕЛЬ
@@ -36,7 +37,7 @@ block flexbox
             p цена световой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/kron')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
 
 block info
     div(id="smth")
@@ -59,7 +60,7 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/kron/kron (2).png")
             br
@@ -69,7 +70,7 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/kron/kron (3).png")
             br
@@ -79,7 +80,7 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/kron/kron (8).png")
             br
@@ -89,7 +90,7 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/kron/kron (9).png")
             br
@@ -99,7 +100,7 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/kron/kron (10).png")
             br
@@ -109,6 +110,6 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
 
 include ../footer

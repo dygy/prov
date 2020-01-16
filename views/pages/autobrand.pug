@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/auto.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 
 
@@ -15,7 +16,7 @@ div(class="flex-page")
             p цена несветовой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/autobrand')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ШАШЕЧКИ
@@ -23,7 +24,7 @@ div(class="flex-page")
             p цена несветовой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/autobrand')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong НАКЛЕЙКИ
@@ -31,7 +32,7 @@ div(class="flex-page")
             p цена несветовой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/autobrand')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ПЛЕНКА
@@ -39,7 +40,7 @@ div(class="flex-page")
             p цена несветовой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/autobrand')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ПЛЕНКА НА ОКНА
@@ -47,7 +48,7 @@ div(class="flex-page")
             p цена несветовой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/autobrand')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ПЕЧАТЬ НА ТЕНТАХ
@@ -55,14 +56,14 @@ div(class="flex-page")
             p цена несветовой: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/autobrand')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
 
     div(id="smth")
         img(src="../img/auto/auto13.png" class="smthImg")
         div
             p Следует отметить, что обычно оклеивается автомобиль с  помощью специальной виниловой пленки, имеющей хорошую устойчивость к воздействию как лютого мороза, так и палящего солнца. Более того, насыщенность цветов и оттенков позволяет достаточно ярко представить такую рекламу, повысив, таким образом, узнаваемость среди окружающих. Доверяя такую ответственную работу мастерам нашей компании, заказчик делает правильный выбор, поскольку у нас есть все необходимое материально техническое оснащение для воспроизведения требуемых изображений на пленке.
             div
-                img( class="buttonImg" src="../img/button.png")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
     div(id="flex-box")
         div(class="elem")
@@ -72,7 +73,7 @@ div(class="flex-page")
                 strong Кузов
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/auto/auto10.png")
             br
@@ -80,7 +81,7 @@ div(class="flex-page")
                 strong Наклейка на авто
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()")  заказать
         div(class="elem")
             img(src="../img/auto/auto9.png")
             br
@@ -88,7 +89,7 @@ div(class="flex-page")
                 strong Пленка на авто
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/auto/auto11.png")
             br
@@ -96,7 +97,7 @@ div(class="flex-page")
                 strong Шашечки на такси
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/auto/auto12.png")
             br
@@ -104,7 +105,7 @@ div(class="flex-page")
                 strong Лайтбокс на авто
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/auto/auto8.png")
             br
@@ -112,6 +113,6 @@ div(class="flex-page")
                 strong Пленка на авто
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
 
 include ../footer

@@ -59,7 +59,7 @@ function  setFile(id){
     request.fileName=document.getElementById(id).files.item(0).name
     const reader = new FileReader()
     reader.onloadend = function () {
-        request.file = reader.result.replace(/data:.*;base64\,/,"");
+        request.file = reader.result //.replace(/data:.*;base64\,/,"");
     };
     reader.readAsDataURL(document.getElementById(id).files.item(0))
 }
@@ -69,10 +69,23 @@ function  setInput(id){
 }
 function checkOrder() {
     console.log(request);
-    sendRequest();
+    if (!request.nameO){
+        alert("Пожалуйста, укажите имя")
+    }
+    else if(!request.emailO || !/(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/.test(request.emailO)){
+        alert("Пожалуйста, укажите электронную почту")
+    }
+    else if(!request.phoneO || !/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/.test(request.phoneO)){
+        alert("Пожалуйста, укажите телефон")
+    }
+    else if (!document.getElementById("squaredThree").checked){
+        alert("Пожалуйста, согласитетсь на обработку персональных данных")
+    }
+    else sendRequest();
+
+
 }
 function sendRequest() {
-
     request.url = location.href;
     const xhr = new XMLHttpRequest();
     const url = "/order";

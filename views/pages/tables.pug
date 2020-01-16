@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/tables.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 
 block flexbox
@@ -17,7 +18,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КРУГЛАЯ
@@ -28,7 +29,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КВАДРАТНАЯ
@@ -39,8 +40,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
-
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КВАДРАТНАЯ
@@ -51,7 +51,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ПРЯМОУГОЛЬНАЯ
@@ -62,7 +62,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КРУГЛАЯ
@@ -73,7 +73,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КВАДРАТНАЯ
@@ -84,7 +84,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong КРУГЛАЯ
@@ -95,7 +95,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ПРЯМОУГОЛЬНАЯ
@@ -106,7 +106,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ТАБЛИЧКА РУЧНАЯ
@@ -115,7 +115,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ТАБЛИЧКА НАПОЛЬНАЯ
@@ -124,7 +124,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy"  onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ТАБЛИЧКА НАСТОЛЬНАЯ
@@ -133,9 +133,7 @@ block flexbox
                 strong от 1.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/tables')") рассчитать
-                button(class="buy" ) заказать
-
-
+                button(class="buy"  onclick="displayOrder()") заказать
 block info
     div(id="smth")
         img(src="../img/tables/tab04.png" class="smthImg")
@@ -147,7 +145,7 @@ block info
             br
             p Изображение на табличке должно быть четким и хорошо читаемым. Поэтому для его нанесения используются следующие методы: лазерная гравировка и сублимационная печать. Оба метода просты, недороги и оперативны. Изготовление табличек, даже большой партией, занимает мало времени. Максимум через несколько дней у вас будут красивые и практичные таблички
             div
-                img( class="buttonImg" src="../img/button.png")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
     div(class="title")
         h1 ПОПУЛЯРНЫЕ ЗАКАЗЫ
     div(id="flex-box")
@@ -160,7 +158,7 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/tables/tab02.png")
             br
@@ -170,7 +168,7 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/tables/tab03.png")
             br
@@ -180,7 +178,7 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/tables/tab10.png")
             br
@@ -190,7 +188,7 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/tables/tab11.png")
             br
@@ -200,7 +198,7 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/tables/tab12.png")
             br
@@ -210,6 +208,6 @@ block info
             p высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
 
 include ../footer

@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/lightpan.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 //-
     table
@@ -32,7 +33,6 @@ div(class="flex-page")
                 img(src="../img/light/light (3).png")
             div(class="alsoflex")
                 p Тонкие световые панели, обрамленные по периметру алюминиевой клик-рамкой, позволяют с легкостью менять рекламные изображения, а строгий и стильный внешний вид подчеркнет статусность Вашей компании.
-
                 table
                     tr
                         td тип
@@ -60,7 +60,7 @@ div(class="flex-page")
                         td 4.440р
                 div
                     button(class="calc" onclick="moveTo('./calc/light')") рассчитать
-                    button(class="buy" ) заказать
+                    button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div(class="imgflex")
                 strong КРИСТАЛАЙТ
@@ -95,7 +95,7 @@ div(class="flex-page")
                         td 4.440р
                 div
                     button(class="calc" onclick="moveTo('./calc/light')") рассчитать
-                    button(class="buy" ) заказать
+                    button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div(class="imgflex")
                 strong МАГНЕТИК
@@ -130,7 +130,7 @@ div(class="flex-page")
                         td 4.440р
                 div
                     button(class="calc" onclick="moveTo('./calc/light')") рассчитать
-                    button(class="buy" ) заказать
+                    button(class="buy" onclick="displayOrder()") заказать
 
 
     div(id="smth")
@@ -138,8 +138,7 @@ div(class="flex-page")
         div
             p Световой короб или лайтбокс — объемная рекламная конструкция с внутренней подсветкой. Форма часто прямоугольная, но может быть и более сложной. Лицевая поверхность может светиться как вся полностью, так и выборочно (например, только буквы). Лайтбоксами называют и огромные конструкции на весь фасад здания, и ультратонкие панели в окнах витрин с возможность замены изображения. Преимущество - цена ниже, чем у световых букв, и зависит только от квадратуры короба. Недостатки — лайтбоксы на улице все чаще запрещает МосКомАрхитектура.
             div
-                img(src="../img/button.png" class="buttonImg")
-
+                img(src="../img/button.png" class="buttonImg" onclick="displayOrder()")
     div(id="flex-box")
         div(class="elem")
             img(src="../img/light/light (1).png")
@@ -147,26 +146,26 @@ div(class="flex-page")
             div
                 price ≈ 15.000 руб
                 space
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/light/light (6).png")
             br
             div
                 price ≈ 15.000 руб
                 space
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/light/light (7).png")
             br
             div
                 price ≈ 15.000 руб
                 space
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/light/light (8).png")
             div
                 price ≈ 15.000 руб
                 space
-                button заказать
+                button(onclick="displayOrder()") заказать
 
 include ../footer

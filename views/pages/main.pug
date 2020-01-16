@@ -1,22 +1,44 @@
 link(rel='stylesheet', href='/style/style.css')
+include ../slider
+include ../header
 script(src='../js/index.js')
 script(src='../js/Global.js')
 script(src='../js/sendFeedback.js')
-include ../slider
-include ../header
 block street
 div(id="street")
         div(class="mark" id="one")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="two")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="three")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="four")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="five")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="six")
-        div(class="mark" id="seven")
+            text(class="appear")
+                text Навигация
+        div(class="mark" id="seven" onclick="moveTo('/light')")
+            text(class="appear")
+                text(style="left:-51px") Световые Короба
         div(class="mark" id="eight")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="nine")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="ten")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="el")
+            text(class="appear")
+                text Навигация
 div(class="title")
     h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ НАРУЖНОЙ РЕКЛАМЫ
 
@@ -147,11 +169,23 @@ block room
 
     div(id="room")
         div(class="mark" id="tone")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="ttwo")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="tthree")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="tfour")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="tfive")
+            text(class="appear")
+                text Навигация
         div(class="mark" id="tsix")
+            text(class="appear")
+                text Навигация
 block room-ads
     div(class="ads")
         div(id="room-one")
@@ -217,10 +251,9 @@ block room-ads
 block take
     div(id="but-take")
         img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-        br
-        br
-        br
-        br
+        p
+            br
+            br
 
     div(id="promise")
         div(id="promise-text") ИЗГОТОВИМ ЛЮБУЮ ВЫВЕСКУ ПО ЗАКОНУ ЗА 15 ДНЕЙ СОГЛАСНО 902-ПП

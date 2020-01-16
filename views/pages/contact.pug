@@ -1,8 +1,8 @@
 link(rel='stylesheet', href='/style/contacts.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
-
 block info
     div(class="title")
         h1 КОНТАКТЫ
@@ -17,7 +17,7 @@ block info
             p г. Домодедово, ул. Кирова, дом 7, к1
             p 8 (903) 226-89-46
             div
-                img( class="buttonImg" src="../img/button.png")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
     br
     br
     div(class="mrgn")

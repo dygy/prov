@@ -110,12 +110,12 @@ body
 #order
   width: 500px!important
   height: 270px!important
-  display: flex!important
+  display: none
   flex-direction: column
   background-color: #fcfefe !important
   #close
-    height: 30px!important
-    width: 30px!important
+    height: 20px!important
+    width: 20px!important
     left: 49.7%
     top: -268px!important
   .jc
@@ -218,3 +218,13 @@ body
     #close
       left: 0%
       top: -145px
+@-moz-document url-prefix()
+  #order
+    .checkbox
+      label
+        top: 188px!important
+      p
+        top: 184px!important
+    #close
+      left: 50%!important
+      top: -251px!important

@@ -1,6 +1,7 @@
 link(rel='stylesheet', href='/style/shtender.css')
 script(src='../js/index.js')
 script(src='../js/Global.js')
+include ../slider
 include ../header
 
 block flexbox
@@ -16,7 +17,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/shtends')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ПЛАСТИКОВЫЙ
@@ -26,7 +27,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/shtends')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong ДОСКА ДЛЯ МЕЛА
@@ -36,7 +37,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/shtends')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()" ) заказать
         div(class="elem")
             div
                 strong СТОЙКА
@@ -46,7 +47,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/shtends')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong АРКА МЕТАЛЛИЧЕСКАЯ
@@ -56,7 +57,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/shtends')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             div
                 strong БОЛЬШАЯ АРКА
@@ -66,7 +67,7 @@ block flexbox
             p двусторонний: от 20.000 руб
             div
                 button(class="calc" onclick="moveTo('./calc/shtends')") рассчитать
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
 block info
     div(id="smth")
         img(class="img smthImg" src="../img/shtender/sht (5).png")
@@ -84,41 +85,41 @@ block info
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/shtender/sht (8).png")
             br
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/shtender/sht (9).png")
             br
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/shtender/sht (10).png")
             br
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/shtender/sht (6).png")
             br
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/shtender/sht (4).png")
             br
             br
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
 
 include ../footer

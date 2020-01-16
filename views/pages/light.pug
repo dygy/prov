@@ -15,7 +15,7 @@ div(class="flex-page")
             strong АКРИЛ + ПВХ
             div
                 button(class="more" onclick="moveTo('./lights/akpvh')") подробнее
-                button(class="buy" ) заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content402.png" onclick="displayImg('../img/4/content402.png')" )
             div(class="lupa" onclick="displayImg('../img/4/content402.png')")
@@ -23,7 +23,7 @@ div(class="flex-page")
             strong ПОЛИКАРБОНАТ + ПВХ
             div
                 button(class="more" onclick="moveTo('./lights/polipv')") подробнее
-                button(class="buy") заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content403.png" onclick="displayImg('../img/4/content403.png')")
             div(class="lupa" onclick="displayImg('../img/4/content403.png')")
@@ -31,7 +31,7 @@ div(class="flex-page")
             strong МЕТАЛ. ПРОФИЛЬ + БАННЕР
             div
                 button(class="more" onclick="moveTo('./lights/metkban')") подробнее
-                button(class="buy") заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content404.png" onclick="displayImg('../img/4/content404.png')" )
             div(class="lupa" onclick="displayImg('../img/4/content404.png')")
@@ -39,7 +39,7 @@ div(class="flex-page")
             strong МЕТАЛ. ПРОФИЛЬ + АКРИЛ
             div
                 button(class="more" onclick="moveTo('./lights/metkak')") подробнее
-                button(class="buy") заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content405.png" onclick="displayImg('../img/4/content405.png')")
             div(class="lupa" onclick="displayImg('../img/4/content405.png')")
@@ -47,7 +47,7 @@ div(class="flex-page")
             strong МЕТАЛ. ПРОФИЛЬ + ПВХ
             div
                 button(class="more" onclick="moveTo('./lights/metkpv')") подробнее
-                button(class="buy") заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content406.png" onclick="displayImg('../img/4/content406.png')")
             div(class="lupa" onclick="displayImg('../img/4/content406.png')")
@@ -55,7 +55,7 @@ div(class="flex-page")
             strong МЕТАЛ. ПРОФИЛЬ + ПОЛИКАРБОНАТ
             div
                 button(class="more" onclick="moveTo('./lights/metsot')") подробнее
-                button(class="buy") заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content407.png" onclick="displayImg('../img/4/content407.png')")
             div(class="lupa" onclick="displayImg('../img/4/content407.png')")
@@ -63,7 +63,7 @@ div(class="flex-page")
             strong ОТКРЫТЫЕ СВЕТОДИОДЫ
             div
                 button(class="more" onclick="moveTo('./lights/svetod')") подробнее
-                button(class="buy") заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content408.png" onclick="displayImg('../img/4/content408.png')")
             div(class="lupa" onclick="displayImg('../img/4/content408.png')")
@@ -71,7 +71,7 @@ div(class="flex-page")
             strong КОМПОЗИТ + ПРОРЕЗКА
             div
                 button(class="more" onclick="moveTo('./lights/alum')") подробнее
-                button(class="buy") заказать
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content409.png" onclick="displayImg('../img/4/content409.png')")
             div(class="lupa" onclick="displayImg('../img/4/content409.png')")
@@ -79,11 +79,10 @@ div(class="flex-page")
             strong КОМПОЗИТ + ИНКРУСТАЦИЯ
             div
                 button(class="more" onclick="moveTo('./lights/alumprozak')") подробнее
-                button(class="buy") заказать
+                button(class="buy" onclick="displayOrder()") заказать
 
     div(class="title")
-        button(class="calc" ) калькулятор
-
+        button(class="calc" onclick="alert('Калькулятор временно отсутствует')") калькулятор
     table
         tr(class="main blue")
             td тип
@@ -130,7 +129,7 @@ div(class="flex-page")
         div
             p Световой короб или лайтбокс — объемная рекламная конструкция с внутренней подсветкой. Форма часто прямоугольная, но может быть и более сложной. Лицевая поверхность может светиться как вся полностью, так и выборочно (например, только буквы). Лайтбоксами называют и огромные конструкции на весь фасад здания, и ультратонкие панели в окнах витрин с возможность замены изображения. Преимущество - цена ниже, чем у световых букв, и зависит только от квадратуры короба. Недостатки — лайтбоксы на улице все чаще запрещает МосКомАрхитектура.
             div
-                img(src="../img/button.png"  class="buttonImg")
+                img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
 
     div(id="flex-box")
         div(class="elem")
@@ -140,7 +139,7 @@ div(class="flex-page")
             p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content412.png")
             br
@@ -148,7 +147,7 @@ div(class="flex-page")
             p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content413.png")
             br
@@ -156,7 +155,7 @@ div(class="flex-page")
             p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content414.png")
             br
@@ -164,7 +163,7 @@ div(class="flex-page")
             p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content415.png")
             br
@@ -172,7 +171,7 @@ div(class="flex-page")
             p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content416.png")
             br
@@ -180,7 +179,7 @@ div(class="flex-page")
             p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content417.png")
             br
@@ -188,7 +187,7 @@ div(class="flex-page")
             p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
+                button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content418.png")
             br
@@ -196,7 +195,6 @@ div(class="flex-page")
             p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
-                button заказать
-
+                button(onclick="displayOrder()") заказать
 
 include ../footer
