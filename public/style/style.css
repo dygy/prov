@@ -374,7 +374,7 @@ body {
   #search {
     width: 23% !important; } }
 
-@media (max-width: 1240px) {
+@media (max-width: 1249px) {
   #header2 #second {
     justify-content: space-around; }
   #header2 .scul {
@@ -451,10 +451,16 @@ body {
       margin-right: 20px !important; } }
 
 @media (min-width: 1900px) {
-  #header bold {
-    font-size: 23px !important; }
-  #header mini {
-    font-size: 19px !important; } }
+  #header #first {
+    justify-content: space-between; }
+    #header #first bold {
+      font-size: 0.9vw !important; }
+    #header #first mini {
+      font-size: 0.7vw !important; }
+  #header #second .scul {
+    justify-content: space-around; }
+    #header #second .scul .scli {
+      font-size: 0.8vw !important; } }
 
 .soc-ico {
   display: flex;
