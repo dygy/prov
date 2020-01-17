@@ -762,13 +762,12 @@ button {
       justify-content: center; }
     #smth div .calc, .smth div .calc {
       margin-top: 5% !important;
-      width: 25% !important;
+      min-width: 25% !important;
       height: 3vw !important; }
     #smth div .buttonImg, .smth div .buttonImg {
       margin-top: 5%;
       max-width: 25% !important;
-      max-height: 25% !important;
-      box-shadow: 2px 1px 8px black; }
+      max-height: 25% !important; }
 
 .ntSmth .calc {
   margin-top: 7% !important;
@@ -778,8 +777,7 @@ button {
 .ntSmth .buttonImg {
   margin-top: 7%;
   max-width: 25% !important;
-  max-height: 25% !important;
-  box-shadow: 2px 1px 8px black; }
+  max-height: 25% !important; }
 
 #flex-info li {
   list-style-position: outside;
@@ -803,8 +801,7 @@ button {
     margin-top: 5%;
     width: 25% !important;
     height: 25% !important;
-    min-height: 50px !important;
-    box-shadow: 2px 1px 8px black; }
+    min-height: 50px !important; }
   .smth .smthImg {
     min-width: 400px;
     height: 400px; }

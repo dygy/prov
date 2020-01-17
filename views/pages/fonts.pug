@@ -1,8 +1,9 @@
 link(rel='stylesheet', href='/style/fonts.css')
-script(src='../js/index.js')
-script(src='../js/Global.js')
 include ../slider
 include ../header
+script(src='../js/index.js')
+script(src='../js/Global.js')
+
 block fonts
     div(class="title")
         h1 ОБЪЕМНЫЕ СВЕТЯЩИЕСЯ БУКВЫ
@@ -119,7 +120,7 @@ block info
         div
             p Объемные буквы – это яркая и эффективная наружная реклама. На данный момент это самые востребованные конструкции. Они не только привлекают внимание потенциальных клиентов, но и  являются единственным разрешенным  видом наружной рекламы в столице в соответствии с постановлением правительства г. Москва № 902-ПП. В подавляющем большинстве на фасады зданий устанавливаются объемные символы и важно сделать так, чтобы именно ваша вывеска была самой запоминающейся и выделялась на фоне других конструкций.
             div
-                img(src="../img/button.png" class="buttonImg")
+                img(src="../img/button.png" class="buttonImg" onclick="displayOrder()")
     div(id="flex-box")
         div(class="elem")
             img(src="/img/letters/1.jpg")

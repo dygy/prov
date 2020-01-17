@@ -2,16 +2,94 @@
 @import "everypage/hdr"
 @import "everypage/footer"
 @import "everypage/table"
+@import "viv.css"
+@import "fonts.css"
+table
+  tbody
+    margin-left: 0!important
+    margin-right: 0!important
+tr
+  background-color: white!important
+.flexpage
+  display: flex
+  justify-content: center
+.smth
+  a
+    position: relative
+    top: -350px
+  margin-right: 10%
+  .flexbuts
+    display: flex
+    margin-top: -40px
+    justify-content: space-around
+    .calc,.buttonImg
+      max-height: 50px!important
+      max-width: 200px!important
+      margin-top: 0!important
+    .calc
+      margin-left: 20px
+      height: 1.5vw!important
+      font-size: 14px
+      width: 25%!important
+      background-color: rgba(66,209,207,0.9)
+    .buttonImg
+      margin-right: 20px
+      box-shadow: 1px 1px 4px gray
+      min-height: 1.5vw!important
+      min-width: 30%!important
+.smth
+  margin-bottom: 77px
+  div
+    div
+      margin-bottom: -20px
 .title
-  margin-bottom: 40px
-  margin-top: 40px
+  margin-bottom: 20px
+  margin-top: 20px
   display: flex
   text-align: center
   justify-content: center
+.anchors
+  a
+    text-decoration: none
+    color: black
+  td
+    text-align: center
+    background-color: white
+    width: 16vw
+    font-size: 16px
+    font-weight: 900
+  td:active
+    color: #5bbeaa
+    text-decoration: #5bbeaa solid underline
+.prod
+  padding-left: 30px
+  td
+    display: inline-flex
+    align-content: center
+    align-items: center
+    justify-content: space-around
+    width: 12vw
+  tbody
+    width: 100%!important
+  .white
+    td
+      background-color: white!important
+  .blue
+    td
+      background-color: rgba(177, 227, 227, 0.93)
 table
-  border-spacing: 5px
+  height: auto!important
+  border-spacing: 0 5px
   td
     padding-left: 0% !important
+.smth
+  align-items: center
+  .smthImg
+    height: 400px!important
+    width: 400px!important
+  ul
+    li
+      font-size: 15px!important
 #font-flex
   justify-content: center
   padding-bottom: 20px
@@ -100,35 +178,32 @@ table
   width: 600px
   min-height: 30px
   margin-bottom: 0
-.mob
-  font-weight: 900
-  max-width: 600px
-  min-height: 30px
-  margin-top: 0
-  margin-left: 10px
-  margin-right: 10px
-  tr
+td
+  font-size: 13.5px!important
+@media (max-width: 1420px)
+  .smth
+    .flexbuts
+      .calc
+        min-height: 1.5vw
+        height: auto!important
+  .prod
     td
-      box-shadow: 1px 1px 1px black
-      padding-left: 3px
-      padding-right: 3px
-      font-size: 10px
-      background-color: #72d6d0
-      text-align: center
-      border: 1px solid black
-      border-radius: 2px
-    td.mini
-      max-width: 4vw
-    td.empty
-      box-shadow: none
-
-@media ( min-width : 1700px )
-  #flex-box
-    transform: scale(1.5)
-    margin-top: 100px
-    margin-bottom: 60px
-  #font-flex, #flex-box
-    margin-left: 7%
-    margin-right: 7%
-  td
-    font-size: 13px!important
+      font-size: 11px!important
+      width: 9vw!important
+@media (max-width: 1398px)
+  .prod
+    td
+      font-size: 11px!important
+      width: 7.5vw!important
+@media (max-width: 1200px)
+  .smth
+    .prod
+      td
+        width: 15vw!important
+    .flexbuts
+      margin-bottom: 20px
+      .calc
+        width: auto!important
+    div
+      div
+        margin-bottom: 0

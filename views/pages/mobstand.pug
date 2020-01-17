@@ -1,681 +1,1141 @@
 link(rel='stylesheet', href='/style/mobstand.css')
+include ../slider
+include ../header
 script(src='../js/index.js')
 script(src='../js/Global.js')
-include ../header
-//-
-    table
-        tr
-            td тип
-            td 1-9шт.
-            td 10-29шт.
-        tr
-            td без печати
-            td 1.690р
-            td 1.510р
-        tr
-            td с полотном из баннерной ткани
-            td 2.770р
-            td 2.470р
-        tr
-            td полотном из полипропилена
-            td 3.290р
-            td 2.930р
-//
-block flexbox
+script(src='../js/switcher.js')
+
+div(class="flex-page")
     div(class="title")
         h1 МОБИЛЬНЫЕ СТЕНДЫ
-    div(id="font-flex")
-        div(class="elem")
-            div
-                strong ROLL-UP LIGHT
-            br
-            img(src="../img/mobs/mobs (1).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") без печати
-                    td(class="mini") 1.690р
-                    td(class="mini") 1.510р
-                tr
-                    td(class="normal") с полотном из банерной ткани
-                    td(class="mini") 2.770р
-                    td(class="mini") 2.470р
-                tr
-                    td с полотом из полипроплена
-                    td(class="mini") 3.290р
-                    td(class="mini") 2.930р
+    div(class="title")
+        h4 ПРИМЕРЫ НАШИХ РАБОТ
+    div(class="photoflex")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        img(class="lights" src="../img/vivs/sk6.jpg" onclick="displayImg('../img/vivs/sk6.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(class="title")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+    table(class="anchors")
+        tr
+            td
+                a(href="#RL") Roll-up light
+            td
+                a(href="#RDS") Roll-up duble standart
+            td
+                a(href="#RP") Roll-up profi
+            td
+                a(href="#RM") Roll-up moving
+            td
+                a(href="#LB") L-banner
+        tr
+            td
+                a(href="#RDL") Roll-up duble luxury
+            td
+                a(href="#RS") Roll-up smart
+            td
+                a(href="#RLu") Roll-up luxury
+            td
+                a(href="#RMu") Roll-up multiplay
+            td
+                a(href="#XB") x-banner
+        tr
+            td
+                a(href="#RPe") Roll-up premium
+            td
+                a(href="#RCo") Roll-up colour
+            td
+                a(href="RLL") Roll-up luxury light
+            td
+                a(href="#RC") Roll-up cassette
+    div(class="smth")
+        a(name="RL")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (1).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-            //img(id="table1" src="img/table1.jpg")
+        div
+
             div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
+                strong  ROLL-UP LIGHT
+            p
+                br
+                br
+            ul
+                li Вес - 2,3 кг
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+                li Боковые декоративные крышки выполнены из Пластика АБС
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
+                    td(class="normal") без печати
+                    td(class="normal") банерная ткань
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text 2.990р
+                        text 2.670р
+                    td
+                        text 4.070р
+                        text 3.630р
+                    td
+                        text 4.590р
+                        text 4.080р
+    div(class="smth")
+        a(name="RS")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (4).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+
+        div
             div
                 strong ROLL-UP SMART
-            br
-            img(src="../img/mobs/mobs (4).png")
-            div(class="title") стоимость:
-            table(class="mob up")
-                tr
-                    td(class="empty")
-                    td(class="normal") 60x180
-                    td(class="normal") 85x200
-                    td(class="normal") 100x200
-            table(class="mob")
-                tr
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Aлюминиевая усиленная конструкция
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+
+            table(class="prod")
+                tr(class="blue")
                     td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
                     td(class="normal") без печати
-                    td(class="mini") 2.490р
-                    td(class="mini") 2.220р
-                    td(class="mini") 3.130р
-                    td(class="mini") 2.790р
-                    td(class="mini") 3.440р
-                    td(class="mini") 3.060р
+                    td(class="normal") банерная ткань
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td 100х200
+                    td
+                        text 2.990р
+                        text 2.670р
+                    td
+                        text 4.070р
+                        text 3.630р
+                    td
+                        text 4.590р
+                        text 4.080р
+                tr(class="white")
+                    td 150х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+    div(class="smth")
+        a(name="RPe")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (3).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-                tr
-                    td(class="normal") с полотном из банерной ткани
-                    td(class="mini") 2.770р
-                    td(class="mini") 2.470р
-                    td(class="mini") 3.290р
-                    td(class="mini") 2.930р
-                    td(class="mini") 3.290р
-                    td(class="mini") 3.290р
-
-                tr
-                    td с полотом из полипроплена
-                    td(class="mini") 2.990р
-                    td(class="mini") 2.670р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 4.390р
-                    td(class="mini") 4.080р
-            //img(id="table2" src="img/table2.jpg")
-            div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
+        div
             div
                 strong ROLL-UP PREMIUM
-            br
-            img(src="../img/mobs/mobs (3).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
-                    td(class="normal") 60x180
-                    td(class="normal") 85x200
-                    td(class="normal") 100x200
-            table(class="mob")
-                tr
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
                     td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
+                    td(class="normal") без печати
+                    td(class="normal") банерная ткань
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td 100х200
+                    td
+                        text 2.990р
+                        text 2.670р
+                    td
+                        text 4.070р
+                        text 3.630р
+                    td
+                        text 4.590р
+                        text 4.080р
+                tr(class="white")
+                    td 150х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+    div(class="smth")
+        a(name="RLL")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (2).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-
-                tr
-                    td 120x200
-                    td(class="mini") 3.090р
-                    td(class="mini") 2.760р
-                    td(class="mini") 3.990р
-                    td(class="mini") 3.560р
-                    td(class="mini") 10.490р
-                    td(class="mini") 9.340р
-                tr
-                    td 150x200
-                    td(class="mini") 4.440р
-                    td(class="mini") 3.950р
-                    td(class="mini") 5.610р
-                    td(class="mini") 5.000р
-                    td(class="mini") 12.650р
-                    td(class="mini") 11.260р
-
-            //img(id="table3" src="img/table3.jpg")
-            div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
+        div
             div
                 strong ROLL-UP LUXURY LIGHT
-            br
-            img(src="../img/mobs/mobs (2).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
                     td(class="normal") без печати
                     td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td 100х200
+                    td
+                        text 2.990р
+                        text 2.670р
+                    td
+                        text 4.070р
+                        text 3.630р
+                    td
+                        text 4.590р
+                        text 4.080р
+                tr(class="white")
+                    td 150х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+    div(class="smth")
+        a(name="RLu")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (5).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+
+        div
+            div
+                strong ROLL-UP LUXURY
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
                     td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-
-                tr
-                    td 120x200
-                    td(class="mini") 3.090р
-                    td(class="mini") 2.760р
-                    td(class="mini") 3.990р
-                    td(class="mini") 3.560р
-                    td(class="mini") 10.490р
-                    td(class="mini") 9.340р
-                tr
-                    td 150x200
-                    td(class="mini") 4.440р
-                    td(class="mini") 3.950р
-                    td(class="mini") 5.610р
-                    td(class="mini") 5.000р
-                    td(class="mini") 12.650р
-                    td(class="mini") 11.260р
-            //img(id="table4" src="img/table4.jpg")
-            div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
-            div
-                strong ROLL-UЗ LUXURY
-            br
-            img(src="../img/mobs/mobs (5).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
                     td(class="normal") без печати
                     td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td 100х200
+                    td
+                        text 2.990р
+                        text 2.670р
+                    td
+                        text 4.070р
+                        text 3.630р
+                    td
+                        text 4.590р
+                        text 4.080р
+                tr(class="white")
+                    td 150х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+    div(class="smth")
+        a(name="RP")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (6).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-            //img(id="table5" src="img/table5.jpg")
-            div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
+        div
             div
                 strong ROLL-UP PROFI
-            br
-            img(src="../img/mobs/mobs (6).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
                     td(class="normal") без печати
                     td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td 100х200
+                    td
+                        text 2.990р
+                        text 2.670р
+                    td
+                        text 4.070р
+                        text 3.630р
+                    td
+                        text 4.590р
+                        text 4.080р
+                tr(class="white")
+                    td 150х200
+                    td
+                        text 4.440р
+                        text 3.950р
+                    td
+                        text 5.610р
+                        text 5.000р
+                    td
+                        text 12.650р
+                        text 11.260р
+                tr(class="blue")
+                    td 200х200
+                    td
+                        text 4.440р
+                        text 3.950р
+                    td
+                        text 5.610р
+                        text 5.000р
+                    td
+                        text 12.650р
+                        text 11.260р
+    div(class="smth")
+        a(name="RDL")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (17).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-            //img(id="table6" src="img/table5.jpg")
+        div
             div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
-            div
-                strong ROLL-UЗ DOUBLE LUXURY
-            br
-            img(src="../img/mobs/mobs (17).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
+                strong ROLL-UP DUBLE LUXURY
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
                     td(class="normal") без печати
                     td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+    div(class="smth")
+        a(name="RDS")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (18).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-            //img(id="table7" src="img/table5.jpg")
+        div
             div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
-            div
-                strong ROLL-UP DOUBLE STANDART
-            br
-            img(src="../img/mobs/mobs (18).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
+                strong ROLL-UP DUBLE STANDART
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
                     td(class="normal") без печати
                     td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+    div(class="smth")
+        a(name="RCo")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (7).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-            //img(id="table8" src="img/table5.jpg")
+        div
             div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
-            div
-                strong ROLL-UЗ COLOUR
-            br
-            img(src="../img/mobs/mobs (7).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
+                strong ROLL-UP COLOUR
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
                     td(class="normal") без печати
                     td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+    div(class="smth")
+        a(name="RC")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (10).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-            //img(id="table8" src="img/table5.jpg")
-            div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
+        div
             div
                 strong ROLL-UP CASSETTE
-            br
-            img(src="../img/mobs/mobs (10).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
                     td(class="normal") без печати
                     td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+    div(class="smth")
+        a(name="RM")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (8).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-            //img(id="table8" src="img/table5.jpg")
-            div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
-            div
-                strong ROLL-UЗ MOVING
-            br
-            img(src="../img/mobs/mobs (8).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
-                    td(class="normal") без печати
-                    td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-            //img(id="table8" src="img/table5.jpg")
-            div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
-            div
-                strong ROLL-UP MULTIPLY
-            br
-            img(src="../img/mobs/mobs (9).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
-                    td(class="normal") без печати
-                    td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-            //img(id="table8" src="img/table5.jpg")
-            div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
-            div
-                strong L– BANNER
-            br
-            img(src="../img/mobs/mobs (11).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
-                    td(class="normal") без печати
-                    td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-            //img(id="table8" src="img/table5.jpg")
-            div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-        div(class="elem")
-            div
-                strong X – BANNER
-            br
-            img(src="../img/mobs/mobs (12).png")
-            div(class="title") стоимость:
-            table(class="mob up" style="margin-right: 25px")
-                tr
-                    td(class="empty")
-                    td(class="normal") без печати
-                    td(class="normal") банерная ткань
-                    td(class="normal") полипролилен
-            table(class="mob")
-                tr
-                    td(class="normal") тип
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                    td(class="mini") 1-9шт.
-                    td(class="mini") 10-29шт.
-                tr
-                    td(class="normal") 85x200
-                    td(class="mini") 2.670р
-                    td(class="mini") 2.380р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-                    td(class="mini") 3.170р
-                    td(class="mini") 2.820р
-
-                tr
-                    td(class="normal") 100x200
-                    td(class="mini") 3.190р
-                    td(class="mini") 2.840р
-                    td(class="mini") 4.070р
-                    td(class="mini") 3.630р
-                    td(class="mini") 3.690р
-                    td(class="mini") 3.280р
-            //img(id="table8" src="img/table5.jpg")
-            div
-                button(class="calc" onclick="moveTo('./calc/mobstands')") рассчитать
-                button(class="buy" ) заказать
-div(id="flex-box")
-    div(class="elem")
-        img(src="../img/mobs/mobs (15).png")
-        br
         div
-            price ≈ 15.000 руб
-            br
-            button заказать
-    div(class="elem")
-        img(src="../img/mobs/mobs (16).png")
-        br
-        div
-            price ≈ 15.000 руб
-            br
-            button заказать
-    div(class="elem")
-        img(src="../img/mobs/mobs (13).png")
-        br
-        div
-            price ≈ 15.000 руб
-            br
-            button заказать
-    div(class="elem")
-        img(src="../img/mobs/mobs (14).png")
-        br
-        div
-            price ≈ 15.000 руб
-            br
-            button заказать
+            div
+                strong ROLL-UP MOVING
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
+                    td(class="normal") без печати
+                    td(class="normal") банерная ткань
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
 
+    div(class="smth")
+        a(name="RMu")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (9).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+
+        div
+            div
+                strong ROLL-UP MULTIPLAY
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
+                    td(class="normal") без печати
+                    td(class="normal") банерная ткань
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+
+
+    div(class="smth")
+        a(name="RL")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (11).png" class="smthImg" )
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+
+        div
+            div
+                strong L-BANNER
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
+                    td(class="normal") без печати
+                    td(class="normal") банерная ткань
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+    div(class="smth")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (12).png" class="smthImg")
+            div(class="flexbuts")
+                button(class="calc" onclick='moveTo("./calc/mobstands")') рассчитать
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+
+        div
+            div
+                strong X-BANNER
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="normal") тип
+                    td(class="normal") без печати
+                    td(class="normal") банерная ткань
+                    td полипропилен
+                tr(class="white")
+                    td количество
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                    td
+                        text 1-9шт.
+                        text 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td
+                        text 2.490р
+                        text 2.220р
+                    td
+                        text 3.130р
+                        text 2.790р
+                    td
+                        text 3.440р
+                        text 3.060р
+                tr(class="white")
+                    td 85х200
+                    td
+                        text 2.790р
+                        text 2.490р
+                    td
+                        text 3.870р
+                        text 3.450р
+                    td
+                        text 4.390р
+                        text 3.910р
+
+                tr(class="blue")
+                    td
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
+                    td
+                        text
+                        text
 include ../footer
