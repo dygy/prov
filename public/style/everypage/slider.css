@@ -446,6 +446,9 @@ body {
       top: -145px; } }
 
 @-moz-document url-prefix() {
+  #full-page #sell #close {
+    left: -2%;
+    top: -148px; }
   #order .checkbox label {
     top: 188px !important; }
   #order .checkbox p {

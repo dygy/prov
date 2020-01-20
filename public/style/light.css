@@ -131,6 +131,8 @@
     margin: 10px 4% 0 0 !important; } }
 
 #arrow {
+  display: block;
+  z-index: 2;
   top: 35vh;
   left: 2vw;
   position: fixed;
@@ -319,6 +321,8 @@ body {
     height: 20px; }
 
 @media (max-width: 900px) {
+  #font-flex, #flex-box {
+    justify-content: center !important; }
   #header bold {
     font-size: 16px !important; }
   #header mini {
@@ -970,15 +974,17 @@ button {
 #close {
   left: -107px; }
 
-table tr {
-  width: 100%; }
-
-table tbody {
-  width: 100%; }
-  table tbody td {
-    width: 84%; }
-  table tbody .price {
-    width: 13vw; }
+table {
+  margin-left: -1vw;
+  margin-right: -1vw; }
+  table tr {
+    width: 100%; }
+  table tbody {
+    width: 100%; }
+    table tbody td {
+      width: 84%; }
+    table tbody .price {
+      width: 13vw; }
 
 .title {
   margin-bottom: 40px;

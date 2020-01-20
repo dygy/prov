@@ -1,15 +1,12 @@
 @import url(infstands.css);
-.flex-page #font-flex {
-  margin-top: 200px !important;
-  margin-bottom: 200px !important; }
-  .flex-page #font-flex .elem {
-    margin: 10px 2% 0 0 !important;
-    background-color: #ededed !important;
-    text-align: center; }
-    .flex-page #font-flex .elem img {
-      margin-left: 0 !important; }
-    .flex-page #font-flex .elem p {
-      font-weight: bold; }
+.flex-page #font-flex .elem {
+  margin: 10px 2% 0 0 !important;
+  background-color: #ededed !important;
+  text-align: center; }
+  .flex-page #font-flex .elem img {
+    margin-left: 0 !important; }
+  .flex-page #font-flex .elem p {
+    font-weight: bold; }
 
 .flex-page #flex-box .elem {
   padding-top: 10px; }
@@ -18,5 +15,10 @@
   margin-top: 54px;
   height: 370px !important;
   min-width: 300px !important; }
+
+@media (min-width: 1700px) {
+  #font-flex {
+    margin-top: 100px !important;
+    margin-bottom: 200px !important; } }
 
 /*# sourceMappingURL=stickers.css.map */
