@@ -130,6 +130,17 @@
   #dropdown #lastUL {
     margin: 10px 4% 0 0 !important; } }
 
+#arrow {
+  display: block;
+  z-index: 2;
+  top: 35vh;
+  left: 2vw;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-image: url("/img/arrow.png");
+  background-size: 100% 100%; }
+
 #emailA {
   font-weight: 500; }
 
@@ -310,6 +321,8 @@ body {
     height: 20px; }
 
 @media (max-width: 900px) {
+  #font-flex, #flex-box {
+    justify-content: center !important; }
   #header bold {
     font-size: 16px !important; }
   #header mini {
@@ -461,6 +474,22 @@ body {
     #header #second .scul .scli, #header2 #second .scul .scli {
       font-size: 0.8vw !important; } }
 
+.more text {
+  padding-right: 10px; }
+
+.more .arrow {
+  padding-right: 0;
+  display: inline-block;
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
 .soc-ico {
   display: flex;
   margin: -45px -30px 0 -7px !important; }
@@ -538,10 +567,11 @@ body {
     font-weight: 900;
     padding-left: 10px;
     display: flex;
-    justify-content: space-around; }
+    justify-content: center; }
     #footer #ftr-scnd div {
       margin: 25px 18% 0 0; }
     #footer #ftr-scnd #map {
+      margin-left: -66px;
       margin-top: -55px;
       width: 200px;
       height: 300px; }
@@ -709,13 +739,12 @@ body {
       justify-content: center; }
     #smth div .calc, .smth div .calc {
       margin-top: 5% !important;
-      width: 25% !important;
+      min-width: 90px !important;
       height: 3vw !important; }
     #smth div .buttonImg, .smth div .buttonImg {
       margin-top: 5%;
       max-width: 25% !important;
-      max-height: 25% !important;
-      box-shadow: 2px 1px 8px black; }
+      max-height: 25% !important; }
 
 .ntSmth .calc {
   margin-top: 7% !important;
@@ -725,8 +754,7 @@ body {
 .ntSmth .buttonImg {
   margin-top: 7%;
   max-width: 25% !important;
-  max-height: 25% !important;
-  box-shadow: 2px 1px 8px black; }
+  max-height: 25% !important; }
 
 #flex-info li {
   list-style-position: outside;
@@ -743,6 +771,8 @@ body {
     margin-top: 5px;
     list-style-type: circle; }
   .smth .calc {
+    max-height: 55px;
+    max-width: 210px;
     margin-top: 5% !important;
     width: 25% !important;
     height: 3vw !important; }
@@ -750,8 +780,7 @@ body {
     margin-top: 5%;
     width: 25% !important;
     height: 25% !important;
-    min-height: 50px !important;
-    box-shadow: 2px 1px 8px black; }
+    min-height: 58px !important; }
   .smth .smthImg {
     min-width: 400px;
     height: 400px; }
@@ -876,7 +905,6 @@ body {
   width: 150px;
   height: 40px;
   background-color: white;
-  border: 0.5px rgba(0, 0, 255, 0.22) solid;
   font-size: 21px; }
 
 button {
@@ -971,8 +999,12 @@ space {
       padding-left: 10px;
       font-size: 16px; }
     #font-flex .elem div {
+      display: flex;
+      align-items: center;
       text-align: center;
       margin-top: 3px; }
+      #font-flex .elem div .calc {
+        margin-bottom: 0 !important; }
     #font-flex .elem .imgflex {
       margin-left: -20px;
       display: flex;

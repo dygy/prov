@@ -22,6 +22,10 @@
       height: 25vw;
       min-height: 379px;
       min-width: 379px; }
+    #font-flex .elem button, #font-flex .elem .calc {
+      margin-bottom: 10px;
+      min-height: 50px !important;
+      min-width: 140px !important; }
     #font-flex .elem div {
       margin-bottom: -4px; }
 

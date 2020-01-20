@@ -474,6 +474,22 @@ body {
     #header #second .scul .scli, #header2 #second .scul .scli {
       font-size: 0.8vw !important; } }
 
+.more text {
+  padding-right: 10px; }
+
+.more .arrow {
+  padding-right: 0;
+  display: inline-block;
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
 .soc-ico {
   display: flex;
   margin: -45px -30px 0 -7px !important; }
@@ -715,7 +731,6 @@ table {
   width: 150px;
   height: 40px;
   background-color: white;
-  border: 0.5px rgba(0, 0, 255, 0.22) solid;
   font-size: 21px; }
 
 button {
@@ -947,11 +962,11 @@ button {
     font-family: GeomB !important; }
   .title .calc, #title .calc {
     background: #72d7cf;
-    width: 15% !important;
+    width: 17% !important;
     min-width: 170px;
     min-height: 20px;
     height: 4vw !important;
-    max-width: 220px;
+    max-width: 250px;
     max-height: 50px; }
   .title .buttonImg, #title .buttonImg {
     margin-left: 7% !important;
@@ -1002,6 +1017,9 @@ button {
       padding-left: 10px;
       font-size: 12px; }
     #font-flex .elem div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       margin-top: 3px; }
     #font-flex .elem button {
@@ -1009,6 +1027,8 @@ button {
       height: 40px !important;
       width: 120px; }
     #font-flex .elem .calc {
+      width: 120px;
+      height: 40px;
       text-align: center;
       font: 13.333px Geom;
       color: black;

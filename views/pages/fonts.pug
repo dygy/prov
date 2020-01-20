@@ -64,7 +64,9 @@ block fonts
             br
             strong ПВХ - КОНТРАЖУР
             div
-                button(class="more" onclick="moveTo('./font/pvk')") подробнее
+                button(class="more" onclick="moveTo('./font/pvk')")
+                    text подробнее
+                    text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
             img(src="/img/letters/U.jpg" onclick="displayImg('../img/letters/U.jpg')")
@@ -89,7 +91,7 @@ block fonts
 
 block tab
     div(class="title")
-        button(class="calc" onclick=("moveTo('./calc/symbs')") ) КАЛЬКУЛЯТОР
+        img(class="calc" src='/img/calc.png' onclick=("moveTo('./calc/symbs')") )
     table
         tr(class="main blue")
             td тип
