@@ -474,6 +474,22 @@ body {
     #header #second .scul .scli, #header2 #second .scul .scli {
       font-size: 0.8vw !important; } }
 
+.more text {
+  padding-right: 10px; }
+
+.more .arrow {
+  padding-right: 0;
+  display: inline-block;
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
 .soc-ico {
   display: flex;
   margin: -45px -30px 0 -7px !important; }
@@ -1026,6 +1042,7 @@ table {
       border: none;
       height: 35px; }
     #font-flex .elem .more {
+      padding-right: 10px;
       background-color: whitesmoke;
       position: relative;
       left: -15px; }

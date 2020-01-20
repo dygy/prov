@@ -5,7 +5,10 @@ include ../header
 script(src='../js/index.js')
 script(src='../js/Global.js')
 script(src='../js/switcher.js')
-
+style.
+    .photoflex img{
+        margin: 0 10px;
+    }
 block port
     div(class="title")
         h1 ПОРТФОЛИО
@@ -18,7 +21,6 @@ block port
         img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
         img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
         img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
-        img(class="lights" src="../img/vivs/sk6.jpg" onclick="displayImg('../img/vivs/sk6.jpg')")
         div(class='right' onclick="newRow('lights',true)")
     div(class="title")
         h1 ОБЪЕМНЫЕ БУКВЫ
@@ -29,7 +31,6 @@ block port
         img(class="symbs" src="../img/vivs/ob3.jpg" onclick="displayImg('../img/vivs/ob3.jpg')")
         img(class="symbs" src="../img/vivs/ob4.jpg" onclick="displayImg('../img/vivs/ob4.jpg')")
         img(class="symbs" src="../img/vivs/ob5.jpg" onclick="displayImg('../img/vivs/ob5.jpg')")
-        img(class="symbs" src="../img/vivs/ob6.jpg" onclick="displayImg('../img/vivs/ob6.jpg')")
         div(class='right' onclick="newRow('symbs',true)")
     div(class="title")
         h1 ПАНЕЛЬ-КРОНШТЕЙН
@@ -40,9 +41,7 @@ block port
         img(class="krons" src="../img/vivs/pk3.jpg" onclick="displayImg('../img/vivs/pk3.jpg')")
         img(class="krons" src="../img/vivs/pk4.jpg" onclick="displayImg('../img/vivs/pk4.jpg')")
         img(class="krons" src="../img/vivs/pk5.jpg" onclick="displayImg('../img/vivs/pk5.jpg')")
-        img(class="krons" src="../img/vivs/pk6.jpg" onclick="displayImg('../img/vivs/pk6.jpg')")
         div(class='right' onclick="newRow('krons',true)")
-
     div(class="title")
         h1 НЕСВЕТОВЫЕ ВЫВЕСКИ
     div(class="photoflex")
@@ -52,7 +51,6 @@ block port
         img(class="nolights" src="../img/vivs/nsw3.jpg" onclick="displayImg('../img/vivs/nsw3.jpg')")
         img(class="nolights" src="../img/vivs/nsw4.jpg" onclick="displayImg('../img/vivs/nsw4.jpg')")
         img(class="nolights" src="../img/vivs/nsw5.jpg" onclick="displayImg('../img/vivs/nsw5.jpg')")
-        img(class="nolights" src="../img/vivs/nsw6.jpg" onclick="displayImg('../img/vivs/nsw6.jpg')")
         div(class='right' onclick="newRow('nolights',true)")
 
     div(class="title")
@@ -64,7 +62,6 @@ block port
         img(class="bans" src="../img/prod/banner/banner3.png" onclick="displayImg('../img/prod/banner/banner3.png')")
         img(class="bans" src="../img/prod/banner/banner4.png" onclick="displayImg('../img/prod/banner/banner4.png')")
         img(class="bans" src="../img/prod/banner/banner5.png" onclick="displayImg('../img/prod/banner/banner5.png')")
-        img(class="bans" src="../img/prod/banner/banner6.png" onclick="displayImg('../img/prod/banner/banner6.png')")
         div(class='right' onclick="newRow('bans',true)")
 
     div(class="title")
@@ -76,7 +73,6 @@ block port
         img(class="zones" src="../img/prod/zone/zone3.png" onclick="displayImg('../img/prod/zone/zone3.png')")
         img(class="zones" src="../img/prod/zone/zone4.png" onclick="displayImg('../img/prod/zone/zone4.png')")
         img(class="zones" src="../img/prod/zone/zone5.png" onclick="displayImg('../img/prod/zone/zone5.png')")
-        img(class="zones" src="../img/prod/zone/zone6.png" onclick="displayImg('../img/prod/zone/zone6.png')")
         div(class='right' onclick="newRow('zones',true)")
 
     div(class="title")
@@ -88,7 +84,6 @@ block port
         img(class="stands" src="../img/prod/stand/stand3.png" onclick="displayImg('../img/prod/stand/stand3.png')")
         img(class="stands" src="../img/prod/stand/stand4.png" onclick="displayImg('../img/prod/stand/stand4.png')")
         img(class="stands" src="../img/prod/stand/stand5.png" onclick="displayImg('../img/prod/stand/stand5.png')")
-        img(class="stands" src="../img/prod/stand/stand6.png" onclick="displayImg('../img/prod/stand/stand6.png')")
         div(class='right' onclick="newRow('stands',true)")
 
     div(class="title")
@@ -100,7 +95,6 @@ block port
         img(class="vists" src="../img/prod/vist/vist3.png" onclick="displayImg('../img/prod/vist/vist3.png')")
         img(class="vists" src="../img/prod/vist/vist4.png" onclick="displayImg('../img/prod/vist/vist4.png')")
         img(class="vists" src="../img/prod/vist/vist5.png" onclick="displayImg('../img/prod/vist/vist5.png')")
-        img(class="vists" src="../img/prod/vist/vist6.png" onclick="displayImg('../img/prod/vist/vist6.png')")
         div(class='right' onclick="newRow('vists',true)")
 
     div(class="title")
@@ -112,7 +106,6 @@ block port
         img(class="groups" src="../img/prod/group/group3.png" onclick="displayImg('../img/prod/group/group3.png')")
         img(class="groups" src="../img/prod/group/group4.png" onclick="displayImg('../img/prod/group/group4.png')")
         img(class="groups" src="../img/prod/group/group5.png" onclick="displayImg('../img/prod/group/group5.png')")
-        img(class="groups" src="../img/prod/group/group6.png" onclick="displayImg('../img/prod/group/group6.png')")
         div(class='right' onclick="newRow('groups',true)")
 
     div(class="title")
@@ -124,7 +117,6 @@ block port
         img(class="tables" src="../img/prod/table/table3.png" onclick="displayImg('../img/prod/table/table3.png')")
         img(class="tables" src="../img/prod/table/table4.png" onclick="displayImg('../img/prod/table/table4.png')")
         img(class="tables" src="../img/prod/table/table5.png" onclick="displayImg('../img/prod/table/table5.png')")
-        img(class="tables" src="../img/prod/table/table6.png" onclick="displayImg('../img/prod/table/table6.png')")
         div(class='right' onclick="newRow('tables',true)")
 
     div(class="title")
@@ -136,7 +128,6 @@ block port
         img(class="autos" src="../img/prod/auto/auto3.png" onclick="displayImg('../img/prod/auto/auto3.png')")
         img(class="autos" src="../img/prod/auto/auto4.png" onclick="displayImg('../img/prod/auto/auto4.png')")
         img(class="autos" src="../img/prod/auto/auto5.png" onclick="displayImg('../img/prod/auto/auto5.png')")
-        img(class="autos" src="../img/prod/auto/auto6.png" onclick="displayImg('../img/prod/auto/auto6.png')")
         div(class='right' onclick="newRow('autos',true)")
 
 include ../footer
