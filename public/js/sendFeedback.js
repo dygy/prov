@@ -1,19 +1,19 @@
 const msg = {}
 function sendFeedback() {
     if(!elem("name").value){
-        alert("Пожалуйста, оставьте свое имя")
+        displayMessage("Пожалуйста, оставьте свое имя")
     }
     else  if (!elem("company").value){
-        alert("Пожалуйста, оставьте название компании")
+        displayMessage("Пожалуйста, оставьте название компании")
     }
     else if (!elem("phoneN").value){
-        alert("Пожалуйста, оставьте номер телефона")
+        displayMessage("Пожалуйста, оставьте номер телефона")
     }
     else if (!elem("email").value){
-        alert("Пожалуйста, оставьте электронную почту")
+        displayMessage("Пожалуйста, оставьте электронную почту")
     }
     else if (!elem("comment").value){
-        alert("Пожалуйста, оставьте сообщение")
+        displayMessage("Пожалуйста, оставьте сообщение")
     }
     else{
         msg.comment = elem("comment").value
@@ -33,7 +33,7 @@ function sendFeedback() {
             };
             const data = JSON.stringify(msg);
             xhr.send(data);
-
+            displayMessage("Ваше сообщение отправлено.")
     }
 
 }

@@ -538,7 +538,7 @@ body {
     font-weight: 900;
     padding-left: 10px;
     display: flex;
-    justify-content: space-around; }
+    justify-content: center; }
     #footer #ftr-scnd div {
       margin: 25px 18% 0 0; }
     #footer #ftr-scnd #map {
@@ -956,11 +956,10 @@ tbody {
   font-weight: 900; }
 
 .photoflex {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 10.5% 40px 10.5%;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-between; }
   .photoflex .left, .photoflex .right {
     height: 50px;
     width: 50px;
@@ -971,7 +970,6 @@ tbody {
   .photoflex .right {
     background-image: url("../img/next.png"); }
   .photoflex img {
-    margin: 0 0.3% 0;
     height: 150px;
     width: 150px; }
 
@@ -1004,8 +1002,7 @@ table {
     margin-top: 70px;
     margin-bottom: 100px; }
     .photoflex img {
-      transform: scale(1.5);
-      margin: 0 3% 0 !important; } }
+      transform: scale(1.5); } }
 
 @-moz-document url-prefix() {
   table .name {

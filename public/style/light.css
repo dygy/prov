@@ -130,6 +130,15 @@
   #dropdown #lastUL {
     margin: 10px 4% 0 0 !important; } }
 
+#arrow {
+  top: 35vh;
+  left: 2vw;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-image: url("/img/arrow.png");
+  background-size: 100% 100%; }
+
 #emailA {
   font-weight: 500; }
 
@@ -538,10 +547,11 @@ body {
     font-weight: 900;
     padding-left: 10px;
     display: flex;
-    justify-content: space-around; }
+    justify-content: center; }
     #footer #ftr-scnd div {
       margin: 25px 18% 0 0; }
     #footer #ftr-scnd #map {
+      margin-left: -66px;
       margin-top: -55px;
       width: 200px;
       height: 300px; }
@@ -762,7 +772,7 @@ button {
       justify-content: center; }
     #smth div .calc, .smth div .calc {
       margin-top: 5% !important;
-      min-width: 25% !important;
+      min-width: 90px !important;
       height: 3vw !important; }
     #smth div .buttonImg, .smth div .buttonImg {
       margin-top: 5%;
@@ -794,6 +804,8 @@ button {
     margin-top: 5px;
     list-style-type: circle; }
   .smth .calc {
+    max-height: 55px;
+    max-width: 210px;
     margin-top: 5% !important;
     width: 25% !important;
     height: 3vw !important; }
@@ -801,7 +813,7 @@ button {
     margin-top: 5%;
     width: 25% !important;
     height: 25% !important;
-    min-height: 50px !important; }
+    min-height: 58px !important; }
   .smth .smthImg {
     min-width: 400px;
     height: 400px; }
@@ -948,6 +960,9 @@ button {
   left: 10px;
   margin-top: -25px !important; }
 
+#smth .imgSwitcher {
+  margin-left: -25px !important; }
+
 #disImg {
   width: 430px !important;
   margin-left: -9%; }
@@ -955,17 +970,15 @@ button {
 #close {
   left: -107px; }
 
-table {
-  margin-left: -1%;
-  margin-right: -1%; }
-  table tr {
-    width: 100%; }
-  table tbody {
-    width: 100%; }
-    table tbody td {
-      width: 84%; }
-    table tbody .price {
-      width: 13vw; }
+table tr {
+  width: 100%; }
+
+table tbody {
+  width: 100%; }
+  table tbody td {
+    width: 84%; }
+  table tbody .price {
+    width: 13vw; }
 
 .title {
   margin-bottom: 40px;
@@ -1076,7 +1089,7 @@ table {
   .down-layout {
     bottom: -91% !important; }
   .flex-page #flex-box {
-    margin: 220px 15%;
+    margin: 220px 13.5%;
     transform: scale(1.37); }
   .flex-page #font-flex {
     margin: 100px 9% 150px;

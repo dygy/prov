@@ -1,3 +1,13 @@
+#arrow {
+  z-index: 2;
+  top: 35vh;
+  left: 2vw;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-image: url("/img/arrow.png");
+  background-size: 100% 100%; }
+
 #emailA {
   font-weight: 500; }
 
@@ -538,10 +548,11 @@ body {
     font-weight: 900;
     padding-left: 10px;
     display: flex;
-    justify-content: space-around; }
+    justify-content: center; }
     #footer #ftr-scnd div {
       margin: 25px 18% 0 0; }
     #footer #ftr-scnd #map {
+      margin-left: -66px;
       margin-top: -55px;
       width: 200px;
       height: 300px; }

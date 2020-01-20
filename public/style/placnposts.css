@@ -33,13 +33,12 @@
       justify-content: center; }
     #smth div .calc, .smth div .calc {
       margin-top: 5% !important;
-      width: 25% !important;
+      min-width: 90px !important;
       height: 3vw !important; }
     #smth div .buttonImg, .smth div .buttonImg {
       margin-top: 5%;
       max-width: 25% !important;
-      max-height: 25% !important;
-      box-shadow: 2px 1px 8px black; }
+      max-height: 25% !important; }
 
 .ntSmth .calc {
   margin-top: 7% !important;
@@ -49,8 +48,7 @@
 .ntSmth .buttonImg {
   margin-top: 7%;
   max-width: 25% !important;
-  max-height: 25% !important;
-  box-shadow: 2px 1px 8px black; }
+  max-height: 25% !important; }
 
 #flex-info li {
   list-style-position: outside;
@@ -67,6 +65,8 @@
     margin-top: 5px;
     list-style-type: circle; }
   .smth .calc {
+    max-height: 55px;
+    max-width: 210px;
     margin-top: 5% !important;
     width: 25% !important;
     height: 3vw !important; }
@@ -74,8 +74,7 @@
     margin-top: 5%;
     width: 25% !important;
     height: 25% !important;
-    min-height: 50px !important;
-    box-shadow: 2px 1px 8px black; }
+    min-height: 58px !important; }
   .smth .smthImg {
     min-width: 400px;
     height: 400px; }
@@ -766,10 +765,11 @@ body {
     font-weight: 900;
     padding-left: 10px;
     display: flex;
-    justify-content: space-around; }
+    justify-content: center; }
     #footer #ftr-scnd div {
       margin: 25px 18% 0 0; }
     #footer #ftr-scnd #map {
+      margin-left: -66px;
       margin-top: -55px;
       width: 200px;
       height: 300px; }
@@ -932,13 +932,18 @@ body {
   text-align: center;
   padding-left: 30px; }
 
-.smth .calc {
-  margin-top: 30px;
-  background: #72d7cf;
-  margin-left: 20%; }
-
-.smth .buy-tel {
-  margin-right: 20%; }
+.smth .flexbuts {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around; }
+  .smth .flexbuts .calc {
+    margin-top: 0 !important;
+    background: #72d7cf; }
+  .smth .flexbuts .buttonImg {
+    margin-top: 0 !important;
+    max-height: 55px !important; }
 
 @media (min-width: 1500px) {
   h3 {

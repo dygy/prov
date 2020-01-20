@@ -1,4 +1,7 @@
 @import url(serves.css);
+.info {
+  padding-bottom: 40px; }
+
 bold {
   font-family: GeomB; }
 
@@ -7,7 +10,7 @@ bold {
   margin-right: 0 !important; }
 
 p {
-  margin-left: 15%;
-  margin-right: 15%; }
+  margin-left: 14%;
+  margin-right: 22%; }
 
 /*# sourceMappingURL=serve.css.map */

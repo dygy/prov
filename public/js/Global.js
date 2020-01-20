@@ -4,13 +4,17 @@ function elem(id) {
 function elems(classname) {
     return document.getElementsByClassName(classname)
 }
-
+function displayMessage(message) {
+    elem("full-page").style.display = "flex";
+    elem("message").style.display="flex";
+    elem("messageText").innerText= message;
+}
 function moveTo(url) {
     location.href = url;
 }
 function displaySell() {
     elem("full-page").style.display = "flex";
-    document.getElementsByClassName("sell")[0].style.display = "flex";
+    elems("sell")[0].style.display = "flex";
 
 }
 function displayOrder() {
@@ -24,7 +28,7 @@ function displayProd() {
 }
 function displayImg(url) {
     elem("full-page").style.display = "flex";
-    document.getElementsByClassName("sell")[1].style.display = "flex";
+    elems("sell")[1].style.display = "flex";
     elem("disImg").src = url;
 }
 function setImg(num) {

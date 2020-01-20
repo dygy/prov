@@ -4,7 +4,9 @@ div(id="full-page" onclick="" +
         "document.getElementById('full-page').style.display='none'; " +
         "document.getElementsByClassName('sell')[0].style.display='none'; " +
         "document.getElementsByClassName('sell')[1].style.display='none';" +
-        "document.getElementsByClassName('sell')[2].style.display='none'")
-    include sell-mark
-    include image
-    include order
+        "document.getElementById('order').style.display='none';" +
+        "document.getElementById('message').style.display='none';")
+    include comeOut/sell-mark
+    include comeOut/image
+    include comeOut/order
+    include comeOut/message

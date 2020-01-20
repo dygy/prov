@@ -43,7 +43,7 @@ block light
             td(class="name") ОТКРЫТЫЕ СВЕТОДИОДЫ
             td(class=" price") от 15 000 руб/м2
     div(class="title")
-        button(class="calc" ) рассчитать
+        button(class="calc"  onclick="displaySell()") рассчитать
         img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
 block symb
@@ -187,7 +187,7 @@ block nolight
             td(class="name") ОБРАМЛЕНИЕ ВЫВЕСКИ АЛЮМИНИЕВЫМ УГОЛКОМ
             td(class="price") 280 руб / пог.м.
     div(class="title")
-        button( class="calc" ) рассчитать
+        button( class="calc" onclick="moveTo('/calc/nolight')") рассчитать
         img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
 p

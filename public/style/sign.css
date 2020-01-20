@@ -5,11 +5,13 @@
     height: 200px !important; }
 
 #font-flex .elem {
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 15px 3.5% 0 !important; }
 
 #smth {
-  margin-left: 13%;
-  margin-right: 13%; }
+  margin-left: 11%;
+  margin-right: 11%; }
 
 @media (min-width: 1770px) {
   #smth .smthImg {
