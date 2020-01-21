@@ -140,7 +140,7 @@ router.get('/alum', function(req, res, next) {
         title: 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА С ПРОРЕЗКОЙ' ,
         imgURL:['../img/lightTitle/komppr1.png' ,'../img/lightTitle/komppr2.png','../img/lightTitle/komppr3.png'],
         ul:["Срок службы — до 10 лет",
-            "ЯЯркость — средняя",
+            "Яркость — средняя",
             "Глубина — 50-100мм",
             "Максимальная длина без стыков — 5,8м",
             "Минимальная высота без стыков — 1м",
