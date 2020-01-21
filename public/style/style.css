@@ -1380,7 +1380,7 @@ body {
     #street #trt {
       top: -43% !important; }
     #street #twl {
-      top: -4% !important; }
+      top: -5.5% !important; }
     #street #frt {
       top: -21% !important; }
     #street #stn {
@@ -1428,7 +1428,7 @@ body {
 @media (min-width: 1700px) {
   .mark .appear {
     left: -80px !important;
-    top: -50px !important; } }
+    top: -45px !important; } }
 
 .title, #title {
   margin-top: 10px;
