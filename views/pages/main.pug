@@ -6,39 +6,49 @@ script(src='../js/Global.js')
 script(src='../js/sendFeedback.js')
 block street
 div(id="street")
-        div(class="mark" id="one")
+        div(class="mark" id="one" onclick="moveTo('/autobrand')")
             text(class="appear")
-                text Навигация
-        div(class="mark" id="two")
+                text Автобрендирование
+        //div(class="mark" id="two" text(class="appear") text Навигация
+        div(class="mark" id="three"  onclick="moveTo('/lightpan')")
             text(class="appear")
-                text Навигация
-        div(class="mark" id="three")
+                text Световые панели
+        //div(class="mark" id="four" text(class="appear") text Навигация
+        div(class="mark" id="five" onclick="moveTo('/pilon')")
             text(class="appear")
-                text Навигация
-        div(class="mark" id="four")
+                text Информационный пилон
+        div(class="mark" id="six" onclick="moveTo('/inputgroup')")
             text(class="appear")
-                text Навигация
-        div(class="mark" id="five")
+                text Сити-формат
+        div(class="mark" id="seven" onclick="moveTo('/symb')")
             text(class="appear")
-                text Навигация
-        div(class="mark" id="six")
+                text(style="left:-47px") Объемные буквы
+        div(class="mark" id="eight" onclick="moveTo('/inputgroup')")
+            text(class="appear" )
+                text Входные группы
+        div(class="mark" id="nine" onclick="moveTo('/nolight')")
             text(class="appear")
-                text Навигация
-        div(class="mark" id="seven" onclick="moveTo('/light')")
+                text Несветовые вывески
+        div(class="mark" id="ten" onclick="moveTo('/kron')")
+            text(class="appear" )
+                text Панель-кронштейн
+        //div(class="mark" id="el") text(class="appear") text Навигация
+        div(class="mark" id="twl" onclick="moveTo('/navs')")
+            text(class="appear" )
+                text Информационные указатели
+        div(class="mark" id="trt" onclick="moveTo('/setup')")
             text(class="appear")
-                text(style="left:-51px") Световые Короба
-        div(class="mark" id="eight")
+                text Крышные установки
+        div(class="mark" id="frt" onclick="moveTo('/navs')")
+            text(class="appear" )
+                text Рекламные флаги
+        div(class="mark" id="fft" onclick="moveTo('/banners')")
             text(class="appear")
-                text Навигация
-        div(class="mark" id="nine")
-            text(class="appear")
-                text Навигация
-        div(class="mark" id="ten")
-            text(class="appear")
-                text Навигация
-        div(class="mark" id="el")
-            text(class="appear")
-                text Навигация
+                text Баннеры
+        div(class="mark" id="stn" onclick="moveTo('/inputgroup')")
+            text(class="appear" )
+                text Обклейка витрин
+
 div(class="title")
     h1 РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ НАРУЖНОЙ РЕКЛАМЫ
 

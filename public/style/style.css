@@ -807,17 +807,17 @@ body {
     display: none;
     font-weight: lighter;
     position: relative;
-    z-index: 2;
+    z-index: 4;
     width: auto;
     height: 30px; }
     .mark .appear text {
       white-space: nowrap;
-      z-index: 3;
+      z-index: 4;
       position: relative;
       background-color: white;
       padding: 5px 10px; }
   .mark .appear::before {
-    z-index: 2;
+    z-index: 4;
     display: block;
     content: " ";
     position: relative;
@@ -858,6 +858,8 @@ body {
 #one {
   left: 8%;
   top: 54%; }
+  #one .appear text {
+    left: -65px; }
 
 #two {
   left: 19%;
@@ -865,7 +867,9 @@ body {
 
 #three {
   left: 52%;
-  top: 34%; }
+  top: 41%; }
+  #three .appear text {
+    left: -48px; }
 
 #four {
   left: 36%;
@@ -873,31 +877,71 @@ body {
 
 #five {
   left: 96%;
-  top: 20%; }
+  top: 30%; }
+  #five .appear text {
+    left: -107px; }
 
 #six {
   left: 73%;
-  top: 8%; }
+  top: 24%; }
+  #six .appear text {
+    left: -18px; }
 
 #seven {
   left: 77%;
-  top: -15%; }
+  top: -2%; }
 
 #eight {
   left: 79%;
-  top: -17%; }
+  top: -4%; }
+  #eight .appear text {
+    left: -43px; }
 
 #nine {
   left: 82%;
-  top: -31%; }
+  top: -17%; }
+  #nine .appear text {
+    left: -74px; }
 
 #ten {
   left: 37%;
-  top: -33%; }
+  top: -18%; }
+  #ten .appear text {
+    left: -63px; }
 
 #el {
   left: 30%;
   top: -38%; }
+
+#twl {
+  left: 89%;
+  top: -14%; }
+  #twl .appear text {
+    left: -137px; }
+
+#trt {
+  left: 67%;
+  top: -51%; }
+  #trt .appear text {
+    left: -72px; }
+
+#frt {
+  left: 24%;
+  top: -33%; }
+  #frt .appear text {
+    left: -51px; }
+
+#fft {
+  top: -50%;
+  left: 13%; }
+  #fft .appear text {
+    left: 19px; }
+
+#stn {
+  top: -36%;
+  left: 28%; }
+  #stn .appear text {
+    left: -49px; }
 
 #serve #kach {
   font-weight: 900;
@@ -1227,28 +1271,37 @@ body {
   #street {
     height: 750px; }
     #street #one {
-      top: 58% !important; }
+      top: 60% !important; }
     #street #two {
-      top: 36% !important; }
+      top: 52% !important; }
     #street #three {
-      top: 40%; }
+      top: 46% !important; }
     #street #four {
-      top: 42% !important; }
+      top: 50% !important; }
     #street #five {
-      left: 94% !important;
-      top: 30% !important; }
+      top: 43% !important; }
     #street #six {
-      top: 24% !important; }
+      top: 35% !important; }
     #street #seven {
-      top: 4% !important; }
+      top: 13% !important; }
     #street #eight {
-      top: 8% !important; }
+      top: 15% !important; }
     #street #nine {
-      top: -6% !important; }
+      top: 2% !important; }
     #street #ten {
-      top: -3% !important; }
+      top: 3% !important; }
     #street #el {
-      top: -5% !important; }
+      top: -12% !important; }
+    #street #fft {
+      top: -4% !important; }
+    #street #trt {
+      top: -32% !important; }
+    #street #twl {
+      top: 9% !important; }
+    #street #frt {
+      top: -3% !important; }
+    #street #stn {
+      top: -3% !important; }
   #room {
     height: 600px; }
     #room #tthree {
@@ -1297,25 +1350,35 @@ body {
     #street #one {
       top: 60% !important; }
     #street #two {
-      top: 35% !important; }
+      top: 45% !important; }
     #street #three {
-      top: 38% !important; }
+      top: 45% !important; }
     #street #four {
-      top: 39% !important; }
+      top: 45% !important; }
     #street #five {
-      top: 25% !important; }
+      top: 37% !important; }
     #street #six {
-      top: 19% !important; }
+      top: 27% !important; }
     #street #seven {
-      top: -6% !important; }
+      top: 5% !important; }
     #street #eight {
-      top: -6% !important; }
+      top: 3% !important; }
     #street #nine {
-      top: -20% !important; }
+      top: -9% !important; }
     #street #ten {
-      top: -18% !important; }
+      top: -9% !important; }
     #street #el {
-      top: -23% !important; }
+      top: -15% !important; }
+    #street #fft {
+      top: -30% !important; }
+    #street #trt {
+      top: -43% !important; }
+    #street #twl {
+      top: -4% !important; }
+    #street #frt {
+      top: -21% !important; }
+    #street #stn {
+      top: -21% !important; }
   #room {
     height: 680px; }
     #room #tthree {
@@ -1371,7 +1434,7 @@ body {
     min-width: 170px;
     min-height: 20px;
     height: 4vw !important;
-    max-width: 250px;
+    max-width: 210px;
     max-height: 50px; }
   .title .buttonImg, #title .buttonImg {
     width: 15% !important;

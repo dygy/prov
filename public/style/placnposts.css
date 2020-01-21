@@ -27,7 +27,7 @@
       font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
-      font-size: 20px; }
+      font-size: 16px; }
     #smth div div, .smth div div {
       display: flex;
       justify-content: center; }
@@ -87,7 +87,7 @@
       font-weight: 300;
       padding-left: 30px;
       padding-right: 40px;
-      font-size: 20px; }
+      font-size: 16px; }
     .smth div div {
       display: flex;
       justify-content: center; }
@@ -867,7 +867,10 @@ body {
   #ftr-frst div {
     margin: 40px 3% 0 0 !important; }
   #ftr-frst .brd {
-    margin: 0 0 10px 0 !important; } }
+    padding: 5px !important;
+    margin: 0 0 10px 0 !important; }
+    #ftr-frst .brd phone {
+      font-size: 18px !important; } }
 
 @media (max-width: 1069px) {
   #footer #ftr-frst .phone {
@@ -934,19 +937,20 @@ body {
   margin-top: 10px;
   display: flex;
   text-align: center;
-  justify-content: center; }
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
   .title h1, .title h2, #title h1, #title h2 {
     font-family: GeomB !important; }
   .title .calc, #title .calc {
     background: #72d7cf;
-    width: 17% !important;
+    width: 15% !important;
     min-width: 170px;
     min-height: 20px;
     height: 4vw !important;
-    max-width: 250px;
+    max-width: 210px;
     max-height: 50px; }
   .title .buttonImg, #title .buttonImg {
-    margin-left: 7% !important;
     width: 15% !important;
     height: 4vw !important;
     box-shadow: 2px 1px 8px black;
