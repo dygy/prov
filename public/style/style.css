@@ -1357,11 +1357,11 @@ body {
     font-family: GeomB !important; }
   .title .calc, #title .calc {
     background: #72d7cf;
-    width: 15% !important;
+    width: 17% !important;
     min-width: 170px;
     min-height: 20px;
     height: 4vw !important;
-    max-width: 220px;
+    max-width: 250px;
     max-height: 50px; }
   .title .buttonImg, #title .buttonImg {
     margin-left: 7% !important;
