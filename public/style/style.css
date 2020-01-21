@@ -876,8 +876,10 @@ body {
     left: -48px; }
 
 #four {
-  left: 36%;
-  top: 35%; }
+  left: 44%;
+  top: -57%; }
+  #four .appear text {
+    left: -49px; }
 
 #five {
   left: 96%;
@@ -899,7 +901,7 @@ body {
   left: 79%;
   top: -4%; }
   #eight .appear text {
-    left: -43px; }
+    left: 16px; }
 
 #nine {
   left: 82%;
@@ -1281,7 +1283,7 @@ body {
     #street #three {
       top: 46% !important; }
     #street #four {
-      top: 50% !important; }
+      top: -19% !important; }
     #street #five {
       top: 43% !important; }
     #street #six {
@@ -1358,7 +1360,7 @@ body {
     #street #three {
       top: 45% !important; }
     #street #four {
-      top: 45% !important; }
+      top: -39% !important; }
     #street #five {
       top: 37% !important; }
     #street #six {
