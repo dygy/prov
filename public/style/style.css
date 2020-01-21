@@ -834,6 +834,10 @@ body {
 #tone {
   left: 5%;
   top: 22%; }
+  #tone .appear:before {
+    transform: rotate(-132deg); }
+  #tone .appear text {
+    left: 89px; }
 
 #ttwo {
   left: 23%;
@@ -859,7 +863,7 @@ body {
   left: 8%;
   top: 54%; }
   #one .appear text {
-    left: 93px; }
+    left: 94px; }
 
 #two {
   left: 19%;
@@ -1418,6 +1422,11 @@ body {
   #passport #circus mini {
     font-size: 18px !important;
     font-weight: 800 !important; } }
+
+@media (min-width: 1700px) {
+  .mark .appear {
+    left: -80px !important;
+    top: -50px !important; } }
 
 .title, #title {
   margin-top: 10px;
