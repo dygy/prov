@@ -44,7 +44,7 @@
 
 .mark:hover
   .appear
-    display: initial
+    display: block
 #tone
   left: 5%
   top: 22%
@@ -403,7 +403,11 @@
     font-size: 30px
   #five
     left: 93%
-
+@media ( max-width : 1500px )
+  .mark
+    .appear
+      top: -40px!important
+      left: -89px!important
 
 
 @media ( min-width : 1500px )

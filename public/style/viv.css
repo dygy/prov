@@ -641,7 +641,10 @@ body {
   #ftr-frst div {
     margin: 40px 3% 0 0 !important; }
   #ftr-frst .brd {
-    margin: 0 0 10px 0 !important; } }
+    padding: 5px !important;
+    margin: 0 0 10px 0 !important; }
+    #ftr-frst .brd phone {
+      font-size: 18px !important; } }
 
 @media (max-width: 1069px) {
   #footer #ftr-frst .phone {
@@ -738,11 +741,11 @@ table {
     font-family: GeomB !important; }
   .title .calc, #title .calc {
     background: #72d7cf;
-    width: 17% !important;
+    width: 15% !important;
     min-width: 170px;
     min-height: 20px;
     height: 4vw !important;
-    max-width: 250px;
+    max-width: 210px;
     max-height: 50px; }
   .title .buttonImg, #title .buttonImg {
     width: 15% !important;
@@ -780,7 +783,7 @@ table {
       font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
-      font-size: 20px; }
+      font-size: 16px; }
     #smth div div, .smth div div {
       display: flex;
       justify-content: center; }
@@ -840,7 +843,7 @@ table {
       font-weight: 300;
       padding-left: 30px;
       padding-right: 40px;
-      font-size: 20px; }
+      font-size: 16px; }
     .smth div div {
       display: flex;
       justify-content: center; }
@@ -1015,6 +1018,11 @@ table {
   table .name {
     width: 55vw !important; }
 
+@media (max-width: 1400px) {
+  table tbody {
+    margin-left: 9.5%;
+    margin-right: 9.5%; } }
+
 @media (max-width: 1000px) {
   .photoflex img {
     height: 100px !important;
@@ -1027,8 +1035,8 @@ table {
 
 @media (min-width: 1700px) {
   tbody {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 8% !important;
+    margin-right: 8% !important;
     font-size: 25px; }
   .photoflex {
     margin-top: 70px;

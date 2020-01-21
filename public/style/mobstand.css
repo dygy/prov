@@ -643,7 +643,10 @@ body {
   #ftr-frst div {
     margin: 40px 3% 0 0 !important; }
   #ftr-frst .brd {
-    margin: 0 0 10px 0 !important; } }
+    padding: 5px !important;
+    margin: 0 0 10px 0 !important; }
+    #ftr-frst .brd phone {
+      font-size: 18px !important; } }
 
 @media (max-width: 1069px) {
   #footer #ftr-frst .phone {
@@ -763,7 +766,7 @@ tr {
       width: 25% !important; }
     .smth .flexbuts .buttonImg {
       box-shadow: 1px 1px 4px gray;
-      height: 2vw !important; }
+      min-height: 2vw !important; }
 
 .smth {
   margin-bottom: 77px; }

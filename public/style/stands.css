@@ -2,15 +2,14 @@
 #smth a {
   color: #fc9b00; }
 
-table {
-  margin-left: 8.2%;
-  margin-right: 8.2%; }
-  table .price {
-    width: 30vw !important; }
-  table .name {
-    width: 62vw !important; }
-  table td {
-    padding-left: 10px; }
+table .price {
+  width: 30vw !important; }
+
+table .name {
+  width: 62vw !important; }
+
+table td {
+  padding-left: 10px; }
 
 .blue {
   background-color: #ccd2d2 !important; }

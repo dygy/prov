@@ -9,11 +9,11 @@
     font-family: GeomB !important; }
   .title .calc, #title .calc {
     background: #72d7cf;
-    width: 17% !important;
+    width: 15% !important;
     min-width: 170px;
     min-height: 20px;
     height: 4vw !important;
-    max-width: 250px;
+    max-width: 210px;
     max-height: 50px; }
   .title .buttonImg, #title .buttonImg {
     width: 15% !important;
@@ -69,7 +69,7 @@ body {
         font-weight: 300;
         margin-top: 0;
         padding-left: 30px;
-        font-size: 20px; }
+        font-size: 16px; }
       #full-page #smth div div, #full-page .smth div div {
         display: flex;
         justify-content: center; }
@@ -125,7 +125,7 @@ body {
         font-weight: 300;
         padding-left: 30px;
         padding-right: 40px;
-        font-size: 20px; }
+        font-size: 16px; }
       #full-page .smth div div {
         display: flex;
         justify-content: center; }
