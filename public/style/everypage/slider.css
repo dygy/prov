@@ -2,7 +2,9 @@
   margin-top: 10px;
   display: flex;
   text-align: center;
-  justify-content: center; }
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
   .title h1, .title h2, #title h1, #title h2 {
     font-family: GeomB !important; }
   .title .calc, #title .calc {
@@ -14,7 +16,6 @@
     max-width: 250px;
     max-height: 50px; }
   .title .buttonImg, #title .buttonImg {
-    margin-left: 7% !important;
     width: 15% !important;
     height: 4vw !important;
     box-shadow: 2px 1px 8px black;
