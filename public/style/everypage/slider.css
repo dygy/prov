@@ -435,7 +435,7 @@ body {
   #order {
     transform: scale(1.3) !important; } }
 
-@media (max-width: 1699px) {
+@media (max-width: 1699px) and (min-width: 1050px) {
   #order {
     transform: scale(2); } }
 
@@ -443,13 +443,13 @@ body {
   .sell {
     transform: scale(2); }
     .sell #close {
-      left: 0%;
+      left: 0% !important;
       top: -145px; } }
 
 @-moz-document url-prefix() {
   #full-page #sell #close {
-    left: -2%;
-    top: -148px; }
+    left: -2% !important;
+    top: -148px !important; }
   #order .checkbox label {
     top: 188px !important; }
   #order .checkbox p {

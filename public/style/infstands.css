@@ -1,17 +1,12 @@
-@import url(auto.css);
-.flex-page #font-flex .elem {
-  margin: 10px 3% 0 !important; }
-
+@import url(kron.css);
 .elem {
-  padding: 14 !important; }
+  padding: 14px !important; }
 
 .smthImg {
   min-width: 350px !important;
   height: 450px !important; }
 
 @media (min-width: 1700px) {
-  #font-flex, #flex-box {
-    margin-right: 7% !important; }
   #font-flex {
     margin-top: 100px !important; } }
 

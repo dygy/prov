@@ -877,8 +877,8 @@ button {
   left: -45%; }
 
 .smth .dot, #smth .dot, .ntSmth .dot {
-  height: 15px;
-  width: 15px; }
+  height: 10px;
+  width: 10px; }
 
 .smth .prev, .smth .next, #smth .prev, #smth .next, .ntSmth .prev, .ntSmth .next {
   z-index: 1;
@@ -1086,6 +1086,10 @@ button {
 @media (max-width: 1400px) {
   #font-flex .elem, #flex-box .elem {
     margin: 15px 0 0 0 !important; } }
+
+@media (max-width: 1770px) and (min-width: 1400px) {
+  #flex-box .elem {
+    padding: 30px !important; } }
 
 @media (min-width: 1770px) {
   #smth .smthImg {
