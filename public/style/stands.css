@@ -1,6 +1,11 @@
 @import url(viv.css);
-#smth a {
-  color: #fc9b00; }
+#smth {
+  margin: 20px 8.7% 40px !important; }
+  #smth a {
+    color: #fc9b00; }
+
+.title {
+  margin: 0 22%; }
 
 table .price {
   width: 30vw !important; }

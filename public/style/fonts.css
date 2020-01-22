@@ -877,8 +877,8 @@ button {
   left: -45%; }
 
 .smth .dot, #smth .dot, .ntSmth .dot {
-  height: 15px;
-  width: 15px; }
+  height: 10px;
+  width: 10px; }
 
 .smth .prev, .smth .next, #smth .prev, #smth .next, .ntSmth .prev, .ntSmth .next {
   z-index: 1;

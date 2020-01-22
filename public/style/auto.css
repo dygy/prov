@@ -21,7 +21,11 @@
 #flex-box img {
   height: 200px !important; }
 
-@media (min-width: 1700px) {
+@media (min-width: 1400px) and (max-width: 1770px) {
+  #font-flex .elem {
+    padding: 25px; } }
+
+@media (min-width: 1770px) {
   #flex-box {
     margin: 50px 10% 150px 10% !important; }
   #font-flex {

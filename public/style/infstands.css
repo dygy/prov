@@ -1,6 +1,6 @@
 @import url(kron.css);
 .elem {
-  padding: 14px !important; }
+  padding: 25px !important; }
 
 .smthImg {
   min-width: 350px !important;
@@ -8,6 +8,8 @@
 
 @media (min-width: 1700px) {
   #font-flex {
-    margin-top: 100px !important; } }
+    margin-top: 100px !important; }
+  #flex-box {
+    margin-top: 71px !important; } }
 
 /*# sourceMappingURL=infstands.css.map */
