@@ -10,6 +10,9 @@
 
 .flex-page #flex-box .elem {
   padding-top: 10px; }
+  .flex-page #flex-box .elem img {
+    height: 250px;
+    width: 250px; }
 
 .flex-page #smth .img {
   margin-top: 54px;
