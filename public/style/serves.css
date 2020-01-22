@@ -28,13 +28,13 @@
       font-weight: 300;
       margin-top: 0;
       padding-left: 30px;
-      font-size: 20px; }
+      font-size: 16px; }
     #smth div div, .smth div div {
       display: flex;
       justify-content: center; }
     #smth div .calc, .smth div .calc {
       margin-top: 5% !important;
-      min-width: 25% !important;
+      min-width: 90px !important;
       height: 3vw !important; }
     #smth div .buttonImg, .smth div .buttonImg {
       margin-top: 5%;
@@ -66,6 +66,8 @@
     margin-top: 5px;
     list-style-type: circle; }
   .smth .calc {
+    max-height: 55px;
+    max-width: 210px;
     margin-top: 5% !important;
     width: 25% !important;
     height: 3vw !important; }
@@ -73,7 +75,7 @@
     margin-top: 5%;
     width: 25% !important;
     height: 25% !important;
-    min-height: 50px !important; }
+    min-height: 58px !important; }
   .smth .smthImg {
     min-width: 400px;
     height: 400px; }
@@ -86,7 +88,7 @@
       font-weight: 300;
       padding-left: 30px;
       padding-right: 40px;
-      font-size: 20px; }
+      font-size: 16px; }
     .smth div div {
       display: flex;
       justify-content: center; }
@@ -115,8 +117,8 @@
   left: -45%; }
 
 .smth .dot, #smth .dot, .ntSmth .dot {
-  height: 15px;
-  width: 15px; }
+  height: 10px;
+  width: 10px; }
 
 .smth .prev, .smth .next, #smth .prev, #smth .next, .ntSmth .prev, .ntSmth .next {
   z-index: 1;
@@ -198,7 +200,9 @@
   margin-top: 10px;
   display: flex;
   text-align: center;
-  justify-content: center; }
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
   .title h1, .title h2, #title h1, #title h2 {
     font-family: GeomB !important; }
   .title .calc, #title .calc {
@@ -207,10 +211,9 @@
     min-width: 170px;
     min-height: 20px;
     height: 4vw !important;
-    max-width: 220px;
+    max-width: 210px;
     max-height: 50px; }
   .title .buttonImg, #title .buttonImg {
-    margin-left: 7% !important;
     width: 15% !important;
     height: 4vw !important;
     box-shadow: 2px 1px 8px black;

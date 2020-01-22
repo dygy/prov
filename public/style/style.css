@@ -792,6 +792,16 @@ body {
   #ins-one text, #ins-two text, #ins-three text, #ins-four text, #room-one text, #room-two text {
     bottom: 0px; } }
 
+.mark .appear, .mark .appear:before {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.50s, opacity 0.50s linear; }
+
+.mark:hover .appear, .mark:hover .appear:before {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; }
+
 .mark {
   z-index: 2;
   width: 30px;
@@ -804,7 +814,6 @@ body {
     left: -83px;
     color: black;
     font-family: Geom;
-    display: none;
     font-weight: lighter;
     position: relative;
     z-index: 4;
@@ -813,6 +822,7 @@ body {
     .mark .appear text {
       white-space: nowrap;
       z-index: 4;
+      top: 1px;
       position: relative;
       background-color: white;
       padding: 5px 10px; }
@@ -863,7 +873,7 @@ body {
   left: 8%;
   top: 54%; }
   #one .appear text {
-    left: 94px; }
+    left: 92px; }
 
 #two {
   left: 19%;
@@ -885,7 +895,7 @@ body {
   left: 96%;
   top: 30%; }
   #five .appear text {
-    left: -107px; }
+    left: -109px; }
 
 #six {
   left: 73%;
@@ -901,7 +911,7 @@ body {
   left: 79%;
   top: -4%; }
   #eight .appear text {
-    left: 16px; }
+    left: 17.5px; }
 
 #nine {
   left: 82%;
@@ -923,7 +933,7 @@ body {
   left: 89%;
   top: -14%; }
   #twl .appear text {
-    left: -137px; }
+    left: -139px; }
 
 #trt {
   left: 67%;
