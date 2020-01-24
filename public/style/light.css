@@ -133,8 +133,8 @@
 #arrow {
   display: block;
   z-index: 2;
-  top: 35vh;
-  left: 2vw;
+  top: 95vh;
+  left: 97vw;
   position: fixed;
   width: 30px;
   height: 30px;
@@ -991,7 +991,6 @@ button {
   left: -107px; }
 
 table {
-  margin-left: -1vw;
   margin-right: -1vw; }
   table tr {
     width: 100%; }

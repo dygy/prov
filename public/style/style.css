@@ -134,8 +134,8 @@
 #arrow {
   display: block;
   z-index: 2;
-  top: 35vh;
-  left: 2vw;
+  top: 95vh;
+  left: 97vw;
   position: fixed;
   width: 30px;
   height: 30px;
@@ -902,7 +902,7 @@ body {
     left: -18px; }
 
 #seven {
-  left: 77%;
+  left: 73%;
   top: -2%; }
 
 #eight {
