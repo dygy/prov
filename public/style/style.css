@@ -790,12 +790,12 @@ body {
   #ins-one text, #ins-two text, #ins-three text, #ins-four text, #room-one text, #room-two text {
     bottom: 0px; } }
 
-.mark .appear, .mark .appear:before {
+.mark .appear, .mark .appear:before, .mark .appear text {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 0.50s, opacity 0.50s linear; }
 
-.mark:hover .appear, .mark:hover .appear:before {
+.mark:hover .appear, .mark:hover .appear:before, .mark:hover .appear text {
   visibility: visible;
   opacity: 1;
   transition-delay: 0s; }
@@ -956,6 +956,18 @@ body {
   left: 28%; }
   #stn .appear text {
     left: -49px; }
+
+#etn {
+  top: -55%;
+  left: 62%; }
+  #etn .appear text {
+    left: 88px; }
+
+#ntn {
+  top: -69%;
+  left: 57%; }
+  #ntn .appear text {
+    left: 90px; }
 
 #serve #kach {
   font-weight: 900;
@@ -1316,6 +1328,10 @@ body {
       top: -3% !important; }
     #street #stn {
       top: -3% !important; }
+    #street #etn {
+      top: -14% !important; }
+    #street #ntn {
+      top: -26% !important; }
   #room {
     height: 600px; }
     #room #tthree {
@@ -1393,6 +1409,10 @@ body {
       top: -21% !important; }
     #street #stn {
       top: -21% !important; }
+    #street #etn {
+      top: -38% !important; }
+    #street #ntn {
+      top: -49% !important; }
   #room {
     height: 680px; }
     #room #tthree {

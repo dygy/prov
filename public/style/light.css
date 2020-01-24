@@ -990,16 +990,15 @@ button {
 #imgFP #close {
   left: -107px; }
 
-table {
-  margin-right: -1vw; }
-  table tr {
-    width: 100%; }
-  table tbody {
-    width: 100%; }
-    table tbody td {
-      width: 84%; }
-    table tbody .price {
-      width: 13vw; }
+table tr {
+  width: 100%; }
+
+table tbody {
+  width: 100%; }
+  table tbody td {
+    width: 84%; }
+  table tbody .price {
+    width: 13vw; }
 
 .title {
   margin-bottom: 40px;

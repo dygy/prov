@@ -6,13 +6,13 @@
       bottom: 0px
 
 .mark
-  .appear, .appear:before
+  .appear, .appear:before,.appear text
     visibility: hidden
     opacity: 0
     transition: visibility 0s linear 0.50s, opacity 0.50s linear
 
 .mark:hover
-  .appear, .appear:before
+  .appear, .appear:before, .appear text
     visibility: visible
     opacity: 1
     transition-delay: 0s
@@ -169,6 +169,18 @@
   .appear
     text
       left: -49px
+#etn
+  top: -55%
+  left: 62%
+  .appear
+    text
+      left: 88px
+#ntn
+  top: -69%
+  left: 57%
+  .appear
+    text
+      left: 90px
 
 #serve
   #kach
@@ -542,6 +554,11 @@
       top: -3%!important
     #stn
       top: -3%!important
+    #etn
+      top: -14%!important
+    #ntn
+      top: -26%!important
+
   #room
     height: 600px
     #tthree
@@ -623,6 +640,11 @@
       top: -21%!important
     #stn
       top: -21%!important
+    #etn
+      top: -38%!important
+    #ntn
+      top: -49%!important
+
   #room
     height: 680px
     #tthree
