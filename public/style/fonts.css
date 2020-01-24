@@ -561,7 +561,7 @@ body {
         border-color: #FDB13E;
         width: 250px;
         height: 50px;
-        font: 12px bold;
+        font: 12px Geom;
         text-transform: uppercase; }
   #footer #ftr-scnd {
     font-weight: 900;
@@ -1042,7 +1042,7 @@ table tbody {
     margin: 15px 0%; }
     #flex-box .elem price {
       position: relative;
-      font: bold 16px Serif; }
+      font: bold 16px GeomB; }
     #flex-box .elem img {
       width: 200px;
       height: 140px; }
@@ -1082,9 +1082,7 @@ table tbody {
     width: 300px !important;
     height: 400px !important; }
   table {
-    height: 80px;
-    font-size: 22px;
-    margin-bottom: 350px; }
+    font-size: 22px; }
     table tbody {
       height: 100%; }
   #font-flex, #flex-box {
