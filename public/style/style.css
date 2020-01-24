@@ -568,16 +568,14 @@ body {
     font-weight: 900;
     padding-left: 10px;
     display: flex;
-    justify-content: center; }
+    justify-content: start; }
     #footer #ftr-scnd div {
-      margin: 25px 18% 0 0; }
+      margin: 25px 25% 0 0; }
     #footer #ftr-scnd #map {
       margin-left: -66px;
       margin-top: -55px;
       width: 200px;
       height: 300px; }
-    #footer #ftr-scnd #info {
-      width: 400px; }
 
 @media (min-width: 1759px) {
   #footer #info {

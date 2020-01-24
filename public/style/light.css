@@ -567,16 +567,14 @@ body {
     font-weight: 900;
     padding-left: 10px;
     display: flex;
-    justify-content: center; }
+    justify-content: start; }
     #footer #ftr-scnd div {
-      margin: 25px 18% 0 0; }
+      margin: 25px 25% 0 0; }
     #footer #ftr-scnd #map {
       margin-left: -66px;
       margin-top: -55px;
       width: 200px;
       height: 300px; }
-    #footer #ftr-scnd #info {
-      width: 400px; }
 
 @media (min-width: 1759px) {
   #footer #info {
@@ -877,8 +875,8 @@ button {
   left: -45%; }
 
 .smth .dot, #smth .dot, .ntSmth .dot {
-  height: 15px;
-  width: 15px; }
+  height: 10px;
+  width: 10px; }
 
 .smth .prev, .smth .next, #smth .prev, #smth .next, .ntSmth .prev, .ntSmth .next {
   z-index: 1;
@@ -989,7 +987,7 @@ button {
   width: 430px !important;
   margin-left: -9%; }
 
-#close {
+#imgFP #close {
   left: -107px; }
 
 table {
@@ -1045,6 +1043,7 @@ table {
       height: 35px; }
     #font-flex .elem .more {
       padding-right: 10px;
+      padding-left: 10px;
       background-color: #a0c8dc;
       position: relative;
       left: -15px; }
@@ -1092,7 +1091,7 @@ table {
     bottom: 97px !important; }
 
 @media (min-width: 1300px) {
-  #close {
+  #imgFP #close {
     left: -27px !important; } }
 
 @media (min-width: 1700px) {
