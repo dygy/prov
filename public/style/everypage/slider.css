@@ -6,7 +6,8 @@
   align-items: center;
   align-content: center; }
   .title h1, .title h2, #title h1, #title h2 {
-    font-family: GeomB !important; }
+    font-family: Geom !important;
+    font-weight: 400; }
   .title .calc, #title .calc {
     background: #72d7cf;
     width: 15% !important;
@@ -51,6 +52,9 @@ body {
   #full-page #smth, #full-page .smth {
     margin: 20px 15% 40px;
     display: flex; }
+    #full-page #smth .flexbuts, #full-page .smth .flexbuts {
+      display: flex;
+      justify-content: space-around; }
     #full-page #smth li, #full-page .smth li {
       list-style-position: outside;
       margin-left: 1em;

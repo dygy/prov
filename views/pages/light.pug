@@ -101,37 +101,60 @@ div(class="flex-page")
                     text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
     div(class="title")
-        img(class="calc" src='/img/calc.png' onclick="displayMessage('Калькулятор временно отсутствует')")
+        h2 ЦЕНЫ НА НАКЛЕЙКИ НА ОКНА
     table
         tr(class="main blue")
-            td тип
+            td метраж
             td(class="price") цена
         tr
             td АКРИЛ
             td(class="price") от 120 руб/cм
         tr(class="blue")
             td АКРИЛ + ПВХ
-            td(class="price") от 75 руб/cм
+            td(class="price")
+                text 13 500/м
+                sup 2
         tr
             td ПВХ +КОНТРАЖУР
-            td(class="price") от 75 руб/cм
+            td(class="price")
+                text 12 000/м
+                sup 2
+
         tr(class="blue")
             td МЕТАЛЛ+ КОНТРАЖУР
-            td(class="price") от 150 руб/cм
+            td(class="price")
+                text 7 500/м
+                sup 2
         tr
             td АКРИЛ + ПВХ + КОНТРАЖУР
-            td(class="price") от 120 руб/cм
+            td(class="price")
+                text 10 000/м
+                sup 2
         tr(class="blue")
             td АКРИЛ + МЕТАЛЛ
-            td(class="price") от 100 руб/cм
+            td(class="price")
+                text 7 500/м
+                sup 2
         tr
             td ОТКРЫТЫЙ НЕОН
-            td(class="price") от 140 руб/cм
+            td(class="price")
+                text 7 500/м
+                sup 2
         tr(class="blue")
             td ОТКРЫТЫЕ СВЕТОДИОДЫ
-            td(class="price") от 15 000 руб/м2
-
-
+            td(class="price")
+                text 15 000/м
+                sup 2
+        tr
+            td КОМПОЗИТ + ПРОРЕЗКА
+            td(class="price")
+                text 12 000/м
+                sup 2
+        tr(class="blue")
+            td КОМПОЗИТ + ИНКРУСТАЦИЯ
+            td(class="price")
+                text 15 000/м
+                sup 2
     div(id="smth")
         div(class="imgSwitcher")
             div(class="mid-layout")
@@ -144,12 +167,37 @@ div(class="flex-page")
             img( src="../img/4/content410.png" class="smthImg")
             img(src="../img/4/content410.png"  class="smthImg" style="display:none")
             img(src="../img/4/content410.png"  class="smthImg" style="display:none")
-
         div
             p Световой короб или лайтбокс — объемная рекламная конструкция с внутренней подсветкой. Форма часто прямоугольная, но может быть и более сложной. Лицевая поверхность может светиться как вся полностью, так и выборочно (например, только буквы). Лайтбоксами называют и огромные конструкции на весь фасад здания, и ультратонкие панели в окнах витрин с возможность замены изображения. Преимущество - цена ниже, чем у световых букв, и зависит только от квадратуры короба. Недостатки — лайтбоксы на улице все чаще запрещает МосКомАрхитектура.
-            div
+            div(class='flexbuts')
+                img(class="calc" src='/img/calc.png' onclick="displayMessage('Калькулятор временно отсутствует')")
                 img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
 
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
     div(id="flex-box")
         div(class="elem")
             img(src="../img/4/content411.png")
@@ -185,30 +233,6 @@ div(class="flex-page")
                 button(onclick="displayOrder()") заказать
         div(class="elem")
             img(src="../img/4/content415.png")
-            br
-            bold Обьемные буквы
-            p из орг. стекла с лицевой подсветкой высота букв 20см
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="../img/4/content416.png")
-            br
-            bold Обьемные буквы
-            p из орг. стекла с лицевой подсветкой высота букв 20см
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="../img/4/content417.png")
-            br
-            bold Обьемные буквы
-            p из орг. стекла с лицевой подсветкой высота букв 20см
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="../img/4/content418.png")
             br
             bold Обьемные буквы
             p из орг. стекла с лицевой подсветкой высота букв 20см

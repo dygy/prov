@@ -561,7 +561,7 @@ body {
         border-color: #FDB13E;
         width: 250px;
         height: 50px;
-        font: 12px bold;
+        font: 12px Geom;
         text-transform: uppercase; }
   #footer #ftr-scnd {
     font-weight: 900;
@@ -707,26 +707,33 @@ body {
 
 table {
   border-spacing: 10px 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0px -1vw 20px;
   min-width: 400px;
   min-height: 200px;
   display: flex;
   justify-content: center; }
   table tr {
-    background-color: #E0F3F3; }
+    background-color: white; }
   table td {
     padding-left: 3%;
     width: 200px;
     height: 40px; }
   table .blue {
-    background-color: #c1d2d6; }
+    background-color: #c5fcfc; }
   table .main {
     font-family: GeomB;
     text-align: center; }
   table .price {
     padding-left: 0 !important;
     text-align: center; }
+  table tbody {
+    margin-left: -1vw;
+    margin-right: -1vw; }
+
+@media (min-width: 1700px) {
+  table {
+    margin-left: 0vw;
+    margin-right: 0vw; } }
 
 .title, #title {
   margin-top: 10px;
@@ -736,7 +743,8 @@ table {
   align-items: center;
   align-content: center; }
   .title h1, .title h2, #title h1, #title h2 {
-    font-family: GeomB !important; }
+    font-family: Geom !important;
+    font-weight: 400; }
   .title .calc, #title .calc {
     background: #72d7cf;
     width: 15% !important;
@@ -763,6 +771,9 @@ table {
 #smth, .smth {
   margin: 20px 15% 40px;
   display: flex; }
+  #smth .flexbuts, .smth .flexbuts {
+    display: flex;
+    justify-content: space-around; }
   #smth li, .smth li {
     list-style-position: outside;
     margin-left: 1em;

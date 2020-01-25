@@ -3,17 +3,37 @@ include ../slider
 include ../header
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
-block light
+script(src='../js/switcher.js')
+div(class="flex-page")
+    div(class="smth")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/content410.png" class="smthImg")
+            img(src="../img/4/content410.png"  class="smthImg" style="display:none")
+            img(src="../img/4/content410.png"  class="smthImg" style="display:none")
+        div
+            p Световой короб или лайтбокс — объемная рекламная конструкция с внутренней подсветкой. Форма часто прямоугольная, но может быть и более сложной. Лицевая поверхность может светиться как вся полностью, так и выборочно (например, только буквы). Лайтбоксами называют и огромные конструкции на весь фасад здания, и ультратонкие панели в окнах витрин с возможность замены изображения. Преимущество - цена ниже, чем у световых букв, и зависит только от квадратуры короба. Недостатки — лайтбоксы на улице все чаще запрещает МосКомАрхитектура.
+            div(class='flexbuts')
+                img(class="calc" src='/img/calc.png' onclick="displayMessage('Калькулятор временно отсутствует')")
+                img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
     div(class="title")
-        h1 СВЕТОВЫЕ КОРОБА
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
     div(class="photoflex")
-        img(src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
-        img(src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
-        img(src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
-        img(src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
-        img(src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
-        img(src="../img/vivs/sk6.jpg" onclick="displayImg('../img/vivs/sk6.jpg')")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(class="title")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
     table
         tr(class="blue main")
             td(class="name") тип
@@ -45,8 +65,57 @@ block light
     div(class="title")
         img(class="calc" src='/img/rasbutton.png'  onclick="displaySell()")
         img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (11).png" class="smthImg" )
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-block symb
+        div
+            div
+                strong L-BANNER
+            p
+                br
+                br
+            ul
+                li Вес от 2,5 до 6 кг
+                li Алюминиевая усиленная конструкция
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Конструкция с роллерным механизмом подмотки фотополотна
+                li Литая баннерная ткань с печатью 1440 dpi
+                li Сумка для транспортировки
+            table(class="prod")
+                tr(class="blue")
+                    td(class="blue normal" colspan="1") тип
+                    td(class="blue normal" colspan="2") без печати
+                    td(class="blue normal" colspan="2") банерная ткань
+                    td(class="blue normal" colspan="2") полипропилен
+                tr(class="white")
+                    td количество
+                    td  1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td 2.490р
+                    td 2.220р
+                    td 3.130р
+                    td 2.790р
+                    td 3.440р
+                    td 3.060р
+                tr(class="white")
+                    td 85х200
+                    td 2.790р
+                    td 2.490р
+                    td 3.870р
+                    td 3.450р
+                    td 4.390р
+                    td 3.910р
     div(class="title")
         h1 ОБЪЕМНЫЕ БУКВЫ
     div(class="photoflex")
@@ -106,7 +175,6 @@ block symb
         img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/symbs')")
         img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-block kron
     div(class="title")
         h1 ПАНЕЛЬ-КРОНШТЕЙН
     div(class="photoflex")
@@ -142,7 +210,6 @@ block kron
         img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/kron')")
         img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-block nolight
     div(class="title")
         h1 НЕСВЕТОВЫЕ ВЫВЕСКИ
     div(class="photoflex")
@@ -187,9 +254,27 @@ block nolight
             td(class="name") ОБРАМЛЕНИЕ ВЫВЕСКИ АЛЮМИНИЕВЫМ УГОЛКОМ
             td(class="price") 280 руб / пог.м.
     div(class="title")
-        img(class="calc" src='/img/rasbutton.png' onclick="moveTo('/calc/nolight')")
-        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
 p
     br
     br
