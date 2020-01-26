@@ -42,7 +42,7 @@ body {
   overflow: hidden;
   z-index: 8;
   background-color: rgba(73, 73, 73, 0.51); }
-  #full-page #smth .buttonImg, #full-page .smth .buttonImg, #full-page .ntSmth .buttonImg {
+  #full-page #smth .buttonImg, #full-page #smth .calc, #full-page .smth .buttonImg, #full-page .smth .calc, #full-page .ntSmth .buttonImg, #full-page .ntSmth .calc {
     min-width: 140px;
     min-height: 35px; }
 
@@ -52,7 +52,12 @@ body {
   #full-page #smth, #full-page .smth {
     margin: 20px 15% 40px;
     display: flex; }
+    #full-page #smth .leftflex, #full-page .smth .leftflex {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
     #full-page #smth .flexbuts, #full-page .smth .flexbuts {
+      width: 100%;
       display: flex;
       justify-content: space-around; }
     #full-page #smth li, #full-page .smth li {
@@ -77,14 +82,6 @@ body {
       #full-page #smth div div, #full-page .smth div div {
         display: flex;
         justify-content: center; }
-      #full-page #smth div .calc, #full-page .smth div .calc {
-        margin-top: 5% !important;
-        min-width: 90px !important;
-        height: 3vw !important; }
-      #full-page #smth div .buttonImg, #full-page .smth div .buttonImg {
-        margin-top: 5%;
-        max-width: 25% !important;
-        max-height: 25% !important; }
   #full-page .ntSmth .calc {
     margin-top: 7% !important;
     width: 25% !important;
@@ -106,14 +103,7 @@ body {
       margin-left: 1em;
       margin-top: 5px;
       list-style-type: circle; }
-    #full-page .smth .calc {
-      max-height: 55px;
-      max-width: 210px;
-      margin-top: 5% !important;
-      width: 25% !important;
-      height: 3vw !important; }
-    #full-page .smth .buttonImg {
-      margin-top: 5%;
+    #full-page .smth .calc, #full-page .smth .buttonImg {
       width: 25% !important;
       height: 25% !important;
       min-height: 58px !important; }
@@ -203,15 +193,11 @@ body {
           top: 150px !important; }
         #full-page #smth .imgSwitcher .down-layout, #full-page .smth .imgSwitcher .down-layout, #full-page .ntSmth .imgSwitcher .down-layout {
           top: 270px !important; }
-        #full-page #smth .imgSwitcher .buttonImg, #full-page .smth .imgSwitcher .buttonImg, #full-page .ntSmth .imgSwitcher .buttonImg {
+        #full-page #smth .imgSwitcher .buttonImg, #full-page #smth .imgSwitcher .calc, #full-page .smth .imgSwitcher .buttonImg, #full-page .smth .imgSwitcher .calc, #full-page .ntSmth .imgSwitcher .buttonImg, #full-page .ntSmth .imgSwitcher .calc {
           min-height: 1vw !important;
-          min-width: 2vw !important; }
-      #full-page #smth .calc, #full-page .smth .calc, #full-page .ntSmth .calc {
-        min-width: 25vw !important;
-        min-height: 4vw !important;
-        font-size: 3vw !important; } }
+          min-width: 2vw !important; } }
   @media (min-width: 1400px) {
-    #full-page #smth div .buttonImg, #full-page .smth div .buttonImg {
+    #full-page #smth div .buttonImg, #full-page #smth div .calc, #full-page .smth div .buttonImg, #full-page .smth div .calc {
       max-width: 210px !important;
       max-height: 50px !important; } }
   @media (min-width: 1700px) {

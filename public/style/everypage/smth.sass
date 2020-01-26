@@ -1,5 +1,5 @@
 #smth,.smth,.ntSmth
-  .buttonImg
+  .buttonImg,.calc
     min-width: 140px
     min-height: 35px
 @-moz-document url-prefix()
@@ -10,7 +10,12 @@
 #smth,.smth
   margin: 20px 15% 40px
   display: flex
+  .leftflex
+    display: flex
+    align-items: center
+    flex-direction: column
   .flexbuts
+    width: 100%
     display: flex
     justify-content: space-around
   li
@@ -35,14 +40,6 @@
     div
       display: flex
       justify-content: center
-    .calc
-      margin-top: 5%!important
-      min-width: 90px!important
-      height: 3vw!important
-    .buttonImg
-      margin-top: 5%
-      max-width: 25%!important
-      max-height: 25%!important
 .ntSmth
   .calc
     margin-top: 7%!important
@@ -58,7 +55,6 @@
     margin-left: 1em
     margin-top: 5px
     list-style-type: circle
-
 .smth
   margin: 20px 14% 40px
   display: flex
@@ -67,14 +63,7 @@
     margin-left: 1em
     margin-top: 5px
     list-style-type: circle
-  .calc
-    max-height: 55px
-    max-width: 210px
-    margin-top: 5%!important
-    width: 25%!important
-    height: 3vw!important
-  .buttonImg
-    margin-top: 5%
+  .calc,   .buttonImg
     width: 25%!important
     height: 25%!important
     min-height: 58px!important
@@ -167,17 +156,13 @@
         top: 150px!important
       .down-layout
         top: 270px!important
-      .buttonImg
+      .buttonImg,.calc
         min-height: 1vw!important
         min-width: 2vw!important
-    .calc
-      min-width: 25vw!important
-      min-height: 4vw!important
-      font-size: 3vw!important
 @media ( min-width : 1400px )
   #smth,.smth,
     div
-      .buttonImg
+      .buttonImg,.calc
         max-width: 210px!important
         max-height: 50px!important
 @media ( min-width : 1700px )

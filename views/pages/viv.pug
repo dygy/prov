@@ -5,7 +5,9 @@ script(src='../js/index.js')
 script(src='../js/Global.js')
 script(src='../js/switcher.js')
 div(class="flex-page")
-    div(class="smth")
+    div(class="title")
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
+    div(id="smth")
         div(class="imgSwitcher")
             div(class="mid-layout")
                 img(src="../img/next.png" class="prev" onclick="switchImg(false)")
@@ -18,10 +20,19 @@ div(class="flex-page")
             img(src="../img/4/content410.png"  class="smthImg" style="display:none")
             img(src="../img/4/content410.png"  class="smthImg" style="display:none")
         div
-            p Световой короб или лайтбокс — объемная рекламная конструкция с внутренней подсветкой. Форма часто прямоугольная, но может быть и более сложной. Лицевая поверхность может светиться как вся полностью, так и выборочно (например, только буквы). Лайтбоксами называют и огромные конструкции на весь фасад здания, и ультратонкие панели в окнах витрин с возможность замены изображения. Преимущество - цена ниже, чем у световых букв, и зависит только от квадратуры короба. Недостатки — лайтбоксы на улице все чаще запрещает МосКомАрхитектура.
-            div(class='flexbuts')
-                img(class="calc" src='/img/calc.png' onclick="displayMessage('Калькулятор временно отсутствует')")
-                img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
+            p Установка рекламных вывесок — доступный способ привлечь внимание, донести важную информацию о товаре или услуге, которая подтолкнет зайти в офис, магазин, чтобы узнать больше или купить/заказать.
+            p Световые вывески подразделяются на:
+            ul
+                li
+                    a(href="/light") Световые короба
+                    text  – сборные конструкции с плоской поверхностью, под которой расположены светодиодные модули. Световые короба имеют разнообразную геометрическую форму.
+                li
+                    a(href="/fonts") Объемные световые буквы
+                    text   привлекают заказчиков не только своей заметностью, но и дизайном, который выделяет компанию среди конкурентов. Он формируется из выбранного шрифта, наличия декоративных элементов, особенностей подсветки, а также используемых в производстве материалов.
+                li
+                    text  Так же мы можем изготавливать
+                    a(href="/nolight") несветовые вывески
+
     div(class="title")
         h1 ПРИМЕРЫ НАШИХ РАБОТ
     div(class="photoflex")
@@ -34,37 +45,8 @@ div(class="flex-page")
         div(class='right' onclick="newRow('lights',true)")
     div(class="title")
         img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-    table
-        tr(class="blue main")
-            td(class="name") тип
-            td(class="price") цена
-        tr
-            td(class="name") АКРИЛ
-            td(class=" price") от 120 руб/cм
-        tr(class="blue")
-            td(class="name") АКРИЛ + ПВХ
-            td(class=" price") от 75 руб/cм
-        tr
-            td(class="name") ПВХ + КОНТРАЖУР
-            td(class="price") от 75 руб/cм
-        tr(class="blue")
-            td(class="name") МЕТАЛЛ + КОНТРАЖУР
-            td(class=" price") от 150 руб/cм
-        tr
-            td(class="name") АКРИЛ + ПВХ + КОНТРАЖУР
-            td(class=" price") от 120 руб/cм
-        tr(class="blue")
-            td(class="name") АКРИЛ + МЕТАЛЛ
-            td(class=" price") от 100 руб/cм
-        tr
-            td(class="name") ОТКРЫТЫЙ НЕОН
-            td(class=" price") от 140 руб/cм
-        tr(class="blue")
-            td(class="name") ОТКРЫТЫЕ СВЕТОДИОДЫ
-            td(class=" price") от 15 000 руб/м2
     div(class="title")
-        img(class="calc" src='/img/rasbutton.png'  onclick="displaySell()")
-        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        h2 СВЕТОВЫЕ КОРОБА
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
@@ -73,186 +55,158 @@ div(class="flex-page")
                 img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
-        div
-            div
-                strong L-BANNER
-            p
-                br
-                br
-            ul
-                li Вес от 2,5 до 6 кг
-                li Алюминиевая усиленная конструкция
-                li Литая баннерная ткань с печатью 1440 dpi
-                li Конструкция с роллерным механизмом подмотки фотополотна
-                li Литая баннерная ткань с печатью 1440 dpi
-                li Сумка для транспортировки
-            table(class="prod")
+        div(class="rightflex")
+            p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+            table(id="light")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") АКРИЛ
+                    td(class=" price") от 120 руб/cм
                 tr(class="blue")
-                    td(class="blue normal" colspan="1") тип
-                    td(class="blue normal" colspan="2") без печати
-                    td(class="blue normal" colspan="2") банерная ткань
-                    td(class="blue normal" colspan="2") полипропилен
-                tr(class="white")
-                    td количество
-                    td  1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
+                    td(class="name") АКРИЛ + ПВХ
+                    td(class=" price") от 75 руб/cм
+                tr
+                    td(class="name") ПВХ + КОНТРАЖУР
+                    td(class="price") от 75 руб/cм
                 tr(class="blue")
-                    td 60х180
-                    td 2.490р
-                    td 2.220р
-                    td 3.130р
-                    td 2.790р
-                    td 3.440р
-                    td 3.060р
-                tr(class="white")
-                    td 85х200
-                    td 2.790р
-                    td 2.490р
-                    td 3.870р
-                    td 3.450р
-                    td 4.390р
-                    td 3.910р
-    div(class="title")
-        h1 ОБЪЕМНЫЕ БУКВЫ
-    div(class="photoflex")
-        img(src="../img/vivs/ob1.jpg" onclick="displayImg('../img/vivs/ob1.jpg')")
-        img(src="../img/vivs/ob2.jpg" onclick="displayImg('../img/vivs/ob2.jpg')")
-        img(src="../img/vivs/ob3.jpg" onclick="displayImg('../img/vivs/ob3.jpg')")
-        img(src="../img/vivs/ob4.jpg" onclick="displayImg('../img/vivs/ob4.jpg')")
-        img(src="../img/vivs/ob5.jpg" onclick="displayImg('../img/vivs/ob5.jpg')")
-        img(src="../img/vivs/ob6.jpg" onclick="displayImg('../img/vivs/ob6.jpg')")
-    table
-        tr(class="blue main")
-            td(class="name") тип
-            td(class="price") цена
-        tr
-            td(class="name") АКРИЛ
-            td(class=" price") от 120 руб/cм
-        tr(class="blue")
-            td(class="name") АКРИЛ + ПВХ
-            td(class=" price") от 75 руб/cм
-        tr
-            td(class="name") ПВХ + КОНТРАЖУР
-            td(class=" price") от 75 руб/cм
-        tr(class="blue")
-            td(class="name") МЕТАЛЛ + КОНТРАЖУР
-            td(class=" price") от 150 руб/cм
-        tr
-            td(class="name") АКРИЛ + ПВХ + КОНТРАЖУР
-            td(class=" price") от 120 руб/cм
-        tr(class="blue")
-            td(class="name") АКРИЛ + МЕТАЛЛ
-            td(class=" price") от 100 руб/cм
-        tr
-            td(class="name") ОТКРЫТЫЙ НЕОН
-            td(class=" price") от 140 руб/cм
-        tr(class="blue")
-            td(class="name") ОТКРЫТЫЕ СВЕТОДИОДЫ
-            td(class=" price") от 15 000 руб/м2
-        tr
-            td(class="name") ДЕРЕВО
-            td(class=" price") от 75 руб/cм
-        tr(class="blue")
-            td(class="name") РЕТРО
-            td(class=" price") от 150 руб/cм
-        tr
-            td(class="name") НЕОН
-            td(class=" price") от 120 руб/cм
-        tr(class="blue")
-            td(class="name") МЕТАЛЛ
-            td(class=" price") от 100 руб/cм
-        tr
-            td(class="name") ПВХ
-            td(class=" price") от 140 руб/cм
-        tr(class="blue")
-            td(class="name") ПЕНОПЛАСТ
-            td(class=" price") от 15 000 руб/м2
-    div(class="title")
-        img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/symbs')")
-        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+                    td(class="name") МЕТАЛЛ + КОНТРАЖУР
+                    td(class=" price") от 150 руб/cм
+                tr
+                    td(class="name") АКРИЛ + ПВХ + КОНТРАЖУР
+                    td(class=" price") от 120 руб/cм
+                tr(class="blue")
+                    td(class="name") АКРИЛ + МЕТАЛЛ
+                    td(class=" price") от 100 руб/cм
+                tr
+                    td(class="name") ОТКРЫТЫЙ НЕОН
+                    td(class=" price") от 140 руб/cм
+                tr(class="blue")
+                    td(class="name") ОТКРЫТЫЕ СВЕТОДИОДЫ
+                    td(class=" price") от 15 000 руб/м2
 
     div(class="title")
-        h1 ПАНЕЛЬ-КРОНШТЕЙН
-    div(class="photoflex")
-        img(src="../img/vivs/pk1.jpg" onclick="displayImg('../img/vivs/pk1.jpg')")
-        img(src="../img/vivs/pk2.jpg" onclick="displayImg('../img/vivs/pk2.jpg')")
-        img(src="../img/vivs/pk3.jpg" onclick="displayImg('../img/vivs/pk3.jpg')")
-        img(src="../img/vivs/pk4.jpg" onclick="displayImg('../img/vivs/pk4.jpg')")
-        img(src="../img/vivs/pk5.jpg" onclick="displayImg('../img/vivs/pk5.jpg')")
-        img(src="../img/vivs/pk6.jpg" onclick="displayImg('../img/vivs/pk6.jpg')")
-    table
-        tr(class="blue main")
-            td(class="name") тип
-            td(class="price") цена
-        tr
-            td(class="name") КРУГЛАЯ ПАНЕЛЬ НЕСВЕТОВАЯ
-            td(class=" price") от 15 000 руб
-        tr(class="blue")
-            td(class="name") КРУГЛАЯ ПАНЕЛЬ СВЕТОВАЯ
-            td(class=" price") от 20 000 руб
-        tr
-            td(class="name") ПРЯМОУГОЛЬНАЯ ПАНЕЛЬ НЕСВЕТОВАЯ
-            td(class=" price") от 15 000 руб
-        tr(class="blue")
-            td(class="name") ПРЯМОУГОЛЬНАЯ ПАНЕЛЬ СВЕТОВАЯ
-            td(class=" price") от 20 000 руб
-        tr
-            td(class="name") ФИГУРНАЯ ПАНЕЛЬ НЕСВЕТОВАЯ
-            td(class=" price") от 25 000 руб
-        tr(class="blue")
-            td(class="name") ФИГУРНАЯ ПАНЕЛЬ СВЕТОВАЯ
-            td(class=" price") от 30 000 руб
-    div(class="title")
-        img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/kron')")
-        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        h2 ОБЪЕМНЫЕ БУКВЫ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (11).png" class="smthImg" )
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
 
+        div(class="rightflex")
+            p Объемные буквы и логотипы – это эстетично и современно. Светящиеся, объемные, ультратонкие, супер-легкие, стальные, деревянные, пенопластовые. На фасаде здания, за стойкой ресепшен, в шоу-руме, всюду и везде. Объемным буквам по силам воплотить любые ваши оригинальные идеи!
+            table(id="symb")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") АКРИЛ
+                    td(class=" price") от 120 руб/cм
+                tr(class="blue")
+                    td(class="name") АКРИЛ + ПВХ
+                    td(class=" price") от 75 руб/cм
+                tr
+                    td(class="name") ПВХ + КОНТРАЖУР
+                    td(class=" price") от 75 руб/cм
+                tr(class="blue")
+                    td(class="name") МЕТАЛЛ + КОНТРАЖУР
+                    td(class=" price") от 150 руб/cм
+                tr
+                    td(class="name") АКРИЛ + ПВХ + КОНТРАЖУР
+                    td(class=" price") от 120 руб/cм
+                tr(class="blue")
+                    td(class="name") АКРИЛ + МЕТАЛЛ
+                    td(class=" price") от 100 руб/cм
+                tr
+                    td(class="name") ОТКРЫТЫЙ НЕОН
+                    td(class=" price") от 140 руб/cм
+                tr(class="blue")
+                    td(class="name") ОТКРЫТЫЕ СВЕТОДИОДЫ
+                    td(class=" price") от 15 000 руб/м2
     div(class="title")
-        h1 НЕСВЕТОВЫЕ ВЫВЕСКИ
-    div(class="photoflex")
-        img(src="../img/vivs/nsw1.jpg" onclick="displayImg('../img/vivs/nsw1.jpg')")
-        img(src="../img/vivs/nsw2.jpg" onclick="displayImg('../img/vivs/nsw2.jpg')")
-        img(src="../img/vivs/nsw3.jpg" onclick="displayImg('../img/vivs/nsw3.jpg')")
-        img(src="../img/vivs/nsw4.jpg" onclick="displayImg('../img/vivs/nsw4.jpg')")
-        img(src="../img/vivs/nsw5.jpg" onclick="displayImg('../img/vivs/nsw5.jpg')")
-        img(src="../img/vivs/nsw6.jpg" onclick="displayImg('../img/vivs/nsw6.jpg')")
-    table
-        tr(class="blue main")
-            td(class="name") тип
-            td(class="price") цена
-        tr
-            td(class="name") КОМПОЗИТНЫЙ МАТЕРИАЛ, ПЕЧАТЬ НА ПЛЕНКЕ
-            td(class=" price") от 120 руб/cм
-        tr(class="blue")
-            td(class="name") ОЦИНКОВАННЫЙ МЕТАЛЛ, ПЕЧАТЬ НА ПЛЕНКЕ
-            td(class=" price") от 1 200 руб
-        tr
-            td(class="name") ОЦИНКОВАННЫЙ МЕТАЛЛ, ПЕЧАТЬ НА ПЛЕНКЕ СКАРКАСОМ
-            td(class=" price") от 2 000 руб
-        tr(class="blue")
-            td(class="name") ПОЛИКАРБОНАТ ТОЛЩИНОЙ 4 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class=" price") от 1 200 руб
-        tr
-            td(class="name") ПОЛИКАРБОНАТ ТОЛЩИНОЙ 6 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class=" price") от 1 500 руб
-        tr(class="blue")
-            td(class="name") ПОЛИКАРБОНАТ ТОЛЩИНОЙ 8 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class=" price") от 1 700 руб
-        tr
-            td(class="name") ПЛАСТИК ПВХ ТОЛЩИНОЙ 3 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class=" price") от 1 300 руб
-        tr(class="blue")
-            td(class="name") ПЛАСТИК ПВХ ТОЛЩИНОЙ 6 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class=" price") от 2 000 руб
-        tr
-            td(class="name") ПЛАСТИК ПВХ ТОЛЩИНОЙ 8 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class=" price") от 2 100 руб
-        tr(class="blue")
-            td(class="name") ОБРАМЛЕНИЕ ВЫВЕСКИ АЛЮМИНИЕВЫМ УГОЛКОМ
-            td(class="price") 280 руб / пог.м.
+        h2 ПАНЕЛЬ-КРОНШТЕЙН
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (11).png" class="smthImg" )
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+
+        div(class="rightflex")
+            p Панель-кронштейн — это рекламное поле с боковым креплением, как правило, к стене здания, мачте освещения или к собственной опоре. Если Вы хотите, чтобы Ваша реклама была видна издалека  вдоль улицы, панель-кронштейн — это именно то, что Вам нужно!  Отличительной особенностью панель-кронштейна от любых других  видов рекламных вывесок является то, что обозреваемость конструкции приближается к 100%
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") КРУГЛАЯ ПАНЕЛЬ НЕСВЕТОВАЯ
+                    td(class=" price") от 120 руб/cм
+                tr(class="blue")
+                    td(class="name") КРУГЛАЯ ПАНЕЛЬ СВЕТОВАЯ
+                    td(class=" price") от 75 руб/cм
+                tr
+                    td(class="name") ПРЯМОУГОЛЬНАЯ ПАНЕЛЬ НЕСВЕТОВАЯ
+                    td(class=" price") от 75 руб/cм
+                tr(class="blue")
+                    td(class="name") ПРЯМОУГОЛЬНАЯ ПАНЕЛЬ СВЕТОВАЯ
+                    td(class=" price") от 150 руб/cм
+                tr
+                    td(class="name") ФИГУРНАЯ ПАНЕЛЬ НЕСВЕТОВАЯ
+                    td(class=" price") от 120 руб/cм
+                tr(class="blue")
+                    td(class="name") ФИГУРНАЯ ПАНЕЛЬ СВЕТОВАЯ
+                    td(class=" price") от 100 руб/cм
+    div(class="title")
+        h2 НЕСВЕТОВЫЕ ВЫВЕСКИ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            img(src="/img/mobs/mobs (11).png" class="smthImg" )
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+
+        div(class="rightflex")
+            p Ни одно предприятие не может обойтись без вывески, которая одновременно является одним из проверенных видов наружной рекламы. Одним из наиболее простых и недорогих вариантов считаются несветовые вывески. Это оптимальное решение для первоначального этапа при зарождении бизнеса.
+            table(id="nolight")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") КОМПОЗИТНЫЙ МАТЕРИАЛ, ПЕЧАТЬ НА ПЛЕНКЕ
+                    td(class=" price") от 120 руб/cм
+                tr(class="blue")
+                    td(class="name") ОЦИНКОВАННЫЙ МЕТАЛЛ, ПЕЧАТЬ НА ПЛЕНКЕ
+                    td(class=" price") от 75 руб/cм
+                tr
+                    td(class="name") ОЦИНКОВАННЫЙ МЕТАЛЛ, ПЕЧАТЬ НА ПЛЕНКЕ СКАРКАСОМ
+                    td(class=" price") от 75 руб/cм
+                tr(class="blue")
+                    td(class="name") ПОЛИКАРБОНАТ ТОЛЩИНОЙ 4 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
+                    td(class=" price") от 150 руб/cм
+                tr
+                    td(class="name") ПОЛИКАРБОНАТ ТОЛЩИНОЙ 6 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
+                    td(class=" price") от 120 руб/cм
+                tr(class="blue")
+                    td(class="name") ПОЛИКАРБОНАТ ТОЛЩИНОЙ 8 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
+                    td(class=" price") от 100 руб/cм
+                tr
+                    td(class="name") ПЛАСТИК ПВХ ТОЛЩИНОЙ 3 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
+                    td(class=" price") от 120 руб/cм
+                tr(class="blue")
+                    td(class="name") ПЛАСТИК ПВХ ТОЛЩИНОЙ 6 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
+                    td(class=" price") от 120 руб/cм
+                tr
+                    td(class="name") ПЛАСТИК ПВХ ТОЛЩИНОЙ 8 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
+                    td(class=" price") от 120 руб/cм
+                tr(class="blue")
+                    td(class="name") ОБРАМЛЕНИЕ ВЫВЕСКИ АЛЮМИНИЕВЫМ УГОЛКОМ
+                    td(class="price") от 120 руб/cм
+
     div(class="title")
         h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
     div(class="ulflex")
@@ -275,6 +229,49 @@ div(class="flex-page")
         ul
             li Roll-up light
             li Roll-up light
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
+    div(id="flex-box")
+        div(class="elem")
+            img(src="../img/4/content411.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content412.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content413.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content414.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content415.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
 p
     br
     br

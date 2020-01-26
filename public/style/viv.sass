@@ -1,26 +1,51 @@
-@import "everypage/dropdown"
-@import "everypage/hdr"
-@import "everypage/footer"
-@import "everypage/table"
-@import "everypage/title"
-@import "everypage/smth"
-@import "everypage/button"
-tbody
-  margin-left: 9.5%
-  margin-right: 9.5%
+@import "light.css"
+#smth
+  a
+    color: #fc9b00
+.smth
+  .rightflex
+    margin-left: 0!important
+  div
+    p
+      padding-left: 15px
+      padding-right: 13px!important
+  table
+    margin-bottom: 0!important
+    padding-top: 20px
+    padding-left: 20px
+    tbody
+      tr
+        td
+          height: auto!important
+          font-size: 14px!important
+          padding: 7px!important
+        .name
+          width: 40%
+        .price
+          width: 12%
+  margin-left: 0
+  margin-right: 0
+  .leftflex
+    width: 55%
+    .flexbuts
+      margin-left: 30%
+      margin-right: 30%
+      .buttonImg,.calc
+        min-height: 40px!important
+        width: 8vw!important
 .title
   .buttonImg, .calc
     margin-top: 10px!important
   h1
     font-weight: 900
 .photoflex
-  margin: 40px 10.5% 40px 10.5%
+  margin: 30px -2vw!important
   display: flex
   align-items: center
   justify-content: space-between
   .left,.right
-    height: 50px
-    width: 50px
+    height: 25px
+    width: 25px
     background-size: 100% 100%
   .left
     transform: rotate(180deg)
@@ -33,17 +58,14 @@ tbody
 .title
   button
     font-size: 1.5vw!important
-table
-  border-spacing: 10px
-  .price
-    width: 24vw!important
-  .name
-    width: 55vw!important
-@media ( max-width : 1400px )
-  table
-    tbody
-      margin-left: 9.5%
-      margin-right: 9.5%
+@media ( max-width : 1200px )
+  #smth
+    margin-top: 0
+    .imgSwitcher
+      margin-top: 0!important
+    .smthImg
+      margin-top: -20px!important
+      bottom: 33px!important
 @media ( max-width : 1000px )
   .photoflex
     img
@@ -55,18 +77,22 @@ table
     img
       height: 80px!important
       width: 80px!important
-
+@media ( max-width : 1500px )
+  .smth
+    table
+      tbody
+        tr
+          td
+            padding: 5px
+            font-size: 12px!important
 @media ( min-width : 1700px )
-  tbody
-    margin-left: 8%!important
-    margin-right: 8%!important
-    font-size: 25px
+  .smth
+    .rightflex
+      margin-left: 0px!important
+      p
+        padding-left: 30px!important
   .photoflex
     margin-top: 70px
-    margin-bottom: 100px
+    margin-bottom: 50px
     img
       transform: scale(1.5)
-@-moz-document url-prefix()
-  table
-    .name
-      width: 56vw!important

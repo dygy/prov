@@ -707,57 +707,36 @@ body {
 
 table {
   border-spacing: 10px 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0px -1vw 20px;
   min-width: 400px;
   min-height: 200px;
   display: flex;
   justify-content: center; }
   table tr {
-    background-color: #E0F3F3; }
+    background-color: white; }
   table td {
+    padding-right: 3%;
     padding-left: 3%;
     width: 200px;
     height: 40px; }
   table .blue {
-    background-color: #c1d2d6; }
+    background-color: #c5fcfc; }
   table .main {
     font-family: GeomB;
     text-align: center; }
   table .price {
     padding-left: 0 !important;
     text-align: center; }
+  table tbody {
+    margin-left: -1vw;
+    margin-right: -1vw; }
 
-.calc {
-  width: 150px;
-  height: 40px;
-  background-color: white;
-  font-size: 21px; }
+@media (min-width: 1700px) {
+  table {
+    margin-left: 0vw;
+    margin-right: 0vw; } }
 
-button {
-  font-family: Geom; }
-
-.buy-tel {
-  border: none;
-  box-shadow: 2px 1px 8px black;
-  background-color: #FCB600;
-  width: 150px;
-  height: 40px;
-  font-size: 25px; }
-  .buy-tel img {
-    margin-right: 3px !important;
-    margin-left: 2px !important;
-    margin-top: 2px;
-    min-width: 30px !important;
-    height: 30px !important; }
-  .buy-tel .div-tel {
-    height: 100%;
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-
-#smth .buttonImg, .smth .buttonImg, .ntSmth .buttonImg {
+#smth .buttonImg, #smth .calc, .smth .buttonImg, .smth .calc, .ntSmth .buttonImg, .ntSmth .calc {
   min-width: 140px;
   min-height: 35px; }
 
@@ -768,6 +747,14 @@ button {
 #smth, .smth {
   margin: 20px 15% 40px;
   display: flex; }
+  #smth .leftflex, .smth .leftflex {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  #smth .flexbuts, .smth .flexbuts {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
   #smth li, .smth li {
     list-style-position: outside;
     margin-left: 1em;
@@ -790,14 +777,6 @@ button {
     #smth div div, .smth div div {
       display: flex;
       justify-content: center; }
-    #smth div .calc, .smth div .calc {
-      margin-top: 5% !important;
-      min-width: 90px !important;
-      height: 3vw !important; }
-    #smth div .buttonImg, .smth div .buttonImg {
-      margin-top: 5%;
-      max-width: 25% !important;
-      max-height: 25% !important; }
 
 .ntSmth .calc {
   margin-top: 7% !important;
@@ -823,14 +802,7 @@ button {
     margin-left: 1em;
     margin-top: 5px;
     list-style-type: circle; }
-  .smth .calc {
-    max-height: 55px;
-    max-width: 210px;
-    margin-top: 5% !important;
-    width: 25% !important;
-    height: 3vw !important; }
-  .smth .buttonImg {
-    margin-top: 5%;
+  .smth .calc, .smth .buttonImg {
     width: 25% !important;
     height: 25% !important;
     min-height: 58px !important; }
@@ -930,16 +902,12 @@ button {
         top: 150px !important; }
       #smth .imgSwitcher .down-layout, .smth .imgSwitcher .down-layout, .ntSmth .imgSwitcher .down-layout {
         top: 270px !important; }
-      #smth .imgSwitcher .buttonImg, .smth .imgSwitcher .buttonImg, .ntSmth .imgSwitcher .buttonImg {
+      #smth .imgSwitcher .buttonImg, #smth .imgSwitcher .calc, .smth .imgSwitcher .buttonImg, .smth .imgSwitcher .calc, .ntSmth .imgSwitcher .buttonImg, .ntSmth .imgSwitcher .calc {
         min-height: 1vw !important;
-        min-width: 2vw !important; }
-    #smth .calc, .smth .calc, .ntSmth .calc {
-      min-width: 25vw !important;
-      min-height: 4vw !important;
-      font-size: 3vw !important; } }
+        min-width: 2vw !important; } }
 
 @media (min-width: 1400px) {
-  #smth div .buttonImg, .smth div .buttonImg {
+  #smth div .buttonImg, #smth div .calc, .smth div .buttonImg, .smth div .calc {
     max-width: 210px !important;
     max-height: 50px !important; } }
 

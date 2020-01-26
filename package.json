@@ -19,6 +19,5 @@
     "sendmail": "^1.6.1",
     "filereader": "^0.10.3"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

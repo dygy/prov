@@ -562,7 +562,7 @@ body {
         border-color: #FDB13E;
         width: 250px;
         height: 50px;
-        font: 12px bold;
+        font: 12px Geom;
         text-transform: uppercase; }
   #footer #ftr-scnd {
     font-weight: 900;
@@ -1466,7 +1466,8 @@ body {
   align-items: center;
   align-content: center; }
   .title h1, .title h2, #title h1, #title h2 {
-    font-family: GeomB !important; }
+    font-family: Geom !important;
+    font-weight: 400; }
   .title .calc, #title .calc {
     background: #72d7cf;
     width: 15% !important;
