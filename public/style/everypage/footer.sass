@@ -14,28 +14,50 @@
     -o-transform: rotate(-90deg)
     transform: rotate(-90deg)
 .soc-ico
+  width: 60%
   display: flex
+  justify-content: space-between
   margin: -45px -30px 0 -7px !important
 .lowscreen
   display: none
 .brd
   margin: 0 0 10px 0!important
-  padding: 15px 25px
-  border: 2px solid  #FDB13E
+  padding: 15px 35px
+  border: 1px solid  #ecb62b
 #footer
+  display: flex
+  flex-direction: row
   position: relative
   bottom: 0
   color: white
   background: black
   width: 100vw
-  min-height: 470px
+  min-height: 350px
+  #ftr-left
+    margin-left: 10%
+    float: left
+    width: 58%
+  .ftr-right
+    margin-left: 1vw
+    padding-top: 50px
+    float: right
+    .phone
+      text-align: center
+      margin-left: -3%!important
+      white-space: nowrap
+      phone
+        font-family: GeomB
+        display: inline
+        color: #ecb62b
+        font-size: 21px
   #ftr-frst
+    margin-right: 10%
     font-weight: 900
     padding-left: 10px
     display: flex
-    justify-content: space-around
+    justify-content: space-between
     div
-      margin: 50px 6% 0 0
+      margin: 50px 0 0 0
     #soc
       display: flex
       align-items: center
@@ -63,81 +85,59 @@
         margin-top: -15px
         list-style: none
         li
-          text-decoration: underline #FDB13E
+          text-decoration: underline #ecb62b
 
-    .phone
-      margin-left: -3%!important
-      white-space: nowrap
-      phone
-        display: inline
-        color: #FDB13E
-        font-size: 21px
+
     #buttons
+      margin-left: 30px
       z-index: 2
-      margin-top: 60px!important
+      margin-top: 50px!important
       // padding-top: 40px
       button
-        margin-top: -10px
+        margin-top: 5px
         border-width: 1px
         background: black
-        color: #FDB13E
-        border-color: #FDB13E
+        color: #ecb62b
+        border-color: #ecb62b
         width: 250px
         height: 50px
         font: 12px Geom
+        font-weight: 900
         text-transform: uppercase
+      .firstB
+        margin-top: 0!important
 
   #ftr-scnd
+    p
+      width: 128%
+    padding-left: 50px
     font-weight: 900
-    padding-left: 10px
     display: flex
     justify-content: start
     div
       margin: 25px 25% 0 0
-    #map
-      margin-left: -66px
-      margin-top: -55px
-      width: 200px
-      height: 300px
-@media ( min-width : 1759px )
-  #footer
-    #info
-      width: 600px!important
-    #buttons
-      button
-        font-size: 24px!important
-        height: 80px!important
-        width: 350px!important
-    span, email,  adr, city, li
-      font-size: 25px
-    h4, phone
-      font-size: 30px!important
-    h4
-      width: 501px!important
-    #faq
-      margin-right: 40px!important
-
 @media ( min-width : 1500px )
-  #footer
+  #ftr-frst,.ftr-right
     #buttons
       button
-        font-size: 22px!important
-        height: 70px!important
-        width: 320px!important
-    email,  adr, city, li
-      font-size: 19px
+        font-size: 14px!important
+        height: 50px!important
+        width: 250px!important
+    email,  adr, city
+      font-size: 15px
+      padding-top: 10px
     span
       font-size: 17px!important
-    h4, phone
+    phone
       font-size: 23px!important
     h4
-      width: 450px!important
-      margin-left: 1.2em!important
-    #faq
-      margin-right: 40px!important
+    //  width: 450px!important
+    //  margin-left: 1.2em!important
 
 @media ( max-width : 1489px )
   #footer
+    .ftr-right
+      margin-left: 11vw!important
     #ftr-frst
       #buttons
         margin-top: 58px!important
@@ -145,9 +145,6 @@
   #footer
     .soc-ico
       margin-top: -30px!important
-      img
-        height: 60px!important
-        width: 60px!important
     #ftr-frst
       #buttons
         margin-top: 47px!important
@@ -210,16 +207,8 @@
     #ftr-frst
       .phone
         margin-left: 19.5vw!important
-
-  #map
-    display: none
-  #soc
-    display: none!important
   .lowscreen
     display: block
-  #ftr-frst
-   #buttons
-     display: none
   #footer
     #ftr-scnd
       .lowscreen
@@ -248,3 +237,11 @@
 @media ( max-width : 600px )
   #footer
     display: none
+
+@media ( min-width : 1700px )
+  .ftr-right
+    .phone
+      margin-top: 30px
+      transform: scale(1.3)
+  #ftr-scnd
+    font-size: 14px!important

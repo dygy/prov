@@ -1,8 +1,22 @@
 @import "light.css"
+.title
+  margin-bottom: 10px
+  h2,h1
+    margin-top: 0
+    margin-bottom: 0
 #smth
+  font-weight: 400
   a
-    color: #fc9b00
+    text-decoration: none
+    color: #5bbeaa
+  a:hover
+    text-decoration: #ffb700 underline
+    color: #ffb700
 .smth
+  .smthImg
+    margin-bottom: -20px
+    bottom: 34px!important
+    min-width: 340px!important
   .rightflex
     margin-left: 0!important
   div
@@ -16,18 +30,22 @@
     tbody
       tr
         td
-          height: auto!important
-          font-size: 14px!important
-          padding: 7px!important
+          padding: 7px
         .name
-          width: 40%
+          font-size: 14px!important
+          width: 27%
         .price
+          font-size: 14px!important
           width: 12%
+      .main
+        td
+          font-size: 17px!important
   margin-left: 0
   margin-right: 0
   .leftflex
     width: 55%
     .flexbuts
+      justify-content: space-between!important
       margin-left: 30%
       margin-right: 30%
       .buttonImg,.calc
@@ -58,7 +76,23 @@
 .title
   button
     font-size: 1.5vw!important
+@media ( max-width : 1500px ) and (min-width: 1301px)
+  .smth
+    table
+      tbody
+        tr
+          .name,.price
+            padding: 5px
+            font-size: 12px!important
 
+@media ( max-width : 1300px )
+  .smth
+    table
+      tbody
+        tr
+          .name,.price
+            height: 34px!important
+            font-size: 11px!important
 @media ( max-width : 1200px )
   #smth
     margin-top: 0
@@ -78,18 +112,16 @@
     img
       height: 80px!important
       width: 80px!important
-@media ( max-width : 1500px )
-  .smth
-    table
-      tbody
-        tr
-          td
-            padding: 5px
-            font-size: 12px!important
 @media ( min-width : 1700px )
+  #spaceLight
+    height: 47px!important
+  #spaceSymb
+    height: 72px!important
+  #spaceKron
+    height: 110px!important
   .smth
     .rightflex
-      margin-left: 0px!important
+      margin-left: -10px!important
       p
         padding-left: 30px!important
   .photoflex

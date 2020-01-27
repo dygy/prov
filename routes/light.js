@@ -2,6 +2,13 @@ const express = require('express');
 const router = express.Router();
 
 /* GET home page. */
+router.get('/nakOk', function(req, res, next) {
+    res.render('./pages/sellInfo', {
+      title:" НАКЛЕЙКИ НА ОКНА",
+
+    })
+})
+
 router.get('/polipv', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'СВЕТОВОЙ КОРОБ ИЗ ПОЛИКАРБОНАТА И ПВХ' ,

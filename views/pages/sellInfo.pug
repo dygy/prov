@@ -1,0 +1,165 @@
+link(rel='stylesheet', href='/style/sellInfo.css')
+include ../slider
+include ../header
+script(src='../js/index.js')
+script(src='../js/Global.js')
+script(src='../js/switcher.js')
+div(class="flex-page")
+    div(class="title")
+        h1=title
+    div(id="smth")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/nakOk.jpg" class="smthImg")
+            img(src="../img/4/nakOk.jpg"  class="smthImg" style="display:none")
+            img(src="../img/4/nakOk.jpg"  class="smthImg" style="display:none")
+        div(class="rightflex")
+            div(class="content-container")
+                p Наклейки на стекло могут использоваться для оформления как интерьеров, так и внешних конструкций. Подобные изделия используют для решения нескольких задач. Они могут превратить любую прозрачную конструкцию в рекламный объект и способны донести нужную информацию до ваших клиентов и потенциальных посетителей, также они могут быть использованы и для оформления интерьера.
+                br
+                p В интерьерах используются для оформления:
+                ul
+                    li зеркал;
+                    li окон;
+                    li витрин;
+                    li стеклянных перегородок и т. д.
+            div(class='flexbuts' style="margin-top:90px")
+                img(class="calc" src='/img/calc.png' onclick="displayMessage('Калькулятор временно отсутствует')")
+                img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
+    div(class="title")
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
+    div(class="photoflex")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    br
+    div(class="title")
+        h2
+            text ЦЕНЫ НА
+            span
+            tov=title
+    br
+    table
+        tr(class="main blue")
+            td тип
+            td(class="price") цена
+        tr()
+            td
+                text ОТ 1-4М²
+                sup 2
+            td(class="price")
+                text 700 руб
+        tr(class="blue")
+            td
+                text ОТ 5-9М
+                sup 2
+            td(class="price") 675 руб
+        tr
+            td
+                text ОТ 10-14М
+                sup 2
+            td(class="price") 650 руб
+        tr(class="blue")
+            td
+                text ОТ 15-19М
+                sup 2
+            td(class="price") 625 руб
+        tr
+            td От 20-24м²
+            td(class="price") 600 руб
+        tr(class="blue")
+            td От 25+м²
+            td(class="price") 575 руб
+    div(id="content-container")
+        h3 РЕКЛАМНЫЕ НАКЛЕЙКИ НА ОКНА
+        p  Если вы имеете витрины или окна, они могут стать хорошим рекламным местом или их можно просто использовать для украшения в фирменном стиле вашей компании. В этом вам поможет наша фирма, которая занимается изготовлением и размещением различных виниловых наклеек на окна магазина. Мы производим изделия разных форм и размеров на виниловой пленке, которую наносят на различные поверхности. Это самый недорогой вид качественной рекламы. Изготовление требует небольшого времени, а количество заказанных изделий значения не имеет.
+        p Размещение стикеров на окна обладает рядом достоинств:
+        ul
+            li невысокая цена и быстрое изготовление продукции, нанести которую можно самостельно;
+            li информация, нанесенная на рекламную наклейку на окно витрины, может быть любой;
+            li изготавливаются товары любого размера;
+            li стикеры делают информацию доступной и заметной.
+        p Изготовление наклеек на окно на заказ происходит двумя способами:
+        ul
+            li изделия распечатываются на белой пленке и вырезаются по форме;
+            li вырезаются из цветного материала в разном формате.
+        p  Выбор зависит от конкретного случая. Иногда достаточно, чтобы рекламную продукцию было видно только снаружи. Но бывают ситуации, когда необходимо, чтобы одинаково красиво надписи смотрелись и снаружи, и внутри помещения. Чаще всего это касается ресторанов, детских центров, торговых помещений.
+        p  Купить рекламные наклейки на пластиковые окна просто. Чтобы сделать заказ продукции в нашей компании, можно заказать выезд специалиста, который снимет все необходимые размеры. Также мы осуществляем доставку готового товара и оклейку любых поверхностей. Собственное производство позволяет поставить приемлемые цены и добиться отличного качества. Оформить заявку в Москве и заказать большие белые, прозрачные или цветные наклейки на витринные окна вы можете на сайте нашей компании или позвонив по телефонам, указанным на нем. Стоимость рассчитывается индивидуально и зависит от многих факторов, например, размеров, выбора пленки, заказа дополнительных услуг. Мы работаем на рынке не один год и имеем множество положительных
+
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+
+
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
+    div(id="flex-box")
+        div(class="elem")
+            img(src="../img/4/content411.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content412.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content413.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content414.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content415.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать

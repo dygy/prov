@@ -6,7 +6,7 @@ script(src='../js/Global.js')
 script(src='../js/switcher.js')
 div(class="flex-page")
     div(class="title")
-        h1 ПРИМЕРЫ НАШИХ РАБОТ
+        h1 ВЫВЕСКИ
     div(id="smth")
         div(class="imgSwitcher")
             div(class="mid-layout")
@@ -16,9 +16,9 @@ div(class="flex-page")
                 img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
                 img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
                 img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
-            img( src="../img/4/content410.png" class="smthImg")
-            img(src="../img/4/content410.png"  class="smthImg" style="display:none")
-            img(src="../img/4/content410.png"  class="smthImg" style="display:none")
+            img( src="../img/4/top.jpg" class="smthImg")
+            img(src="../img/4/content2.png"  class="smthImg" style="display:none")
+            img(src="../img/4/content1.jpg"  class="smthImg" style="display:none")
         div
             p Установка рекламных вывесок — доступный способ привлечь внимание, донести важную информацию о товаре или услуге, которая подтолкнет зайти в офис, магазин, чтобы узнать больше или купить/заказать.
             p Световые вывески подразделяются на:
@@ -31,7 +31,7 @@ div(class="flex-page")
                     text   привлекают заказчиков не только своей заметностью, но и дизайном, который выделяет компанию среди конкурентов. Он формируется из выбранного шрифта, наличия декоративных элементов, особенностей подсветки, а также используемых в производстве материалов.
                 li
                     text  Так же мы можем изготавливать
-                    a(href="/nolight") несветовые вывески
+                    a(href="/nolight")  несветовые вывески
 
     div(class="title")
         h1 ПРИМЕРЫ НАШИХ РАБОТ
@@ -50,13 +50,13 @@ div(class="flex-page")
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            img(src="/img/mobs/mobs (11).png" class="smthImg" )
+            img(src="/img/4/content1.jpg" class="smthImg" )
             div(class="flexbuts")
                 img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-
         div(class="rightflex")
             p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+            div(id="spaceLight" style="height:0px")
             table(id="light")
                 tr(class="blue main")
                     td(class="name") тип
@@ -91,13 +91,13 @@ div(class="flex-page")
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            img(src="/img/mobs/mobs (11).png" class="smthImg" )
+            img(src="/img/4/content2.png" class="smthImg" )
             div(class="flexbuts")
                 img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-
         div(class="rightflex")
             p Объемные буквы и логотипы – это эстетично и современно. Светящиеся, объемные, ультратонкие, супер-легкие, стальные, деревянные, пенопластовые. На фасаде здания, за стойкой ресепшен, в шоу-руме, всюду и везде. Объемным буквам по силам воплотить любые ваши оригинальные идеи!
+            div(style="height:53px" id="spaceSymb")
             table(id="symb")
                 tr(class="blue main")
                     td(class="name") тип
@@ -131,13 +131,13 @@ div(class="flex-page")
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            img(src="/img/mobs/mobs (11).png" class="smthImg" )
+            img(src="/img/4/content3.jpg" class="smthImg" )
             div(class="flexbuts")
                 img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-
         div(class="rightflex")
             p Панель-кронштейн — это рекламное поле с боковым креплением, как правило, к стене здания, мачте освещения или к собственной опоре. Если Вы хотите, чтобы Ваша реклама была видна издалека  вдоль улицы, панель-кронштейн — это именно то, что Вам нужно!  Отличительной особенностью панель-кронштейна от любых других  видов рекламных вывесок является то, что обозреваемость конструкции приближается к 100%
+            div(style="height:62px" id="spaceKron")
             table(id="kron")
                 tr(class="blue main")
                     td(class="name") тип
@@ -165,11 +165,10 @@ div(class="flex-page")
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            img(src="/img/mobs/mobs (11).png" class="smthImg" )
+            img(src="/img/4/content4.jpg" class="smthImg" )
             div(class="flexbuts")
                 img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-
         div(class="rightflex")
             p Ни одно предприятие не может обойтись без вывески, которая одновременно является одним из проверенных видов наружной рекламы. Одним из наиболее простых и недорогих вариантов считаются несветовые вывески. Это оптимальное решение для первоначального этапа при зарождении бизнеса.
             table(id="nolight")
@@ -272,9 +271,5 @@ div(class="flex-page")
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
-p
-    br
-    br
-    br
 
 include ../footer

@@ -3,7 +3,6 @@ include ../slider
 include ../header
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
 div(class="flex-page")
     div(class="title")
         h1 СВЕТОВЫЕ КОРОБА
@@ -101,60 +100,60 @@ div(class="flex-page")
                     text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
     div(class="title")
-        h2 ЦЕНЫ НА НАКЛЕЙКИ НА ОКНА
+        h2 ЦЕНЫ НА СВЕТОВЫЕ КОРОБА
     table
         tr(class="main blue")
-            td метраж
+            td тип
             td(class="price") цена
-        tr
-            td АКРИЛ
-            td(class="price") от 120 руб/cм
-        tr(class="blue")
+        tr()
             td АКРИЛ + ПВХ
             td(class="price")
                 text 13 500/м
                 sup 2
-        tr
+        tr(class="blue")
             td ПВХ +КОНТРАЖУР
             td(class="price")
                 text 12 000/м
                 sup 2
-
-        tr(class="blue")
+        tr
             td МЕТАЛЛ+ КОНТРАЖУР
             td(class="price")
                 text 7 500/м
                 sup 2
-        tr
+        tr(class="blue")
             td АКРИЛ + ПВХ + КОНТРАЖУР
             td(class="price")
                 text 10 000/м
                 sup 2
-        tr(class="blue")
+        tr
             td АКРИЛ + МЕТАЛЛ
             td(class="price")
                 text 7 500/м
                 sup 2
-        tr
+        tr(class="blue")
             td ОТКРЫТЫЙ НЕОН
             td(class="price")
                 text 7 500/м
                 sup 2
-        tr(class="blue")
+        tr
             td ОТКРЫТЫЕ СВЕТОДИОДЫ
             td(class="price")
                 text 15 000/м
                 sup 2
-        tr
+        tr(class="blue")
             td КОМПОЗИТ + ПРОРЕЗКА
             td(class="price")
                 text 12 000/м
                 sup 2
-        tr(class="blue")
+        tr
             td КОМПОЗИТ + ИНКРУСТАЦИЯ
             td(class="price")
                 text 15 000/м
                 sup 2
+        tr(class="blue")
+            td
+            td(class="price")
+
     div(id="smth")
         div(class="imgSwitcher")
             div(class="mid-layout")
@@ -164,12 +163,12 @@ div(class="flex-page")
                 img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
                 img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
                 img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
-            img( src="../img/4/content410.png" class="smthImg")
-            img(src="../img/4/content410.png"  class="smthImg" style="display:none")
-            img(src="../img/4/content410.png"  class="smthImg" style="display:none")
+            img( src="../img/4/content410.jpg" class="smthImg")
+            img(src="../img/4/content410.jpg"  class="smthImg" style="display:none")
+            img(src="../img/4/content410.jpg"  class="smthImg" style="display:none")
         div
             p Световой короб или лайтбокс — объемная рекламная конструкция с внутренней подсветкой. Форма часто прямоугольная, но может быть и более сложной. Лицевая поверхность может светиться как вся полностью, так и выборочно (например, только буквы). Лайтбоксами называют и огромные конструкции на весь фасад здания, и ультратонкие панели в окнах витрин с возможность замены изображения. Преимущество - цена ниже, чем у световых букв, и зависит только от квадратуры короба. Недостатки — лайтбоксы на улице все чаще запрещает МосКомАрхитектура.
-            div(class='flexbuts')
+            div(class='flexbuts' style="margin-top:90px")
                 img(class="calc" src='/img/calc.png' onclick="displayMessage('Калькулятор временно отсутствует')")
                 img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
 

@@ -1,14 +1,17 @@
-.title, #title {
+.title .buttonImg, #title .buttonImg {
+  box-shadow: 2px 1px 8px black; }
+
+.title, #title, .flexbuts {
   margin-top: 10px;
   display: flex;
   text-align: center;
   justify-content: space-around;
   align-items: center;
   align-content: center; }
-  .title h1, .title h2, #title h1, #title h2 {
+  .title h1, .title h2, #title h1, #title h2, .flexbuts h1, .flexbuts h2 {
     font-family: Geom !important;
     font-weight: 400; }
-  .title .calc, #title .calc {
+  .title .calc, #title .calc, .flexbuts .calc {
     background: #72d7cf;
     width: 15% !important;
     min-width: 170px;
@@ -16,10 +19,9 @@
     height: 4vw !important;
     max-width: 210px;
     max-height: 50px; }
-  .title .buttonImg, #title .buttonImg {
+  .title .buttonImg, #title .buttonImg, .flexbuts .buttonImg {
     width: 15% !important;
     height: 4vw !important;
-    box-shadow: 2px 1px 8px black;
     max-width: 220px;
     max-height: 50px; }
 
