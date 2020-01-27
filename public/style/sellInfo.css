@@ -16,8 +16,18 @@
 #smth .rightflex .flexbuts {
   margin-top: 40px !important; }
 
-@media (min-width: 1700px) {
+@media (min-width: 1800px) {
   #smth .rightflex .content-container {
     height: 443px; } }
+
+@media (max-width: 1200px) {
+  #smth .rightflex .flexbuts {
+    width: 100% !important; }
+    #smth .rightflex .flexbuts .calc, #smth .rightflex .flexbuts .buttonImg {
+      min-height: 54px !important; } }
+
+@media (max-width: 1800px) {
+  #smth .imgSwitcher .mid-layout {
+    bottom: -28% !important; } }
 
 /*# sourceMappingURL=sellInfo.css.map */
