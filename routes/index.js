@@ -80,7 +80,7 @@ router.get('/presswall', function(req, res, next) {
 });
 
 router.get('/navs', function(req, res, next) {
-    res.render('./pages/navs', { title: ' Навигаторы' });
+    res.render('./pages/navs', { title: ' НАВИГАЦИОННЫЕ ТАБЛИЧКИ' });
 });
 
 router.get('/serves', function(req, res, next) {

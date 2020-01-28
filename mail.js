@@ -61,7 +61,7 @@ function parseJSON(content) {
         mail+= `Доп:${content.also}<br>`
     }
     if (content.troev){
-        mail+= `Торевой цвет:${content.troev} <br>`
+        mail+= `Торцевой цвет:${content.troev} <br>`
     }
     if (content.contur){
         mail+= `Контурный цвет:${content.contur} <br>`
@@ -96,11 +96,14 @@ function parseJSON(content) {
     if (content.sizeX){
         mail+= `Размер :${content.sizeX}x${content.sizeY} <br>`
     }
+    if (content.razm){
+        mail+= `Размер вывески: ${content.razm} <br>`
+    }
     if (content.material){
-        mail+= `Материал:${content.material} <br>`
+        mail+= `Материал: ${content.material} <br>`
     }
     if (content.resol){
-        mail+= `Разрешение:${content.resol} <br>`
+        mail+= `Разрешение: ${content.resol} <br>`
     }
     if (content.luversi){
         mail+= `Люверсы:${content.luversi} <br>`
@@ -148,7 +151,7 @@ function parseJSON(content) {
         mail+= `С ссылки:${content.url} <br>`
     }
     if (content.file){
-        mail+= `<br> <img style="max-width: 500px; max-height: 500px" src="${content.file}"> <br> `
+        mail+= `<br> <img style="transform: translate(0.5)" src="${content.file}"> <br> `
     }
     return mail
 }

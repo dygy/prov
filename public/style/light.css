@@ -705,7 +705,7 @@ table {
   border-spacing: 10px 0;
   margin: 0px -1vw 20px;
   min-width: 400px;
-  min-height: 200px;
+  min-height: auto;
   display: flex;
   justify-content: center; }
   table tr {
@@ -759,6 +759,9 @@ table {
   #smth .smthImg, .smth .smthImg {
     min-width: 400px;
     height: 500px; }
+  #smth .rightflex table tbody, .smth .rightflex table tbody {
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
   #smth div, .smth div {
     margin-left: 15px; }
     #smth div ul, .smth div ul {
@@ -967,7 +970,7 @@ table {
     justify-content: space-between; }
     .flex-page #font-flex .elem, .flex-page #flex-box .elem {
       background: #e0e3e3;
-      margin: 10px 0 0 0 !important; }
+      margin: 20px 0 0 0 !important; }
   .flex-page #smth {
     margin-left: 0;
     margin-right: 0; }
@@ -1099,12 +1102,14 @@ table tbody {
   margin-left: 10%;
   margin-right: 10%; }
   #smth .flexbuts {
-    margin-left: -14px;
+    margin-left: 0px;
     width: 74% !important; }
+    #smth .flexbuts .calc, #smth .flexbuts .buttonImg {
+      width: 40% !important; }
   #smth .smthImg {
     height: 300px !important;
     min-width: 250px !important;
-    bottom: 97px !important; }
+    bottom: 87px !important; }
 
 @media (min-width: 1300px) {
   #imgFP #close {
@@ -1126,12 +1131,12 @@ table tbody {
     table .main td {
       font-size: 25px !important; }
   #smth {
-    margin-bottom: 100px; }
+    margin-bottom: 50px; }
     #smth .smthImg {
       min-width: 350px !important;
       height: 550px !important; }
     #smth .down-layout {
-      bottom: -114% !important; }
+      bottom: -115% !important; }
     #smth .mid-layout {
       left: -52% !important;
       width: 500px; }

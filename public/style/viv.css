@@ -17,20 +17,28 @@
 .smth {
   margin-left: 0;
   margin-right: 0; }
+  .smth .scroll-container {
+    height: 124px;
+    overflow-y: auto; }
   .smth .smthImg {
     margin-bottom: -20px;
     bottom: 34px !important;
     min-width: 340px !important; }
   .smth .rightflex {
+    position: relative;
     margin-left: 0 !important; }
   .smth div p {
     padding-left: 15px;
     padding-right: 13px !important; }
   .smth table {
+    width: 97%;
     margin-bottom: 0 !important;
     padding-top: 20px;
-    padding-left: 20px; }
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0; }
     .smth table tbody tr td {
+      height: 27px;
       padding: 7px; }
     .smth table tbody tr .name {
       font-size: 14px !important;
@@ -84,7 +92,6 @@
 
 @media (max-width: 1300px) {
   .smth table tbody tr .name, .smth table tbody tr .price {
-    height: 34px !important;
     font-size: 11px !important; } }
 
 @media (max-width: 1200px) {
@@ -94,7 +101,15 @@
       margin-top: 0 !important; }
     #smth .smthImg {
       margin-top: -20px !important;
-      bottom: 33px !important; } }
+      bottom: 33px !important; }
+  .smth .leftflex .flexbuts {
+    justify-content: space-evenly !important;
+    margin-bottom: 20px; }
+  .smth .rightflex table {
+    width: 100%;
+    padding-left: 31px;
+    padding-top: 0;
+    position: relative !important; } }
 
 @media (max-width: 1000px) {
   .photoflex img {
@@ -122,5 +137,9 @@
     margin-bottom: 50px; }
     .photoflex img {
       transform: scale(1.5); } }
+
+@media (min-width: 1800px) {
+  .flex-page #smth {
+    margin-bottom: 100px !important; } }
 
 /*# sourceMappingURL=viv.css.map */

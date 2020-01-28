@@ -1,120 +1,262 @@
-link(rel='stylesheet', href='/style/nolight.css')
+link(rel='stylesheet', href='/style/viv.css')
 include ../slider
 include ../header
+style.
+    .flex-page .smth .scroll-container{
+            height: 300px!important;
+        }
+
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
-div(class='flex-page')
+script(src='../js/switcher.js')
+div(class="flex-page")
     div(class="title")
-        h1 НЕСВЕТОВЫЕ ВЫВЕСКИ
-    table
-        tr(class="blue main")
-            td тип
-            td цена
-        tr
-            td КОМПОЗИТНЫЙ МАТЕРИАЛ, ПЕЧАТЬ НА ПЛЕНКЕ
-            td(class="price") от 6 000 руб
-        tr(class="blue ")
-            td ОЦИНКОВАННЫЙ МЕТАЛЛ, ПЕЧАТЬ НА ПЛЕНКЕ
-            td(class="price") от 1 200 руб
-        tr
-            td ОЦИНКОВАННЫЙ МЕТАЛЛ, ПЕЧАТЬ НА ПЛЕНКЕ С КАРКАСОМ
-            td(class="price") от 2 000 руб
-        tr(class="blue")
-            td ПОЛИКАРБОНАТ ТОЛЩИНОЙ 4 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class="price") от 1 200 руб
-        tr
-            td ПОЛИКАРБОНАТ ТОЛЩИНОЙ 6 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class="price") от 1 500 руб
-        tr(class="blue ")
-            td ПОЛИКАРБОНАТ ТОЛЩИНОЙ 8 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class="price") от 1 700 руб
-        tr
-            td ПЛАСТИК ПВХ ТОЛЩИНОЙ 3 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class="price") от 1 300 руб
-        tr(class="blue ")
-            td ПЛАСТИК ПВХ ТОЛЩИНОЙ 6 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class="price") от 2 000 руб
-        tr
-            td ПЛАСТИК ПВХ ТОЛЩИНОЙ 8 ММ С АППЛИКАЦИЕЙ ИЗ ПЛЕНКИ
-            td(class="price") от 2 100 руб
-        tr(class="blue ")
-            td ОБРАМЛЕНИЕ ВЫВЕСКИ АЛЮМИНИЕВЫМ УГОЛКОМ
-            td(class="price") 280 руб / пог.м.
-
+        h1 СВЕТОВЫЕ ПАНЕЛИ
     div(id="smth")
-        img(src="../img/nolight/nolight07.png" class="smthImg")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/top.jpg" class="smthImg")
+            img(src="../img/4/content2.png"  class="smthImg" style="display:none")
+            img(src="../img/4/content1.jpg"  class="smthImg" style="display:none")
         div
-            p Несветовые вывески имеют значительно меньшую стоимость, проще в эксплуатации благодаря отсутствию внутренней подсветки. В этом и проявляется преимущество несветовых вывесок, так как их можно разместить в любом месте и без значимых дополнительных затрат. Чаще всего несветовые вывески применяются для информирования потенциальных клиентов о компании и виде деятельности.
-            ul
-                li низкая себестоимость;
-                li цветовое разнообразие;
-                li простота и скорость изготовления вывески;
-                li устойчивость к неблагоприятному воздействию внешней среды;
-                li реализация большинства дизайнерских замыслов.
-            div
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+            p Световой короб или лайтбокс — объемная рекламная конструкция с внутренней подсветкой. Форма часто прямоугольная, но может быть и более сложной. Лицевая поверхность может светиться как вся полностью, так и выборочно (например, только буквы).
+            p Лайтбоксами называют и огромные конструкции на весь фасад здания, и ультратонкие панели в окнах витрин с возможность замены изображения. Преимущество - цена ниже, чем у световых букв, и зависит только от квадратуры короба. Недостатки — лайтбоксы на улице все чаще запрещает МосКомАрхитектура.
 
     div(class="title")
-        h1 ПОПУЛЯРНЫЕ ЗАКАЗЫ
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
+    div(class="photoflex")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(class="title")
+        img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+    div(class="title")
+        h2 НЕСВЕТОВЫЕ ВЫВЕСКИ ИЗ МЕТАЛЛА
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            img(src="/img/4/content1.jpg" class="smthImg" )
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Тонкие световые панели, обрамленные по периметру алюминиевой клик-рамкой, позволяют с легкостью менять рекламные изображения, а строгий и стильный внешний вид подчеркнет статусность Вашей компании.
+            table(id="light")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") Несветовая вывеска из металла
+                    td(class=" price")
+                        text от 7000 руб/м
+                        sup 2
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+    div(class="title")
+        h2 НЕСВЕТОВЫЕ ВЫВЕСКИ ИЗ ОРГСТЕКЛА
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            img(src="/img/4/content2.png" class="smthImg" )
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Объемные буквы и логотипы – это эстетично и современно. Светящиеся, объемные, ультратонкие, супер-легкие, стальные, деревянные, пенопластовые. На фасаде здания, за стойкой ресепшен, в шоу-руме, всюду и везде. Объемным буквам по силам воплотить любые ваши оригинальные идеи!
+            table(id="symb")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") Несветовая вывеска из металла
+                    td(class=" price")
+                        text от 15000 руб/м
+                        sup 2
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+    div(class="title")
+        h2 НЕСВЕТОВЫЕ ВЫВЕСКИ ИЗ ПВХ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            img(src="/img/4/content3.jpg" class="smthImg" )
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Панель-кронштейн — это рекламное поле с боковым креплением, как правило, к стене здания, мачте освещения или к собственной опоре. Если Вы хотите, чтобы Ваша реклама была видна издалека  вдоль улицы, панель-кронштейн — это именно то, что Вам нужно!  Отличительной особенностью панель-кронштейна от любых других  видов рекламных вывесок является то, что обозреваемость конструкции приближается к 100%.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") Несветовая вывеска из пвх
+                    td(class=" price")
+                        text от 5000 руб/м
+                        sup 2
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+    div(class="title")
+        h2 МЕТАЛЛОКАРКАС С БАННЕРОМ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            img(src="/img/4/content3.jpg" class="smthImg" )
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Панель-кронштейн — это рекламное поле с боковым креплением, как правило, к стене здания, мачте освещения или к собственной опоре. Если Вы хотите, чтобы Ваша реклама была видна издалека  вдоль улицы, панель-кронштейн — это именно то, что Вам нужно!  Отличительной особенностью панель-кронштейна от любых других  видов рекламных вывесок является то, что обозреваемость конструкции приближается к 100%.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") Металлокаркас с баннером
+                    td(class=" price")
+                        text от 1800 руб/м
+                        sup 2
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+    div(class="title")
+        h2 МЕТАЛЛОКАРКАС С ПЛАСТИКОМ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            img(src="/img/4/content3.jpg" class="smthImg" )
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Панель-кронштейн — это рекламное поле с боковым креплением, как правило, к стене здания, мачте освещения или к собственной опоре. Если Вы хотите, чтобы Ваша реклама была видна издалека  вдоль улицы, панель-кронштейн — это именно то, что Вам нужно!  Отличительной особенностью панель-кронштейна от любых других  видов рекламных вывесок является то, что обозреваемость конструкции приближается к 100%.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") ПВХ 3
+                    td(class=" price")
+                        text от 2800 руб/м
+                        sup 2
+                tr(class="blue")
+                    td(class="name") ПВХ 5
+                    td(class=" price")
+                        text от 4200 руб/м
+                        sup 2
+                tr
+                    td(class="name") ПВХ 10
+                    td(class=" price")
+                        text от 6200 руб/м
+                        sup 2
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+    div(class="title")
+        h2 НЕСВЕТОВЫЕ КОРОБА
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            img(src="/img/4/content3.jpg" class="smthImg" )
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Панель-кронштейн — это рекламное поле с боковым креплением, как правило, к стене здания, мачте освещения или к собственной опоре. Если Вы хотите, чтобы Ваша реклама была видна издалека  вдоль улицы, панель-кронштейн — это именно то, что Вам нужно!  Отличительной особенностью панель-кронштейна от любых других  видов рекламных вывесок является то, что обозреваемость конструкции приближается к 100%.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") Несветовые короба
+                    td(class=" price")
+                        text от 6000 руб/м
+                        sup 2
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
     div(id="flex-box")
         div(class="elem")
-            img(src="../img/nolight/nolight01.png")
+            img(src="../img/4/content411.png")
             br
             bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/nolight/nolight02.png")
+            img(src="../img/4/content412.png")
             br
             bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/nolight/nolight03.png")
+            img(src="../img/4/content413.png")
             br
             bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/nolight/nolight04.png")
+            img(src="../img/4/content414.png")
             br
             bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/nolight/nolight05.png")
+            img(src="../img/4/content415.png")
             br
             bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="../img/nolight/nolight06.png")
-            br
-            bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать

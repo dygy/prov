@@ -1,3 +1,55 @@
+function calc(type) {
+    console.log(type)
+    if (type === "БУКВЫ") {
+        if (request.razm) {
+            //console.log(request.razm)
+            if (request.formI === "акрил+ПВХ") {
+                calc2(85)
+            }
+            else if (request.formI === "акрил") {
+                calc2(120)
+            }
+            else if (request.formI === "акрил+ПВХ + контражур") {
+                calc2(125)
+            }
+            else if (request.formI === "акрил + металл") {
+                calc2(125)
+            }
+            else if (request.formI === "открытые светодиоды") {
+                calc2(165)
+            }
+        }
+    }
+}
+function calc2(cm) {
+    let price;
+    if (request.also !=="фотодатчик"){
+        if (request.font === "c засечками" || request.font === "курсив") {
+            price= addZero(((request.razm * cm) * request.text.replace(' ','').length)* 1.3)
+            elem("right").innerText = price + " руб."
+        } else {
+            price= addZero((request.razm * cm)* request.text.replace(' ','').length)
+            elem("right").innerText = price + " руб."
+        }
+    }
+    else{
+        if (request.font === "c засечками" || request.font === "курсив") {
+            price = addZero(((request.razm * cm) * request.text.replace(' ','').length)* 1.3 +3000)
+            elem("right").innerText = price + " руб."
+        } else {
+            price= addZero((request.razm * cm)* request.text.replace(' ','').length +3000)
+            elem("right").innerText = price + " руб."
+        }
+    }
+}
+function addZero(price) {
+    if (price.toString()[price.toString().length-2]==='.'){
+        return price.toString()+"0"
+    }
+    else {
+        return price
+    }
+}
 function addClass(elem) {
     // get all 'a' elements
     let a = getSelectable(elem);

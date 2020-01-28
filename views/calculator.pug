@@ -2,8 +2,7 @@ link(rel='stylesheet', href='/style/calc.css')
 include header
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
-div(class="calc-flex")
+div(class="calc-flex" onclick=`calc("${title}")` oninput=`calc("${title}")`)
     div(class="center")
         h1
             text КАЛЬКУЛЯТОР

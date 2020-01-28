@@ -70,6 +70,9 @@ body {
     #full-page #smth .smthImg, #full-page .smth .smthImg {
       min-width: 400px;
       height: 500px; }
+    #full-page #smth .rightflex table tbody, #full-page .smth .rightflex table tbody {
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
     #full-page #smth div, #full-page .smth div {
       margin-left: 15px; }
       #full-page #smth div ul, #full-page .smth div ul {

@@ -1,10 +1,10 @@
-link(rel='stylesheet', href='/style/fonts.css')
+link(rel='stylesheet', href='/style/light.css')
 include ../slider
 include ../header
 script(src='../js/index.js')
 script(src='../js/Global.js')
 
-block fonts
+div(class="flex-page")
     div(class="title")
         h1 ОБЪЕМНЫЕ СВЕТЯЩИЕСЯ БУКВЫ
     div(id="font-flex")
@@ -88,10 +88,19 @@ block fonts
                     text подробнее
                     text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="/img/viv/viv9.png"  onclick="displayImg('../img/viv/viv9.png')")
+            div(class="lupa" onclick="displayImg('../img/viv/viv9.png')")
+            br
+            strong РЕТРО
+            div
+                button(class="more" onclick="moveTo('./font/retro')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
 
-block tab
     div(class="title")
-        img(class="calc" src='/img/calc.png' onclick=("moveTo('./calc/symbs')") )
+        h2 ЦЕНА НА ОБЪЕМНЫЕ БУКВЫ
     table
         tr(class="main blue")
             td тип
@@ -120,7 +129,6 @@ block tab
         tr(class="blue")
             td ОТКРЫТЫЕ СВЕТОДИОДЫ
             td(class="price") от 15 000 руб/м2
-block info
     div(id="smth")
         div(class="imgSwitcher")
             div(class="mid-layout")
@@ -130,13 +138,39 @@ block info
                 img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
                 img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
                 img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
-            img(src="/img/letters/letters.jpg" class="smthImg")
-            img(src="/img/letters/letters.jpg" class="smthImg" style="display: none")
-            img(src="/img/letters/letters.jpg" class="smthImg" style="display: none")
+            img( src="../img/4/content410.jpg" class="smthImg")
+            img(src="../img/4/content410.jpg"  class="smthImg" style="display:none")
+            img(src="../img/4/content410.jpg"  class="smthImg" style="display:none")
         div
-            p Объемные буквы – это яркая и эффективная наружная реклама. На данный момент это самые востребованные конструкции. Они не только привлекают внимание потенциальных клиентов, но и  являются единственным разрешенным  видом наружной рекламы в столице в соответствии с постановлением правительства г. Москва № 902-ПП. В подавляющем большинстве на фасады зданий устанавливаются объемные символы и важно сделать так, чтобы именно ваша вывеска была самой запоминающейся и выделялась на фоне других конструкций.
-            div
-                img(src="../img/button.png" class="buttonImg" onclick="displayOrder()")
+            p Объемные буквы – это яркая и эффективная наружная реклама. На данный момент это самые востребованные конструкции. Они не только привлекают внимание потенциальных клиентов, но и являются единственным разрешенным видом наружной рекламы в столице в соответствии с постановлением правительства г. Москва № 902-ПП.
+            br
+            p В подавляющем большинстве на фасады зданий устанавливаются объемные символы и важно сделать так, чтобы именно ваша вывеска была самой запоминающейся и выделялась на фоне других конструкций.
+            div(class='flexbuts' style="margin-top:90px")
+                img(class="calc" src='/img/calc.png' onclick="displayMessage('Калькулятор временно отсутствует')")
+                img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
+
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
     div(id="flex-box")
         div(class="elem")
             img(src="/img/letters/1.jpg")
@@ -163,14 +197,6 @@ block info
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="/img/letters/4.jpg")
-            br
-            bold Обьемные буквы
-            p из орг. стекла с лицевой подсветкой высота букв 20см
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-        div(class="elem")
             img(src="/img/letters/5.jpg")
             br
             bold Обьемные буквы
@@ -186,24 +212,6 @@ block info
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="/img/letters/7.jpg")
-            br
-            bold Обьемные буквы
-            p из орг. стекла с лицевой подсветкой высота букв 20см
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="/img/letters/8.jpg")
-            br
-            bold Обьемные буквы
-            p из орг. стекла с лицевой подсветкой высота букв 20см
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-
-
 
 
 

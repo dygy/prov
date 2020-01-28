@@ -34,13 +34,17 @@ p форма изделия:
     p текст вывески:
     div(class="flex-input")
         input(id="text" oninput="setInput('text'); elem('output').innerText=elem('text').value")
+    p высота букв (см):
+    div(class="flex-input")
+        input(id="razm" oninput="setInput('razm');" type="number")
+
+
     p шрифт вывески:
     div(class="selectable selector")
         div(class="elem" onclick="request.font='прямой'     ; setOutput('Arial');addClass(this)"     ) прямой
         div(class="elem" onclick="request.font='c засечками'; setOutput('Times');addClass(this)" style="min-width:100px") c засечками
         div(class="elem" onclick="request.font='курсив'     ;setOutput('italic');addClass(this)" ) курсив
     p лицевой цвет:
-
     div(class="selectable color")
         div(class="elem none"     onclick="request.color='1' ;setColor('white')  ;addClass(this)")
         div(class="elem yellow"   onclick="request.color='2' ;setColor('#fff101');addClass(this)")
@@ -68,7 +72,7 @@ p форма изделия:
         div(class="elem smth7"    onclick="request.color='24'")
         div(class="elem smth8"    onclick="request.color='25'")
         div(class="elem smth9"    onclick="request.color='26'")
-    p торевой цвет:
+    p торцевой цвет:
     div(class="selectable color")
         div(class="elem none"     onclick="request.troev='1' ;setBorder('white')  ;addClass(this)")
         div(class="elem yellow"   onclick="request.troev='2' ;setBorder('#fff101');addClass(this)")
@@ -124,21 +128,20 @@ p форма изделия:
         div(class="elem smth7" onclick="request.contur='24'")
         div(class="elem smth8" onclick="request.contur='25'")
         div(class="elem smth9" onclick="request.contur='26'")
-    p высота букв:
-    div(class="selector selectable")
-        div(class="elem" onclick="request.height='до 15см';addClass(this)") до 15см
-        div(class="elem" onclick="request.height='до 25см';addClass(this)") до 25см
-        div(class="elem" onclick="request.height='до 40 см';addClass(this)") до 40 см
-        div(class="elem" onclick="request.height='до 55см';addClass(this)") до 55см
-        div(class="elem" onclick="request.height='до 60 см';addClass(this)") до 60 см
-        div(class="elem" onclick="request.height='до 70 см';addClass(this)") до 70 см
-        div(class="elem" onclick="request.height='до 80 см';addClass(this)") до 80 см
-        div(class="elem" onclick="request.height='больше 1м';addClass(this)") больше 1м
+    //
+        div(class="selector selectable")
+            div(class="elem" onclick="request.height='до 15см';addClass(this)") до 15см
+            div(class="elem" onclick="request.height='до 25см';addClass(this)") до 25см
+            div(class="elem" onclick="request.height='до 40 см';addClass(this)") до 40 см
+            div(class="elem" onclick="request.height='до 55см';addClass(this)") до 55см
+            div(class="elem" onclick="request.height='до 60 см';addClass(this)") до 60 см
+            div(class="elem" onclick="request.height='до 70 см';addClass(this)") до 70 см
+            div(class="elem" onclick="request.height='до 80 см';addClass(this)") до 80 см
+            div(class="elem" onclick="request.height='больше 1м';addClass(this)") больше 1м
     p дополнительные опции:
     div(class="selector selectable")
-        div(class="elem" onclick="request.also='сверхяркая';addClass(this)") сверхяркая
-        div(class="elem" onclick="request.also='подложка'  ;addClass(this)") подложка
-        div(class="elem" onclick="request.also='фотодатчик';addClass(this)") фотодатчик
+        div(class="elem" onclick="request.also='ничего';addClass(this)") ничего
+        div(class="elem" onclick="request.also='фотодатчик';addClass(this)" style="min-width:165px !important") датчик "день/ночь"
     div(id="output")
 style(type='text/css').
     @media (min-width: 1700px) {
