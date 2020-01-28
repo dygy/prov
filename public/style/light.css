@@ -766,24 +766,26 @@ table {
   #smth .smthImg, .smth .smthImg {
     min-width: 400px;
     height: 500px; }
+  #smth .rightflex .scroll-container, .smth .rightflex .scroll-container {
+    display: flex;
+    justify-content: end;
+    flex-direction: column; }
   #smth .rightflex table tbody, .smth .rightflex table tbody {
     margin-left: 0 !important;
     margin-right: 0 !important; }
-  #smth div, .smth div {
-    margin-left: 15px; }
-    #smth div ul, .smth div ul {
-      padding-left: 30px;
-      margin-top: 0px !important; }
-    #smth div p, .smth div p {
-      text-indent: 20px;
-      margin-bottom: 0px;
-      font-weight: 300;
-      margin-top: 0;
-      padding-left: 30px;
-      font-size: 16px; }
-    #smth div div, .smth div div {
-      display: flex;
-      justify-content: center; }
+  #smth div ul, .smth div ul {
+    padding-left: 30px;
+    margin-top: 0px !important; }
+  #smth div p, .smth div p {
+    text-indent: 20px;
+    margin-bottom: 0px;
+    font-weight: 300;
+    margin-top: 0;
+    padding-left: 30px;
+    font-size: 16px; }
+  #smth div div, .smth div div {
+    display: flex;
+    justify-content: center; }
 
 .ntSmth .calc {
   margin-top: 7% !important;
@@ -816,19 +818,17 @@ table {
   .smth .smthImg {
     min-width: 400px;
     height: 400px; }
-  .smth div {
-    margin-left: 15px; }
-    .smth div ul {
-      margin-top: 0px !important; }
-    .smth div p {
-      margin-bottom: 0px;
-      font-weight: 300;
-      padding-left: 30px;
-      padding-right: 40px;
-      font-size: 16px; }
-    .smth div div {
-      display: flex;
-      justify-content: center; }
+  .smth div ul {
+    margin-top: 0px !important; }
+  .smth div p {
+    margin-bottom: 0px;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 16px; }
+  .smth div div {
+    display: flex;
+    justify-content: center; }
 
 .smth .smthImg, #smth .smthImg, .ntSmth .smthImg {
   margin-top: 40px;
@@ -872,6 +872,8 @@ table {
   top: 40%; }
 
 @media (max-width: 1200px) {
+  .scroll-container {
+    padding: 30px 5px; }
   #flex-info {
     flex-flow: column-reverse;
     justify-content: center;
@@ -942,17 +944,12 @@ table {
   .title h1, .title h2, #title h1, #title h2, .flexbuts h1, .flexbuts h2 {
     font-family: Geom !important;
     font-weight: 400; }
-  .title .calc, #title .calc, .flexbuts .calc {
+  .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 15% !important;
-    min-width: 170px;
+    height: 4vw !important;
+    min-width: 165px;
     min-height: 20px;
-    height: 4vw !important;
-    max-width: 210px;
-    max-height: 50px; }
-  .title .buttonImg, #title .buttonImg, .flexbuts .buttonImg {
-    width: 15% !important;
-    height: 4vw !important;
     max-width: 220px;
     max-height: 50px; }
 
@@ -997,7 +994,8 @@ table {
   margin-top: -25px !important; }
 
 #smth .down-layout {
-  width: 90%; }
+  width: 90%;
+  bottom: -105%; }
 
 #smth .mid-layout {
   width: 290px;
@@ -1115,7 +1113,7 @@ table tbody {
     #smth .flexbuts .calc, #smth .flexbuts .buttonImg {
       width: 40% !important; }
   #smth .smthImg {
-    height: 300px !important;
+    height: 325px !important;
     min-width: 250px !important;
     bottom: 87px !important; }
 

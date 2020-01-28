@@ -475,10 +475,10 @@ body {
     #header #second .scul .scli, #header2 #second .scul .scli {
       font-size: 0.8vw !important; } }
 
-.more text {
+.more text, .moreI text {
   padding-right: 10px; }
 
-.more .arrow {
+.more .arrow, .moreI .arrow {
   padding-right: 0;
   display: inline-block;
   /* Safari */
