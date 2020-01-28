@@ -474,10 +474,10 @@ body {
   #dropdown #lastUL {
     margin: 10px 4% 0 0 !important; } }
 
-.more text {
+.more text, .moreI text {
   padding-right: 10px; }
 
-.more .arrow {
+.more .arrow, .moreI .arrow {
   padding-right: 0;
   display: inline-block;
   /* Safari */
@@ -700,6 +700,13 @@ body {
     transform: scale(1.3); }
   #ftr-scnd {
     font-size: 14px !important; } }
+
+.moreI {
+  border: none;
+  background-color: #ffb700;
+  font-family: Geom;
+  height: 50px;
+  margin-top: 10px; }
 
 input[type='number'] {
   -moz-appearance: textfield; }

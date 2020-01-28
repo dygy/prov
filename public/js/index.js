@@ -7,6 +7,17 @@ function hideAll() {
         document.getElementsByClassName('dropdown' + x)[0].style.display = "none"
     }
 }
+function hidePhoto() {
+    if (elem('hidden').style.display !== "block"){
+        elem('hidden').style.display = "block"
+        elem('toHide').style.display = "none"
+    }
+    else{
+        elem('hidden').style.display = "none"
+        elem('toHide').style.display = "flex"
+    }
+}
+
 let triggerPoint= window.innerWidth;
 window.onscroll = function(ev) {
     if (triggerPoint < 1280) {

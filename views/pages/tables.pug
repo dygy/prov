@@ -1,211 +1,177 @@
-link(rel='stylesheet', href='/style/tables.css')
+link(rel='stylesheet', href='/style/light.css')
 include ../slider
 include ../header
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
-block flexbox
+div(class="flex-page")
     div(class="title")
         h1 ТАБЛИЧКИ
     div(id="font-flex")
         div(class="elem")
-            div(style='display:block')
-                strong ПРЯМОУГОЛЬНАЯ
-                br
-                strong МЕТАЛЛИЧЕСКАЯ
-            img(src="../img/tables/tab05.png")
-            div(class="title")
-                strong от 1.000 руб
+            img(src="../img/tables/tab17.png")
+            br
+            strong ТАБЛИЧКИ НА ПЛАСТИКЕ
             div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div(style='display:block')
-                strong КРУГЛАЯ
-                br
-                strong МЕТАЛЛИЧЕСКАЯ
-            img(src="../img/tables/tab06.png")
-            div(class="title")
-                strong от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
+                button(class="more" onclick="displayMessage('Раздел временно отсутствует')")
+                    text подробнее
+                    text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            div(style='display:block')
-                strong КВАДРАТНАЯ
-                br
-                strong МЕТАЛЛИЧЕСКАЯ
-            img(src="../img/tables/tab07.png")
-            div(class="title")
-                strong от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div(style='display:block')
-                strong КВАДРАТНАЯ
-                br
-                strong ОРГ. СТЕКЛО
-            img(src="../img/tables/tab16.png")
-            div(class="title")
-                strong от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div(style='display:block')
-                strong ПРЯМОУГОЛЬНАЯ
-                br
-                strong ОРГ. СТЕКЛО
             img(src="../img/tables/tab14.png")
-            div(class="title")
-                strong от 1.000 руб
+            br
+            strong ТАБЛИЧКИ ИЗ ОРГ.СТЕКЛА
             div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
+                button(class="more" onclick="displayMessage('Раздел временно отсутствует')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            div(style='display:block')
-                strong КРУГЛАЯ
-                br
-                strong ОРГ. СТЕКЛО
-            img(src="../img/tables/tab15.png")
-            div(class="title")
-                strong от 1.000 руб
+            img(src="../img/tables/tab07.png")
+            br
+            strong ТАБЛЧИКИ ИЗ МЕТАЛЛА
             div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
+                button(class="more" onclick="displayMessage('Раздел временно отсутствует')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            div(style='display:block')
-                strong КВАДРАТНАЯ
-                br
-                strong ПВХ, АКРИЛ, ПЭТ
-            img(src="../img/tables/tab17.png")
-            div(class="title")
-                strong от 1.000 руб
+            img(src="../img/tables/tab06.png")
+            br
+            strong ТАБЛИЧКИ С ГРАВИРОВКОЙ
             div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
+                button(class="more" onclick="displayMessage('Раздел временно отсутствует')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            div(style='display:block')
-                strong КРУГЛАЯ
-                br
-                strong ПВХ, АКРИЛ, ПЭТ
-            img(src="../img/tables/tab09.png")
-            div(class="title")
-                strong от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div(style='display:block')
-                strong ПРЯМОУГОЛЬНАЯ
-                br
-                strong ПВХ, АКРИЛ, ПЭТ
             img(src="../img/tables/tab08.png")
-            div(class="title")
-                strong от 1.000 руб
+            br
+            strong ТАБЛИЧКИ УКАЗАТЕЛИ
             div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
+                button(class="more" onclick="displayMessage('Раздел временно отсутствует')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            div
-                strong ТАБЛИЧКА РУЧНАЯ
-            img(src="../img/tables/tab19.png")
-            div(class="title")
-                strong от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ТАБЛИЧКА НАПОЛЬНАЯ
-            img(src="../img/tables/tab18.png")
-            div(class="title")
-                strong от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ТАБЛИЧКА НАСТОЛЬНАЯ
             img(src="../img/tables/tab13.png")
-            div(class="title")
-                strong от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/tables')")
-                button(class="buy"  onclick="displayOrder()") заказать
-block info
-    div(id="smth")
-        img(src="../img/tables/tab04.png" class="smthImg")
-        div
-            div(class="title")
-                h2 ТАБЛИЧКИ
-            p Предлагаем услуги по изготовлению табличек для офиса, дома или любого другого нужного для вас места. Наиболее популярный и самый дешевый вид табличек — пластиковые таблички из ПВХ с нанесением пленки (полноцветная печать или аппликация из пленки Oracal)
             br
-            br
-            p Изображение на табличке должно быть четким и хорошо читаемым. Поэтому для его нанесения используются следующие методы: лазерная гравировка и сублимационная печать. Оба метода просты, недороги и оперативны. Изготовление табличек, даже большой партией, занимает мало времени. Максимум через несколько дней у вас будут красивые и практичные таблички
+            strong СМЕННЫЕ ТАБЛИЧКИ
             div
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+                button(class="more" onclick="displayMessage('Раздел временно отсутствует')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
     div(class="title")
-        h1 ПОПУЛЯРНЫЕ ЗАКАЗЫ
+        h2 ЦЕНЫ НА ТАБЛИЧКИ
+    table
+        tr(class="main blue")
+            td тип
+            td(class="price") цена
+        tr
+            td Пластик
+            td(class="price")
+                text от 450 руб
+        tr(class="blue")
+            td Орг. стекло
+            td(class="price")
+                text от 1600 руб
+        tr
+            td С гравировкой
+            td(class="price")
+                text от 1250 руб
+        tr(class="blue")
+            td Металл
+            td(class="price")
+                text от 1500 руб
+        tr
+            td Указатели
+            td(class="price")
+                text от 600 руб
+        tr(class="blue")
+            td Сменные
+            td(class="price")
+                text от 2000 руб
+
+    div(id="smth")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/content410.jpg" class="smthImg")
+            img(src="../img/4/content410.jpg"  class="smthImg" style="display:none")
+            img(src="../img/4/content410.jpg"  class="smthImg" style="display:none")
+        div
+            p Система навигации обязательна при внутреннем оформлении в торгово-деловых центрах, бизнес-центрах, гостиницах и офисах. Чтобы легко найти посетителю интересующую его товарную группу, попасть в нужный магазин или офис, даже на другой уровень, не обойтись без навигационных и информационных указателей. Это - информационные стенды различных размеров с информацией об этажах и навигацией по офисам, магазинам, торговым точкам, ресторанам и пр. Информационная система должна быть удобной и простой, и не вызывать раздражения, интуитивно понятной.
+            div(class='flexbuts' style="margin-top:90px")
+                img(class="calc" src='/img/calc.png' onclick="moveTo('/calc/tables')")
+                img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
     div(id="flex-box")
         div(class="elem")
-            img(src="../img/tables/tab01.png")
+            img(src="../img/4/content411.png")
             br
             bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/tables/tab02.png")
+            img(src="../img/4/content412.png")
             br
             bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/tables/tab03.png")
+            img(src="../img/4/content413.png")
             br
             bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/tables/tab10.png")
+            img(src="../img/4/content414.png")
             br
             bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/tables/tab11.png")
+            img(src="../img/4/content415.png")
             br
             bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="../img/tables/tab12.png")
-            br
-            bold Обьемные буквы
-            p из орг. стекла
-            p с лицевой подсветкой
-            p высота букв 20см
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
