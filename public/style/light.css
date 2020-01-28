@@ -474,10 +474,10 @@ body {
     #header #second .scul .scli, #header2 #second .scul .scli {
       font-size: 0.8vw !important; } }
 
-.more text {
+.more text, .moreI text {
   padding-right: 10px; }
 
-.more .arrow {
+.more .arrow, .moreI .arrow {
   padding-right: 0;
   display: inline-block;
   /* Safari */
@@ -731,6 +731,13 @@ table {
   table {
     margin-left: 0vw;
     margin-right: 0vw; } }
+
+.moreI {
+  border: none;
+  background-color: #ffb700;
+  font-family: Geom;
+  height: 50px;
+  margin-top: 10px; }
 
 #smth .buttonImg, #smth .calc, .smth .buttonImg, .smth .calc, .ntSmth .buttonImg, .ntSmth .calc {
   min-width: 140px;
@@ -1096,7 +1103,7 @@ table tbody {
       position: relative;
       height: 30px;
       border: none;
-      background-color: #ffb800; }
+      background-color: #ffb700; }
 
 #smth {
   margin-left: 10%;

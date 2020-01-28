@@ -1,5 +1,4 @@
 function calc(type) {
-    console.log(type)
     if (type === "БУКВЫ") {
         if (request.razm) {
             //console.log(request.razm)
