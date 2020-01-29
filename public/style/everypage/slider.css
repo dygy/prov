@@ -208,6 +208,40 @@ body {
         #full-page #smth .imgSwitcher .buttonImg, #full-page #smth .imgSwitcher .calc, #full-page .smth .imgSwitcher .buttonImg, #full-page .smth .imgSwitcher .calc, #full-page .ntSmth .imgSwitcher .buttonImg, #full-page .ntSmth .imgSwitcher .calc {
           min-height: 1vw !important;
           min-width: 2vw !important; } }
+  #full-page .smthImg {
+    display: flex;
+    flex-direction: column;
+    z-index: 2; }
+    #full-page .smthImg .botSl, #full-page .smthImg .midSl {
+      width: 100%;
+      height: 50px;
+      position: relative; }
+    #full-page .smthImg .botSl {
+      bottom: -51%; }
+      #full-page .smthImg .botSl .dot {
+        margin-right: 10px;
+        margin-left: 10px;
+        z-index: 2;
+        height: 10px;
+        width: 10px;
+        background-image: url("/img/inactive.png");
+        background-size: 100% 100%; }
+      #full-page .smthImg .botSl .dot:active {
+        background-image: url("/img/active.png"); }
+    #full-page .smthImg .midSl {
+      width: 112%;
+      margin-left: -20px;
+      align-items: center;
+      justify-content: space-between; }
+      #full-page .smthImg .midSl .leftSl, #full-page .smthImg .midSl .rightSl {
+        background-image: url("/img/next.png");
+        background-size: 100%,100%;
+        z-index: 3;
+        height: 30px;
+        width: 20px;
+        position: relative; }
+      #full-page .smthImg .midSl .leftSl {
+        transform: rotate(180deg); }
   @media (min-width: 1400px) {
     #full-page #smth div .buttonImg, #full-page #smth div .calc, #full-page .smth div .buttonImg, #full-page .smth div .calc {
       max-width: 210px !important;

@@ -954,6 +954,41 @@ table {
         min-height: 1vw !important;
         min-width: 2vw !important; } }
 
+.smthImg {
+  display: flex;
+  flex-direction: column;
+  z-index: 2; }
+  .smthImg .botSl, .smthImg .midSl {
+    width: 100%;
+    height: 50px;
+    position: relative; }
+  .smthImg .botSl {
+    bottom: -51%; }
+    .smthImg .botSl .dot {
+      margin-right: 10px;
+      margin-left: 10px;
+      z-index: 2;
+      height: 10px;
+      width: 10px;
+      background-image: url("/img/inactive.png");
+      background-size: 100% 100%; }
+    .smthImg .botSl .dot:active {
+      background-image: url("/img/active.png"); }
+  .smthImg .midSl {
+    width: 112%;
+    margin-left: -20px;
+    align-items: center;
+    justify-content: space-between; }
+    .smthImg .midSl .leftSl, .smthImg .midSl .rightSl {
+      background-image: url("/img/next.png");
+      background-size: 100%,100%;
+      z-index: 3;
+      height: 30px;
+      width: 20px;
+      position: relative; }
+    .smthImg .midSl .leftSl {
+      transform: rotate(180deg); }
+
 @media (min-width: 1400px) {
   #smth div .buttonImg, #smth div .calc, .smth div .buttonImg, .smth div .calc {
     max-width: 210px !important;
@@ -1118,7 +1153,7 @@ table tbody {
     margin: 5px 2.7%;
     font-size: 13px; }
     #flex-box .elem p {
-      height: 65px; }
+      height: 50px; }
     #flex-box .elem div {
       display: flex;
       justify-content: space-around;
@@ -1136,7 +1171,7 @@ table tbody {
       font-family: GeomB; }
     #flex-box .elem img {
       width: 160px;
-      height: 80px; }
+      height: 100px; }
     #flex-box .elem button {
       position: relative;
       height: 30px;

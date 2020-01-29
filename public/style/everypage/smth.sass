@@ -179,6 +179,43 @@
       .buttonImg,.calc
         min-height: 1vw!important
         min-width: 2vw!important
+.smthImg
+  display: flex
+  flex-direction: column
+  z-index: 2
+  .botSl, .midSl
+    width: 100%
+    height: 50px
+    position: relative
+    //background-color: #fc9b00
+  .botSl
+    bottom: -51%
+    .dot
+      margin-right: 10px
+      margin-left: 10px
+      z-index: 2
+      height: 10px
+      width: 10px
+      background-image: url("/img/inactive.png")
+      background-size: 100% 100%
+    .dot:active
+      background-image: url("/img/active.png")
+  .midSl
+    width: 112%
+    margin-left: -20px
+    align-items: center
+    justify-content: space-between
+    .leftSl, .rightSl
+      background-image: url("/img/next.png")
+      background-size: 100%,100%
+      //background-color: #0b82f7
+      z-index: 3
+      height: 30px
+      width: 20px
+      position: relative
+    .leftSl
+      transform: rotate(180deg)
+
 @media ( min-width : 1400px )
   #smth,.smth,
     div

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #arrow {
   display: block;
   z-index: 2;
@@ -8,6 +9,15 @@
   height: 30px;
   background-image: url("/img/arrow.png");
   background-size: 100% 100%; }
+
+@media (max-width: 1280px) {
+  #arrow {
+    left: 94vw;
+    top: 80vh; } }
+
+@media (max-width: 680px) {
+  #arrow {
+    left: 85vw; } }
 
 #emailA {
   font-weight: 500; }
@@ -226,6 +236,8 @@ body {
     width: 56px !important; } }
 
 @media (max-width: 616px) {
+  #header2 #dropdown1, #header2 #dropdown2, #header2 #dropdown3, #header2 #dropdown4, #header2 #dropdown5, #header #dropdown1, #header #dropdown2, #header #dropdown3, #header #dropdown4, #header #dropdown5 {
+    top: 116px !important; }
   #burger-li img {
     height: 30px !important;
     width: 30px !important;
@@ -474,6 +486,12 @@ body {
   #dropdown #lastUL {
     margin: 10px 4% 0 0 !important; } }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  html body .flex-page {
+    font-weight: 400; }
+  #footer {
+    text-align: left; } }
+
 .more text, .moreI text {
   padding-right: 10px; }
 
@@ -626,9 +644,16 @@ body {
   #ftr-frst .phone {
     margin-right: 0 !important; } }
 
-@media (max-width: 1255px) {
-  #footer #ftr-frst .phone {
-    margin-left: -6% !important; } }
+@media (max-width: 1275px) {
+  #footer #ftr-left {
+    width: 100%; }
+  #footer .ftr-right {
+    display: none; }
+  #footer #ftr-scnd {
+    padding-left: 30px;
+    width: 100%; }
+    #footer #ftr-scnd p {
+      width: 89%; } }
 
 @media (max-width: 1152px) {
   #ftr-frst div {
@@ -664,6 +689,10 @@ body {
     width: 220px !important; }
   #ftr-frst .phone {
     margin: 0 0 0 0; } }
+
+@media (max-width: 894px) {
+  #soc {
+    display: none !important; } }
 
 @media (max-width: 944px) {
   #footer #ftr-frst .phone {
@@ -701,12 +730,14 @@ body {
   #ftr-scnd {
     font-size: 14px !important; } }
 
-.moreI {
+.title .moreI {
+  padding: 10px 15px;
   border: none;
   background-color: #ffb700;
   font-family: Geom;
   height: 50px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 15px !important; }
 
 input[type='number'] {
   -moz-appearance: textfield; }
@@ -927,7 +958,7 @@ input {
   background-image: url("../img/letters/y.jpg"); }
 
 #a10 {
-  background-image: url("../img/viv/viv9.png"); }
+  background-image: url("../img/letters/о.jpg"); }
 
 #a11 {
   background-image: url("../img/viv/viv5.png"); }
