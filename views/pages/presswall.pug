@@ -1,113 +1,418 @@
-link(rel='stylesheet', href='/style/press.css')
+link(rel='stylesheet', href='/style/viv.css')
 include ../slider
 include ../header
+style.
+    @media (min-width: 1200px) {
+        .flex-page .smth .scroll-container {
+            height: 169px !important;
+        }
+    }
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
+script(src='../js/switcher.js')
 div(class="flex-page")
     div(class="title")
-        h1 ПРЕСС-ВОЛЛ/PRESS WALL
-    div(id="font-flex")
-        div(class="elem")
-            div
-                strong №1
-            br
-            img(src="/img/press/press02.png")
-            p двусторонний: от 4.220 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy" onclick="displayOrder()" ) заказать
-        div(class="elem")
-            div
-                strong №2
-            br
-            img(src="/img/press/press01.png")
-            p двусторонний: от 11.260 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy" onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ТЕЛЕСКОПИЧЕСКИЙ
-            br
-            img(src="/img/press/press13.png")
-            p двусторонний: от 13.220 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy" onclick="displayOrder()" ) заказать
-        div(class="elem")
-            div
-                strong №3
-            br
-            img(src="/img/press/press03.png")
-            p двусторонний: от 10.760 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong №4
-            br
-            img(src="/img/press/press04.png")
-            p двусторонний: от 22.460 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong СТРОГАННЫЙ БРУС
-            br
-            img(src="./img/press/press05.png")
-            p двусторонний: от 4.140 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy" onclick="displayOrder()") заказать
-
-
+        h1 PRESS-WALL
     div(id="smth")
-        img(src="/img/press/press06.png" class="smthImg")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/top.jpg" class="smthImg")
+            img(src="../img/4/content2.png"  class="smthImg" style="display:none")
+            img(src="../img/4/content1.jpg"  class="smthImg" style="display:none")
         div
-            p Круглосуточные услуги широкоформатной и интерьерной печати на собственном оборудовании позволяют изготавливать и поставлять клиенту заказ в течение суток. Помимо доставки конструкции press wall, осуществляются монтажные работы и обучение персонала заказчика.
-            p Стенды пресс-волл представлены 4 модификациями:
-            p первый тип устанавливается внутри помещений. Наиболее легкая и компактная модель. Максимальный размер — 3х3 м; вторая модель — brand wall — получила усиленную раму для дополнительной жесткости и устойчивости, позволяя использовать полот
-            div
-                img( class="buttonImg" src="../img/button.png")
+            p Световой короб или лайтбокс — объемная рекламная конструкция с внутренней подсветкой. Форма часто прямоугольная, но может быть и более сложной. Лицевая поверхность может светиться как вся полностью, так и выборочно (например, только буквы).
+            P Лайтбоксами называют и огромные конструкции на весь фасад здания, и ультратонкие панели в окнах витрин с возможность замены изображения. Преимущество - цена ниже, чем у световых букв, и зависит только от квадратуры короба. Недостатки — лайтбоксы на улице все чаще запрещает МосКомАрхитектура.
+    div(class="title")
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
+    div(class="photoflex" id="toHide")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(id="hidden" style='display:none')
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+    div(class="title")
+        button(class="moreI" onclick="hidePhoto()")
+            text показать еще
+            text(class="arrow") «
+    div(class="title")
+        h2 ДЖОКЕР
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Пресс волл - Бренд Волл системы (ДЖОКЕР) JOKER представляет собой сборную конструкцию из одиночных хромированных труб, на которые крепится фотополотно. Отлично подходит для установки в помещениях.
+                ul
+                    li Преимущество: простота сборки; мобильность.
+                    li Размеры: от 1,5х2 до 6х3 м.
+                    li Фотополотно | Печать: баннерное полотно (510 гр/кв.м.) | 720 dpi
+                    li Время сборки: 15-20 мин.
+            table(id="light")
+                tr(class="blue main")
+                    td(class="name") размер
+                    td(class="price") аренда
+                    td(class="price") покупка
+                    td(class="price") печать баннера
+                tr
+                    td(class="name") 1,5x2 м
+                    td(class=" price") от 1500 руб
+                    td(class=" price") от 2 900 руб
+                    td(class=" price") от 120 руб
+                tr(class="blue")
+                    td(class="name") 3x2 м
+                    td(class=" price") от 3500 руб
+                    td(class=" price") от 75 руб
+                    td(class=" price") от 75 руб
+                tr
+                    td(class="name") 3x3 м
+                    td(class="price") от 3000 руб
+                    td(class=" price") от 75 руб
+                    td(class=" price") от 75 руб
+                tr(class="blue")
+                    td(class="name") 4x2 м
+                    td(class="price") от 3600 руб
+                    td(class=" price") от 150 руб
+                    td(class=" price") от 150 руб
+                tr
+                    td(class="name") 6х2 м
+                    td(class="price") от 4700 руб
+                    td(class=" price") от 120 руб
+                    td(class=" price") от 120 руб
+                tr(class="blue")
+                    td(class="name") 6x3 м
+                    td(class=" price") от 5200 руб
+                    td(class=" price") от 120 руб
+                    td(class=" price") от 120 руб
+    div(class="title")
+        h2 ТРИТИКС
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Уникальная технология переноса любого изображения на холст. Фотографии, репродукции картин, постеры и графика приобретут новое интересное исполнение на холсте.
+            table(id="symb")
+                tr(class="blue main")
+                    td(class="name") размер
+                    td(class="price") аренда
+                    td(class="price") покупка
+                    td(class="price") печать баннера
+                tr
+                    td(class="name") 2x2 м
+                    td(class=" price") 10 000 руб
+                    td(class=" price") от 9000 руб
+                    td(class=" price") от 2400 руб
+                tr(class="blue")
+                    td(class="name") 3x2 м
+                    td(class=" price") от 4000 руб
+                    td(class=" price") от 11500 руб
+                    td(class=" price") от 4200 руб
+                tr
+                    td(class="name") 3x3 м
+                    td(class="price") от 5200 руб
+                    td(class=" price") от 14000 руб
+                    td(class=" price") от 5200 руб
+                tr(class="blue")
+                    td(class="name") 4x2 м
+                    td(class=" price") от 5600 руб
+                    td(class=" price") от 16000 руб
+                    td(class=" price") от 5200 руб
+                tr
+                    td(class="name") 6x2 м
+                    td(class=" price") от 6400 руб
+                    td(class=" price") от 20000 руб
+                    td(class=" price") от 7500 руб
+                tr(class="blue")
+                    td(class="name") 8x2 м
+                    td(class=" price") от 9000 руб
+                    td(class=" price") от 24000 руб
+                    td(class=" price") от 10500 руб
+                tr
+                    td(class="name") 10x2 м
+                    td(class=" price") от 12500 руб
+                    td(class=" price") от 29000 руб
+                    td(class=" price") от 13000 руб
+                tr(class="blue")
+                    td(class="name") 12x2 м
+                    td(class=" price") от 14000 руб
+                    td(class=" price") от 31000 руб
+                    td(class=" price") от 15600 руб
+    div(class="title")
+        h2 БРУС
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Данный вид конструкции Пресс Волл | Бренд Волл позволяет добиться максимальной растяжки баннера, и полностью скрыть конструктивные элементы.Стенд имеет четкую геометрию, аккуратные торцевые и заднюю часть. Подходит для улицы и в помещения..
+                ul
+                    li Преимущества: любые размеры и формы; внешний вид; возможность изготовления двустороннего Пресс-Волла.
+                    li Фотополотно | Печать: Баннерное полотно (510 гр/кв.м.) | 720 dpi
+                    li Время сборки — 1-1,5 часа.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") размер
+                    td(class="price") аренда
+                    td(class="price") покупка
+                    td(class="price") печать баннера
+                tr
+                    td(class="name") 2x2 м
+                    td(class=" price") 10 000 руб
+                    td(class=" price") от 9000 руб
+                    td(class=" price") от 2400 руб
+                tr(class="blue")
+                    td(class="name") 3x2 м
+                    td(class=" price") от 4000 руб
+                    td(class=" price") от 11500 руб
+                    td(class=" price") от 4200 руб
+                tr
+                    td(class="name") 3x3 м
+                    td(class="price") от 5200 руб
+                    td(class=" price") от 14000 руб
+                    td(class=" price") от 5200 руб
+                tr(class="blue")
+                    td(class="name") 4x2 м
+                    td(class=" price") от 5600 руб
+                    td(class=" price") от 16000 руб
+                    td(class=" price") от 5200 руб
+                tr
+                    td(class="name") 6x2 м
+                    td(class=" price") от 6400 руб
+                    td(class=" price") от 20000 руб
+                    td(class=" price") от 7500 руб
+                tr(class="blue")
+                    td(class="name") 8x2 м
+                    td(class=" price") от 9000 руб
+                    td(class=" price") от 24000 руб
+                    td(class=" price") от 10500 руб
+                tr
+                    td(class="name") 10x2 м
+                    td(class=" price") от 12500 руб
+                    td(class=" price") от 29000 руб
+                    td(class=" price") от 13000 руб
+                tr(class="blue")
+                    td(class="name") 12x2 м
+                    td(class=" price") от 14000 руб
+                    td(class=" price") от 31000 руб
+                    td(class=" price") от 15600 руб
+    div(class="title")
+        h2 POP-UP СТЕНД
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Поп-ап (Pop-Up) стенд — это изогнутый, объемный стенд на базе решетчатого каркаса. Такие стенды часто используются на выставках, конференциях и других деловых мероприятиях в качестве пресс волла, задника, рекламного стенда
+                ul
+                    li Преимущества: нестандартная (изогнутая) форма; быстрая сборка; возможность изготовления двустороннего стенда
+                    li Фотополотно | Печать — ПЭТ панели | 1440 dpi
+                    li Время сборки — 15 мин.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") размер
+                    td(class="price") аренда
+                    td(class="price") покупка
+                    td(class="price") печать баннера
+                tr
+                    td(class="name") 3x3 м
+                    td(class=" price") 10 000 руб
+                    td(class=" price") от 9000 руб
+                    td(class=" price") от 2400 руб
+                tr(class="blue")
+                    td(class="name") 4х3 м
+                    td(class=" price") от 4000 руб
+                    td(class=" price") от 11500 руб
+                    td(class=" price") от 4200 руб
+                tr
+                    td(class="name") Стойка ресепшн
+                    td(class="price") от 5200 руб
+                    td(class=" price") от 14000 руб
+                    td(class=" price") от 5200 руб
+                tr(class="blue")
+                    td(class="name") Бокс-трибуна
+                    td(class=" price") от 5600 руб
+                    td(class=" price") от 16000 руб
+                    td(class=" price") от 5200 руб
+    div(class="title")
+        h2 НЕСТАНДАРТНЫЕ КОНСРУКЦИИ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Печать на пенокартоне – одна из самых востребованных услуг типографии. Мы оказываем услуги по данному виду печати в Москве на высокопрофессиональном оборудовании. Обратившись к нам, вы сможете рассчитывать на качественную печать фото на пенокартоне с возможностью получения предварительной печати пробного экземпляра.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") П-образный стенд
+                    td(class=" price") от 8500 руб
+
+                tr(class="blue")
+                    td(class="name") Угловой стенд | Bullet-time
+                    td(class=" price") от 9500 руб
+                tr
+                    td(class="name") Полукруглый стенд
+                    td(class=" price") от 6000 руб
+                tr(class="blue")
+                    td(class="name") Круглый стенд
+                    td(class=" price") от 9500 руб
+                tr
+                    td(class="name") Стенд «Куб»
+                    td(class=" price") от 8500 руб
+                tr(class="blue")
+                    td(class="name") 3D-Press wall
+                    td(class=" price") от 12800 руб
+
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
     div(id="flex-box")
         div(class="elem")
-            img(src="../img/press/press07.png")
+            img(src="../img/4/content411.png")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/press/press08.png")
+            img(src="../img/4/content412.png")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/press/press09.png")
+            img(src="../img/4/content413.png")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/press/press10.png")
+            img(src="../img/4/content414.png")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/press/press11.png")
+            img(src="../img/4/content415.png")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="../img/press/press12.png")
-            br
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-
 include ../footer

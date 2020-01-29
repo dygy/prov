@@ -1,21 +1,265 @@
-link(rel='stylesheet', href='/style/placnposts.css')
+link(rel='stylesheet', href='/style/viv.css')
 include ../slider
 include ../header
+style.
+    @media (min-width: 1200px) {
+        .flex-page .smth .scroll-container {
+            height: 359px !important;
+        }
+    }
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
-block info
+script(src='../js/switcher.js')
+div(class="flex-page")
     div(class="title")
         h1 ПЛАКАТЫ И ПОСТЕРЫ
-    div(class="smth")
-        img(src="../img/plac.png" class="smthImg")
+    div(id="smth")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/top.jpg" class="smthImg")
+            img(src="../img/4/content2.png"  class="smthImg" style="display:none")
+            img(src="../img/4/content1.jpg"  class="smthImg" style="display:none")
         div
-            br
-            br
-            br
-            p Изготовление крышных установок сопровождается серьезной проектной подготовкой: проводится изучение кровли здания, рассчитываются нагрузки, разрабатывается проектная документация в соответствии со СНиП. Все проектные работы по изготовлению крышных установок выполняют лицензированные специалисты. При планировании бюджета на изготовление крышной установки необходимо закладывать стоимость конструкторской документации. Устанавливать такую конструкцию без Проектно-конструкторской документации НЕЛЬЗЯ!!
-            div(class='flexbuts')
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo(`./calc/plac\'n\'posts`)" )
+            p Для печати плакатов мы используем самое современное профессиональное оборудование. Высокое разрешение и точная цветопередача позволяют получать отпечатки отличного качества даже при самых сложных цветовых переходах и сочетаниях
+            p Этот вариант идеально подходит для печати фото, художественных работ или рекламных материалов высокого качества. Мы печатаем плакаты на бумаге плотностью 190 г/м² с финишем "сатин" (глянец, но без излишнего блеска).
+            P Этот вариант идеально подходит для печати фото, художественных работ или рекламных материалов высокого качества. Мы печатаем плакаты на бумаге плотностью 190 г/м² с финишем "сатин" (глянец, но без излишнего блеска).
+            P В качестве базового изображения для широкоформатной печати изделия может служить как фотография заказчика, так и имиджи из нашего фотобанка, в котором собрано огромное количество профессиональных фото на разные темы. По существу, постер – это большая фотография, на которую можно добавить дополнительные элементы. Наши верстальщики и цветокорректоры, при необходимости, добавят надписи, уберут дефекты, составят коллаж и сделают оформление вашего индивидуального постера.
+    div(class="title")
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
+    div(class="photoflex" id="toHide")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(id="hidden" style='display:none')
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+    div(class="title")
+        button(class="moreI" onclick="hidePhoto()")
+            text показать еще
+            text(class="arrow") «
+    div(class="title")
+        h2 КЛАССИЧЕСКИЙ БУМАЖНЫЙ ПОСТЕР
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Мы готовы реализовать под ключ любой заказ или выполнить отдельные услуги – к примеру, по распечатке готовых постеров форматов А4-А1 и нестандартных размеров
+                p Печатаем в полный цвет, используя различные материалы. Это может быть как дизайнерская бумага, так и другая основа. Если печатная продукция будет размещена на улице, лучше отдать предпочтение виниловой пленке и другим влагостойким материалам
+                p Идея, вариант оформления, расположения текста/изображений продумываются индивидуально в зависимости от того, что рекламируется, о чем говорится в рекламном материале. Мы разрабатываем креативные идеи и макеты – на выходе получаются яркие, оригинальные, запоминающие плакаты, которые привлекают внимание и в полной мере справляются с рекламными задачами.
+            table(id="light")
+                tr(class="blue main")
+                    td(class="name") формат
+                    td(class="price") цифровая (до 500 шт)
+                    td(class="price") офсетная (от 500 шт)
+                tr
+                    td(class="name") А3 (420 х 297 мм)
+                    td(class=" price") от 1500 руб
+                    td(class=" price") от 8300 руб
 
+                tr(class="blue")
+                    td(class="name") А2 (594 х 420 мм)
+                    td(class=" price") от 3000 руб
+                    td(class=" price") от 12900 руб
+                tr
+                    td(class="name") А1 (841 х 594 мм)
+                    td(class="price") от 6 000 руб
+                    td(class=" price") от 19900 руб
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+                    td(class=" price")
+    div(class="title")
+        h2 ПОСТЕР НА ХОЛСТЕ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Уникальная технология переноса любого изображения на холст. Фотографии, репродукции картин, постеры и графика приобретут новое интересное исполнение на холсте.
+                p Вы можете купить картину по номеру на холсте как в рулоне, так и на подрамнике и в багетной раме.
+                p Крепленеие холста к подрамнику может быть боковым в случае если будет использоваться багетная рама, задним в случае если работа будет без оформления в раму.
+                p При этом Вы можете выбрать каким должны быть боковые поля холста - цветными (продолжение изображения) или выполнены в одном цвете.
+                p Классическое исполнение - постеры на холсте в багетной раме. Защитите холст - покрытие специальным художественным лаком.
+            table(id="symb")
+                tr(class="blue main")
+                    td(class="name") формат
+                    td(class="price") цифровая (до 500 шт)
+                    td(class="price") офсетная (от 500 шт)
+                tr
+                    td(class="name") А3 (420 х 297 мм)
+                    td(class=" price") от 1500 руб
+                    td(class=" price") от 8300 руб
+
+                tr(class="blue")
+                    td(class="name") А2 (594 х 420 мм)
+                    td(class=" price") от 3000 руб
+                    td(class=" price") от 12900 руб
+                tr
+                    td(class="name") А1 (841 х 594 мм)
+                    td(class="price") от 6 000 руб
+                    td(class=" price") от 19900 руб
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+                    td(class=" price")
+    div(class="title")
+        h2 ПОСТЕР НА ЖЕСТКОЙ ОСНОВЕ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/mobstands")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Печать на пенокартоне – одна из самых востребованных услуг типографии. Мы оказываем услуги по данному виду печати в Москве на высокопрофессиональном оборудовании. Обратившись к нам, вы сможете рассчитывать на качественную печать фото на пенокартоне с возможностью получения предварительной печати пробного экземпляра.
+                p У нас на сайте вы можете увидеть тарифы и цены на услуги по печати, которые зависят от количества экземпляров и формата. Мы оперативно выполняем заказы в любом количестве.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") формат
+                    td(class="price") цифровая (до 500 шт)
+                    td(class="price") офсетная (от 500 шт)
+                tr
+                    td(class="name") А3 (420 х 297 мм)
+                    td(class=" price") от 1500 руб
+                    td(class=" price") от 8300 руб
+
+                tr(class="blue")
+                    td(class="name") А2 (594 х 420 мм)
+                    td(class=" price") от 3000 руб
+                    td(class=" price") от 12900 руб
+                tr
+                    td(class="name") А1 (841 х 594 мм)
+                    td(class="price") от 6 000 руб
+                    td(class=" price") от 19900 руб
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+                    td(class=" price")
+
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
+    div(id="flex-box")
+        div(class="elem")
+            img(src="../img/4/content411.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content412.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content413.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content414.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content415.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
 include ../footer

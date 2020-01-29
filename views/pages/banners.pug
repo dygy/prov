@@ -1,85 +1,233 @@
-link(rel='stylesheet', href='/style/banners.css')
+link(rel='stylesheet', href='/style/viv.css')
 include ../slider
 include ../header
+style.
+    @media (min-width: 1200px) {
+        .flex-page .smth .scroll-container {
+            height: 320px !important;
+        }
+    }
+
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
-block flexbox
+script(src='../js/switcher.js')
+div(class="flex-page")
     div(class="title")
         h1 БАННЕРЫ
-    div(id="font-flex")
-        div(class="elem")
-            div
-                strong БАННЕРНАЯ СЕТКА
-            img(src="../img/banner/banner1.png")
-            p цена несветовой: от 15.000 руб
-            p цена световой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/banners')")
-                button(class="buy" onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong БАНННЕРНАЯ ТКАНЬ
-            img(src="../img/banner/banner9.png")
-            p цена несветовой: от 15.000 руб
-            p цена световой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/banners')")
-                button(class="buy" onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ТРАНСЛЮЦЕНТНАЯ ТКАНЬ
-            img(src="../img/banner/banner8.png")
-            p цена несветовой: от 25.000 руб
-            p цена световой: от 30.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/banners')")
-                button(class="buy" onclick="displayOrder()") заказать
-
-block info
     div(id="smth")
-        img(src="../img/banner/banner10.png" class="smthImg")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/top.jpg" class="smthImg")
+            img(src="../img/4/content2.png"  class="smthImg" style="display:none")
+            img(src="../img/4/content1.jpg"  class="smthImg" style="display:none")
         div
-            p Баннерная реклама — один из самых дешёвых способов привлечь внимание к компании и ее товарам либо услугам. Правильно подобранное изображение, четкая и грамотно изложенная информация на баннере вызывают у потенциального потребителя интерес и желание подробнее ознакомиться с предлагаемым
-            p Баннер изготавливают при помощи широкоформатной печати. Основой баннера, как правило, являются армированная ПВХ ткань, сетка, флаговая ткань
-            div
+            p Баннерная реклама — один из самых дешёвых способов привлечь внимание к компании и ее товарам либо услугам. Правильно подобранное изображение, четкая и грамотно изложенная информация на баннере вызывают у потенциального потребителя интерес и желание подробнее ознакомиться с предлагаемым.
+            p Баннер изготавливают при помощи широкоформатной печати. Основой баннера, как правило, являются армированная ПВХ ткань, сетка, флаговая ткань.
+            p Баннер рекламы печатается на износостойкой виниловой материи, монтируется на жилых и коммерческих зданиях, над дорогой и позволяет разместить актуальное предложение там, где:
+            ul
+                li достаточно большая проходимость
+                li всегда оживлённый транспортный поток
+                li собирается солидная клиентура
+                li реклама воспринимается легко и ненавязчиво
+                li обязательно есть представители целевой аудитории.
+    div(class="title")
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
+    div(class="photoflex" id="toHide")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(id="hidden" style='display:none')
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+    div(class="title")
+        button(class="moreI" onclick="hidePhoto()")
+            text показать еще
+            text(class="arrow") «
+    div(class="title")
+        h2 БАННЕРНАЯ СЕТКА
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/banner/banner1.png');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/kron")')
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Баннерная сетка — это белое виниловое полотно с пористой структурой, изготовленное из полиэфирной нити и используемое для защиты элементов печатной машины. Выпускается с подложкой из поливинилхлорида либо без нее. Эта деталь отклеивается после завершения печатания
+                p Возможно использование материала в шелкографии. Сетку можно купить, если необходимо создать концертные или студийные декорации, оформить витрины, воплотить с ее помощью дизайнерские проекты. Продукция часто задействуется в целях размещения рекламы на строительных лесах. Она оптимальна для этих целей, так как структура сетки снижает ветровые нагрузки на поверхность.
+                p Для рекламных и других целей вы можете заказать этот материал в компании «Ремэкс» — здесь вас ждет небольшая цена и настоящее качество.
+            table(id="light")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") Несветовая
+                    td(class=" price") от 150 руб/м
+                tr(class="blue")
+                    td(class="name") Световая
+                    td(class=" price") от 200 руб/м
+    div(class="title")
+        h2 БАНННЕРНАЯ ТКАНЬ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/banner/banner8.png');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/kron")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Баннерная ткань – это специализированный холст крупного формата, применяемый для печати. Его используют для изготовления наружной рекламы.
+                p Материал рассчитан на нанесение сольвентных и экосольвентных чернил. Он имеет глянцевую поверхность, благодаря чему рисунок приобретает высокую четкость. Баннерная ткань состоит из винилового основания, которое с обеих сторон покрывается ПВХ. Наличие армирующей прослойки препятствует повреждению холста при эксплуатации. В состав материала добавляются различные пластификаторы, увеличивающие эластичность для устойчивости к ветровой нагрузке. Холст легко растягивается для нанесения изображения.
+                p При выборе баннерной ткани важным критерием является ее размер. Она поставляется в рулонах различной длины и ширина. Самый востребованный формат рулона – 3,2х50 м.При покупке также нужно обращать внимание на плотность.Более толстое полотно применяется для больших наружных баннеров.
+            table(id="symb")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") Несветовая
+                    td(class=" price") от 150 руб/м
+                tr(class="blue")
+                    td(class="name") Световая
+                    td(class=" price") от 200 руб/м
+    div(class="title")
+        h2 ТРАНСЛЮЦЕНТНАЯ ТКАНЬ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/banner/banner9.png');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/kron")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Светорассеивающая баннерная ткань разработана для широкоформатной цифровой печати сольвентными и экосольвентными чернилами. Баннер "на просвет" применяется для печати плакатов с последующим размещением их на объектах уличной рекламы с внутренней подсветкой - световых коробах или любых других объемных конструкциях.
+                p Транслюцентные баннерные ткани - это светорассеивающая (транслюцентная) ПВХ-ткань с прозрачностью 25% - 37% и плотностью 420 - 680 г/м².
+                p Часто поверхность баннера с обеих сторон бывает обработана матовым акриловым лаком, что позволяет в этом случае использовать технологию двусторонней печати для получения наиболее ярких и насыщенных оттенков (с обратной стороны плаката печатается точно совпадающее зеркальное изображение). Кроме того, матовое покрытие позволяет избежать нежелательных бликов и отсветов на плакате.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") Несветовая
+                    td(class=" price") от 150 руб/м
+                tr(class="blue")
+                    td(class="name") Световая
+                    td(class=" price") от 200 руб/м
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
     div(id="flex-box")
         div(class="elem")
-            img(src="../img/banner/banner5.png")
+            img(src="../img/4/content411.png")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/banner/banner6.png")
+            img(src="../img/4/content412.png")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/banner/banner7.png")
+            img(src="../img/4/content413.png")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/banner/banner3.png")
+            img(src="../img/4/content414.png")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/banner/banner2.png")
+            img(src="../img/4/content415.png")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="../img/banner/banner4.png")
-            br
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-
 include ../footer
