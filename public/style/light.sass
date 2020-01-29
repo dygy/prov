@@ -146,7 +146,12 @@ table
 #smth
   margin-left: 10%
   margin-right: 10%
+  height: 325px
+  .rightflex
+    position: relative
   .flexbuts
+    position: absolute
+    bottom: 0
     margin-left: 0px
     width: 74%!important
     .calc,.buttonImg
@@ -162,7 +167,7 @@ table
 @media ( min-width : 1700px )
     .down-layout
       bottom: -65%!important
-@media ( min-width : 1800px )
+@media ( min-width : 1700px )
   .title
     .calc
       transform: scale(1.2)
@@ -176,7 +181,10 @@ table
       td
         font-size: 25px!important
   #smth
-    margin-bottom: 50px
+    margin-bottom: 100px
+    height: 550px
+    .rightflex
+      position: relative
     .smthImg
       min-width: 350px!important
       height: 550px!important
@@ -185,8 +193,6 @@ table
     .mid-layout
       left: -52%!important
       width: 500px
-    .flexbuts
-      margin-top: 259px!important
   .flex-page
     #flex-box
       margin: 40px 13.5%

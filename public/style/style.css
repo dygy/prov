@@ -1467,17 +1467,12 @@ body {
   .title h1, .title h2, #title h1, #title h2, .flexbuts h1, .flexbuts h2 {
     font-family: Geom !important;
     font-weight: 400; }
-  .title .calc, #title .calc, .flexbuts .calc {
+  .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 15% !important;
-    min-width: 170px;
+    height: 4vw !important;
+    min-width: 165px;
     min-height: 20px;
-    height: 4vw !important;
-    max-width: 210px;
-    max-height: 50px; }
-  .title .buttonImg, #title .buttonImg, .flexbuts .buttonImg {
-    width: 15% !important;
-    height: 4vw !important;
     max-width: 220px;
     max-height: 50px; }
 
