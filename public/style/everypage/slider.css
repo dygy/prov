@@ -11,17 +11,12 @@
   .title h1, .title h2, #title h1, #title h2, .flexbuts h1, .flexbuts h2 {
     font-family: Geom !important;
     font-weight: 400; }
-  .title .calc, #title .calc, .flexbuts .calc {
+  .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 15% !important;
-    min-width: 170px;
+    height: 4vw !important;
+    min-width: 165px;
     min-height: 20px;
-    height: 4vw !important;
-    max-width: 210px;
-    max-height: 50px; }
-  .title .buttonImg, #title .buttonImg, .flexbuts .buttonImg {
-    width: 15% !important;
-    height: 4vw !important;
     max-width: 220px;
     max-height: 50px; }
 
@@ -70,24 +65,26 @@ body {
     #full-page #smth .smthImg, #full-page .smth .smthImg {
       min-width: 400px;
       height: 500px; }
+    #full-page #smth .rightflex .scroll-container, #full-page .smth .rightflex .scroll-container {
+      display: flex;
+      justify-content: end;
+      flex-direction: column; }
     #full-page #smth .rightflex table tbody, #full-page .smth .rightflex table tbody {
       margin-left: 0 !important;
       margin-right: 0 !important; }
-    #full-page #smth div, #full-page .smth div {
-      margin-left: 15px; }
-      #full-page #smth div ul, #full-page .smth div ul {
-        padding-left: 30px;
-        margin-top: 0px !important; }
-      #full-page #smth div p, #full-page .smth div p {
-        text-indent: 20px;
-        margin-bottom: 0px;
-        font-weight: 300;
-        margin-top: 0;
-        padding-left: 30px;
-        font-size: 16px; }
-      #full-page #smth div div, #full-page .smth div div {
-        display: flex;
-        justify-content: center; }
+    #full-page #smth div ul, #full-page .smth div ul {
+      padding-left: 30px;
+      margin-top: 0px !important; }
+    #full-page #smth div p, #full-page .smth div p {
+      text-indent: 20px;
+      margin-bottom: 0px;
+      font-weight: 300;
+      margin-top: 0;
+      padding-left: 30px;
+      font-size: 16px; }
+    #full-page #smth div div, #full-page .smth div div {
+      display: flex;
+      justify-content: center; }
   #full-page .ntSmth .calc {
     margin-top: 7% !important;
     width: 25% !important;
@@ -116,19 +113,17 @@ body {
     #full-page .smth .smthImg {
       min-width: 400px;
       height: 400px; }
-    #full-page .smth div {
-      margin-left: 15px; }
-      #full-page .smth div ul {
-        margin-top: 0px !important; }
-      #full-page .smth div p {
-        margin-bottom: 0px;
-        font-weight: 300;
-        padding-left: 30px;
-        padding-right: 40px;
-        font-size: 16px; }
-      #full-page .smth div div {
-        display: flex;
-        justify-content: center; }
+    #full-page .smth div ul {
+      margin-top: 0px !important; }
+    #full-page .smth div p {
+      margin-bottom: 0px;
+      font-weight: 300;
+      padding-left: 30px;
+      padding-right: 40px;
+      font-size: 16px; }
+    #full-page .smth div div {
+      display: flex;
+      justify-content: center; }
   #full-page .smth .smthImg, #full-page #smth .smthImg, #full-page .ntSmth .smthImg {
     margin-top: 40px;
     position: relative;
@@ -162,6 +157,8 @@ body {
     left: 90%;
     top: 40%; }
   @media (max-width: 1200px) {
+    #full-page .scroll-container {
+      padding: 30px 5px; }
     #full-page #flex-info {
       flex-flow: column-reverse;
       justify-content: center;
