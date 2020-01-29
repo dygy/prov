@@ -17,6 +17,18 @@ function calc(type) {
             else if (request.formI === "открытые светодиоды") {
                 calc2(165)
             }
+            else if (request.formI === "металл + контражур") {
+                calc2(135)
+            }
+            else if (request.formI === "ретро") {
+                calc2(125)
+            }
+            else if (request.formI === "открытый неон") {
+                calc2(125)
+            }
+            else if (request.formI === "ПВХ") {
+                calc2(95)
+            }
         }
     }
 }
