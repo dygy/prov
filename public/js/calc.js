@@ -26,8 +26,11 @@ function calc(type) {
             else if (request.formI === "открытый неон") {
                 calc2(125)
             }
-            else if (request.formI === "ПВХ") {
+            else if (request.formI === "ПВХ + контражур") {
                 calc2(95)
+            }
+            else if (request.formI === "акрил+ контражур") {
+                calc2(155)
             }
         }
     }
