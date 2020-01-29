@@ -142,6 +142,15 @@
   background-image: url("/img/arrow.png");
   background-size: 100% 100%; }
 
+@media (max-width: 1280px) {
+  #arrow {
+    left: 94vw;
+    top: 80vh; } }
+
+@media (max-width: 680px) {
+  #arrow {
+    left: 85vw; } }
+
 #emailA {
   font-weight: 500; }
 
@@ -359,6 +368,8 @@ body {
     width: 56px !important; } }
 
 @media (max-width: 616px) {
+  #header2 #dropdown1, #header2 #dropdown2, #header2 #dropdown3, #header2 #dropdown4, #header2 #dropdown5, #header #dropdown1, #header #dropdown2, #header #dropdown3, #header #dropdown4, #header #dropdown5 {
+    top: 116px !important; }
   #burger-li img {
     height: 30px !important;
     width: 30px !important;
@@ -633,9 +644,16 @@ body {
   #ftr-frst .phone {
     margin-right: 0 !important; } }
 
-@media (max-width: 1255px) {
-  #footer #ftr-frst .phone {
-    margin-left: -6% !important; } }
+@media (max-width: 1275px) {
+  #footer #ftr-left {
+    width: 100%; }
+  #footer .ftr-right {
+    display: none; }
+  #footer #ftr-scnd {
+    padding-left: 30px;
+    width: 100%; }
+    #footer #ftr-scnd p {
+      width: 89%; } }
 
 @media (max-width: 1152px) {
   #ftr-frst div {
@@ -671,6 +689,10 @@ body {
     width: 220px !important; }
   #ftr-frst .phone {
     margin: 0 0 0 0; } }
+
+@media (max-width: 894px) {
+  #soc {
+    display: none !important; } }
 
 @media (max-width: 944px) {
   #footer #ftr-frst .phone {
@@ -979,11 +1001,16 @@ body {
   background-size: 100% 100%;
   color: white;
   text-align: center;
-  justify-content: center; }
+  justify-content: space-evenly; }
   #serve #kach div {
-    margin: 0 8% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 0;
     padding-top: 30px; }
   #serve #kach p {
+    margin-top: 10px;
     width: 100px; }
 
 #serve #usl {
@@ -1176,9 +1203,6 @@ body {
     left: -3% !important; } }
 
 @media (max-width: 1107px) {
-  #serve #kach div {
-    max-width: 10%;
-    margin: 0 5% 0; }
   #circus div div {
     width: 100px !important;
     height: 100px !important; }
@@ -1191,6 +1215,22 @@ body {
       margin: 0 4% !important; } }
 
 @media (max-width: 926px) {
+  .ads div div {
+    height: 115px;
+    width: 120px; }
+  #passport {
+    padding-bottom: 10px !important; }
+    #passport div {
+      margin-left: 0 !important; }
+  #pass-flex {
+    margin-bottom: 0 !important;
+    padding-top: 10px !important;
+    flex-direction: column;
+    align-items: center; }
+    #pass-flex text {
+      margin: 0 !important; }
+    #pass-flex #pass-logo {
+      margin: 10px 0 !important; }
   #usl {
     margin-top: -100px !important;
     left: -10% !important;
@@ -1237,11 +1277,8 @@ body {
 @media (max-width: 619px) {
   #passport #circus {
     display: none; }
-  #kach {
-    justify-content: left !important; }
-    #kach div {
-      margin-left: 6% !important;
-      font-size: 11px; }
+  #passport div {
+    font-size: 11px; }
   .ads div, .room div {
     margin: 10px 3px 0 !important; }
   .ads img, .room img {

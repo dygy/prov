@@ -26,20 +26,26 @@
   #smth .smthImg, .smth .smthImg {
     min-width: 400px;
     height: 500px; }
-  #smth div, .smth div {
-    margin-left: 15px; }
-    #smth div ul, .smth div ul {
-      padding-left: 30px;
-      margin-top: 0px !important; }
-    #smth div p, .smth div p {
-      margin-bottom: 0px;
-      font-weight: 300;
-      margin-top: 0;
-      padding-left: 30px;
-      font-size: 16px; }
-    #smth div div, .smth div div {
-      display: flex;
-      justify-content: center; }
+  #smth .rightflex .scroll-container, .smth .rightflex .scroll-container {
+    display: flex;
+    justify-content: end;
+    flex-direction: column; }
+  #smth .rightflex table tbody, .smth .rightflex table tbody {
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
+  #smth div ul, .smth div ul {
+    padding-left: 30px;
+    margin-top: 0px !important; }
+  #smth div p, .smth div p {
+    text-indent: 20px;
+    margin-bottom: 0px;
+    font-weight: 300;
+    margin-top: 0;
+    padding-left: 30px;
+    font-size: 16px; }
+  #smth div div, .smth div div {
+    display: flex;
+    justify-content: center; }
 
 .ntSmth .calc {
   margin-top: 7% !important;
@@ -72,19 +78,17 @@
   .smth .smthImg {
     min-width: 400px;
     height: 400px; }
-  .smth div {
-    margin-left: 15px; }
-    .smth div ul {
-      margin-top: 0px !important; }
-    .smth div p {
-      margin-bottom: 0px;
-      font-weight: 300;
-      padding-left: 30px;
-      padding-right: 40px;
-      font-size: 16px; }
-    .smth div div {
-      display: flex;
-      justify-content: center; }
+  .smth div ul {
+    margin-top: 0px !important; }
+  .smth div p {
+    margin-bottom: 0px;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 16px; }
+  .smth div div {
+    display: flex;
+    justify-content: center; }
 
 .smth .smthImg, #smth .smthImg, .ntSmth .smthImg {
   margin-top: 40px;
@@ -128,6 +132,8 @@
   top: 40%; }
 
 @media (max-width: 1200px) {
+  .scroll-container {
+    padding: 30px 5px; }
   #flex-info {
     flex-flow: column-reverse;
     justify-content: center;
@@ -185,28 +191,25 @@
     justify-content: center;
     bottom: -93%; } }
 
-.title, #title {
+.title .buttonImg, #title .buttonImg {
+  box-shadow: 2px 1px 8px black; }
+
+.title, #title, .flexbuts {
   margin-top: 10px;
   display: flex;
   text-align: center;
   justify-content: space-around;
   align-items: center;
   align-content: center; }
-  .title h1, .title h2, #title h1, #title h2 {
+  .title h1, .title h2, #title h1, #title h2, .flexbuts h1, .flexbuts h2 {
     font-family: Geom !important;
     font-weight: 400; }
-  .title .calc, #title .calc {
+  .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 15% !important;
-    min-width: 170px;
+    height: 4vw !important;
+    min-width: 165px;
     min-height: 20px;
-    height: 4vw !important;
-    max-width: 210px;
-    max-height: 50px; }
-  .title .buttonImg, #title .buttonImg {
-    width: 15% !important;
-    height: 4vw !important;
-    box-shadow: 2px 1px 8px black;
     max-width: 220px;
     max-height: 50px; }
 

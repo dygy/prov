@@ -13,8 +13,8 @@
     font-weight: 400; }
   .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
-    width: 15% !important;
-    height: 4vw !important;
+    width: 170px !important;
+    height: 50px !important;
     min-width: 165px;
     min-height: 20px;
     max-width: 220px;
@@ -180,11 +180,20 @@ body {
         min-width: 14vw !important;
         font-size: 16px !important; }
     #full-page #smth, #full-page .smth, #full-page .ntSmth {
+      height: auto !important;
       flex-flow: column;
       justify-content: center;
       align-content: center;
       align-items: center; }
+      #full-page #smth .rightflex .scroll-container, #full-page .smth .rightflex .scroll-container, #full-page .ntSmth .rightflex .scroll-container {
+        padding-bottom: 5px; }
+      #full-page #smth .rightflex .flexbuts, #full-page .smth .rightflex .flexbuts, #full-page .ntSmth .rightflex .flexbuts {
+        margin-top: 0;
+        padding-left: 20px;
+        width: 100% !important;
+        position: initial !important; }
       #full-page #smth .imgSwitcher, #full-page .smth .imgSwitcher, #full-page .ntSmth .imgSwitcher {
+        margin-left: 15vw !important;
         margin-top: 60px !important;
         height: auto;
         width: auto;

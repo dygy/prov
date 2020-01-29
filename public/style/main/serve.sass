@@ -191,12 +191,16 @@
     background-size: 100% 100%
     color: white
     text-align: center
-    justify-content: center
+    justify-content: space-evenly
     div
-      margin: 0 8% 0
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      margin: 0 10px 0
       padding-top: 30px
-
     p
+      margin-top: 10px
       width: 100px
 
   #usl
@@ -390,8 +394,8 @@
   #serve
     #kach
       div
-        max-width: 10%
-        margin: 0 5% 0
+        //max-width: 10%
+        //margin: 0 5% 0
   #circus
     div
       div
@@ -406,6 +410,24 @@
     div
       margin: 0 4% !important
 @media ( max-width : 926px )
+  .ads
+    div
+      div
+        height: 115px
+        width: 120px
+  #passport
+    padding-bottom: 10px!important
+    div
+      margin-left: 0!important
+  #pass-flex
+    margin-bottom: 0!important
+    padding-top: 10px!important
+    flex-direction: column
+    align-items: center
+    text
+      margin: 0!important
+    #pass-logo
+      margin: 10px 0!important
   #usl
     margin-top: -100px!important
     left: -10%!important
@@ -456,11 +478,7 @@
   #passport
     #circus
       display: none
-
-  #kach
-    justify-content: left!important
     div
-      margin-left: 6%!important
       font-size: 11px
   .ads, .room
     div
