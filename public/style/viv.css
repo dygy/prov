@@ -122,6 +122,8 @@
     width: 80px !important; } }
 
 @media (min-width: 1700px) {
+  .smth table {
+    padding-left: calc(1vw + 20px); }
   #spaceLight {
     height: 47px !important; }
   #spaceSymb {

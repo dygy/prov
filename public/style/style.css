@@ -475,6 +475,12 @@ body {
     #header #second .scul .scli, #header2 #second .scul .scli {
       font-size: 0.8vw !important; } }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  html body .flex-page {
+    font-weight: 400; }
+  #footer {
+    text-align: left; } }
+
 .more text, .moreI text {
   padding-right: 10px; }
 
