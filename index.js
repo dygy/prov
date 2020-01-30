@@ -12,7 +12,7 @@ const indexRouter = require('./routes/index');
 const fontRouter = require('./routes/font');
 const calcRouter = require('./routes/calc');
 const lightRouter = require('./routes/light');
-
+const tableRouter = require('./routes/table');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.use(logger('dev'));
@@ -30,6 +30,7 @@ app.use('/', indexRouter);
 app.use('/font', fontRouter);
 app.use('/calc', calcRouter);
 app.use('/lights', lightRouter);
+app.use('/tables', tableRouter);
 
 app.post('/feedback', function(req, res, next) {
     sendEmail(req.body);

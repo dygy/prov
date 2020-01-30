@@ -9,8 +9,8 @@ div(class="flex-page")
         h1 ОБЪЕМНЫЕ СВЕТЯЩИЕСЯ БУКВЫ
     div(id="font-flex")
         div(class="elem")
-            img(src="/img/letters/B.jpg" onclick="displayImg('../img/letters/B.jpg')")
-            div(class="lupa" onclick="displayImg('../img/letters/B.jpg')")
+            img(src="/img/letters/B.jpg" onclick="moveTo('./font/akmet')")
+            //div(class="lupa" onclick="displayImg('../img/letters/B.jpg')")
             br
             strong АКРИЛ + МЕТАЛЛ
             div
@@ -19,8 +19,8 @@ div(class="flex-page")
                     text(class="arrow") «
                 button(class="buy" onclick="displayOrder()" ) заказать
         div(class="elem")
-            img(src="/img/letters/S.jpg" onclick="displayImg('../img/letters/S.jpg')")
-            div(class="lupa" onclick="displayImg('../img/letters/S.jpg')")
+            img(src="/img/letters/S.jpg" onclick="moveTo('./font/ak')")
+            //div(class="lupa" onclick="displayImg('../img/letters/S.jpg')")
             br
             strong АКРИЛ
             div
@@ -39,8 +39,8 @@ div(class="flex-page")
                     text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="/img/letters/w.jpg" onclick="displayImg('../img/letters/w.jpg')")
-            div(class="lupa" onclick="displayImg('../img/letters/w.jpg')")
+            img(src="/img/letters/w.jpg" onclick="moveTo('./font/metk')")
+            //div(class="lupa" onclick="displayImg('../img/letters/w.jpg')")
             br
             strong МЕТАЛЛ + КОНТРАЖУР
             div
@@ -49,8 +49,8 @@ div(class="flex-page")
                     text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="/img/letters/A.jpg" onclick="displayImg('../img/letters/A.jpg')")
-            div(class="lupa" onclick="displayImg('../img/letters/A.jpg')")
+            img(src="/img/letters/A.jpg" onclick="moveTo('./font/akpv')")
+            //div(class="lupa" onclick="displayImg('../img/letters/A.jpg')")
             br
             strong АКРИЛ + ПВХ
             div
@@ -59,8 +59,8 @@ div(class="flex-page")
                     text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="/img/letters/X.jpg" onclick="displayImg('../img/letters/X.jpg')")
-            div(class="lupa" onclick="displayImg('../img/letters/X.jpg')")
+            img(src="/img/letters/X.jpg" onclick="moveTo('./font/pvk')")
+            //div(class="lupa" onclick="displayImg('../img/letters/X.jpg')")
             br
             strong ПВХ - КОНТРАЖУР
             div
@@ -69,8 +69,8 @@ div(class="flex-page")
                     text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="/img/letters/U.jpg" onclick="displayImg('../img/letters/U.jpg')")
-            div(class="lupa" onclick="displayImg('../img/letters/U.jpg')")
+            img(src="/img/letters/U.jpg" onclick="moveTo('./font/neon')")
+            //div(class="lupa" onclick="displayImg('../img/letters/U.jpg')")
             br
             strong ОТКРЫТЫЙ НЕОН
             div
@@ -79,8 +79,8 @@ div(class="flex-page")
                     text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="/img/letters/y.jpg"  onclick="displayImg('../img/letters/y.jpg')")
-            div(class="lupa" onclick="displayImg('../img/letters/y.jpg')")
+            img(src="/img/letters/y.jpg"  onclick="moveTo('./font/svetod')")
+            //div(class="lupa" onclick="displayImg('../img/letters/y.jpg')")
             br
             strong ОТКРЫТЫЕ СВЕТОДИОДЫ
             div
@@ -89,8 +89,8 @@ div(class="flex-page")
                     text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="/img/viv/viv9.png"  onclick="displayImg('../img/letters/o.jpg')")
-            div(class="lupa" onclick="displayImg('../img/viv/viv9.png')")
+            img(src="/img/viv/viv9.png"  onclick="moveTo('./font/retro')")
+            //div(class="lupa" onclick="displayImg('../img/viv/viv9.png')")
             br
             strong РЕТРО
             div
@@ -147,7 +147,7 @@ div(class="flex-page")
                 br
                 p В подавляющем большинстве на фасады зданий устанавливаются объемные символы и важно сделать так, чтобы именно ваша вывеска была самой запоминающейся и выделялась на фоне других конструкций.
             div(class='flexbuts' style="margin-top:90px")
-                img(class="calc" src='/img/calc.png' onclick="displayMessage('Калькулятор временно отсутствует')")
+                img(class="calc" src='/img/calc.png' onclick="moveTo('/calc/symbs')")
                 img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
 
     div(class="title")

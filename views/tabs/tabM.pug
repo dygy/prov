@@ -1,0 +1,265 @@
+link(rel='stylesheet', href='/style/viv.css')
+include ../slider
+include ../header
+style.
+    @media (min-width: 1200px) {
+        .flex-page .smth .scroll-container {
+            height: 320px !important;
+        }
+        .smth table tbody tr .price {
+            width: 9%
+        }
+    }
+
+script(src='../js/index.js')
+script(src='../js/Global.js')
+script(src='../js/switcher.js')
+div(class="flex-page")
+    div(class="title")
+        h1 МЕТАЛЛИЧЕСКИЕ ТАБЛИЧКИ
+    div(id="smth")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/top.jpg" class="smthImg")
+            img(src="../img/4/content2.png"  class="smthImg" style="display:none")
+            img(src="../img/4/content1.jpg"  class="smthImg" style="display:none")
+        div
+            p Металлические таблички используются как внутри помещений, так и на фасадах зданий. В отличие от бюджетного пластика, таблички из нержавеющей стали более надежны, не боятся солнечных лучей и воздействия влаги. Кроме того, металлическая табличка выглядит дорого и очень красиво. Все металлические таблички можно разделить на две группы по технологии нанесения изображения и по материалу основы..
+            p Технология изготовления – термопечать на металлической основе. На металл можно нанести изображение любой сложности, а фон залить в любой желаемый цвет, включая «золото» и «серебро». Таблички получаются очень легкими, крепятся на любую основу на двусторонний скотч (входит в комплект). Алюминий подходит только для внутриофисного размещения, т.к. используемые краски выгорают на солнце. Оптимальные размеры 20х30 см (А4) и 30х40 см (А3).
+            p Стальные и латунные таблички монтируются с помощью шурупов. Готовые изделия нашего производства комплектуются декоративными крепежными элементами под цвет фона. Оптимальный размер для фасада – 30х40 см и 20х30 см.
+    div(class="title")
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
+    div(class="photoflex" id="toHide")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(id="hidden" style='display:none')
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+    div(class="title")
+        button(class="moreI" onclick="hidePhoto()")
+            text показать еще
+            text(class="arrow") «
+    div(class="title")
+        h2 ТАБЛИЧКИ ИЗ АЛЮМИНИЯ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content2.png');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("/calc/symbs")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Алюминиевые таблички, в силу низкой устойчивости сублимационных чернил к воздействию УФ лучей, используются преимущественно внутри помещений. Уличное размещение табличек возможно при использовании алюминиевой основы со специальным покрытием. Фон может быть глянцевым и матовым, под золото или серебро. Максимальный размер готового изделия – 300х600 мм. Срок службы табличек в помещении не ограничен, на улице – 1-2 года. Легкие таблички из алюминия крепятся на двусторонний скотч (не нужно сверлить стену или дверь), не требуют какого-либо ухода, служат годами. По желанию заказчика офисные таблички из алюминия оформляются в металлический багет.
+            table(id="symb")
+                tr(class="blue main")
+                    td(class="price") размер
+                    td(class="price") 1-2шт
+                    td(class="price") 3-5шт
+                    td(class="price") 6-10шт
+                    td(class="price") 11-20шт
+                    td(class="price") 21-50шт
+                    td(class="price") 50-100шт
+                tr
+                    td(class="price") 100х300мм
+                    td(class="price") 1500 руб
+                    td(class="price") 1200 руб
+                    td(class="price") 1100 руб
+                    td(class="price") 950 руб
+                    td(class="price") 900 руб
+                    td(class="price") 800 руб
+                tr(class="blue")
+                    td(class="price") 200х300мм
+                    td(class="price") 2500 руб
+                    td(class="price") 2200 руб
+                    td(class="price") 2000 руб
+                    td(class="price") 1800 руб
+                    td(class="price") 1700 руб
+                    td(class="price") 1400 руб
+                tr
+                    td(class="price") 400х300мм
+                    td(class="price") 4300 руб
+                    td(class="price") 4300 руб
+                    td(class="price") 3800 руб
+                    td(class="price") 3600 руб
+                    td(class="price") 3100 руб
+                    td(class="price") 2900 руб
+                tr(class="blue")
+                    td(class="price")
+                    td(class="price")
+                    td(class="price")
+                    td(class="price")
+                    td(class="price")
+                    td(class="price")
+                    td(class="price")
+    div(class="title")
+        h2 ЛАТУННЫЕ ТАБЛИЧКИ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content3.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/kron")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Латунные таблички отличаются идеально ровной поверхностью (зеркально-глянцевой или матовой), на которую наносится текстовое содержание и элементы фирменного стиля компании. Технология химической гравировки позволяет получить фотографически точное монохромное или цветное изображение (выгравированные элементы заливаются автоэмалью). Дополнительный объем табличке придает декоративная фаска (срез под углом 45°).
+                p Заказать латунные таблички Вы можете в компании «S-Тab». В производстве используется листовая латунь толщиной 3-10 мм, размеры – любые, указанные заказчиком. Мы бесплатно разработаем дизайн макет, предоставим образцы (выезжает наш курьер), при заказе нескольких табличек сделаем хорошую скидку. К новым табличкам прилагаются крепежные элементы - декоративные шурупы. Принимаем заказы на срочное изготовление латунных табличек. За доставку платить не нужно.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") 3 мм
+                    td(class="price") 5 мм
+                tr
+                    td(class="name") 20х30 см (А4)
+                    td(class=" price") 6500 руб
+                    td(class=" price") 8000 руб
+                tr(class="blue")
+                    td(class="name") 30х40 см (А3)
+                    td(class=" price") 12000 руб
+                    td(class=" price") 16000 руб
+    div(class="title")
+        h2 ТАБЛИЧКИ ИЗ СТАЛИ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content4.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Таблички из нержавеющей стали прекрасно подходят как для использования внутри помещения, так и на улице. Фасадные таблички, выполненные из этого долговечного и легкого материала, не подвержены коррозии, не боятся солнца и мороза, и замечательно выглядят, могут иметь золотистый либо посеребренный фон.
+                p Таблички из стали в ряде случаев имеют преимущество перед латунными – на открытом воздухе латунные таблички со временем темнеют, а стальные с покрытием «под золото» - нет. Мы гарантируем изготовление металлических табличек отличного качества, которые будут украшать ваш офис долгие годы.
+            table(id="nolight")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") 2 мм
+                    td(class="price") 10 мм
+                tr
+                    td(class="name") 20х30 см (А4)
+                    td(class=" price") 6500 руб
+                    td(class=" price") 9500 руб.
+                tr(class="blue")
+                    td(class="name") 30х40 см (А3)
+                    td(class=" price") 12000 руб
+                    td(class=" price") 18500 руб.
+
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
+    div(id="flex-box")
+        div(class="elem")
+            img(src="../img/4/content411.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content412.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content413.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content414.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content415.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+
+include ../footer

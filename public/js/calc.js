@@ -32,6 +32,12 @@ function calc(type) {
             else if (request.formI === "акрил+ контражур") {
                 calc2(155)
             }
+            else if (request.formI === "ПВХ") {
+                calc2(55)
+            }
+            else if (request.formI === "дерево") {
+                calc2(35)
+            }
         }
     }
 }

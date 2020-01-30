@@ -6,6 +6,8 @@ const router = express.Router();
 router.get('/akmet', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА С МЕТАЛЛОМ' ,
+        path: " ОБЪЕМНЫЕ БУКВЫ ",
+        href: '/font',
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/akmet1.png','../img/fonttitle/akmet2.png','../img/fonttitle/akmet3.png' ],
         ul:["Срок службы — до 10 лет",
@@ -28,6 +30,8 @@ router.get('/akmet', function(req, res, next) {
 router.get('/ak', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА' ,
+        path: " ОБЪЕМНЫЕ БУКВЫ ",
+        href: '/font',
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/ak1.png','../img/fonttitle/ak2.png','../img/fonttitle/ak3.png' ],
         ul:["Срок службы — до 10 лет",
@@ -48,6 +52,8 @@ router.get('/ak', function(req, res, next) {
 router.get('/akpvk', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА И ПВХ С КОНТРАЖУРОМ' ,
+        path: " ОБЪЕМНЫЕ БУКВЫ ",
+        href: '/font',
         imgURL:['../img/fonttitle/akpvk1.png','../img/fonttitle/akpvk2.png','../img/fonttitle/akpvk3.png' ],
         calcURL:"../calc/symbs",
         ul:["Срок службы — до 5 лет",
@@ -67,6 +73,8 @@ router.get('/akpvk', function(req, res, next) {
 router.get('/metk', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ МЕТАЛЛА С КОНТРАЖУРОМ' ,
+        path: " ОБЪЕМНЫЕ БУКВЫ ",
+        href: '/font',
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/metk1.png','../img/fonttitle/metk2.png','../img/fonttitle/metk3.png' ],
         ul:["Срок службы — до 10 лет",
@@ -89,6 +97,8 @@ router.get('/metk', function(req, res, next) {
 router.get('/akpv', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА И ПВХ' ,
+        path: " ОБЪЕМНЫЕ БУКВЫ ",
+        href: '/font',
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/akpv1.png','../img/fonttitle/akpv2.png','../img/fonttitle/akpv3.png' ],
         ul:["Срок службы — до 5 лет",
@@ -110,6 +120,8 @@ router.get('/akpv', function(req, res, next) {
 router.get('/pvk', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ ПВХ С КОНТРАЖУРОМ' ,
+        path: " ОБЪЕМНЫЕ БУКВЫ ",
+        href: '/font',
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/pvk1.png','../img/fonttitle/pvk2.png','../img/fonttitle/pvk3.png' ],
         ul:["Срок службы — до 10 лет",
@@ -130,6 +142,8 @@ router.get('/pvk', function(req, res, next) {
 router.get('/neon', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ С ОТКРЫТЫМ НЕОНОМ' ,
+        path: " ОБЪЕМНЫЕ БУКВЫ ",
+        href: '/font',
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/neon1.png','../img/fonttitle/neon2.png','../img/fonttitle/neon3.png' ],
         ul:["Срок службы — до 10 лет",
@@ -151,6 +165,8 @@ router.get('/neon', function(req, res, next) {
 router.get('/svetod', function(req, res, next) {
     res.render('./pages/fontinfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' ,
+        path: " ОБЪЕМНЫЕ БУКВЫ ",
+        href: '/font',
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/svet1.png','../img/fonttitle/svet2.png','../img/fonttitle/svet3.png' ],
         ul:["Срок службы — до 10 лет",

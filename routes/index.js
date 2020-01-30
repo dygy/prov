@@ -39,7 +39,7 @@ router.get('/stands', function(req, res, next) {
 });
 
 router.get('/pilon', function(req, res, next) {
-    res.render('./pages/pilon', { title: ' Инфо-Пилоны' });
+    res.render('./pages/pilon', { title: ' РЕКЛАМНЫЕ ПИЛОНЫ' });
 });
 router.get('/viv', function(req, res, next) {
     res.render('./pages/viv', { title: ' Вывески' });
@@ -48,7 +48,7 @@ router.get('/test', function(req, res, next) {
     res.render('./index', { title: ' Тестовая страница' });
 });
 router.get('/inputgroup', function(req, res, next) {
-    res.render('./pages/inputgroup', { title: ' Входные группы' });
+    res.render('./pages/sellInfo', { title: ' Входные группы' });
 });
 
 router.get('/stickers', function(req, res, next) {

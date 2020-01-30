@@ -4,9 +4,23 @@ include ../header
 script(src='../js/index.js')
 script(src='../js/Global.js')
 script(src='../js/switcher.js')
+style.
+    .smth .leftflex{
+        width: 25%!important;
+    }
+    .smth .rightflex{
+        width: 78% !important;
+    }
+    .smth .rightflex .scroll-container{
+        height: 170px!important;
+    }
+    table tbody tr td{
+        text-align: center;
+        width: 11%!important;
+    }
 div(class="flex-page")
     div(class="title")
-        h1 ВЫВЕСКИ
+        h1=title
     div(id="smth")
         div(class="imgSwitcher")
             div(class="mid-layout")
@@ -64,11 +78,11 @@ div(class="flex-page")
             text показать еще
             text(class="arrow") «
     div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
+        h2 ROLL-UP LIGHT
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+            div(style="background-image:url('/img/mobs/mobs (1).png');background-size:100%,100%" class="smthImg" )
                 div(class="midSl")
                     div(class="leftSl")
                     div(class="rightSl")
@@ -81,7 +95,12 @@ div(class="flex-page")
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+                ul
+                    li Вес - 2,3 кг
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
+                    li Боковые декоративные крышки выполнены из Пластика АБС
             table(id="light")
                 tr(class="")
                     td(class="blue normal" colspan="1") тип
@@ -96,8 +115,8 @@ div(class="flex-page")
                     td(class="white")  10-29шт.
                     td(class="white")  1-9шт.
                     td(class="white")  10-29шт.
-                tr(class="")
-                    td(class="blue")
+                tr(class="blue")
+                    td(class="blue") 60х180
                     td(class="blue")  2.490р
                     td(class="blue")  2.220р
                     td(class="blue")  3.130р
@@ -105,15 +124,15 @@ div(class="flex-page")
                     td(class="blue")  3.440р
                     td(class="blue")  3.060р
                 tr
-                    td(class="white")
+                    td(class="white") 85х200
                     td(class="white") 2.790р
                     td(class="white") 2.490р
                     td(class="white") 3.870р
                     td(class="white") 3.450р
                     td(class="white") 4.390р
                     td(class="white") 3.910р
-                tr
-                    td(class="blue")
+                tr(class="blue")
+                    td(class="blue") 100х200
                     td(class="blue") 2.990р
                     td(class="blue") 2.670р
                     td(class="blue") 4.070р
@@ -121,11 +140,11 @@ div(class="flex-page")
                     td(class="blue") 4.590р
                     td(class="blue") 4.080р
     div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
+        h2 ROLL-UP SMART
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+            div(style="background-image:url('/img/mobs/mobs (4).png');background-size:100%,100%" class="smthImg" )
                 div(class="midSl")
                     div(class="leftSl")
                     div(class="rightSl")
@@ -138,7 +157,12 @@ div(class="flex-page")
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
             table(id="light")
                 tr()
                     td(class="blue normal" colspan="1") тип
@@ -185,12 +209,20 @@ div(class="flex-page")
                     td 3.450р
                     td 4.390р
                     td 3.910р
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
     div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
+        h2 ROLL-UP PREMIUM
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+            div(style="background-image:url('/img/mobs/mobs (4).png');background-size:100%,100%" class="smthImg" )
                 div(class="midSl")
                     div(class="leftSl")
                     div(class="rightSl")
@@ -203,7 +235,12 @@ div(class="flex-page")
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
             table(id="light")
                 tr(class="blue")
                     td(class="blue normal" colspan="1") тип
@@ -234,7 +271,7 @@ div(class="flex-page")
                     td 3.450р
                     td 4.390р
                     td 3.910р
-                tr
+                tr(class="blue")
                     td 100x200
                     td 2.990р
                     td 2.670р
@@ -250,13 +287,22 @@ div(class="flex-page")
                     td 3.450р
                     td 4.390р
                     td 3.910р
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+
 
     div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
+        h2 ROLL-UP LUXURY LIGHT
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+            div(style="background-image:url('/img/mobs/mobs (17).png');background-size:100%,100%" class="smthImg" )
                 div(class="midSl")
                     div(class="leftSl")
                     div(class="rightSl")
@@ -269,7 +315,12 @@ div(class="flex-page")
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
             table(id="light")
                 tr(class="blue")
                     td(class="blue normal" colspan="1") тип
@@ -316,12 +367,20 @@ div(class="flex-page")
                     td 3.450р
                     td 4.390р
                     td 3.910р
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
     div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
+        h2 ROLL-UP LUXURY
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+            div(style="background-image:url('/img/mobs/mobs (17).png');background-size:100%,100%" class="smthImg" )
                 div(class="midSl")
                     div(class="leftSl")
                     div(class="rightSl")
@@ -334,7 +393,12 @@ div(class="flex-page")
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
             table(id="light")
                 tr(class="blue")
                     td(class="blue normal" colspan="1") тип
@@ -343,12 +407,12 @@ div(class="flex-page")
                     td(class="blue normal" colspan="2") полипропилен
                 tr(class="white")
                     td количество
-                        td 1-9шт.
-                        td 10-29шт.
-                        td 1-9шт.
-                        td 10-29шт.
-                        td 1-9шт.
-                        td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
                 tr(class="blue")
                     td 60х180
                     td 2.490р
@@ -381,12 +445,20 @@ div(class="flex-page")
                     td 3.450р
                     td 4.390р
                     td 3.910р
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
     div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
+        h2 ROLL-UP PROFI
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+            div(style="background-image:url('/img/mobs/mobs (17).png');background-size:100%,100%" class="smthImg" )
                 div(class="midSl")
                     div(class="leftSl")
                     div(class="rightSl")
@@ -399,7 +471,12 @@ div(class="flex-page")
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
             table(id="light")
                 tr(class="blue")
                     td(class="blue normal" colspan="1") тип
@@ -455,11 +532,11 @@ div(class="flex-page")
                     td 12.650р
                     td 11.260р
     div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
+        h2 ROLL-UP DUBLE LUXURY
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+            div(style="background-image:url('/img/mobs/mobs (17).png');background-size:100%,100%" class="smthImg" )
                 div(class="midSl")
                     div(class="leftSl")
                     div(class="rightSl")
@@ -472,7 +549,12 @@ div(class="flex-page")
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
             table(id="light")
                 tr(class="blue")
                     td(class="blue normal" colspan="1") тип
@@ -496,6 +578,310 @@ div(class="flex-page")
                     td 3.440р
                     td 3.060р
                 tr(class="white")
+                    td 85х200
+                    td 2.790р
+                    td 2.490р
+                    td 3.870р
+                    td 3.450р
+                    td 4.390р
+                    td 3.910р
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+    div(class="title")
+        h2 ROLL-UP DUBLE STANDART
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/mobs/mobs (17).png');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
+            table(id="light")
+                tr(class="blue")
+                    td(class="blue normal" colspan="1") тип
+                    td(class="blue normal" colspan="2") без печати
+                    td(class="blue normal" colspan="2") банерная ткань
+                    td(class="blue normal" colspan="2") полипропилен
+                tr(class="white")
+                    td количество
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td 2.490р
+                    td 2.220р
+                    td 3.130р
+                    td 2.790р
+                    td 3.440р
+                    td 3.060р
+                tr(class="white")
+                    td 85х200
+                    td 2.790р
+                    td 2.490р
+                    td 3.870р
+                    td 3.450р
+                    td 4.390р
+                    td 3.910р
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+
+    div(class="title")
+        h2 ROLL-UP COLOUR
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/mobs/mobs (7).png');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
+            table(id="light")
+                tr(class="blue")
+                    td(class="blue normal" colspan="1") тип
+                    td(class="blue normal" colspan="2") без печати
+                    td(class="blue normal" colspan="2") банерная ткань
+                    td(class="blue normal" colspan="2") полипропилен
+                tr(class="white")
+                    td количество
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td 2.490р
+                    td 2.220р
+                    td 3.130р
+                    td 2.790р
+                    td 3.440р
+                    td 3.060р
+                tr(class="white")
+                    td 85х200
+                    td 2.790р
+                    td 2.490р
+                    td 3.870р
+                    td 3.450р
+                    td 4.390р
+                    td 3.910р
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+
+    div(class="title")
+        h2 ROLL-UP CASSETTE
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/mobs/mobs (17).png');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
+            table(id="light")
+                tr(class="blue")
+                    td(class="blue normal" colspan="1") тип
+                    td(class="blue normal" colspan="2") без печати
+                    td(class="blue normal" colspan="2") банерная ткань
+                    td(class="blue normal" colspan="2") полипропилен
+                tr(class="white")
+                    td количество
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td 2.490р
+                    td 2.220р
+                    td 3.130р
+                    td 2.790р
+                    td 3.440р
+                    td 3.060р
+                tr(class="white")
+                    td 85х200
+                    td 2.790р
+                    td 2.490р
+                    td 3.870р
+                    td 3.450р
+                    td 4.390р
+                    td 3.910р
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+    div(class="title")
+        h2 ROLL-UP MOVING
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/mobs/mobs (17).png');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
+            table(id="light")
+                tr(class="blue")
+                    td(class="blue normal" colspan="1") тип
+                    td(class="blue normal" colspan="2") без печати
+                    td(class="blue normal" colspan="2") банерная ткань
+                    td(class="blue normal" colspan="2") полипропилен
+                tr(class="white")
+                    td количество
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                tr(class="blue")
+                    td 60х180
+                    td 2.490р
+                    td 2.220р
+                    td 3.130р
+                    td 2.790р
+                    td 3.440р
+                    td 3.060р
+                tr(class="white")
+                    td 85х200
+                    td 2.790р
+                    td 2.490р
+                    td 3.870р
+                    td 3.450р
+                    td 4.390р
+                    td 3.910р
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+    div(class="title")
+        h2 ROLL-UP MULTIPLAY
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/mobs/mobs (17).png');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
+            table(id="light")
+                tr(class="blue")
+                    td(class="blue normal" colspan="1") тип
+                    td(class="blue normal" colspan="2") без печати
+                    td(class="blue normal" colspan="2") банерная ткань
+                    td(class="blue normal" colspan="2") полипропилен
+                tr(class="white")
+                    td количество
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                    td 1-9шт.
+                    td 10-29шт.
+                tr(class="blue")
                     td 85х200
                     td 2.790р
                     td 2.490р
@@ -505,11 +891,11 @@ div(class="flex-page")
                     td 3.910р
 
     div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
+        h2 L-BANNER
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+            div(style="background-image:url('/img/mobs/mobs (11).png');background-size:100%,100%" class="smthImg" )
                 div(class="midSl")
                     div(class="leftSl")
                     div(class="rightSl")
@@ -522,247 +908,12 @@ div(class="flex-page")
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
-            table(id="light")
-                tr(class="blue")
-                    td(class="blue normal" colspan="1") тип
-                    td(class="blue normal" colspan="2") без печати
-                    td(class="blue normal" colspan="2") банерная ткань
-                    td(class="blue normal" colspan="2") полипропилен
-                tr(class="white")
-                    td количество
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                tr(class="blue")
-                    td 60х180
-                    td 2.490р
-                    td 2.220р
-                    td 3.130р
-                    td 2.790р
-                    td 3.440р
-                    td 3.060р
-                tr(class="white")
-                    td 85х200
-                    td 2.790р
-                    td 2.490р
-                    td 3.870р
-                    td 3.450р
-                    td 4.390р
-                    td 3.910р
-
-    div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
-    div(class="smth")
-        a(name="LB")
-        div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
-                div(class="midSl")
-                    div(class="leftSl")
-                    div(class="rightSl")
-                div(class="botSl")
-                    div(class="dot")
-                    div(class="dot")
-                    div(class="dot")
-            div(class="flexbuts")
-                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-        div(class="rightflex")
-            div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
-            table(id="light")
-                tr(class="blue")
-                    td(class="blue normal" colspan="1") тип
-                    td(class="blue normal" colspan="2") без печати
-                    td(class="blue normal" colspan="2") банерная ткань
-                    td(class="blue normal" colspan="2") полипропилен
-                tr(class="white")
-                    td количество
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                tr(class="blue")
-                    td 60х180
-                    td 2.490р
-                    td 2.220р
-                    td 3.130р
-                    td 2.790р
-                    td 3.440р
-                    td 3.060р
-                tr(class="white")
-                    td 85х200
-                    td 2.790р
-                    td 2.490р
-                    td 3.870р
-                    td 3.450р
-                    td 4.390р
-                    td 3.910р
-
-    div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
-    div(class="smth")
-        a(name="LB")
-        div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
-                div(class="midSl")
-                    div(class="leftSl")
-                    div(class="rightSl")
-                div(class="botSl")
-                    div(class="dot")
-                    div(class="dot")
-                    div(class="dot")
-            div(class="flexbuts")
-                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-        div(class="rightflex")
-            div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
-            table(id="light")
-                tr(class="blue")
-                    td(class="blue normal" colspan="1") тип
-                    td(class="blue normal" colspan="2") без печати
-                    td(class="blue normal" colspan="2") банерная ткань
-                    td(class="blue normal" colspan="2") полипропилен
-                tr(class="white")
-                    td количество
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                tr(class="blue")
-                    td 60х180
-                    td 2.490р
-                    td 2.220р
-                    td 3.130р
-                    td 2.790р
-                    td 3.440р
-                    td 3.060р
-                tr(class="white")
-                    td 85х200
-                    td 2.790р
-                    td 2.490р
-                    td 3.870р
-                    td 3.450р
-                    td 4.390р
-                    td 3.910р
-    div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
-    div(class="smth")
-        a(name="LB")
-        div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
-                div(class="midSl")
-                    div(class="leftSl")
-                    div(class="rightSl")
-                div(class="botSl")
-                    div(class="dot")
-                    div(class="dot")
-                    div(class="dot")
-            div(class="flexbuts")
-                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-        div(class="rightflex")
-            div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
-            table(id="light")
-                tr(class="blue")
-                    td(class="blue normal" colspan="1") тип
-                    td(class="blue normal" colspan="2") без печати
-                    td(class="blue normal" colspan="2") банерная ткань
-                    td(class="blue normal" colspan="2") полипропилен
-                tr(class="white")
-                    td количество
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                tr(class="blue")
-                    td 60х180
-                    td 2.490р
-                    td 2.220р
-                    td 3.130р
-                    td 2.790р
-                    td 3.440р
-                    td 3.060р
-                tr(class="white")
-                    td 85х200
-                    td 2.790р
-                    td 2.490р
-                    td 3.870р
-                    td 3.450р
-                    td 4.390р
-                    td 3.910р
-
-    div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
-    div(class="smth")
-        a(name="LB")
-        div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
-                div(class="midSl")
-                    div(class="leftSl")
-                    div(class="rightSl")
-                div(class="botSl")
-                    div(class="dot")
-                    div(class="dot")
-                    div(class="dot")
-            div(class="flexbuts")
-                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-        div(class="rightflex")
-            div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
-            table(id="light")
-                tr(class="blue")
-                    td(class="blue normal" colspan="1") тип
-                    td(class="blue normal" colspan="2") без печати
-                    td(class="blue normal" colspan="2") банерная ткань
-                    td(class="blue normal" colspan="2") полипропилен
-                tr(class="white")
-                    td количество
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                    td 1-9шт.
-                    td 10-29шт.
-                tr(class="blue")
-                    td 85х200
-                    td 2.790р
-                    td 2.490р
-                    td 3.870р
-                    td 3.450р
-                    td 4.390р
-                    td 3.910р
-    div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
-    div(class="smth")
-        a(name="LB")
-        div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
-                div(class="midSl")
-                    div(class="leftSl")
-                    div(class="rightSl")
-                div(class="botSl")
-                    div(class="dot")
-                    div(class="dot")
-                    div(class="dot")
-            div(class="flexbuts")
-                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
-        div(class="rightflex")
-            div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
             table(id="light")
                 tr(class="blue")
                     td(class="blue normal" colspan="1") тип
@@ -793,13 +944,20 @@ div(class="flex-page")
                     td 3.450р
                     td 4.390р
                     td 3.910р
-
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
     div(class="title")
-        h2 СВЕТОВЫЕ КОРОБА
+        h2 X-BANNER
     div(class="smth")
         a(name="LB")
         div(class="leftflex")
-            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+            div(style="background-image:url('/img/mobs/mobs (12).png');background-size:100%,100%" class="smthImg" )
                 div(class="midSl")
                     div(class="leftSl")
                     div(class="rightSl")
@@ -812,7 +970,12 @@ div(class="flex-page")
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
-                p Лайтбоксы (световые короба) широко применимы как в наружной, так и в интерьерной рекламе. Они прекрасно заметны днем и ночью, благодаря внутренней подсветке. С успехом применяются для привлечения внимания покупателей на улице, а также в торговых центрах, паркингах, кафе и ресторанах, и других местах. Мы готовы воплотить все ваши задумки - от стандартных до уникальных рельефных светящихся конструкций.
+                ul
+                    li Вес от 2,5 до 6 кг
+                    li Алюминиевая усиленная конструкция
+                    li Конструкция с роллерным механизмом подмотки фотополотна
+                    li Литая баннерная ткань с печатью 1440 dpi
+                    li Сумка для транспортировки
             table(id="light")
                 tr(class="blue")
                     td(class="blue normal" colspan="1") тип
@@ -843,4 +1006,12 @@ div(class="flex-page")
                     td 3.450р
                     td 4.390р
                     td 3.910р
+                tr(class="blue")
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
 include ../footer

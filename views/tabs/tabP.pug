@@ -1,0 +1,271 @@
+link(rel='stylesheet', href='/style/viv.css')
+include ../slider
+include ../header
+script(src='../js/index.js')
+script(src='../js/Global.js')
+script(src='../js/switcher.js')
+div(class="flex-page")
+    div(class="title")
+        h1 ПЛАСТИКОВЫЕ ТАБЛИЧКИ
+    div(id="smth")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/top.jpg" class="smthImg")
+            img(src="../img/4/content2.png"  class="smthImg" style="display:none")
+            img(src="../img/4/content1.jpg"  class="smthImg" style="display:none")
+        div
+            p Пластиковые таблички являются недорогим практичным решением как для внутриофисного использования, так и для монтажа на фасадах зданий. В качестве основы используется высокопрочный ПВХ либо двухслойный пластик Rowmark. Материал не боится влаги, не ржавеет и не бьется, отличается малым собственным весом и легкостью в технологической обработке.
+            p Изображение наносится на композитную основу лазерным лучом, оставляющим исключительно ровный черный след. За счет верхнего металлизированного слоя готовые пластиковые таблички смотрятся дорого и стильно. Возможно нанесение дополнительных цветов с помощью виниловой пленки.
+            p Способ изготовления – экосольвентная печать на самоклеящейся пленке – позволяет наносить на пластиковую основу любые, даже самые сложные изображения, с фотографической точностью. Подходят для уличного использования, широко используются как офисные таблички.
+    div(class="title")
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
+    div(class="photoflex" id="toHide")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(id="hidden" style='display:none')
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+    div(class="title")
+        button(class="moreI" onclick="hidePhoto()")
+            text показать еще
+            text(class="arrow") «
+    div(class="title")
+        h2 ТАБЛИЧКИИЗ ПВХ С НАКАТКОЙ ПЛЕНКИ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Таблички, в силу низкой устойчивости сублимационных чернил к воздействию УФ лучей, используются преимущественно внутри помещений. Уличное размещение табличек возможно при использовании алюминиевой основы со специальным покрытием. Фон может быть глянцевым и матовым, под золото или серебро. Максимальный размер готового изделия – 300х600 мм. Срок службы табличек в помещении не ограничен, на улице – 1-2 года. Легкие таблички из алюминия крепятся на двусторонний скотч (не нужно сверлить стену или дверь), не требуют какого-либо ухода, служат годами. По желанию заказчика офисные таблички из алюминия оформляются в металлический багет.
+            table(id="light")
+                tr(class="blue main")
+                    td(class="name") размер
+                    td(class="price") цена
+                tr
+                    td(class="name") 20х30 см (А4)
+                    td(class=" price") 450 руб
+                tr(class="blue")
+                    td(class="name") 30х40 см (А3)
+                    td(class=" price") 950 руб
+                tr
+                    td(class="name") 40х60 см (А2)
+                    td(class="price") 2200 руб
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+    div(class="title")
+        h2 ТАБЛИЧКИ ИЗ ПВХ С ПРЯМОЙ ПЕЧАТЬЮ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content2.png');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("/calc/symbs")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Пластиковые таблички являются недорогим практичным решением как для внутриофисного использования, так и для монтажа на фасадах зданий. В качестве основы используется высокопрочный ПВХ либо двухслойный пластик Rowmark. Материал не боится влаги, не ржавеет и не бьется, отличается малым собственным весом и легкостью в технологической обработке.
+            table(id="symb")
+                tr(class="blue main")
+                    td(class="name") размер
+                    td(class="price") цена
+                tr
+                    td(class="name") 20х30 см (А4)
+                    td(class=" price") 550 руб
+                tr(class="blue")
+                    td(class="name") 30х40 см (А3)
+                    td(class=" price") 1300 руб
+                tr
+                    td(class="name") 40х60 см (А2)
+                    td(class="price") 2900 руб
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+    div(class="title")
+        h2 ТАБЛИЧКИ ИЗ ПВХ С АППЛИКАЦИЕЙ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content3.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/kron")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Таблички из нержавеющей стали прекрасно подходят как для использования внутри помещения, так и на улице. Фасадные таблички, выполненные из этого долговечного и легкого материала, не подвержены коррозии, не боятся солнца и мороза, и замечательно выглядят, могут иметь золотистый либо посеребренный фон.
+                p Таблички из стали в ряде случаев имеют преимущество перед латунными – на открытом воздухе латунные таблички со временем темнеют, а стальные с покрытием «под золото» - нет. Мы гарантируем изготовление металлических табличек отличного качества, которые будут украшать ваш офис долгие годы.
+            table(id="kron")
+                tr(class="blue main")
+                    td(class="name") размер
+                    td(class="price") цена
+                tr
+                    td(class="name") 20х30 см (А4)
+                    td(class=" price") 750 руб
+                tr(class="blue")
+                    td(class="name") 30х40 см (А3)
+                    td(class=" price") 1700 руб
+                tr
+                    td(class="name") 40х60 см (А2)
+                    td(class="price") 3100 руб
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+    div(class="title")
+        h2 ТАБЛИЧКИ ИЗ АКРИЛА
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content4.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Таблички из нержавеющей стали прекрасно подходят как для использования внутри помещения, так и на улице. Фасадные таблички, выполненные из этого долговечного и легкого материала, не подвержены коррозии, не боятся солнца и мороза, и замечательно выглядят, могут иметь золотистый либо посеребренный фон.
+                p Таблички из стали в ряде случаев имеют преимущество перед латунными – на открытом воздухе латунные таблички со временем темнеют, а стальные с покрытием «под золото» - нет. Мы гарантируем изготовление металлических табличек отличного качества, которые будут украшать ваш офис долгие годы.
+            table(id="nolight")
+                tr(class="blue main")
+                    td(class="name") размер
+                    td(class="price") цена
+                tr
+                    td(class="name") 20х30 см (А4)
+                    td(class=" price") 550 руб
+                tr(class="blue")
+                    td(class="name") 30х40 см (А3)
+                    td(class=" price") 1300 руб
+                tr
+                    td(class="name") 40х60 см (А2)
+                    td(class="price") 2900 руб
+                tr(class="blue")
+                    td(class="name")
+                    td(class=" price")
+
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
+    div(id="flex-box")
+        div(class="elem")
+            img(src="../img/4/content411.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content412.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content413.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content414.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="../img/4/content415.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
+            div
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
+
+include ../footer
