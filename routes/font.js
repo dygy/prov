@@ -3,11 +3,12 @@ const router = express.Router();
 
 /* GET home page. */
 
-router.get('/akmet', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    router.get('/akmet', function(req, res, next) {
+    res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА С МЕТАЛЛОМ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
         href: '/font',
+        price: "от 125 руб/см",
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/akmet1.png','../img/fonttitle/akmet2.png','../img/fonttitle/akmet3.png' ],
         ul:["Срок службы — до 10 лет",
@@ -28,9 +29,10 @@ router.get('/akmet', function(req, res, next) {
     });
 });
 router.get('/ak', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
+        price: "от 100 руб/см",
         href: '/font',
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/ak1.png','../img/fonttitle/ak2.png','../img/fonttitle/ak3.png' ],
@@ -49,11 +51,13 @@ router.get('/ak', function(req, res, next) {
 и УФ-излучения. Не смотря на то, что корпус склеен, её можно разбирать и обслуживать. `
     });
 });
+
 router.get('/akpvk', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА И ПВХ С КОНТРАЖУРОМ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
         href: '/font',
+        price: "от 80 руб/см",
         imgURL:['../img/fonttitle/akpvk1.png','../img/fonttitle/akpvk2.png','../img/fonttitle/akpvk3.png' ],
         calcURL:"../calc/symbs",
         ul:["Срок службы — до 5 лет",
@@ -70,11 +74,13 @@ router.get('/akpvk', function(req, res, next) {
 буквы устанавливаются светодиоды для подсветки. У буквы нет задней части — светодиоды располагаются на обратной стороне лицевой стороны. Обслуживать не удобно, зато существенно дешевле в изготовлении.`
     });
 });
+
 router.get('/metk', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ МЕТАЛЛА С КОНТРАЖУРОМ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
         href: '/font',
+        price: "от 110 руб/см",
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/metk1.png','../img/fonttitle/metk2.png','../img/fonttitle/metk3.png' ],
         ul:["Срок службы — до 10 лет",
@@ -94,11 +100,13 @@ router.get('/metk', function(req, res, next) {
 дистанционным держателям. Свет изнутри буквы падает на подложку.`
     });
 });
+
 router.get('/akpv', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА И ПВХ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
         href: '/font',
+        price: "от 100 руб/см",
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/akpv1.png','../img/fonttitle/akpv2.png','../img/fonttitle/akpv3.png' ],
         ul:["Срок службы — до 5 лет",
@@ -117,11 +125,13 @@ router.get('/akpv', function(req, res, next) {
         обратной стороне лицевой стороны. `
     });
 });
+
 router.get('/pvk', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ ПВХ С КОНТРАЖУРОМ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
         href: '/font',
+        price: "от 80 руб/см",
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/pvk1.png','../img/fonttitle/pvk2.png','../img/fonttitle/pvk3.png' ],
         ul:["Срок службы — до 10 лет",
@@ -139,11 +149,13 @@ router.get('/pvk', function(req, res, next) {
         нагревается для того, чтобы его можно было согнуть по форме буквы. Внутрь буквы устанавливаются светодиоды для подсветки. У буквы нет задней части — светодиоды располагаются на обратной стороне лицевой стороны.`
     });
 });
+
 router.get('/neon', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ С ОТКРЫТЫМ НЕОНОМ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
         href: '/font',
+        price: "от 135 руб/см",
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/neon1.png','../img/fonttitle/neon2.png','../img/fonttitle/neon3.png' ],
         ul:["Срок службы — до 10 лет",
@@ -162,11 +174,13 @@ router.get('/neon', function(req, res, next) {
         практически не видно, поэтому крайне важно не отключать такую вывеску даже в дневное время.`
     });
 });
+
 router.get('/svetod', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
         href: '/font',
+        price: "от 320 руб/см",
         calcURL:"../calc/symbs",
         imgURL:['../img/fonttitle/svet1.png','../img/fonttitle/svet2.png','../img/fonttitle/svet3.png' ],
         ul:["Срок службы — до 10 лет",

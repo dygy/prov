@@ -93,7 +93,7 @@
 
 @media (max-width: 1300px) {
   .smth table tbody tr .name, .smth table tbody tr .price {
-    font-size: 11px !important; } }
+    font-size: 13px !important; } }
 
 @media (max-width: 1200px) {
   #smth {

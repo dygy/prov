@@ -1031,11 +1031,12 @@ table {
   display: flex;
   justify-content: space-between; }
   .ulflex ul {
+    padding-left: 0;
     list-style: none;
     color: #0b82f7;
     text-align: center; }
     .ulflex ul li {
-      padding: 10px; }
+      padding: 10px 0; }
 
 .flex-page {
   display: flex;

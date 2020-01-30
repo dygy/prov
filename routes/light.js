@@ -9,10 +9,11 @@ router.get('/nakOk', function(req, res, next) {
 })
 
 router.get('/polipv', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'СВЕТОВОЙ КОРОБ ИЗ ПОЛИКАРБОНАТА И ПВХ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
+        price: "от 6600 руб/м²",
         imgURL:['../img/lightTitle/polipv1.png' ,'../img/lightTitle/polipv2.png','../img/lightTitle/polipv3.png'],
         ul:["Срок службы — до 5 лет",
             "Яркость — низкая",
@@ -28,11 +29,12 @@ router.get('/polipv', function(req, res, next) {
     });
 });
 router.get('/metkban', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' +
             'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
+        price: "от 6600 руб/м²",
         imgURL:['../img/lightTitle/ban1.png' ,'../img/lightTitle/ban2.png','../img/lightTitle/ban3.png'],
         ul:["Срок службы — до 5 лет",
             "Яркость — средняя",
@@ -55,6 +57,7 @@ router.get('/akpvh', function(req, res, next) {
         title: 'СВЕТОВОЙ КОРОБ ИЗ АКРИЛА И ПВХ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
+        price: "от 6600 руб/м²",
         imgURL:['../img/lightTitle/akpv1.png' ,'../img/lightTitle/akpv2.png','../img/lightTitle/akpv3.png'],
         ul:["Срок службы — до 10 лет",
             "Яркость —  высокая",
@@ -76,6 +79,7 @@ router.get('/metkak', function(req, res, next) {
             'И АКРИЛОМ НА ЛИЦЕВОЙ ЧАСТИ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
+        price: "от 6600 руб/м²",
         imgURL:['../img/lightTitle/metak1.png' ,'../img/lightTitle/metak2.png','../img/lightTitle/metak3.png'],
         ul:["Срок службы — до 10 лет",
             "Яркость —  средняя",
@@ -98,6 +102,7 @@ router.get('/metkpv', function(req, res, next) {
             'И ПВХ НА ЛИЦЕВОЙ ЧАСТИ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
+        price: "от 6600 руб/м²",
         imgURL:['../img/lightTitle/metpv1.png' ,'../img/lightTitle/metpv2.png','../img/lightTitle/metpv3.png'],
         ul:["Срок службы — до 2 лет",
             "Яркость —  средняя",
@@ -118,6 +123,7 @@ router.get('/metsot', function(req, res, next) {
             'И СОТОВЫМ ПОЛИКАРБОНАТОМ НА ЛИЦЕВОЙ ЧАСТИ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
+        price: "от 6600 руб/м²",
         imgURL:['../img/lightTitle/metpol1.png' ,'../img/lightTitle/metpol2.png','../img/lightTitle/metpol3.png'],
         ul:["Срок службы — до 5 лет",
             "Яркость — низкая",
@@ -141,6 +147,7 @@ router.get('/svetod', function(req, res, next) {
         title: 'СВЕТОВОЙ КОРОБ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
+        price: "от 6600 руб/м²",
         imgURL:['../img/lightTitle/svet1.png' ,'../img/lightTitle/svet2.png','../img/lightTitle/svet3.png'],
         ul:["Срок службы — до 10 лет",
             "Яркость —  высокая",
@@ -161,6 +168,7 @@ router.get('/alum', function(req, res, next) {
         title: 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА С ПРОРЕЗКОЙ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
+        price: "от 6600 руб/м²",
         imgURL:['../img/lightTitle/komppr1.png' ,'../img/lightTitle/komppr2.png','../img/lightTitle/komppr3.png'],
         ul:["Срок службы — до 10 лет",
             "Яркость — средняя",
@@ -181,6 +189,7 @@ router.get('/alumprozak', function(req, res, next) {
             'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
+        price: "от 6600 руб/м²",
         imgURL:['../img/lightTitle/kompink1.png' ,'../img/lightTitle/kompink2.png','../img/lightTitle/kompink3.png'],
         ul:["Срок службы — до 10 лет",
             "Яркость —  высокая",
