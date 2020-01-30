@@ -6,14 +6,18 @@ if title === " ТАБЛИЧКИ УКАЗАТЕЛИ"
         table tbody td{
             width: 29%;
         }
-
+else if title === "СВЕТОВОЙ КОРОБ ИЗ АКРИЛА И ПВХ" || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n'+'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ'|| 'СВЕТОВОЙ КОРОБ ИЗ ПОЛИКАРБОНАТА И ПВХ'|| 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И ПВХ НА ЛИЦЕВОЙ ЧАСТИ'|| 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И СОТОВЫМ ПОЛИКАРБОНАТОМ НА ЛИЦЕВОЙ ЧАСТИ'|| 'СВЕТОВОЙ КОРОБ С ОТКРЫТЫМИ СВЕТОДИОДАМИ'|| 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА С ПРОРЕЗКОЙ'|| 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' + 'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА'
+    style.
+        table tbody tr td {
+            width: 1%;
+        }
 style.
     @media (min-width: 1700px) {
         #smth {
             height: 555px;
         }
         #smth .rightflex .flexbuts .buttonImg, #smth .rightflex .flexbuts .calc{
-            height: 63px!important;
+            height: 46px!important;
         }
     }
 script(src='../js/index.js')
@@ -31,9 +35,14 @@ div(class="flex-page")
                 img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
                 img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
                 img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
-            img( src="../img/4/nakOk.jpg" class="smthImg")
-            img(src="../img/4/nakOk.jpg"  class="smthImg" style="display:none")
-            img(src="../img/4/nakOk.jpg"  class="smthImg" style="display:none")
+            if imgURL
+                img(id="image" src=imgURL[0] class="smthImg")
+                img(id="image" src=imgURL[1] class="smthImg" style="display: none")
+                img(id="image" src=imgURL[2] class="smthImg" style="display: none")
+            else
+                img( src="../img/4/nakOk.jpg" class="smthImg")
+                img(src="../img/4/nakOk.jpg"  class="smthImg" style="display:none")
+                img(src="../img/4/nakOk.jpg"  class="smthImg" style="display:none")
         div(class="rightflex")
             div(class="content-container")
                 if title === " ВХОДНЫЕ ГРУППЫ"
@@ -48,6 +57,8 @@ div(class="flex-page")
                     include ../content/tabS/mainInfo
                 else if title === " ТАБЛИЧКИ УКАЗАТЕЛИ"
                     include ../content/tabUk/mainInfo
+                else if title === "СВЕТОВОЙ КОРОБ ИЗ АКРИЛА И ПВХ" || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n'+'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ'|| 'СВЕТОВОЙ КОРОБ ИЗ ПОЛИКАРБОНАТА И ПВХ'|| 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И ПВХ НА ЛИЦЕВОЙ ЧАСТИ'|| 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И СОТОВЫМ ПОЛИКАРБОНАТОМ НА ЛИЦЕВОЙ ЧАСТИ'|| 'СВЕТОВОЙ КОРОБ С ОТКРЫТЫМИ СВЕТОДИОДАМИ'|| 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА С ПРОРЕЗКОЙ'|| 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' + 'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА'
+                    include ../content/lakpv/mainInfo
             div(class='flexbuts' style="margin-top:90px")
                 img(class="calc" src='/img/calc.png' onclick="displayMessage('Калькулятор временно отсутствует')")
                 img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
@@ -107,6 +118,10 @@ div(class="flex-page")
             include ../content/tabS/table
         else if title === " ТАБЛИЧКИ УКАЗАТЕЛИ"
             include ../content/tabUk/table
+        else if title === "СВЕТОВОЙ КОРОБ ИЗ АКРИЛА И ПВХ" || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' + 'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ ИЗ ПОЛИКАРБОНАТА И ПВХ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И ПВХ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И СОТОВЫМ ПОЛИКАРБОНАТОМ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА С ПРОРЕЗКОЙ' || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' + 'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА'
+            include ../content/lakpv/table
+        else
+            include ../content/lakpv/table
     div(id="content-container")
         if title === " ВХОДНЫЕ ГРУППЫ"
             include ../content/input/secText
@@ -120,6 +135,9 @@ div(class="flex-page")
             include ../content/tabS/secText
         else if title === " ТАБЛИЧКИ УКАЗАТЕЛИ"
             include ../content/tabUk/secText
+        else if title === "СВЕТОВОЙ КОРОБ ИЗ АКРИЛА И ПВХ" || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' + 'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ ИЗ ПОЛИКАРБОНАТА И ПВХ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И ПВХ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И СОТОВЫМ ПОЛИКАРБОНАТОМ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА С ПРОРЕЗКОЙ' || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' + 'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА'
+            include ../content/lakpv/secText
+        else if
     div(class="title")
         h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
     div(class="ulflex")

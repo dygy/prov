@@ -50,7 +50,8 @@ router.get('/metkban', function(req, res, next) {
     });
 });
 router.get('/akpvh', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
+
         title: 'СВЕТОВОЙ КОРОБ ИЗ АКРИЛА И ПВХ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
@@ -70,7 +71,7 @@ router.get('/akpvh', function(req, res, next) {
     });
 });
 router.get('/metkak', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' +
             'И АКРИЛОМ НА ЛИЦЕВОЙ ЧАСТИ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
@@ -92,7 +93,7 @@ router.get('/metkak', function(req, res, next) {
     });
 });
 router.get('/metkpv', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' +
             'И ПВХ НА ЛИЦЕВОЙ ЧАСТИ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
@@ -112,7 +113,7 @@ router.get('/metkpv', function(req, res, next) {
     });
 });
 router.get('/metsot', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' +
             'И СОТОВЫМ ПОЛИКАРБОНАТОМ НА ЛИЦЕВОЙ ЧАСТИ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
@@ -136,7 +137,7 @@ router.get('/metsot', function(req, res, next) {
     });
 });
 router.get('/svetod', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'СВЕТОВОЙ КОРОБ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
@@ -156,7 +157,7 @@ router.get('/svetod', function(req, res, next) {
     });
 });
 router.get('/alum', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА С ПРОРЕЗКОЙ' ,
         path: " СВЕТОВЫЕ КОРОБА ",
         href: '/light',
@@ -175,7 +176,7 @@ router.get('/alum', function(req, res, next) {
     });
 });
 router.get('/alumprozak', function(req, res, next) {
-    res.render('./pages/fontinfo', {
+    res.render('./pages/sellInfo', {
         title: 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' +
             'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА' ,
         path: " СВЕТОВЫЕ КОРОБА ",
