@@ -1,19 +1,19 @@
 const msg = {}
 function sendFeedback() {
     if(!elem("name").value){
-        displayMessage("Пожалуйста, оставьте свое имя")
+        displayMessageC("Пожалуйста, оставьте свое имя")
     }
     else  if (!elem("company").value){
-        displayMessage("Пожалуйста, оставьте название компании")
+        displayMessageC("Пожалуйста, оставьте название компании")
     }
     else if (!elem("phoneN").value){
-        displayMessage("Пожалуйста, оставьте номер телефона")
+        displayMessageC("Пожалуйста, оставьте номер телефона")
     }
     else if (!elem("email").value){
-        displayMessage("Пожалуйста, оставьте электронную почту")
+        displayMessageC("Пожалуйста, оставьте электронную почту")
     }
     else if (!elem("comment").value){
-        displayMessage("Пожалуйста, оставьте сообщение")
+        displayMessageC("Пожалуйста, оставьте сообщение")
     }
     else{
         msg.comment = elem("comment").value

@@ -218,8 +218,8 @@ body {
   margin-top: 150px;
   max-width: 100%;
   width: 100vw;
-  font-family: "Geom", serif !important;
-  font-weight: 900; }
+  font-family: Geom !important;
+  font-weight: 400; }
 
 #header {
   z-index: 5;
@@ -509,7 +509,7 @@ body {
   transform: rotate(-90deg); }
 
 .soc-ico {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: -45px -30px 0 -7px !important; }
@@ -518,30 +518,39 @@ body {
   display: none; }
 
 .brd {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
   margin: 0 0 10px 0 !important;
-  padding: 15px 35px;
+  padding: 11px 20px;
   border: 1px solid  #ecb62b; }
 
 #footer {
+  padding-left: 15vw;
+  padding-right: 15vw;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   position: relative;
   bottom: 0;
   color: white;
   background: black;
-  width: 100vw;
+  width: 70vw;
   min-height: 350px; }
   #footer #ftr-left {
-    margin-left: 10%;
     float: left;
-    width: 58%; }
+    width: 74%; }
   #footer .ftr-right {
-    margin-left: 1vw;
+    width: 21%;
     padding-top: 50px;
-    float: right; }
+    float: right;
+    display: flex;
+    justify-content: right; }
     #footer .ftr-right .phone {
       text-align: center;
-      margin-left: -3% !important;
       white-space: nowrap; }
       #footer .ftr-right .phone phone {
         font-family: GeomB;
@@ -549,9 +558,8 @@ body {
         color: #ecb62b;
         font-size: 21px; }
   #footer #ftr-frst {
-    margin-right: 10%;
     font-weight: 900;
-    padding-left: 10px;
+    padding-left: 0px;
     display: flex;
     justify-content: space-between; }
     #footer #ftr-frst div {
@@ -566,25 +574,26 @@ body {
       #footer #ftr-frst #soc span {
         padding-top: 10px;
         padding-bottom: 20px;
-        width: 294px; }
+        width: auto;
+        white-space: nowrap; }
       #footer #ftr-frst #soc h1 {
         text-shadow: white 0.5px -0.5px 0.5px;
         margin: 0; }
       #footer #ftr-frst #soc .soc-ico {
-        margin: -47px 0 !important;
+        margin: -63px 0 !important;
         height: 30px; }
     #footer #ftr-frst #faq h4 {
       margin-top: 0;
       text-shadow: white 0px -1px 1px;
-      margin-left: 2.3em;
+      margin-left: 0;
       width: 270px; }
     #footer #ftr-frst #faq ul {
+      padding-left: 0;
       margin-top: -15px;
       list-style: none; }
       #footer #ftr-frst #faq ul li {
         text-decoration: underline #ecb62b; }
     #footer #ftr-frst #buttons {
-      margin-left: 30px;
       z-index: 2;
       margin-top: 50px !important; }
       #footer #ftr-frst #buttons button {
@@ -601,14 +610,14 @@ body {
       #footer #ftr-frst #buttons .firstB {
         margin-top: 0 !important; }
   #footer #ftr-scnd {
-    padding-left: 50px;
+    padding-left: 0px;
     font-weight: 900;
     display: flex;
     justify-content: start; }
     #footer #ftr-scnd p {
       width: 128%; }
     #footer #ftr-scnd div {
-      margin: 25px 25% 0 0; }
+      margin: 0px 25% 0 0; }
 
 @media (min-width: 1500px) {
   #ftr-frst #buttons button, .ftr-right #buttons button {
@@ -616,8 +625,7 @@ body {
     height: 50px !important;
     width: 250px !important; }
   #ftr-frst email, #ftr-frst adr, #ftr-frst city, .ftr-right email, .ftr-right adr, .ftr-right city {
-    font-size: 15px;
-    padding-top: 10px; }
+    font-size: 15px; }
   #ftr-frst span, .ftr-right span {
     font-size: 17px !important; }
   #ftr-frst phone, .ftr-right phone {
@@ -640,7 +648,7 @@ body {
   #footer {
     font-weight: 700 !important; }
   #ftr-frst div {
-    margin: 40px 5% 0 0 !important; }
+    margin: 40px 0 0 0 !important; }
   #ftr-frst .phone {
     margin-right: 0 !important; } }
 
@@ -657,7 +665,7 @@ body {
 
 @media (max-width: 1152px) {
   #ftr-frst div {
-    margin: 40px 3% 0 0 !important; }
+    margin: 40px 0 0 !important; }
   #ftr-frst .brd {
     padding: 5px !important;
     margin: 0 0 10px 0 !important; }
@@ -668,7 +676,7 @@ body {
   #footer #ftr-frst .phone {
     margin-left: -10vw !important; }
   #ftr-frst div {
-    margin: 40px 2% 0 0 !important; }
+    margin: 40px 0 0 0 !important; }
   #ftr-frst .brd {
     margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
@@ -677,10 +685,8 @@ body {
     width: 220px !important; } }
 
 @media (max-width: 976px) {
-  #ftr-scnd div {
-    margin: 0 0.7% 0 0 !important; }
   #ftr-frst div {
-    margin: 40px 1% 0 0 !important; }
+    margin: 40px 0 0 0 !important; }
   #ftr-frst .brd {
     margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
@@ -724,9 +730,14 @@ body {
     display: none; } }
 
 @media (min-width: 1700px) {
+  #footer #ftr-frst #faq ul li {
+    font-size: 19px; }
   .ftr-right .phone {
-    margin-top: 30px;
-    transform: scale(1.3); }
+    width: 320px; }
+    .ftr-right .phone .brd {
+      font-weight: 900;
+      margin: 0 0 30px 0 !important;
+      height: 100px; }
   #ftr-scnd {
     font-size: 14px !important; } }
 
@@ -1513,11 +1524,11 @@ body {
   .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 170px !important;
-    height: 50px !important;
+    height: 60px !important;
     min-width: 165px;
     min-height: 20px;
     max-width: 220px;
-    max-height: 50px; }
+    max-height: 60px; }
 
 #body {
   width: 100vw;

@@ -9,6 +9,12 @@ function displayMessage(message) {
     elem("message").style.display="flex";
     elem("messageText").innerText= message;
 }
+function displayMessageC(message) {
+    elem("full-page").style.display = "flex";
+    elem("messageC").style.display="flex";
+    elem("messageTextC").innerText= message;
+}
+
 function moveTo(url) {
     location.href = url;
 }

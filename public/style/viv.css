@@ -21,7 +21,7 @@
   .smth .leftflex {
     margin-left: 1vw; }
   .smth .scroll-container {
-    height: 124px;
+    height: 114px;
     overflow-y: auto; }
   .smth .smthImg {
     margin-bottom: -20px;
@@ -149,5 +149,9 @@
 @media (min-width: 1800px) {
   .flex-page #smth {
     margin-bottom: 100px !important; } }
+
+@-moz-document url-prefix() {
+  .smth table {
+    width: 100%; } }
 
 /*# sourceMappingURL=viv.css.map */

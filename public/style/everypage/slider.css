@@ -67,7 +67,7 @@ body {
       height: 500px; }
     #full-page #smth .rightflex .scroll-container, #full-page .smth .rightflex .scroll-container {
       display: flex;
-      justify-content: end;
+      justify-content: start;
       flex-direction: column; }
     #full-page #smth .rightflex table tbody, #full-page .smth .rightflex table tbody {
       margin-left: 0 !important;
@@ -193,7 +193,7 @@ body {
         width: 100% !important;
         position: initial !important; }
       #full-page #smth .imgSwitcher, #full-page .smth .imgSwitcher, #full-page .ntSmth .imgSwitcher {
-        margin-left: 15vw !important;
+        margin-left: 5vw !important;
         margin-top: 60px !important;
         height: auto;
         width: auto;
@@ -245,7 +245,7 @@ body {
   @media (min-width: 1400px) {
     #full-page #smth div .buttonImg, #full-page #smth div .calc, #full-page .smth div .buttonImg, #full-page .smth div .calc {
       max-width: 210px !important;
-      max-height: 50px !important; } }
+      max-height: 60px !important; } }
   @media (min-width: 1700px) {
     #full-page #smth p, #full-page #smth li, #full-page #smth span, #full-page .smth p, #full-page .smth li, #full-page .smth span {
       font-size: 20px !important; }
@@ -263,7 +263,7 @@ body {
     margin-left: 30px;
     margin-right: 40%;
     color: #84c2b4; }
-  #full-page #message {
+  #full-page #message, #full-page #messageC {
     position: absolute;
     z-index: 1;
     display: none;
@@ -273,12 +273,12 @@ body {
     border: 1px black;
     box-shadow: 1px 1px 4px black;
     border-radius: 2px; }
-    #full-page #message #messageText {
+    #full-page #message #messageText, #full-page #messageC #messageText {
       width: 100%;
       font-size: 20px;
       text-align: center;
       padding: 10px; }
-    #full-page #message #close {
+    #full-page #message #close, #full-page #messageC #close {
       left: 339px;
       top: -12px;
       position: absolute;
@@ -490,6 +490,8 @@ body {
   #full-page #sell #close {
     left: -2% !important;
     top: -148px !important; }
+  #order .butImg {
+    top: 14px; }
   #order .checkbox label {
     top: 188px !important; }
   #order .checkbox p {

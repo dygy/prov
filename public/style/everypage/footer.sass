@@ -22,36 +22,46 @@
     -o-transform: rotate(-90deg)
     transform: rotate(-90deg)
 .soc-ico
-  width: 60%
+  width: 100%
   display: flex
   justify-content: space-between
   margin: -45px -30px 0 -7px !important
 .lowscreen
   display: none
 .brd
+  display: flex
+  flex-direction: column
+  align-content: center
+  align-items: center
+  justify-content: center
+  height: 100px
   margin: 0 0 10px 0!important
-  padding: 10px 20px
+  padding: 11px 20px
   border: 1px solid  #ecb62b
 #footer
+  padding-left: 15vw
+  padding-right: 15vw
   display: flex
+  justify-content: space-between
   flex-direction: row
   position: relative
   bottom: 0
   color: white
   background: black
-  width: 100vw
+  width: 70vw
   min-height: 350px
   #ftr-left
-    margin-left: 10%
     float: left
-    width: 58%
+    width: 74%
   .ftr-right
-    margin-left: 1vw
+    width: 21%
     padding-top: 50px
     float: right
+    display: flex
+    justify-content: right
     .phone
       text-align: center
-      margin-left: -3%!important
+      //margin-left: -3%!important
       white-space: nowrap
       phone
         font-family: GeomB
@@ -59,9 +69,8 @@
         color: #ecb62b
         font-size: 21px
   #ftr-frst
-    margin-right: 10%
     font-weight: 900
-    padding-left: 10px
+    padding-left: 0px
     display: flex
     justify-content: space-between
     div
@@ -76,20 +85,22 @@
       span
         padding-top: 10px
         padding-bottom: 20px
-        width: 294px
+        width: auto
+        white-space: nowrap
       h1
         text-shadow: white 0.5px -0.5px 0.5px
         margin: 0
       .soc-ico
-        margin: -47px 0 !important
+        margin: -63px 0 !important
         height: 30px
     #faq
       h4
         margin-top: 0
         text-shadow: white 0px -1px 1px
-        margin-left: 2.3em
+        margin-left: 0
         width: 270px
       ul
+        padding-left: 0
         margin-top: -15px
         list-style: none
         li
@@ -97,7 +108,6 @@
 
 
     #buttons
-      margin-left: 30px
       z-index: 2
       margin-top: 50px!important
       // padding-top: 40px
@@ -118,12 +128,12 @@
   #ftr-scnd
     p
       width: 128%
-    padding-left: 50px
+    padding-left: 0px
     font-weight: 900
     display: flex
     justify-content: start
     div
-      margin: 25px 25% 0 0
+      margin: 0px 25% 0 0
 @media ( min-width : 1500px )
   #ftr-frst,.ftr-right
     #buttons
@@ -133,7 +143,6 @@
         width: 250px!important
     email,  adr, city
       font-size: 15px
-      padding-top: 10px
     span
       font-size: 17px!important
     phone
@@ -163,7 +172,7 @@
     font-weight: 700!important
   #ftr-frst
     div
-      margin: 40px 5% 0 0!important
+      margin: 40px 0 0 0!important
     .phone
       margin-right: 0!important
 @media ( max-width : 1275px )
@@ -180,7 +189,7 @@
 @media ( max-width : 1152px )
   #ftr-frst
     div
-      margin: 40px 3% 0 0!important
+      margin: 40px 0 0!important
     .brd
       padding: 5px!important
       margin: 0 0 10px 0!important
@@ -194,7 +203,7 @@
         margin-left: -10vw!important
   #ftr-frst
     div
-      margin: 40px 2% 0 0!important
+      margin: 40px 0 0 0!important
     .brd
       margin: 0 0 10px 0!important
     h1
@@ -204,10 +213,9 @@
 @media ( max-width : 976px )
   #ftr-scnd
     div
-      margin: 0 0.7% 0 0!important
   #ftr-frst
     div
-      margin: 40px 1% 0 0!important
+      margin: 40px 0 0 0!important
     .brd
       margin: 0 0 10px 0!important
     h1
@@ -256,9 +264,18 @@
     display: none
 
 @media ( min-width : 1700px )
+  #footer
+    #ftr-frst
+      #faq
+        ul
+          li
+            font-size: 19px
   .ftr-right
     .phone
-      margin-top: 30px
-      transform: scale(1.3)
+      width: 320px
+      .brd
+        font-weight: 900
+        margin: 0 0 30px 0 !important
+        height: 100px
   #ftr-scnd
     font-size: 14px!important

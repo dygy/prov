@@ -217,8 +217,8 @@ body {
   margin-top: 150px;
   max-width: 100%;
   width: 100vw;
-  font-family: "Geom", serif !important;
-  font-weight: 900; }
+  font-family: Geom !important;
+  font-weight: 400; }
 
 #header {
   z-index: 5;
@@ -508,7 +508,7 @@ body {
   transform: rotate(-90deg); }
 
 .soc-ico {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: -45px -30px 0 -7px !important; }
@@ -517,30 +517,39 @@ body {
   display: none; }
 
 .brd {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
   margin: 0 0 10px 0 !important;
-  padding: 15px 35px;
+  padding: 11px 20px;
   border: 1px solid  #ecb62b; }
 
 #footer {
+  padding-left: 15vw;
+  padding-right: 15vw;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   position: relative;
   bottom: 0;
   color: white;
   background: black;
-  width: 100vw;
+  width: 70vw;
   min-height: 350px; }
   #footer #ftr-left {
-    margin-left: 10%;
     float: left;
-    width: 58%; }
+    width: 74%; }
   #footer .ftr-right {
-    margin-left: 1vw;
+    width: 21%;
     padding-top: 50px;
-    float: right; }
+    float: right;
+    display: flex;
+    justify-content: right; }
     #footer .ftr-right .phone {
       text-align: center;
-      margin-left: -3% !important;
       white-space: nowrap; }
       #footer .ftr-right .phone phone {
         font-family: GeomB;
@@ -548,9 +557,8 @@ body {
         color: #ecb62b;
         font-size: 21px; }
   #footer #ftr-frst {
-    margin-right: 10%;
     font-weight: 900;
-    padding-left: 10px;
+    padding-left: 0px;
     display: flex;
     justify-content: space-between; }
     #footer #ftr-frst div {
@@ -565,25 +573,26 @@ body {
       #footer #ftr-frst #soc span {
         padding-top: 10px;
         padding-bottom: 20px;
-        width: 294px; }
+        width: auto;
+        white-space: nowrap; }
       #footer #ftr-frst #soc h1 {
         text-shadow: white 0.5px -0.5px 0.5px;
         margin: 0; }
       #footer #ftr-frst #soc .soc-ico {
-        margin: -47px 0 !important;
+        margin: -63px 0 !important;
         height: 30px; }
     #footer #ftr-frst #faq h4 {
       margin-top: 0;
       text-shadow: white 0px -1px 1px;
-      margin-left: 2.3em;
+      margin-left: 0;
       width: 270px; }
     #footer #ftr-frst #faq ul {
+      padding-left: 0;
       margin-top: -15px;
       list-style: none; }
       #footer #ftr-frst #faq ul li {
         text-decoration: underline #ecb62b; }
     #footer #ftr-frst #buttons {
-      margin-left: 30px;
       z-index: 2;
       margin-top: 50px !important; }
       #footer #ftr-frst #buttons button {
@@ -600,14 +609,14 @@ body {
       #footer #ftr-frst #buttons .firstB {
         margin-top: 0 !important; }
   #footer #ftr-scnd {
-    padding-left: 50px;
+    padding-left: 0px;
     font-weight: 900;
     display: flex;
     justify-content: start; }
     #footer #ftr-scnd p {
       width: 128%; }
     #footer #ftr-scnd div {
-      margin: 25px 25% 0 0; }
+      margin: 0px 25% 0 0; }
 
 @media (min-width: 1500px) {
   #ftr-frst #buttons button, .ftr-right #buttons button {
@@ -615,8 +624,7 @@ body {
     height: 50px !important;
     width: 250px !important; }
   #ftr-frst email, #ftr-frst adr, #ftr-frst city, .ftr-right email, .ftr-right adr, .ftr-right city {
-    font-size: 15px;
-    padding-top: 10px; }
+    font-size: 15px; }
   #ftr-frst span, .ftr-right span {
     font-size: 17px !important; }
   #ftr-frst phone, .ftr-right phone {
@@ -639,7 +647,7 @@ body {
   #footer {
     font-weight: 700 !important; }
   #ftr-frst div {
-    margin: 40px 5% 0 0 !important; }
+    margin: 40px 0 0 0 !important; }
   #ftr-frst .phone {
     margin-right: 0 !important; } }
 
@@ -656,7 +664,7 @@ body {
 
 @media (max-width: 1152px) {
   #ftr-frst div {
-    margin: 40px 3% 0 0 !important; }
+    margin: 40px 0 0 !important; }
   #ftr-frst .brd {
     padding: 5px !important;
     margin: 0 0 10px 0 !important; }
@@ -667,7 +675,7 @@ body {
   #footer #ftr-frst .phone {
     margin-left: -10vw !important; }
   #ftr-frst div {
-    margin: 40px 2% 0 0 !important; }
+    margin: 40px 0 0 0 !important; }
   #ftr-frst .brd {
     margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
@@ -676,10 +684,8 @@ body {
     width: 220px !important; } }
 
 @media (max-width: 976px) {
-  #ftr-scnd div {
-    margin: 0 0.7% 0 0 !important; }
   #ftr-frst div {
-    margin: 40px 1% 0 0 !important; }
+    margin: 40px 0 0 0 !important; }
   #ftr-frst .brd {
     margin: 0 0 10px 0 !important; }
   #ftr-frst h1 {
@@ -723,15 +729,20 @@ body {
     display: none; } }
 
 @media (min-width: 1700px) {
+  #footer #ftr-frst #faq ul li {
+    font-size: 19px; }
   .ftr-right .phone {
-    margin-top: 30px;
-    transform: scale(1.3); }
+    width: 320px; }
+    .ftr-right .phone .brd {
+      font-weight: 900;
+      margin: 0 0 30px 0 !important;
+      height: 100px; }
   #ftr-scnd {
     font-size: 14px !important; } }
 
 table {
   border-spacing: 10px 0;
-  margin: 0px -1vw 20px;
+  margin: 0px -0.7vw 20px;
   min-width: 400px;
   min-height: auto;
   display: flex;
@@ -799,7 +810,7 @@ table {
     height: 500px; }
   #smth .rightflex .scroll-container, .smth .rightflex .scroll-container {
     display: flex;
-    justify-content: end;
+    justify-content: start;
     flex-direction: column; }
   #smth .rightflex table tbody, .smth .rightflex table tbody {
     margin-left: 0 !important;
@@ -939,7 +950,7 @@ table {
       width: 100% !important;
       position: initial !important; }
     #smth .imgSwitcher, .smth .imgSwitcher, .ntSmth .imgSwitcher {
-      margin-left: 15vw !important;
+      margin-left: 5vw !important;
       margin-top: 60px !important;
       height: auto;
       width: auto;
@@ -993,7 +1004,7 @@ table {
 @media (min-width: 1400px) {
   #smth div .buttonImg, #smth div .calc, .smth div .buttonImg, .smth div .calc {
     max-width: 210px !important;
-    max-height: 50px !important; } }
+    max-height: 60px !important; } }
 
 @media (min-width: 1700px) {
   #smth p, #smth li, #smth span, .smth p, .smth li, .smth span {
@@ -1037,7 +1048,8 @@ table {
     color: #0b82f7;
     text-align: center; }
     .ulflex ul li {
-      padding: 10px 0; }
+      padding: 10px 0;
+      font-weight: 800; }
 
 .flex-page {
   display: flex;
@@ -1078,7 +1090,7 @@ table {
   left: -52% !important; }
 
 #smth .imgSwitcher {
-  margin-left: 2vw; }
+  margin-left: 1.7vw; }
 
 #disImg {
   width: 430px !important;
@@ -1153,7 +1165,7 @@ table tbody {
     max-width: 160px;
     background: #EDEDED;
     margin: 5px 2.7%;
-    font-size: 13px; }
+    font-size: 9.5px; }
     #flex-box .elem p {
       height: 50px; }
     #flex-box .elem div {
@@ -1169,6 +1181,7 @@ table tbody {
     #flex-box .elem bold {
       font-family: GeomB; }
     #flex-box .elem price {
+      white-space: nowrap;
       position: relative;
       font-family: GeomB; }
     #flex-box .elem img {
@@ -1234,11 +1247,11 @@ table tbody {
     margin: 40px 13.5%;
     transform: scale(1.37); }
   .flex-page #font-flex {
-    margin: 100px 9% 94px;
+    margin: 100px 8.5% 94px;
     transform: scale(1.2); } }
 
 @-moz-document url-prefix() {
   #flex-box .elem button {
-    right: -7px; } }
+    right: -2px; } }
 
 /*# sourceMappingURL=light.css.map */
