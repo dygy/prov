@@ -757,17 +757,18 @@ table {
 
 @media (min-width: 1700px) {
   table {
-    margin-left: -1vw;
-    margin-right: -1vw; } }
+    margin-left: -0.5vw;
+    margin-right: -0.5vw; } }
 
 .title .moreI {
+  margin-bottom: 20px;
   padding: 10px 15px;
   border: none;
   background-color: #ffb700;
   font-family: Geom;
   height: 50px;
   margin-top: 10px;
-  font-size: 15px !important; }
+  font-size: 22px !important; }
 
 #smth .buttonImg, #smth .calc, .smth .buttonImg, .smth .calc, .ntSmth .buttonImg, .ntSmth .calc {
   min-width: 140px;
@@ -1021,11 +1022,11 @@ table {
   .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 170px !important;
-    height: 50px !important;
+    height: 60px !important;
     min-width: 165px;
     min-height: 20px;
     max-width: 220px;
-    max-height: 50px; }
+    max-height: 60px; }
 
 .ulflex {
   display: flex;
@@ -1215,7 +1216,7 @@ table tbody {
       height: 30px !important;
       font-size: 18px !important; }
     table .main td {
-      font-size: 25px !important; }
+      font-size: 20px !important; }
   #smth {
     margin-bottom: 100px;
     height: 550px; }

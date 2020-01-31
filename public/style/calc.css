@@ -86,8 +86,8 @@ body {
   margin-top: 150px;
   max-width: 100%;
   width: 100vw;
-  font-family: "Geom", serif !important;
-  font-weight: 900; }
+  font-family: Geom !important;
+  font-weight: 400; }
 
 #header {
   z-index: 5;
@@ -731,13 +731,23 @@ body {
     font-size: 14px !important; } }
 
 .title .moreI {
+  margin-bottom: 20px;
   padding: 10px 15px;
   border: none;
   background-color: #ffb700;
   font-family: Geom;
   height: 50px;
   margin-top: 10px;
-  font-size: 15px !important; }
+  font-size: 22px !important; }
+
+.orderB {
+  color: white;
+  background-color: red;
+  border: none;
+  height: 45px;
+  font-size: 24px;
+  font-family: Geom;
+  width: 140px; }
 
 input[type='number'] {
   -moz-appearance: textfield; }
@@ -761,12 +771,16 @@ h1 {
   transform: rotate(2deg); }
 
 .selectable .elem:hover {
+  color: #ffb800;
+  text-decoration: underline #ffb800;
   border-color: orange !important; }
 
 .selectable .elem:active {
   border-color: #ffb800  !important; }
 
 .selectable .active {
+  color: #ffb800;
+  text-decoration: underline #ffb800;
   border-color: #ffb800  !important; }
 
 .calc-flex {
@@ -814,16 +828,14 @@ h1 {
     max-width: 100%; }
     .center .slider .elem {
       margin: 10px 15px 0;
-      width: 70px;
-      height: 70px;
-      border-width: 4px !important; }
+      width: 100px;
+      height: 100px; }
       .center .slider .elem p {
         position: relative;
-        top: 76px;
-        left: -7px;
+        top: 106px;
         font-size: 13px;
         margin-top: 0;
-        width: 120%; }
+        width: 100%; }
   .center .price-flex {
     display: flex;
     flex-flow: row;
@@ -860,12 +872,17 @@ p {
   margin-top: 5px;
   margin-bottom: 5px; }
 
+.selectable .slider {
+  margin-top: 20px; }
+  .selectable .slider .elem {
+    border: none; }
+
 input, .elem {
   outline: none;
-  border-radius: 20px;
   border: #abd4c7 1px solid; }
 
 input {
+  font-family: Geom;
   text-align: center;
   height: 30px;
   width: 160px; }
@@ -874,26 +891,48 @@ input {
   margin-left: 4px !important; }
 
 .flex-input {
+  width: 100%;
   display: inline-flex;
   justify-content: center; }
   .flex-input input {
+    width: 25%;
+    height: 60px;
+    font-size: 25px;
     margin: 0 1% 0; }
+
+.fonts .elem {
+  font-weight: 400; }
 
 .color {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 27%;
+  margin-right: 27%;
   padding-bottom: 5px; }
   .color .elem {
-    border: #abd4c7 3px solid;
-    border-radius: 10px;
-    width: 30px;
-    height: 30px;
-    margin: 20px;
-    text-align: center; }
+    width: 60px;
+    border: none;
+    height: 60px;
+    text-align: center;
+    margin: 10px; }
+  .color .elem:hover {
+    border-color: black !important; }
+  .color .active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: whitesmoke;
+    border-color: black !important;
+    text-decoration: none; }
+  .color .active:hover {
+    text-decoration: none;
+    color: whitesmoke; }
+  .color .none {
+    border: 1.5px solid;
+    color: black !important; }
   .color .yellow {
     background-color: #fff101; }
   .color .orange {

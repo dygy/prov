@@ -46,19 +46,19 @@ function calc2(cm) {
     if (request.also !=="фотодатчик"){
         if (request.font === "c засечками" || request.font === "курсив") {
             price= addZero(((request.razm * cm) * request.text.replace(' ','').length)* 1.3)
-            elem("right").innerText = price + " руб."
+            elem("right").innerText = price + " "
         } else {
             price= addZero((request.razm * cm)* request.text.replace(' ','').length)
-            elem("right").innerText = price + " руб."
+            elem("right").innerText = price + " "
         }
     }
     else{
         if (request.font === "c засечками" || request.font === "курсив") {
             price = addZero(((request.razm * cm) * request.text.replace(' ','').length)* 1.3 +3000)
-            elem("right").innerText = price + " руб."
+            elem("right").innerText = price + " "
         } else {
             price= addZero((request.razm * cm)* request.text.replace(' ','').length +3000)
-            elem("right").innerText = price + " руб."
+            elem("right").innerText = price + " "
         }
     }
 }
@@ -80,6 +80,9 @@ function addClass(elem) {
         getSlider(a)
     }
     elem.classList.add('active');
+    if (a.classList.contains("color")) {
+        elem.innerHTML = "<span>✓</span>"
+    }
 }
 function getSlider(elem) {
     for (let x=0;x<elem.childNodes.length;x++){
@@ -92,6 +95,9 @@ function removeKebab(slider) {
     for (let x=0;x<slider.childNodes.length;x++){
         if (slider.childNodes[x].classList.contains("active")){
             slider.childNodes[x].classList.remove("active")
+            if (slider.classList.contains("color")) {
+                slider.childNodes[x].innerHTML = ""
+            }
         }
     }
 
@@ -137,6 +143,14 @@ function  setFile(id){
 }
 
 function  setInput(id){
+    if (id==="razm"){
+        if (document.getElementById(id).value<0){
+            document.getElementById(id).value=0
+        }
+        else if( document.getElementById(id).value.toString().indexOf('e')===-1){
+           document.getElementById(id).value=  parseInt( document.getElementById(id).value)
+        }
+    }
     request[id]=document.getElementById(id).value;
 }
 function checkOrder() {

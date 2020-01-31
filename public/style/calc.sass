@@ -2,6 +2,14 @@
 @import "everypage/dropdown"
 @import "everypage/footer"
 @import "everypage/button"
+.orderB
+  color: white
+  background-color: red
+  border: none
+  height: 45px
+  font-size: 24px
+  font-family: Geom
+  width: 140px
 input[type='number']
   -moz-appearance: textfield
 input::-webkit-outer-spin-button,
@@ -21,10 +29,14 @@ h1
   transform: rotate(2deg)
 .selectable
   .elem:hover
+    color: #ffb800
+    text-decoration: underline #ffb800
     border-color: orange !important
   .elem:active
     border-color: #ffb800  !important
   .active
+    color: #ffb800
+    text-decoration: underline #ffb800
     border-color: #ffb800  !important
 .calc-flex
   display: flex
@@ -70,16 +82,15 @@ h1
     max-width: 100%
     .elem
       margin: 10px 15px 0
-      width: 70px
-      height: 70px
-      border-width: 4px !important
+      width: 100px
+      height: 100px
+      ///border-width: 4px !important
       p
         position: relative
-        top: 76px
-        left: -7px
+        top: 106px
         font-size: 13px
         margin-top: 0
-        width: 120%
+        width: 100%
   .price-flex
     display: flex
     flex-flow: row
@@ -115,11 +126,16 @@ h1
 p
   margin-top: 5px
   margin-bottom: 5px
+.selectable
+  .slider
+    margin-top: 20px
+    .elem
+      border: none
 input, .elem
   outline: none
-  border-radius: 20px
   border: #abd4c7 1px solid
 input
+  font-family: Geom
   text-align: center
   height: 30px
   width: 160px
@@ -127,25 +143,47 @@ input
   img
     margin-left: 4px!important
 .flex-input
+  width: 100%
   display: inline-flex
   justify-content: center
   input
+    width: 25%
+    height: 60px
+    font-size: 25px
     margin: 0 1% 0
+.fonts
+  .elem
+    font-weight: 400
 .color
   justify-content: center
   display: flex
   flex-wrap: wrap
   flex-direction: row
-  margin-left: 15%
-  margin-right: 15%
+  margin-left: 27%
+  margin-right: 27%
   padding-bottom: 5px
   .elem
-    border: #abd4c7 3px solid
-    border-radius: 10px
-    width: 30px
-    height: 30px
-    margin: 20px
+    width: 60px
+    border: none
+    height: 60px
     text-align: center
+    margin: 10px
+  .elem:hover
+    border-color: black!important
+  .active
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 40px
+    color: whitesmoke
+    border-color: black!important
+    text-decoration: none
+  .active:hover
+    text-decoration: none
+    color: whitesmoke
+  .none
+    border: 1.5px solid
+    color: black!important
   .yellow
     background-color: #fff101
   .orange

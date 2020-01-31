@@ -14,6 +14,8 @@
     text-decoration: #ffb700 underline
     color: #ffb700
 .smth
+  .leftflex
+    margin-left: 1vw
   .scroll-container
     height: 124px
     overflow-y: auto
@@ -29,7 +31,7 @@
       padding-left: 15px
       padding-right: 13px!important
   table
-    width: 97%
+    width: 98%
     margin-bottom: 0!important
     padding-top: 20px
     padding-left: 20px
@@ -66,18 +68,20 @@
   h1
     font-weight: 900
 .photoflex
-  margin: 30px -3vw!important
+  margin: 10px 0vw!important
   display: flex
   align-items: center
   justify-content: space-between
   .left,.right
-    height: 25px
-    width: 25px
+    height: 55px
+    width: 24px
     background-size: 100% 100%
   .left
+    //margin-right: -4%
     transform: rotate(180deg)
     background-image: url("../img/next.png")
   .right
+    //margin-left: -4%
     background-image: url("../img/next.png")
   img
     height: 150px
@@ -138,7 +142,7 @@
 @media ( min-width : 1700px )
   .smth
     table
-      padding-left: calc(1vw + 20px)
+      padding-left: calc(1vw + 10px)
   #spaceLight
     height: 47px!important
   #spaceSymb
@@ -154,7 +158,8 @@
     margin-top: 70px
     margin-bottom: 50px
     img
-      transform: scale(1.5)
+      height: 200px
+      width: 200px
 @media ( min-width : 1800px )
   .flex-page
     #smth

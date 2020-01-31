@@ -30,20 +30,13 @@ div(class="calc-flex" onclick=`calc("${title}")` oninput=`calc("${title}")`)
                 include ./calcs/plac'n'posts
             when 9
                 include ./calcs/autobrand
-        div(class="price-flex")
-            div
-                button требования к макетам
-            div
-                p ориентировочная цена:
-                div(class="orange")
-                    div(id="left") 0 руб.
-                    div(id="right") 0 руб.
-                div(class="nds")
-                    text с НДС
-                    text без НДС
-            div
-                button шаблон макета
-        div(style="margin-top:30px")
-            img( class="buttonImg" onclick="displayOrder()" src="../img/button.png")
+
+        p ориентировочная цена:
+        div
+           text(id="right" style="color:red") 0
+           text руб.
+        div(style="height:15px;width:15px")
+        button( class="orderB" onclick="displayOrder()" ) заказать
+        p(style="margin-top:10px; font-size:13px; transform:scale(0.7)!important; width: 400px;") СТОИМОСТЬ МОНТАЖНЫХ РАБОТ РАСЧИТЫВАЕТСЯ ПО ИНДИВИДУАЛЬНОМУ ПРОЕКТУ
 
 include footer

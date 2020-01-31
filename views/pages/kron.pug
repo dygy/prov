@@ -30,10 +30,9 @@ div(class="flex-page")
             p Панель-кронштейн — это односторонняя или двусторонняя конструкция, которая крепится к стенам домов и мачтам уличного освещения. Используется при размещении наружной рекламы. Данное изделие является разновидностью светового короба
             p Панель-кронштейны изготавливаются из тех же самых материалов, что и световые короба — акрил, полистирол, сотовый поликарбонат и баннерная ткань. Затем крепятся к стенездания или к столбу при помощи металлического каркаса.
             p Как правило, панель-кронштейн располагается перпендикулярно движению людского и транспортного потоков, и служит как в качестве рекламы, так и в качестве указателя. Панель-кронштейны являются одним из наиболее популярных видов наружной рекламы, они относительно недороги в изготовлении и эффективны, так как привлекают больше внимания, располагаясь перпендикулярно потоку людей или транспорта.
-
     div(class="title")
         h1 ПРИМЕРЫ НАШИХ РАБОТ
-    div(class="photoflex")
+    div(class="photoflex" id="toHide")
         div(class='left' onclick="newRow('lights',false)")
         img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
         img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
@@ -41,8 +40,30 @@ div(class="flex-page")
         img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
         img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
         div(class='right' onclick="newRow('lights',true)")
+    div(id="hidden" style='display:none')
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
     div(class="title")
-        button(class="moreI" onclick="")
+        button(class="moreI" onclick="hidePhoto()")
             text показать еще
             text(class="arrow") «
     div(class="title")

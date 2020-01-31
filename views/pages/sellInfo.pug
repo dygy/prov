@@ -16,7 +16,7 @@ style.
             height: 555px;
         }
         #smth .rightflex .flexbuts .buttonImg, #smth .rightflex .flexbuts .calc{
-            height: 48px!important;
+            height: 61px!important;
         }
     }
 script(src='../js/index.js')
@@ -24,7 +24,7 @@ script(src='../js/Global.js')
 script(src='../js/switcher.js')
 div(class="flex-page")
     div(class="title")
-        h1=title
+        h1=title.toUpperCase()
     div(id="smth")
         div(class="imgSwitcher")
             div(class="mid-layout")
@@ -44,7 +44,7 @@ div(class="flex-page")
                 img(src="../img/4/nakOk.jpg"  class="smthImg" style="display:none")
         div(class="rightflex")
             div(class="content-container")
-                if title === " ВХОДНЫЕ ГРУППЫ"
+                if title === " Входные группы"
                     include ../content/input/mainInfo
                 else if title === " НАКЛЕЙКИ НА ОКНА"
                     include ../content/nakOk/mainInfo
@@ -102,10 +102,10 @@ div(class="flex-page")
         h2
             text ЦЕНЫ НА
             span
-            tov=title
+            tov=title.toUpperCase()
     br
     table
-        if title === " ВХОДНЫЕ ГРУППЫ"
+        if title === " Входные группы"
             include ../content/input/table
         else if title === " НАКЛЕЙКИ НА ОКНА"
             include ../content/nakOk/table
@@ -122,7 +122,7 @@ div(class="flex-page")
         else
             include ../content/lakpv/table
     div(id="content-container")
-        if title === " ВХОДНЫЕ ГРУППЫ"
+        if title === " Входные группы"
             include ../content/input/secText
         else if title === " НАКЛЕЙКИ НА ОКНА"
             include ../content/nakOk/secText
@@ -150,7 +150,8 @@ div(class="flex-page")
             include ../content/font/neon/secText
         else if title === 'ОБЪЕМНЫЙ БУКВЫ С ОТКРЫТЫМИ СВЕТОДИОДАМИ'
             include ../content/font/svet/secText
-
+        else if title === 'ОБЪЕМНЫЙ БУКВЫ РЕТРО'
+            include ../content/font/svet/secText
 
     div(class="title")
         h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
@@ -225,3 +226,4 @@ if calcURL
 else
     script.
         elems("calc")[0].onclick= function (){displaySell()}
+include ../footer

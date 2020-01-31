@@ -14,11 +14,11 @@
   .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 170px !important;
-    height: 50px !important;
+    height: 60px !important;
     min-width: 165px;
     min-height: 20px;
     max-width: 220px;
-    max-height: 50px; }
+    max-height: 60px; }
 
 html {
   min-height: 100%;
@@ -374,7 +374,7 @@ body {
     height: 20px !important;
     width: 20px !important;
     left: 49.7%;
-    top: -268px !important; }
+    top: -276px !important; }
   #order .jc {
     justify-content: center;
     align-items: center;
@@ -446,6 +446,8 @@ body {
     #order .checkbox input[type=checkbox]:checked + label:after {
       opacity: 1; }
   #order .butImg {
+    position: relative;
+    top: -12px;
     height: 30px;
     width: 125px; }
   #order h4 {
@@ -453,7 +455,9 @@ body {
     text-align: initial;
     margin-left: 20px;
     margin-top: 15px;
-    margin-bottom: 0px; }
+    padding-top: 10px;
+    margin-bottom: 0px;
+    font-size: 10px; }
   #order .flexput {
     margin: 10px 20px;
     display: flex;

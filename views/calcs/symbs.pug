@@ -13,8 +13,6 @@ p форма изделия:
                 p металл + контражур
             div(class="elem" id="a6" onclick="request.formI='акрил+ПВХ';addClass(this)")
                 p акрил+ПВХ
-            div(class="elem" id="a7" onclick="request.formI='дерево';addClass(this)")
-                p дерево
         div(class="slider")
             div(class="elem" id="a8" onclick="request.formI='ПВХ + контражур';addClass(this)")
                 p ПВХ + контражур
@@ -26,25 +24,29 @@ p форма изделия:
                 p открытый неон
             div(class="elem" id="a12" onclick="request.formI='металл';addClass(this)")
                 p металл
-            div(class="elem" id="a13" onclick="request.formI='пенопласт';addClass(this)")
-                p пенопласт
             div(class="elem" id="a14" onclick="request.formI='ПВХ';addClass(this)")
                 p ПВХ
     p
-    p текст вывески:
+        br
+        br
+    p ВВЕДИТЕ ТЕКСТ ВЫВЕСКИ
     div(class="flex-input")
         input(id="text" oninput="setInput('text'); elem('output').innerText=elem('text').value")
-    p высота букв (см):
+    p
+        br
+    p УКАЖИТЕ ВЫСОТУ ВЫСЕКИ (СМ)
     div(class="flex-input")
         input(id="razm" oninput="setInput('razm');" type="number")
-
-
-    p шрифт вывески:
-    div(class="selectable selector")
+    p
+        br
+    p УКАЖИТЕ ТИП ШРИФТА ВЫВЕСКИ
+    div(class="selectable selector fonts")
         div(class="elem" onclick="request.font='прямой'     ; setOutput('Arial');addClass(this)"     ) прямой
-        div(class="elem" onclick="request.font='c засечками'; setOutput('Times');addClass(this)" style="min-width:100px") c засечками
-        div(class="elem" onclick="request.font='курсив'     ;setOutput('italic');addClass(this)" ) курсив
-    p лицевой цвет:
+        div(class="elem" onclick="request.font='c засечками'; setOutput('Times');addClass(this)" style="min-width:100px; font-family: New-Roman;") c засечками
+        div(class="elem" onclick="request.font='курсив'     ;setOutput('italic');addClass(this)" style="font-style:italic") курсив
+    p
+        br
+    p ВЫБЕРЕТЕ ЛИЦЕВОЙ ЦВЕТ
     div(class="selectable color")
         div(class="elem none"     onclick="request.color='1' ;setColor('white')  ;addClass(this)")
         div(class="elem yellow"   onclick="request.color='2' ;setColor('#fff101');addClass(this)")
@@ -60,19 +62,7 @@ p форма изделия:
         div(class="elem brown"    onclick="request.color='12';setColor('#3c001c');addClass(this)")
         div(class="elem ascalc"   onclick="request.color='13';setColor('#81beaa');addClass(this)")
         div(class="elem gradient" onclick="request.color='14';setColor('pig    ');addClass(this)")
-        div(class="elem darkgr"   onclick="request.color='15';setColor('#3b3b3b');addClass(this)")
-        div(class="elem gray"     onclick="request.color='16';setColor('#474747');addClass(this)")
-        div(class="elem lightgr"  onclick="request.color='17';setColor('#757d7a');addClass(this)")
-        div(class="elem smth1"    onclick="request.color='18'")
-        div(class="elem smth2"    onclick="request.color='19'")
-        div(class="elem smth3"    onclick="request.color='20'")
-        div(class="elem smth4"    onclick="request.color='21'")
-        div(class="elem smth5"    onclick="request.color='22'")
-        div(class="elem smth6"    onclick="request.color='23'")
-        div(class="elem smth7"    onclick="request.color='24'")
-        div(class="elem smth8"    onclick="request.color='25'")
-        div(class="elem smth9"    onclick="request.color='26'")
-    p торцевой цвет:
+    p ВЫБЕРЕТЕ ТОРЦЕВОЙ ЦВЕТ
     div(class="selectable color")
         div(class="elem none"     onclick="request.troev='1' ;setBorder('white')  ;addClass(this)")
         div(class="elem yellow"   onclick="request.troev='2' ;setBorder('#fff101');addClass(this)")
@@ -88,19 +78,7 @@ p форма изделия:
         div(class="elem brown"    onclick="request.troev='12';setBorder('#3c001c');addClass(this)")
         div(class="elem ascalc"   onclick="request.troev='13';setBorder('#81beaa');addClass(this)")
         div(class="elem gradient" onclick="request.troev='14';setBorder('pig    ');addClass(this)")
-        div(class="elem darkgr"   onclick="request.troev='15';setBorder('#3b3b3b');addClass(this)")
-        div(class="elem gray"     onclick="request.troev='16';setBorder('#474747');addClass(this)")
-        div(class="elem lightgr"  onclick="request.troev='17';setBorder('#757d7a');addClass(this)")
-        div(class="elem smth1"    onclick="request.troev='18'")
-        div(class="elem smth2"    onclick="request.troev='19'")
-        div(class="elem smth3"    onclick="request.troev='20'")
-        div(class="elem smth4"    onclick="request.troev='21'")
-        div(class="elem smth5"    onclick="request.troev='22'")
-        div(class="elem smth6"    onclick="request.troev='23'")
-        div(class="elem smth7"    onclick="request.troev='24'")
-        div(class="elem smth8"    onclick="request.troev='25'")
-        div(class="elem smth9"    onclick="request.troev='26'")
-    p цвет контражура:
+    p ВЫБЕРЕТЕ ЦВЕТ КОНТРАЖУРА
     div(class="selectable color" )
         div(class="elem none"     onclick="request.contur='1' ;setShadow('white')  ;addClass(this)")
         div(class="elem yellow"   onclick="request.contur='2' ;setShadow('#fff101');addClass(this)")
@@ -116,18 +94,11 @@ p форма изделия:
         div(class="elem brown"    onclick="request.contur='12';setShadow('#3c001c');addClass(this)")
         div(class="elem ascalc"   onclick="request.contur='13';setShadow('#81beaa');addClass(this)")
         div(class="elem gradient" onclick="request.contur='14';setShadow('pig    ');addClass(this)")
-        div(class="elem darkgr"   onclick="request.contur='15';setShadow('#3b3b3b');addClass(this)")
-        div(class="elem gray"     onclick="request.contur='16';setShadow('#474747');addClass(this)")
-        div(class="elem lightgr"  onclick="request.contur='17';setShadow('#757d7a');addClass(this)")
-        div(class="elem smth1" onclick="request.contur='18'")
-        div(class="elem smth2" onclick="request.contur='19'")
-        div(class="elem smth3" onclick="request.contur='20'")
-        div(class="elem smth4" onclick="request.contur='21'")
-        div(class="elem smth5" onclick="request.contur='22'")
-        div(class="elem smth6" onclick="request.contur='23'")
-        div(class="elem smth7" onclick="request.contur='24'")
-        div(class="elem smth8" onclick="request.contur='25'")
-        div(class="elem smth9" onclick="request.contur='26'")
+    p
+        br
+    p ВИЗУАЛИЗАЦИЯ ВЫВЕСКИ
+
+    div(id="output")
     //
         div(class="selector selectable")
             div(class="elem" onclick="request.height='до 15см';addClass(this)") до 15см
@@ -138,18 +109,18 @@ p форма изделия:
             div(class="elem" onclick="request.height='до 70 см';addClass(this)") до 70 см
             div(class="elem" onclick="request.height='до 80 см';addClass(this)") до 80 см
             div(class="elem" onclick="request.height='больше 1м';addClass(this)") больше 1м
-    p дополнительные опции:
-    div(class="selector selectable")
-        div(class="elem" onclick="request.also='ничего';addClass(this)") ничего
-        div(class="elem" onclick="request.also='фотодатчик';addClass(this)" style="min-width:165px !important") датчик "день/ночь"
-    div(id="output")
+    //  p дополнительные опции:
+        div(class="selector selectable")
+            div(class="elem" onclick="request.also='ничего';addClass(this)") ничего
+            div(class="elem" onclick="request.also='фотодатчик';addClass(this)" style="min-width:165px !important") датчик "день/ночь"
+
 style(type='text/css').
     @media (min-width: 1700px) {
         .calc-flex {
-            margin-top: 750px;
+            margin-top: 600px;
             margin-bottom: -30%;
         }
         #footer {
-            bottom: -1350px;
+            bottom: -950px;
         }
     }
