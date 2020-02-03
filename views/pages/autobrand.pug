@@ -1,116 +1,154 @@
-link(rel='stylesheet', href='/style/auto.css')
+link(rel='stylesheet', href='/style/light.css')
 include ../slider
 include ../header
+style.
+    @media ( min-width: 1700px ) {
+        .flex-page #font-flex{
+            margin-top: 40px;
+        }
+    }
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
-
 div(class="flex-page")
     div(class="title")
-        h1 АВТОБРЕНДИРОВАНИЕ
+        h1=title.toUpperCase()
     div(id="font-flex")
         div(class="elem")
+            img(src="../img/nav/Nav10.png")
+            br
+            strong ЛАЙТБОКСЫ И ШАШКИ
             div
-                strong ЛАЙТБОКСЫ
-            img(src="../img/auto/auto4.png")
-            p цена несветовой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/autobrand')")
+                button(class="more" onclick="displayMessageC('Раздел временно отсутствует')")
+                    text подробнее
+                    text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
+            img(src="../img/nav/Nav21.png")
+            br
+            strong ПЕЧАТЬ НА ТЕНТАХ
             div
-                strong ШАШЕЧКИ
-            img(src="../img/auto/auto3.png")
-            p цена несветовой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/autobrand')")
+                button(class="more" onclick="displayMessageC('Раздел временно отсутствует')")
+                    text подробнее
+                    text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
+            img(src="../img/nav/Nav12.png")
+            br
+            strong ОКЛЕЙКА АВТО ПЛЕНКОЙ
             div
-                strong НАКЛЕЙКИ
-            img(src="../img/auto/auto5.png")
-            p цена несветовой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/autobrand')")
+                button(class="more" onclick="displayMessageC('Раздел временно отсутствует')")
+                    text подробнее
+                    text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ПЛЕНКА
-            img(src="../img/auto/auto2.png")
-            p цена несветовой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/autobrand')")
-                button(class="buy" onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ПЛЕНКА НА ОКНА
-            img(src="../img/auto/auto1.png")
-            p цена несветовой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/autobrand')")
-                button(class="buy" onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ПЕЧАТЬ НА ТЕНТАХ
-            img(src="../img/auto/auto6.png")
-            p цена несветовой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="moveTo('./calc/autobrand')")
-                button(class="buy" onclick="displayOrder()") заказать
+    div(class="title")
+        h2
+            text ЦЕНЫ НА
+            text=title.toUpperCase()
+    table
+        tr(class="main blue")
+            td тип
+            td(class="price") цена
+        tr
+            td Лайтбоксы и шашки
+            td(class="price")
+                text от 5000 руб
+        tr(class="blue")
+            td Печать на тентах
+            td(class="price")
+                text от 1800 руб/м
+                sup 2
+        tr
+            td Оклейка авто пленкой
+            td(class="price")
+                text от 1520 руб / м
+                sup 2
+        tr(class="blue")
+            td
+            td(class="price")
+                text
 
     div(id="smth")
-        img(src="../img/auto/auto13.png" class="smthImg")
-        div
-            p Следует отметить, что обычно оклеивается автомобиль с  помощью специальной виниловой пленки, имеющей хорошую устойчивость к воздействию как лютого мороза, так и палящего солнца. Более того, насыщенность цветов и оттенков позволяет достаточно ярко представить такую рекламу, повысив, таким образом, узнаваемость среди окружающих. Доверяя такую ответственную работу мастерам нашей компании, заказчик делает правильный выбор, поскольку у нас есть все необходимое материально техническое оснащение для воспроизведения требуемых изображений на пленке.
-            div
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/content410.jpg" class="smthImg")
+            img(src="../img/4/content410.jpg"  class="smthImg" style="display:none")
+            img(src="../img/4/content410.jpg"  class="smthImg" style="display:none")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Реклама на автомобиле – это эффективный и малозатратный способ увеличить узнаваемость бренда, ознакомить потенциального потребителя с новым продуктом и выделиться среди конкурентов. В современном бизнесе автомобили в качестве рекламного носителя успешно используют как небольшие, так и крупные компании Москвы.
+                p Следует отметить, что обычно оклеивается автомобиль с помощью специальной виниловой пленки, имеющей хорошую устойчивость к воздействию как лютого мороза, так и палящего солнца. Более того, насыщенность цветов и оттенков позволяет достаточно ярко представить такую рекламу, повысив, таким образом, узнаваемость среди окружающих.
+            div(class='flexbuts' style="margin-top:90px")
+                img(class="calc" src='/img/calc.png' onclick="displayMessage('Калькулятор временно отсутствует')")
+                img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
 
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
     div(id="flex-box")
         div(class="elem")
-            img(src="../img/auto/auto7.png")
+            img(src="../img/4/content411.png")
             br
-            p
-                strong Кузов
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/auto/auto10.png")
+            img(src="../img/4/content412.png")
             br
-            p
-                strong Наклейка на авто
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()")  заказать
-        div(class="elem")
-            img(src="../img/auto/auto9.png")
-            br
-            p
-                strong Пленка на авто
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/auto/auto11.png")
+            img(src="../img/4/content413.png")
             br
-            p
-                strong Шашечки на такси
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/auto/auto12.png")
+            img(src="../img/4/content414.png")
             br
-            p
-                strong Лайтбокс на авто
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/auto/auto8.png")
+            img(src="../img/4/content415.png")
             br
-            p
-                strong Пленка на авто
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать

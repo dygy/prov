@@ -1127,6 +1127,7 @@ table tbody {
       height: 250px;
       margin-bottom: 15px; }
     #font-flex .elem strong {
+      font-weight: 100;
       font-family: GeomB;
       padding-left: 10px;
       font-size: 14px; }

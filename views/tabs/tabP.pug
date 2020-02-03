@@ -4,21 +4,32 @@ include ../header
 script(src='../js/index.js')
 script(src='../js/Global.js')
 script(src='../js/switcher.js')
+style.
+    .smth table tbody tr .price{
+        width: 8%;
+
+    }
+    .smth table tbody tr .name {
+        width: 32%;
+    }
+    .smth .scroll-container{
+        height: 220px;
+    }
 div(class="flex-page")
     div(class="title")
         h1 ПЛАСТИКОВЫЕ ТАБЛИЧКИ
     div(id="smth")
         div(class="imgSwitcher")
             div(class="mid-layout")
-                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
-                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+                img(src="/img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="/img/next.png" class="next" onclick="switchImg(true)")
             div(class="down-layout")
-                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
-                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
-                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
-            img( src="../img/4/top.jpg" class="smthImg")
-            img(src="../img/4/content2.png"  class="smthImg" style="display:none")
-            img(src="../img/4/content1.jpg"  class="smthImg" style="display:none")
+                img(src="/img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="/img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="/img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="/img/4/top.jpg" class="smthImg")
+            img(src="/img/4/content2.png"  class="smthImg" style="display:none")
+            img(src="/img/4/content1.jpg"  class="smthImg" style="display:none")
         div
             p Пластиковые таблички являются недорогим практичным решением как для внутриофисного использования, так и для монтажа на фасадах зданий. В качестве основы используется высокопрочный ПВХ либо двухслойный пластик Rowmark. Материал не боится влаги, не ржавеет и не бьется, отличается малым собственным весом и легкостью в технологической обработке.
             p Изображение наносится на композитную основу лазерным лучом, оставляющим исключительно ровный черный след. За счет верхнего металлизированного слоя готовые пластиковые таблички смотрятся дорого и стильно. Возможно нанесение дополнительных цветов с помощью виниловой пленки.
@@ -27,34 +38,34 @@ div(class="flex-page")
         h1 ПРИМЕРЫ НАШИХ РАБОТ
     div(class="photoflex" id="toHide")
         div(class='left' onclick="newRow('lights',false)")
-        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
-        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
-        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
-        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
-        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        img(class="lights" src="/img/vivs/sk1.jpg" onclick="displayImg('/img/vivs/sk1.jpg')")
+        img(class="lights" src="/img/vivs/sk2.jpg" onclick="displayImg('/img/vivs/sk2.jpg')")
+        img(class="lights" src="/img/vivs/sk3.jpg" onclick="displayImg('/img/vivs/sk3.jpg')")
+        img(class="lights" src="/img/vivs/sk4.jpg" onclick="displayImg('/img/vivs/sk4.jpg')")
+        img(class="lights" src="/img/vivs/sk5.jpg" onclick="displayImg('/img/vivs/sk5.jpg')")
         div(class='right' onclick="newRow('lights',true)")
     div(id="hidden" style='display:none')
         br
         div(class="photoflex")
-            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
-            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
-            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
-            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
-            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+            img(class="lights" src="/img/vivs/sk1.jpg" onclick="displayImg('/img/vivs/sk1.jpg')")
+            img(class="lights" src="/img/vivs/sk2.jpg" onclick="displayImg('/img/vivs/sk2.jpg')")
+            img(class="lights" src="/img/vivs/sk3.jpg" onclick="displayImg('/img/vivs/sk3.jpg')")
+            img(class="lights" src="/img/vivs/sk4.jpg" onclick="displayImg('/img/vivs/sk4.jpg')")
+            img(class="lights" src="/img/vivs/sk5.jpg" onclick="displayImg('/img/vivs/sk5.jpg')")
         br
         div(class="photoflex")
-            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
-            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
-            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
-            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
-            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+            img(class="lights" src="/img/vivs/sk1.jpg" onclick="displayImg('/img/vivs/sk1.jpg')")
+            img(class="lights" src="/img/vivs/sk2.jpg" onclick="displayImg('/img/vivs/sk2.jpg')")
+            img(class="lights" src="/img/vivs/sk3.jpg" onclick="displayImg('/img/vivs/sk3.jpg')")
+            img(class="lights" src="/img/vivs/sk4.jpg" onclick="displayImg('/img/vivs/sk4.jpg')")
+            img(class="lights" src="/img/vivs/sk5.jpg" onclick="displayImg('/img/vivs/sk5.jpg')")
         br
         div(class="photoflex")
-            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
-            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
-            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
-            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
-            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+            img(class="lights" src="/img/vivs/sk1.jpg" onclick="displayImg('/img/vivs/sk1.jpg')")
+            img(class="lights" src="/img/vivs/sk2.jpg" onclick="displayImg('/img/vivs/sk2.jpg')")
+            img(class="lights" src="/img/vivs/sk3.jpg" onclick="displayImg('/img/vivs/sk3.jpg')")
+            img(class="lights" src="/img/vivs/sk4.jpg" onclick="displayImg('/img/vivs/sk4.jpg')")
+            img(class="lights" src="/img/vivs/sk5.jpg" onclick="displayImg('/img/vivs/sk5.jpg')")
     div(class="title")
         button(class="moreI" onclick="hidePhoto()")
             text показать еще
@@ -108,8 +119,8 @@ div(class="flex-page")
                     div(class="dot")
                     div(class="dot")
             div(class="flexbuts")
-                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("/calc/symbs")')
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("/calc/tables")')
+                img( class="buttonImg" src="/img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
                 p Пластиковые таблички являются недорогим практичным решением как для внутриофисного использования, так и для монтажа на фасадах зданий. В качестве основы используется высокопрочный ПВХ либо двухслойный пластик Rowmark. Материал не боится влаги, не ржавеет и не бьется, отличается малым собственным весом и легкостью в технологической обработке.
@@ -143,8 +154,8 @@ div(class="flex-page")
                     div(class="dot")
                     div(class="dot")
             div(class="flexbuts")
-                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("./calc/kron")')
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+                img(class="calc" src='/img/rasbutton.png' onclick='moveTo("/calc/tables")')
+                img( class="buttonImg" src="/img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
                 p Таблички из нержавеющей стали прекрасно подходят как для использования внутри помещения, так и на улице. Фасадные таблички, выполненные из этого долговечного и легкого материала, не подвержены коррозии, не боятся солнца и мороза, и замечательно выглядят, могут иметь золотистый либо посеребренный фон.
@@ -180,7 +191,7 @@ div(class="flex-page")
                     div(class="dot")
             div(class="flexbuts")
                 img(class="calc" src='/img/rasbutton.png' onclick='displayMessage("Калькулятор временно в разработке")')
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+                img( class="buttonImg" src="/img/button.png" onclick="displayOrder()")
         div(class="rightflex")
             div(class="scroll-container")
                 p Таблички из нержавеющей стали прекрасно подходят как для использования внутри помещения, так и на улице. Фасадные таблички, выполненные из этого долговечного и легкого материала, не подвержены коррозии, не боятся солнца и мороза, и замечательно выглядят, могут иметь золотистый либо посеребренный фон.
@@ -228,7 +239,7 @@ div(class="flex-page")
         h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
     div(id="flex-box")
         div(class="elem")
-            img(src="../img/4/content411.png")
+            img(src="/img/4/content411.png")
             br
             bold Обьемные буквы
             p из орг. стекла с лицевой подсветкой высота букв 20см
@@ -236,7 +247,7 @@ div(class="flex-page")
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/4/content412.png")
+            img(src="/img/4/content412.png")
             br
             bold Обьемные буквы
             p из орг. стекла с лицевой подсветкой высота букв 20см
@@ -252,7 +263,7 @@ div(class="flex-page")
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/4/content414.png")
+            img(src="/img/4/content414.png")
             br
             bold Обьемные буквы
             p из орг. стекла с лицевой подсветкой высота букв 20см
@@ -260,7 +271,7 @@ div(class="flex-page")
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/4/content415.png")
+            img(src="/img/4/content415.png")
             br
             bold Обьемные буквы
             p из орг. стекла с лицевой подсветкой высота букв 20см
