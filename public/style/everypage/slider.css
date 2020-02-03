@@ -273,7 +273,7 @@ body {
     border: 1px black;
     box-shadow: 1px 1px 4px black;
     border-radius: 2px; }
-    #full-page #message #messageText, #full-page #messageC #messageText {
+    #full-page #message #messageText, #full-page #message #messageTextC, #full-page #messageC #messageText, #full-page #messageC #messageTextC {
       width: 100%;
       font-size: 20px;
       text-align: center;

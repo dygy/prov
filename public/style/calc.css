@@ -523,10 +523,13 @@ body {
   align-content: center;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: auto;
   margin: 0 0 10px 0 !important;
   padding: 11px 20px;
   border: 1px solid  #ecb62b; }
+  .brd city, .brd email {
+    margin-top: 3px;
+    margin-bottom: 3px; }
 
 #footer {
   padding-left: 15vw;
@@ -824,13 +827,11 @@ h1 {
       align-content: center;
       align-items: center;
       justify-content: center;
-      min-width: 88px;
+      width: auto;
+      min-width: 90px;
       min-height: 23px;
       padding: 10px;
       margin: 10px 10px 0; }
-      .center .selector .elem text {
-        margin-left: 10px;
-        margin-right: 10px; }
   .center .slider {
     min-height: 120px;
     display: flex;
@@ -904,12 +905,15 @@ input {
 .flex-input {
   width: 100%;
   display: inline-flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   .flex-input input {
     width: 25%;
     height: 60px;
     font-size: 25px;
     margin: 0 1% 0; }
+  .flex-input #sizeX, .flex-input #sizeY, .flex-input #oblast1, .flex-input #oblast2 {
+    width: 10%; }
 
 .fonts .elem {
   font-weight: 400; }
@@ -1068,6 +1072,7 @@ input {
     margin-left: 35%;
     margin-right: 35%; }
   .calc-flex {
+    max-width: 100vw;
     transform: scale(1.7); }
   .buttonImg {
     height: 2vw !important;
