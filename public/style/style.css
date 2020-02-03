@@ -523,10 +523,13 @@ body {
   align-content: center;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: auto;
   margin: 0 0 10px 0 !important;
   padding: 11px 20px;
   border: 1px solid  #ecb62b; }
+  .brd city, .brd email {
+    margin-top: 3px;
+    margin-bottom: 3px; }
 
 #footer {
   padding-left: 15vw;
@@ -544,13 +547,17 @@ body {
     float: left;
     width: 74%; }
   #footer .ftr-right {
-    width: 21%;
+    width: 25%;
     padding-top: 50px;
     float: right;
     display: flex;
     justify-content: right; }
     #footer .ftr-right .phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
       text-align: center;
+      align-items: flex-end;
       white-space: nowrap; }
       #footer .ftr-right .phone phone {
         font-family: GeomB;
@@ -735,6 +742,7 @@ body {
   .ftr-right .phone {
     width: 320px; }
     .ftr-right .phone .brd {
+      width: 200px;
       font-weight: 900;
       margin: 0 0 30px 0 !important;
       height: 100px; }

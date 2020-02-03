@@ -112,7 +112,7 @@ router.get('/lightpan', function(req, res, next) {
 });
 
 router.get('/mobstand', function(req, res, next) {
-    res.render('./pages/mobstand', { title: ' Мобильниые стенды' });
+    res.render('./pages/mobstand', { title: 'ROLL-UP' });
 });
 router.get('/kron', function(req, res, next) {
     res.render('./pages/kron', { title: ' Панель-кронштейн' });
