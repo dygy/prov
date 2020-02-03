@@ -106,24 +106,28 @@
     #smth .smthImg {
       margin-top: -20px !important;
       bottom: 33px !important; }
-  .flex-page .smth .leftflex .flexbuts {
-    width: 85%;
-    margin-left: 36%;
-    margin-right: 36%;
-    justify-content: space-evenly !important;
-    margin-bottom: 20px; }
-  .flex-page .smth .rightflex .scroll-container {
-    overflow-y: hidden;
-    height: auto; }
-  .flex-page .smth .rightflex table {
-    width: 100%;
-    padding-left: 31px;
-    padding-top: 0;
-    position: relative !important; } }
+  .flex-page .smth {
+    margin-bottom: 10px;
+    margin-top: 0; }
+    .flex-page .smth .leftflex {
+      margin-left: 0; }
+      .flex-page .smth .leftflex .flexbuts {
+        width: 85%;
+        margin-left: 36%;
+        margin-right: 36%;
+        justify-content: space-evenly !important;
+        margin-bottom: 20px; }
+    .flex-page .smth .rightflex .scroll-container {
+      padding-top: 0;
+      overflow-y: hidden;
+      height: auto; }
+    .flex-page .smth .rightflex table {
+      width: 100%;
+      padding-left: 15px;
+      padding-top: 0;
+      position: relative !important; } }
 
 @media (max-width: 1000px) {
-  .smth .rightflex table {
-    padding-left: 10px; }
   .photoflex img {
     height: 100px !important;
     width: 100px !important; } }
@@ -172,5 +176,19 @@
 @-moz-document url-prefix() {
   .smth table {
     width: 100%; } }
+
+@media (max-width: 600px) {
+  .flex-page {
+    margin-left: 0;
+    margin-right: 0; }
+    .flex-page .smth .leftflex .flexbuts {
+      width: 125%;
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: space-between !important; }
+      .flex-page .smth .leftflex .flexbuts .calc .buttonImg {
+        min-height: 35px !important;
+        height: 35px !important;
+        width: 120px !important; } }
 
 /*# sourceMappingURL=viv.css.map */

@@ -340,6 +340,8 @@ body {
     font-size: 13px !important; } }
 
 @media (max-width: 846px) {
+  #routing {
+    margin-top: 168px !important; }
   #first #logo-warp {
     margin: 0 0 0 0 !important; }
   #second ul .scli {
@@ -1058,6 +1060,14 @@ table {
       padding: 10px 0;
       font-weight: 900; }
 
+@media (max-width: 750px) {
+  .ulflex {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; }
+    .ulflex ul {
+      font-size: 13px; } }
+
 .flex-page {
   display: flex;
   flex-flow: column;
@@ -1173,7 +1183,8 @@ table tbody {
     max-width: 11vw;
     background: #EDEDED;
     margin: 5px 2.7%;
-    font-size: 11px; }
+    font-size: 11px;
+    min-width: 70px; }
     #flex-box .elem p {
       height: 50px; }
     #flex-box .elem div {
@@ -1191,6 +1202,8 @@ table tbody {
       position: relative;
       font-family: GeomB; }
     #flex-box .elem img {
+      min-width: 70px;
+      min-height: 30px;
       width: 11vw;
       height: 7.5vw; }
     #flex-box .elem button {

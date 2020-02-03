@@ -116,7 +116,10 @@
       bottom: 33px!important
   .flex-page
     .smth
+      margin-bottom: 10px
+      margin-top: 0
       .leftflex
+        margin-left: 0
         .flexbuts
           width: 85%
           margin-left: 36%
@@ -125,18 +128,15 @@
           margin-bottom: 20px
       .rightflex
         .scroll-container
+          padding-top: 0
           overflow-y: hidden
           height: auto
         table
           width: 100%
-          padding-left: 31px
+          padding-left: 15px
           padding-top: 0
           position: relative!important
 @media ( max-width : 1000px )
-  .smth
-    .rightflex
-      table
-        padding-left: 10px
   .photoflex
     img
       height: 100px!important
@@ -190,3 +190,19 @@
   .smth
     table
       width: 100%
+
+@media (max-width: 600px)
+  .flex-page
+    margin-left: 0
+    margin-right: 0
+    .smth
+      .leftflex
+        .flexbuts
+          width: 125%
+          margin-left: 0
+          margin-right: 0
+          justify-content: space-between!important
+          .calc .buttonImg
+            min-height: 35px!important
+            height: 35px!important
+            width: 120px!important
