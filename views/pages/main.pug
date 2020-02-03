@@ -295,7 +295,7 @@ block serve
                             text КРОНШТЕЙНЫ
                         li(onclick="moveTo('/pilon')")
                             text РЕКЛАМНЫЕ ПИЛОНЫ
-            div(class="polaroid")
+            div(class="polaroid" onclick="moveTo('/inputgroup')")
                 img(src="/img/enters.jpg")
                 p ВХОДНЫЕ ГРУППЫ
                 div(class="serv-list")
@@ -304,10 +304,6 @@ block serve
                             text ВЫВЕСКИ
                         li
                             text КОЗЫРЬКИ
-                        li(onclick="moveTo('/shtender')")
-                            text ШТЕНДЕРЫ
-                        li
-                            text ШИРОКОФОРМАТ
                         li(onclick="moveTo('/table')")
                             text ТАБЛИЧКИ
 
@@ -333,10 +329,8 @@ block serve
                     ul
                         li(onclick="moveTo('/presswall')")
                             text ПРЕСС-ВОЛЛЫ
-                        li
+                        li(onclick="moveTo('/mobstand')")
                             text РОЛЛАПЫ
-                        li
-                            text ШТЕНДЕРЫ
                         li(onclick="moveTo('/stands')")
                             text СТЕНДЫ
         div(id="kach")
