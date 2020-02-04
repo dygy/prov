@@ -1,7 +1,6 @@
 {
-  "name": "stolic-pechat",
+  "name": "@dygy/stolic-pechat",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index"
@@ -19,5 +18,14 @@
     "sendmail": "^1.6.1",
     "filereader": "^0.10.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dygy/stolic-pechat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dygy/stolic-pechat/issues"
+  },
+  "homepage": "https://github.com/dygy/stolic-pechat#readme",
+  "description": ""
 }
