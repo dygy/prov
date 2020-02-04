@@ -7,7 +7,7 @@ const router = express.Router();
     res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА С МЕТАЛЛОМ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
-        href: '/font',
+        href: '/fonts',
         price: "от 125 руб/см",
         calcURL:"/calc/symbs",
         imgURL:['/img/fonttitle/akmet1.png','/img/fonttitle/akmet2.png','/img/fonttitle/akmet3.png' ],
@@ -33,7 +33,7 @@ router.get('/ak', function(req, res, next) {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
         price: "от 100 руб/см",
-        href: '/font',
+        href: '/fonts',
         calcURL:"/calc/symbs",
         imgURL:['/img/fonttitle/ak1.png','/img/fonttitle/ak2.png','/img/fonttitle/ak3.png' ],
         ul:["Срок службы — до 10 лет",
@@ -56,7 +56,7 @@ router.get('/akpvk', function(req, res, next) {
     res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА И ПВХ С КОНТРАЖУРОМ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
-        href: '/font',
+        href: '/fonts',
         price: "от 80 руб/см",
         imgURL:['/img/fonttitle/akpvk1.png','/img/fonttitle/akpvk2.png','/img/fonttitle/akpvk3.png' ],
         calcURL:"/calc/symbs",
@@ -79,7 +79,7 @@ router.get('/metk', function(req, res, next) {
     res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ МЕТАЛЛА С КОНТРАЖУРОМ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
-        href: '/font',
+        href: '/fonts',
         price: "от 110 руб/см",
         calcURL:"/calc/symbs",
         imgURL:['/img/fonttitle/metk1.png','/img/fonttitle/metk2.png','/img/fonttitle/metk3.png' ],
@@ -105,7 +105,7 @@ router.get('/akpv', function(req, res, next) {
     res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ АКРИЛА И ПВХ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
-        href: '/font',
+        href: '/fonts',
         price: "от 100 руб/см",
         calcURL:"/calc/symbs",
         imgURL:['/img/fonttitle/akpv1.png','/img/fonttitle/akpv2.png','/img/fonttitle/akpv3.png' ],
@@ -130,7 +130,7 @@ router.get('/pvk', function(req, res, next) {
     res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ ИЗ ПВХ С КОНТРАЖУРОМ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
-        href: '/font',
+        href: '/fonts',
         price: "от 80 руб/см",
         calcURL:"/calc/symbs",
         imgURL:['/img/fonttitle/pvk1.png','/img/fonttitle/pvk2.png','/img/fonttitle/pvk3.png' ],
@@ -154,7 +154,7 @@ router.get('/neon', function(req, res, next) {
     res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ С ОТКРЫТЫМ НЕОНОМ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
-        href: '/font',
+        href: '/fonts',
         price: "от 135 руб/см",
         calcURL:"/calc/symbs",
         imgURL:['/img/fonttitle/neon1.png','/img/fonttitle/neon2.png','/img/fonttitle/neon3.png' ],
@@ -179,7 +179,7 @@ router.get('/svetod', function(req, res, next) {
     res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
-        href: '/font',
+        href: '/fonts',
         price: "от 320 руб/см",
         calcURL:"/calc/symbs",
         imgURL:['/img/fonttitle/svet1.png','/img/fonttitle/svet2.png','/img/fonttitle/svet3.png' ],
@@ -207,7 +207,7 @@ router.get('/retro', function(req, res, next) {
     res.render('./pages/sellInfo', {
         title: 'ОБЪЕМНЫЙ БУКВЫ РЕТРО' ,
         path: " ОБЪЕМНЫЕ БУКВЫ ",
-        href: '/font',
+        href: '/fonts',
         price: "от 320 руб/см",
         calcURL:"/calc/symbs",
         imgURL:['/img/fonttitle/svet1.png','/img/fonttitle/svet2.png','/img/fonttitle/svet3.png' ],
