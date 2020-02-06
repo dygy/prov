@@ -5,13 +5,14 @@
     margin-top: 0;
     margin-bottom: 0; }
 
-#smth {
+.flex-page #smth {
+  margin-bottom: 125px;
   font-weight: 400;
   height: auto; }
-  #smth a {
+  .flex-page #smth a {
     text-decoration: none;
     color: #5bbeaa; }
-  #smth a:hover {
+  .flex-page #smth a:hover {
     text-decoration: #ffb700 underline;
     color: #ffb700; }
 
@@ -20,13 +21,21 @@
   margin-right: 0; }
   .smth .leftflex {
     margin-left: 1vw; }
+    .smth .leftflex .flexbuts {
+      margin-top: 25px; }
+      .smth .leftflex .flexbuts .calc, .smth .leftflex .flexbuts .buttonImg {
+        min-height: 35px !important;
+        width: 125px !important;
+        height: 42px !important;
+        min-width: 114px !important; }
   .smth .scroll-container {
     height: 114px;
     overflow-y: auto; }
   .smth .smthImg {
+    min-width: 267px;
+    height: 340px;
     margin-bottom: -20px;
-    bottom: 34px !important;
-    min-width: 340px !important; }
+    bottom: 34px !important; }
   .smth .rightflex {
     position: relative;
     margin-left: 0 !important; }
@@ -41,8 +50,8 @@
     position: absolute;
     bottom: 0; }
     .smth table tbody tr td {
-      height: 27px;
-      padding: 7px; }
+      height: 27px !important;
+      padding: 0px 7px; }
     .smth table tbody tr .name {
       font-size: 16px !important;
       width: 27%; }
@@ -53,14 +62,6 @@
       font-size: 17px !important; }
   .smth .leftflex {
     width: 55%; }
-    .smth .leftflex .flexbuts {
-      justify-content: space-between !important;
-      margin-left: 30%;
-      margin-right: 30%; }
-      .smth .leftflex .flexbuts .buttonImg, .smth .leftflex .flexbuts .calc {
-        min-height: 45px !important;
-        height: 45px !important;
-        width: 168px !important; }
 
 .title .buttonImg, .title .calc {
   margin-top: 10px !important; }

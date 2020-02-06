@@ -11,6 +11,9 @@ style.
         width: 70%;
         min-height: 328px;
     }
+    #smth .imgSwitcher .mid-layout{
+        bottom: -50%!important;
+    }
     @media (min-width: 1700px) {
         #smth {
             height: 555px;
@@ -56,6 +59,10 @@ div(class="flex-page")
                     include ../content/tabS/mainInfo
                 else if title === " ТАБЛИЧКИ УКАЗАТЕЛИ"
                     include ../content/tabUk/mainInfo
+                else if title === " Фотозоны"
+                    include ../content/zone/mainInfo
+                else if title === ' Штендеры'
+                    include ../content/stend/mainInfo
                 else
                     include ../content/lakpv/mainInfo
             div(class='flexbuts' style="margin-top:90px")
@@ -119,6 +126,10 @@ div(class="flex-page")
             include ../content/tabUk/table
         else if title === "СВЕТОВОЙ КОРОБ ИЗ АКРИЛА И ПВХ" || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' + 'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ ИЗ ПОЛИКАРБОНАТА И ПВХ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И ПВХ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И СОТОВЫМ ПОЛИКАРБОНАТОМ НА ЛИЦЕВОЙ ЧАСТИ' || 'СВЕТОВОЙ КОРОБ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА С ПРОРЕЗКОЙ' || 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' + 'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА'
             include ../content/lakpv/table
+        else if title === " Фотозоны"
+            include ../content/zone/table
+        else if title === " Штендеры"
+            include ../content/stend/table
         else
             include ../content/lakpv/table
     div(id="content-container")
@@ -152,7 +163,10 @@ div(class="flex-page")
             include ../content/font/svet/secText
         else if title === 'ОБЪЕМНЫЙ БУКВЫ РЕТРО'
             include ../content/font/svet/secText
-
+        else if title === " Штендеры"
+            include ../content/stend/secText
+        else if title === " Фотозоны"
+            include ../content/zone/secText
     div(class="title")
         h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
     div(class="ulflex")
@@ -225,5 +239,5 @@ if calcURL
         elems("calc")[0].onclick= function (){moveTo('#{calcURL}')}
 else
     script.
-        elems("calc")[0].onclick= function (){displaySell()}
+        elems("calc")[0].onclick= function (){displayOrder()}
 include ../footer

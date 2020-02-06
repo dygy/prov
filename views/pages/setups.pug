@@ -1,152 +1,211 @@
-link(rel='stylesheet', href='/style/setup.css')
+link(rel='stylesheet', href='/style/viv.css')
 include ../slider
 include ../header
+style.
+    @media (min-width: 1200px) {
+        .flex-page .smth .scroll-container {
+            height: 300px !important;
+        }
+    }
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
+script(src='../js/switcher.js')
 div(class="flex-page")
     div(class="title")
-        h1 КРЫШНЫЕ УСТАНОВКИ
-    div(id="font-flex")
-        div(class="elem")
-            div
-                strong НЕСВЕТОВЫЕ БУКВЫ
-            br
-            img(src="../img/setup/setup6.png" onclick="displayImg('../img/setup/setup6.png')")
-            div(class="lupa" onclick="displayImg('../img/setup/setup6.png')")
-            p цена несветовой: от 15.000 руб
-            p цена световой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy" onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong СВЕТОВЫЕ БУКВЫ
-            br
-            img(src="../img/setup/setup7.png" onclick="displayImg('../img/setup/setup7.png')")
-            div(class="lupa" onclick="displayImg('../img/setup/setup7.png')")
-            p цена несветовой: от 15.000 руб
-            p цена световой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy" onclick="displayOrder()" ) заказать
-        div(class="elem")
-            div
-                strong НЕСВЕТОВАЯ ВЫВЕСКА
-            br
-            img(src="../img/setup/setup8.png" onclick="displayImg('../img/setup/setup8.png')")
-            div(class="lupa" onclick="displayImg('../img/setup/setup8.png')")
-            p цена несветовой: от 15.000 руб
-            p цена световой: от 20.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy" onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong СВЕТОВОЙ КОРОБ
-            br
-            img(src="../img/setup/setup9.png" onclick="displayImg('../img/setup/setup9.png')")
-            div(class="lupa" onclick="displayImg('../img/setup/setup9.png')")
-            p цена несветовой: от 25.000 руб
-            p цена световой: от 30.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-
-
+        h1=title
     div(id="smth")
-        img(src="../img/setup/setup10.png" class="smthImg")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/top.jpg" class="smthImg")
+            img(src="../img/4/content2.png"  class="smthImg" style="display:none")
+            img(src="../img/4/content1.jpg"  class="smthImg" style="display:none")
         div
-            p Изготовление крышных установок сопровождается серьезной проектной подготовкой: проводится изучение кровли здания, рассчитываются нагрузки, разрабатывается проектная документация в соответствии со СНиП. Все проектные работы по изготовлению крышных установок выполняют лицензированные специалисты. При планировании бюджета на изготовление крышной установки необходимо закладывать стоимость конструкторской документации. Устанавливать такую конструкцию без Проектно-конструкторской документации НЕЛЬЗЯ!!
-            div
-                img( class="buttonImg" src="../img/button.png")
+            p Изготовление крышных установок сопровождается серьезной проектной подготовкой: проводится изучение кровли здания, рассчитываются нагрузки, разрабатывается проектная документация в соответствии со СНиП. Все проектные работы по изготовлению крышных установок выполняют лицензированные специалисты. При планировании бюджета на изготовление крышной установки необходимо закладывать стоимость конструкторской документации. Устанавливать такую конструкцию без Проектно-конструкторской документации НЕЛЬЗЯ
+
+    div(class="title")
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
+    div(class="photoflex" id="toHide")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(id="hidden" style='display:none')
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+    div(class="title")
+        button(class="moreI" onclick="hidePhoto()")
+            text показать еще
+            text(class="arrow") «
+    div(class="title")
+        h2 ОБЪЕМНЫЕ БУКВЫ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick="displayOrder()")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container row3")
+                p Мы изготавливаем два основных вида объемных букв:
+                p Световые, со светопропускающими или не пропускающими свет поверхностями. Они бывают со следующими видами неоновой или светодиодной подсветки:
+                ul
+                    li Внутренней, такие носители рекламы идеально подходят для наружного размещения на фасаде здания;
+                    li Наружной;
+                    li Контражурной;
+                    li Комбинированной.
+                    li Несветовые. Бюджетный и эффективный продукт для ярко освещённых помещений, особенно в тех случаях, когда определённые обстоятельства не позволяют сделать скрытую электропроводку.
+                p Размер, конфигурация, цветовая гамма объёмных букв зависят от задач, поставленных перед нами заказчиком.
+            table(id="light")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") Световые
+                    td(class=" price") от 75000 руб
+                tr(class="blue")
+                    td(class="name") Несветовые
+                    td(class=" price") от 80000 руб
+                tr
+                    td(class="name") Монтаж крышной установки
+                    td(class=" price") от 15000 руб
+                tr(class="blue")
+                    td(class="name") Демонтаж крышной установки
+                    td(class=" price") от 10000 руб
+
+    div(class="title")
+        h2 КОРОБА
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick="displayOrder()")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container row3")
+                p Объемные буквы и логотипы – это эстетично и современно. Светящиеся, объемные, ультратонкие, супер-легкие, стальные, деревянные, пенопластовые. На фасаде здания, за стойкой ресепшен, в шоу-руме, всюду и везде. Объемным буквам по силам воплотить любые ваши оригинальные идеи!
+            table(id="symb")
+                tr(class="blue main")
+                    td(class="name") тип
+                    td(class="price") цена
+                tr
+                    td(class="name") Световые
+                    td(class=" price") от 54000 руб
+                tr(class="blue")
+                    td(class="name") Несветовые
+                    td(class=" price") от 76000 руб
+                tr
+                    td(class="name") Монтаж крышной установки
+                    td(class=" price") от 15000 руб
+                tr(class="blue")
+                    td(class="name") Демонтаж крышной установки
+                    td(class=" price") от 10000 руб
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
     div(id="flex-box")
         div(class="elem")
-            img(src="../img/setup/setup1.png")
+            img(src="../img/4/content411.png")
             br
-            p
-                strong Обьемные буквы
-                br
-                text из орг. стекла
-                br
-                text с лицевой подсветкой
-                br
-                text высота букв 20см
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/setup/setup2.png")
+            img(src="../img/4/content412.png")
             br
-            p
-                strong Обьемные буквы
-                br
-                text из орг. стекла
-                br
-                text с лицевой подсветкой
-                br
-                text высота букв 20см
-
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/setup/setup3.png")
+            img(src="../img/4/content413.png")
             br
-            p
-                strong Обьемные буквы
-                br
-                text из орг. стекла
-                br
-                text с лицевой подсветкой
-                br
-                text высота букв 20см
-
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/setup/setup4.png")
+            img(src="../img/4/content414.png")
             br
-            p
-                strong Обьемные буквы
-                br
-                text из орг. стекла
-                br
-                text с лицевой подсветкой
-                br
-                text высота букв 20см
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/setup/setup5.png")
+            img(src="../img/4/content415.png")
             br
-            p
-                strong Обьемные буквы
-                br
-                text из орг. стекла
-                br
-                text с лицевой подсветкой
-                br
-                text высота букв 20см
-
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="../img/setup/setup11.png")
-            br
-            p
-                strong Обьемные буквы
-                br
-                text из орг. стекла
-                br
-                text с лицевой подсветкой
-                br
-                text высота букв 20см
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-
 include ../footer

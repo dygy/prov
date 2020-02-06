@@ -8,16 +8,31 @@ style.
     .smth .leftflex{
         width: 25%!important;
     }
+    .smth .leftflex .flexbuts .calc, .smth .leftflex .flexbuts .buttonImg{
+        min-width: 130px;
+        width: 140px!important;
+    }
     .smth .rightflex{
         width: 78% !important;
     }
     .smth .rightflex .scroll-container{
         height: 170px!important;
     }
-    table tbody tr td{
-        text-align: center;
-        width: 11%!important;
+    .smth .rightflex  table{
+        border-spacing: 4px 0 ;
     }
+    .smth .rightflex  table tbody tr td{
+        text-align: center;
+        width: 9%!important;
+    }
+
+    @media (max-width: 1700px) {
+        .flex-page {
+            margin-left: 5vw!important;
+            margin-right: 5vw!important;
+        }
+    }
+
 div(class="flex-page")
     div(class="title")
         h1=title.toUpperCase()

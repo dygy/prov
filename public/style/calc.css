@@ -209,6 +209,8 @@ body {
     font-size: 13px !important; } }
 
 @media (max-width: 846px) {
+  #routing {
+    margin-top: 168px !important; }
   #first #logo-warp {
     margin: 0 0 0 0 !important; }
   #second ul .scli {
@@ -518,13 +520,15 @@ body {
   display: none; }
 
 .brd {
+  font-weight: 900;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
   height: auto;
-  margin: 0 0 10px 0 !important;
+  width: 195px;
+  margin: 0 0 27px 0 !important;
   padding: 11px 20px;
   border: 1px solid  #ecb62b; }
   .brd city, .brd email {
@@ -639,16 +643,23 @@ body {
     font-size: 23px !important; } }
 
 @media (max-width: 1489px) {
-  #footer .ftr-right {
-    margin-left: 11vw !important; }
-  #footer #ftr-frst #buttons {
-    margin-top: 58px !important; } }
+  #footer {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 98vw; }
+    #footer .ftr-right {
+      padding-top: 38px;
+      margin-left: 11vw !important; }
+    #footer #ftr-frst #soc {
+      margin-top: 35px !important; }
+    #footer #ftr-frst #buttons {
+      margin-top: 58px !important; } }
 
 @media (max-width: 1325px) {
   #footer .soc-ico {
     margin-top: -30px !important; }
   #footer #ftr-frst #buttons {
-    margin-top: 47px !important; }
+    margin-top: 37px !important; }
   phone {
     display: inline !important;
     font-size: 20px !important; }
@@ -665,7 +676,6 @@ body {
   #footer .ftr-right {
     display: none; }
   #footer #ftr-scnd {
-    padding-left: 30px;
     width: 100%; }
     #footer #ftr-scnd p {
       width: 89%; } }
@@ -743,7 +753,6 @@ body {
     width: 320px; }
     .ftr-right .phone .brd {
       width: 200px;
-      font-weight: 900;
       margin: 0 0 30px 0 !important;
       height: 100px; }
   #ftr-scnd {

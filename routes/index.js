@@ -31,7 +31,11 @@ router.get('/vist', function(req, res, next) {
 });
 
 router.get('/zones', function(req, res, next) {
-    res.render('./pages/zones', { title: ' Фотозоны' });
+    res.render('./pages/sellInfo', {
+        title: ' Фотозоны',
+        imgURL:['/img/zones/zone5.png','/img/zones/zone5.png','/img/zones/zone5.png'],
+
+    });
 });
 
 router.get('/stands', function(req, res, next) {
@@ -104,7 +108,7 @@ router.get('/tables', function(req, res, next) {
 });
 
 router.get('/shtender', function(req, res, next) {
-    res.render('./pages/shtender', { title: ' Штендеры' });
+    res.render('./pages/sellInfo', { title: ' Штендеры', calcURL:"/calc/shtends" });
 });
 
 router.get('/lightpan', function(req, res, next) {

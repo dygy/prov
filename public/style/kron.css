@@ -340,6 +340,8 @@ body {
     font-size: 13px !important; } }
 
 @media (max-width: 846px) {
+  #routing {
+    margin-top: 168px !important; }
   #first #logo-warp {
     margin: 0 0 0 0 !important; }
   #second ul .scli {
@@ -517,13 +519,15 @@ body {
   display: none; }
 
 .brd {
+  font-weight: 900;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
   height: auto;
-  margin: 0 0 10px 0 !important;
+  width: 195px;
+  margin: 0 0 27px 0 !important;
   padding: 11px 20px;
   border: 1px solid  #ecb62b; }
   .brd city, .brd email {
@@ -638,16 +642,23 @@ body {
     font-size: 23px !important; } }
 
 @media (max-width: 1489px) {
-  #footer .ftr-right {
-    margin-left: 11vw !important; }
-  #footer #ftr-frst #buttons {
-    margin-top: 58px !important; } }
+  #footer {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 98vw; }
+    #footer .ftr-right {
+      padding-top: 38px;
+      margin-left: 11vw !important; }
+    #footer #ftr-frst #soc {
+      margin-top: 35px !important; }
+    #footer #ftr-frst #buttons {
+      margin-top: 58px !important; } }
 
 @media (max-width: 1325px) {
   #footer .soc-ico {
     margin-top: -30px !important; }
   #footer #ftr-frst #buttons {
-    margin-top: 47px !important; }
+    margin-top: 37px !important; }
   phone {
     display: inline !important;
     font-size: 20px !important; }
@@ -664,7 +675,6 @@ body {
   #footer .ftr-right {
     display: none; }
   #footer #ftr-scnd {
-    padding-left: 30px;
     width: 100%; }
     #footer #ftr-scnd p {
       width: 89%; } }
@@ -742,7 +752,6 @@ body {
     width: 320px; }
     .ftr-right .phone .brd {
       width: 200px;
-      font-weight: 900;
       margin: 0 0 30px 0 !important;
       height: 100px; }
   #ftr-scnd {
@@ -982,6 +991,7 @@ table {
     height: 50px;
     position: relative; }
   .smthImg .botSl {
+    height: 20px;
     bottom: -51%; }
     .smthImg .botSl .dot {
       margin-right: 10px;
@@ -994,7 +1004,7 @@ table {
     .smthImg .botSl .dot:active {
       background-image: url("/img/active.png"); }
   .smthImg .midSl {
-    width: 112%;
+    width: 114%;
     margin-left: -20px;
     align-items: center;
     justify-content: space-between; }
@@ -1037,6 +1047,10 @@ table {
   .title h1, .title h2, #title h1, #title h2, .flexbuts h1, .flexbuts h2 {
     font-family: Geom !important;
     font-weight: 400; }
+  .title h2, #title h2, .flexbuts h2 {
+    font-size: 20px; }
+  .title h1, #title h1, .flexbuts h1 {
+    font-size: 24px; }
   .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 170px !important;

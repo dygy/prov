@@ -11,6 +11,10 @@
   .title h1, .title h2, #title h1, #title h2, .flexbuts h1, .flexbuts h2 {
     font-family: Geom !important;
     font-weight: 400; }
+  .title h2, #title h2, .flexbuts h2 {
+    font-size: 20px; }
+  .title h1, #title h1, .flexbuts h1 {
+    font-size: 24px; }
   .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 170px !important;
@@ -216,6 +220,7 @@ body {
       height: 50px;
       position: relative; }
     #full-page .smthImg .botSl {
+      height: 20px;
       bottom: -51%; }
       #full-page .smthImg .botSl .dot {
         margin-right: 10px;
@@ -228,7 +233,7 @@ body {
       #full-page .smthImg .botSl .dot:active {
         background-image: url("/img/active.png"); }
     #full-page .smthImg .midSl {
-      width: 112%;
+      width: 114%;
       margin-left: -20px;
       align-items: center;
       justify-content: space-between; }
