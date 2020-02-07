@@ -84,6 +84,8 @@ body {
       width: 56vw;
       justify-content: start;
       flex-direction: column; }
+      #full-page #smth .rightflex .scroll-container bold, #full-page .smth .rightflex .scroll-container bold {
+        font-family: GeomB; }
     #full-page #smth .rightflex table tbody, #full-page .smth .rightflex table tbody {
       margin-left: 0 !important;
       margin-right: 0 !important; }

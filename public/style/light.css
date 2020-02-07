@@ -843,6 +843,8 @@ table {
     width: 56vw;
     justify-content: start;
     flex-direction: column; }
+    #smth .rightflex .scroll-container bold, .smth .rightflex .scroll-container bold {
+      font-family: GeomB; }
   #smth .rightflex table tbody, .smth .rightflex table tbody {
     margin-left: 0 !important;
     margin-right: 0 !important; }
