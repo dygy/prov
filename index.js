@@ -13,6 +13,8 @@ const fontRouter = require('./routes/font');
 const calcRouter = require('./routes/calc');
 const lightRouter = require('./routes/light');
 const tableRouter = require('./routes/table');
+const navRouter = require('./routes/nav');
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.use(logger('dev'));
@@ -31,6 +33,7 @@ app.use('/font', fontRouter);
 app.use('/calc', calcRouter);
 app.use('/lights', lightRouter);
 app.use('/tables', tableRouter);
+app.use('/nav', navRouter);
 
 app.post('/feedback', function(req, res, next) {
     sendEmail(req.body);

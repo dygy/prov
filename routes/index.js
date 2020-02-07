@@ -64,7 +64,7 @@ router.get('/signboards', function(req, res, next) {
 });
 
 router.get('/autobrand', function(req, res, next) {
-    res.render('./pages/autobrand', { title: ' Автобрендирование' });
+    res.render('./pages/sellInfo', { title: ' Автобрендирование' });
 });
 
 router.get('/placnposts', function(req, res, next) {

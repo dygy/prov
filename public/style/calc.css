@@ -563,6 +563,8 @@ body {
       text-align: center;
       align-items: flex-end;
       white-space: nowrap; }
+      #footer .ftr-right .phone adr {
+        font-size: 14px; }
       #footer .ftr-right .phone phone {
         font-family: GeomB;
         display: inline;
@@ -636,7 +638,7 @@ body {
     height: 50px !important;
     width: 250px !important; }
   #ftr-frst email, #ftr-frst adr, #ftr-frst city, .ftr-right email, .ftr-right adr, .ftr-right city {
-    font-size: 15px; }
+    font-size: 14px; }
   #ftr-frst span, .ftr-right span {
     font-size: 17px !important; }
   #ftr-frst phone, .ftr-right phone {
@@ -648,8 +650,7 @@ body {
     padding-right: 1vw;
     width: 98vw; }
     #footer .ftr-right {
-      padding-top: 38px;
-      margin-left: 11vw !important; }
+      padding-top: 38px; }
     #footer #ftr-frst #soc {
       margin-top: 35px !important; }
     #footer #ftr-frst #buttons {
@@ -670,15 +671,17 @@ body {
   #ftr-frst .phone {
     margin-right: 0 !important; } }
 
-@media (max-width: 1275px) {
+@media (max-width: 1020px) {
   #footer #ftr-left {
     width: 100%; }
   #footer .ftr-right {
     display: none; }
   #footer #ftr-scnd {
     width: 100%; }
+    #footer #ftr-scnd #info {
+      margin: 0 !important; }
     #footer #ftr-scnd p {
-      width: 89%; } }
+      width: 100%; } }
 
 @media (max-width: 1152px) {
   #ftr-frst div {
@@ -735,11 +738,11 @@ body {
     margin-left: 1.2em !important; }
   #ftr-frst ul {
     padding-left: 20px !important; }
-  phone {
+  .ftr-right phone {
     font-size: 17px !important; }
-  email {
+  .ftr-right email {
     font-size: 14px !important; }
-  adr {
+  .ftr-right adr {
     font-size: 14px !important; } }
 
 @media (max-width: 600px) {

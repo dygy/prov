@@ -1,71 +1,350 @@
-link(rel='stylesheet', href='/style/vist.css')
+link(rel='stylesheet', href='/style/viv.css')
 include ../slider
 include ../header
+style.
+    @media (min-width: 1200px) {
+        .flex-page .smth .scroll-container {
+            height: 300px !important;
+        }
+    }
 script(src='../js/index.js')
 script(src='../js/Global.js')
-
-
+script(src='../js/switcher.js')
 div(class="flex-page")
     div(class="title")
         h1 ВЫСТАВОЧНЫЕ СТЕНДЫ
     div(id="smth")
-        img(src="../img/vist/vist1.png" class="smthImg")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="../img/4/top.jpg" class="smthImg")
+            img(src="../img/4/content2.png"  class="smthImg" style="display:none")
+            img(src="../img/4/content1.jpg"  class="smthImg" style="display:none")
         div
-            p Разработка дизайн-проекта стенда для выставки сложный креативный процесс, требующий профессионализма и вовлеченности: постоянно находясь в поиске новых идей и подходов в разработке дизайна, мы добиваемся безупречного качества стенда компаниизаказчика. Наша цель — воплотить любую Вашу идею.
-            p С учетом Ваших пожеланий, фирменного стиля и выделенного бюджета мы создаем абсолютно уникальный 3D дизайн выставочного стенда, и после согласования приступаем к его созданию.
-            p Нам не важно: площадь 10 кв.м. или же полноценная застройка выставки 5 000 кв.м., все будет исполнено качественно и в срок.
-            div
+            p Выставочный стенд – представляет собой брендированное пространство, выделяемое компании для проведения пре-зентации или продвижения продукции, услуг на территории выставочных центров. Выставочный стенд – это образ пред-приятия, создаваемый выставочной компанией исходя из технического задания заказчика.
+            ul
+                li Стандартные выставочные стенды – готовая, оборудован-ная стандартным набором технического оснащения, пло-щадь. Получить ощутимый маркетинговый результат от участия в выставке с стандартным выставочным стендом затруднительно, так как такие стенды лишены яркости. По сути это обезличенное оборудование. Эти конструкции не выделят компанию из общего фона компаний-конкурентов.
+                li Эксклюзивный выставочный стенд – это строительство по уникальному дизайнерскому проекту. Над созданием экс-клюзивного выставочного проекта работает целая группа специалистов: дизайнеры, конструктора, монтажники. По окончании выставки стенды демонтируются с последую-щей утилизацией. Дизайн эксклюзивного стенда можно по-вторить, но сам стенд застраивается по-новому.
+    div(class="title")
+        h1 ПРИМЕРЫ НАШИХ РАБОТ
+    div(class="photoflex" id="toHide")
+        div(class='left' onclick="newRow('lights',false)")
+        img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+        img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+        img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+        img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+        img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        div(class='right' onclick="newRow('lights',true)")
+    div(id="hidden" style='display:none')
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+        br
+        div(class="photoflex")
+            img(class="lights" src="../img/vivs/sk1.jpg" onclick="displayImg('../img/vivs/sk1.jpg')")
+            img(class="lights" src="../img/vivs/sk2.jpg" onclick="displayImg('../img/vivs/sk2.jpg')")
+            img(class="lights" src="../img/vivs/sk3.jpg" onclick="displayImg('../img/vivs/sk3.jpg')")
+            img(class="lights" src="../img/vivs/sk4.jpg" onclick="displayImg('../img/vivs/sk4.jpg')")
+            img(class="lights" src="../img/vivs/sk5.jpg" onclick="displayImg('../img/vivs/sk5.jpg')")
+    div(class="title")
+        button(class="moreI" onclick="hidePhoto()")
+            text показать еще
+            text(class="arrow") «
+    div(class="title")
+        h2 ОСТРОВА
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick="displayOrder()")
                 img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container row5")
+                p Остров – открытый со всех сторон, максимальный обзор. Такая конфигурация подходит для создания так называемых «арт-объек-тов». Для создания креативных выставочных проектов нет никаких ограничений!
+                p Ключевые достоинства заключаются в максимальном охвате ау-дитории посетителей выставки.
+                p Этапы изготовления выставочных стендов
+                ul
+                    li Дизайн и проектировка выставочного стенда;
+                    li Изготовление выставочного стенда;
+                    li Монтаж и застройка выставочного стенда.
+                p
+                    bold Размер, конфигурация, цветовая гамма объёмных букв зависят от задач, поставленных перед нами заказчиком.
+                table(id="light")
+                    tr(class="blue main")
+                        td(class="name") тип
+                        td(class="price") цена
+                    tr
+                        td(class="name") Бюджетный выставочный стенд
+                        td(class=" price") от 15000 руб/м²
+                    tr(class="blue")
+                        td(class="name") Эксклюзивный выставочный стенд
+                        td(class=" price") от 18000 руб/м²
+                    tr
+                        td(class="name") Концептуальный выставочный стенд
+                        td(class=" price") от 25000 руб/м²
+                    tr(class="blue")
+                        td(class="name") Монтаж и демонтаж выставочного стенда
+                        td(class=" price") от 15000 руб
 
-    div(id="font-flex")
+    div(class="title")
+        h2 ПОЛУОСТРОВА
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick="displayOrder()")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container row5")
+                p Полуостров – открыты три стороны. Идеальная форма для созда-ния любых дизайнерских проектов, концепций, возможны разноо-бразные планировки. Площади с такой конфигурацией считаются флагманскими, располагаются в самом начале павильона, часто у входа. Занимают такие площади, как правило, ведущие компании.
+                p Такой стенд – оптимальное решение для компаний, реализующих автомобили, сельхозтехнику, выпускающих крупногабаритные про-изводственные станки и линии. Также он подходит для проведения масштабных презентаций с массовым скоплением людей.
+                p Этапы изготовления выставочных стендов
+                ul
+                    li Дизайн и проектировка выставочного стенда;
+                    li Изготовление выставочного стенда;
+                    li Монтаж и застройка выставочного стенда.
+                p
+                    bold Размер, конфигурация, цветовая гамма объёмных букв зависят от задач, поставленных перед нами заказчиком.
+                table(id="light")
+                    tr(class="blue main")
+                        td(class="name") тип
+                        td(class="price") цена
+                    tr
+                        td(class="name") Бюджетный выставочный стенд
+                        td(class=" price") от 15000 руб/м²
+                    tr(class="blue")
+                        td(class="name") Эксклюзивный выставочный стенд
+                        td(class=" price") от 18000 руб/м²
+                    tr
+                        td(class="name") Концептуальный выставочный стенд
+                        td(class=" price") от 25000 руб/м²
+                    tr(class="blue")
+                        td(class="name") Монтаж и демонтаж выставочного стенда
+                        td(class=" price") от 15000 руб
+    div(class="title")
+        h2 ЛИНЕЙНЫЕ СТЕНДЫ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick="displayOrder()")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container row5")
+                p Линейный – открыта одна сторона. Пожалуй, самая неудобная конфигурация. Стенд располагается между двумя соседними. Но при умелом подходе все недостатки данной конфигурации могут стать преимуществами.
+                p Линейный тип конструкции представлен несколькими разновид-ностями — узкие, глубокие, открытые только с лицевой стороны или со всех трех. Благодаря таким особенностям существует возмож-ность формирования зон для переговоров или дегустации.
+                p Этапы изготовления выставочных стендов
+                ul
+                    li Дизайн и проектировка выставочного стенда;
+                    li Изготовление выставочного стенда;
+                    li Монтаж и застройка выставочного стенда.
+                p
+                    bold Размер, конфигурация, цветовая гамма объёмных букв зависят от задач, поставленных перед нами заказчиком.
+                table(id="light")
+                    tr(class="blue main")
+                        td(class="name") тип
+                        td(class="price") цена
+                    tr
+                        td(class="name") Бюджетный выставочный стенд
+                        td(class=" price") от 15000 руб/м²
+                    tr(class="blue")
+                        td(class="name") Эксклюзивный выставочный стенд
+                        td(class=" price") от 18000 руб/м²
+                    tr
+                        td(class="name") Концептуальный выставочный стенд
+                        td(class=" price") от 25000 руб/м²
+                    tr(class="blue")
+                        td(class="name") Монтаж и демонтаж выставочного стенда
+                        td(class=" price") от 15000 руб
+    div(class="title")
+        h2 СКВОЗНЫЕ СТЕНДЫ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick="displayOrder()")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container row5")
+                p Их также порой называют «стендами-карманами». Они являются одним из видов обычного места в выставочном ряду, но с одной су-щественной особенностью. Две параллельно стоящих стены либо отсутствуют, либо в них имеются сквозные проходы.
+                p Отлично работающий прием для увеличения потока людей в сквозных стендах является размещение ключевых фигур в местах входа в павильон с обеих сторон. Это стимулирует посетительскую активность. Главным образом подхадят компаниям, которые прода-ют товары и услуги массового спроса.
+                p Этапы изготовления выставочных стендов
+                ul
+                    li Дизайн и проектировка выставочного стенда;
+                    li Изготовление выставочного стенда;
+                    li Монтаж и застройка выставочного стенда.
+                p
+                    bold Размер, конфигурация, цветовая гамма объёмных букв зависят от задач, поставленных перед нами заказчиком.
+                table(id="light")
+                    tr(class="blue main")
+                        td(class="name") тип
+                        td(class="price") цена
+                    tr
+                        td(class="name") Бюджетный выставочный стенд
+                        td(class=" price") от 15000 руб/м²
+                    tr(class="blue")
+                        td(class="name") Эксклюзивный выставочный стенд
+                        td(class=" price") от 18000 руб/м²
+                    tr
+                        td(class="name") Концептуальный выставочный стенд
+                        td(class=" price") от 25000 руб/м²
+                    tr(class="blue")
+                        td(class="name") Монтаж и демонтаж выставочного стенда
+                        td(class=" price") от 15000 руб
+    div(class="title")
+        h2 УГЛОВЫЕ СТЕНДЫ
+    div(class="smth")
+        a(name="LB")
+        div(class="leftflex")
+            div(style="background-image:url('/img/4/content1.jpg');background-size:100%,100%" class="smthImg" )
+                div(class="midSl")
+                    div(class="leftSl")
+                    div(class="rightSl")
+                div(class="botSl")
+                    div(class="dot")
+                    div(class="dot")
+                    div(class="dot")
+            div(class="flexbuts")
+                img(class="calc" src='/img/rasbutton.png' onclick="displayOrder()")
+                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+        div(class="rightflex")
+            div(class="scroll-container row5")
+                p Конструкция углового типа имеет две лицевые стороны. Как пра-вило, такой стенд устанавливается в конце выставочного ряда и рабочими сторонами обращен сразу на два смежных прохода. Бла-годаря такой особенности компания может получить в 2 раза больше возможностей.
+                p Основные пользователи — клиенты, желающие получить макси-мальный эффект за приемлемую стоимость. Главным условием в данной ситуации является высокий профессионализм исполнителя.
+                p Этапы изготовления выставочных стендов
+                ul
+                    li Дизайн и проектировка выставочного стенда;
+                    li Изготовление выставочного стенда;
+                    li Монтаж и застройка выставочного стенда.
+                p
+                    bold Размер, конфигурация, цветовая гамма объёмных букв зависят от задач, поставленных перед нами заказчиком.
+                table(id="light")
+                    tr(class="blue main")
+                        td(class="name") тип
+                        td(class="price") цена
+                    tr
+                        td(class="name") Бюджетный выставочный стенд
+                        td(class=" price") от 15000 руб/м²
+                    tr(class="blue")
+                        td(class="name") Эксклюзивный выставочный стенд
+                        td(class=" price") от 18000 руб/м²
+                    tr
+                        td(class="name") Концептуальный выставочный стенд
+                        td(class=" price") от 25000 руб/м²
+                    tr(class="blue")
+                        td(class="name") Монтаж и демонтаж выставочного стенда
+                        td(class=" price") от 15000 руб
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+    div(class="title")
+        h2 ПОПУЛЯНЫЕ ЗАКАЗЫ
+    div(id="flex-box")
         div(class="elem")
+            img(src="../img/4/content411.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
-                strong ОСТРОВА
-            img(src="../img/vist/vist2.png")
-            div(class="title")
-                strong от 3.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
         div(class="elem")
+            img(src="../img/4/content412.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
-                strong ПОЛУОСТРОВА
-            img(src="../img/vist/vist3.png")
-            div(class="title")
-                strong от 10.000 руб за кв.м
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
         div(class="elem")
-            div(style='display:block')
-                strong ЛИНЕЙНЫЕ СТЕНДЫ
-                br
-                strong РОЖДЕНИЯ И ЮБИЛЕИ
-            img(src="../img/vist/vist4.png")
-            div(class="title")
-                strong от 10.000 руб за кв.м
+            img(src="../img/4/content413.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-    div(id="font-flex" style="display:flex;justify-content:center; margin-top:3px!important")
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
         div(class="elem")
+            img(src="../img/4/content414.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
-                strong СКВОЗНЫЕ СТЕНДЫ
-            img(src="../img/vist/vist5.png")
-            div(class="title")
-                strong от 3.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
         div(class="elem")
+            img(src="../img/4/content415.png")
+            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
-                strong УГЛОВЫЕ СТЕНДЫ
-            img(src="../img/vist/vist6.png")
-            div(class="title")
-                strong от 10.000 руб за кв.м
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy" onclick="displayOrder()") заказать
-
-
+                price ≈ 15.000 руб
+                button(onclick="displayOrder()") заказать
 include ../footer
