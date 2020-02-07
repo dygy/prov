@@ -1,4 +1,41 @@
 @charset "UTF-8";
+#dropdown {
+  justify-content: space-evenly !important;
+  align-items: flex-start !important; }
+  #dropdown .selectDD {
+    display: block !important;
+    font-size: 1vw;
+    float: left; }
+    #dropdown .selectDD div {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 20px;
+      display: flex;
+      align-items: flex-start;
+      align-content: center;
+      justify-content: space-between;
+      width: 350px;
+      white-space: nowrap; }
+    #dropdown .selectDD div:hover {
+      background-color: #c5fcfc;
+      font-family: GeomB; }
+    #dropdown .selectDD div:after {
+      content: ">";
+      height: 15px;
+      width: 15px; }
+  #dropdown .dd1, #dropdown .dd2, #dropdown .dd3 {
+    width: 75%;
+    display: flex;
+    flex-direction: row; }
+    #dropdown .dd1 ul, #dropdown .dd2 ul, #dropdown .dd3 ul {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+      white-space: nowrap; }
+  #dropdown .dd2, #dropdown .dd3, #dropdown .dd4 {
+    display: none; }
+
 #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
   width: auto;
   justify-content: center;
@@ -107,6 +144,12 @@
 @media (max-width: 820px) {
   #dropdown ul {
     margin: 10px 1% 0 0 !important; } }
+
+@media (max-width: 1500px) {
+  #dropdown .selectDD div {
+    width: 270px; }
+  #dropdown .dd1, #dropdown .dd2, #dropdown .dd3 {
+    font-size: 14px !important; } }
 
 @media (min-width: 1500px) {
   #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
@@ -430,14 +473,15 @@ body {
       font-size: 25px !important; }
   #second {
     margin-top: 30px; }
-    #second ul .scli {
-      margin: 0 4% 0 0 !important;
-      font-size: 20px !important; }
-    #second ul img {
+    #second .scul .scli {
+      margin: 0 4% 0 0 !important; }
+      #second .scul .scli span {
+        font-size: 20px !important; }
+    #second .scul img {
       margin-top: 2px;
       height: 50px !important;
       width: 50px !important; }
-    #second ul #contact {
+    #second .scul #contact {
       margin-right: 20px !important; } }
 
 @media (min-width: 1700px) {
@@ -948,7 +992,7 @@ body {
   left: 96%;
   top: 30%; }
   #five .appear text {
-    left: -109px; }
+    left: -62px; }
 
 #six {
   left: 73%;

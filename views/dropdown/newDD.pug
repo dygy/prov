@@ -1,0 +1,123 @@
+block dropdown
+    div(id="dropdown" class="dropdown" onclick="event.stopPropagation()")
+        div(class="selectDD")
+            div(onclick='elems("dd1")[0].style.display="flex";elems("dd1")[1].style.display="flex";elems("dd2")[0].style.display="none";elems("dd2")[1].style.display="none";elems("dd3")[0].style.display="none";elems("dd3")[1].style.display="none";') НАРУЖНАЯ РЕКЛАМ
+            div(onclick='elems("dd1")[0].style.display="none";elems("dd1")[1].style.display="none";elems("dd2")[0].style.display="flex";elems("dd2")[1].style.display="flex";elems("dd3")[0].style.display="none";elems("dd3")[1].style.display="none";') ИНТЕРЬЕРНАЯ РЕКЛАМА
+            div(onclick='elems("dd1")[0].style.display="none";elems("dd1")[1].style.display="none";elems("dd2")[0].style.display="none";elems("dd2")[1].style.display="none";elems("dd3")[0].style.display="flex";elems("dd3")[1].style.display="flex";') ШИРОКОФОРМАТНАЯ ПЕЧАТЬ
+        div(class="dd1")
+            ul
+                li(onclick="moveTo('/viv')")
+                    text вывески
+                li(onclick="moveTo('/fonts')")
+                    text объемные световые буквы
+                li
+                    text рекламны еконструкции
+                li(onclick="moveTo('/setups')")
+                    text крышные установки
+                li
+                    text оформление стоек
+                li
+                    text флаги и флагштоки
+            ul
+                li
+                    text вывески из композит
+                li(onclick="moveTo('/kron')")
+                    text панель-кронштейн
+                li(onclick="moveTo('/lightpan')")
+                    text световая панель
+                li(onclick="moveTo('/autobrand')")
+                    text автобрендирование
+                li
+                    text световые вывески
+            ul
+                li(onclick="moveTo('/nolight')")
+                    text несветовые вывески
+                li
+                    text световые буквы
+                li(onclick="moveTo('/pilon')")
+                    text рекламные пилоны
+                li
+                    text маркизы
+                li(onclick="moveTo('/inputgroup')")
+                    text входные группы
+            ul(id="lastUL")
+                li(onclick="moveTo('/light')")
+                    text световые короба
+                li
+                    text LED-панели
+                li
+                    text CITY-ФОРМАТ
+                li
+                    text оформлениестоек
+                li(onclick="moveTo('/banners')")
+                    text баннеры
+            ul
+        div(class="dd2")
+            ul
+                li(onclick="moveTo('/mobstand')")
+                    text ROLL-UP
+                li(onclick="moveTo('/Press-Wall')")
+                    text Press-Wall
+                li(onclick="moveTo('/vist')")
+                    text выстовочные стенды
+                li
+                    text интерьерные вывески
+                li
+                    text планы эвакуации
+                li
+                    text печать на пленке
+            ul
+                li печать на пленке
+                li(onclick="moveTo('/infstands')")
+                    text информационные стенды
+                li(onclick="moveTo('/lightpan')")
+                    text Световая панель
+                li(onclick="moveTo('/placnposts')")
+                    text плакаты
+                li
+                    text печать на стеке
+                li
+                    text печать картин
+            ul
+                li(onclick="moveTo('/navs')")
+                    text навигационные таблички
+                li
+                    text хардпостеры
+                li(onclick="moveTo('/pilon')")
+                    text рекламные пилоны
+                li
+                    text ростовые фигуры
+                li
+                    text печать наклеек
+                li(onclick="moveTo('/stickers')")
+                    text наклейки
+            ul
+                li(onclick="moveTo('/zones')")
+                    text фотозоны
+                li(onclick="moveTo('/tables')")
+                    text таблички
+                li оформление стоек
+                li посматериали
+                li Show-Box
+        div(class="dd3")
+            ul
+                li широкоформатная печать
+                li интерьерная печать
+                li наружная реклама
+            ul
+                li(onclick="moveTo('/frez')")
+                    text фрезерная резка
+                li
+                    text плотерная резка
+                li(onclick="moveTo('/sign')")
+                    text регистрация
+            ul
+                li демонтаж вывески
+                li(onclick="moveTo('/mont')")
+                    text монтаж вывески
+                li мойка вывески
+            ul
+                li оформление мероприятий
+                li полиграфия
+                li(onclick="moveTo('/design')")
+                    text дизайн

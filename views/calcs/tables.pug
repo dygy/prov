@@ -6,12 +6,11 @@ p тип изделия:
         div(class="elem" id="t4" onclick="request.type='облачком';addClass(this)")
     p материал:
     div(class="selector selectable")
-        div(class="elem" onclick="request.material=' rainbow';addClass(this)") rainbow
         div(class="elem" onclick="request.material=' металл';addClass(this)") металл
         div(class="elem" onclick="request.material=' пластик';addClass(this)") пластик
         div(class="elem" onclick="request.material=' орг. стекло';addClass(this)" style="min-width: 90px") орг. стекло
         div(class="elem" onclick="request.material=' дерево';addClass(this)") дерево
-        div(class="elem" onclick="request.material=' дибонд';addClass(this)") дибонд
+        div(class="elem" onclick="request.material=' композит';addClass(this)") композит
     p изображение:
     div(class="selector selectable")
         div(class="elem" onclick="request.img='печать';addClass(this)") печать
@@ -25,18 +24,17 @@ p тип изделия:
         div(class="elem" onclick="request.krep='дистанционно';addClass(this)") дистанционно
         div(class="elem" onclick="request.krep='настольная';addClass(this)") настольная
         div(class="elem" onclick="request.krep='ручная';addClass(this)") ручная
-        div(class="elem" onclick="request.krep='напольная';addClass(this)") напольная
     p толщина:
     div(class="selector selectable")
         div(class="elem" onclick="request.tirazh='2 мм';addClass(this)")
             text 2 мм
-        div(class="elem" onclick="request.tirazh='2 мм';addClass(this)")
+        div(class="elem" onclick="request.tirazh='3 мм';addClass(this)")
             text 3 мм
-        div(class="elem" onclick="request.tirazh='2 мм';addClass(this)")
+        div(class="elem" onclick="request.tirazh='4 мм';addClass(this)")
             text 4 мм
-        div(class="elem" onclick="request.tirazh='2 мм';addClass(this)")
+        div(class="elem" onclick="request.tirazh='5 мм';addClass(this)")
             text 5 мм
-        div(class="elem" onclick="request.tirazh='2 мм';addClass(this)")
+        div(class="elem" onclick="request.tirazh='другое';addClass(this);displayMessageC('Свяжитесь с нами: 8(903)226-89-46')")
             text другое
     p размеры (мм):
         div(class="flex-input")

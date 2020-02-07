@@ -1,3 +1,39 @@
+#dropdown
+  justify-content: space-evenly!important
+  align-items: flex-start!important
+  .selectDD
+    display: block!important
+    font-size: 1vw
+    float: left
+    div
+      padding-top: 10px
+      padding-bottom: 10px
+      height: 20px
+      display: flex
+      align-items: flex-start
+      align-content: center
+      justify-content: space-between
+      width: 350px
+      white-space: nowrap
+    div:hover
+      background-color: #c5fcfc
+      font-family: GeomB
+    div:after
+      content: ">"
+      height: 15px
+      width: 15px
+  .dd1,.dd2,.dd3
+    width: 75%
+    display: flex
+    flex-direction: row
+    ul
+      padding-left: 0
+      padding-right: 0
+      margin-left: 0
+      margin-right: 0
+      white-space: nowrap
+  .dd2,.dd3,.dd4
+    display: none
 #dropdown, #dropdown2, #dropdown3 , #dropdown4, #dropdown5
   width: auto
   justify-content: center
@@ -105,6 +141,14 @@
   #dropdown
     ul
       margin: 10px 1% 0 0 !important
+@media ( max-width : 1500px )
+  #dropdown
+    .selectDD
+      div
+        width: 270px
+    .dd1,.dd2,.dd3
+      font-size: 14px!important
+
 @media ( min-width : 1500px )
   #dropdown, #dropdown2, #dropdown3 , #dropdown4, #dropdown5
     top: 212px!important
