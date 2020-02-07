@@ -1139,7 +1139,8 @@ body {
         text-align: center;
         color: gray; }
       #passport #circus text bold {
-        font: 20px bold; }
+        font: 20px GeomB;
+        font-weight: 100 !important; }
 
 #but-take {
   display: flex;
@@ -1538,6 +1539,10 @@ body {
   .title h1, .title h2, #title h1, #title h2, .flexbuts h1, .flexbuts h2 {
     font-family: Geom !important;
     font-weight: 400; }
+  .title h2, #title h2, .flexbuts h2 {
+    font-size: 20px; }
+  .title h1, #title h1, .flexbuts h1 {
+    font-size: 24px; }
   .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 170px !important;
