@@ -81,7 +81,7 @@ body {
       height: 500px; }
     #full-page #smth .rightflex .scroll-container, #full-page .smth .rightflex .scroll-container {
       display: flex;
-      width: 56vw;
+      width: 100%;
       justify-content: start;
       flex-direction: column; }
       #full-page #smth .rightflex .scroll-container bold, #full-page .smth .rightflex .scroll-container bold {
@@ -264,6 +264,8 @@ body {
       max-width: 210px !important;
       max-height: 60px !important; } }
   @media (min-width: 1700px) {
+    #full-page .smth .rightflex .scroll-container {
+      min-width: 1060px; }
     #full-page #smth p, #full-page #smth li, #full-page #smth span, #full-page .smth p, #full-page .smth li, #full-page .smth span {
       font-size: 20px !important; }
     #full-page #smth h3, #full-page .smth h3 {

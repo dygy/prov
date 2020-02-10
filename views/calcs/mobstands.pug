@@ -1,20 +1,25 @@
 p тип изделия:
 div(class="selector selectable")
+    div(class="elem" onclick="request.type='roll-up double';addClass(this)") roll-up double
     div(class="elem" onclick="request.type='roll-up';addClass(this)") roll-up
     div(class="elem" onclick="request.type='x-banner';addClass(this)") x-banner
     div(class="elem" onclick="request.type='l-banner';addClass(this)") l-banner
-p размер изделия (см):
-div(class="flex-input")
-    input(type="number" id="sizeX" oninput="setInput('sizeX')")
-    div x
-    input(type="number" id="sizeY" oninput="setInput('sizeY')")
+p размер изделия (мм):
+div(class="selector selectable")
+    div(class="elem" onclick="request.size='800x1800';addClass(this)") 800x1800
+    div(class="elem" onclick="request.size='800x2000';addClass(this)") 800x2000
+    div(class="elem" onclick="request.size='850x2000';addClass(this)") 850x2000
+    div(class="elem" onclick="request.size='1000x2000';addClass(this)") 1000x2000
+    div(class="elem" onclick="request.size='1200x2000';addClass(this)") 1200x2000
+    div(class="elem" onclick="request.size='1500x2000';addClass(this)") 1500x2000
+    div(class="elem" onclick="request.size='2000x2000';addClass(this)") 2000x2000
 p материал:
 div(class="selector selectable")
     div(class="elem" onclick="request.material='баннерная ткань';addClass(this)" style="min-width:115px")
         text баннерная
         br
         text ткань
-    div(class="elem" onclick="request.material='полипропилен';addClass(this)")
+    div(class="elem" onclick="request.material='полипропилен';addClass(this);" )
         text полипропилен
 p печать:
 div(class="selector selectable")

@@ -35,9 +35,10 @@
   .dd2,.dd3,.dd4
     display: none
 #dropdown, #dropdown2, #dropdown3 , #dropdown4, #dropdown5
-  width: auto
-  justify-content: center
-  align-items: center
+  width: 100vw
+  left: 0
+  justify-content: space-evenly!important
+  align-items: flex-start
   padding-top: 20px
   text-transform: none
   text-align: left
@@ -80,18 +81,6 @@
   #dropdown5
     display: flex!important
 
-#dropdown2
-  margin-left: -30px
-//left: 6%
-#dropdown3
-  margin-left: -10px
-//left: 23%
-#dropdown4
-  margin-left: -20px
-//left: 39%
-#dropdown5
-  //left: 57%
-  margin-left: -70px
 #dropdown
   .disable
     color: darkkhaki
@@ -151,7 +140,7 @@
 
 @media ( min-width : 1500px )
   #dropdown, #dropdown2, #dropdown3 , #dropdown4, #dropdown5
-    top: 212px!important
+    top: 200px!important
   #dropdown2
     //left: 7%
   #dropdown3
@@ -168,8 +157,6 @@
     top: 118px
     font-size: 12px
 @media ( min-width : 1700px )
-  #dropdown2,  #dropdown3,  #dropdown4
-    margin-left: 0!important
   #dropdown
     ul
       margin: 10px 10% 0 0 !important

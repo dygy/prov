@@ -10,6 +10,7 @@ const http = require('http');
 const server = http.createServer(app);
 const indexRouter = require('./routes/index');
 const fontRouter = require('./routes/font');
+const vivRouter = require('./routes/viv');
 const calcRouter = require('./routes/calc');
 const lightRouter = require('./routes/light');
 const tableRouter = require('./routes/table');
@@ -29,6 +30,7 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
+app.use('/viv', vivRouter);
 app.use('/font', fontRouter);
 app.use('/calc', calcRouter);
 app.use('/lights', lightRouter);

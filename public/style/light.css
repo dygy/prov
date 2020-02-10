@@ -1,7 +1,45 @@
+#dropdown {
+  justify-content: space-evenly !important;
+  align-items: flex-start !important; }
+  #dropdown .selectDD {
+    display: block !important;
+    font-size: 1vw;
+    float: left; }
+    #dropdown .selectDD div {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 20px;
+      display: flex;
+      align-items: flex-start;
+      align-content: center;
+      justify-content: space-between;
+      width: 350px;
+      white-space: nowrap; }
+    #dropdown .selectDD div:hover {
+      background-color: #c5fcfc;
+      font-family: GeomB; }
+    #dropdown .selectDD div:after {
+      content: ">";
+      height: 15px;
+      width: 15px; }
+  #dropdown .dd1, #dropdown .dd2, #dropdown .dd3 {
+    width: 75%;
+    display: flex;
+    flex-direction: row; }
+    #dropdown .dd1 ul, #dropdown .dd2 ul, #dropdown .dd3 ul {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+      white-space: nowrap; }
+  #dropdown .dd2, #dropdown .dd3, #dropdown .dd4 {
+    display: none; }
+
 #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
-  width: auto;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  left: 0;
+  justify-content: space-evenly !important;
+  align-items: flex-start;
   padding-top: 20px;
   text-transform: none;
   text-align: left;
@@ -46,18 +84,6 @@
 
 #uslugi:hover #dropdown5 {
   display: flex !important; }
-
-#dropdown2 {
-  margin-left: -30px; }
-
-#dropdown3 {
-  margin-left: -10px; }
-
-#dropdown4 {
-  margin-left: -20px; }
-
-#dropdown5 {
-  margin-left: -70px; }
 
 #dropdown {
   padding-bottom: 20px;
@@ -107,9 +133,15 @@
   #dropdown ul {
     margin: 10px 1% 0 0 !important; } }
 
+@media (max-width: 1500px) {
+  #dropdown .selectDD div {
+    width: 270px; }
+  #dropdown .dd1, #dropdown .dd2, #dropdown .dd3 {
+    font-size: 14px !important; } }
+
 @media (min-width: 1500px) {
   #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
-    top: 212px !important; } }
+    top: 200px !important; } }
 
 @media (max-width: 715px) {
   #dropdown {
@@ -121,8 +153,6 @@
     font-size: 12px; } }
 
 @media (min-width: 1700px) {
-  #dropdown2, #dropdown3, #dropdown4 {
-    margin-left: 0 !important; }
   #dropdown ul {
     margin: 10px 10% 0 0 !important; }
     #dropdown ul li span {
@@ -429,14 +459,15 @@ body {
       font-size: 25px !important; }
   #second {
     margin-top: 30px; }
-    #second ul .scli {
-      margin: 0 4% 0 0 !important;
-      font-size: 20px !important; }
-    #second ul img {
+    #second .scul .scli {
+      margin: 0 4% 0 0 !important; }
+      #second .scul .scli span {
+        font-size: 20px !important; }
+    #second .scul img {
       margin-top: 2px;
       height: 50px !important;
       width: 50px !important; }
-    #second ul #contact {
+    #second .scul #contact {
       margin-right: 20px !important; } }
 
 @media (min-width: 1700px) {
@@ -840,7 +871,7 @@ table {
     height: 500px; }
   #smth .rightflex .scroll-container, .smth .rightflex .scroll-container {
     display: flex;
-    width: 56vw;
+    width: 100%;
     justify-content: start;
     flex-direction: column; }
     #smth .rightflex .scroll-container bold, .smth .rightflex .scroll-container bold {
@@ -1040,6 +1071,8 @@ table {
     max-height: 60px !important; } }
 
 @media (min-width: 1700px) {
+  .smth .rightflex .scroll-container {
+    min-width: 1060px; }
   #smth p, #smth li, #smth span, .smth p, .smth li, .smth span {
     font-size: 20px !important; }
   #smth h3, .smth h3 {

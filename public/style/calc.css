@@ -298,14 +298,15 @@ body {
       font-size: 25px !important; }
   #second {
     margin-top: 30px; }
-    #second ul .scli {
-      margin: 0 4% 0 0 !important;
-      font-size: 20px !important; }
-    #second ul img {
+    #second .scul .scli {
+      margin: 0 4% 0 0 !important; }
+      #second .scul .scli span {
+        font-size: 20px !important; }
+    #second .scul img {
       margin-top: 2px;
       height: 50px !important;
       width: 50px !important; }
-    #second ul #contact {
+    #second .scul #contact {
       margin-right: 20px !important; } }
 
 @media (min-width: 1700px) {
@@ -356,10 +357,48 @@ body {
     #header #second .scul .scli, #header2 #second .scul .scli {
       font-size: 0.8vw !important; } }
 
+#dropdown {
+  justify-content: space-evenly !important;
+  align-items: flex-start !important; }
+  #dropdown .selectDD {
+    display: block !important;
+    font-size: 1vw;
+    float: left; }
+    #dropdown .selectDD div {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 20px;
+      display: flex;
+      align-items: flex-start;
+      align-content: center;
+      justify-content: space-between;
+      width: 350px;
+      white-space: nowrap; }
+    #dropdown .selectDD div:hover {
+      background-color: #c5fcfc;
+      font-family: GeomB; }
+    #dropdown .selectDD div:after {
+      content: ">";
+      height: 15px;
+      width: 15px; }
+  #dropdown .dd1, #dropdown .dd2, #dropdown .dd3 {
+    width: 75%;
+    display: flex;
+    flex-direction: row; }
+    #dropdown .dd1 ul, #dropdown .dd2 ul, #dropdown .dd3 ul {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+      white-space: nowrap; }
+  #dropdown .dd2, #dropdown .dd3, #dropdown .dd4 {
+    display: none; }
+
 #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
-  width: auto;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  left: 0;
+  justify-content: space-evenly !important;
+  align-items: flex-start;
   padding-top: 20px;
   text-transform: none;
   text-align: left;
@@ -404,18 +443,6 @@ body {
 
 #uslugi:hover #dropdown5 {
   display: flex !important; }
-
-#dropdown2 {
-  margin-left: -30px; }
-
-#dropdown3 {
-  margin-left: -10px; }
-
-#dropdown4 {
-  margin-left: -20px; }
-
-#dropdown5 {
-  margin-left: -70px; }
 
 #dropdown {
   padding-bottom: 20px;
@@ -465,9 +492,15 @@ body {
   #dropdown ul {
     margin: 10px 1% 0 0 !important; } }
 
+@media (max-width: 1500px) {
+  #dropdown .selectDD div {
+    width: 270px; }
+  #dropdown .dd1, #dropdown .dd2, #dropdown .dd3 {
+    font-size: 14px !important; } }
+
 @media (min-width: 1500px) {
   #dropdown, #dropdown2, #dropdown3, #dropdown4, #dropdown5 {
-    top: 212px !important; } }
+    top: 200px !important; } }
 
 @media (max-width: 715px) {
   #dropdown {
@@ -479,8 +512,6 @@ body {
     font-size: 12px; } }
 
 @media (min-width: 1700px) {
-  #dropdown2, #dropdown3, #dropdown4 {
-    margin-left: 0 !important; }
   #dropdown ul {
     margin: 10px 10% 0 0 !important; }
     #dropdown ul li span {
@@ -791,7 +822,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 10px; }
 
-#output {
+#output, #output2 {
   text-shadow: 1px 1px 8px black;
   font-family: Arial;
   -webkit-text-stroke-width: 1px;
@@ -800,6 +831,11 @@ h1 {
   font-size: 40px;
   margin-top: 20px;
   transform: rotate(2deg); }
+
+#output2 {
+  padding: 30px;
+  transform: rotate(0deg);
+  border: 1px black solid; }
 
 .selectable .elem:hover {
   color: #ffb800;
@@ -857,14 +893,18 @@ h1 {
     max-width: 100%; }
     .center .slider .elem {
       margin: 10px 15px 0;
-      width: 100px;
+      width: 110px;
       height: 100px; }
       .center .slider .elem p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         position: relative;
         top: 106px;
-        font-size: 13px;
+        font-size: 10px;
         margin-top: 0;
-        width: 100%; }
+        width: 110px; }
   .center .price-flex {
     display: flex;
     flex-flow: row;
@@ -1001,6 +1041,24 @@ input {
   .color .smth1, .color .smth2, .color .smth3, .color .smth4, .color .smth5, .color .smth6, .color .smth7, .color .smth8, .color .smth9 {
     background-color: black; }
 
+#b1 {
+  background-image: url("../img/korob/1.jpg"); }
+
+#b2 {
+  background-image: url("../img/korob/2.jpg"); }
+
+#b3 {
+  background-image: url("../img/korob/3.jpg"); }
+
+#b4 {
+  background-image: url("../img/korob/4.jpg"); }
+
+#b5 {
+  background-image: url("../img/korob/5.jpg"); }
+
+#b6 {
+  background-image: url("../img/korob/6.jpg"); }
+
 #a1 {
   background-image: url("../img/letters/S.jpg"); }
 
@@ -1043,7 +1101,7 @@ input {
 #a14 {
   background-image: url("../img/viv/viv20.png"); }
 
-#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14 {
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #b1, #b2, #b3, #b4, #b5, #b6 {
   background-size: 100% 100%; }
 
 #s1 {

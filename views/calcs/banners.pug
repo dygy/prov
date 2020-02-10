@@ -1,4 +1,4 @@
-p размер изделия (см):
+p размер изделия (м):
 div(class="flex-input")
     input(type="number" id="sizeX" oninput="setInput('sizeX')")
     div x
@@ -9,8 +9,8 @@ div(class="selector selectable")
         text баннерная
         br
         text ткань 440гр
-    div(class="elem" onclick="request.material='setka';addClass(this)" ) сетка
-    div(class="elem" onclick="request.material='trans tkan';addClass(this)" )
+    div(class="elem" onclick="request.type='setka';addClass(this)" ) сетка
+    div(class="elem" onclick="request.type='trans tkan';addClass(this)" )
         text транслюцентная
         br
         text ткань
@@ -18,12 +18,13 @@ p разрешение:
 div(class="selector selectable")
     div(class="elem" onclick="request.resol='549dpi';addClass(this)" ) 549dpi
     div(class="elem" onclick="request.resol='720dpi';addClass(this)" ) 720dpi
-p люверсы:
+p проклейка по периметру:
 div(class="selector selectable")
-    div(class="elem" onclick="request.luversi='no';addClass(this)" ) нет
-    div(class="elem" onclick="request.luversi='gold';addClass(this)" ) золото
-    div(class="elem" onclick="request.luversi='silver';addClass(this)" ) серебро
-    div(class="elem" onclick="request.luversi='white';addClass(this)" ) белые
+    div(class="elem" onclick="request.luversi='шаг люверса';addClass(this)" ) проклейка
+
+p шаг люверса:
+div(class="selector selectable")
+    div(class="elem" onclick="request.luversi='шаг люверса';addClass(this)" ) шаг люверса(30см)
 p тираж:
 div
     input(type="number" id="tirazh" oninput="setInput('tirazh')")

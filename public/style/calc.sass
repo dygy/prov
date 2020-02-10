@@ -18,7 +18,7 @@ input::-webkit-inner-spin-button
 h1
   margin-top: 0
   margin-bottom: 10px
-#output
+#output,#output2
   text-shadow: 1px 1px 8px black
   font-family: Arial
   -webkit-text-stroke-width: 1px
@@ -27,6 +27,10 @@ h1
   font-size: 40px
   margin-top: 20px
   transform: rotate(2deg)
+#output2
+  padding: 30px
+  transform: rotate(0deg)
+  border: 1px black solid
 .selectable
   .elem:hover
     color: #ffb800
@@ -81,15 +85,19 @@ h1
     max-width: 100%
     .elem
       margin: 10px 15px 0
-      width: 100px
+      width: 110px
       height: 100px
       ///border-width: 4px !important
       p
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
         position: relative
         top: 106px
-        font-size: 13px
+        font-size: 10px
         margin-top: 0
-        width: 100%
+        width: 110px
   .price-flex
     display: flex
     flex-flow: row
@@ -221,6 +229,18 @@ input
     background: linear-gradient(90deg, rgb(255, 241, 1) 0% , rgb(254, 6, 19) 35% , rgb(95, 45, 145) 50% , #005cab 65% , rgb(98, 181, 253) 85%, rgb(40, 218, 47) 100%)
   .smth1 , .smth2  , .smth3 , .smth4 ,   .smth5 , .smth6 ,   .smth7 , .smth8 , .smth9
     background-color: black
+#b1
+  background-image: url("../img/korob/1.jpg")
+#b2
+  background-image: url("../img/korob/2.jpg")
+#b3
+  background-image: url("../img/korob/3.jpg")
+#b4
+  background-image: url("../img/korob/4.jpg")
+#b5
+  background-image: url("../img/korob/5.jpg")
+#b6
+  background-image: url("../img/korob/6.jpg")
 
 #a1
   background-image: url("../img/letters/S.jpg")
@@ -251,7 +271,7 @@ input
 #a14
   background-image: url("../img/viv/viv20.png")
 
-#a1 , #a2 ,#a3 ,#a4 , #a5 ,#a6, #a7 , #a8 ,#a9, #a10 , #a11 ,#a12 , #a13 ,#a14
+#a1 , #a2 ,#a3 ,#a4 , #a5 ,#a6, #a7 , #a8 ,#a9, #a10 , #a11 ,#a12 , #a13 ,#a14 , #b1, #b2, #b3, #b4,#b5, #b6
   background-size: 100% 100%
 #s1
   background-image: url("../img/info/info03.png")

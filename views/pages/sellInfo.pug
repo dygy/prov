@@ -49,6 +49,8 @@ div(class="flex-page")
             div(class="content-container")
                 if title === " Входные группы"
                     include ../content/input/mainInfo
+                else if p
+                    p=p
                 else if title === " НАКЛЕЙКИ НА ОКНА"
                     include ../content/nakOk/mainInfo
                 else if title === " ТАБЛИЧКИ ИЗ ОРГ. СТЕКЛА"
@@ -213,6 +215,20 @@ div(class="flex-page")
             include ../content/nav/light/secText
         else if title === " Автобрендирование"
             include ../content/auto/secText
+        else if title === "ОБЪЕМНЫЙ БУКВЫ ИЗ ДЕРЕВА"
+            include ../content/viv/woodF/secText
+        else if title === "ОБЪЕМНЫЙ БУКВЫ ИЗ НЕОНА"
+            include ../content/viv/neon/secText
+        else if title === "ОБЪЕМНЫЙ БУКВЫ ИЗ МЕТАЛЛА"
+            include ../content/viv/met/secText
+        else if title === "ВЫВЕСКИ ИЗ ДЕРЕВА"
+            include ../content/viv/wood/secText
+        else if title === "АКРИЛАЙТ"
+            include ../content/viv/aklight/secText
+        else if title === "ВЫВЕСКИ ИЗ ПВХ"
+            include ../content/viv/pv/secText
+        else if title === "ОБЪЕМНЫЙ БУКВЫ ИЗ ПЕНОПЛАСТА"
+            include ../content/viv/pen/secText
         else if title === "СВЕТОВОЙ КОРОБ ИЗ АКРИЛА И ПВХ" || title === 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' + 'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА' || title === 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' || title === 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И БАННЕРНОЙ ТКАНЬЮ НА ЛИЦЕВОЙ ЧАСТИ' || title === 'СВЕТОВОЙ КОРОБ ИЗ ПОЛИКАРБОНАТА И ПВХ' || title === 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И ПВХ НА ЛИЦЕВОЙ ЧАСТИ' || title === 'СВЕТОВОЙ КОРОБ С МЕТАЛЛИЧЕСКИМ КАРКАСОМ\n' + 'И СОТОВЫМ ПОЛИКАРБОНАТОМ НА ЛИЦЕВОЙ ЧАСТИ' || title === 'СВЕТОВОЙ КОРОБ С ОТКРЫТЫМИ СВЕТОДИОДАМИ' || title === 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА С ПРОРЕЗКОЙ' || title === 'СВЕТОВОЙ КОРОБ ИЗ АЛЮМОКОМПОЗИТА\n' + 'С ИНКРУСТАЦИЕЙ ПРОЗРАЧНОГО АКРИЛА'
             include ../content/lakpv/secText
     div(class="title")

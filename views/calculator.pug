@@ -5,9 +5,7 @@ script(src='../js/index.js')
 script(src='../js/Global.js')
 div(class="calc-flex" onclick=`calc("${title}")` oninput=`calc("${title}")`)
     div(class="center")
-        h1
-            text КАЛЬКУЛЯТОР
-            br
+        h1(style="width:22vw")
             text= title
         case id
             when 0
@@ -30,6 +28,8 @@ div(class="calc-flex" onclick=`calc("${title}")` oninput=`calc("${title}")`)
                 include ./calcs/plac'n'posts
             when 9
                 include ./calcs/autobrand
+            when 10
+                include ./calcs/korob
 
         p ориентировочная цена:
         div

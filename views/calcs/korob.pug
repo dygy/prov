@@ -1,0 +1,111 @@
+p форма изделия:
+    div(class="selectable")
+        div(class="slider")
+            div(class="elem" id="b1" onclick="request.formI='МОЛОЧНЫЙ АКРИЛ';addClass(this)")
+                p
+                    text МОЛОЧНЫЙ АКРИЛ
+                    br
+                    text (макс. размер 3×2м)
+            div(class="elem" id="b2" onclick="request.formI='СОТОВЫЙ ПОЛИКАРБОНАТ'; addClass(this)")
+                p
+                    text СОТОВЫЙ ПОЛИКАРБОНАТ
+                    br
+                    text (макс. размер 12 х 2м)
+            div(class="elem" id="b3" onclick="request.formI='ТРАНСЛЮЦЕНТНЫЙ БАННЕР';addClass(this)")
+                p
+                    text ТРАНСЛЮЦЕНТНЫЙ БАННЕР
+                    br
+                    text (макс. размер 1,6 м выс., 50м по горизонт.)
+            div(class="elem" id="b4" onclick="request.formI='ОТКРЫТЫЕ СВЕТОДИОДЫ';addClass(this)")
+                p
+                    text ОТКРЫТЫЕ
+                    br
+                    text СВЕТОДИОДЫ
+            div(class="elem" id="b5" onclick="request.formI='КОМПОЗИТ +ИНКРУСТАЦИЯ АКРИЛОМ';addClass(this)")
+                p
+                    text КОМПОЗИТ +ИНКРУСТАЦИЯ
+                    br
+                    text АКРИЛОМ (8–10 мм.)
+            div(class="elem" id="b6" onclick="request.formI='ПСЕВДО-ИНКРУСТАЦИЯ';addClass(this)")
+                p
+                    text ПСЕВДО-ИНКРУСТАЦИЯ
+    p
+        br
+        br
+        br
+        br
+    p ВВЕДИТЕ ТЕКСТ ВЫВЕСКИ
+    div(class="flex-input")
+        input(id="text" oninput="setInput('text'); elem('output2').innerText=elem('text').value")
+    p
+        br
+    p УКАЖИТЕ ВЫСОТУ ВЫСЕКИ (СМ)
+    div(class="flex-input")
+        input(type="number" id="sizeX" oninput="setInput('sizeX')")
+        div x
+        input(type="number" id="sizeY" oninput="setInput('sizeY')")
+        br
+    p ВЫБЕРЕТЕ ЛИЦЕВОЙ ЦВЕТ
+    div(class="selectable color")
+        div(class="elem none"     onclick="request.color='1' ;setColor('white')  ;addClass(this)")
+        div(class="elem yellow"   onclick="request.color='2' ;setColor('#fff101');addClass(this)")
+        div(class="elem orange"   onclick="request.color='3' ;setColor('#ffb800');addClass(this)")
+        div(class="elem red"      onclick="request.color='4' ;setColor('#fe0613');addClass(this)")
+        div(class="elem pink"     onclick="request.color='5' ;setColor('#ed028c');addClass(this)")
+        div(class="elem purple"   onclick="request.color='6' ;setColor('#5f2d91');addClass(this)")
+        div(class="elem blue"     onclick="request.color='7' ;setColor('#253f8e');addClass(this)")
+        div(class="elem siz"      onclick="request.color='8' ;setColor('#62b5fd');addClass(this)")
+        div(class="elem green"    onclick="request.color='9' ;setColor('#28da2f');addClass(this)")
+        div(class="elem bolot"    onclick="request.color='10';setColor('#28722f');addClass(this)")
+        div(class="elem darkg"    onclick="request.color='11';setColor('#000000');addClass(this)")
+        div(class="elem brown"    onclick="request.color='12';setColor('#3c001c');addClass(this)")
+        div(class="elem ascalc"   onclick="request.color='13';setColor('#81beaa');addClass(this)")
+        div(class="elem gradient" onclick="request.color='14';setColor('pig    ');addClass(this)")
+    p ВЫБЕРЕТЕ ТОРЦЕВОЙ ЦВЕТ
+    div(class="selectable color")
+        div(class="elem none"     onclick="request.troev='1' ;setBorder('white')  ;addClass(this)")
+        div(class="elem yellow"   onclick="request.troev='2' ;setBorder('#fff101');addClass(this)")
+        div(class="elem orange"   onclick="request.troev='3' ;setBorder('#ffb800');addClass(this)")
+        div(class="elem red"      onclick="request.troev='4' ;setBorder('#fe0613');addClass(this)")
+        div(class="elem pink"     onclick="request.troev='5' ;setBorder('#ed028c');addClass(this)")
+        div(class="elem purple"   onclick="request.troev='6' ;setBorder('#5f2d91');addClass(this)")
+        div(class="elem blue"     onclick="request.troev='7' ;setBorder('#253f8e');addClass(this)")
+        div(class="elem siz"      onclick="request.troev='8' ;setBorder('#62b5fd');addClass(this)")
+        div(class="elem green"    onclick="request.troev='9' ;setBorder('#28da2f');addClass(this)")
+        div(class="elem bolot"    onclick="request.troev='10';setBorder('#28722f');addClass(this)")
+        div(class="elem darkg"    onclick="request.troev='11';setBorder('#000000');addClass(this)")
+        div(class="elem brown"    onclick="request.troev='12';setBorder('#3c001c');addClass(this)")
+        div(class="elem ascalc"   onclick="request.troev='13';setBorder('#81beaa');addClass(this)")
+        div(class="elem gradient" onclick="request.troev='14';setBorder('pig    ');addClass(this)")
+    p ВЫБЕРЕТЕ ЦВЕТ КОНТРАЖУРА
+    div(class="selectable color" )
+        div(class="elem none"     onclick="request.contur='1' ;setShadow('white')  ;addClass(this)")
+        div(class="elem yellow"   onclick="request.contur='2' ;setShadow('#fff101');addClass(this)")
+        div(class="elem orange"   onclick="request.contur='3' ;setShadow('#ffb800');addClass(this)")
+        div(class="elem red"      onclick="request.contur='4' ;setShadow('#fe0613');addClass(this)")
+        div(class="elem pink"     onclick="request.contur='5' ;setShadow('#ed028c');addClass(this)")
+        div(class="elem purple"   onclick="request.contur='6' ;setShadow('#5f2d91');addClass(this)")
+        div(class="elem blue"     onclick="request.contur='7' ;setShadow('#253f8e');addClass(this)")
+        div(class="elem siz"      onclick="request.contur='8' ;setShadow('#62b5fd');addClass(this)")
+        div(class="elem green"    onclick="request.contur='9' ;setShadow('#28da2f');addClass(this)")
+        div(class="elem bolot"    onclick="request.contur='10';setShadow('#28722f');addClass(this)")
+        div(class="elem darkg"    onclick="request.contur='11';setShadow('#000000');addClass(this)")
+        div(class="elem brown"    onclick="request.contur='12';setShadow('#3c001c');addClass(this)")
+        div(class="elem ascalc"   onclick="request.contur='13';setShadow('#81beaa');addClass(this)")
+        div(class="elem gradient" onclick="request.contur='14';setShadow('pig    ');addClass(this)")
+    p
+        br
+    p ВИЗУАЛИЗАЦИЯ ВЫВЕСКИ
+
+    div(id="output2")
+
+style(type='text/css').
+    @media (min-width: 1700px) {
+        .calc-flex {
+            margin-top: 600px;
+            margin-bottom: -30%;
+        }
+        #footer {
+            bottom: -1050px;
+        }
+    }

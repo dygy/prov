@@ -1,9 +1,23 @@
 p форма изделия:
     div(class="slider selectable")
-        div(class="elem" onclick="request.formI='1';addClass(this)")
-        div(class="elem" onclick="request.formI='2';addClass(this)")
-        div(class="elem" onclick="request.formI='3';addClass(this)")
-        div(class="elem" onclick="request.formI='4';addClass(this)")
+        div(class="elem" onclick="request.formI='Прямоугольный';addClass(this)")
+            p
+                text Прямоугольный
+                br
+                text (660х1200)
+        div(class="elem" onclick="request.formI='арочный';addClass(this)")
+            p
+                text арочный
+                br
+                text (660х1300)
+        div(class="elem" onclick="request.formI='большой';addClass(this)")
+            p
+                text большой
+                br
+                text (810х1900)
+    p
+        br
+        br
     p материал:
     div(class="selector selectable")
         div(class="elem" onclick="request.material='металл';addClass(this)") металл
@@ -14,11 +28,6 @@ p форма изделия:
     div(class="selector selectable")
         div(class="elem" onclick="request.print='1 сторона';addClass(this)") 1 сторона
         div(class="elem" onclick="request.print='2 стороны';addClass(this)") 2 стороны
-    p размер изделия (см):
-    div(class="flex-input")
-       input(type="number" id="sizeX" oninput="setInput('sizeX')")
-       div x
-       input(type="number" id="sizeY" oninput="setInput('sizeY')")
     p цепочка:
     div(class="selector selectable")
         div(class="elem" onclick="request.cell='no';addClass(this)")

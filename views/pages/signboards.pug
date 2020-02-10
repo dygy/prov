@@ -1,166 +1,262 @@
-link(rel='stylesheet', href='/style/sign.css')
-script(src='../js/Global.js')
+link(rel='stylesheet', href='/style/light.css')
 include ../slider
 include ../header
 script(src='../js/index.js')
+script(src='../js/Global.js')
 
-block flexbox
+div(class="flex-page")
     div(class="title")
-        h1 ИНТЕРЬЕРНЫЕ ВЫВЕСКИ
+        h1=title
+    p
+        br
     div(id="font-flex")
         div(class="elem")
-            div
-                strong НЕОН
+            img(src="/img/viv/viv3.png" onclick="moveTo('./viv/woodF')")
             br
-            img(src="../img/viv/viv1.png")
-            p от 1.000 руб
+            strong ДЕРЕВЯННЫЕ БУКВЫ
             div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy" onclick="displayOrder()" ) заказать
-        div(class="elem")
-            div
-                strong МЕТАЛЛИЧЕСКИЕ БУКВЫ
-            br
-            img(src="../img/viv/viv2.png")
-            p от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy" onclick="displayOrder()" ) заказать
-        div(class="elem")
-            div
-                strong ДЕРЕВЯННЫЕ БУКВЫ
-            br
-            img(src="../img/viv/viv3.png")
-            p от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
+                button(class="more" onclick="moveTo('./viv/woodF')")
+                    text подробнее
+                    text(class="arrow") «
                 button(class="buy" onclick="displayOrder()") заказать
         div(class="elem")
-            div
-                strong БУКВЫ ИЗ ПЕНОПЛАСТА
+            img(src="/img/viv/viv1.png" onclick="moveTo('./viv/neon')")
+            //div(class="lupa" onclick="displayImg('../img/letters/w.jpg')")
             br
-            img(src="../img/viv/viv4.png")
-            p от 1.000 руб
+            strong НЕОН
             div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ОТКРЫТЫЙ НЕОН
-            br
-            img(src="../img/viv/viv5.png")
-            p от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong МЕТАЛЛ + КОНТРАЖУР
-            br
-            img(src="../img/viv/viv6.png")
-            p от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ПВХ + КОНТРАЖУР
-            br
-            img(src="../img/viv/viv7.png")
-            p от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ОТКРЫТЫЕ СВЕТОДИОДЫ
-            br
-            img(src="../img/viv/viv8.png")
-            p от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong РЕТРО БУКВЫ
-            br
-            img(src="../img/viv/viv9.png")
-            p от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ВЫВЕСКА ПВХ
-            br
-            img(src="../img/viv/viv10.png")
-            p от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong АКРИЛАЙТ
-            br
-            img(src="../img/viv/viv11.png")
-            p от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
-        div(class="elem")
-            div
-                strong ДЕРЕВО
-            br
-            img(src="../img/viv/viv12.png")
-            p от 1.000 руб
-            div
-                img(class="calc" src='/img/rasbutton.png' onclick="displaySell()")
-                button(class="buy"  onclick="displayOrder()") заказать
+                button(class="more" onclick="moveTo('./viv/neon')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
 
-block info
-    div(id="smth")
-        img(src="../img/viv/viv19.png" class="smthImg")
-        div
-            p Интерьерная реклама для ресепшн и офисов – вещь сложная и кропотливая. При выполнении таких заказов особое внимание уделяется нюансам обработки и сборки продукции. Ведь вывеска расположенная в непосредственной близости от окружающих должна выглядеть безупречно. Самый распространённый вид интерьерной рекламы для офисов – название компании (её логотип), выполненное в виде объёмных букв с подсветом или без него.
-            p Наша компания специализируется на изготовлении интерьерной рекламы класса Business и Premium, и использует для этого абсолютно разные материалы, от простейших ПВХ и пеноплексов до очень жёстких стёкол и металлов. Важен не исходный материал, а уместность его применения, правильный выбор технологии обработки и конечный результат!
+        div(class="elem")
+            img(src="/img/viv/viv2.png" onclick="moveTo('./viv/met')")
+            br
+            strong МЕТАЛЛИЧЕСКИЕ БУКВЫ
             div
-                img( class="buttonImg" src="../img/button.png" onclick="displayOrder()")
+                button(class="more" onclick="moveTo('./viv/met')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="/img/letters/w.jpg" onclick="moveTo('./font/metk')")
+            //div(class="lupa" onclick="displayImg('../img/letters/w.jpg')")
+            br
+            strong МЕТАЛЛ + КОНТРАЖУР
+            div
+                button(class="more" onclick="moveTo('./font/metk')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="/img/letters/X.jpg" onclick="moveTo('./font/pvk')")
+            //div(class="lupa" onclick="displayImg('../img/letters/X.jpg')")
+            br
+            strong ПВХ - КОНТРАЖУР
+            div
+                button(class="more" onclick="moveTo('./font/pvk')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="/img/letters/y.jpg"  onclick="moveTo('./font/svetod')")
+            //div(class="lupa" onclick="displayImg('../img/letters/y.jpg')")
+            br
+            strong ОТКРЫТЫЕ СВЕТОДИОДЫ
+            div
+                button(class="more" onclick="moveTo('./font/svetod')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="/img/viv/viv9.png"  onclick="moveTo('./font/retro')")
+            //div(class="lupa" onclick="displayImg('../img/viv/viv9.png')")
+            br
+            strong РЕТРО
+            div
+                button(class="more" onclick="moveTo('./font/retro')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="/img/viv/viv10.png" onclick="moveTo('./viv/pv')")
+            //div(class="lupa" onclick="displayImg('../img/letters/w.jpg')")
+            br
+            strong ВЫВЕСКА ПВХ
+            div
+                button(class="more" onclick="moveTo('./viv/pv')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="/img/viv/viv4.png" onclick="moveTo('./viv/pen')")
+            //div(class="lupa" onclick="displayImg('../img/letters/w.jpg')")
+            br
+            strong БУКВЫ ИЗ ПЕНОПЛАСТА
+            div
+                button(class="more" onclick="moveTo('./viv/pen')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="/img/letters/U.jpg" onclick="moveTo('./font/neon')")
+            //div(class="lupa" onclick="displayImg('../img/letters/U.jpg')")
+            br
+            strong ОТКРЫТЫЙ НЕОН
+            div
+                button(class="more" onclick="moveTo('./font/neon')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="/img/viv/viv11.png" onclick="moveTo('./viv/aklight')")
+            //div(class="lupa" onclick="displayImg('../img/letters/w.jpg')")
+            br
+            strong АКРИЛАЙТ
+            div
+                button(class="more" onclick="moveTo('./viv/aklight')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
+        div(class="elem")
+            img(src="/img/viv/viv12.png" onclick="moveTo('./viv/wood')")
+            br
+            strong ДЕРЕВО
+            div
+                button(class="more" onclick="moveTo('./viv/wood')")
+                    text подробнее
+                    text(class="arrow") «
+                button(class="buy" onclick="displayOrder()") заказать
+
+    p
+        br
     div(class="title")
-        h1 ПОПУЛЯРНЫЕ ЗАКАЗЫ
+        h2
+            text ЦЕНА НА
+            text=title.toUpperCase()
+    table
+        tr(class="main blue")
+            td тип
+            td цена
+        tr
+            td Деревянные буквы
+            td(class="price") от 120 руб/cм
+        tr(class="blue")
+            td Металлические буквы
+            td(class="price") от 75 руб/cм
+        tr
+            td Неон
+            td(class="price") от 75 руб/cм
+        tr(class="blue")
+            td Буквы из пенопласта
+            td(class="price") от 150 руб/cм
+        tr
+            td Открытый Неон
+            td(class="price") от 120 руб/cм
+        tr(class="blue")
+            td Металл + контражур
+            td(class="price") от 100 руб/cм
+        tr
+            td ПВХ + контражур
+            td(class="price") от 140 руб/cм
+        tr(class="blue")
+            td Открытые Светодиоды
+            td(class="price") от 140 руб/cм
+        tr
+            td Ретро буквы
+            td(class="price") от 140 руб/cм
+        tr(class="blue")
+            td Вывеска ПВХ
+            td(class="price") от 1000 руб
+        tr
+            td Акрилайт
+            td(class="price") от 1000 руб
+        tr(class="blue")
+            td Вывеска из дерева
+            td(class="price") от 1000 руб
+
+    div(id="smth")
+        div(class="imgSwitcher")
+            div(class="mid-layout")
+                img(src="../img/next.png" class="prev" onclick="switchImg(false)")
+                img(src="../img/next.png" class="next" onclick="switchImg(true)")
+            div(class="down-layout")
+                img(src="../img/active.png" class="dot" id="dot1" onclick="setImg(1)")
+                img(src="../img/inactive.png" class="dot" id="dot2" onclick="setImg(2)")
+                img(src="../img/inactive.png" class="dot" id="dot3" onclick="setImg(3)")
+            img( src="/img/font/fontMain1.jpg" class="smthImg")
+            img(src="/img/font/fontMain1.jpg"  class="smthImg" style="display:none")
+            img(src="/img/font/fontMain1.jpg"  class="smthImg" style="display:none")
+        div(class="rightflex")
+            div(class="scroll-container")
+                p Объемные буквы – это яркая и эффективная наруж-ная реклама. На данный момент это самые востребо-ванные конструкции. Они не только привлекают вни-мание потенциальных клиентов, но и являются един-ственным разрешенным видом наружной рекламы в столице в соответствии с постановлением правитель-ства г. Москва No 902-ПП.
+                br
+                p В подавляющем большинстве на фасады зданий устанавливаются объемные символы и важно сделать так, чтобы именно ваша вывеска была самой запоми-нающейся и выделялась на фоне других конструкций
+            div(class='flexbuts' style="margin-top:90px")
+                img(class="calc" src='/img/calc.png' onclick="moveTo('/calc/symbs')")
+                img(src="../img/button.png"  class="buttonImg" onclick="displayOrder()")
+
+    div(class="title")
+        h2 ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО
+    div(class="ulflex")
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
+            li Roll-up light
+        ul
+            li Roll-up light
+            li Roll-up light
     div(id="flex-box")
         div(class="elem")
-            img(src="../img/viv/viv13.png")
+            img(src="/img/letters/1.jpg")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/viv/viv14.png")
+            img(src="/img/letters/2.jpg")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/viv/viv15.png")
+            img(src="/img/letters/3.jpg")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/viv/viv16.png")
+            img(src="/img/letters/5.jpg")
             br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать
         div(class="elem")
-            img(src="../img/viv/viv17.png")
+            img(src="/img/letters/6.jpg")
             br
-            div
-                price ≈ 15.000 руб
-                button(onclick="displayOrder()") заказать
-        div(class="elem")
-            img(src="../img/viv/viv18.png")
-            br
+            bold Обьемные буквы
+            p из орг. стекла с лицевой подсветкой высота букв 20см
             div
                 price ≈ 15.000 руб
                 button(onclick="displayOrder()") заказать

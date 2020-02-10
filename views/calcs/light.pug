@@ -1,5 +1,6 @@
 p тип изделия
     div(class="selector selectable")
+        div(class="elem" onclick="request.type='фреймлайт с клип-профилем';addClass(this)") фреймлайт с клип-профилем
         div(class="elem" onclick="request.type='фреймлайт';addClass(this)") фреймлайт
         div(class="elem" onclick="request.type='кристаллайт';addClass(this)") кристаллайт
         div(class="elem" onclick="request.type='магнетик';addClass(this)") магнетик
@@ -10,13 +11,11 @@ p тип изделия
         div(class="elem" onclick="request.osob='двухсторонний';addClass(this)") двухсторонний
     p размеры:
     div(class="selector selectable")
-        div(class="elem" onclick="request.size='А4+';addClass(this)") А4+
-        div(class="elem" onclick="request.size='А3+';addClass(this)") А3+
-        div(class="elem" onclick="request.size='А2+';addClass(this)") А2+
-        div(class="elem" onclick="request.size='А1+';addClass(this)") А1+
-        div(class="elem" onclick="request.size='А0+';addClass(this)") А0+
-        div(class="elem" onclick="request.size='АА';addClass(this)") АА
-        div(class="elem" onclick="request.size='2АА';addClass(this)") 2АА
+        div(class="elem" onclick="request.size='А4';addClass(this)") А4
+        div(class="elem" onclick="request.size='А3';addClass(this)") А3
+        div(class="elem" onclick="request.size='А2';addClass(this)") А2
+        div(class="elem" onclick="request.size='А1';addClass(this)") А1
+        div(class="elem" onclick="request.size='А0';addClass(this)") А0
         div(class="elem" onclick="request.size='свой';addClass(this)") свой
     p тираж:
         div

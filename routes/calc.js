@@ -23,34 +23,87 @@ const router = express.Router();
             when 9
                 include ./calcs/autobrand
 */
+router.get('/korob', function(req, res, next) {
+    res.render('./calculator', {
+        title: ' КАЛЬКУЛЯТОР СВЕТОВЫЕ КОРОБА',
+        id:10,
+        path: " СВЕТОВЫЕ КОРОБА ",
+        href: '/light',
+    });
+});
+
 router.get('/stand', function(req, res, next) {
-    res.render('./calculator', { title: 'ИНФО-CТЕНДЫ',id:0});
+    res.render('./calculator', {
+        title: ' КАЛЬКУЛЯТОР ИНФО-CТЕНДЫ',
+        id:0,
+        path: " ИНФО-CТЕНДЫ ",
+        href: '/infstands',
+
+    });
 });
 router.get('/tables', function(req, res, next) {
-    res.render('./calculator', { title: 'ТАБЛИЧКИ',id:1});
+    res.render('./calculator', {
+        title: ' КАЛЬКУЛЯТОР ТАБЛИЧКИ',
+        id:1,
+        path: " ТАБЛИЧКИ ",
+        href: '/tables',
+    });
 });
 router.get('/shtends', function(req, res, next) {
-    res.render('./calculator', { title: "ШТЕНДЕРЫ",id:2});
+    res.render('./calculator', {
+        path: " ШТЕНДЕРЫ ",
+        href: '/shtender',
+        title: "КАЛЬКУЛЯТОР ШТЕНДЕРЫ",
+        id:2});
 });
 router.get('/symbs', function(req, res, next) {
-    res.render('./calculator', { title: 'БУКВЫ',id:3});
+    res.render('./calculator', {
+        path: " БУКВЫ ",
+        href: '/fonts',
+        title: ' КАЛЬКУЛЯТОР БУКВЫ'
+        ,id:3});
 });
 router.get('/light', function(req, res, next) {
-    res.render('./calculator', { title: 'СВЕТОВЫЕ ПАНЕЛИ',id:4});
+    res.render('./calculator', {
+        path: " СВЕТОВЫЕ ПАНЕЛИ ",
+        href: '/lightpan',
+        title: ' КАЛЬКУЛЯТОР СВЕТОВЫЕ ПАНЕЛИ',
+        id:4});
 });
 router.get('/kron', function(req, res, next) {
-    res.render('./calculator', { title: 'ПАНЕЛЬ-КРОНШТЕЙН',id:5});
+    res.render('./calculator', {
+        path: " ПАНЕЛЬ-КРОНШТЕЙН ",
+        href: '/kron',
+        title: 'КАЛЬКУЛЯТОР ПАНЕЛЬ-КРОНШТЕЙН',
+        id:5
+    });
 });
 router.get('/banners', function(req, res, next) {
-    res.render('./calculator', { title: 'БАННЕРЫ',id:6});
+    res.render('./calculator', {
+        path: " БАННЕРЫ ",
+        href: '/banners',
+        title: ' КАЛЬКУЛЯТОР БАННЕРЫ',
+        id:6});
 });
 router.get('/mobstands', function(req, res, next) {
-    res.render('./calculator', { title: 'МОБИЛЬНЫЕ СТЕНДЫ',id:7});
+    res.render('./calculator', {
+        path: "  ROLL-UP",
+        href: '/mobstand',
+        title: ' КАЛЬКУЛЯТОР ROLL-UP',
+        id:7});
 });
 router.get('/plac\'n\'posts', function(req, res, next) {
-    res.render('./calculator', { title: 'ПЛАКАТЫ / ПОСТЕРЫ',id:8});
+    res.render('./calculator', {
+        path: " ПЛАКАТЫ / ПОСТЕРЫ ",
+        href: '/placnposts',
+        title: 'КАЛЬКУЛЯТОР ПЛАКАТЫ / ПОСТЕРЫ',
+        id:8});
 });
 router.get('/autobrand', function(req, res, next) {
-    res.render('./calculator', { title: 'АВТОБРЕНДИРОВАНИЕ',id:9});
+    res.render('./calculator', {
+        path: " АВТОБРЕНДИРОВАНИЕ ",
+        href: '/autobrand',
+        title: ' КАЛЬКУЛЯТОР АВТОБРЕНДИРОВАНИЕ',
+        id:9});
 });
 module.exports = router;

@@ -18,6 +18,16 @@
     width: 100%;
     display: flex;
     justify-content: space-around; }
+    #smth .flexbuts .more, .smth .flexbuts .more {
+      padding-right: 10px;
+      padding-left: 10px;
+      background-color: #42d1cf;
+      min-height: 35px;
+      width: 125px;
+      height: 42px;
+      border: none;
+      font-family: Geom;
+      font-size: 15px; }
   #smth li, .smth li {
     list-style-position: outside;
     margin-left: 1em;
@@ -28,13 +38,16 @@
     height: 500px; }
   #smth .rightflex .scroll-container, .smth .rightflex .scroll-container {
     display: flex;
+    width: 100%;
     justify-content: start;
     flex-direction: column; }
+    #smth .rightflex .scroll-container bold, .smth .rightflex .scroll-container bold {
+      font-family: GeomB; }
   #smth .rightflex table tbody, .smth .rightflex table tbody {
     margin-left: 0 !important;
     margin-right: 0 !important; }
   #smth div ul, .smth div ul {
-    padding-left: 30px;
+    padding-left: 0px;
     margin-top: 0px !important; }
   #smth div p, .smth div p {
     text-indent: 20px;
@@ -192,6 +205,7 @@
     height: 50px;
     position: relative; }
   .smthImg .botSl {
+    height: 20px;
     bottom: -51%; }
     .smthImg .botSl .dot {
       margin-right: 10px;
@@ -204,7 +218,7 @@
     .smthImg .botSl .dot:active {
       background-image: url("/img/active.png"); }
   .smthImg .midSl {
-    width: 112%;
+    width: 114%;
     margin-left: -20px;
     align-items: center;
     justify-content: space-between; }
@@ -224,6 +238,8 @@
     max-height: 60px !important; } }
 
 @media (min-width: 1700px) {
+  .smth .rightflex .scroll-container {
+    min-width: 1060px; }
   #smth p, #smth li, #smth span, .smth p, .smth li, .smth span {
     font-size: 20px !important; }
   #smth h3, .smth h3 {
@@ -247,6 +263,10 @@
   .title h1, .title h2, #title h1, #title h2, .flexbuts h1, .flexbuts h2 {
     font-family: Geom !important;
     font-weight: 400; }
+  .title h2, #title h2, .flexbuts h2 {
+    font-size: 20px; }
+  .title h1, #title h1, .flexbuts h1 {
+    font-size: 24px; }
   .title .calc, .title .buttonImg, #title .calc, #title .buttonImg, .flexbuts .calc, .flexbuts .buttonImg {
     background: #72d7cf;
     width: 170px !important;
